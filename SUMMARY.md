@@ -71,7 +71,7 @@
   * [Jquery](javascript/untitled/jquery.md)
 * [JS-Leetcode](javascript/js-leetcode.md)
 
-## Web Development Frameworks & Libraries <a id="web-development-frameworks"></a>
+## Web Development Frameworks & Libraries <a href="web-development-frameworks" id="web-development-frameworks"></a>
 
 * [GRAPHQL](web-development-frameworks/graphql.md)
 * [React](web-development-frameworks/react.md)
@@ -93,7 +93,7 @@
 * [Misc](misc/untitled/README.md)
   * [Experiments](misc/untitled/experiments.md)
 
-## GitGateway <a id="links"></a>
+## GitGateway <a href="links" id="links"></a>
 
 * [Links](links/untitled.md)
 * [Bookmarks](links/untitled-1.md)
@@ -126,7 +126,7 @@
 * [Finance](finance/untitled.md)
 * [Financial Trends](finance/untitled-1.md)
 
-## Science & Tech \(Innovation\)
+## Science & Tech (Innovation)
 
 * [Science & Tech](science-and-tech-innovation/untitled.md)
 * [Articles](science-and-tech-innovation/untitled-1.md)
@@ -164,7 +164,7 @@
 * [REST-API](server-side/rest-api.md)
 * [Public APIs](server-side/public-apis.md)
 
-## WEB\_DEV\_TOOLS
+## WEB_DEV_TOOLS
 
 * [Web Dev Tools](web_dev_tools/web-dev-tools.md)
 * [Cloudinary](web_dev_tools/cloudinary.md)
@@ -177,12 +177,12 @@
   * [Graph API](web_dev_tools/netlify/graph-api.md)
   * [Troubleshooting](web_dev_tools/netlify/troubleshooting.md)
   * [Examples](web_dev_tools/netlify/examples.md)
-  * [HTTPS \(SSL\)](web_dev_tools/netlify/https-ssl.md)
+  * [HTTPS (SSL)](web_dev_tools/netlify/https-ssl.md)
   * [Open Authoring](web_dev_tools/netlify/open-authoring.md)
   * [Netlify CMS](web_dev_tools/netlify/netlify-cms.md)
   * [Git Gateway](web_dev_tools/netlify/git-gateway.md)
 
-## DS\_ALGOS\_BRAINTEASERS
+## DS_ALGOS_BRAINTEASERS
 
 * [A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example](ds_algos_brainteasers/ds_algos_brainteasers.md)
 
@@ -193,6 +193,7 @@
 ## Job-Search
 
 * [Job Search](job-search/job-search.md)
+* [Outreach](job-search/outreach.md)
 
 ## General Comp Sci
 
@@ -206,4 +207,3 @@
 ## Data Structures & Interviewing
 
 * [Data Structures](data-structures-and-interviewing/data-structures.md)
-
