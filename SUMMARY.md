@@ -47,6 +47,7 @@
         * [Sequelize](programming-languages/programming-languages/javascript/nodejs/express/sequelize.md)
     * [Regex](programming-languages/programming-languages/javascript/regex.md)
     * [React](programming-languages/programming-languages/javascript/react/README.md)
+      * [React Examples:](programming-languages/programming-languages/javascript/react/react-examples.md)
       * [Redux](programming-languages/programming-languages/javascript/react/redux.md)
       * [Redux Docs](programming-languages/programming-languages/javascript/react/redux-docs/README.md)
         * [Redux Resources](programming-languages/programming-languages/javascript/react/redux-docs/redux-resources.md)
@@ -64,6 +65,7 @@
 ## Python
 
 * [Python](python/untitled.md)
+* [Install PIP](python/install-pip.md)
 
 ## JavaScript
 
