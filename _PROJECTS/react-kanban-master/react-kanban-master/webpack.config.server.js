@@ -9,20 +9,20 @@ module.exports = {
   output: {
     path: path.join(__dirname, "dist"),
     filename: "server.js",
-    libraryTarget: "commonjs2"
+    libraryTarget: "commonjs2",
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         use: {
-          loader: "babel-loader"
+          loader: "babel-loader",
         },
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.(css|scss)$/,
-        loader: "ignore-loader"
+        loader: "ignore-loader",
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -33,10 +33,10 @@ module.exports = {
               emitFile: false,
               limit: 4096,
               name: "[name].[hash:6].[ext]",
-              publicPath: "/static/images/"
-            }
-          }
-        ]
+              publicPath: "/static/images/",
+            },
+          },
+        ],
       },
       {
         test: /\.svg$/,
@@ -47,13 +47,13 @@ module.exports = {
             emitFile: false,
             limit: 4096,
             name: "[name].[hash:6].[ext]",
-            outputPath: "images/"
-          }
-        }
-      }
-    ]
+            outputPath: "images/",
+          },
+        },
+      },
+    ],
   },
   resolve: {
-    extensions: [".js", ".jsx"]
-  }
+    extensions: [".js", ".jsx"],
+  },
 };

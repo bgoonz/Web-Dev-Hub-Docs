@@ -18,14 +18,14 @@ class Board extends Component {
     boardId: PropTypes.string.isRequired,
     boardTitle: PropTypes.string.isRequired,
     boardColor: PropTypes.string.isRequired,
-    dispatch: PropTypes.func.isRequired
+    dispatch: PropTypes.func.isRequired,
   };
 
   constructor(props) {
     super(props);
     this.state = {
       startX: null,
-      startScrollX: null
+      startScrollX: null,
     };
   }
 
@@ -34,7 +34,7 @@ class Board extends Component {
     const { boardId, dispatch } = this.props;
     dispatch({
       type: "PUT_BOARD_ID_IN_REDUX",
-      payload: { boardId }
+      payload: { boardId },
     });
   };
 
@@ -54,8 +54,8 @@ class Board extends Component {
           payload: {
             oldListIndex: source.index,
             newListIndex: destination.index,
-            boardId: source.droppableId
-          }
+            boardId: source.droppableId,
+          },
         });
       }
       return;
@@ -72,8 +72,8 @@ class Board extends Component {
           destListId: destination.droppableId,
           oldCardIndex: source.index,
           newCardIndex: destination.index,
-          boardId
-        }
+          boardId,
+        },
       });
     }
   };
@@ -87,7 +87,7 @@ class Board extends Component {
     window.addEventListener("mouseup", this.handleMouseUp);
     this.setState({
       startX: clientX,
-      startScrollX: window.scrollX
+      startScrollX: window.scrollX,
     });
   };
 
@@ -99,7 +99,7 @@ class Board extends Component {
     const windowScrollX = window.scrollX;
     if (scrollX !== windowScrollX) {
       this.setState({
-        startX: clientX + windowScrollX - startScrollX
+        startX: clientX + windowScrollX - startScrollX,
       });
     }
   };
@@ -152,7 +152,7 @@ class Board extends Component {
                 type="COLUMN"
                 direction="horizontal"
               >
-                {provided => (
+                {(provided) => (
                   <div className="lists" ref={provided.innerRef}>
                     {lists.map((list, index) => (
                       <List
@@ -179,10 +179,10 @@ class Board extends Component {
 const mapStateToProps = (state, ownProps) => {
   const { board } = ownProps;
   return {
-    lists: board.lists.map(listId => state.listsById[listId]),
+    lists: board.lists.map((listId) => state.listsById[listId]),
     boardTitle: board.title,
     boardColor: board.color,
-    boardId: board._id
+    boardId: board._id,
   };
 };
 

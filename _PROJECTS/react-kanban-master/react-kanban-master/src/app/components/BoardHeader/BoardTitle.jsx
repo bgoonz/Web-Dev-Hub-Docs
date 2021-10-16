@@ -8,14 +8,14 @@ class BoardTitle extends Component {
   static propTypes = {
     boardTitle: PropTypes.string.isRequired,
     boardId: PropTypes.string.isRequired,
-    dispatch: PropTypes.func.isRequired
+    dispatch: PropTypes.func.isRequired,
   };
 
   constructor(props) {
     super(props);
     this.state = {
       isOpen: false,
-      newTitle: props.boardTitle
+      newTitle: props.boardTitle,
     };
   }
 
@@ -23,7 +23,7 @@ class BoardTitle extends Component {
     this.setState({ isOpen: true });
   };
 
-  handleChange = event => {
+  handleChange = (event) => {
     this.setState({ newTitle: event.target.value });
   };
 
@@ -36,8 +36,8 @@ class BoardTitle extends Component {
         type: "CHANGE_BOARD_TITLE",
         payload: {
           boardTitle: newTitle,
-          boardId
-        }
+          boardId,
+        },
       });
     }
     this.setState({ isOpen: false });
@@ -48,7 +48,7 @@ class BoardTitle extends Component {
     this.setState({ newTitle: boardTitle, isOpen: false });
   };
 
-  handleKeyDown = event => {
+  handleKeyDown = (event) => {
     if (event.keyCode === 13) {
       this.submitTitle();
     } else if (event.keyCode === 27) {
@@ -56,7 +56,7 @@ class BoardTitle extends Component {
     }
   };
 
-  handleFocus = event => {
+  handleFocus = (event) => {
     event.target.select();
   };
 
@@ -87,7 +87,7 @@ const mapStateToProps = (state, ownProps) => {
   const { boardId } = ownProps.match.params;
   return {
     boardTitle: state.boardsById[boardId].title,
-    boardId
+    boardId,
   };
 };
 

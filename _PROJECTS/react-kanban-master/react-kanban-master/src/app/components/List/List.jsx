@@ -12,7 +12,7 @@ class List extends Component {
   static propTypes = {
     boardId: PropTypes.string.isRequired,
     index: PropTypes.number.isRequired,
-    list: PropTypes.shape({ _id: PropTypes.string.isRequired }).isRequired
+    list: PropTypes.shape({ _id: PropTypes.string.isRequired }).isRequired,
   };
 
   render = () => {
@@ -32,7 +32,7 @@ class List extends Component {
             >
               <div
                 className={classnames("list", {
-                  "list--drag": snapshot.isDragging
+                  "list--drag": snapshot.isDragging,
                 })}
               >
                 <ListHeader

@@ -6,8 +6,8 @@ const boardsById = (state = {}, action) => {
         ...state,
         [boardId]: {
           ...state[boardId],
-          lists: [...state[boardId].lists, listId]
-        }
+          lists: [...state[boardId].lists, listId],
+        },
       };
     }
     case "MOVE_LIST": {
@@ -17,7 +17,7 @@ const boardsById = (state = {}, action) => {
       newLists.splice(newListIndex, 0, removedList);
       return {
         ...state,
-        [boardId]: { ...state[boardId], lists: newLists }
+        [boardId]: { ...state[boardId], lists: newLists },
       };
     }
     case "DELETE_LIST": {
@@ -26,8 +26,8 @@ const boardsById = (state = {}, action) => {
         ...state,
         [boardId]: {
           ...state[boardId],
-          lists: state[boardId].lists.filter(listId => listId !== newListId)
-        }
+          lists: state[boardId].lists.filter((listId) => listId !== newListId),
+        },
       };
     }
     case "ADD_BOARD": {
@@ -39,8 +39,8 @@ const boardsById = (state = {}, action) => {
           title: boardTitle,
           lists: [],
           users: [userId],
-          color: "blue"
-        }
+          color: "blue",
+        },
       };
     }
     case "CHANGE_BOARD_TITLE": {
@@ -49,8 +49,8 @@ const boardsById = (state = {}, action) => {
         ...state,
         [boardId]: {
           ...state[boardId],
-          title: boardTitle
-        }
+          title: boardTitle,
+        },
       };
     }
     case "CHANGE_BOARD_COLOR": {
@@ -59,8 +59,8 @@ const boardsById = (state = {}, action) => {
         ...state,
         [boardId]: {
           ...state[boardId],
-          color
-        }
+          color,
+        },
       };
     }
     case "DELETE_BOARD": {

@@ -8,23 +8,23 @@ import "./ListAdder.scss";
 class ListAdder extends Component {
   static propTypes = {
     boardId: PropTypes.string.isRequired,
-    dispatch: PropTypes.func.isRequired
+    dispatch: PropTypes.func.isRequired,
   };
 
   constructor() {
     super();
     this.state = {
       isOpen: false,
-      listTitle: ""
+      listTitle: "",
     };
   }
   handleBlur = () => {
     this.setState({ isOpen: false });
   };
-  handleChange = event => {
+  handleChange = (event) => {
     this.setState({ listTitle: event.target.value });
   };
-  handleKeyDown = event => {
+  handleKeyDown = (event) => {
     if (event.keyCode === 13) {
       event.preventDefault();
       this.handleSubmit();
@@ -39,7 +39,7 @@ class ListAdder extends Component {
     if (listTitle === "") return;
     dispatch({
       type: "ADD_LIST",
-      payload: { listTitle, listId, boardId }
+      payload: { listTitle, listId, boardId },
     });
     this.setState({ isOpen: false, listTitle: "" });
   };

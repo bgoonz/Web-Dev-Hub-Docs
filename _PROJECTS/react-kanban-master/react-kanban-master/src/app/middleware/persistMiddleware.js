@@ -1,14 +1,14 @@
 import { denormalize, schema } from "normalizr";
 
 // Persist the board to the database after almost every action.
-const persistMiddleware = store => next => action => {
+const persistMiddleware = (store) => (next) => (action) => {
   next(action);
   const {
     user,
     boardsById,
     listsById,
     cardsById,
-    currentBoardId: boardId
+    currentBoardId: boardId,
   } = store.getState();
 
   // Nothing is persisted for guest users
@@ -18,7 +18,7 @@ const persistMiddleware = store => next => action => {
         method: "DELETE",
         body: JSON.stringify({ boardId }),
         headers: { "Content-Type": "application/json" },
-        credentials: "include"
+        credentials: "include",
       });
 
       // All action-types that are not DELETE_BOARD or PUT_BOARD_ID_IN_REDUX are currently modifying a board in a way that should
@@ -45,7 +45,7 @@ const persistMiddleware = store => next => action => {
         method: "PUT",
         body: JSON.stringify(boardData),
         headers: { "Content-Type": "application/json" },
-        credentials: "include"
+        credentials: "include",
       });
     }
   }

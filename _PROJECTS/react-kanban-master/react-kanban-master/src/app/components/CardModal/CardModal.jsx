@@ -14,15 +14,15 @@ class CardModal extends Component {
       text: PropTypes.string.isRequired,
       _id: PropTypes.string.isRequired,
       date: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Date)]),
-      color: PropTypes.string
+      color: PropTypes.string,
     }).isRequired,
     listId: PropTypes.string.isRequired,
     cardElement: PropTypes.shape({
-      getBoundingClientRect: PropTypes.func.isRequired
+      getBoundingClientRect: PropTypes.func.isRequired,
     }),
     isOpen: PropTypes.bool.isRequired,
     toggleCardEditor: PropTypes.func.isRequired,
-    dispatch: PropTypes.func.isRequired
+    dispatch: PropTypes.func.isRequired,
   };
 
   constructor(props) {
@@ -30,18 +30,18 @@ class CardModal extends Component {
     this.state = {
       newText: props.card.text,
       isColorPickerOpen: false,
-      isTextareaFocused: true
+      isTextareaFocused: true,
     };
     if (typeof document !== "undefined") {
       Modal.setAppElement("#app");
     }
   }
 
-  componentWillReceiveProps = nextProps => {
+  componentWillReceiveProps = (nextProps) => {
     this.setState({ newText: nextProps.card.text });
   };
 
-  handleKeyDown = event => {
+  handleKeyDown = (event) => {
     if (event.keyCode === 13 && event.shiftKey === false) {
       event.preventDefault();
       this.submitCard();
@@ -59,14 +59,14 @@ class CardModal extends Component {
         payload: {
           cardText: newText,
           cardId: card._id,
-          listId
-        }
+          listId,
+        },
       });
     }
     toggleCardEditor();
   };
 
-  handleChange = event => {
+  handleChange = (event) => {
     this.setState({ newText: event.target.value });
   };
 
@@ -118,8 +118,8 @@ class CardModal extends Component {
         right: isCardNearRightBorder
           ? window.innerWidth - boundingRect.right
           : null,
-        flexDirection: isCardNearRightBorder ? "row-reverse" : "row"
-      }
+        flexDirection: isCardNearRightBorder ? "row-reverse" : "row",
+      },
     };
 
     // For layouts that are less wide than 550px, let the modal take up the entire width at the top of the screen
@@ -128,8 +128,8 @@ class CardModal extends Component {
         flexDirection: "column",
         top: 3,
         left: 3,
-        right: 3
-      }
+        right: 3,
+      },
     };
 
     return (
@@ -152,7 +152,7 @@ class CardModal extends Component {
             boxShadow: isTextareaFocused
               ? "0px 0px 3px 2px rgb(0, 180, 255)"
               : null,
-            background: card.color
+            background: card.color,
           }}
         >
           <Textarea

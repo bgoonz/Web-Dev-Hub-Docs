@@ -14,16 +14,16 @@ module.exports = {
   output: {
     path: path.join(__dirname, "dist/public"),
     publicPath: "/static/",
-    filename: "bundle.[hash:6].js"
+    filename: "bundle.[hash:6].js",
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         use: {
-          loader: "babel-loader"
+          loader: "babel-loader",
         },
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.(css|scss)$/,
@@ -33,20 +33,20 @@ module.exports = {
             loader: "css-loader",
             options: {
               importLoaders: 1,
-              minimize: true
-            }
+              minimize: true,
+            },
           },
           {
             loader: "postcss-loader",
             options: {
               ident: "postcss",
-              plugins: [autoprefixer()]
-            }
+              plugins: [autoprefixer()],
+            },
           },
           {
-            loader: "sass-loader"
-          }
-        ]
+            loader: "sass-loader",
+          },
+        ],
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -56,10 +56,10 @@ module.exports = {
             options: {
               limit: 4096,
               name: "[name].[hash:6].[ext]",
-              outputPath: "images/"
-            }
-          }
-        ]
+              outputPath: "images/",
+            },
+          },
+        ],
       },
       {
         test: /\.svg$/,
@@ -69,11 +69,11 @@ module.exports = {
             noquotes: true,
             limit: 4096,
             name: "[name].[hash:6].[ext]",
-            outputPath: "images/"
-          }
-        }
-      }
-    ]
+            outputPath: "images/",
+          },
+        },
+      },
+    ],
   },
   plugins: [
     new CleanPlugin(["dist"]),
@@ -84,15 +84,15 @@ module.exports = {
     new UglifyPlugin({
       uglifyOptions: {
         output: {
-          comments: false
+          comments: false,
         },
         compress: {
-          drop_console: true
-        }
-      }
-    })
+          drop_console: true,
+        },
+      },
+    }),
   ],
   resolve: {
-    extensions: [".js", ".jsx"]
-  }
+    extensions: [".js", ".jsx"],
+  },
 };

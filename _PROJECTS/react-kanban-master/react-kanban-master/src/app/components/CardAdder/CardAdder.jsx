@@ -9,14 +9,14 @@ import "./CardAdder.scss";
 class CardAdder extends Component {
   static propTypes = {
     listId: PropTypes.string.isRequired,
-    dispatch: PropTypes.func.isRequired
+    dispatch: PropTypes.func.isRequired,
   };
 
   constructor() {
     super();
     this.state = {
       newText: "",
-      isOpen: false
+      isOpen: false,
     };
   }
 
@@ -24,11 +24,11 @@ class CardAdder extends Component {
     this.setState({ isOpen: !this.state.isOpen });
   };
 
-  handleChange = event => {
+  handleChange = (event) => {
     this.setState({ newText: event.target.value });
   };
 
-  handleKeyDown = event => {
+  handleKeyDown = (event) => {
     if (event.keyCode === 13 && event.shiftKey === false) {
       this.handleSubmit(event);
     } else if (event.keyCode === 27) {
@@ -36,7 +36,7 @@ class CardAdder extends Component {
     }
   };
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
     const { newText } = this.state;
     const { listId, dispatch } = this.props;
@@ -45,7 +45,7 @@ class CardAdder extends Component {
     const cardId = shortid.generate();
     dispatch({
       type: "ADD_CARD",
-      payload: { cardText: newText, cardId, listId }
+      payload: { cardText: newText, cardId, listId },
     });
     this.toggleCardComposer();
     this.setState({ newText: "" });

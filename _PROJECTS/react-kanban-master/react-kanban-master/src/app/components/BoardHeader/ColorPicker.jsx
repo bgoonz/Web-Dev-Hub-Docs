@@ -12,10 +12,10 @@ class ColorPicker extends Component {
   static propTypes = {
     boardId: PropTypes.string.isRequired,
     boardColor: PropTypes.string.isRequired,
-    dispatch: PropTypes.func.isRequired
+    dispatch: PropTypes.func.isRequired,
   };
 
-  handleSelection = color => {
+  handleSelection = (color) => {
     const { dispatch, boardId, boardColor } = this.props;
     // Dispatch update only if selected color is not the same as current board color.
     if (color !== boardColor) {
@@ -38,7 +38,7 @@ class ColorPicker extends Component {
           </div>
         </Button>
         <Menu className="color-picker-menu">
-          {colors.map(color => (
+          {colors.map((color) => (
             <MenuItem
               value={color}
               className={classnames("color-picker-item", color)}
@@ -57,7 +57,7 @@ const mapStateToProps = (state, ownProps) => {
   const { boardId } = ownProps.match.params;
   return {
     boardColor: state.boardsById[boardId].color,
-    boardId
+    boardId,
   };
 };
 

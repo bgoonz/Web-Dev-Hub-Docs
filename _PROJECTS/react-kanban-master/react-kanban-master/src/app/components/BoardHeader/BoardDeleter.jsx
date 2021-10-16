@@ -9,10 +9,10 @@ import "./BoardDeleter.scss";
 class BoardDeleter extends Component {
   static propTypes = {
     match: PropTypes.shape({
-      params: PropTypes.shape({ boardId: PropTypes.string })
+      params: PropTypes.shape({ boardId: PropTypes.string }),
     }).isRequired,
     history: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
-    dispatch: PropTypes.func.isRequired
+    dispatch: PropTypes.func.isRequired,
   };
 
   handleSelection = () => {

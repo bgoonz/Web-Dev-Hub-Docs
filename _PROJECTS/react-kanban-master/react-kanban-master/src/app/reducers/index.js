@@ -12,5 +12,5 @@ export default combineReducers({
   boardsById,
   user,
   isGuest,
-  currentBoardId
+  currentBoardId,
 });

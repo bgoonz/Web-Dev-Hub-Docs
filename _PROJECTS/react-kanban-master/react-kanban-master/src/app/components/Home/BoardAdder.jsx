@@ -9,7 +9,7 @@ class BoardAdder extends Component {
   static propTypes = {
     userId: PropTypes.string.isRequired,
     history: PropTypes.object.isRequired,
-    dispatch: PropTypes.func.isRequired
+    dispatch: PropTypes.func.isRequired,
   };
   constructor() {
     super();
@@ -20,11 +20,11 @@ class BoardAdder extends Component {
     this.setState({ isOpen: !this.state.isOpen });
   };
 
-  handleChange = event => {
+  handleChange = (event) => {
     this.setState({ title: event.target.value });
   };
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     // Dispatch action to put new empty board in redux store and db + push new url to history
     event.preventDefault();
     const { title } = this.state;
@@ -38,8 +38,8 @@ class BoardAdder extends Component {
       payload: {
         boardTitle: title,
         boardId,
-        userId
-      }
+        userId,
+      },
     });
 
     const urlSlug = slugify(title, { lower: true });
@@ -48,7 +48,7 @@ class BoardAdder extends Component {
     this.setState({ isOpen: false, title: "" });
   };
 
-  handleKeyDown = event => {
+  handleKeyDown = (event) => {
     if (event.keyCode === 27) {
       this.setState({ isOpen: false });
     }
@@ -84,8 +84,8 @@ class BoardAdder extends Component {
   };
 }
 
-const mapStateToProps = state => ({
-  userId: state.user ? state.user._id : "guest"
+const mapStateToProps = (state) => ({
+  userId: state.user ? state.user._id : "guest",
 });
 
 export default connect(mapStateToProps)(BoardAdder);

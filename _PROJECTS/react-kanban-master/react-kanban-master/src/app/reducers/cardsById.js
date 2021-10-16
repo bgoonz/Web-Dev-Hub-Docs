@@ -25,7 +25,7 @@ const cardsById = (state = {}, action) => {
     case "DELETE_LIST": {
       const { cards: cardIds } = action.payload;
       return Object.keys(state)
-        .filter(cardId => !cardIds.includes(cardId))
+        .filter((cardId) => !cardIds.includes(cardId))
         .reduce(
           (newState, cardId) => ({ ...newState, [cardId]: state[cardId] }),
           {}

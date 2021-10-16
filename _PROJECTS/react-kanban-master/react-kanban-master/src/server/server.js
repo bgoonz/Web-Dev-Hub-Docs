@@ -22,7 +22,7 @@ const app = express();
 
 const MongoStore = connectMongo(session);
 
-MongoClient.connect(process.env.MONGODB_URL).then(client => {
+MongoClient.connect(process.env.MONGODB_URL).then((client) => {
   const db = client.db(process.env.MONGODB_NAME);
 
   configurePassport(db);
@@ -46,7 +46,7 @@ MongoClient.connect(process.env.MONGODB_URL).then(client => {
       store: new MongoStore({ db }),
       secret: process.env.SESSION_SECRET,
       resave: false,
-      saveUninitialized: false
+      saveUninitialized: false,
     })
   );
   app.use(passport.initialize());

@@ -7,10 +7,10 @@ import Card from "../Card/Card";
 class Cards extends Component {
   static propTypes = {
     listId: PropTypes.string.isRequired,
-    cards: PropTypes.arrayOf(PropTypes.string).isRequired
+    cards: PropTypes.arrayOf(PropTypes.string).isRequired,
   };
 
-  componentDidUpdate = prevProps => {
+  componentDidUpdate = (prevProps) => {
     // Scroll to bottom of list if a new card has been added
     if (
       this.props.cards[this.props.cards.length - 2] ===
@@ -43,7 +43,7 @@ class Cards extends Component {
               {provided.placeholder}
               <div
                 style={{ float: "left", clear: "both" }}
-                ref={el => {
+                ref={(el) => {
                   this.listEnd = el;
                 }}
               />
@@ -56,7 +56,7 @@ class Cards extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => ({
-  cards: state.listsById[ownProps.listId].cards
+  cards: state.listsById[ownProps.listId].cards,
 });
 
 export default connect(mapStateToProps)(Cards);

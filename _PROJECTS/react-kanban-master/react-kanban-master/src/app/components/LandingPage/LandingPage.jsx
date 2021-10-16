@@ -12,7 +12,7 @@ import "./LandingPage.scss";
 
 class LandingPage extends Component {
   static propTypes = {
-    dispatch: PropTypes.func.isRequired
+    dispatch: PropTypes.func.isRequired,
   };
 
   enterAsGuest = () => {
@@ -49,7 +49,8 @@ class LandingPage extends Component {
               rel="noopener noreferrer"
             >
               GitHub
-            </a>.
+            </a>
+            .
           </p>
           <div className="signin-buttons">
             <div>

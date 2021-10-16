@@ -150,7 +150,7 @@ export const mixin = {
     }
   `,
   backgroundImage: imageURL => css`
-    background-image: url("${imageURL}");
+    background-image: url('${imageURL}');
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
