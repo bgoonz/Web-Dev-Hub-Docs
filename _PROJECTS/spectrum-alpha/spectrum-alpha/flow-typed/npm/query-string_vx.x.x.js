@@ -23,7 +23,6 @@ declare module 'query-string' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'query-string/index' {
   declare module.exports: $Exports<'query-string'>;

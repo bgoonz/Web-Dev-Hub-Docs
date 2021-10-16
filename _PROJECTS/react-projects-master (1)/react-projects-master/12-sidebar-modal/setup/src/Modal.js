@@ -1,7 +1,7 @@
-import React from 'react'
-import { FaTimes } from 'react-icons/fa'
+import React from "react";
+import { FaTimes } from "react-icons/fa";
 const Modal = () => {
-  return <h2>Modal</h2>
-}
+  return <h2>Modal</h2>;
+};
 
-export default Modal
+export default Modal;

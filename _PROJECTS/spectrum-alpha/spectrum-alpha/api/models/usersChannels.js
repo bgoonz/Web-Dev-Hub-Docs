@@ -76,7 +76,7 @@ const removeUsersChannelMemberships = async (userId: string) => {
 
   if (!usersChannels || usersChannels.length === 0) return;
 
-  const memberCountPromises = usersChannels.map(usersChannel => {
+  const memberCountPromises = usersChannels.map((usersChannel) => {
     return decrementMemberCount(usersChannel.channelId);
   });
 
@@ -127,7 +127,7 @@ const getModeratorsInChannel = (channelId: string): Promise<Array<string>> => {
         index: 'channelIdAndRole',
       })
       // return an array of the userIds to be loaded by gql
-      .map(userChannel => userChannel('userId'))
+      .map((userChannel) => userChannel('userId'))
       .run()
   );
 };
@@ -140,7 +140,7 @@ const getOwnersInChannel = (channelId: string): Promise<Array<string>> => {
         index: 'channelIdAndRole',
       })
       // return an array of the userIds to be loaded by gql
-      .map(userChannel => userChannel('userId'))
+      .map((userChannel) => userChannel('userId'))
       .run()
   );
 };
@@ -215,7 +215,7 @@ const getUserChannelIds = (userId: string) => {
     .getAll([userId, 'member'], [userId, 'owner'], [userId, 'moderator'], {
       index: 'userIdAndRole',
     })
-    .map(rec => rec('channelId'))
+    .map((rec) => rec('channelId'))
     .run();
 };
 

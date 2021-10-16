@@ -8,28 +8,31 @@ import { getUsersPermissionsInCommunities } from '../models/usersCommunities';
 import { getUsersPermissionsInChannels } from '../models/usersChannels';
 import createLoader from './create-loader';
 
-export const __createUserLoader = createLoader(users => getUsers(users), 'id');
+export const __createUserLoader = createLoader(
+  (users) => getUsers(users),
+  'id'
+);
 
 export const __createUserByUsernameLoader = createLoader(
-  users => getUsersByUsername(users),
+  (users) => getUsersByUsername(users),
   'username'
 );
 
 export const __createUserThreadCountLoader = createLoader(
-  users => getUsersThreadCount(users),
+  (users) => getUsersThreadCount(users),
   'id'
 );
 
 export const __createUserPermissionsInCommunityLoader = createLoader(
-  usersCommunities => getUsersPermissionsInCommunities(usersCommunities),
-  input => `${input.userId}|${input.communityId}`,
-  key => (Array.isArray(key) ? `${key[0]}|${key[1]}` : key)
+  (usersCommunities) => getUsersPermissionsInCommunities(usersCommunities),
+  (input) => `${input.userId}|${input.communityId}`,
+  (key) => (Array.isArray(key) ? `${key[0]}|${key[1]}` : key)
 );
 
 export const __createUserPermissionsInChannelLoader = createLoader(
-  usersChannels => getUsersPermissionsInChannels(usersChannels),
-  input => `${input.userId}|${input.channelId}`,
-  key => (Array.isArray(key) ? `${key[0]}|${key[1]}` : key)
+  (usersChannels) => getUsersPermissionsInChannels(usersChannels),
+  (input) => `${input.userId}|${input.channelId}`,
+  (key) => (Array.isArray(key) ? `${key[0]}|${key[1]}` : key)
 );
 
 export default () => {

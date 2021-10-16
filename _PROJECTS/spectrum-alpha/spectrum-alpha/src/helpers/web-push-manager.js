@@ -1,5 +1,5 @@
 function urlB64ToUint8Array(base64String) {
-  const padding = '='.repeat((4 - base64String.length % 4) % 4);
+  const padding = '='.repeat((4 - (base64String.length % 4)) % 4);
   const base64 = (base64String + padding).replace(/-/g, '+').replace(/_/g, '/');
 
   const rawData = window.atob(base64);
@@ -20,7 +20,7 @@ class WebPushManager {
     this.subscriptionAttempt = false;
   }
 
-  set = manager => {
+  set = (manager) => {
     this.manager = manager;
     if (this.subscriptionAttempt) {
       this.subscribe();
@@ -47,7 +47,7 @@ class WebPushManager {
       this.unsubscriptionAttempt = true;
       return Promise.resolve(true);
     }
-    return this.getSubscription().then(subscription =>
+    return this.getSubscription().then((subscription) =>
       subscription.unsubscribe()
     );
   };
@@ -55,7 +55,7 @@ class WebPushManager {
   getPermissionState = () => {
     // No compat
     if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
-      return new Promise(res => {
+      return new Promise((res) => {
         res(false);
       });
     }
@@ -63,10 +63,10 @@ class WebPushManager {
     if (navigator.permissions) {
       return navigator.permissions
         .query({ name: 'notifications' })
-        .then(result => result.state);
+        .then((result) => result.state);
     }
     // New API
-    return new Promise(res => {
+    return new Promise((res) => {
       res(Notification.permission);
     });
   };
@@ -76,7 +76,7 @@ class WebPushManager {
   };
 
   getSubscription = () =>
-    new Promise(res => {
+    new Promise((res) => {
       // Recursively call this method until we got a manager
       if (!this.manager) {
         setTimeout(() => {

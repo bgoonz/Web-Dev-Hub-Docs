@@ -9,11 +9,7 @@ const moderator = data.users.find(({ username }) => username === 'brian');
 const noPermissionUser = data.users.find(({ username }) => username === 'bryn');
 
 afterEach(() => {
-  return db
-    .table('channels')
-    .filter({ slug: 'test-channel' })
-    .delete()
-    .run();
+  return db.table('channels').filter({ slug: 'test-channel' }).delete().run();
 });
 
 const variables = {
@@ -30,13 +26,13 @@ const variables = {
 it('should create a channel if user is owner', async () => {
   const query = /* GraphQL */ `
     mutation createChannel($input: CreateChannelInput!) {
-      createChannel (input: $input) {
+      createChannel(input: $input) {
         name
         slug
         description
         isPrivate
       }
-    },
+    }
   `;
 
   const context = {
@@ -52,7 +48,7 @@ it('should create a channel if user is owner', async () => {
 it('should prevent duplicate channel slugs in the same community', async () => {
   const query = /* GraphQL */ `
     mutation createChannel($input: CreateChannelInput!) {
-      createChannel (input: $input) {
+      createChannel(input: $input) {
         id
         name
         slug
@@ -60,7 +56,7 @@ it('should prevent duplicate channel slugs in the same community', async () => {
         isPrivate
         createdAt
       }
-    },
+    }
   `;
 
   const context = {
@@ -84,7 +80,7 @@ it('should prevent duplicate channel slugs in the same community', async () => {
 it('should prevent signed out users from creating a channel', async () => {
   const query = /* GraphQL */ `
     mutation createChannel($input: CreateChannelInput!) {
-      createChannel (input: $input) {
+      createChannel(input: $input) {
         id
         name
         slug
@@ -92,7 +88,7 @@ it('should prevent signed out users from creating a channel', async () => {
         isPrivate
         createdAt
       }
-    },
+    }
   `;
 
   const context = {
@@ -108,7 +104,7 @@ it('should prevent signed out users from creating a channel', async () => {
 it('should prevent non owners from creating a channel', async () => {
   const query = /* GraphQL */ `
     mutation createChannel($input: CreateChannelInput!) {
-      createChannel (input: $input) {
+      createChannel(input: $input) {
         id
         name
         slug
@@ -116,7 +112,7 @@ it('should prevent non owners from creating a channel', async () => {
         isPrivate
         createdAt
       }
-    },
+    }
   `;
 
   const context = {
@@ -132,7 +128,7 @@ it('should prevent non owners from creating a channel', async () => {
 it('should prevent moderators from creating a channel', async () => {
   const query = /* GraphQL */ `
     mutation createChannel($input: CreateChannelInput!) {
-      createChannel (input: $input) {
+      createChannel(input: $input) {
         id
         name
         slug
@@ -140,7 +136,7 @@ it('should prevent moderators from creating a channel', async () => {
         isPrivate
         createdAt
       }
-    },
+    }
   `;
 
   const context = {

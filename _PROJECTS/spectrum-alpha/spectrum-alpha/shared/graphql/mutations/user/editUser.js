@@ -30,7 +30,7 @@ const editUserOptions = {
     refetchQueries: ['getCurrentUser'],
   },
   props: ({ mutate }) => ({
-    editUser: input =>
+    editUser: (input) =>
       mutate({
         variables: {
           input,

@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return Promise.all([
     r
       .table('usersCommunities')
@@ -6,14 +6,14 @@ exports.up = function(r, conn) {
         reputation: 1,
       })
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
     r
       .tableCreate('reputationEvents')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
@@ -27,7 +27,7 @@ exports.up = function(r, conn) {
           r.row('timestamp'),
         ])
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
@@ -35,11 +35,11 @@ exports.up = function(r, conn) {
   });
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return r
     .tableDrop('reputationEvents')
     .run(conn)
-    .catch(err => {
+    .catch((err) => {
       console.log(err);
       throw err;
     });

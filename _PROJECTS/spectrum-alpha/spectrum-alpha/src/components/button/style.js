@@ -17,11 +17,11 @@ export const StyledLink = styled(Link)`
 `;
 
 export const StyledButton = styled.button`
-  font-size: ${props => (props.size === 'small' ? '15px' : '16px')};
+  font-size: ${(props) => (props.size === 'small' ? '15px' : '16px')};
   font-weight: 600;
   color: ${theme.text.default};
   border-radius: 32px;
-  padding: ${props => (props.size === 'small' ? '6px 12px' : '10px 16px')};
+  padding: ${(props) => (props.size === 'small' ? '6px 12px' : '10px 16px')};
   background: ${theme.bg.wash};
   display: flex;
   flex: none;
@@ -29,7 +29,7 @@ export const StyledButton = styled.button`
   justify-content: center;
   cursor: pointer;
   -webkit-display: none;
-  opacity: ${props => (props.disabled ? '0.6' : '1')};
+  opacity: ${(props) => (props.disabled ? '0.6' : '1')};
   line-height: 1.2;
   transition: box-shadow 0.2s ease-in-out;
 

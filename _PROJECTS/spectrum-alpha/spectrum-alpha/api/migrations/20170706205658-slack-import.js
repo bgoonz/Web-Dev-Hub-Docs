@@ -1,9 +1,9 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return Promise.all([
     r
       .tableCreate('slackImports')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
@@ -14,22 +14,19 @@ exports.up = function(r, conn) {
           .table('slackImports')
           .indexCreate('communityId', r.row('communityId'))
           .run(conn)
-          .catch(err => {
+          .catch((err) => {
             console.log(err);
             throw err;
           }),
-        r
-          .table('users')
-          .indexCreate('email', r.row('email'))
-          .run(conn),
+        r.table('users').indexCreate('email', r.row('email')).run(conn),
       ])
     )
-    .catch(err => {
+    .catch((err) => {
       console.log(err);
       throw err;
     });
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.all([r.tableDrop('slackImports').run(conn)]);
 };

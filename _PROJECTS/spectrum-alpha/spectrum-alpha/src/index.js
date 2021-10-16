@@ -63,7 +63,7 @@ function render() {
 
 Loadable.preloadReady()
   .then(render)
-  .catch(err => {
+  .catch((err) => {
     console.error(err);
   });
 
@@ -74,7 +74,7 @@ OfflinePluginRuntime.install({
 
 if ('serviceWorker' in navigator && 'PushManager' in window) {
   // $FlowIssue
-  navigator.serviceWorker.ready.then(registration => {
+  navigator.serviceWorker.ready.then((registration) => {
     webPushManager.set(registration.pushManager);
   });
 }

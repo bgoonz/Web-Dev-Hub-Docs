@@ -12,5 +12,5 @@ export default async (channel: DBChannel, _: any, ctx: GraphQLContext) => {
     if (!(await canViewChannel(currentUser, id, loaders))) return null;
   }
 
-  return getOwnersInChannel(id).then(users => loaders.user.loadMany(users));
+  return getOwnersInChannel(id).then((users) => loaders.user.loadMany(users));
 };

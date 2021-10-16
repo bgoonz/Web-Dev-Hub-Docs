@@ -41,7 +41,7 @@ export const getCurrentUserDMThreadConnectionOptions = {
     fetchPolicy: 'cache-and-network',
   },
   // $FlowFixMe
-  props: props => ({
+  props: (props) => ({
     ...props,
     dmData: {
       ...props.data,

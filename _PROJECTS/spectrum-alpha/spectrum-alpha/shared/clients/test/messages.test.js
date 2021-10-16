@@ -31,8 +31,8 @@ const createMessage = ({
   messageType: 'text',
 });
 
-const filterRobo = messageGroups =>
-  messageGroups.filter(group => group[0].author.user.id !== 'robo');
+const filterRobo = (messageGroups) =>
+  messageGroups.filter((group) => group[0].author.user.id !== 'robo');
 
 it('should sort messages by timestamp', () => {
   const one = createMessage({

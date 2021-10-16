@@ -10,17 +10,17 @@ const PhotoContainer = styled.div`
   grid-area: cover;
   position: relative;
   width: 100%;
-  flex: 0 0 ${props => (props.large ? '320px' : '96px')};
+  flex: 0 0 ${(props) => (props.large ? '320px' : '96px')};
   background-color: ${theme.bg.reverse};
-  background-image: ${props =>
+  background-image: ${(props) =>
     props.coverURL ? `url(${props.coverURL})` : 'none'};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: ${props => (props.large ? '0' : '12px 12px 0 0')};
+  border-radius: ${(props) => (props.large ? '0' : '12px 12px 0 0')};
 
   @media (max-width: ${MEDIA_BREAK}px) {
-    flex: 0 0 ${props => (props.large ? '160px' : '64px')};
+    flex: 0 0 ${(props) => (props.large ? '160px' : '64px')};
     border-radius: 0;
   }
 `;

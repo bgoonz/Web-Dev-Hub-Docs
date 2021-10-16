@@ -88,9 +88,9 @@ class ThreadFeedPure extends React.Component<Props> {
       threads && threads.length > 0
         ? threads
             .slice()
-            .map(thread => thread.node)
+            .map((thread) => thread.node)
             .filter(
-              thread =>
+              (thread) =>
                 !thread.channel.channelPermissions.isBlocked &&
                 !thread.community.communityPermissions.isBlocked
             )
@@ -104,7 +104,7 @@ class ThreadFeedPure extends React.Component<Props> {
     ) {
       filteredThreads = filteredThreads.filter(
         // $FlowIssue
-        t => t.id !== this.props.data.community.watercooler.id
+        (t) => t.id !== this.props.data.community.watercooler.id
       );
     }
     if (
@@ -114,7 +114,7 @@ class ThreadFeedPure extends React.Component<Props> {
     ) {
       filteredThreads = filteredThreads.filter(
         // $FlowIssue
-        t => t.id !== this.props.data.community.pinnedThread.id
+        (t) => t.id !== this.props.data.community.pinnedThread.id
       );
     }
     if (
@@ -124,7 +124,7 @@ class ThreadFeedPure extends React.Component<Props> {
     ) {
       filteredThreads = filteredThreads.filter(
         // $FlowIssue
-        t => t.id !== this.props.data.channel.community.watercoolerId
+        (t) => t.id !== this.props.data.channel.community.watercoolerId
       );
     }
 
@@ -149,7 +149,7 @@ class ThreadFeedPure extends React.Component<Props> {
             hasMore={this.props.data.hasNextPage}
             loader={<LoadingInboxThread key={0} />}
           >
-            {uniqueThreads.map(thread => {
+            {uniqueThreads.map((thread) => {
               return (
                 <ErrorBoundary key={thread.id}>
                   <InboxThread data={thread} viewContext={viewContext} />
@@ -204,7 +204,7 @@ class ThreadFeedPure extends React.Component<Props> {
   }
 }
 
-const map = state => ({
+const map = (state) => ({
   networkOnline: state.connectionStatus.networkOnline,
   websocketConnection: state.connectionStatus.websocketConnection,
 });

@@ -4,11 +4,11 @@ const channel = data.channels[0];
 const privateChannel = data.channels[1];
 
 const community = data.communities.find(
-  community => community.id === channel.communityId
+  (community) => community.id === channel.communityId
 );
 
 const privateCommunity = data.communities.find(
-  community => community.id === privateChannel.communityId
+  (community) => community.id === privateChannel.communityId
 );
 
 const { userId: ownerInChannelId } = data.usersChannels.find(
@@ -43,9 +43,7 @@ describe('deleting a channel', () => {
   it('should delete a channel', () => {
     cy.get('[data-cy="channel-overview"]').should('be.visible');
 
-    cy.get('[data-cy="delete-channel-button"]')
-      .should('be.visible')
-      .click();
+    cy.get('[data-cy="delete-channel-button"]').should('be.visible').click();
 
     cy.get('[data-cy="delete-button"]').should('be.visible');
   });

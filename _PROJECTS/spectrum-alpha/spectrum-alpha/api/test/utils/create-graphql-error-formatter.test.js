@@ -46,7 +46,7 @@ const resolvers = {
     edges: () => [6],
   },
   CommunityThreadEdge: {
-    node: id => ({ id }),
+    node: (id) => ({ id }),
   },
   Thread: {
     channel: () => null,

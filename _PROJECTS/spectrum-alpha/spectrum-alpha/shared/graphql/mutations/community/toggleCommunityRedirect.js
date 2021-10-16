@@ -14,7 +14,7 @@ export const toggleCommunityRedirectMutation = gql`
 
 const toggleCommunityRedirectOptions = {
   props: ({ mutate }) => ({
-    toggleCommunityRedirect: communityId =>
+    toggleCommunityRedirect: (communityId) =>
       mutate({
         variables: {
           communityId,

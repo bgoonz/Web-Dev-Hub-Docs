@@ -35,7 +35,7 @@ export const createNewUsersSettings = (
       { returnChanges: 'always' }
     )
     .run()
-    .then(res => res.changes[0].new_val);
+    .then((res) => res.changes[0].new_val);
 };
 
 export const getUsersSettings = (userId: string): Promise<Object> => {
@@ -43,7 +43,7 @@ export const getUsersSettings = (userId: string): Promise<Object> => {
     .table('usersSettings')
     .getAll(userId, { index: 'userId' })
     .run()
-    .then(results => {
+    .then((results) => {
       if (results && results.length > 0) {
         // if the user already has a relationship with the thread we don't need to do anything, return
         return results[0];

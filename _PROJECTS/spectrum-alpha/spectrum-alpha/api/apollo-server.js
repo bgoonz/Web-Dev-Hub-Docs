@@ -74,7 +74,7 @@ const server = new ProtectedApolloServer({
       loaders,
       updateCookieUserData: (data: DBUser) =>
         new Promise((res, rej) =>
-          req.login(data, err => (err ? rej(err) : res()))
+          req.login(data, (err) => (err ? rej(err) : res()))
         ),
       req,
       user: currentUser,
@@ -85,14 +85,14 @@ const server = new ProtectedApolloServer({
     onConnect: (connectionParams, rawSocket) => {
       connections++;
       return getUserIdFromReq(rawSocket.upgradeReq)
-        .then(id => (id ? getUserById(id) : null))
-        .then(user => {
+        .then((id) => (id ? getUserById(id) : null))
+        .then((user) => {
           return {
             user: user || null,
             loaders: createLoaders({ cache: false }),
           };
         })
-        .catch(err => {
+        .catch((err) => {
           console.error(err);
           return {
             loaders: createLoaders({ cache: false }),

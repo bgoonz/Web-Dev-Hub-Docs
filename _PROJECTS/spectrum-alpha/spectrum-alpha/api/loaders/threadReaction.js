@@ -3,7 +3,7 @@ import { getThreadReactions } from '../models/threadReaction';
 import createLoader from './create-loader';
 
 export const __createThreadReactionLoader = createLoader(
-  threadIds => getThreadReactions(threadIds),
+  (threadIds) => getThreadReactions(threadIds),
   'group'
 );
 

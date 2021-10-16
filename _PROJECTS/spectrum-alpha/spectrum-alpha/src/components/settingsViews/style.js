@@ -31,8 +31,8 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   padding: 8px;
-  flex: 1 0 ${props => (props.fullWidth ? '100%' : '33%')};
-  max-width: ${props => (props.fullWidth ? '1200px' : '600px')};
+  flex: 1 0 ${(props) => (props.fullWidth ? '100%' : '33%')};
+  max-width: ${(props) => (props.fullWidth ? '1200px' : '600px')};
 
   @media (max-width: ${MEDIA_BREAK}px) {
     flex: 1 0 100%;
@@ -154,10 +154,10 @@ export const SubnavListItem = styled.li`
   position: relative;
   top: 1px;
   border-bottom: 1px solid
-    ${props => (props.active ? props.theme.text.default : 'transparent')};
-  color: ${props =>
+    ${(props) => (props.active ? props.theme.text.default : 'transparent')};
+  color: ${(props) =>
     props.active ? props.theme.text.default : props.theme.text.alt};
-  font-weight: ${props => (props.active ? '500' : '400')};
+  font-weight: ${(props) => (props.active ? '500' : '400')};
 
   &:hover {
     color: ${theme.text.default};

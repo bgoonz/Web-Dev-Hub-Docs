@@ -34,7 +34,7 @@ class Attachment extends React.Component<Props> {
       <div className="attachment-container">
         <Container data-cy="thread-attachment">
           <LinkWrapper
-            onClick={e => e.stopPropagation()}
+            onClick={(e) => e.stopPropagation()}
             to={{ pathname: getThreadLink(thread), state: { modal: true } }}
           />
           <AvatarWrapper>

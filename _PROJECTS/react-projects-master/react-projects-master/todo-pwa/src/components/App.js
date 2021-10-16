@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import styled from "styled-components";
 
-import AddTodo from './AddTodo';
-import TodoList from './TodoList';
+import AddTodo from "./AddTodo";
+import TodoList from "./TodoList";
 
 const Container = styled.div`
   background-color: #f1f1f1;
@@ -25,7 +25,7 @@ class App extends Component {
           <AddTodo />
           <TodoList />
         </Paper>
-      </Container>      
+      </Container>
     );
   }
 }

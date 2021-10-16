@@ -53,7 +53,7 @@ export default (
           });
   }
 
-  return getThreads.then(result => ({
+  return getThreads.then((result) => ({
     pageInfo: {
       // $FlowFixMe => super weird
       hasNextPage: result && result.length >= first,

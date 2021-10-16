@@ -23,7 +23,6 @@ declare module 'hsts' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'hsts/index' {
   declare module.exports: $Exports<'hsts'>;

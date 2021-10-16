@@ -1,94 +1,94 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return (
     Promise.all([
       r
         .tableCreate('threads')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('channels')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('communities')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('messages')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('sessions')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('reactions')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('directMessageThreads')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('users')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('recurringPayments')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('invoices')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('usersCommunities')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('usersChannels')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('usersDirectMessageThreads')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
@@ -101,7 +101,7 @@ exports.up = function(r, conn) {
             .table('users')
             .indexCreate('username', r.row('username'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -110,7 +110,7 @@ exports.up = function(r, conn) {
             .table('recurringPayments')
             .indexCreate('userId', r.row('userId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -119,7 +119,7 @@ exports.up = function(r, conn) {
             .table('invoices')
             .indexCreate('communityId', r.row('communityId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -128,7 +128,7 @@ exports.up = function(r, conn) {
             .table('usersCommunities')
             .indexCreate('userId', r.row('userId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -136,7 +136,7 @@ exports.up = function(r, conn) {
             .table('usersCommunities')
             .indexCreate('communityId', r.row('communityId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -145,7 +145,7 @@ exports.up = function(r, conn) {
             .table('usersChannels')
             .indexCreate('userId', r.row('userId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -153,7 +153,7 @@ exports.up = function(r, conn) {
             .table('usersChannels')
             .indexCreate('channelId', r.row('channelId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -162,7 +162,7 @@ exports.up = function(r, conn) {
             .table('usersDirectMessageThreads')
             .indexCreate('userId', r.row('userId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -170,7 +170,7 @@ exports.up = function(r, conn) {
             .table('usersDirectMessageThreads')
             .indexCreate('threadId', r.row('threadId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -179,7 +179,7 @@ exports.up = function(r, conn) {
             .table('directMessageThreads')
             .indexCreate('participants', { multi: true })
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -188,7 +188,7 @@ exports.up = function(r, conn) {
             .table('threads')
             .indexCreate('creatorId', r.row('creatorId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -197,7 +197,7 @@ exports.up = function(r, conn) {
             .table('threads')
             .indexCreate('channelId', r.row('channelId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -206,7 +206,7 @@ exports.up = function(r, conn) {
             .table('threads')
             .indexCreate('communityId', r.row('communityId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -215,7 +215,7 @@ exports.up = function(r, conn) {
             .table('threads')
             .indexCreate('lastActive', r.row('lastActive'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -224,7 +224,7 @@ exports.up = function(r, conn) {
             .table('reactions')
             .indexCreate('messageId', r.row('messageId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -233,7 +233,7 @@ exports.up = function(r, conn) {
             .table('channels')
             .indexCreate('communityId', r.row('communityId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -242,113 +242,113 @@ exports.up = function(r, conn) {
             .table('messages')
             .indexCreate('threadId', r.row('threadId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
         ])
       )
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       })
   );
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.all([
     r
       .tableDrop('threads')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
     r
       .tableDrop('channels')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
     r
       .tableDrop('communities')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
     r
       .tableDrop('messages')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
     r
       .tableDrop('sessions')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
     r
       .tableDrop('users')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
     r
       .tableDrop('directMessageThreads')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
     r
       .tableDrop('reactions')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
     r
       .tableDrop('recurringPayments')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
     r
       .tableDrop('invoices')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
     r
       .tableDrop('usersCommunities')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
     r
       .tableDrop('usersChannels')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
     r
       .tableDrop('usersDirectMessageThreads')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
-  ]).catch(err => {
+  ]).catch((err) => {
     console.log(err);
     throw err;
   });

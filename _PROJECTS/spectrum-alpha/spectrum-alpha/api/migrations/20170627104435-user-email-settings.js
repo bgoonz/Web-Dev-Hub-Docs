@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return Promise.all([
     r
       .tableCreate('usersSettings')
@@ -14,14 +14,18 @@ exports.up = function(r, conn) {
       .then(() =>
         Promise.all([
           // Get all user ids while we wait for the index to finish creating
-          r.table('users').withFields('id').map(user => user('id')).run(conn),
+          r
+            .table('users')
+            .withFields('id')
+            .map((user) => user('id'))
+            .run(conn),
           r.table('usersSettings').indexWait('userId').run(conn),
         ])
       )
       .then(([userIds]) => userIds.toArray())
-      .then(userIds =>
+      .then((userIds) =>
         Promise.all(
-          userIds.map(id =>
+          userIds.map((id) =>
             r
               .table('usersSettings')
               .insert({
@@ -38,13 +42,13 @@ exports.up = function(r, conn) {
           )
         )
       )
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
   ]);
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return r.tableDrop('usersSettings').run(conn);
 };

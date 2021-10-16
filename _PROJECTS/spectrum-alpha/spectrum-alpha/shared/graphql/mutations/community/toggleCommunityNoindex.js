@@ -14,7 +14,7 @@ export const toggleCommunityNoindexMutation = gql`
 
 const toggleCommunityNoindexOptions = {
   props: ({ mutate }) => ({
-    toggleCommunityNoindex: communityId =>
+    toggleCommunityNoindex: (communityId) =>
       mutate({
         variables: {
           communityId,

@@ -65,7 +65,7 @@ export const createReadQuery = (callback: any) => {
 
     const result = await input.query
       .run()
-      .then(input.process ? input.process : res => res);
+      .then(input.process ? input.process : (res) => res);
 
     // const tags = input.tags(result).filter(Boolean);
     // await queryCache.set(queryString, result, tags);

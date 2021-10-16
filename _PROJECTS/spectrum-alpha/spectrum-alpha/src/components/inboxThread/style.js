@@ -11,20 +11,21 @@ export const InboxThreadItem = styled.div`
   min-width: 0;
   overflow-x: hidden;
   border-bottom: 1px solid
-    ${props => (props.active ? props.theme.brand.alt : props.theme.bg.divider)};
-  background: ${props =>
+    ${(props) =>
+      props.active ? props.theme.brand.alt : props.theme.bg.divider};
+  background: ${(props) =>
     props.active ? props.theme.brand.alt : props.theme.bg.default};
   position: relative;
   padding: 12px 20px 12px 12px;
 
   &:hover {
-    background: ${props =>
+    background: ${(props) =>
       props.active ? props.theme.brand.alt : props.theme.bg.wash};
   }
 
   &:last-of-type {
     border-bottom: 1px solid
-      ${props =>
+      ${(props) =>
         props.active ? props.theme.brand.alt : props.theme.bg.divider};
   }
 `;
@@ -66,7 +67,7 @@ export const Column = styled.div`
 export const ThreadTitle = styled.h3`
   font-size: 15px;
   font-weight: 600;
-  color: ${props =>
+  color: ${(props) =>
     props.active ? props.theme.text.reverse : props.theme.text.default};
   max-width: 100%;
   line-height: 1.4;
@@ -75,7 +76,7 @@ export const ThreadTitle = styled.h3`
 export const ThreadSnippet = styled.h4`
   font-size: 15px;
   font-weight: 400;
-  color: ${props =>
+  color: ${(props) =>
     props.active ? props.theme.text.reverse : props.theme.text.default};
   max-width: 100%;
   line-height: 1.4;
@@ -100,7 +101,7 @@ export const ThreadActivityWrapper = styled.div`
 export const ThreadStatusWrapper = styled(ThreadActivityWrapper)`
   flex: auto;
   justify-content: flex-start;
-  color: ${props =>
+  color: ${(props) =>
     props.active ? props.theme.text.reverse : props.theme.text.alt};
 
   .icon {
@@ -117,7 +118,7 @@ export const CountWrapper = styled.div`
   flex: none;
   font-size: 13px;
   pointer-events: none;
-  color: ${props =>
+  color: ${(props) =>
     props.active ? props.theme.text.reverse : props.theme.text.alt};
   font-weight: 500;
   align-items: center;

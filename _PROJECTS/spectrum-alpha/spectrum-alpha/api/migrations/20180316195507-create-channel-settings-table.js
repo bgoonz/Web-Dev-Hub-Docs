@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return r
     .tableCreate('channelSettings')
     .run(conn)
@@ -8,12 +8,12 @@ exports.up = function(r, conn) {
         .indexCreate('channelId', r.row('channelId'))
         .run(conn)
     )
-    .catch(err => {
+    .catch((err) => {
       console.error(err);
       throw err;
     });
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.all([r.tableDrop('channelSettings').run(conn)]);
 };

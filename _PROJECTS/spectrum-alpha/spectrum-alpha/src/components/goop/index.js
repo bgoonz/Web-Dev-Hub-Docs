@@ -35,8 +35,8 @@ export const SvgWrapper = styled.div`
   bottom: -4px;
   left: -5%;
   right: -5%;
-  display: ${props => (props.goop === 0 ? 'none' : 'inline-block')};
-  color: ${props => eval(`props.theme.${props.color}`)};
+  display: ${(props) => (props.goop === 0 ? 'none' : 'inline-block')};
+  color: ${(props) => eval(`props.theme.${props.color}`)};
   pointer-events: none;
 
   @media (max-width: ${MEDIA_BREAK}px) {

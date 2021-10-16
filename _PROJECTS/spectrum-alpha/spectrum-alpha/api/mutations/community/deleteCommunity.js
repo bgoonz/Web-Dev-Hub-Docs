@@ -41,17 +41,17 @@ export default requireAuth(async (_: any, args: Input, ctx: GraphQLContext) => {
 
   // after a community has been deleted, we need to mark all the channels
   // as deleted
-  const removeAllChannels = allChannelsInCommunity.map(channel =>
+  const removeAllChannels = allChannelsInCommunity.map((channel) =>
     deleteChannel(channel.id, user.id)
   );
 
   // and remove all relationships to the deleted channels
-  const removeAllRelationshipsToChannels = allChannelsInCommunity.map(channel =>
-    removeMembersInChannel(channel.id)
+  const removeAllRelationshipsToChannels = allChannelsInCommunity.map(
+    (channel) => removeMembersInChannel(channel.id)
   );
 
   // and mark all the threads in that community as deleted
-  const removeAllThreadsInCommunity = allThreadsInCommunity.map(thread =>
+  const removeAllThreadsInCommunity = allThreadsInCommunity.map((thread) =>
     deleteThread(thread.id, user.id)
   );
 

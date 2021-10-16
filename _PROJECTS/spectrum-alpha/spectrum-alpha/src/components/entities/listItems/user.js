@@ -60,7 +60,7 @@ const User = (props: Props) => {
   return (
     <ConditionalWrap
       condition={isLink}
-      wrap={children => (
+      wrap={(children) => (
         <CardLink to={`/users/${userObject.username}`}>{children}</CardLink>
       )}
     >
@@ -96,7 +96,4 @@ const User = (props: Props) => {
   );
 };
 
-export const UserListItem = compose(
-  withRouter,
-  connect()
-)(User);
+export const UserListItem = compose(withRouter, connect())(User);

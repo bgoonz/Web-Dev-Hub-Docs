@@ -98,11 +98,11 @@ export const Action = styled.li`
 `;
 
 export const LikeAction = styled(Action)`
-  color: ${props =>
+  color: ${(props) =>
     props.hasReacted ? props.theme.warn.alt : props.theme.text.secondary};
 
   &:hover {
-    color: ${props =>
+    color: ${(props) =>
       props.hasReacted ? props.theme.warn.alt : props.theme.text.default};
   }
 `;
@@ -131,14 +131,14 @@ export const OuterMessageContainer = styled.div`
   align-self: stretch;
   position: relative;
   padding-right: 16px;
-  background: ${props =>
+  background: ${(props) =>
     props.selected
       ? props.theme.special.wash
       : props.error
       ? props.theme.warn.wash
       : 'transparent'};
 
-  ${props =>
+  ${(props) =>
     props.selected &&
     css`
       background: ${props.theme.special.wash};
@@ -156,7 +156,7 @@ export const OuterMessageContainer = styled.div`
   &:hover,
   &:focus,
   &:active {
-    background: ${props =>
+    background: ${(props) =>
       props.selected
         ? props.theme.special.wash
         : props.error
@@ -240,7 +240,7 @@ const Bubble = styled.div`
 export const Text = styled(Bubble)`
   font-size: 16px;
   line-height: 1.4;
-  color: ${props =>
+  color: ${(props) =>
     props.error ? props.theme.warn.default : props.theme.text.default};
   font-weight: 400;
   display: flex;
@@ -359,7 +359,7 @@ export const QuotedParagraph = styled.div`
     margin: 0;
     margin-top: 8px;
     width: 100%;
-    border: 1px solid ${props => hexa(props.theme.brand.border, 0.5)};
+    border: 1px solid ${(props) => hexa(props.theme.brand.border, 0.5)};
     color: ${theme.text.alt};
   }
 `;
@@ -381,7 +381,7 @@ export const QuoteWrapper = styled.div`
   border-left: 4px solid ${theme.bg.border};
   color: ${theme.text.alt};
   padding: 4px 12px 4px 16px;
-  max-height: ${props => (props.expanded ? 'none' : '7em')};
+  max-height: ${(props) => (props.expanded ? 'none' : '7em')};
   margin-top: 4px;
   margin-bottom: 8px;
   overflow-y: hidden;
@@ -436,10 +436,10 @@ export const EditorInput = styled(EditorWrapper)`
   padding: 8px 16px;
   transition: padding 0.2s ease-in-out;
   border-radius: 4px;
-  border: 1px solid ${props => props.theme.bg.border};
+  border: 1px solid ${(props) => props.theme.bg.border};
   transition: border 0.3s ease-out;
-  color: ${props => props.theme.text.secondary};
-  background: ${props => props.theme.bg.default};
+  color: ${(props) => props.theme.text.secondary};
+  background: ${(props) => props.theme.bg.default};
   max-width: 100%;
   word-break: break-all;
 
@@ -449,20 +449,20 @@ export const EditorInput = styled(EditorWrapper)`
   }
 
   &::placeholder {
-    color: ${props => props.theme.text.placeholder};
+    color: ${(props) => props.theme.text.placeholder};
   }
   &::-webkit-input-placeholder {
-    color: ${props => props.theme.text.placeholder};
+    color: ${(props) => props.theme.text.placeholder};
   }
   &:-moz-placeholder {
-    color: ${props => props.theme.text.placeholder};
+    color: ${(props) => props.theme.text.placeholder};
   }
   &:-ms-input-placeholder {
-    color: ${props => props.theme.text.placeholder};
+    color: ${(props) => props.theme.text.placeholder};
   }
 
   &:hover {
-    border-color: ${props => props.theme.text.alt};
+    border-color: ${(props) => props.theme.text.alt};
     transition: border-color 0.2s ease-in;
   }
 
@@ -495,7 +495,7 @@ export const EditActions = styled.div`
 export const EditedIndicator = styled.span`
   display: block;
   font-size: 11px;
-  color: ${props => props.theme.text.alt};
+  color: ${(props) => props.theme.text.alt};
 `;
 
 export const ThreadAttachmentsContainer = styled.ul``;

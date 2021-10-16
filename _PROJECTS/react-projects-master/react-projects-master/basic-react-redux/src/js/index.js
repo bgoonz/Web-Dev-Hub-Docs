@@ -7,8 +7,8 @@ import App from "../js/components/App";
 
 // Provider to init redux store with app
 render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById("app")
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("app")
 );

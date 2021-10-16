@@ -1032,30 +1032,30 @@ export const LoadingThreadView = (): React$Element<any> => (
 );
 
 export const displayLoadingState = branch(
-  props => !props.data || props.data.loading,
+  (props) => !props.data || props.data.loading,
   renderComponent(Loading)
 );
 
 export const displayLoadingGallery = branch(
-  props => !props.data || props.data.loading,
+  (props) => !props.data || props.data.loading,
   renderComponent(LoadingGallery)
 );
 
 export const displayLoadingNavbar = branch(
-  props => !props.data || props.data.loading || renderComponent(LoadingNavbar)
+  (props) => !props.data || props.data.loading || renderComponent(LoadingNavbar)
 );
 
 export const displayLoadingCard = branch(
-  props => !props.data || props.data.loading,
+  (props) => !props.data || props.data.loading,
   renderComponent(LoadingCard)
 );
 
 export const displayLoadingThreadView = branch(
-  props => !props.data,
+  (props) => !props.data,
   renderComponent(LoadingThreadView)
 );
 
 export const displayLoadingComposer = branch(
-  props => !props.data.user && !props.data.error,
+  (props) => !props.data.user && !props.data.error,
   renderComponent(LoadingComposer)
 );

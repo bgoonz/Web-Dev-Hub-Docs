@@ -13,7 +13,7 @@ const BaseColumn = styled(FlexCol)`
     max-width: 100%;
   }
 
-  ${p =>
+  ${(p) =>
     p.hideOnMobile &&
     css`
       @media screen and (max-width: ${MEDIA_BREAK}px) {

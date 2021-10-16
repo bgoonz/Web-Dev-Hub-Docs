@@ -36,6 +36,6 @@ export default requireAuth(async (_: any, args: Input, ctx: GraphQLContext) => {
   if (allThreadsInChannel.length === 0) return true;
 
   return allThreadsInChannel.map(
-    async thread => await deleteThread(thread.id, user.id)
+    async (thread) => await deleteThread(thread.id, user.id)
   );
 });

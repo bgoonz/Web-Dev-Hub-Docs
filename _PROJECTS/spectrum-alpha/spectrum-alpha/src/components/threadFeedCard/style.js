@@ -143,7 +143,7 @@ export const PinnedBanner = styled.span`
   width: 72px;
   height: 72px;
   background-color: ${theme.special.default};
-  background-image: ${props =>
+  background-image: ${(props) =>
     Gradient(props.theme.special.alt, props.theme.special.default)};
   transform: rotate(45deg);
   top: -36px;

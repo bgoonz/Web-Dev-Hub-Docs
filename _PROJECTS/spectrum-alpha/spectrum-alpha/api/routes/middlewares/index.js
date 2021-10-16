@@ -48,7 +48,7 @@ middlewares.use((req, res, next) => {
   next();
 });
 
-const isSerializedJSON = str => str[0] === '{';
+const isSerializedJSON = (str) => str[0] === '{';
 
 // NOTE(@mxstbr): If a logged-in user with a legacy cookie (just the user ID) sends a request
 // we add all the user data to the cookie (by calling req.login) to move them to the new cookie

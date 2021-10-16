@@ -44,6 +44,6 @@ export default isAuthedResolver(
       .then(() => {
         return true;
       })
-      .catch(err => new UserError(err.message));
+      .catch((err) => new UserError(err.message));
   }
 );

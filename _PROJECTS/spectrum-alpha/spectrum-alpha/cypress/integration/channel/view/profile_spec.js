@@ -2,21 +2,21 @@ import data from '../../../../shared/testing/data';
 
 const publicChannel = data.channels[0];
 const privateChannel = data.channels[1];
-const archivedChannel = data.channels.find(c => c.slug === 'archived');
-const deletedChannel = data.channels.find(c => c.slug === 'deleted');
+const archivedChannel = data.channels.find((c) => c.slug === 'archived');
+const deletedChannel = data.channels.find((c) => c.slug === 'deleted');
 const publicChannelInPrivateCommunity = data.channels.find(
-  c => c.slug === 'private-general'
+  (c) => c.slug === 'private-general'
 );
 
 const privateCommunity = data.communities.find(
-  community => community.id === publicChannelInPrivateCommunity.communityId
+  (community) => community.id === publicChannelInPrivateCommunity.communityId
 );
 
 const community = data.communities.find(
-  community => community.id === publicChannel.communityId
+  (community) => community.id === publicChannel.communityId
 );
 
-const bryn = data.users.find(user => user.username === 'bryn');
+const bryn = data.users.find((user) => user.username === 'bryn');
 
 const { userId: blockedInChannelId } = data.usersChannels.find(
   ({ channelId, isBlocked }) => channelId === publicChannel.id && isBlocked

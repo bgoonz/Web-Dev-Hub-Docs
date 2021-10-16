@@ -37,7 +37,7 @@ const generateUser = () => {
   };
 };
 
-const generateUsersSettings = userId => {
+const generateUsersSettings = (userId) => {
   return {
     id: uuid(),
     userId,
@@ -75,7 +75,7 @@ const generateCommunity = () => {
   };
 };
 
-const generateChannel = communityId => {
+const generateChannel = (communityId) => {
   const name = faker.commerce.department();
 
   return {
@@ -118,14 +118,14 @@ const generateUsersCommunities = (communityId, userId) => {
 const generateUsersChannels = (channels, usersCommunities, userId) => {
   // figure out which communities the user being evaulated is a member of
   let possibleCommunities = usersCommunities.filter(
-    elem => elem.userId === userId
+    (elem) => elem.userId === userId
   );
   // make sure they are a member of the community
   possibleCommunities = possibleCommunities
-    .filter(elem => elem.isMember || elem.isOwner || elem.isModerator)
-    .map(elem => elem.communityId);
+    .filter((elem) => elem.isMember || elem.isOwner || elem.isModerator)
+    .map((elem) => elem.communityId);
   let possibleChannels = channels.filter(
-    channel => possibleCommunities.indexOf(channel.communityId) > -1
+    (channel) => possibleCommunities.indexOf(channel.communityId) > -1
   );
 
   // for each of those communities, construct an array of channels that are in
@@ -133,7 +133,7 @@ const generateUsersChannels = (channels, usersCommunities, userId) => {
   // const possibleChannels = possibleCommunities.map(community => channels.filter(channel => channel.communityId === community.id))
 
   // for each of hte possible channels, generate a new usersChannels object
-  const foo = possibleChannels.map(channel => {
+  const foo = possibleChannels.map((channel) => {
     const isOwner = faker.random.boolean();
     // for ease of use, set to false
     const isModerator = false;
@@ -206,7 +206,7 @@ const generateUsersThreads = (threadId, userId) => {
   };
 };
 
-const generateDirectMessageThread = users => {
+const generateDirectMessageThread = (users) => {
   const createdAt = faker.date.past(2);
   const threadLastActive = faker.date.between(createdAt, faker.date.recent());
 

@@ -23,7 +23,6 @@ declare module 'express-enforces-ssl' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'express-enforces-ssl/index' {
   declare module.exports: $Exports<'express-enforces-ssl'>;

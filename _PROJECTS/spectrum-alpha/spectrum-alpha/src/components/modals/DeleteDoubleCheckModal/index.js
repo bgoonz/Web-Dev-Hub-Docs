@@ -70,7 +70,7 @@ export const deleteMessageWithToast = (
         dispatch(addToastWithTimeout('neutral', 'Message deleted.'));
       }
     })
-    .catch(err => {
+    .catch((err) => {
       dispatch(
         addToastWithTimeout(
           'error',
@@ -129,7 +129,7 @@ class DeleteDoubleCheckModal extends React.Component<Props, State> {
             }
             return;
           })
-          .catch(err => {
+          .catch((err) => {
             dispatch(
               addToastWithTimeout(
                 'error',
@@ -157,7 +157,7 @@ class DeleteDoubleCheckModal extends React.Component<Props, State> {
             }
             return;
           })
-          .catch(err => {
+          .catch((err) => {
             dispatch(
               addToastWithTimeout(
                 'error',
@@ -185,13 +185,11 @@ class DeleteDoubleCheckModal extends React.Component<Props, State> {
             }
             return;
           })
-          .catch(err => {
+          .catch((err) => {
             dispatch(
               addToastWithTimeout(
                 'error',
-                `Sorry, we weren't able to delete this community. ${
-                  err.message
-                }`
+                `Sorry, we weren't able to delete this community. ${err.message}`
               )
             );
             this.setState({
@@ -263,7 +261,7 @@ const DeleteDoubleCheckModalWithMutations = compose(
   withRouter
 )(DeleteDoubleCheckModal);
 
-const map = state => ({
+const map = (state) => ({
   isOpen: state.modals.isOpen,
   modalProps: state.modals.modalProps,
 });

@@ -12,7 +12,7 @@ export default async ({ id }: DBCommunity, _: any, ctx: GraphQLContext) => {
     return null;
   }
 
-  return loaders.communitySettings.load(id).then(settings => {
+  return loaders.communitySettings.load(id).then((settings) => {
     return settings.joinSettings;
   });
 };

@@ -27,13 +27,13 @@ describe('queries', () => {
 
   it('should return null for a non-existent id', async () => {
     const query = /* GraphQL */ `
-			{
-				user(id: "non-existent") {
-					id
+      {
+        user(id: "non-existent") {
+          id
           username
-				}
-			}
-		`;
+        }
+      }
+    `;
 
     expect.assertions(1);
     const result = await request(query);

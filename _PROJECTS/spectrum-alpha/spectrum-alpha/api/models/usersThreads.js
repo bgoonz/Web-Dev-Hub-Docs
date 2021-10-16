@@ -31,7 +31,7 @@ export const getParticipantsInThreads = (threadIds: Array<string>) => {
     .getAll(...threadIds, { index: 'threadId' })
     .filter({ isParticipant: true })
     .eqJoin('userId', db.table('users'))
-    .group(rec => rec('left')('threadId'))
+    .group((rec) => rec('left')('threadId'))
     .without({
       left: ['createdAt', 'id', 'userId'],
     })

@@ -7,24 +7,24 @@ const channelsByCommunitiesQuery = (...communityIds: string[]) =>
   db
     .table('channels')
     .getAll(...communityIds, { index: 'communityId' })
-    .filter(channel => channel.hasFields('deletedAt').not());
+    .filter((channel) => channel.hasFields('deletedAt').not());
 
 const channelsByIdsQuery = (...channelIds: string[]) =>
   db
     .table('channels')
     .getAll(...channelIds)
-    .filter(channel => channel.hasFields('deletedAt').not());
+    .filter((channel) => channel.hasFields('deletedAt').not());
 
 const threadsByChannelsQuery = (...channelIds: string[]) =>
   channelsByIdsQuery(...channelIds)
     .eqJoin('id', db.table('threads'), { index: 'channelId' })
-    .map(row => row('right'))
-    .filter(thread => db.not(thread.hasFields('deletedAt')));
+    .map((row) => row('right'))
+    .filter((thread) => db.not(thread.hasFields('deletedAt')));
 
 const membersByChannelsQuery = (...channelIds: string[]) =>
   channelsByIdsQuery(...channelIds)
     .eqJoin('id', db.table('usersChannels'), { index: 'channelId' })
-    .map(row => row('right'))
+    .map((row) => row('right'))
     .filter({ isBlocked: false, isPending: false, isMember: true });
 
 // reusable query parts -- end
@@ -79,7 +79,7 @@ const getChannelsByUser = (userId: string): Promise<Array<DBChannel>> => {
     .eqJoin('channelId', db.table('channels'))
     .without({ left: ['id', 'channelId', 'userId', 'createdAt'] })
     .zip()
-    .filter(channel => db.not(channel.hasFields('deletedAt')))
+    .filter((channel) => db.not(channel.hasFields('deletedAt')))
     .run();
 };
 
@@ -97,13 +97,13 @@ const getChannelBySlug = async (
   return db
     .table('channels')
     .getAll(communityId, { index: 'communityId' })
-    .filter(channel =>
+    .filter((channel) =>
       channel('slug')
         .eq(channelSlug)
         .and(db.not(channel.hasFields('deletedAt')))
     )
     .run()
-    .then(res => {
+    .then((res) => {
       if (Array.isArray(res) && res.length > 0) return res[0];
       return null;
     });
@@ -207,7 +207,7 @@ const setMemberCount = (
       { returnChanges: true }
     )
     .run()
-    .then(result => result.changes[0].new_val || result.changes[0].old_val);
+    .then((result) => result.changes[0].new_val || result.changes[0].old_val);
 };
 
 const decrementMemberCount = (channelId: string): Promise<DBChannel> => {
@@ -216,15 +216,12 @@ const decrementMemberCount = (channelId: string): Promise<DBChannel> => {
     .get(channelId)
     .update(
       {
-        memberCount: db
-          .row('memberCount')
-          .default(1)
-          .sub(1),
+        memberCount: db.row('memberCount').default(1).sub(1),
       },
       { returnChanges: true }
     )
     .run()
-    .then(result => result.changes[0].new_val || result.changes[0].old_val);
+    .then((result) => result.changes[0].new_val || result.changes[0].old_val);
 };
 
 type GroupedCount = {

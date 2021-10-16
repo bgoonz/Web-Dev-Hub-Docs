@@ -23,7 +23,6 @@ declare module 'cookie-session' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'cookie-session/index' {
   declare module.exports: $Exports<'cookie-session'>;

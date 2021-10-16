@@ -46,7 +46,7 @@ export default (
             }
           }
         }
-      `).then(res => {
+      `).then((res) => {
         const {
           thread: { type, content, channel },
         } = res.data;
@@ -78,7 +78,7 @@ export default (
             # coverPhoto
           }
         }
-      `).then(res => {
+      `).then((res) => {
         const { user } = res.data;
         return generateMetaInfo({
           type: 'user',
@@ -110,7 +110,7 @@ export default (
               }
             }
           }
-        `).then(res => {
+        `).then((res) => {
           const {
             channel,
             channel: { community },
@@ -138,7 +138,7 @@ export default (
               profilePhoto
             }
           }
-        `).then(res => {
+        `).then((res) => {
           const { community } = res.data;
           return generateMetaInfo({
             type: 'community',
@@ -156,7 +156,7 @@ export default (
 
   if (!promise) return Promise.resolve(generateMetaInfo());
 
-  return promise.catch(err => {
+  return promise.catch((err) => {
     console.error(`⚠️ Failed to load metadata for ${url}! ⚠️`);
     console.error(err);
     return generateMetaInfo();

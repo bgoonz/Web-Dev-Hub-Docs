@@ -22,7 +22,7 @@ const CircularDependencyPlugin = require('circular-dependency-plugin');
 
 // Recursively walk a folder and get all file paths
 function walkFolder(currentDirPath, callback) {
-  fs.readdirSync(currentDirPath).forEach(name => {
+  fs.readdirSync(currentDirPath).forEach((name) => {
     // Skip dot files
     if (name.indexOf('.') === 0) return;
 
@@ -37,13 +37,13 @@ function walkFolder(currentDirPath, callback) {
   });
 }
 
-const isServiceWorkerPlugin = plugin => plugin instanceof swPrecachePlugin;
+const isServiceWorkerPlugin = (plugin) => plugin instanceof swPrecachePlugin;
 
-const removeEslint = config => {
-  config.module.rules = config.module.rules.filter(rule => {
+const removeEslint = (config) => {
+  config.module.rules = config.module.rules.filter((rule) => {
     // Filter the eslint loader based on its options
     if (rule.use) {
-      return rule.use.every(use => {
+      return rule.use.every((use) => {
         if (!use.options) return true;
         return !use.options.eslintPath;
       });
@@ -53,11 +53,11 @@ const removeEslint = config => {
 };
 
 // Make sure webpack transpiles files in the shared folder
-const transpileShared = config => {
-  config.module.rules.forEach(rule => {
+const transpileShared = (config) => {
+  config.module.rules.forEach((rule) => {
     if (!rule.oneOf) return;
 
-    rule.oneOf.forEach(loader => {
+    rule.oneOf.forEach((loader) => {
       if (!loader.include) return;
       if (!loader.options) return;
       // The loader config we're looking for is for JS files,
@@ -96,11 +96,11 @@ module.exports = function override(config, env) {
   config = transpileShared(config);
   // Filter the default serviceworker plugin, add offline plugin instead
   config.plugins = config.plugins.filter(
-    plugin => !isServiceWorkerPlugin(plugin)
+    (plugin) => !isServiceWorkerPlugin(plugin)
   );
   // Get all public files so they're cached by the SW
   let externals = [];
-  walkFolder('./public/', file => {
+  walkFolder('./public/', (file) => {
     if (file.indexOf('index.html') > -1) return;
     externals.push(file.replace(/public/, ''));
   });
@@ -116,13 +116,13 @@ module.exports = function override(config, env) {
       // which means we have to manually do this and filter any of those routes out
       cacheMaps: [
         {
-          match: function() {
+          match: function () {
             return false;
           },
           requestTypes: ['navigate'],
         },
       ],
-      rewrites: arg => arg,
+      rewrites: (arg) => arg,
       ServiceWorker: {
         entry: './public/push-sw.js',
         events: true,

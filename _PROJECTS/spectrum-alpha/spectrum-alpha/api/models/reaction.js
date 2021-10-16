@@ -21,10 +21,7 @@ export const getReactions = (messageIds: Array<string>): Promise<Array<DBReactio
 };
 
 export const getReaction = (reactionId: string): Promise<DBReaction> => {
-  return db
-    .table('reactions')
-    .get(reactionId)
-    .run();
+  return db.table('reactions').get(reactionId).run();
 };
 
 // prettier-ignore

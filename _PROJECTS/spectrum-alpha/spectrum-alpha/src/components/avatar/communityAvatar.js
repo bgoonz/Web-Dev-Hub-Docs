@@ -38,7 +38,7 @@ class Avatar extends React.Component<Props> {
       >
         <ConditionalWrap
           condition={isClickable}
-          wrap={children => (
+          wrap={(children) => (
             <AvatarLink to={`/${community.slug}`}>{children}</AvatarLink>
           )}
         >

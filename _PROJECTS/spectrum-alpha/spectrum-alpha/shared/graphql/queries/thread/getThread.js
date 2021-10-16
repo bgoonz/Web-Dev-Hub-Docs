@@ -48,8 +48,8 @@ export const getThreadByMatchOptions = {
       id: threadId
         ? threadId
         : match
-          ? match.params.threadId
-          : console.error('bad arg supplied to getThreadByMatch') || null,
+        ? match.params.threadId
+        : console.error('bad arg supplied to getThreadByMatch') || null,
     },
     fetchPolicy: 'cache-first',
   }),

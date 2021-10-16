@@ -10,7 +10,7 @@ export const getCommunityById = (id: string): Promise<DBCommunity> => {
     .table('communities')
     .get(id)
     .run()
-    .then(result => {
+    .then((result) => {
       if (result && result.deletedAt) return null;
       return result;
     });
@@ -38,9 +38,9 @@ export const getCommunityBySlug = (slug: string): Promise<?DBCommunity> => {
   return db
     .table('communities')
     .getAll(slug, { index: 'slug' })
-    .filter(community => db.not(community.hasFields('deletedAt')))
+    .filter((community) => db.not(community.hasFields('deletedAt')))
     .run()
-    .then(results => {
+    .then((results) => {
       if (!results || results.length === 0) return null;
       return results[0];
     });
@@ -119,13 +119,13 @@ export const getPublicCommunitiesByUser = async (userId: string) => {
     // get the community objects for each community
     .eqJoin('communityId', db.table('communities'))
     // only return public community ids
-    .filter(row => row('right')('isPrivate').eq(false))
+    .filter((row) => row('right')('isPrivate').eq(false))
     // get rid of unnecessary info from the usersCommunities object on the left
     .without({ left: ['id', 'communityId', 'userId', 'createdAt'] })
     // zip the tables
     .zip()
     // ensure we don't return any deleted communities
-    .filter(community => db.not(community.hasFields('deletedAt')))
+    .filter((community) => db.not(community.hasFields('deletedAt')))
     .run();
 };
 
@@ -133,7 +133,7 @@ export const getCommunitiesChannelCounts = (communityIds: Array<string>) => {
   return db
     .table('channels')
     .getAll(...communityIds, { index: 'communityId' })
-    .filter(channel => db.not(channel.hasFields('deletedAt')))
+    .filter((channel) => db.not(channel.hasFields('deletedAt')))
     .group('communityId')
     .count()
     .run();
@@ -142,7 +142,7 @@ export const getCommunitiesChannelCounts = (communityIds: Array<string>) => {
 export const getCommunitiesMemberCounts = (communityIds: Array<string>) => {
   return db
     .table('usersCommunities')
-    .getAll(...communityIds.map(id => [id, true]), {
+    .getAll(...communityIds.map((id) => [id, true]), {
       index: 'communityIdAndIsMember',
     })
     .group('communityId')
@@ -227,7 +227,7 @@ export const toggleCommunityRedirect = async (communityId: string) => {
         returnChanges: true,
       }
     )
-    .then(result => {
+    .then((result) => {
       if (!Array.isArray(result.changes) || result.changes.length === 0)
         return getCommunityById(communityId);
       return result.changes[0].new_val;
@@ -249,7 +249,7 @@ export const toggleCommunityNoindex = async (communityId: string) => {
         returnChanges: true,
       }
     )
-    .then(result => {
+    .then((result) => {
       if (!Array.isArray(result.changes) || result.changes.length === 0)
         return getCommunityById(communityId);
       return result.changes[0].new_val;
@@ -292,7 +292,7 @@ export const getRecentCommunities = (): Array<DBCommunity> => {
   return db
     .table('communities')
     .orderBy({ index: db.desc('createdAt') })
-    .filter(community => db.not(community.hasFields('deletedAt')))
+    .filter((community) => db.not(community.hasFields('deletedAt')))
     .limit(100)
     .run();
 };
@@ -301,7 +301,7 @@ export const getThreadCount = (communityId: string) => {
   return db
     .table('threads')
     .getAll(communityId, { index: 'communityId' })
-    .filter(thread => db.not(thread.hasFields('deletedAt')))
+    .filter((thread) => db.not(thread.hasFields('deletedAt')))
     .count()
     .run();
 };
@@ -320,7 +320,7 @@ export const setMemberCount = (
       { returnChanges: true }
     )
     .run()
-    .then(result => result.changes[0].new_val || result.changes[0].old_val);
+    .then((result) => result.changes[0].new_val || result.changes[0].old_val);
 };
 
 export const decrementMemberCount = (
@@ -331,13 +331,10 @@ export const decrementMemberCount = (
     .get(communityId)
     .update(
       {
-        memberCount: db
-          .row('memberCount')
-          .default(1)
-          .sub(1),
+        memberCount: db.row('memberCount').default(1).sub(1),
       },
       { returnChanges: true }
     )
     .run()
-    .then(result => result.changes[0].new_val || result.changes[0].old_val);
+    .then((result) => result.changes[0].new_val || result.changes[0].old_val);
 };

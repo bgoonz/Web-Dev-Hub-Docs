@@ -12,7 +12,7 @@ import createLoaders from '../loaders';
 import schema from '../schema';
 
 // Nice little helper function for tests
-const request = query =>
+const request = (query) =>
   graphql(schema, query, undefined, { loaders: createLoaders() });
 
 describe('queries', () => {
@@ -31,10 +31,10 @@ describe('queries', () => {
     // Make sure the assertion below is called and we don't run into a race condition
     expect.assertions(1);
     // Return the Promise returned from the request
-    return request(query).then(result => {
+    return request(query).then((result) => {
       // Use Jest snapshot testing for neater tests and easier diffs
       expect(result).toMatchSnapshot();
     });
   });
-})
+});
 ```

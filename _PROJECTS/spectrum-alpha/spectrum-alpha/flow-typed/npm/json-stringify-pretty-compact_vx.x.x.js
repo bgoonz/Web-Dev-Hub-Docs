@@ -23,7 +23,6 @@ declare module 'json-stringify-pretty-compact' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'json-stringify-pretty-compact/index' {
   declare module.exports: $Exports<'json-stringify-pretty-compact'>;

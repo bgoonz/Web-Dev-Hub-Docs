@@ -67,7 +67,9 @@ class InboxThread extends React.Component<Props> {
               viewContext !== 'userProfileReplies' && (
                 <AvatarLink>
                   <UserAvatar
-                    onlineBorderColor={active ? theme => theme.brand.alt : null}
+                    onlineBorderColor={
+                      active ? (theme) => theme.brand.alt : null
+                    }
                     user={thread.author.user}
                     size={40}
                   />
@@ -114,8 +116,4 @@ class InboxThread extends React.Component<Props> {
   }
 }
 
-export default compose(
-  withRouter,
-  withCurrentUser,
-  connect()
-)(InboxThread);
+export default compose(withRouter, withCurrentUser, connect())(InboxThread);

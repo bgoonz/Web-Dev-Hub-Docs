@@ -12,7 +12,7 @@ export default async ({ id }: DBChannel, _: any, ctx: GraphQLContext) => {
     return null;
   }
 
-  return loaders.channelSettings.load(id).then(settings => {
+  return loaders.channelSettings.load(id).then((settings) => {
     return settings.joinSettings;
   });
 };

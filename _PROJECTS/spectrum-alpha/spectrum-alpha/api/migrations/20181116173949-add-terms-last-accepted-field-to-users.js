@@ -7,7 +7,7 @@ exports.up = async (r, conn) => {
     .run(conn);
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return r
     .table('users')
     .update({

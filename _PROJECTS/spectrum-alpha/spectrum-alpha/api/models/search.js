@@ -50,11 +50,11 @@ export const getPublicCommunityIdsForUsersThreads = (
   return db
     .table('threads')
     .getAll(userId, { index: 'creatorId' })
-    .filter(row => row.hasFields('deletedAt').not())
+    .filter((row) => row.hasFields('deletedAt').not())
     .eqJoin('communityId', db.table('communities'))
-    .filter(row => row('right')('isPrivate').eq(false))
+    .filter((row) => row('right')('isPrivate').eq(false))
     .zip()
-    .map(row => row('communityId'))
+    .map((row) => row('communityId'))
     .run();
 };
 
@@ -77,11 +77,11 @@ export const getPrivateCommunityIdsForUsersThreads = (
   return db
     .table('threads')
     .getAll(userId, { index: 'creatorId' })
-    .filter(row => row.hasFields('deletedAt').not())
+    .filter((row) => row.hasFields('deletedAt').not())
     .eqJoin('communityId', db.table('communities'))
-    .filter(row => row('right')('isPrivate').eq(true))
+    .filter((row) => row('right')('isPrivate').eq(true))
     .zip()
-    .map(row => row('communityId'))
+    .map((row) => row('communityId'))
     .run();
 };
 

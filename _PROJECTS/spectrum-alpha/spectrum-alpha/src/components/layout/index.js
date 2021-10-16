@@ -162,7 +162,7 @@ export const PrimaryColumn = styled.section`
   border-bottom: 1px solid ${theme.bg.border};
   border-radius: 0 0 4px 4px;
   height: 100%;
-  max-width: ${props =>
+  max-width: ${(props) =>
     !props.fullWidth ? `${MAX_PRIMARY_COLUMN_WIDTH}px` : 'none'};
   grid-area: primary;
   display: grid;

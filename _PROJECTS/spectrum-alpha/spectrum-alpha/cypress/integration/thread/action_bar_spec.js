@@ -2,38 +2,36 @@ import data from '../../../shared/testing/data';
 import constants from '../../../api/migrations/seed/default/constants';
 
 const publicChannel = data.channels.find(
-  c => c.id === constants.SPECTRUM_GENERAL_CHANNEL_ID
+  (c) => c.id === constants.SPECTRUM_GENERAL_CHANNEL_ID
 );
 const privateChannel = data.channels.find(
-  c => c.id === constants.SPECTRUM_PRIVATE_CHANNEL_ID
+  (c) => c.id === constants.SPECTRUM_PRIVATE_CHANNEL_ID
 );
 
 const publicCommunity = data.communities.find(
-  c => c.id === constants.SPECTRUM_COMMUNITY_ID
+  (c) => c.id === constants.SPECTRUM_COMMUNITY_ID
 );
 
 const publicThread = data.threads.find(
-  t => t.communityId === publicCommunity.id && t.channelId === publicChannel.id
+  (t) =>
+    t.communityId === publicCommunity.id && t.channelId === publicChannel.id
 );
 const privateThread = data.threads.find(
-  t => t.communityId === publicCommunity.id && t.channelId === privateChannel.id
+  (t) =>
+    t.communityId === publicCommunity.id && t.channelId === privateChannel.id
 );
 
 const publicThreadAuthor = data.users.find(
-  u => u.id === publicThread.creatorId
+  (u) => u.id === publicThread.creatorId
 );
 
-const nonMemberUser = data.users.find(u => u.id === constants.QUIET_USER_ID);
-const memberInChannelUser = data.users.find(u => u.id === constants.BRYN_ID);
+const nonMemberUser = data.users.find((u) => u.id === constants.QUIET_USER_ID);
+const memberInChannelUser = data.users.find((u) => u.id === constants.BRYN_ID);
 
 const triggerThreadDelete = () => {
-  cy.get('[data-cy="thread-dropdown-delete"]')
-    .first()
-    .click();
+  cy.get('[data-cy="thread-dropdown-delete"]').first().click();
   cy.get('[data-cy="delete-button"]').should('be.visible');
-  cy.get('div.ReactModal__Overlay')
-    .should('be.visible')
-    .click('topLeft');
+  cy.get('div.ReactModal__Overlay').should('be.visible').click('topLeft');
 };
 
 const openSettingsDropdown = () => {

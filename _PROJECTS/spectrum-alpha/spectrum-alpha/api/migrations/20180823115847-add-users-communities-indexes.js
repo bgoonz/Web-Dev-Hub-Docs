@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return Promise.all([
     r
       .table('usersCommunities')
@@ -39,20 +39,14 @@ exports.up = function(r, conn) {
   ]);
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.all([
-    r
-      .table('usersCommunities')
-      .indexDrop('communityIdAndIsMember')
-      .run(conn),
+    r.table('usersCommunities').indexDrop('communityIdAndIsMember').run(conn),
     r
       .table('usersCommunities')
       .indexDrop('communityIdAndIsModerator')
       .run(conn),
-    r
-      .table('usersCommunities')
-      .indexDrop('communityIdAndIsOwner')
-      .run(conn),
+    r.table('usersCommunities').indexDrop('communityIdAndIsOwner').run(conn),
     r
       .table('usersCommunities')
       .indexDrop('communityIdAndIsTeamMember')

@@ -22,11 +22,11 @@ export default async (
   return getThreadsByChannel(id, {
     first,
     after: after && parseInt(decode(after), 10),
-  }).then(threads => ({
+  }).then((threads) => ({
     pageInfo: {
       hasNextPage: threads.length >= first,
     },
-    edges: threads.map(thread => ({
+    edges: threads.map((thread) => ({
       cursor: encode(String(thread.lastActive.getTime())),
       node: thread,
     })),

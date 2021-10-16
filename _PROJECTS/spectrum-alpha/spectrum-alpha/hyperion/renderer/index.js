@@ -90,7 +90,7 @@ const renderer = (req: express$Request, res: express$Response) => {
   // Create the Redux store
   const store = initStore(initialReduxState);
   let modules = [];
-  const report = moduleName => {
+  const report = (moduleName) => {
     modules.push(moduleName);
   };
   let routerContext = {};
@@ -158,14 +158,11 @@ const renderer = (req: express$Request, res: express$Response) => {
         renderToNodeStream(frontend)
       );
 
-      stream.pipe(
-        res,
-        { end: false }
-      );
+      stream.pipe(res, { end: false });
 
       const bundles = getBundles(stats, modules)
         // Create <script defer> tags from bundle objects
-        .map(bundle => `/${bundle.file.replace(/\.map$/, '')}`)
+        .map((bundle) => `/${bundle.file.replace(/\.map$/, '')}`)
         // Make sure only unique bundles are included
         .filter((value, index, self) => self.indexOf(value) === index);
       debug('bundles used:', bundles.join(','));
@@ -180,7 +177,7 @@ const renderer = (req: express$Request, res: express$Response) => {
         )
       );
     })
-    .catch(err => {
+    .catch((err) => {
       // Avoid memory leaks, see https://github.com/styled-components/styled-components/issues/1624#issuecomment-425382979
       sheet.seal();
       console.error(err);

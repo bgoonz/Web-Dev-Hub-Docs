@@ -18,19 +18,23 @@ declare module 'redis-tag-cache' {
   declare type Options = {
     defaultTimeout?: number,
     redis?: RedisOptions,
-  }
+  };
 
   declare type SetOptions = {
-     timeout?: number
-  }
+    timeout?: number,
+  };
 
   declare class TagCache {
     constructor(options?: Options): void;
     get(...keys: Array<string>): Promise<?any>;
-    set(key: string, data: any, tags: Array<string>, options?: SetOptions): Promise<void>;
+    set(
+      key: string,
+      data: any,
+      tags: Array<string>,
+      options?: SetOptions
+    ): Promise<void>;
     invalidate(...tags: Array<string>): Promise<void>;
   }
 
   declare module.exports: typeof TagCache;
 }
-

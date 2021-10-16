@@ -3,7 +3,7 @@ import { request } from '../../utils';
 import data from 'shared/testing/data';
 import { toPlainText, toState } from 'shared/draft-utils';
 
-const messageToPlainText = message =>
+const messageToPlainText = (message) =>
   toPlainText(toState(JSON.parse(message.content.body)));
 
 // Get all messages in our test thread and sort them by time

@@ -10,7 +10,7 @@ export const getMessage = (messageId: string): Promise<DBMessage> => {
     .table('messages')
     .get(messageId)
     .run()
-    .then(message => {
+    .then((message) => {
       if (!message || message.deletedAt) return null;
       return message;
     });
@@ -21,8 +21,8 @@ export const getManyMessages = (messageIds: string[]): Promise<DBMessage[]> => {
     .table('messages')
     .getAll(...messageIds)
     .run()
-    .then(messages => {
-      return messages.filter(message => message && !message.deletedAt);
+    .then((messages) => {
+      return messages.filter((message) => message && !message.deletedAt);
     });
 };
 
@@ -87,13 +87,13 @@ export const getLastMessage = (threadId: string): Promise<?DBMessage> => {
     .filter(db.row.hasFields('deletedAt').not())
     .limit(1)
     .run()
-    .then(res => (Array.isArray(res) && res.length > 0 ? res[0] : null));
+    .then((res) => (Array.isArray(res) && res.length > 0 ? res[0] : null));
 };
 
 export const getLastMessageOfThreads = (
   threadIds: Array<string>
 ): Promise<Array<?DBMessage>> => {
-  return Promise.all(threadIds.map(id => getLastMessage(id)));
+  return Promise.all(threadIds.map((id) => getLastMessage(id)));
 };
 
 // prettier-ignore
@@ -138,8 +138,8 @@ export const deleteMessage = (userId: string, messageId: string) => {
       { returnChanges: 'always' }
     )
     .run()
-    .then(result => result.changes[0].new_val || result.changes[0].old_val)
-    .then(async message => {
+    .then((result) => result.changes[0].new_val || result.changes[0].old_val)
+    .then(async (message) => {
       await Promise.all([
         message.threadType === 'story'
           ? decrementMessageCount(message.threadId)

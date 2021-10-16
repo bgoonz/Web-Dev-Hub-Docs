@@ -146,10 +146,10 @@ passport.deserializeUser((data, done) => {
 
   // Slow path: data is just the userID (legacy), so we have to go to the db to get the full data
   getUserById(data)
-    .then(user => {
+    .then((user) => {
       done(null, user);
     })
-    .catch(err => {
+    .catch((err) => {
       done(err);
     });
 });
@@ -174,10 +174,10 @@ app.get('*', (req: express$Request, res, next) => {
 import renderer from './renderer';
 app.get('*', renderer);
 
-process.on('unhandledRejection', async err => {
+process.on('unhandledRejection', async (err) => {
   console.error('Unhandled rejection', err);
   try {
-    await new Promise(res => Raven.captureException(err, res));
+    await new Promise((res) => Raven.captureException(err, res));
   } catch (err) {
     console.error('Raven error', err);
   } finally {
@@ -185,10 +185,10 @@ process.on('unhandledRejection', async err => {
   }
 });
 
-process.on('uncaughtException', async err => {
+process.on('uncaughtException', async (err) => {
   console.error('Uncaught exception', err);
   try {
-    await new Promise(res => Raven.captureException(err, res));
+    await new Promise((res) => Raven.captureException(err, res));
   } catch (err) {
     console.error('Raven error', err);
   } finally {

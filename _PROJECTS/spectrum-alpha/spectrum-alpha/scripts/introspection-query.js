@@ -20,12 +20,12 @@ fetch(`http://localhost:3001/api`, {
     `,
   }),
 })
-  .then(result => result.json())
-  .then(result => {
+  .then((result) => result.json())
+  .then((result) => {
     fs.writeFile(
       './fragmentTypes.json',
       JSON.stringify(result.data, null, 2),
-      err => {
+      (err) => {
         if (err) console.error('Error writing fragmentTypes file', err);
         console.log('Fragment types successfully extracted!');
       }

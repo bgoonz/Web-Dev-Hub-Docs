@@ -18,7 +18,7 @@ export default function toasts(state = initialState, action) {
       });
     }
     case 'REMOVE_TOAST': {
-      const toasts = state.toasts.filter(toast => {
+      const toasts = state.toasts.filter((toast) => {
         return toast.id !== action.id;
       });
       return Object.assign({}, state, {

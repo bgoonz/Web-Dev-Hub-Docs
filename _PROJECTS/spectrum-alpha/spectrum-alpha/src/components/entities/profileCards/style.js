@@ -25,7 +25,7 @@ export const CoverPhoto = styled.div`
   max-height: ${MAX_SECONDARY_COLUMN_WIDTH / 3}px;
   background-color: ${theme.text.default};
   overflow: hidden;
-  background-image: url(${props => props.src});
+  background-image: url(${(props) => props.src});
   background-size: cover;
   background-position: center center;
   border-radius: 4px 4px 0 0;

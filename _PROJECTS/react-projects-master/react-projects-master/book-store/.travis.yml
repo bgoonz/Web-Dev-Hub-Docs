@@ -9,7 +9,7 @@ install:
   - yarn install
 cache:
   directories:
-  - $HOME/.yarn-cache
+    - $HOME/.yarn-cache
 node_js:
   - "6"
   - "5"

@@ -22,11 +22,8 @@ module.exports = async () => {
 
   debug(`migrations complete, inserting data into "testing"`);
   await Promise.all(
-    tables.map(table =>
-      mockDb
-        .table(table)
-        .insert(data[table], { conflict: 'replace' })
-        .run()
+    tables.map((table) =>
+      mockDb.table(table).insert(data[table], { conflict: 'replace' }).run()
     )
   );
 

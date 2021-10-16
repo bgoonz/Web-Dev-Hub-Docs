@@ -14,9 +14,9 @@
   "createdAt": "2017-07-12T21:43:50.399Z",
   "entities": [
     {
-      "id":  "343d0e33-8010-4d45-b1d7-bb7d14cd5ed5",
-      "payload":  "{\"createdAt\":1529543590050,\"deletedAt\":\"2018-06-21T01:15:49.678Z\",\"id\":\"343d0e33-8010-4d45-b1d7-bb7d14cd5ed5\",\"threadId\":\"5e333eab-6a46-4a9d-b270-0d3cad8114d0\",\"type\":\"like\",\"userId\":\"01p2A7kDCWUjGj6zQLlMQUOSQL42\"}",
-      "type":  "THREAD_REACTION"
+      "id": "343d0e33-8010-4d45-b1d7-bb7d14cd5ed5",
+      "payload": "{\"createdAt\":1529543590050,\"deletedAt\":\"2018-06-21T01:15:49.678Z\",\"id\":\"343d0e33-8010-4d45-b1d7-bb7d14cd5ed5\",\"threadId\":\"5e333eab-6a46-4a9d-b270-0d3cad8114d0\",\"type\":\"like\",\"userId\":\"01p2A7kDCWUjGj6zQLlMQUOSQL42\"}",
+      "type": "THREAD_REACTION"
     }
   ],
   "event": "THREAD_REACTION_CREATED",

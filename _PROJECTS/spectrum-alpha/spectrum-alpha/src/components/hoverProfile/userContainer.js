@@ -14,7 +14,7 @@ import {
   getUserByUsernameQuery,
 } from 'shared/graphql/queries/user/getUser';
 
-const MentionHoverProfile = getUserByUsername(props => {
+const MentionHoverProfile = getUserByUsername((props) => {
   if (props.data && props.data.user) {
     return (
       <UserProfile ref={props.ref} user={props.data.user} style={props.style} />

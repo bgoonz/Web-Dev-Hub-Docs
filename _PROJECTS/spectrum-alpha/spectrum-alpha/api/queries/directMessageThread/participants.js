@@ -11,9 +11,9 @@ export default async ({ id }: { id: string }, _: any, ctx: GraphQLContext) => {
 
   if (!canViewThread) return [];
 
-  return loaders.directMessageParticipants.load(id).then(results => {
+  return loaders.directMessageParticipants.load(id).then((results) => {
     if (!results || results.length === 0) return [];
-    return results.reduction.map(user => {
+    return results.reduction.map((user) => {
       return signUser(user);
     });
   });

@@ -49,7 +49,7 @@ export type WithCurrentUserProps = {
 export const withCurrentUser = (
   Component: ComponentType<Props>
 ): ComponentType<$Diff<Props, WithCurrentUserProps>> => {
-  const C = props => {
+  const C = (props) => {
     const { wrappedComponentRef, ...remainingProps } = props;
     return (
       <CurrentUser>

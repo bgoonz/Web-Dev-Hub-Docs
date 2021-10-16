@@ -24,7 +24,7 @@ const modalRoot = ({ modalType, modalProps }) => {
   return <SpecificModal {...modalProps} />;
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   modalProps: state.modals.modalProps,
   modalType: state.modals.modalType,
 });

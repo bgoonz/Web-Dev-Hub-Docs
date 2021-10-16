@@ -55,7 +55,7 @@ export const createClient = (options?: CreateClientOptions = {}) => {
         operation.query.definitions &&
         Array.isArray(operation.query.definitions) &&
         operation.query.definitions.some(
-          def =>
+          (def) =>
             def.kind === 'OperationDefinition' && def.operation === 'mutation'
         );
 

@@ -37,8 +37,10 @@ class Component extends React.Component<Props> {
   sortChannels = (array: Array<any>): Array<?any> => {
     if (!array || array.length === 0) return [];
 
-    const generalChannel = array.find(channel => channel.slug === 'general');
-    const withoutGeneral = array.filter(channel => channel.slug !== 'general');
+    const generalChannel = array.find((channel) => channel.slug === 'general');
+    const withoutGeneral = array.filter(
+      (channel) => channel.slug !== 'general'
+    );
     const sortedWithoutGeneral = withoutGeneral.sort((a, b) => {
       if (a.slug < b.slug) return -1;
       if (a.slug > b.slug) return 1;
@@ -74,8 +76,8 @@ class Component extends React.Component<Props> {
     if (community && community.channelConnection) {
       const { isOwner } = community.communityPermissions;
       const channels = community.channelConnection.edges
-        .map(channel => channel && channel.node)
-        .filter(channel => {
+        .map((channel) => channel && channel.node)
+        .filter((channel) => {
           if (!channel) return null;
           if (channel.isArchived) return null;
           if (channel.isPrivate && !channel.channelPermissions.isMember)
@@ -83,7 +85,7 @@ class Component extends React.Component<Props> {
 
           return channel;
         })
-        .filter(channel => channel && !channel.channelPermissions.isBlocked);
+        .filter((channel) => channel && !channel.channelPermissions.isBlocked);
 
       const sortedChannels = this.sortChannels(channels);
 
@@ -127,7 +129,7 @@ class Component extends React.Component<Props> {
                 </Link>
               )}
             </Route>
-            {sortedChannels.map(channel => {
+            {sortedChannels.map((channel) => {
               if (!channel) return null;
               return (
                 <ErrorBoundary key={channel.id}>

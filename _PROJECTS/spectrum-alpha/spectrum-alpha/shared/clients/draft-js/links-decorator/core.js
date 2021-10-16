@@ -30,7 +30,7 @@ const createLinksDecorator = (
     if (contentBlock.type === 'code-block') return;
 
     if (contentBlock.findEntityRanges) {
-      contentBlock.findEntityRanges(char => {
+      contentBlock.findEntityRanges((char) => {
         const entityKey = char.getEntity();
         return (
           entityKey !== null &&
@@ -41,7 +41,7 @@ const createLinksDecorator = (
     linkStrategy(contentBlock, (start, end) => {
       if (
         contentBlock.entityRanges.find(
-          range => range.offset === start && range.length === end - start
+          (range) => range.offset === start && range.length === end - start
         )
       )
         return;

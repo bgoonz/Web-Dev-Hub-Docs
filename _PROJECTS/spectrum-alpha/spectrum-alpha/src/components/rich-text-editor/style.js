@@ -12,11 +12,11 @@ import { withCurrentUser } from 'src/components/withCurrentUser';
 import { MEDIA_BREAK } from 'src/components/layout';
 
 const UsernameWrapper = styled.span`
-  color: ${props =>
+  color: ${(props) =>
     props.me
       ? props.theme.special.default
       : props.theme.space.default}!important;
-  background: ${props =>
+  background: ${(props) =>
     props.me ? props.theme.special.wash : props.theme.space.wash}!important;
   padding: 0px 4px 1px;
   border-radius: 4px;
@@ -45,7 +45,7 @@ class MentionWithCurrentUser extends React.Component<MentionProps> {
     return (
       <UsernameWrapper me={me}>
         <UserHoverProfile username={username}>
-          <Link to={`/users/${username}`} onClick={e => e.stopPropagation()}>
+          <Link to={`/users/${username}`} onClick={(e) => e.stopPropagation()}>
             {children}
           </Link>
         </UserHoverProfile>
@@ -110,9 +110,9 @@ export const MediaRow = styled.div`
 export const ComposerBase = styled.div`
   position: relative;
   flex: 1;
-  max-height: ${props => (props.isOpen ? 'calc(100vh - 160px)' : 'auto')};
-  overflow-y: ${props => (props.isOpen ? 'scroll' : 'auto')};
-  padding-left: ${props => (props.isOpen ? '25px' : '0')};
+  max-height: ${(props) => (props.isOpen ? 'calc(100vh - 160px)' : 'auto')};
+  overflow-y: ${(props) => (props.isOpen ? 'scroll' : 'auto')};
+  padding-left: ${(props) => (props.isOpen ? '25px' : '0')};
 
   > label {
     position: absolute;
@@ -132,7 +132,7 @@ export const SideToolbarWrapper = styled.div`
 `;
 
 export const Action = styled.div`
-  display: ${props => (props.embedding ? 'flex' : 'none')};
+  display: ${(props) => (props.embedding ? 'flex' : 'none')};
   flex: 0 0 40px;
   flex-direction: column;
   height: 40px;
@@ -166,7 +166,7 @@ export const Expander = styled.div`
     color: ${theme.brand.alt};
   }
 
-  ${props =>
+  ${(props) =>
     props.inserting &&
     css`
       background-color: ${theme.brand.alt};
@@ -206,7 +206,7 @@ export const EmbedUI = styled.form`
     display: none;
   }
 
-  ${props =>
+  ${(props) =>
     props.embedding &&
     css`
       position: relative;
@@ -263,7 +263,7 @@ export const EmbedContainer = styled.div`
 `;
 
 export const AspectRatio = styled(EmbedContainer)`
-  padding-bottom: ${props => (props.ratio ? props.ratio : '0')};
+  padding-bottom: ${(props) => (props.ratio ? props.ratio : '0')};
 `;
 
 export const EmbedComponent = styled.iframe`

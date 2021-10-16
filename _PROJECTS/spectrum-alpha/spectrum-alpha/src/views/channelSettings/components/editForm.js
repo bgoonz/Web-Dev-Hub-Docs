@@ -72,7 +72,7 @@ class ChannelWithData extends React.Component<Props, State> {
     };
   }
 
-  handleChange = e => {
+  handleChange = (e) => {
     const key = e.target.id;
     const value = e.target.value;
     const { isPrivate } = this.state;
@@ -89,7 +89,7 @@ class ChannelWithData extends React.Component<Props, State> {
       this.updateStateOnError(newState, key, hasInvalidChars || hasOddHyphens);
     }
 
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return Object.assign({}, prevState, {
         ...newState,
       });
@@ -104,7 +104,7 @@ class ChannelWithData extends React.Component<Props, State> {
     }
   }
 
-  save = e => {
+  save = (e) => {
     e.preventDefault();
     const { name, slug, description, isPrivate, channelId } = this.state;
     const input = {
@@ -138,7 +138,7 @@ class ChannelWithData extends React.Component<Props, State> {
         }
         return;
       })
-      .catch(err => {
+      .catch((err) => {
         this.setState({
           isLoading: false,
         });
@@ -267,15 +267,17 @@ class ChannelWithData extends React.Component<Props, State> {
               </Description>
             )}
 
-            {// if the user is moving from private to public
-            this.props.channel.isPrivate && !isPrivate && (
-              <Notice>
-                When a private channel is made public all pending users will be
-                added as members of the channel. Blocked users will remain
-                blocked from viewing all content in this channel but in the
-                future any new person will be able to join.
-              </Notice>
-            )}
+            {
+              // if the user is moving from private to public
+              this.props.channel.isPrivate && !isPrivate && (
+                <Notice>
+                  When a private channel is made public all pending users will
+                  be added as members of the channel. Blocked users will remain
+                  blocked from viewing all content in this channel but in the
+                  future any new person will be able to join.
+                </Notice>
+              )
+            }
 
             <Actions>
               <PrimaryOutlineButton
@@ -294,7 +296,9 @@ class ChannelWithData extends React.Component<Props, State> {
                         glyph="delete"
                         color="text.placeholder"
                         hoverColor="warn.alt"
-                        onClick={e => this.triggerDeleteChannel(e, channel.id)}
+                        onClick={(e) =>
+                          this.triggerDeleteChannel(e, channel.id)
+                        }
                         data-cy="delete-channel-button"
                       />
                     </span>

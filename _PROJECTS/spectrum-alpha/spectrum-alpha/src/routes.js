@@ -203,7 +203,7 @@ class Routes extends React.Component<Props, State> {
                 // - /~id-123-id => id-123-id => id-123-id, empty custom slug also works
                 // - /some~custom~slug~id-123-id => id-123-id, custom slug with delimiter char in it (~) also works! :tada:
                 path="/:communitySlug/:channelSlug/(.*~)?:threadId"
-                component={props => (
+                component={(props) => (
                   <ThreadSlider
                     previousLocation={this.previousLocation}
                     {...props}
@@ -389,7 +389,4 @@ class Routes extends React.Component<Props, State> {
   }
 }
 
-export default compose(
-  withCurrentUser,
-  withRouter
-)(Routes);
+export default compose(withCurrentUser, withRouter)(Routes);

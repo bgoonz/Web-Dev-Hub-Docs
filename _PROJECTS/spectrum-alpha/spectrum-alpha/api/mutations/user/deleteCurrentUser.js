@@ -17,5 +17,5 @@ export default requireAuth(async (_: any, __: any, ctx: GraphQLContext) => {
     removeUsersChannelMemberships(user.id),
   ])
     .then(() => true)
-    .catch(err => new UserError(err.message));
+    .catch((err) => new UserError(err.message));
 });

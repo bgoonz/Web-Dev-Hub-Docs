@@ -3,7 +3,7 @@
 // takes an array of existing threads in the cache and figures out how to insert the newly updated thread
 export default (prevThreads: Array<Object>, updatedThread: Object) => {
   // get an array of thread ids based on the threads already in cache
-  const prevThreadIds = prevThreads.map(thread => thread.node.id);
+  const prevThreadIds = prevThreads.map((thread) => thread.node.id);
 
   // determine if the newly updated thread exists in the cache or not
   // if it doesn't exist in cache, it's a new thread! if it does exist in cache, it just means its
@@ -20,7 +20,7 @@ export default (prevThreads: Array<Object>, updatedThread: Object) => {
         ...prevThreads,
       ]
     : [
-        ...prevThreads.map(thread => {
+        ...prevThreads.map((thread) => {
           if (thread.node.id !== updatedThread.id) return thread;
           return {
             node: updatedThread,

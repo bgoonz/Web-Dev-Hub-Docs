@@ -67,7 +67,7 @@ class AppViewWrapper extends React.Component<Props> {
 
     return (
       <StyledAppViewWrapper
-        ref={el => (this.ref = el)}
+        ref={(el) => (this.ref = el)}
         isTwoColumn={isTwoColumn}
         {...this.props}
       />
@@ -75,7 +75,4 @@ class AppViewWrapper extends React.Component<Props> {
   }
 }
 
-export default compose(
-  withRouter,
-  withCurrentUser
-)(AppViewWrapper);
+export default compose(withRouter, withCurrentUser)(AppViewWrapper);

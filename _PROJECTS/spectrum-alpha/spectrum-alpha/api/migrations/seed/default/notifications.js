@@ -10,7 +10,7 @@ module.exports = [
       {
         id: PREVIOUS_MEMBER_USER_ID,
         payload: JSON.stringify(
-          users.find(u => u.id === PREVIOUS_MEMBER_USER_ID)
+          users.find((u) => u.id === PREVIOUS_MEMBER_USER_ID)
         ),
         type: 'USER',
       },

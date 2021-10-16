@@ -14,16 +14,16 @@ const colors = {
   NEW_MESSAGE: 'warn.alt',
 };
 
-export const getIconByType = type => {
+export const getIconByType = (type) => {
   return icons[type] || icons.default;
 };
 
-export const getColorByType = type => {
+export const getColorByType = (type) => {
   // TODO: add "readState" handling to change color to light gray
   return colors[type];
 };
 
-export const constructMessage = notification => {
+export const constructMessage = (notification) => {
   const { type, sender, community, channel, thread } = notification;
   switch (type) {
     case 'NEW_THREAD':
@@ -57,7 +57,7 @@ export const constructMessage = notification => {
   }
 };
 
-export const constructLinklessMessage = notification => {
+export const constructLinklessMessage = (notification) => {
   const { type, sender, community, channel } = notification;
   switch (type) {
     case 'NEW_THREAD':
@@ -80,7 +80,7 @@ export const constructLinklessMessage = notification => {
   }
 };
 
-export const constructContent = notification => {
+export const constructContent = (notification) => {
   const { type, sender, content } = notification;
   switch (type) {
     case 'NEW_THREAD':

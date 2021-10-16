@@ -23,10 +23,10 @@ export function isMobile() {
 
 export const debounce = (func: Function, wait: number, immediate: boolean) => {
   let timeout;
-  return function() {
+  return function () {
     let context = this,
       args = arguments;
-    let later = function() {
+    let later = function () {
       timeout = null;
       if (!immediate) func.apply(context, args);
     };
@@ -41,7 +41,7 @@ export const debounce = (func: Function, wait: number, immediate: boolean) => {
 export const throttle = (func: Function, threshold: number, scope: any) => {
   threshold || (threshold = 250);
   let last, deferTimer;
-  return function() {
+  return function () {
     let context = scope || this;
 
     let now = +new Date(),
@@ -49,7 +49,7 @@ export const throttle = (func: Function, threshold: number, scope: any) => {
     if (last && now < last + threshold) {
       // hold on to it
       clearTimeout(deferTimer);
-      deferTimer = setTimeout(function() {
+      deferTimer = setTimeout(function () {
         last = now;
         func.apply(context, args);
       }, threshold);

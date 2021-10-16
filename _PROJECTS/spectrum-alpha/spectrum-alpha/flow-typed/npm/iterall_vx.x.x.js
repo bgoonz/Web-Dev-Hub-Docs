@@ -23,7 +23,6 @@ declare module 'iterall' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'iterall/index' {
   declare module.exports: $Exports<'iterall'>;

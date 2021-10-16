@@ -167,17 +167,13 @@ export const canViewThread = async (
 
   if (!thread || thread.deletedAt) return false;
 
-  const [
-    channel,
-    community,
-    channelPermissions,
-    communityPermissions,
-  ] = await Promise.all([
-    loaders.channel.load(thread.channelId),
-    loaders.community.load(thread.communityId),
-    loaders.userPermissionsInChannel.load([userId, thread.channelId]),
-    loaders.userPermissionsInCommunity.load([userId, thread.communityId]),
-  ]);
+  const [channel, community, channelPermissions, communityPermissions] =
+    await Promise.all([
+      loaders.channel.load(thread.channelId),
+      loaders.community.load(thread.communityId),
+      loaders.userPermissionsInChannel.load([userId, thread.channelId]),
+      loaders.userPermissionsInCommunity.load([userId, thread.communityId]),
+    ]);
 
   if (!channel || !community) return false;
   if (channel.deletedAt || community.deletedAt) return false;

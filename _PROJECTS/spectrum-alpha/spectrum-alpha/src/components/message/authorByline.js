@@ -27,14 +27,14 @@ export default (props: Props) => {
     <Byline>
       <ConditionalWrap
         condition={!!user.username}
-        wrap={children => (
+        wrap={(children) => (
           <UserHoverProfile
             username={user.username}
             style={{ flexWrap: 'wrap', flex: '0 1 auto' }}
           >
             <Link
               to={`/users/${user.username}`}
-              onClick={e => e.stopPropagation()}
+              onClick={(e) => e.stopPropagation()}
             >
               {children}
               <Username>{user.username && `@${user.username}`}</Username>
@@ -48,7 +48,11 @@ export default (props: Props) => {
       <BadgesContainer>
         {roles &&
           roles.map((role, index) => (
-            <Badge type={role} key={index} onClick={e => e.stopPropagation()} />
+            <Badge
+              type={role}
+              key={index}
+              onClick={(e) => e.stopPropagation()}
+            />
           ))}
         {user.betaSupporter && (
           <Badge

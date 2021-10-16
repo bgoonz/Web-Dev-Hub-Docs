@@ -3,18 +3,18 @@ import { getChannels, getChannelsThreadCounts } from '../models/channel';
 import { getChannelsSettings } from '../models/channelSettings';
 import createLoader from './create-loader';
 
-export const __createChannelLoader = createLoader(channels =>
+export const __createChannelLoader = createLoader((channels) =>
   getChannels(channels)
 );
 
 export const __createChannelThreadCountLoader = createLoader(
-  channels => getChannelsThreadCounts(channels),
+  (channels) => getChannelsThreadCounts(channels),
   'group'
 );
 
 export const __createChannelSettingsLoader = createLoader(
-  channelIds => getChannelsSettings(channelIds),
-  key => key.channelId
+  (channelIds) => getChannelsSettings(channelIds),
+  (key) => key.channelId
 );
 
 export default () => {

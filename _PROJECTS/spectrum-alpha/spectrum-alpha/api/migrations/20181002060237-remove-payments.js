@@ -3,9 +3,9 @@ exports.up = async (r, conn) => {
     .db('spectrum')
     .table('recurringPayments')
     .filter({ planId: 'beta-pro' })
-    .map(row => row('userId'))
+    .map((row) => row('userId'))
     .run(conn)
-    .then(cursor => cursor.toArray());
+    .then((cursor) => cursor.toArray());
 
   const addSupporterFieldToUsersPromises = async () =>
     await r

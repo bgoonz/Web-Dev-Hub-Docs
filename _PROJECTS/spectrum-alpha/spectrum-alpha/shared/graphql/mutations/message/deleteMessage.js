@@ -18,12 +18,12 @@ export const deleteMessageMutation = gql`
 const deleteMessageOptions = {
   props: ({ ownProps, mutate }) => ({
     ...ownProps,
-    deleteMessage: id =>
+    deleteMessage: (id) =>
       mutate({
         variables: {
           id,
         },
-        update: store => {
+        update: (store) => {
           // we have to split out the optimistic update by thread type
           // because DMs and story threads have different queries and response
           // shapes
@@ -36,9 +36,10 @@ const deleteMessageOptions = {
               },
             });
 
-            data.thread.messageConnection.edges = data.thread.messageConnection.edges.filter(
-              ({ node }) => node.id !== id
-            );
+            data.thread.messageConnection.edges =
+              data.thread.messageConnection.edges.filter(
+                ({ node }) => node.id !== id
+              );
 
             // Write our data back to the cache.
             store.writeQuery({
@@ -57,9 +58,10 @@ const deleteMessageOptions = {
               },
             });
 
-            data.directMessageThread.messageConnection.edges = data.directMessageThread.messageConnection.edges.filter(
-              ({ node }) => node.id !== id
-            );
+            data.directMessageThread.messageConnection.edges =
+              data.directMessageThread.messageConnection.edges.filter(
+                ({ node }) => node.id !== id
+              );
             // Write our data back to the cache.
             store.writeQuery({
               query: getDMThreadMessageConnectionQuery,

@@ -4,12 +4,12 @@ import { MENTIONS } from './regexps';
 export const getMentions = (text: string): Array<string> => {
   const matchedMentions = text.match(MENTIONS);
   const mentions = matchedMentions
-    ? matchedMentions.filter(mention => !mention.startsWith('/'))
+    ? matchedMentions.filter((mention) => !mention.startsWith('/'))
     : [];
   if (!mentions || mentions.length === 0) return [];
   // " @Mxstbr" => "@Mxstbr"
-  const trimmed = mentions.map(
-    mention => (typeof mention === 'string' ? mention.trim() : mention)
+  const trimmed = mentions.map((mention) =>
+    typeof mention === 'string' ? mention.trim() : mention
   );
   // "@Mxstbr" => "Mxstbr"
   const cleaned = removeAtSymbol(trimmed);
@@ -21,11 +21,11 @@ export const getMentions = (text: string): Array<string> => {
 };
 
 const makeLowercase = (usernames: Array<string>): Array<string> => {
-  return usernames.map(u => u.toLowerCase());
+  return usernames.map((u) => u.toLowerCase());
 };
 
 const removeAtSymbol = (usernames: Array<string>): Array<string> => {
-  return usernames.map(u => u.substr(1));
+  return usernames.map((u) => u.substr(1));
 };
 
 export const getDistinctMentions = (

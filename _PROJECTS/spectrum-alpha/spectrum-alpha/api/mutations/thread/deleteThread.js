@@ -25,13 +25,11 @@ export default requireAuth(async (_: any, args: Input, ctx: GraphQLContext) => {
   }
 
   // return the thread, channels and communities
-  const [
-    currentUserChannelPermissions,
-    currentUserCommunityPermissions,
-  ] = await Promise.all([
-    getUserPermissionsInChannel(threadToEvaluate.channelId, user.id),
-    getUserPermissionsInCommunity(threadToEvaluate.communityId, user.id),
-  ]);
+  const [currentUserChannelPermissions, currentUserCommunityPermissions] =
+    await Promise.all([
+      getUserPermissionsInChannel(threadToEvaluate.channelId, user.id),
+      getUserPermissionsInCommunity(threadToEvaluate.communityId, user.id),
+    ]);
 
   // if the user owns the community or the channel, or they are the original creator, they can delete the thread
   if (

@@ -18,7 +18,7 @@ export default (
   return getEverything(user.id, {
     first,
     after: lastThreadIndex,
-  }).then(result => ({
+  }).then((result) => ({
     pageInfo: {
       hasNextPage: result && result.length >= first,
     },

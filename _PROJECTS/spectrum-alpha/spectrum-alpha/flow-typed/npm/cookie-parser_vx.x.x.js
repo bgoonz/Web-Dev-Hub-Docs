@@ -23,7 +23,6 @@ declare module 'cookie-parser' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'cookie-parser/index' {
   declare module.exports: $Exports<'cookie-parser'>;

@@ -33,7 +33,4 @@ class GithubProfile extends React.Component<Props> {
   }
 }
 
-export default compose(
-  getUserGithubProfile,
-  viewNetworkHandler
-)(GithubProfile);
+export default compose(getUserGithubProfile, viewNetworkHandler)(GithubProfile);

@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Follower = () => {
-  return <h2>follower component</h2>
-}
+  return <h2>follower component</h2>;
+};
 
-export default Follower
+export default Follower;

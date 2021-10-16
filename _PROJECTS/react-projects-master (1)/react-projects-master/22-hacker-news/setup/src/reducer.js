@@ -4,7 +4,7 @@ import {
   REMOVE_STORY,
   HANDLE_PAGE,
   HANDLE_SEARCH,
-} from './actions'
+} from "./actions";
 
-const reducer = () => {}
-export default reducer
+const reducer = () => {};
+export default reducer;

@@ -24,18 +24,17 @@ const removeToast = (id: number) => {
 };
 
 let nextToastId = 0;
-export const addToastWithTimeout = (kind: Toasts, message: string) => (
-  dispatch: Dispatch<Object>
-) => {
-  let timeout = 6000;
-  if (kind === 'success') timeout = 3000;
-  if (kind === 'notification') timeout = 5000;
+export const addToastWithTimeout =
+  (kind: Toasts, message: string) => (dispatch: Dispatch<Object>) => {
+    let timeout = 6000;
+    if (kind === 'success') timeout = 3000;
+    if (kind === 'notification') timeout = 5000;
 
-  let id = nextToastId++;
-  dispatch(addToast(id, kind, message, timeout));
+    let id = nextToastId++;
+    dispatch(addToast(id, kind, message, timeout));
 
-  setTimeout(() => {
-    dispatch(removeToast(id));
-    id = nextToastId--;
-  }, timeout);
-};
+    setTimeout(() => {
+      dispatch(removeToast(id));
+      id = nextToastId--;
+    }, timeout);
+  };

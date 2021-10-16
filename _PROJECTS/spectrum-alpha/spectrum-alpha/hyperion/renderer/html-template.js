@@ -23,8 +23,8 @@ try {
 }
 
 // Get the main bundle filename
-const mainBundle = bundles.find(bundle => mainBundleRegex.test(bundle));
-const bootstrapBundle = bundles.find(bundle =>
+const mainBundle = bundles.find((bundle) => mainBundleRegex.test(bundle));
+const bootstrapBundle = bundles.find((bundle) =>
   bootstrapBundleRegex.test(bundle)
 );
 if (!mainBundle || !bootstrapBundle) {
@@ -87,7 +87,7 @@ export const getFooter = ({
       <script nonce="${nonce}">window.__DATA__=${serialize(data)}</script>
       <script defer="defer" type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find,Symbol.iterator"></script>
       ${createScriptTag({ src: `/static/js/${bootstrapBundle}` })}
-      ${bundles.map(src => createScriptTag({ src }))}
+      ${bundles.map((src) => createScriptTag({ src }))}
       ${createScriptTag({ src: `/static/js/${mainBundle}` })}
     </body>
     </html>

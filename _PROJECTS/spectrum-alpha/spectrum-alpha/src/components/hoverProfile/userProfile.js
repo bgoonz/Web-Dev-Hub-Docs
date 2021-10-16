@@ -43,7 +43,7 @@ class HoverProfile extends Component<ProfileProps> {
         <ProfileCard>
           <ConditionalWrap
             condition={!!user.username}
-            wrap={children => (
+            wrap={(children) => (
               <Link to={`/users/${user.username}`}>{children}</Link>
             )}
           >
@@ -63,7 +63,7 @@ class HoverProfile extends Component<ProfileProps> {
           <Content>
             <ConditionalWrap
               condition={!!user.username}
-              wrap={children => (
+              wrap={(children) => (
                 <Link to={`/users/${user.username}`}>{children}</Link>
               )}
             >
@@ -91,8 +91,4 @@ class HoverProfile extends Component<ProfileProps> {
   }
 }
 
-export default compose(
-  withCurrentUser,
-  withRouter,
-  connect()
-)(HoverProfile);
+export default compose(withCurrentUser, withRouter, connect())(HoverProfile);

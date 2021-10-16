@@ -153,7 +153,7 @@ const Feeds = (props: Props) => {
   return (
     <FeedsContainer data-cy="community-view-content">
       <SegmentedControl>
-        {segments.map(segment => {
+        {segments.map((segment) => {
           return (
             <Segment
               key={segment}
@@ -171,7 +171,4 @@ const Feeds = (props: Props) => {
   );
 };
 
-export const CommunityFeeds = compose(
-  withRouter,
-  withCurrentUser
-)(Feeds);
+export const CommunityFeeds = compose(withRouter, withCurrentUser)(Feeds);

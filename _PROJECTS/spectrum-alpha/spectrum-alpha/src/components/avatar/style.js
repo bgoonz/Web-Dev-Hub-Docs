@@ -10,19 +10,19 @@ import { MEDIA_BREAK } from 'src/components/layout';
 export const Container = styled.div`
   position: relative;
   display: inline-block;
-  width: ${props => (props.size ? `${props.size}px` : '32px')};
-  height: ${props => (props.size ? `${props.size}px` : '32px')};
-  border-radius: ${props =>
+  width: ${(props) => (props.size ? `${props.size}px` : '32px')};
+  height: ${(props) => (props.size ? `${props.size}px` : '32px')};
+  border-radius: ${(props) =>
     props.type === 'community' ? `${props.size / 8}px` : '100%'};
   border: none;
   background-color: ${theme.bg.default};
 
-  ${props =>
+  ${(props) =>
     props.mobilesize &&
     css`
       @media (max-width: ${MEDIA_BREAK}px) {
-        width: ${props => `${props.mobilesize}px`};
-        height: ${props => `${props.mobilesize}px`};
+        width: ${(props) => `${props.mobilesize}px`};
+        height: ${(props) => `${props.mobilesize}px`};
       }
     `};
 `;
@@ -36,7 +36,7 @@ export const AvatarLink = styled(Link)`
   justify-content: center;
   align-items: center;
   pointer-events: auto;
-  border-radius: ${props =>
+  border-radius: ${(props) =>
     props.type === 'community' ? `${props.size / 8}px` : '100%'};
 `;
 
@@ -49,56 +49,56 @@ export const CoverAction = styled(ProfileHeaderAction)`
 
 export const Img = styled(ReactImage)`
   display: inline-block;
-  width: ${props => (props.size ? `${props.size}px` : '32px')};
-  height: ${props => (props.size ? `${props.size}px` : '32px')};
-  border-radius: ${props =>
+  width: ${(props) => (props.size ? `${props.size}px` : '32px')};
+  height: ${(props) => (props.size ? `${props.size}px` : '32px')};
+  border-radius: ${(props) =>
     props.type === 'community' ? `${props.size / 8}px` : '100%'};
   object-fit: cover;
   background-color: ${theme.bg.default};
 
-  ${props =>
+  ${(props) =>
     props.mobilesize &&
     css`
       @media (max-width: ${MEDIA_BREAK}px) {
-        width: ${props => `${props.mobilesize}px`};
-        height: ${props => `${props.mobilesize}px`};
+        width: ${(props) => `${props.mobilesize}px`};
+        height: ${(props) => `${props.mobilesize}px`};
       }
     `};
 `;
 
 export const FallbackImg = styled.img`
   display: inline-block;
-  width: ${props => (props.size ? `${props.size}px` : '32px')};
-  height: ${props => (props.size ? `${props.size}px` : '32px')};
-  border-radius: ${props =>
+  width: ${(props) => (props.size ? `${props.size}px` : '32px')};
+  height: ${(props) => (props.size ? `${props.size}px` : '32px')};
+  border-radius: ${(props) =>
     props.type === 'community' ? `${props.size / 8}px` : '100%'};
   object-fit: cover;
   background-color: ${theme.bg.wash};
 
-  ${props =>
+  ${(props) =>
     props.mobilesize &&
     css`
       @media (max-width: ${MEDIA_BREAK}px) {
-        width: ${props => `${props.mobilesize}px`};
-        height: ${props => `${props.mobilesize}px`};
+        width: ${(props) => `${props.mobilesize}px`};
+        height: ${(props) => `${props.mobilesize}px`};
       }
     `};
 `;
 
 export const LoadingImg = styled.div`
   display: inline-block;
-  width: ${props => (props.size ? `${props.size}px` : '32px')};
-  height: ${props => (props.size ? `${props.size}px` : '32px')};
-  border-radius: ${props =>
+  width: ${(props) => (props.size ? `${props.size}px` : '32px')};
+  height: ${(props) => (props.size ? `${props.size}px` : '32px')};
+  border-radius: ${(props) =>
     props.type === 'community' ? `${props.size / 8}px` : '100%'};
   background: ${theme.bg.wash};
 
-  ${props =>
+  ${(props) =>
     props.mobilesize &&
     css`
       @media (max-width: ${MEDIA_BREAK}px) {
-        width: ${props => `${props.mobilesize}px`};
-        height: ${props => `${props.mobilesize}px`};
+        width: ${(props) => `${props.mobilesize}px`};
+        height: ${(props) => `${props.mobilesize}px`};
       }
     `};
 `;

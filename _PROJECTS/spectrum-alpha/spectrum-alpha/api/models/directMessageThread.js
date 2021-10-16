@@ -74,7 +74,7 @@ const getDirectMessageThreadsByUser = (
   return db
     .table('usersDirectMessageThreads')
     .getAll(userId, { index: 'userId' })
-    .filter(row => row.hasFields('deletedAt').not())
+    .filter((row) => row.hasFields('deletedAt').not())
     .eqJoin('threadId', db.table('directMessageThreads'))
     .without({
       left: ['id', 'createdAt', 'threadId', 'userId', 'lastActive', 'lastSeen'],

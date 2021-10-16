@@ -23,7 +23,6 @@ declare module 'decode-uri-component' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'decode-uri-component/index' {
   declare module.exports: $Exports<'decode-uri-component'>;

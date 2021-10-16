@@ -15,7 +15,7 @@ export default async (
   const canViewThread = await canViewDMThread(user.id, id, loaders);
   if (!canViewThread) return null;
 
-  return loaders.directMessageSnippet.load(id).then(message => {
+  return loaders.directMessageSnippet.load(id).then((message) => {
     if (!message) return 'No messages yet...';
     if (message.messageType === 'media') return '📷 Photo';
     return message.messageType === messageTypeObj.draftjs

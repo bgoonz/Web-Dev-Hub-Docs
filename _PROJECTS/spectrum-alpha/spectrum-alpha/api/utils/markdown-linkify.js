@@ -15,7 +15,7 @@ const linkify = (text /*: string*/ /*: string*/) => {
   let last = 0;
   const result = [];
   if (matches) {
-    matches.forEach(function(match) {
+    matches.forEach(function (match) {
       if (last < match.index) {
         result.push(text.slice(last, match.index));
       }

@@ -20,7 +20,7 @@ describe('models/channel', () => {
         .channelsByCommunitiesQuery(SPECTRUM_COMMUNITY_ID)
         .run();
       expect(
-        channels.filter(channel => channel.deletedAt !== undefined)
+        channels.filter((channel) => channel.deletedAt !== undefined)
       ).toEqual([]);
     });
   });
@@ -34,7 +34,7 @@ describe('models/channel', () => {
         )
         .run();
       expect(
-        channels.filter(channel => channel.deletedAt !== undefined)
+        channels.filter((channel) => channel.deletedAt !== undefined)
       ).toEqual([]);
     });
   });
@@ -51,9 +51,9 @@ describe('models/channel', () => {
       const threads = await queries
         .threadsByChannelsQuery(SPECTRUM_GENERAL_CHANNEL_ID)
         .run();
-      expect(threads.filter(thread => thread.deletedAt !== undefined)).toEqual(
-        []
-      );
+      expect(
+        threads.filter((thread) => thread.deletedAt !== undefined)
+      ).toEqual([]);
     });
   });
 
@@ -69,7 +69,7 @@ describe('models/channel', () => {
       const members = await queries
         .membersByChannelsQuery(SPECTRUM_GENERAL_CHANNEL_ID)
         .run();
-      expect(members.filter(member => !member.isMember)).toEqual([]);
+      expect(members.filter((member) => !member.isMember)).toEqual([]);
     });
   });
 

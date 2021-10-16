@@ -54,7 +54,7 @@ class ChannelMembers extends Component<Props> {
     if (data && data.channel) {
       const members =
         channel.memberConnection &&
-        channel.memberConnection.edges.map(member => member && member.node);
+        channel.memberConnection.edges.map((member) => member && member.node);
 
       return (
         <SectionCard data-cy="channel-members">
@@ -62,7 +62,7 @@ class ChannelMembers extends Component<Props> {
 
           <ListContainer>
             {members &&
-              members.map(user => {
+              members.map((user) => {
                 if (!user) return null;
                 return (
                   <UserListItemContainer key={user.id}>

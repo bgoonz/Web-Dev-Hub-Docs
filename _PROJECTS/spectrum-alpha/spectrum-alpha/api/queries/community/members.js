@@ -56,12 +56,12 @@ export default async (root: DBCommunity, args: Args, ctx: GraphQLContext) => {
   }
 
   return query(id, { first, after: lastUserIndex })
-    .then(users => {
-      const permissionsArray = users.map(userId => [userId, id]);
+    .then((users) => {
+      const permissionsArray = users.map((userId) => [userId, id]);
       // $FlowIssue
       return loaders.userPermissionsInCommunity.loadMany(permissionsArray);
     })
-    .then(result => ({
+    .then((result) => ({
       pageInfo: {
         hasNextPage: result && result.length >= first,
       },

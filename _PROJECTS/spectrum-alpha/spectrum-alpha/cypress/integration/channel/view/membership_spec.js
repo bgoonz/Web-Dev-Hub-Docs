@@ -5,7 +5,7 @@ const publicChannel = data.channels[0];
 const privateChannel = data.channels[1];
 
 const community = data.communities.find(
-  community => community.id === publicChannel.communityId
+  (community) => community.id === publicChannel.communityId
 );
 
 const { userId: memberInChannelId } = data.usersChannels.find(

@@ -16,7 +16,7 @@ const ToastsPure = ({ toasts }): ?React$Element<any> => {
 
   return (
     <ToastsContainer>
-      {toasts.map(toast => {
+      {toasts.map((toast) => {
         const { kind, timeout, message, id } = toast;
         switch (kind) {
           case 'error': {

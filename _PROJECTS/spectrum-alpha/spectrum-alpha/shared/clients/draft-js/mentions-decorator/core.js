@@ -51,7 +51,7 @@ const createMentionsDecorator = (
 
     if (!matches || matches.length === 0) return;
 
-    matches = matches.filter(mention => !mention.startsWith('/'));
+    matches = matches.filter((mention) => !mention.startsWith('/'));
 
     if (!matches || matches.length === 0) return;
 

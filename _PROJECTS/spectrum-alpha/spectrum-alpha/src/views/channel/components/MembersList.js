@@ -48,13 +48,13 @@ class MembersList extends React.Component<Props> {
 
     if (channel && channel.memberConnection) {
       const { edges: members, pageInfo } = channel.memberConnection;
-      const nodes = members.map(member => member && member.node);
+      const nodes = members.map((member) => member && member.node);
       const uniqueNodes = deduplicateChildren(nodes, 'id');
       const { hasNextPage } = pageInfo;
 
       return (
         <React.Fragment>
-          {uniqueNodes.map(user => {
+          {uniqueNodes.map((user) => {
             if (!user) return null;
 
             return (

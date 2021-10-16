@@ -67,9 +67,7 @@ class ChannelSettings extends React.Component<Props> {
           <React.Fragment>
             <ViewError
               heading={'You don’t have permission to manage this channel.'}
-              subheading={`Head back to the ${
-                channel.community.name
-              } community to get back on track.`}
+              subheading={`Head back to the ${channel.community.name} community to get back on track.`}
             >
               <Upsell404Channel community={communitySlug} />
             </ViewError>
@@ -101,9 +99,7 @@ class ChannelSettings extends React.Component<Props> {
         <React.Fragment>
           <Head
             title={`${channel.name} settings`}
-            description={`Settings for the ${channel.name} channel in ${
-              channel.community.name
-            }`}
+            description={`Settings for the ${channel.name} channel in ${channel.community.name}`}
           />
           <ViewGrid>
             <View>

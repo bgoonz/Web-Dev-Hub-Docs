@@ -23,7 +23,6 @@ declare module 'session-rethinkdb' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'session-rethinkdb/index' {
   declare module.exports: $Exports<'session-rethinkdb'>;

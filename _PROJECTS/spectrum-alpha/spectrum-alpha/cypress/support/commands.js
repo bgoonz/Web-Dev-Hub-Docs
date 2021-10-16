@@ -9,9 +9,9 @@
 // ***********************************************
 import { encode } from '../../api/utils/base64';
 import data from '../../shared/testing/data';
-const getUser = userId => data.users.find(user => user.id === userId);
+const getUser = (userId) => data.users.find((user) => user.id === userId);
 
-Cypress.Commands.add('auth', userId => {
+Cypress.Commands.add('auth', (userId) => {
   const user = getUser(userId);
 
   return cy.setCookie(

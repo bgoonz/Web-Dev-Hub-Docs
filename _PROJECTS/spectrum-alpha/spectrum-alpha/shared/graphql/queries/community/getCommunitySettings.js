@@ -50,7 +50,11 @@ export const getCommunitySettingsByMatchQuery = gql`
 `;
 
 const getCommunitySettingsByMatchOptions = {
-  options: ({ match: { params: { communitySlug } } }) => ({
+  options: ({
+    match: {
+      params: { communitySlug },
+    },
+  }) => ({
     variables: {
       slug: communitySlug,
     },

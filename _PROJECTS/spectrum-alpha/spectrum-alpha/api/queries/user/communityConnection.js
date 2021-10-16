@@ -27,7 +27,7 @@ export default async (user: DBUser, _: any, ctx: GraphQLContext) => {
     pageInfo: {
       hasNextPage: false,
     },
-    edges: communities.map(async community => {
+    edges: communities.map(async (community) => {
       const permissions = await loaders.userPermissionsInCommunity.load([
         user.id,
         community.id,

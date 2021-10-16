@@ -3,7 +3,7 @@ import data from '../../../../shared/testing/data';
 const channel = data.channels[0];
 
 const community = data.communities.find(
-  community => community.id === channel.communityId
+  (community) => community.id === channel.communityId
 );
 
 const { userId: ownerInChannelId } = data.usersChannels.find(
@@ -35,9 +35,7 @@ describe('edit a channel', () => {
       .clear()
       .type(NEW_DESCRIPTION);
 
-    cy.get('[data-cy="save-button"]')
-      .should('be.visible')
-      .click();
+    cy.get('[data-cy="save-button"]').should('be.visible').click();
 
     cy.visit(`/${community.slug}/${channel.slug}`);
     cy.contains(NEW_NAME);

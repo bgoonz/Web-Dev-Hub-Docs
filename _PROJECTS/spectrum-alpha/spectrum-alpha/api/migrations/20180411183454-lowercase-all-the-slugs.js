@@ -22,6 +22,6 @@ exports.up = async (r, conn) => {
   ]);
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.resolve();
 };

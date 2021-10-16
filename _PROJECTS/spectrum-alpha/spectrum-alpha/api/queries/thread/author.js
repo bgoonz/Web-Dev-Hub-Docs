@@ -7,15 +7,12 @@ export default async (
   _: any,
   { loaders }: GraphQLContext
 ) => {
-  let [
-    user,
-    communityPermissions = {},
-    channelPermissions = {},
-  ] = await Promise.all([
-    loaders.user.load(creatorId),
-    loaders.userPermissionsInCommunity.load([creatorId, communityId]),
-    loaders.userPermissionsInChannel.load([creatorId, channelId]),
-  ]);
+  let [user, communityPermissions = {}, channelPermissions = {}] =
+    await Promise.all([
+      loaders.user.load(creatorId),
+      loaders.userPermissionsInCommunity.load([creatorId, communityId]),
+      loaders.userPermissionsInChannel.load([creatorId, channelId]),
+    ]);
 
   if (!communityPermissions) communityPermissions = {};
   if (!channelPermissions) channelPermissions = {};

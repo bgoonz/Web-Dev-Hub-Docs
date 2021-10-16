@@ -3,7 +3,7 @@ import { request } from '../../utils';
 import data from 'shared/testing/data';
 import { toPlainText, toState } from 'shared/draft-utils';
 
-const messageToPlainText = message =>
+const messageToPlainText = (message) =>
   toPlainText(toState(JSON.parse(message.content.body)));
 
 // Get all messages in our test thread and sort them by time
@@ -15,25 +15,25 @@ describe('reverse pagination', () => {
   it('should fetch with reverse pagination', async () => {
     // Get the first three messages
     const query = /* GraphQL */ `
-        {
-          thread(id: "thread-1") {
-            messageConnection(first: 3) {
-              pageInfo {
-                hasNextPage
-                hasPreviousPage
-              }
-              edges {
-                cursor
-                node {
-                  content {
-                    body
-                  }
+      {
+        thread(id: "thread-1") {
+          messageConnection(first: 3) {
+            pageInfo {
+              hasNextPage
+              hasPreviousPage
+            }
+            edges {
+              cursor
+              node {
+                content {
+                  body
                 }
               }
             }
           }
         }
-      `;
+      }
+    `;
 
     expect.hasAssertions();
     const result = await request(query);

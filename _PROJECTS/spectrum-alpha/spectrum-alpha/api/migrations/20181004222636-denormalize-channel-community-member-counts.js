@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return Promise.all([
     r
       .table('communities')
@@ -7,7 +7,7 @@ exports.up = function(r, conn) {
           memberCount: r
             .table('usersCommunities')
             .getAll(r.row('id'), { index: 'communityId' })
-            .filter(row => row('isMember').eq(true))
+            .filter((row) => row('isMember').eq(true))
             .count()
             .default(1),
         },
@@ -23,7 +23,7 @@ exports.up = function(r, conn) {
           memberCount: r
             .table('usersChannels')
             .getAll(r.row('id'), { index: 'channelId' })
-            .filter(row => row('isMember').eq(true))
+            .filter((row) => row('isMember').eq(true))
             .count()
             .default(1),
         },
@@ -32,9 +32,9 @@ exports.up = function(r, conn) {
         }
       )
       .run(conn),
-  ]).catch(err => console.error(err));
+  ]).catch((err) => console.error(err));
 };
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.all([
     r
       .table('communities')

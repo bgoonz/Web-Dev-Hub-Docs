@@ -23,7 +23,6 @@ declare module 'is-html' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'is-html/index' {
   declare module.exports: $Exports<'is-html'>;

@@ -1,8 +1,6 @@
 const constants = require('./constants');
-const {
-  PRIVATE_COMMUNITY_WITH_JOIN_TOKEN_ID,
-  PAYMENTS_COMMUNITY_ID,
-} = constants;
+const { PRIVATE_COMMUNITY_WITH_JOIN_TOKEN_ID, PAYMENTS_COMMUNITY_ID } =
+  constants;
 
 module.exports = [
   {

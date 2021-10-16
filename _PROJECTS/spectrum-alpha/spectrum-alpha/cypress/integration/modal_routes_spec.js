@@ -1,5 +1,5 @@
 import data from '../../shared/testing/data';
-const user = data.users.find(user => user.username === 'brian');
+const user = data.users.find((user) => user.username === 'brian');
 
 const pressEscape = () =>
   cy.get('[data-cy="modal-container"]').trigger('keydown', { keyCode: 27 });
@@ -15,9 +15,7 @@ describe.skip('thread modal route', () => {
 
   it('handles esc key', () => {
     cy.visit('/spectrum');
-    cy.get('[data-cy="thread-card"]')
-      .first()
-      .click();
+    cy.get('[data-cy="thread-card"]').first().click();
     threadSlider().should('be.visible');
     cy.url(
       'eq',
@@ -32,9 +30,7 @@ describe.skip('thread modal route', () => {
 
   it('handles overlay click', () => {
     cy.visit('/spectrum');
-    cy.get('[data-cy="thread-card"]')
-      .first()
-      .click();
+    cy.get('[data-cy="thread-card"]').first().click();
     threadSlider().should('be.visible');
     cy.url(
       'eq',
@@ -49,9 +45,7 @@ describe.skip('thread modal route', () => {
 
   it('handles close click', () => {
     cy.visit('/spectrum');
-    cy.get('[data-cy="thread-card"]')
-      .first()
-      .click();
+    cy.get('[data-cy="thread-card"]').first().click();
     threadSlider().should('be.visible');
     cy.url(
       'eq',
@@ -66,9 +60,7 @@ describe.skip('thread modal route', () => {
 
   it('handles channel feed', () => {
     cy.visit('/spectrum/general');
-    cy.get('[data-cy="thread-card"]')
-      .first()
-      .click();
+    cy.get('[data-cy="thread-card"]').first().click();
     threadSlider().should('be.visible');
     cy.url(
       'eq',

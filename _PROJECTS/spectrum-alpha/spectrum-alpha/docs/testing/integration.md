@@ -67,4 +67,3 @@ it('should render', () => {
   cy.get('[data-cy="home-page"]').should('be.visible');
 });
 ```
-

@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return Promise.all([
     r
       .tableCreate('curatedContent')
@@ -112,22 +112,19 @@ exports.up = function(r, conn) {
           },
         ];
 
-        const insertPromises = types.map(type => {
-          return r
-            .table('curatedContent')
-            .insert(type)
-            .run(conn);
+        const insertPromises = types.map((type) => {
+          return r.table('curatedContent').insert(type).run(conn);
         });
 
         return Promise.all([insertPromises]);
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
   ]);
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.all([r.tableDrop('curatedContent').run(conn)]);
 };

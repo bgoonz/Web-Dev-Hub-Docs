@@ -31,13 +31,8 @@ type Props = {
 
 class Component extends React.Component<Props> {
   render() {
-    const {
-      isLoading,
-      hasError,
-      queryVarIsChanging,
-      data,
-      currentUser,
-    } = this.props;
+    const { isLoading, hasError, queryVarIsChanging, data, currentUser } =
+      this.props;
 
     const isOwner = this.props.community.communityPermissions.isOwner;
 
@@ -57,8 +52,8 @@ class Component extends React.Component<Props> {
 
     const { edges: members } = community.members;
     const nodes = members
-      .map(member => member && member.node)
-      .filter(node => node && (node.isOwner || node.isModerator))
+      .map((member) => member && member.node)
+      .filter((node) => node && (node.isOwner || node.isModerator))
       .filter(Boolean);
 
     return (

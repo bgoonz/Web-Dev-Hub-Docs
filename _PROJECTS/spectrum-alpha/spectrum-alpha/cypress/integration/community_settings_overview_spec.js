@@ -6,7 +6,7 @@ const { userId: ownerId } = data.usersCommunities.find(
 );
 const channels = data.channels
   .filter(({ communityId }) => community.id === communityId)
-  .filter(c => !c.deletedAt);
+  .filter((c) => !c.deletedAt);
 
 describe('Community settings overview tab', () => {
   beforeEach(() => {
@@ -17,7 +17,7 @@ describe('Community settings overview tab', () => {
     cy.get('[data-cy="community-settings"]').should('be.visible');
     cy.contains('Channels');
     // Make sure all channels are listed and link to their settings
-    channels.forEach(channel => {
+    channels.forEach((channel) => {
       cy.contains(channel.name);
       cy.get(`[href*="${community.slug}/${channel.slug}/settings"]`);
     });
@@ -28,9 +28,7 @@ describe('Community settings overview tab', () => {
     const name = 'text';
     const description = 'text';
     // Change name
-    cy.get('[data-cy="community-settings-name-input"]')
-      .clear()
-      .type(`${name}`);
+    cy.get('[data-cy="community-settings-name-input"]').clear().type(`${name}`);
     // Change description
     cy.get('[data-cy="community-settings-description-input"]')
       .clear()

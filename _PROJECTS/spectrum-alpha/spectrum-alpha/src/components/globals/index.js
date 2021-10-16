@@ -72,7 +72,7 @@ export const Transition = {
   },
 };
 
-export const zIndex = new function() {
+export const zIndex = new (function () {
   // Write down a camel-cased element descriptor as the name (e.g. modal or chatInput).
   // Define at a component level here, then use math to handle order at a local level.
   // (e.g. const ModalInput = styled.input`z-index: zIndex.modal + 1`;)
@@ -109,7 +109,7 @@ export const zIndex = new function() {
 
   this.toast = 6000; // toasts should be visible in every context
   this.tooltip = this.toast + 1; // tooltips should always be on top
-}();
+})();
 
 export const fontStack = css`
   font-family: -apple-system, BlinkMacSystemFont, 'Helvetica', 'Segoe',
@@ -125,30 +125,32 @@ const spin = keyframes`
 `;
 
 export const Spinner = styled.span`
-  width: ${props => (props.size ? `${props.size}px` : '32px')};
-  height: ${props => (props.size ? `${props.size}px` : '32px')};
+  width: ${(props) => (props.size ? `${props.size}px` : '32px')};
+  height: ${(props) => (props.size ? `${props.size}px` : '32px')};
 
   &:before {
     content: '';
     box-sizing: border-box;
     display: inline-block;
-    position: ${props => (props.inline ? 'relative' : 'absolute')};
-    top: ${props => (props.inline ? '0' : '50%')};
-    left: ${props => (props.inline ? '0' : '50%')};
-    width: ${props => (props.size !== undefined ? `${props.size}px` : '16px')};
-    height: ${props => (props.size !== undefined ? `${props.size}px` : '16px')};
-    margin-top: ${props =>
+    position: ${(props) => (props.inline ? 'relative' : 'absolute')};
+    top: ${(props) => (props.inline ? '0' : '50%')};
+    left: ${(props) => (props.inline ? '0' : '50%')};
+    width: ${(props) =>
+      props.size !== undefined ? `${props.size}px` : '16px'};
+    height: ${(props) =>
+      props.size !== undefined ? `${props.size}px` : '16px'};
+    margin-top: ${(props) =>
       props.size !== undefined ? `-${props.size / 2}px` : '-8px'};
-    margin-left: ${props =>
+    margin-left: ${(props) =>
       props.size !== undefined ? `-${props.size / 2}px` : '-8px'};
     border-radius: 50%;
     border: 2px solid
-      ${props =>
+      ${(props) =>
         props.color
           ? eval(`props.theme.${props.color}`)
           : props.theme.brand.alt};
     border-top-color: transparent;
-    border-right-color: ${props =>
+    border-right-color: ${(props) =>
       props.color ? eval(`props.theme.${props.color}`) : props.theme.brand.alt};
     border-bottom-color: transparent;
     animation: ${spin} 2s linear infinite;
@@ -200,7 +202,7 @@ export const Input = styled.input`
   margin-top: 0.125rem;
   box-shadow: none;
 
-  ${props =>
+  ${(props) =>
     props.type === 'checkbox' &&
     css`
       flex: initial;
@@ -360,7 +362,7 @@ export const FlexCol = styled.div`
   align-items: stretch;
 `;
 
-export const Onboarding = props => css`
+export const Onboarding = (props) => css`
   position: relative;
 
   &:after,

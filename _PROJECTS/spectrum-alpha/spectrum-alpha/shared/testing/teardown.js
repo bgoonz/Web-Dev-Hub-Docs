@@ -9,12 +9,5 @@ const tables = Object.keys(data);
 
 module.exports = () => {
   debug(`clearing data in database "testing"`);
-  return Promise.all(
-    tables.map(table =>
-      mockDb
-        .table(table)
-        .delete()
-        .run()
-    )
-  );
+  return Promise.all(tables.map((table) => mockDb.table(table).delete().run()));
 };

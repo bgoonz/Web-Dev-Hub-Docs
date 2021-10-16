@@ -53,13 +53,13 @@ class MembersList extends React.Component<Props> {
 
     if (community) {
       const { edges: members } = community.members;
-      const nodes = members.map(member => member && member.node);
+      const nodes = members.map((member) => member && member.node);
       const uniqueNodes = deduplicateChildren(nodes, 'id');
       const hasNextPage = community.members.pageInfo.hasNextPage;
 
       return (
         <React.Fragment>
-          {uniqueNodes.map(node => {
+          {uniqueNodes.map((node) => {
             if (!node) return null;
 
             const { user } = node;

@@ -10,7 +10,7 @@ declare module 'uuid' {
       |},
       buffer?: number[] | Buffer,
       offset?: number
-    ): string,
+    ): string;
 
     static v1(
       options?: {|
@@ -21,7 +21,7 @@ declare module 'uuid' {
       |},
       buffer?: number[] | Buffer,
       offset?: number
-    ): string,
+    ): string;
 
     static v4(
       options?: {|
@@ -30,7 +30,7 @@ declare module 'uuid' {
       |},
       buffer?: number[] | Buffer,
       offset?: number
-    ): string,
+    ): string;
   }
   declare module.exports: Class<uuid>;
 }
@@ -46,7 +46,7 @@ declare module 'uuid/v1' {
       |},
       buffer?: number[] | Buffer,
       offset?: number
-    ): string,
+    ): string;
   }
 
   declare module.exports: Class<v1>;
@@ -61,7 +61,7 @@ declare module 'uuid/v4' {
       |},
       buffer?: number[] | Buffer,
       offset?: number
-    ): string,
+    ): string;
   }
 
   declare module.exports: Class<v4>;
@@ -74,7 +74,7 @@ declare module 'uuid/v5' {
       namespace?: string | number[],
       buffer?: number[] | Buffer,
       offset?: number
-    ): string,
+    ): string;
   }
 
   declare module.exports: Class<v5>;

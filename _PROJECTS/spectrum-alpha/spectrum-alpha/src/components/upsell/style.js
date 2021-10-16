@@ -112,16 +112,16 @@ export const CommunityUpsellCost = styled(Cost)`
 export const NullCol = styled(FlexCol)`
   background-color: transparent;
   background-size: 110% auto;
-  background-repeat: ${props => (props.repeat ? 'repeat-y' : 'no-repeat')};
-  background-position: ${props =>
+  background-repeat: ${(props) => (props.repeat ? 'repeat-y' : 'no-repeat')};
+  background-position: ${(props) =>
     props.repeat ? 'center top' : 'center center'};
   width: 100%;
   height: auto;
-  min-height: ${props => (props.noPadding ? '0' : '160px')};
+  min-height: ${(props) => (props.noPadding ? '0' : '160px')};
   flex: 0 0 auto;
-  padding: ${props => (props.noPadding ? '0' : '2rem')};
+  padding: ${(props) => (props.noPadding ? '0' : '2rem')};
   justify-content: center;
-  align-items: ${props => props.alignItems || 'center'};
+  align-items: ${(props) => props.alignItems || 'center'};
   position: relative;
   align-self: center;
 
@@ -132,7 +132,7 @@ export const NullCol = styled(FlexCol)`
 `;
 
 export const NullRow = styled(FlexRow)`
-  background-image: url('/img/fills/${props =>
+  background-image: url('/img/fills/${(props) =>
     props.bg ? `${props.bg}` : 'locked'}.svg');
   background-color: transparent;
   background-size: 110% auto;
@@ -245,7 +245,7 @@ export const SigninButton = styled.a`
   position: relative;
   margin: 16px;
 
-  ${props =>
+  ${(props) =>
     props.after &&
     `
       &:after {
@@ -278,7 +278,7 @@ export const SigninButton = styled.a`
   @media (max-width: ${MEDIA_BREAK}px) {
     margin: 16px 0;
 
-    ${props =>
+    ${(props) =>
       props.after &&
       `
         margin: 48px 0 16px 0;
@@ -291,9 +291,9 @@ export const SigninButton = styled.a`
 `;
 
 export const ButtonTwitter = styled(SigninButton)`
-  background: ${props =>
+  background: ${(props) =>
     props.preferred ? props.theme.social.twitter.default : 'none'};
-  color: ${props =>
+  color: ${(props) =>
     props.whitebg
       ? props.theme.social.twitter.default
       : props.preferred
@@ -305,15 +305,15 @@ export const ButtonTwitter = styled(SigninButton)`
   }
 
   &:hover {
-    color: ${props =>
+    color: ${(props) =>
       props.whitebg ? props.theme.social.twitter.default : '#fff'};
   }
 `;
 
 export const ButtonFacebook = styled(SigninButton)`
-  background: ${props =>
+  background: ${(props) =>
     props.preferred ? props.theme.social.facebook.default : 'none'};
-  color: ${props =>
+  color: ${(props) =>
     props.whitebg
       ? props.theme.social.facebook.default
       : props.preferred
@@ -325,15 +325,15 @@ export const ButtonFacebook = styled(SigninButton)`
   }
 
   &:hover {
-    color: ${props =>
+    color: ${(props) =>
       props.whitebg ? props.theme.social.facebook.default : '#fff'};
   }
 `;
 
 export const ButtonGoogle = styled(SigninButton)`
-  background: ${props =>
+  background: ${(props) =>
     props.preferred ? props.theme.social.google.default : 'none'};
-  color: ${props =>
+  color: ${(props) =>
     props.whitebg
       ? props.theme.social.google.default
       : props.preferred
@@ -345,7 +345,7 @@ export const ButtonGoogle = styled(SigninButton)`
   }
 
   &:hover {
-    color: ${props =>
+    color: ${(props) =>
       props.whitebg ? props.theme.social.google.default : '#fff'};
   }
 `;

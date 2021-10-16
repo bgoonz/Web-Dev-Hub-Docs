@@ -17,7 +17,7 @@ export default async (root: DBThread, _: any, ctx: GraphQLContext) => {
       )
     );
 
-    return await loaders.threadReaction.load(id).then(res => {
+    return await loaders.threadReaction.load(id).then((res) => {
       if (res && Array.isArray(res.reduction)) {
         return res.reduction.length;
       }

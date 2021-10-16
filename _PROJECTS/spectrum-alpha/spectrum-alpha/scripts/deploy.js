@@ -5,7 +5,7 @@ const error = require('./utils/error');
 
 // Debug util
 const exec = process.env.DEBUG
-  ? cmd => {
+  ? (cmd) => {
       console.log(`[DEBUG] ${cmd}`);
       return 'fake-url-asdf123.now.sh';
     }
@@ -23,28 +23,28 @@ if (servers.length === 0)
   error(
     'Server name missing',
     `Please provide one of the following server names: ${VALID_SERVERS.map(
-      w => `"${w}"`
+      (w) => `"${w}"`
     ).join(', ')}`
   );
 
-servers.forEach(server => {
+servers.forEach((server) => {
   if (VALID_SERVERS.indexOf(server) === -1)
     error(
       `Cannot deploy unknown server "${args[0]}"`,
       `Please provide one of the following server names: ${VALID_SERVERS.map(
-        w => `"${w}"`
+        (w) => `"${w}"`
       ).join(', ')}`
     );
 });
 
 if (flags.prod && servers.indexOf('all') > -1) {
-  servers = VALID_SERVERS.filter(w => w !== 'all');
+  servers = VALID_SERVERS.filter((w) => w !== 'all');
 } else if (servers.indexOf('all') > -1) {
   servers = VALID_ALPHA_SERVERS;
 }
 
 if (!flags.prod) {
-  servers.forEach(server => {
+  servers.forEach((server) => {
     if (VALID_ALPHA_SERVERS.indexOf(server) === -1) {
       error(
         `Cannot deploy ${server} to alpha`,
@@ -52,7 +52,9 @@ if (!flags.prod) {
       );
     }
   });
-  servers = servers.filter(server => VALID_ALPHA_SERVERS.indexOf(server) > -1);
+  servers = servers.filter(
+    (server) => VALID_ALPHA_SERVERS.indexOf(server) > -1
+  );
 }
 
 console.log(`\nDeploying to ${flags.prod ? 'production' : 'alpha'}!\n`);
@@ -60,7 +62,7 @@ console.log(`\nDeploying to ${flags.prod ? 'production' : 'alpha'}!\n`);
 if (servers.length > 0) {
   console.log('Installing fresh dependencies...');
   exec('yarn');
-  servers.forEach(server => {
+  servers.forEach((server) => {
     const buildDir = path.join(__dirname, `../build-${server}`);
     console.log(`\n---${server}---`);
     console.log(`Installing ${server} dependencies...`);

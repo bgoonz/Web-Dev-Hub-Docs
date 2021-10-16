@@ -1,7 +1,7 @@
 // flow-typed signature: 9fd7b9287df55ee8cfa980889d107499
 // flow-typed version: a8b5058d19/axios_v0.17.x/flow_>=v0.25.x
 
-declare module "axios" {
+declare module 'axios' {
   declare interface ProxyConfig {
     host: string;
     port: number;
@@ -28,7 +28,7 @@ declare module "axios" {
     adapter?: <T>(config: AxiosXHRConfig<T>) => Promise<AxiosXHR<T>>;
     auth?: {
       username: string,
-      password: string
+      password: string,
     };
     baseURL?: string;
     cancelToken?: CancelToken;
@@ -42,12 +42,12 @@ declare module "axios" {
     progress?: (progressEvent: Event) => void | mixed;
     proxy?: ProxyConfig | false;
     responseType?:
-      | "arraybuffer"
-      | "blob"
-      | "document"
-      | "json"
-      | "text"
-      | "stream";
+      | 'arraybuffer'
+      | 'blob'
+      | 'document'
+      | 'json'
+      | 'text'
+      | 'stream';
     timeout?: number;
     transformRequest?: Array<<U>(data: T) => U | Array<<U>(data: T) => U>>;
     transformResponse?: Array<<U>(data: T) => U>;
@@ -117,7 +117,7 @@ declare module "axios" {
     ): AxiosPromise<T>;
     interceptors: {
       request: AxiosRequestInterceptor<mixed>,
-      response: AxiosResponseInterceptor<mixed>
+      response: AxiosResponseInterceptor<mixed>,
     };
     defaults: { headers: Object } & AxiosXHRConfig<*>;
   }

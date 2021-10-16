@@ -28,7 +28,7 @@ export default async (root: DBCommunity, args: Args, ctx: GraphQLContext) => {
   const { user, loaders } = ctx;
   const { id } = root;
 
-  if (!await canViewCommunity(user, id, loaders)) {
+  if (!(await canViewCommunity(user, id, loaders))) {
     return {
       pageInfo: {
         hasNextPage: false,
@@ -47,8 +47,8 @@ export default async (root: DBCommunity, args: Args, ctx: GraphQLContext) => {
 
   // $FlowFixMe
   return getMembersInCommunity(id, { first, after: lastUserIndex }, filter)
-    .then(users => loaders.user.loadMany(users))
-    .then(result => ({
+    .then((users) => loaders.user.loadMany(users))
+    .then((result) => ({
       pageInfo: {
         hasNextPage: result && result.length >= first,
       },

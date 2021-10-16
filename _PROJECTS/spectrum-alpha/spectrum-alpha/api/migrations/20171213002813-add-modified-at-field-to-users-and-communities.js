@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   /*
 
     We are adding a modifiedAt field on users and communities for 2 key reasons:
@@ -35,7 +35,7 @@ exports.up = function(r, conn) {
   ]);
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.all([
     r
       .table('users')

@@ -7,14 +7,11 @@ import type { PaginationOptions } from '../utils/paginate-arrays';
 import type { DBThread } from 'shared/types';
 import type { Timeframe } from './utils';
 
-const NOT_WATERCOOLER = thread =>
+const NOT_WATERCOOLER = (thread) =>
   db.not(thread.hasFields('watercooler')).or(thread('watercooler').eq(false));
 
 export const getThread = (threadId: string): Promise<DBThread> => {
-  return db
-    .table('threads')
-    .get(threadId)
-    .run();
+  return db.table('threads').get(threadId).run();
 };
 
 // prettier-ignore
@@ -30,9 +27,9 @@ export const getThreadById = (threadId: string): Promise<?DBThread> => {
   return db
     .table('threads')
     .getAll(threadId)
-    .filter(thread => db.not(thread.hasFields('deletedAt')))
+    .filter((thread) => db.not(thread.hasFields('deletedAt')))
     .run()
-    .then(results => {
+    .then((results) => {
       if (!results || results.length === 0) return null;
       return results[0];
     });
@@ -43,7 +40,7 @@ export const getThreadsByChannelToDelete = (channelId: string) => {
   return db
     .table('threads')
     .getAll(channelId, { index: 'channelId' })
-    .filter(thread => db.not(thread.hasFields('deletedAt')))
+    .filter((thread) => db.not(thread.hasFields('deletedAt')))
     .run();
 };
 
@@ -88,7 +85,7 @@ export const getThreadsByChannels = (
   return db
     .table('threads')
     .getAll(...channelIds, { index: 'channelId' })
-    .filter(thread =>
+    .filter((thread) =>
       db.not(thread.hasFields('deletedAt')).and(NOT_WATERCOOLER(thread))
     )
     .orderBy(...order)
@@ -158,26 +155,26 @@ export const getViewableThreadsByUser = async (
         index: 'userIdAndRole',
       }
     )
-    .map(userChannel => userChannel('channelId'))
+    .map((userChannel) => userChannel('channelId'))
     .run();
 
   const getCurrentUserCommunityIds = db
     .table('usersCommunities')
     .getAll([currentUser, true], { index: 'userIdAndIsMember' })
-    .map(userCommunity => userCommunity('communityId'))
+    .map((userCommunity) => userCommunity('communityId'))
     .run();
 
   // get a list of the channels where the user posted a thread
   const getPublishedChannelIds = db
     .table('threads')
     .getAll(evalUser, { index: 'creatorId' })
-    .map(thread => thread('channelId'))
+    .map((thread) => thread('channelId'))
     .run();
 
   const getPublishedCommunityIds = db
     .table('threads')
     .getAll(evalUser, { index: 'creatorId' })
-    .map(thread => thread('communityId'))
+    .map((thread) => thread('communityId'))
     .run();
 
   const [
@@ -197,14 +194,14 @@ export const getViewableThreadsByUser = async (
     .table('channels')
     .getAll(...publishedChannelIds)
     .filter({ isPrivate: false })
-    .map(channel => channel('id'))
+    .map((channel) => channel('id'))
     .run();
 
   const publicCommunityIds = await db
     .table('communities')
     .getAll(...publishedCommunityIds)
     .filter({ isPrivate: false })
-    .map(community => community('id'))
+    .map((community) => community('id'))
     .run();
 
   const allIds = [
@@ -221,16 +218,16 @@ export const getViewableThreadsByUser = async (
   return await db
     .table('threads')
     .getAll(evalUser, { index: 'creatorId' })
-    .filter(thread => db.not(thread.hasFields('deletedAt')))
-    .filter(thread => db.expr(validChannelIds).contains(thread('channelId')))
-    .filter(thread =>
+    .filter((thread) => db.not(thread.hasFields('deletedAt')))
+    .filter((thread) => db.expr(validChannelIds).contains(thread('channelId')))
+    .filter((thread) =>
       db.expr(validCommunityIds).contains(thread('communityId'))
     )
     .orderBy(db.desc('lastActive'), db.desc('createdAt'))
     .skip(after || 0)
     .limit(first)
     .run()
-    .then(res => {
+    .then((res) => {
       return res;
     });
 };
@@ -273,13 +270,13 @@ export const getViewableParticipantThreadsByUser = async (
         index: 'userIdAndRole',
       }
     )
-    .map(userChannel => userChannel('channelId'))
+    .map((userChannel) => userChannel('channelId'))
     .run();
 
   const getCurrentUserCommunityIds = db
     .table('usersCommunities')
     .getAll([currentUser, true], { index: 'userIdAndIsMember' })
-    .map(userCommunity => userCommunity('communityId'))
+    .map((userCommunity) => userCommunity('communityId'))
     .run();
 
   // get a list of the channels where the user participated in a thread
@@ -311,13 +308,15 @@ export const getViewableParticipantThreadsByUser = async (
     getParticipantCommunityIds,
   ]);
 
-  const participantThreadIds = participantChannelIds.map(c => c && c.threadId);
+  const participantThreadIds = participantChannelIds.map(
+    (c) => c && c.threadId
+  );
   const distinctParticipantChannelIds = participantChannelIds
-    .map(c => c.channelId)
+    .map((c) => c.channelId)
     .filter((x, i, a) => a.indexOf(x) === i);
 
   const distinctParticipantCommunityIds = participantCommunityIds
-    .map(c => c.communityId)
+    .map((c) => c.communityId)
     .filter((x, i, a) => a.indexOf(x) === i);
 
   // get a list of all the channels that are public
@@ -325,14 +324,14 @@ export const getViewableParticipantThreadsByUser = async (
     .table('channels')
     .getAll(...distinctParticipantChannelIds)
     .filter({ isPrivate: false })
-    .map(channel => channel('id'))
+    .map((channel) => channel('id'))
     .run();
 
   const publicCommunityIds = await db
     .table('communities')
     .getAll(...distinctParticipantCommunityIds)
     .filter({ isPrivate: false })
-    .map(community => community('id'))
+    .map((community) => community('id'))
     .run();
 
   const allIds = [
@@ -354,16 +353,16 @@ export const getViewableParticipantThreadsByUser = async (
   return await db
     .table('threads')
     .getAll(...participantThreadIds)
-    .filter(thread => db.not(thread.hasFields('deletedAt')))
-    .filter(thread => db.expr(validChannelIds).contains(thread('channelId')))
-    .filter(thread =>
+    .filter((thread) => db.not(thread.hasFields('deletedAt')))
+    .filter((thread) => db.expr(validChannelIds).contains(thread('channelId')))
+    .filter((thread) =>
       db.expr(validCommunityIds).contains(thread('communityId'))
     )
     .orderBy(db.desc('lastActive'), db.desc('createdAt'))
     .skip(after || 0)
     .limit(first)
     .run()
-    .then(res => {
+    .then((res) => {
       return res;
     });
 };
@@ -411,7 +410,7 @@ export const getWatercoolerThread = (
     .table('threads')
     .getAll([communityId, true], { index: 'communityIdAndWatercooler' })
     .run()
-    .then(result => {
+    .then((result) => {
       if (!Array.isArray(result) || result.length === 0) return null;
       return result[0];
     });
@@ -449,10 +448,7 @@ export const incrementMessageCount = (threadId: string) => {
     .table('threads')
     .get(threadId)
     .update({
-      messageCount: db
-        .row('messageCount')
-        .default(0)
-        .add(1),
+      messageCount: db.row('messageCount').default(0).add(1),
     })
     .run();
 };
@@ -462,10 +458,7 @@ export const decrementMessageCount = (threadId: string) => {
     .table('threads')
     .get(threadId)
     .update({
-      messageCount: db
-        .row('messageCount')
-        .default(1)
-        .sub(1),
+      messageCount: db.row('messageCount').default(1).sub(1),
     })
     .run();
 };

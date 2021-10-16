@@ -73,7 +73,4 @@ class Badge extends React.Component<Props> {
   }
 }
 
-export default compose(
-  withCurrentUser,
-  connect()
-)(Badge);
+export default compose(withCurrentUser, connect())(Badge);

@@ -34,7 +34,7 @@ export default async (
       // (so it essentially just takes 1 “unnecessary” request to figure out whether or not there is a previous page)
       hasPreviousPage: messages && messages.length > 0 && !!cursor,
     },
-    edges: messages.map(message => ({
+    edges: messages.map((message) => ({
       cursor: encode(message.timestamp.getTime().toString()),
       node: message,
     })),

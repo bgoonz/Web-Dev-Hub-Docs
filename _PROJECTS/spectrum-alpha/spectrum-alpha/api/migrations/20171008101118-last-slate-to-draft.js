@@ -5,9 +5,9 @@ const isHtml = require('is-html');
 const cheerio = require('cheerio');
 const { toPlainText, toState } = require('../../shared/slate-utils');
 
-const convertEmbeds = state => {
+const convertEmbeds = (state) => {
   const entityMap = state.entityMap || {};
-  const blocks = state.blocks.map(block => {
+  const blocks = state.blocks.map((block) => {
     if (block.type !== 'unstyled') return block;
     if (!isHtml(block.text)) return block;
 
@@ -22,7 +22,7 @@ const convertEmbeds = state => {
 
     if (!src) return block;
 
-    const keys = Object.keys(entityMap).map(key => parseInt(key, 10));
+    const keys = Object.keys(entityMap).map((key) => parseInt(key, 10));
     const lastKey = keys.sort()[keys.length - 1];
     const newKey = lastKey === undefined ? 0 : lastKey + 1;
 
@@ -65,7 +65,7 @@ const plainToDraft = compose(
 
 const slateToDraft = compose(plainToDraft, toPlainText, toState, JSON.parse);
 
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return (
     r
       .table('threads')
@@ -73,10 +73,10 @@ exports.up = function(r, conn) {
         type: 'SLATE',
       })
       .run(conn)
-      .then(cursor => cursor.toArray())
+      .then((cursor) => cursor.toArray())
       // Transform slate state to draftjs state
-      .then(threads =>
-        threads.map(thread =>
+      .then((threads) =>
+        threads.map((thread) =>
           Object.assign({}, thread, {
             type: 'DRAFTJS',
             content: Object.assign({}, thread.content, {
@@ -86,21 +86,17 @@ exports.up = function(r, conn) {
         )
       )
       // Store the transformed threads
-      .then(threads =>
+      .then((threads) =>
         Promise.all(
-          threads.map(thread =>
-            r
-              .table('threads')
-              .get(thread.id)
-              .update(thread)
-              .run(conn)
+          threads.map((thread) =>
+            r.table('threads').get(thread.id).update(thread).run(conn)
           )
         )
       )
   );
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   // Not spending any time undoing this
   return Promise.resolve();
 };

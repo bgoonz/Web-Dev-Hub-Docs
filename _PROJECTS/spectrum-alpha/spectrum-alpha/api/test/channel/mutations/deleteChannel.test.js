@@ -96,18 +96,9 @@ const DEFAULT_THREADS = [
 
 const cleanTables = () =>
   Promise.all([
-    db
-      .table('channels')
-      .delete()
-      .run(),
-    db
-      .table('usersChannels')
-      .delete()
-      .run(),
-    db
-      .table('threads')
-      .delete()
-      .run(),
+    db.table('channels').delete().run(),
+    db.table('usersChannels').delete().run(),
+    db.table('threads').delete().run(),
   ]);
 
 const populateTables = () =>
@@ -205,10 +196,7 @@ it('should not delete the general channel', async () => {
 
 it('should delete all threads in the deleted channel', async () => {
   const getThreadsInChannel = () =>
-    db
-      .table('threads')
-      .filter({ channelId: defaultChannelId })
-      .run();
+    db.table('threads').filter({ channelId: defaultChannelId }).run();
 
   const query = /* GraphQL */ `
     mutation deleteChannel($channelId: ID!) {
@@ -224,6 +212,6 @@ it('should delete all threads in the deleted channel', async () => {
   const result = await request(query, { context, variables });
   expect(result).toMatchSnapshot();
   const threads = await getThreadsInChannel();
-  const filtered = threads.filter(t => t.deletedAt !== null).length;
+  const filtered = threads.filter((t) => t.deletedAt !== null).length;
   expect(threads).toHaveLength(filtered);
 });

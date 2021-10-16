@@ -1,9 +1,9 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return Promise.all([
     r
       .tableCreate('coreMetrics')
       .run(conn)
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
@@ -13,7 +13,7 @@ exports.up = function(r, conn) {
         .table('coreMetrics')
         .indexCreate('date', r.row('date'))
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         });
@@ -43,7 +43,7 @@ exports.up = function(r, conn) {
                 r.now().sub(60 * 60 * 24 * index)
               )
             )
-            .filter(row => r.not(row.hasFields('deletedAt')))
+            .filter((row) => r.not(row.hasFields('deletedAt')))
             .count()
             .run(conn);
         }
@@ -57,7 +57,7 @@ exports.up = function(r, conn) {
               r.now().sub(60 * 60 * 24 * index)
             )
           )
-          .filter(row => r.not(row.hasFields('deletedAt')))
+          .filter((row) => r.not(row.hasFields('deletedAt')))
           .count()
           .run(conn);
       };
@@ -66,7 +66,7 @@ exports.up = function(r, conn) {
       const getPu = (table, field, index) => {
         // get the count of the users within a given range
         return getCount('users', null, index, 'createdAt')
-          .then(userCount => {
+          .then((userCount) => {
             // get the count of whatever entity within a given range
             const tableCount = r
               .table(table)
@@ -77,7 +77,7 @@ exports.up = function(r, conn) {
                   r.now().sub(60 * 60 * 24 * index)
                 )
               )
-              .filter(row => r.not(row.hasFields('deletedAt')))
+              .filter((row) => r.not(row.hasFields('deletedAt')))
               .count()
               .run(conn);
 
@@ -158,12 +158,12 @@ exports.up = function(r, conn) {
 
       return Promise.all(backfill);
     })
-    .catch(err => {
+    .catch((err) => {
       console.log(err);
       throw err;
     });
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.all([r.tableDrop('coreMetrics').run(conn)]);
 };

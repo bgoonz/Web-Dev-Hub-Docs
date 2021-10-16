@@ -13,7 +13,7 @@ function sortByDate(
   key /*: string */,
   order /*: string */
 ) {
-  return array.sort(function(a, b) {
+  return array.sort(function (a, b) {
     var x = new Date(a[key]).getTime();
     var y = new Date(b[key]).getTime();
     // desc = older to newest from top to bottom

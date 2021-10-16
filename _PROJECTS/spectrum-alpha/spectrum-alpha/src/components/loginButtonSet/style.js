@@ -32,9 +32,9 @@ export const SigninButton = styled.div`
   position: relative;
   width: 100%;
   cursor: pointer;
-  ${props => props.showAfter && `margin-top: 32px`};
+  ${(props) => props.showAfter && `margin-top: 32px`};
 
-  ${props =>
+  ${(props) =>
     props.showAfter &&
     `
     &:after {
@@ -67,9 +67,9 @@ export const Label = styled.span`
 `;
 
 export const TwitterButton = styled(SigninButton)`
-  background: ${props =>
+  background: ${(props) =>
     props.preferred ? props.theme.social.twitter.default : 'none'};
-  color: ${props =>
+  color: ${(props) =>
     props.preferred ? '#fff' : props.theme.social.twitter.default};
 
   &:after {
@@ -78,9 +78,9 @@ export const TwitterButton = styled(SigninButton)`
 `;
 
 export const FacebookButton = styled(SigninButton)`
-  background: ${props =>
+  background: ${(props) =>
     props.preferred ? props.theme.social.facebook.default : 'none'};
-  color: ${props =>
+  color: ${(props) =>
     props.preferred ? '#fff' : props.theme.social.facebook.default};
 
   &:after {
@@ -89,9 +89,9 @@ export const FacebookButton = styled(SigninButton)`
 `;
 
 export const GoogleButton = styled(SigninButton)`
-  background: ${props =>
+  background: ${(props) =>
     props.preferred ? props.theme.social.google.default : 'none'};
-  color: ${props =>
+  color: ${(props) =>
     props.preferred ? '#fff' : props.theme.social.google.default};
 
   &:after {
@@ -100,9 +100,9 @@ export const GoogleButton = styled(SigninButton)`
 `;
 
 export const GithubButton = styled(SigninButton)`
-  background: ${props =>
+  background: ${(props) =>
     props.preferred ? props.theme.social.github.default : 'none'};
-  color: ${props =>
+  color: ${(props) =>
     props.preferred ? '#fff' : props.theme.social.github.default};
 
   &:after {

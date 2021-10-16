@@ -20,14 +20,8 @@ export default (user: any, _: any, { loaders }: GraphQLContext, info: any) => {
       case 'getThreadMessages': {
         const threadId = info.variableValues.id;
         const { communityId } = await getThread(threadId);
-        const {
-          isModerator,
-          isOwner,
-          isBlocked,
-        } = await loaders.userPermissionsInCommunity.load([
-          user.id,
-          communityId,
-        ]);
+        const { isModerator, isOwner, isBlocked } =
+          await loaders.userPermissionsInCommunity.load([user.id, communityId]);
         return {
           isBlocked,
           communityId,
@@ -38,15 +32,8 @@ export default (user: any, _: any, { loaders }: GraphQLContext, info: any) => {
       case 'loadMoreCommunityMembers':
       case 'getCommunityMembers': {
         const communityId = info.variableValues.id;
-        const {
-          isOwner,
-          isBlocked,
-          isModerator,
-          isMember,
-        } = await loaders.userPermissionsInCommunity.load([
-          user.id,
-          communityId,
-        ]);
+        const { isOwner, isBlocked, isModerator, isMember } =
+          await loaders.userPermissionsInCommunity.load([user.id, communityId]);
         return {
           communityId,
           isMember,
@@ -60,14 +47,8 @@ export default (user: any, _: any, { loaders }: GraphQLContext, info: any) => {
       case 'getChannelMembers': {
         const channelId = info.variableValues.id;
         const { communityId } = await getChannelById(channelId);
-        const {
-          isModerator,
-          isOwner,
-          isBlocked,
-        } = await loaders.userPermissionsInCommunity.load([
-          user.id,
-          communityId,
-        ]);
+        const { isModerator, isOwner, isBlocked } =
+          await loaders.userPermissionsInCommunity.load([user.id, communityId]);
         return {
           isBlocked,
           communityId,

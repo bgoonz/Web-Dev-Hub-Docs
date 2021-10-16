@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return r
     .table('users')
     .insert({
@@ -22,10 +22,6 @@ exports.up = function(r, conn) {
     })
     .run(conn);
 };
-exports.down = function(r, conn) {
-  return r
-    .table('users')
-    .get('sam')
-    .delete()
-    .run(conn);
+exports.down = function (r, conn) {
+  return r.table('users').get('sam').delete().run(conn);
 };

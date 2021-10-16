@@ -12,7 +12,7 @@ const isSerializedJSON = (str: string) =>
  */
 export const getUserIdFromReq = (req: any): Promise<?string> =>
   new Promise((res, rej) => {
-    session(req, {}, err => {
+    session(req, {}, (err) => {
       if (err) {
         return rej(err);
       }

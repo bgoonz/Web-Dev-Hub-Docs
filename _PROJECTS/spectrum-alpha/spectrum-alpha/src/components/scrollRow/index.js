@@ -11,14 +11,14 @@ class ScrollRow extends Component {
     node.scrollLeft = this.state.scrollPos;
 
     let x, left, down;
-    node.addEventListener('mousemove', e => {
+    node.addEventListener('mousemove', (e) => {
       if (down) {
         let newX = e.pageX;
         node.scrollLeft = left - newX + x;
       }
     });
 
-    node.addEventListener('mousedown', e => {
+    node.addEventListener('mousedown', (e) => {
       e.preventDefault();
 
       down = true;
@@ -26,7 +26,7 @@ class ScrollRow extends Component {
       left = node.scrollLeft;
     });
 
-    node.addEventListener('mouseup', e => {
+    node.addEventListener('mouseup', (e) => {
       down = false;
 
       if (e.target.id) {
@@ -36,7 +36,7 @@ class ScrollRow extends Component {
       }
     });
 
-    node.addEventListener('mouseleave', e => {
+    node.addEventListener('mouseleave', (e) => {
       down = false;
     });
   };
@@ -45,7 +45,7 @@ class ScrollRow extends Component {
     return (
       <ScrollableFlexRow
         className={this.props.className}
-        ref={comp => (this.hscroll = comp)}
+        ref={(comp) => (this.hscroll = comp)}
       >
         {this.props.children}
       </ScrollableFlexRow>

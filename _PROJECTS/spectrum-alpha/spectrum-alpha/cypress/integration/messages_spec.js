@@ -1,6 +1,6 @@
 import data from '../../shared/testing/data';
 
-const user = data.users.find(user => user.username === 'brian');
+const user = data.users.find((user) => user.username === 'brian');
 
 describe('/messages', () => {
   beforeEach(() => {
@@ -16,31 +16,25 @@ describe('/messages', () => {
   });
 
   it('should select an individual conversation', () => {
-    cy.contains('Max Stoiber and Bryn Jackson')
-      .should('be.visible')
-      .click();
+    cy.contains('Max Stoiber and Bryn Jackson').should('be.visible').click();
     cy.get('[data-cy="dm-header"]').should('be.visible');
     cy.get('[data-cy="dm-header"]').contains('Max Stoiber, Bryn Jackson');
-    cy.get('[data-cy="message"]').should($p => {
+    cy.get('[data-cy="message"]').should(($p) => {
       expect($p).to.have.length(5);
     });
   });
 
   it('should switch conversations', () => {
-    cy.contains('Max Stoiber and Bryn Jackson')
-      .should('be.visible')
-      .click();
+    cy.contains('Max Stoiber and Bryn Jackson').should('be.visible').click();
     cy.get('[data-cy="dm-header"]').should('be.visible');
     cy.get('[data-cy="dm-header"]').contains('Max Stoiber, Bryn Jackson');
-    cy.get('[data-cy="message"]').should($p => {
+    cy.get('[data-cy="message"]').should(($p) => {
       expect($p).to.have.length(5);
     });
 
-    cy.contains('Previous member')
-      .should('be.visible')
-      .click();
+    cy.contains('Previous member').should('be.visible').click();
     cy.get('[data-cy="dm-header"]').should('not.be.visible');
-    cy.get('[data-cy="message"]').should($p => {
+    cy.get('[data-cy="message"]').should(($p) => {
       expect($p).to.have.length(0);
     });
   });

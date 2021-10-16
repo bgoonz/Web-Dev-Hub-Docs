@@ -23,7 +23,6 @@ declare module 'graphql-depth-limit' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'graphql-depth-limit/index' {
   declare module.exports: $Exports<'graphql-depth-limit'>;

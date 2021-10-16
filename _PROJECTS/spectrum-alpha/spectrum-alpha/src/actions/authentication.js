@@ -1,7 +1,7 @@
 export const logout = () => {
   import('shared/graphql')
-    .then(module => module.clearApolloStore)
-    .then(clearApolloStore => {
+    .then((module) => module.clearApolloStore)
+    .then((clearApolloStore) => {
       // clear Apollo's query cache
       clearApolloStore();
       // redirect to home page

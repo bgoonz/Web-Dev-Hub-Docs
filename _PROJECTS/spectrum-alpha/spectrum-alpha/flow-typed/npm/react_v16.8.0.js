@@ -38,7 +38,7 @@ declare class React$Component<Props, State = void> {
 
   setState(
     partialState: ?$Shape<State> | ((State, Props) => ?$Shape<State>),
-    callback?: () => mixed,
+    callback?: () => mixed
   ): void;
 
   forceUpdate(callback?: () => void): void;
@@ -50,33 +50,27 @@ declare class React$Component<Props, State = void> {
   componentWillMount(): mixed;
   UNSAFE_componentWillMount(): mixed;
   componentDidMount(): mixed;
-  componentWillReceiveProps(
-    nextProps: Props,
-    nextContext: any,
-  ): mixed;
-  UNSAFE_componentWillReceiveProps(
-    nextProps: Props,
-    nextContext: any,
-  ): mixed;
+  componentWillReceiveProps(nextProps: Props, nextContext: any): mixed;
+  UNSAFE_componentWillReceiveProps(nextProps: Props, nextContext: any): mixed;
   shouldComponentUpdate(
     nextProps: Props,
     nextState: State,
-    nextContext: any,
+    nextContext: any
   ): boolean;
   componentWillUpdate(
     nextProps: Props,
     nextState: State,
-    nextContext: any,
+    nextContext: any
   ): mixed;
   UNSAFE_componentWillUpdate(
     nextProps: Props,
     nextState: State,
-    nextContext: any,
+    nextContext: any
   ): mixed;
   componentDidUpdate(
     prevProps: Props,
     prevState: State,
-    prevContext: any,
+    prevContext: any
   ): mixed;
   componentWillUnmount(): mixed;
   componentDidCatch(
@@ -105,7 +99,8 @@ declare class React$Component<Props, State = void> {
 }
 
 declare class React$PureComponent<Props, State = void>
-  extends React$Component<Props, State> {
+  extends React$Component<Props, State>
+{
   // TODO: Due to bugs in Flow's handling of React.createClass, some fields
   // already declared in the base class need to be redeclared below. Ideally
   // they should simply be inherited.
@@ -119,12 +114,13 @@ declare class React$PureComponent<Props, State = void>
  * classes and supports additional methods.
  */
 declare class LegacyReactComponent<Props, State>
-  extends React$Component<Props, State> {
+  extends React$Component<Props, State>
+{
   // additional methods
 
   replaceState(state: State, callback?: () => void): void;
 
-  isMounted(): bool;
+  isMounted(): boolean;
 
   // TODO: Due to bugs in Flow's handling of React.createClass, some fields
   // already declared in the base class need to be redeclared below. Ideally
@@ -150,7 +146,7 @@ declare type React$StatelessFunctionalComponent<Props> = {
   (props: Props, context: any): React$Node,
   displayName?: ?string,
   propTypes?: any,
-  contextTypes?: any
+  contextTypes?: any,
 };
 
 /**
@@ -162,7 +158,10 @@ declare type React$StatelessFunctionalComponent<Props> = {
  *   class syntax, or with the legacy `React.createClass()` helper.
  */
 // $FlowIssue
-declare type React$ComponentType<-Config> = React$AbstractComponent<Config, any>;
+declare type React$ComponentType<-Config> = React$AbstractComponent<
+  Config,
+  any
+>;
 
 /**
  * The type of an element in React. A React element may be a:
@@ -172,9 +171,7 @@ declare type React$ComponentType<-Config> = React$AbstractComponent<Config, any>
  * - React component. See `ComponentType` for more information about its
  *   different variants.
  */
-declare type React$ElementType =
-  | string
-  | React$AbstractComponent<any, any>;
+declare type React$ElementType = string | React$AbstractComponent<any, any>;
 
 /**
  * Type of a React element. React elements are commonly created using JSX
@@ -197,7 +194,7 @@ declare type React$Key = string | number;
  * The type of the ref prop available on all React components.
  */
 declare type React$Ref<ElementType: React$ElementType> =
-  | {-current: React$ElementRef<ElementType> | null}
+  | { -current: React$ElementRef<ElementType> | null }
   | ((React$ElementRef<ElementType> | null) => mixed)
   | string;
 
@@ -211,7 +208,7 @@ declare type React$Context<T> = {
 
   // Optional, user-specified value for custom display label in React DevTools.
   displayName?: string,
-}
+};
 
 /**
  * A React portal node. The implementation of the portal node is hidden to React
@@ -225,25 +222,24 @@ declare module react {
   declare export var version: string;
 
   declare export function checkPropTypes<V>(
-    propTypes : any,
+    propTypes: any,
     values: V,
     location: string,
     componentName: string,
-    getStack: ?(() => ?string)
-  ) : void;
+    getStack: ?() => ?string
+  ): void;
 
   declare export var createClass: React$CreateClass;
   declare export function createContext<T>(
     defaultValue: T,
-    calculateChangedBits: ?(a: T, b: T) => number,
+    calculateChangedBits: ?(a: T, b: T) => number
   ): React$Context<T>;
   declare export var createElement: React$CreateElement;
   declare export var cloneElement: React$CloneElement;
   declare export function createFactory<ElementType: React$ElementType>(
-    type: ElementType,
+    type: ElementType
   ): React$ElementFactory<ElementType>;
-  declare export function createRef<T>(
-  ): {|current: null | T|};
+  declare export function createRef<T>(): {| current: null | T |};
 
   declare export function isValidElement(element: any): boolean;
 
@@ -254,122 +250,127 @@ declare module react {
   declare export type ComponentType<-P> = React$ComponentType<P>;
   declare export type AbstractComponent<
     -Config,
-    +Instance = mixed,
+    +Instance = mixed
   > = React$AbstractComponent<Config, Instance>;
   declare export type ElementType = React$ElementType;
   declare export type Element<+C> = React$Element<C>;
-  declare export var Fragment: ({children: ?React$Node}) => React$Node;
+  declare export var Fragment: ({ children: ?React$Node }) => React$Node;
   declare export type Key = React$Key;
   declare export type Ref<C> = React$Ref<C>;
   declare export type Node = React$Node;
   declare export type Context<T> = React$Context<T>;
   declare export type Portal = React$Portal;
-  declare export var ConcurrentMode: ({children: ?React$Node}) => React$Node; // 16.7+
-  declare export var StrictMode: ({children: ?React$Node}) => React$Node;
+  declare export var ConcurrentMode: ({ children: ?React$Node }) => React$Node; // 16.7+
+  declare export var StrictMode: ({ children: ?React$Node }) => React$Node;
 
   declare export var Suspense: React$ComponentType<{
     children?: ?React$Node,
     fallback?: React$Node,
-    maxDuration?: number
+    maxDuration?: number,
   }>; // 16.6+
 
   declare export type ElementProps<C> = React$ElementProps<C>;
   declare export type ElementConfig<C> = React$ElementConfig<C>;
   declare export type ElementRef<C> = React$ElementRef<C>;
   // $FlowIssue
-  declare export type Config<Props, DefaultProps> = React$Config<Props, DefaultProps>;
+  declare export type Config<Props, DefaultProps> = React$Config<
+    Props,
+    DefaultProps
+  >;
 
   declare export type ChildrenArray<+T> = $ReadOnlyArray<ChildrenArray<T>> | T;
   declare export var Children: {
     map<T, U>(
       children: ChildrenArray<T>,
       fn: (child: $NonMaybeType<T>, index: number) => U,
-      thisArg?: mixed,
-    ): Array<$NonMaybeType<U>>;
+      thisArg?: mixed
+    ): Array<$NonMaybeType<U>>,
     forEach<T>(
       children: ChildrenArray<T>,
       fn: (child: T, index: number) => mixed,
-      thisArg?: mixed,
-    ): void;
-    count(children: ChildrenArray<any>): number;
-    only<T>(children: ChildrenArray<T>): $NonMaybeType<T>;
-    toArray<T>(children: ChildrenArray<T>): Array<$NonMaybeType<T>>;
+      thisArg?: mixed
+    ): void,
+    count(children: ChildrenArray<any>): number,
+    only<T>(children: ChildrenArray<T>): $NonMaybeType<T>,
+    toArray<T>(children: ChildrenArray<T>): Array<$NonMaybeType<T>>,
   };
 
   declare export function forwardRef<Config, Instance>(
     render: (
       props: Config,
-      ref: {current: null | Instance} | ((null | Instance) => mixed),
-    ) => React$Node,
+      ref: { current: null | Instance } | ((null | Instance) => mixed)
+    ) => React$Node
   ): React$AbstractComponent<Config, Instance>;
 
   declare export function memo<P>(
     component: React$ComponentType<P>,
-    equal?: (P, P) => boolean,
+    equal?: (P, P) => boolean
   ): React$ComponentType<P>;
 
   declare export function lazy<P>(
-    component: () => Promise<{ default: React$ComponentType<P> }>,
+    component: () => Promise<{ default: React$ComponentType<P> }>
   ): React$ComponentType<P>;
 
   declare type MaybeCleanUpFn = void | (() => void);
 
   declare export function useContext<T>(
     context: React$Context<T>,
-    observedBits: void | number | boolean,
+    observedBits: void | number | boolean
   ): T;
 
   declare export function useState<S>(
-    initialState: (() => S) | S,
-  ): [S, ((S => S) | S) => void];
+    initialState: (() => S) | S
+  ): [S, (((S) => S) | S) => void];
 
   declare type Dispatch<A> = (A) => void;
 
   declare export function useReducer<S, A>(
     reducer: (S, A) => S,
-    initialState: S,
+    initialState: S
   ): [S, Dispatch<A>];
 
   declare export function useReducer<S, A>(
     reducer: (S, A) => S,
     initialState: S,
-    init: void,
+    init: void
   ): [S, Dispatch<A>];
 
   declare export function useReducer<S, A, I>(
     reducer: (S, A) => S,
     initialArg: I,
-    init: (I) => S,
+    init: (I) => S
   ): [S, Dispatch<A>];
 
-  declare export function useRef<T>(initialValue: T): {|current: T|};
+  declare export function useRef<T>(initialValue: T): {| current: T |};
 
   declare export function useDebugValue(value: any): void;
 
   declare export function useEffect(
     create: () => MaybeCleanUpFn,
-    inputs: ?$ReadOnlyArray<mixed>,
+    inputs: ?$ReadOnlyArray<mixed>
   ): void;
 
   declare export function useLayoutEffect(
     create: () => MaybeCleanUpFn,
-    inputs: ?$ReadOnlyArray<mixed>,
+    inputs: ?$ReadOnlyArray<mixed>
   ): void;
 
-  declare export function useCallback<T: (...args: $ReadOnlyArray<empty>) => mixed>(
+  declare export function useCallback<
+    T: (...args: $ReadOnlyArray<empty>) => mixed
+  >(
     callback: T,
-    inputs: ?$ReadOnlyArray<mixed>,
+    inputs: ?$ReadOnlyArray<mixed>
   ): T;
 
   declare export function useMemo<T>(
     create: () => T,
-    inputs: ?$ReadOnlyArray<mixed>,
+    inputs: ?$ReadOnlyArray<mixed>
   ): T;
 
   declare export function useImperativeHandle<T>(
-    ref: {current: T | null} | ((inst: T | null) => mixed) | null | void,
+    ref: { current: T | null } | ((inst: T | null) => mixed) | null | void,
     create: () => T,
-    inputs: ?$ReadOnlyArray<mixed>,
+    inputs: ?$ReadOnlyArray<mixed>
   ): void;
 
   declare export default {|
@@ -416,42 +417,47 @@ type ReactPropsCheckType = (
   props: any,
   propName: string,
   componentName: string,
-  href?: string) => ?Error;
+  href?: string
+) => ?Error;
 
 type ReactPropsChainableTypeChecker = {
-  isRequired: ReactPropsCheckType;
-  (props: any, propName: string, componentName: string, href?: string): ?Error;
+  isRequired: ReactPropsCheckType,
+  (props: any, propName: string, componentName: string, href?: string): ?Error,
 };
 
-type React$PropTypes$arrayOf =
-  (typeChecker: ReactPropsCheckType) => ReactPropsChainableTypeChecker;
-type React$PropTypes$instanceOf =
-  (expectedClass: any) => ReactPropsChainableTypeChecker;
-type React$PropTypes$objectOf =
-  (typeChecker: ReactPropsCheckType) => ReactPropsChainableTypeChecker;
-type React$PropTypes$oneOf =
-  (expectedValues: Array<any>) => ReactPropsChainableTypeChecker;
-type React$PropTypes$oneOfType =
-  (arrayOfTypeCheckers: Array<ReactPropsCheckType>) =>
-    ReactPropsChainableTypeChecker;
-type React$PropTypes$shape =
-  (shapeTypes: { [key: string]: ReactPropsCheckType }) =>
-    ReactPropsChainableTypeChecker;
+type React$PropTypes$arrayOf = (
+  typeChecker: ReactPropsCheckType
+) => ReactPropsChainableTypeChecker;
+type React$PropTypes$instanceOf = (
+  expectedClass: any
+) => ReactPropsChainableTypeChecker;
+type React$PropTypes$objectOf = (
+  typeChecker: ReactPropsCheckType
+) => ReactPropsChainableTypeChecker;
+type React$PropTypes$oneOf = (
+  expectedValues: Array<any>
+) => ReactPropsChainableTypeChecker;
+type React$PropTypes$oneOfType = (
+  arrayOfTypeCheckers: Array<ReactPropsCheckType>
+) => ReactPropsChainableTypeChecker;
+type React$PropTypes$shape = (shapeTypes: {
+  [key: string]: ReactPropsCheckType,
+}) => ReactPropsChainableTypeChecker;
 
 type ReactPropTypes = {
-  array: React$PropType$Primitive<Array<any>>;
-  bool: React$PropType$Primitive<boolean>;
-  func: React$PropType$Primitive<Function>;
-  number: React$PropType$Primitive<number>;
-  object: React$PropType$Primitive<Object>;
-  string: React$PropType$Primitive<string>;
-  any: React$PropType$Primitive<any>;
-  arrayOf: React$PropType$ArrayOf;
-  element: React$PropType$Primitive<any>; /* TODO */
-  instanceOf: React$PropType$InstanceOf;
-  node: React$PropType$Primitive<any>; /* TODO */
-  objectOf: React$PropType$ObjectOf;
-  oneOf: React$PropType$OneOf;
-  oneOfType: React$PropType$OneOfType;
-  shape: React$PropType$Shape;
-}
+  array: React$PropType$Primitive<Array<any>>,
+  bool: React$PropType$Primitive<boolean>,
+  func: React$PropType$Primitive<Function>,
+  number: React$PropType$Primitive<number>,
+  object: React$PropType$Primitive<Object>,
+  string: React$PropType$Primitive<string>,
+  any: React$PropType$Primitive<any>,
+  arrayOf: React$PropType$ArrayOf,
+  element: React$PropType$Primitive<any> /* TODO */,
+  instanceOf: React$PropType$InstanceOf,
+  node: React$PropType$Primitive<any> /* TODO */,
+  objectOf: React$PropType$ObjectOf,
+  oneOf: React$PropType$OneOf,
+  oneOfType: React$PropType$OneOfType,
+  shape: React$PropType$Shape,
+};

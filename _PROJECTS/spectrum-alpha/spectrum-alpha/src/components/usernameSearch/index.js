@@ -52,7 +52,7 @@ class UsernameSearch extends React.Component<Props, State> {
     this.search(username);
   }
 
-  handleChange = e => {
+  handleChange = (e) => {
     const username = slugg(e.target.value.trim());
 
     this.setState({
@@ -73,9 +73,9 @@ class UsernameSearch extends React.Component<Props, State> {
     return this.search(username);
   };
 
-  isUsernameValid = username => username.length > 0 && username.length <= 20;
+  isUsernameValid = (username) => username.length > 0 && username.length <= 20;
 
-  notifyParentWithValidationResult = username => {
+  notifyParentWithValidationResult = (username) => {
     if (username.length > 20) {
       this.props.onValidationResult({
         error: 'Usernames can be up to 20 characters',
@@ -130,7 +130,7 @@ class UsernameSearch extends React.Component<Props, State> {
           isSearching: false,
         });
       })
-      .catch(err => {
+      .catch((err) => {
         this.props.onError && this.props.onError(err);
         this.setState({
           isSearching: false,
@@ -163,7 +163,4 @@ class UsernameSearch extends React.Component<Props, State> {
   }
 }
 
-export default compose(
-  withApollo,
-  connect()
-)(UsernameSearch);
+export default compose(withApollo, connect())(UsernameSearch);

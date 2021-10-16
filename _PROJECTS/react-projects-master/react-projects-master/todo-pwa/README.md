@@ -8,11 +8,11 @@ The classic Todos Tracker as a Progressive Web App. Built using React, Redux, le
 
 ## Features
 
-* Cross-browser, cross-platform support
-* Installable web app
-* Offline functionality with local storage
-* Fancy yet simple UI
-* Lightweight
+- Cross-browser, cross-platform support
+- Installable web app
+- Offline functionality with local storage
+- Fancy yet simple UI
+- Lightweight
 
 ## Development
 

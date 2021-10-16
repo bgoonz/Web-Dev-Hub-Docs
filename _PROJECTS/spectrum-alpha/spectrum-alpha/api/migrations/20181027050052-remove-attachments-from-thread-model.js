@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return Promise.all([
     r
       .table('threads')
@@ -6,8 +6,8 @@ exports.up = function(r, conn) {
         attachments: r.literal(),
       })
       .run(conn),
-  ]).catch(err => console.error(err));
+  ]).catch((err) => console.error(err));
 };
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.resolve();
 };

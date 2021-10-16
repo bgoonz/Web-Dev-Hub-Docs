@@ -40,7 +40,7 @@ class BanUserModal extends React.Component<Props, State> {
     this.props.dispatch(closeModal());
   };
 
-  changeReason = e => {
+  changeReason = (e) => {
     const reason = e.target.value;
 
     this.setState({
@@ -49,7 +49,7 @@ class BanUserModal extends React.Component<Props, State> {
     });
   };
 
-  submit = e => {
+  submit = (e) => {
     e.preventDefault();
     const { reason } = this.state;
     const { user, dispatch, banUser } = this.props;
@@ -75,7 +75,7 @@ class BanUserModal extends React.Component<Props, State> {
           addToastWithTimeout('success', 'User has been banned.')
         );
       })
-      .catch(err => {
+      .catch((err) => {
         this.setState({ isLoading: false });
         return dispatch(addToastWithTimeout('error', err.toString()));
       });
@@ -137,7 +137,7 @@ class BanUserModal extends React.Component<Props, State> {
   }
 }
 
-const map = state => ({
+const map = (state) => ({
   isOpen: state.modals.isOpen,
 });
 

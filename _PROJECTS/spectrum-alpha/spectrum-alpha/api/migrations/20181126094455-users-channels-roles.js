@@ -2,7 +2,7 @@ const branch = (r, field, fallback) => {
   return r.branch(r.row(`is${field}`).eq(true), field.toLowerCase(), fallback);
 };
 
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return Promise.all([
     r
       .table('usersChannels')
@@ -45,15 +45,9 @@ exports.up = function(r, conn) {
   ]);
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.all([
-    r
-      .table('usersChannels')
-      .indexDrop('channelIdAndRole')
-      .run(conn),
-    r
-      .table('usersChannels')
-      .indexDrop('userIdAndRole')
-      .run(conn),
+    r.table('usersChannels').indexDrop('channelIdAndRole').run(conn),
+    r.table('usersChannels').indexDrop('userIdAndRole').run(conn),
   ]);
 };

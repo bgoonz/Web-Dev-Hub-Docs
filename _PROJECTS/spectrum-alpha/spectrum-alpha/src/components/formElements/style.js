@@ -21,14 +21,14 @@ export const StyledLabel = styled.label`
 
   &:hover > input,
   &:hover > textarea {
-    border-color: ${props =>
+    border-color: ${(props) =>
       props.disabled ? props.theme.bg.border : props.theme.text.alt};
     transition: ${Transition.hover.on};
   }
 
   &:hover > input:focus,
   &:hover > textarea:focus {
-    border-color: ${props =>
+    border-color: ${(props) =>
       props.disabled ? props.theme.bg.inactive : props.theme.brand.alt};
   }
 `;
@@ -48,7 +48,7 @@ export const StyledPrefixLabel = styled.label`
   }
 
   &:hover > input {
-    border-color: ${props =>
+    border-color: ${(props) =>
       props.disabled ? props.theme.bg.inactive : props.theme.text.alt};
     transition: ${Transition.hover.on};
   }
@@ -56,13 +56,13 @@ export const StyledPrefixLabel = styled.label`
 
 export const StyledInput = styled.input`
   flex: 1 0 auto;
-  background: ${props =>
+  background: ${(props) =>
     props.disabled ? props.theme.bg.wash : props.theme.bg.default};
   font-weight: 500;
   width: 100%;
   font-size: 14px;
   border: 2px solid
-    ${props =>
+    ${(props) =>
       props.disabled ? props.theme.bg.border : props.theme.bg.inactive};
   border-radius: 4px;
   padding: 8px 12px;
@@ -70,7 +70,7 @@ export const StyledInput = styled.input`
   box-shadow: none;
   transition: ${Transition.hover.off};
 
-  ${props =>
+  ${(props) =>
     props.type === 'checkbox' &&
     css`
       flex: initial;
@@ -137,9 +137,9 @@ export const StyledTextArea = styled(Textarea)`
 export const StyledUnderlineInput = styled.input`
   font-size: inherit;
   font-weight: inherit;
-  color: ${props =>
+  color: ${(props) =>
     props.disabled ? props.theme.text.alt : props.theme.text.default};
-  border-bottom: ${props =>
+  border-bottom: ${(props) =>
     props.disabled
       ? '2px solid transparent'
       : `2px solid ${props.theme.bg.inactive}`};
@@ -147,7 +147,7 @@ export const StyledUnderlineInput = styled.input`
   transition: ${Transition.hover.off};
 
   &:hover {
-    border-color: ${props => (props.disabled ? 'transparent' : 'inherit')};
+    border-color: ${(props) => (props.disabled ? 'transparent' : 'inherit')};
     transition: ${Transition.hover.on};
   }
 
@@ -166,9 +166,9 @@ export const StyledHiddenInput = styled.input`
 export const StyledCheckboxWrapper = styled(FlexRow)`
   color: ${theme.text.alt};
   display: flex;
-  align-items: ${props => props.align};
+  align-items: ${(props) => props.align};
   line-height: 1.4;
-  cursor: ${props => (props.disabled ? 'not-allowed' : 'pointer')};
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
 
   &:hover {
     color: ${({ theme, disabled }) =>
@@ -219,19 +219,19 @@ export const StyledSuccess = styled.p`
 
 export const PhotoInputLabel = styled.label`
   position: relative;
-  height: ${props => `${props.size}px`};
+  height: ${(props) => `${props.size}px`};
   z-index: ${zIndex.form + 1};
-  width: ${props => `${props.size}px`};
-  border-radius: ${props =>
+  width: ${(props) => `${props.size}px`};
+  border-radius: ${(props) =>
     props.type === 'user' ? `${props.size}px` : '8px'};
   margin-top: 8px;
   background-color: ${theme.bg.reverse};
 `;
 
 export const PhotoInputImage = styled.img`
-  width: ${props => `${props.size}px`};
-  height: ${props => `${props.size}px`};
-  border-radius: ${props =>
+  width: ${(props) => `${props.size}px`};
+  height: ${(props) => `${props.size}px`};
+  border-radius: ${(props) =>
     props.type === 'user' ? `${props.size}px` : '8px'};
   box-shadow: 0 0 0 2px ${theme.bg.default};
 `;
@@ -257,14 +257,14 @@ export const ProfileImage = styled.img`
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: ${props =>
+  border-radius: ${(props) =>
     props.type === 'user' ? `${props.size}px` : '8px'};
   border: 2px solid ${theme.text.reverse};
 `;
 
 export const CoverImage = styled.div`
   background-color: ${theme.brand.default};
-  background-image: url('${props => props.src}');
+  background-image: url('${(props) => props.src}');
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -293,9 +293,9 @@ export const InputOverlay = styled.div`
   color: ${theme.text.reverse};
   background-color: ${({ theme }) => hexa(theme.bg.reverse, 0.6)};
   padding: 8px;
-  border-radius: ${props =>
+  border-radius: ${(props) =>
     props.type === 'user' ? `${props.size}px` : '8px'};
-  opacity: ${props => (props.visible ? '1' : '0')};
+  opacity: ${(props) => (props.visible ? '1' : '0')};
   transition: ${Transition.hover.off};
 
   &:hover {

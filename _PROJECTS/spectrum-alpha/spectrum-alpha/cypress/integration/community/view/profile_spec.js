@@ -1,29 +1,29 @@
 import data from '../../../../shared/testing/data';
 
-const publicCommunity = data.communities.find(c => c.slug === 'spectrum');
-const privateCommunity = data.communities.find(c => c.slug === 'private');
+const publicCommunity = data.communities.find((c) => c.slug === 'spectrum');
+const privateCommunity = data.communities.find((c) => c.slug === 'private');
 
 const publicUsersCommunities = data.usersCommunities
   .filter(
-    uc =>
+    (uc) =>
       uc.communityId === publicCommunity.id &&
       uc.isMember &&
       (uc.isOwner || uc.isModerator)
   )
-  .map(uc => uc.userId);
+  .map((uc) => uc.userId);
 const privateUsersCommunities = data.usersCommunities
   .filter(
-    uc =>
+    (uc) =>
       uc.communityId === privateCommunity.id &&
       uc.isMember &&
       (uc.isOwner || uc.isModerator)
   )
-  .map(uc => uc.userId);
+  .map((uc) => uc.userId);
 const publicTeamMembers = data.users.filter(
-  u => publicUsersCommunities.indexOf(u.id) >= 0
+  (u) => publicUsersCommunities.indexOf(u.id) >= 0
 );
 const privateTeamMembers = data.users.filter(
-  u => privateUsersCommunities.indexOf(u.id) >= 0
+  (u) => privateUsersCommunities.indexOf(u.id) >= 0
 );
 
 const { userId: memberInPublicCommunityId } = data.usersCommunities.find(
@@ -63,34 +63,28 @@ describe('public community signed out', () => {
 
     data.threads
       .filter(
-        thread => !thread.deletedAt && thread.communityId === publicCommunity.id
+        (thread) =>
+          !thread.deletedAt && thread.communityId === publicCommunity.id
       )
-      .forEach(thread =>
-        cy
-          .contains(thread.content.title)
-          .scrollIntoView()
-          .should('be.visible')
+      .forEach((thread) =>
+        cy.contains(thread.content.title).scrollIntoView().should('be.visible')
       );
   });
 
   it('should render channels', () => {
     data.channels
-      .filter(channel => channel.communityId === publicCommunity.id)
-      .filter(channel => !channel.isPrivate)
-      .filter(channel => !channel.deletedAt)
-      .filter(channel => !channel.archivedAt)
-      .forEach(channel => {
-        cy.contains(channel.name)
-          .scrollIntoView()
-          .should('be.visible');
+      .filter((channel) => channel.communityId === publicCommunity.id)
+      .filter((channel) => !channel.isPrivate)
+      .filter((channel) => !channel.deletedAt)
+      .filter((channel) => !channel.archivedAt)
+      .forEach((channel) => {
+        cy.contains(channel.name).scrollIntoView().should('be.visible');
       });
   });
 
   it('should render team', () => {
-    publicTeamMembers.forEach(user => {
-      cy.contains(user.name)
-        .scrollIntoView()
-        .should('be.visible');
+    publicTeamMembers.forEach((user) => {
+      cy.contains(user.name).scrollIntoView().should('be.visible');
     });
   });
 });
@@ -116,34 +110,28 @@ describe('public community signed in without permission', () => {
 
     data.threads
       .filter(
-        thread => !thread.deletedAt && thread.communityId === publicCommunity.id
+        (thread) =>
+          !thread.deletedAt && thread.communityId === publicCommunity.id
       )
-      .forEach(thread =>
-        cy
-          .contains(thread.content.title)
-          .scrollIntoView()
-          .should('be.visible')
+      .forEach((thread) =>
+        cy.contains(thread.content.title).scrollIntoView().should('be.visible')
       );
   });
 
   it('should render channels', () => {
     data.channels
-      .filter(channel => channel.communityId === publicCommunity.id)
-      .filter(channel => !channel.isPrivate)
-      .filter(channel => !channel.deletedAt)
-      .filter(channel => !channel.archivedAt)
-      .forEach(channel => {
-        cy.contains(channel.name)
-          .scrollIntoView()
-          .should('be.visible');
+      .filter((channel) => channel.communityId === publicCommunity.id)
+      .filter((channel) => !channel.isPrivate)
+      .filter((channel) => !channel.deletedAt)
+      .filter((channel) => !channel.archivedAt)
+      .forEach((channel) => {
+        cy.contains(channel.name).scrollIntoView().should('be.visible');
       });
   });
 
   it('should render team', () => {
-    publicTeamMembers.forEach(user => {
-      cy.contains(user.name)
-        .scrollIntoView()
-        .should('be.visible');
+    publicTeamMembers.forEach((user) => {
+      cy.contains(user.name).scrollIntoView().should('be.visible');
     });
   });
 });
@@ -203,21 +191,21 @@ describe('private community signed in with permissions', () => {
 
     data.threads
       .filter(
-        thread =>
+        (thread) =>
           !thread.deletedAt && thread.communityId === privateCommunity.id
       )
-      .forEach(thread =>
+      .forEach((thread) =>
         cy.contains(thread.content.title).should('be.visible')
       );
   });
 
   it('should render channels', () => {
     data.channels
-      .filter(channel => channel.communityId === privateCommunity.id)
-      .filter(channel => !channel.isPrivate)
-      .filter(channel => !channel.deletedAt)
-      .filter(channel => !channel.archivedAt)
-      .forEach(channel => {
+      .filter((channel) => channel.communityId === privateCommunity.id)
+      .filter((channel) => !channel.isPrivate)
+      .filter((channel) => !channel.deletedAt)
+      .filter((channel) => !channel.archivedAt)
+      .forEach((channel) => {
         cy.get('[data-cy="channel-list"]')
           .contains(channel.name)
           .scrollIntoView()
@@ -226,10 +214,8 @@ describe('private community signed in with permissions', () => {
   });
 
   it('should render team', () => {
-    privateTeamMembers.forEach(user => {
-      cy.contains(user.name)
-        .scrollIntoView()
-        .should('be.visible');
+    privateTeamMembers.forEach((user) => {
+      cy.contains(user.name).scrollIntoView().should('be.visible');
     });
   });
 });

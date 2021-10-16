@@ -23,7 +23,6 @@ declare module 'lodash.intersection' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'lodash.intersection/index' {
   declare module.exports: $Exports<'lodash.intersection'>;

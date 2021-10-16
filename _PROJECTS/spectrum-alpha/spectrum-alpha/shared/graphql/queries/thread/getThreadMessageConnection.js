@@ -90,14 +90,14 @@ export const getThreadMessageConnectionQuery = gql`
 `;
 export const getThreadMessageConnectionOptions = {
   // $FlowFixMe
-  options: props => {
+  options: (props) => {
     return {
       variables: getVariables(props),
       fetchPolicy: 'cache-and-network',
     };
   },
   // $FlowFixMe
-  props: props => ({
+  props: (props) => ({
     data: {
       ...props.data,
       messageConnection: props.data.thread

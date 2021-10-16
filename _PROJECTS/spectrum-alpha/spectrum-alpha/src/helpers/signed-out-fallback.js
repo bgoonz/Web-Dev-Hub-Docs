@@ -4,11 +4,11 @@ import compose from 'recompose/compose';
 import { withCurrentUser } from 'src/components/withCurrentUser';
 import AuthViewHandler from 'src/views/authViewHandler';
 
-const Switch = props => {
+const Switch = (props) => {
   const { Component, FallbackComponent, ...rest } = props;
   return (
     <AuthViewHandler>
-      {authed => {
+      {(authed) => {
         if (!authed) return <FallbackComponent {...rest} />;
         return <Component {...rest} />;
       }}

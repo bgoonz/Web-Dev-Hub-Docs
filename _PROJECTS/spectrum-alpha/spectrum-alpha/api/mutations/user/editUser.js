@@ -55,7 +55,7 @@ export default requireAuth(
 
     await updateCookieUserData({
       ...editedUser,
-    }).catch(err => {
+    }).catch((err) => {
       Raven.captureException(
         new Error(`Error updating cookie user data: ${err.message}`)
       );

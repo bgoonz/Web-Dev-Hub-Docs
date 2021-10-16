@@ -33,7 +33,7 @@ const NextPageButtonWrapper = (props: Props) => {
     <HasNextPage
       as={href ? Link : 'div'}
       to={href}
-      onClick={evt => {
+      onClick={(evt) => {
         evt.preventDefault();
         onChange(true);
       }}

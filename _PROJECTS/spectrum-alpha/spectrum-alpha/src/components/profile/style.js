@@ -247,13 +247,13 @@ export const ThreadProfileCard = styled(ProfileCard)`
 export const CoverPhoto = styled.div`
   position: relative;
   width: 100%;
-  height: ${props => (props.large ? '320px' : '96px')};
+  height: ${(props) => (props.large ? '320px' : '96px')};
   background-color: ${theme.brand.default};
-  background-image: url('${props => props.url}');
+  background-image: url('${(props) => props.url}');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: ${props => (props.large ? '4px' : '4px 4px 0 0')};
+  border-radius: ${(props) => (props.large ? '4px' : '4px 4px 0 0')};
 `;
 
 export const Container = styled.div`

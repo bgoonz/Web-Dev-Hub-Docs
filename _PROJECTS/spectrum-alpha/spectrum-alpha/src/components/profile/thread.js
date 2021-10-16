@@ -72,7 +72,4 @@ class ThreadWithData extends React.Component<Props> {
   }
 }
 
-export default compose(
-  connect(),
-  withRouter
-)(ThreadWithData);
+export default compose(connect(), withRouter)(ThreadWithData);

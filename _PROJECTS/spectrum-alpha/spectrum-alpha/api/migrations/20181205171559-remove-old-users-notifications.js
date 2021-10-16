@@ -9,21 +9,21 @@ exports.up = async (r, conn) => {
       .skip(after)
       .limit(limit)
       .run(conn)
-      .then(cursor => cursor.toArray());
+      .then((cursor) => cursor.toArray());
   };
 
-  const deleteRecords = async arr => {
+  const deleteRecords = async (arr) => {
     if (!arr || arr.length === 0) return;
 
     const filtered = arr
-      .filter(rec => rec.isSeen)
-      .filter(rec => {
+      .filter((rec) => rec.isSeen)
+      .filter((rec) => {
         const THIRTY_DAYS = 1000 * 60 * 60 * 24 * 30; //ms
         const added = new Date(rec.entityAddedAt).getTime(); //ms
         const now = new Date().getTime(); //ms
         return now - added > THIRTY_DAYS;
       })
-      .map(rec => rec.id)
+      .map((rec) => rec.id)
       .filter(Boolean);
 
     return await r
@@ -33,7 +33,7 @@ exports.up = async (r, conn) => {
       .run(conn);
   };
 
-  const processUsersNotificiations = async arr => {
+  const processUsersNotificiations = async (arr) => {
     if (done) {
       return await deleteRecords(arr);
     }
@@ -56,6 +56,6 @@ exports.up = async (r, conn) => {
   return processUsersNotificiations(initialRecordIds);
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.resolve();
 };

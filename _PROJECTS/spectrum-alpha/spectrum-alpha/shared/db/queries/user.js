@@ -79,7 +79,7 @@ export const getUserByEmail = createReadQuery((email: string) => ({
 export const getUsersByEmail = createReadQuery((email: string) => ({
   query: db.table('users').getAll(email, { index: 'email' }),
   process: (users: Array<?DBUser>) => users,
-  tags: (users: Array<?DBUser>) => (users ? users.map(u => u && u.id) : []),
+  tags: (users: Array<?DBUser>) => (users ? users.map((u) => u && u.id) : []),
 }));
 
 export const getUserByUsername = createReadQuery((username: string) => ({
@@ -247,22 +247,15 @@ export type EditUserInput = {
 
 export const editUser = createWriteQuery(
   (args: EditUserInput, userId: string) => {
-    const {
-      name,
-      description,
-      website,
-      file,
-      coverFile,
-      username,
-      timezone,
-    } = args.input;
+    const { name, description, website, file, coverFile, username, timezone } =
+      args.input;
 
     return {
       query: db
         .table('users')
         .get(userId)
         .run()
-        .then(result => {
+        .then((result) => {
           return Object.assign({}, result, {
             name,
             description,
@@ -272,11 +265,11 @@ export const editUser = createWriteQuery(
             modifiedAt: new Date(),
           });
         })
-        .then(user => {
+        .then((user) => {
           if (file || coverFile) {
             if (file && !coverFile) {
               return uploadImage(file, 'users', user.id)
-                .then(profilePhoto => {
+                .then((profilePhoto) => {
                   // update the user with the profilePhoto
                   return (
                     db
@@ -291,7 +284,7 @@ export const editUser = createWriteQuery(
                       )
                       .run()
                       // return the resulting user with the profilePhoto set
-                      .then(result => {
+                      .then((result) => {
                         // if an update happened
                         if (result.replaced === 1) {
                           return result.changes[0].new_val;
@@ -304,12 +297,12 @@ export const editUser = createWriteQuery(
                       })
                   );
                 })
-                .catch(err => {
+                .catch((err) => {
                   console.error(err);
                 });
             } else if (!file && coverFile) {
               return uploadImage(coverFile, 'users', user.id)
-                .then(coverPhoto => {
+                .then((coverPhoto) => {
                   // update the user with the profilePhoto
                   return (
                     db
@@ -324,7 +317,7 @@ export const editUser = createWriteQuery(
                       )
                       .run()
                       // return the resulting user with the profilePhoto set
-                      .then(result => {
+                      .then((result) => {
                         // if an update happened
                         if (result.replaced === 1) {
                           return result.changes[0].new_val;
@@ -337,18 +330,18 @@ export const editUser = createWriteQuery(
                       })
                   );
                 })
-                .catch(err => {
+                .catch((err) => {
                   console.error(err);
                 });
             } else if (file && coverFile) {
-              const uploadFile = file => {
-                return uploadImage(file, 'users', user.id).catch(err => {
+              const uploadFile = (file) => {
+                return uploadImage(file, 'users', user.id).catch((err) => {
                   console.error(err);
                 });
               };
 
-              const uploadCoverFile = coverFile => {
-                return uploadImage(coverFile, 'users', user.id).catch(err => {
+              const uploadCoverFile = (coverFile) => {
+                return uploadImage(coverFile, 'users', user.id).catch((err) => {
                   console.error(err);
                 });
               };
@@ -371,7 +364,7 @@ export const editUser = createWriteQuery(
                     )
                     .run()
                     // return the resulting community with the profilePhoto set
-                    .then(result => {
+                    .then((result) => {
                       // if an update happened
                       if (result.replaced === 1) {
                         return result.changes[0].new_val;
@@ -396,7 +389,7 @@ export const editUser = createWriteQuery(
                 { returnChanges: 'always' }
               )
               .run()
-              .then(result => {
+              .then((result) => {
                 // if an update happened
                 if (result.replaced === 1) {
                   return result.changes[0].new_val;
@@ -557,7 +550,7 @@ export const banUser = createWriteQuery((args: BanUserType) => {
         const dmThreadIds = await db
           .table('usersDirectMessageThreads')
           .getAll(userId, { index: 'userId' })
-          .map(row => row('threadId'))
+          .map((row) => row('threadId'))
           .run();
 
         let removeOtherParticipantsDmThreadIds, removeDMThreads;
@@ -578,30 +571,30 @@ export const banUser = createWriteQuery((args: BanUserType) => {
         const publishedThreadIds = await db
           .table('threads')
           .getAll(userId, { index: 'creatorId' })
-          .map(row => row('id'))
+          .map((row) => row('id'))
           .run();
 
         const deletePublishedThreadsPromises =
           publishedThreadIds && publishedThreadIds.length > 0
-            ? publishedThreadIds.map(id => deleteThread(id, currentUserId))
+            ? publishedThreadIds.map((id) => deleteThread(id, currentUserId))
             : [];
 
         const usersThreadsIds = await db
           .table('usersThreads')
           .getAll(userId, { index: 'userId' })
-          .map(row => row('threadId'))
+          .map((row) => row('threadId'))
           .run();
 
         const usersMessagesIds = await db
           .table('messages')
           .getAll(...usersThreadsIds, { index: 'threadId' })
           .filter({ senderId: userId })
-          .map(row => row('id'))
+          .map((row) => row('id'))
           .run();
 
         const deleteSentMessagesPromises =
           usersMessagesIds && usersMessagesIds.length > 0
-            ? usersMessagesIds.map(id => deleteMessage(currentUserId, id))
+            ? usersMessagesIds.map((id) => deleteMessage(currentUserId, id))
             : [];
 
         return await Promise.all([

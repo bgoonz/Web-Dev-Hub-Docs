@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return r
     .table('usersNotifications')
     .indexCreate('userIdAndNotificationId', [
@@ -8,7 +8,7 @@ exports.up = function(r, conn) {
     .run(conn);
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return r
     .table('usersNotifications')
     .indexDrop('userIdAndNotificationId')

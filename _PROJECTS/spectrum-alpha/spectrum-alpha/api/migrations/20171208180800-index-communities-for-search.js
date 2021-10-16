@@ -2,7 +2,7 @@ require('now-env');
 // const initIndex = require('../../shared/algolia');
 // const searchIndex = initIndex('communities');
 
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return Promise.resolve();
   // return r
   //   .table('communities')
@@ -25,7 +25,7 @@ exports.up = function(r, conn) {
   //   .catch(err => console.log(err));
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   // Not spending any time undoing this
   return Promise.resolve();
 };

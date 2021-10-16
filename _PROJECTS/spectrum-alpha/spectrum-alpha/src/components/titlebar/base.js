@@ -25,7 +25,7 @@ type Props = {
 const MobileTitlebar = (props: Props) => {
   const { title, titleIcon, rightAction, leftAction, history, ...rest } = props;
 
-  const handleMenuClick = setNavOpen => () => {
+  const handleMenuClick = (setNavOpen) => () => {
     if (leftAction === 'menu') {
       return setNavOpen(true);
     }
@@ -39,7 +39,7 @@ const MobileTitlebar = (props: Props) => {
     return history.push('/');
   };
 
-  const leftActionComponent = setNavigationIsOpen => {
+  const leftActionComponent = (setNavigationIsOpen) => {
     if (typeof leftAction === 'string') {
       return (
         <div
@@ -97,7 +97,4 @@ const MobileTitlebar = (props: Props) => {
   );
 };
 
-export default compose(
-  withRouter,
-  connect()
-)(MobileTitlebar);
+export default compose(withRouter, connect())(MobileTitlebar);

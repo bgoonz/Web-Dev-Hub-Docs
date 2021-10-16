@@ -78,10 +78,10 @@ const init = () => {
 
     // Slow path: data is just the userID (legacy), so we have to go to the db to get the full data
     return getUserById(data)
-      .then(user => {
+      .then((user) => {
         done(null, user);
       })
-      .catch(err => {
+      .catch((err) => {
         done(err);
       });
   });
@@ -136,11 +136,11 @@ const init = () => {
         };
 
         return createOrFindUser(user, 'providerId')
-          .then(user => {
+          .then((user) => {
             done(null, user);
             return user;
           })
-          .catch(err => {
+          .catch((err) => {
             return done(null, err, {
               message: 'Please sign in with GitHub to create a new account.',
             });
@@ -202,11 +202,11 @@ const init = () => {
         };
 
         return createOrFindUser(user, 'fbProviderId')
-          .then(user => {
+          .then((user) => {
             done(null, user);
             return user;
           })
-          .catch(err => {
+          .catch((err) => {
             return done(null, err, {
               message: 'Please sign in with GitHub to create a new account.',
             });
@@ -267,11 +267,11 @@ const init = () => {
         };
 
         return createOrFindUser(user, 'googleProviderId')
-          .then(user => {
+          .then((user) => {
             done(null, user);
             return user;
           })
-          .catch(err => {
+          .catch((err) => {
             return done(null, err, {
               message: 'Please sign in with GitHub to create a new account.',
             });
@@ -329,11 +329,11 @@ const init = () => {
                 profile.id,
                 { githubUsername: githubUsername }
               )
-                .then(user => {
+                .then((user) => {
                   done(null, user);
                   return user;
                 })
-                .catch(err => {
+                .catch((err) => {
                   done(err);
                   return null;
                 });
@@ -351,11 +351,11 @@ const init = () => {
               profile.id,
               { githubUsername: githubUsername }
             )
-              .then(user => {
+              .then((user) => {
                 done(null, user);
                 return user;
               })
-              .catch(err => {
+              .catch((err) => {
                 done(err);
                 return null;
               });
@@ -390,11 +390,11 @@ const init = () => {
         };
 
         return createOrFindUser(user, 'githubProviderId')
-          .then(user => {
+          .then((user) => {
             done(null, user);
             return user;
           })
-          .catch(err => {
+          .catch((err) => {
             done(err);
             return null;
           });

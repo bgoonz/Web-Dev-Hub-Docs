@@ -35,10 +35,10 @@ declare module 'react-redux' {
   declare type Context = { store: Store<*, *> };
 
   declare class ConnectedComponent<OP, P> extends React$Component<OP> {
-    static WrappedComponent: Class<React$Component<P>>,
-    getWrappedInstance(): React$Component<P>,
-    props: OP,
-    state: void,
+    static WrappedComponent: Class<React$Component<P>>;
+    getWrappedInstance(): React$Component<P>;
+    props: OP;
+    state: void;
   }
 
   declare type ConnectedComponentClass<OP, P> = Class<
@@ -49,10 +49,12 @@ declare module 'react-redux' {
     component: React$ComponentType<P>
   ) => ConnectedComponentClass<OP, P>;
 
-  declare class Provider<S, A> extends React$Component<{
-    store: Store<S, A>,
-    children?: any,
-  }> {}
+  declare class Provider<S, A>
+    extends
+      React$Component<{
+        store: Store<S, A>,
+        children?: any,
+      }> {}
 
   declare function createProvider(
     storeKey?: string,

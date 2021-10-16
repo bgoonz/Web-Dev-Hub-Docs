@@ -1,20 +1,20 @@
 const replace = require('string-replace-to-array');
 const MARKDOWN_LINK = /(?:\[(.*?)\]\((.*?)\))/g;
 
-const removeMarkdownLinks = text => {
+const removeMarkdownLinks = (text) => {
   if (!text || typeof text !== 'string') return text;
   return replace(text, MARKDOWN_LINK, (fullLink, text, url) => url).join('');
 };
 
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return r
     .table('messages')
     .withFields('id', 'content')
     .run(conn)
-    .then(cursor => cursor.toArray())
-    .then(messages =>
+    .then((cursor) => cursor.toArray())
+    .then((messages) =>
       Promise.all(
-        messages.map(message =>
+        messages.map((message) =>
           r
             .table('messages')
             .get(message.id)
@@ -29,6 +29,6 @@ exports.up = function(r, conn) {
     );
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.resolve();
 };

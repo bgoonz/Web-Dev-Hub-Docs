@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return Promise.all([
     // messages#threadIdAndTimestamp
     r
@@ -25,16 +25,13 @@ exports.up = function(r, conn) {
       ])
       .run(conn),
     // community#createdAt
-    r
-      .table('communities')
-      .indexCreate('createdAt')
-      .run(conn),
-  ]).catch(err => {
+    r.table('communities').indexCreate('createdAt').run(conn),
+  ]).catch((err) => {
     console.log(err);
     throw err;
   });
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.resolve();
 };

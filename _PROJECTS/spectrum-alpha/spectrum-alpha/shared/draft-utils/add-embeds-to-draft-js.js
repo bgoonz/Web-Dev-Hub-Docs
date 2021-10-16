@@ -2,15 +2,23 @@
 import genKey from 'draft-js/lib/generateRandomKey';
 import type { RawDraftContentState } from 'draft-js/lib/RawDraftContentState.js';
 
-const FIGMA_URLS = /\b((?:https?:\/\/)?(?:www\.)?figma.com\/(file|proto)\/([0-9a-zA-Z]{22,128})(?:\/.*)?)/gi;
-const YOUTUBE_URLS = /\b(?:https?:\/\/)?(?:www\.)?youtu(?:be\.com\/watch\?v=|\.be\/)([\w\-\_]*)(&(amp;)?[\w\?=]*)?/gi;
-const VIMEO_URLS = /\b(?:https?:\/\/)?(?:www\.)?vimeo.com\/(?:channels\/[0-9a-z-_]+\/)?([0-9a-z\-_]+)/gi;
+const FIGMA_URLS =
+  /\b((?:https?:\/\/)?(?:www\.)?figma.com\/(file|proto)\/([0-9a-zA-Z]{22,128})(?:\/.*)?)/gi;
+const YOUTUBE_URLS =
+  /\b(?:https?:\/\/)?(?:www\.)?youtu(?:be\.com\/watch\?v=|\.be\/)([\w\-\_]*)(&(amp;)?[\w\?=]*)?/gi;
+const VIMEO_URLS =
+  /\b(?:https?:\/\/)?(?:www\.)?vimeo.com\/(?:channels\/[0-9a-z-_]+\/)?([0-9a-z\-_]+)/gi;
 const IFRAME_TAG = /<iframe.+?src=['"](.+?)['"]/gi;
-const FRAMER_URLS = /\b(?:https?:\/\/)?(?:www\.)?(?:framer\.cloud|share\.framerjs\.com)\/([A-Za-z0-9\-\._~:\/\?#\[\]@!$&'\(\)\*\+,;\=]*)?/gi;
-const CODEPEN_URLS = /\b(?:https?:\/\/)?(?:www\.)?codepen\.io(\/[A-Za-z0-9\-\._~:\/\?#\[\]@!$&'\(\)\*\+,;\=]*)?/gi;
-const CODESANDBOX_URLS = /\b(?:https?:\/\/)?(?:www\.)?codesandbox\.io(\/[A-Za-z0-9\-\._~:\/\?#\[\]@!$&'\(\)\*\+,;\=]*)?/gi;
-const SIMPLECAST_URLS = /\b(?:https?:\/\/)?(?:www\.)?simplecast\.com(\/[A-Za-z0-9\-\._~:\/\?#\[\]@!$&'\(\)\*\+,;\=]*)?/gi;
-const THREAD_URLS = /(?:(?:https?:\/\/)?|\B)(?:spectrum\.chat|localhost:3000)\/.*?(?:~|(?:\?|&)t=|(?:\?|&)thread=|thread\/)([^&\s]*)/gi;
+const FRAMER_URLS =
+  /\b(?:https?:\/\/)?(?:www\.)?(?:framer\.cloud|share\.framerjs\.com)\/([A-Za-z0-9\-\._~:\/\?#\[\]@!$&'\(\)\*\+,;\=]*)?/gi;
+const CODEPEN_URLS =
+  /\b(?:https?:\/\/)?(?:www\.)?codepen\.io(\/[A-Za-z0-9\-\._~:\/\?#\[\]@!$&'\(\)\*\+,;\=]*)?/gi;
+const CODESANDBOX_URLS =
+  /\b(?:https?:\/\/)?(?:www\.)?codesandbox\.io(\/[A-Za-z0-9\-\._~:\/\?#\[\]@!$&'\(\)\*\+,;\=]*)?/gi;
+const SIMPLECAST_URLS =
+  /\b(?:https?:\/\/)?(?:www\.)?simplecast\.com(\/[A-Za-z0-9\-\._~:\/\?#\[\]@!$&'\(\)\*\+,;\=]*)?/gi;
+const THREAD_URLS =
+  /(?:(?:https?:\/\/)?|\B)(?:spectrum\.chat|localhost:3000)\/.*?(?:~|(?:\?|&)t=|(?:\?|&)thread=|thread\/)([^&\s]*)/gi;
 
 const REGEXPS = {
   figma: FIGMA_URLS,
@@ -67,7 +75,7 @@ export const addEmbedsToEditorState = (
     const embeds = getEmbedsFromText(block.text);
     if (embeds.length === 0) return;
 
-    embeds.forEach(embed => {
+    embeds.forEach((embed) => {
       lastEntityKey++;
       const entityKey = lastEntityKey;
       newEntityMap[entityKey] = {
@@ -87,7 +95,7 @@ export const addEmbedsToEditorState = (
         newBlocks[blockIndex].entityRanges = newBlocks[
           blockIndex
         ].entityRanges.filter(
-          entity => entity.offset !== offset || entity.length !== length
+          (entity) => entity.offset !== offset || entity.length !== length
         );
         newBlocks[blockIndex].entityRanges.push({
           offset,
@@ -110,7 +118,7 @@ export const addEmbedsToEditorState = (
 const match = (regex: RegExp, text: string) => {
   const matches = text.match(regex);
   if (!matches) return [];
-  return [...new Set(matches)].map(match => {
+  return [...new Set(matches)].map((match) => {
     return regex.exec(match)[1];
   });
 };
@@ -118,11 +126,11 @@ const match = (regex: RegExp, text: string) => {
 export const getEmbedsFromText = (text: string): Array<EmbedData> => {
   let embeds = [];
 
-  match(IFRAME_TAG, text).forEach(url => {
+  match(IFRAME_TAG, text).forEach((url) => {
     embeds.push({ type: 'iframe', url });
   });
 
-  match(FIGMA_URLS, text).forEach(url => {
+  match(FIGMA_URLS, text).forEach((url) => {
     embeds.push({
       type: 'figma',
       url: `https://www.figma.com/embed?embed_host=spectrum&url=${url}`,
@@ -130,7 +138,7 @@ export const getEmbedsFromText = (text: string): Array<EmbedData> => {
     });
   });
 
-  match(YOUTUBE_URLS, text).forEach(id => {
+  match(YOUTUBE_URLS, text).forEach((id) => {
     embeds.push({
       type: 'youtube',
       url: `https://www.youtube.com/embed/${id}`,
@@ -138,7 +146,7 @@ export const getEmbedsFromText = (text: string): Array<EmbedData> => {
     });
   });
 
-  match(VIMEO_URLS, text).forEach(id => {
+  match(VIMEO_URLS, text).forEach((id) => {
     embeds.push({
       type: 'vimeo',
       url: `https://player.vimeo.com/video/${id}`,
@@ -146,7 +154,7 @@ export const getEmbedsFromText = (text: string): Array<EmbedData> => {
     });
   });
 
-  match(FRAMER_URLS, text).forEach(id => {
+  match(FRAMER_URLS, text).forEach((id) => {
     embeds.push({
       type: 'framer',
       url: `https://share.framerjs.com/${id}`,
@@ -155,7 +163,7 @@ export const getEmbedsFromText = (text: string): Array<EmbedData> => {
     });
   });
 
-  match(CODEPEN_URLS, text).forEach(path => {
+  match(CODEPEN_URLS, text).forEach((path) => {
     embeds.push({
       type: 'codepen',
       url: `https://codepen.io${path.replace(/(pen|full|details)/, 'embed')}`,
@@ -163,7 +171,7 @@ export const getEmbedsFromText = (text: string): Array<EmbedData> => {
     });
   });
 
-  match(CODESANDBOX_URLS, text).forEach(path => {
+  match(CODESANDBOX_URLS, text).forEach((path) => {
     embeds.push({
       type: 'codesandbox',
       url: `https://codesandbox.io${path.replace('/s/', '/embed/')}`,
@@ -171,7 +179,7 @@ export const getEmbedsFromText = (text: string): Array<EmbedData> => {
     });
   });
 
-  match(SIMPLECAST_URLS, text).forEach(path => {
+  match(SIMPLECAST_URLS, text).forEach((path) => {
     embeds.push({
       type: 'simplecast',
       url: `https://embed.simplecast.com/${path
@@ -181,7 +189,7 @@ export const getEmbedsFromText = (text: string): Array<EmbedData> => {
     });
   });
 
-  match(THREAD_URLS, text).forEach(id => {
+  match(THREAD_URLS, text).forEach((id) => {
     embeds.push({
       type: 'internal',
       id,

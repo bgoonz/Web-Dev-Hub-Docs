@@ -28,14 +28,14 @@ exports.up = async (r, conn) => {
     .filter({ isOwner: true })
     .group('communityId')
     .ungroup()
-    .map(row => row('reduction'))
-    .map(row => row.min('createdAt'))
+    .map((row) => row('reduction'))
+    .map((row) => row.min('createdAt'))
     .eqJoin('userId', r.table('users'))
     .zip()
     .run(conn)
-    .then(cursor => cursor.toArray());
+    .then((cursor) => cursor.toArray());
 
-  const setAdminFields = oldestOwners.map(async owner => {
+  const setAdminFields = oldestOwners.map(async (owner) => {
     if (!owner || !owner.userId || !owner.communityId) return;
     return await r
       .table('communities')
@@ -52,7 +52,7 @@ exports.up = async (r, conn) => {
   );
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return r
     .table('communities')
     .update({

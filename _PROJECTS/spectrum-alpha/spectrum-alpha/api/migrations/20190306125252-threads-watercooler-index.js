@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return r
     .table('threads')
     .indexCreate('communityIdAndWatercooler', [
@@ -8,9 +8,6 @@ exports.up = function(r, conn) {
     .run(conn);
 };
 
-exports.down = function(r, conn) {
-  return r
-    .table('threads')
-    .indexDrop('communityIdAndWatercooler')
-    .run(conn);
+exports.down = function (r, conn) {
+  return r.table('threads').indexDrop('communityIdAndWatercooler').run(conn);
 };

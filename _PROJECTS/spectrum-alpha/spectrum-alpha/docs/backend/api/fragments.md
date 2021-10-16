@@ -104,9 +104,10 @@ To solve this I've made super granular fragments in individual files. I've found
 Fragments make it tempting to create really deep queries, but that's a bad idea for performance reasons. Therefore, fragments themselves should be as shallow as possible to combat this, ideally never going more than one level of resources deep. (`story.id` and `story.content.title` are great, `story.community.channels.stories` not so much)
 
 When writing the fragments + queries, I tried to think to myself:
-***If I were using this fragment, what data would I absolutely expect to be returned?***
+**_If I were using this fragment, what data would I absolutely expect to be returned?_**
 
 For example, the `storyInfo` fragment looks like:
+
 ```js
 import { gql } from 'react-apollo';
 import { userInfoFragment } from '../user/userInfo';
@@ -132,9 +133,9 @@ export const storyInfoFragment = gql`
 `;
 ```
 
-I included the `author` and `...userInfo` fragment on `storyInfo` because I can't think of a single use case we have where we'd want to show a story *without* the author info. However, note that I didn't include any information about the channel this story was posted under. That's because if I'm *viewing that channel* it would be a massively underperforming query to also include channel data with *each story*.
+I included the `author` and `...userInfo` fragment on `storyInfo` because I can't think of a single use case we have where we'd want to show a story _without_ the author info. However, note that I didn't include any information about the channel this story was posted under. That's because if I'm _viewing that channel_ it would be a massively underperforming query to also include channel data with _each story_.
 
-So instead, if I *do* need the channel data for a story, I add that at the query layer:
+So instead, if I _do_ need the channel data for a story, I add that at the query layer:
 
 ```js
 const getStory = gql`

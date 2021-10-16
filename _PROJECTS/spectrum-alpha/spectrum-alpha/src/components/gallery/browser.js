@@ -72,7 +72,7 @@ class Browser extends React.Component<Props, State> {
     this.props.dispatch(closeGallery());
   };
 
-  handleKeyPress = e => {
+  handleKeyPress = (e) => {
     const { images } = this.state;
     // if no media, skip on outta here
     if (!images) return;
@@ -126,7 +126,7 @@ class Browser extends React.Component<Props, State> {
     }
   };
 
-  setCount = i => {
+  setCount = (i) => {
     this.setState({
       index: i,
     });

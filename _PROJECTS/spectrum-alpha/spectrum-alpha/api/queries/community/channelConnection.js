@@ -20,8 +20,8 @@ export default async ({ id }: DBCommunity, _: any, ctx: GraphQLContext) => {
     pageInfo: {
       hasNextPage: false,
     },
-    edges: getChannelsByCommunity(id).then(channels =>
-      channels.map(channel => ({
+    edges: getChannelsByCommunity(id).then((channels) =>
+      channels.map((channel) => ({
         node: channel,
       }))
     ),

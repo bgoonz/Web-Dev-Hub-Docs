@@ -6,7 +6,7 @@ import { Transition, Shadow, zIndex, hexa } from 'src/components/globals';
 export const Wrapper = styled.div`
   display: inline-block;
 
-  ${props =>
+  ${(props) =>
     props.darkContext &&
     css`
       > button {
@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Absolute = styled.div`
-  display: ${props => (props.open ? 'flex' : 'none')};
+  display: ${(props) => (props.open ? 'flex' : 'none')};
   position: fixed;
   left: 0;
   top: 0;
@@ -39,7 +39,7 @@ export const Absolute = styled.div`
     color: ${theme.text.reverse};
     z-index: 2;
     align-self: flex-start;
-    margin-top: ${props => (props.hasNavBar ? '56px' : '8px')};
+    margin-top: ${(props) => (props.hasNavBar ? '56px' : '8px')};
     margin-left: 8px;
   }
 
@@ -61,8 +61,8 @@ export const MenuContainer = styled.div`
   width: 300px;
   color: ${theme.brand.alt};
   background-color: ${theme.bg.wash};
-  box-shadow: ${Shadow.high} ${props => hexa(props.theme.bg.reverse, 0.25)};
-  padding-top: ${props => (props.hasNavBar ? '48px' : '0')};
+  box-shadow: ${Shadow.high} ${(props) => hexa(props.theme.bg.reverse, 0.25)};
+  padding-top: ${(props) => (props.hasNavBar ? '48px' : '0')};
   z-index: ${zIndex.fullscreen + 1};
 `;
 
@@ -76,5 +76,5 @@ export const MenuOverlay = styled.div`
   min-width: 100vw;
   height: 100vh;
   min-height: 100vh;
-  background-color: ${props => hexa(props.theme.bg.reverse, 0.5)};
+  background-color: ${(props) => hexa(props.theme.bg.reverse, 0.5)};
 `;

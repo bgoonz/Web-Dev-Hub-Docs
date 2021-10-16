@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return Promise.all([
     r
       .table('usersThreads')
@@ -9,11 +9,8 @@ exports.up = function(r, conn) {
       .run(conn),
   ]);
 };
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.all([
-    r
-      .table('usersThreads')
-      .indexDrop('userIdAndIsParticipant')
-      .run(conn),
+    r.table('usersThreads').indexDrop('userIdAndIsParticipant').run(conn),
   ]);
 };

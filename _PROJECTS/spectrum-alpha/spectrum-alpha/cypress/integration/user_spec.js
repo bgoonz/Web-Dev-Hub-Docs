@@ -3,11 +3,11 @@ const user = data.users[1];
 const communities = data.communities;
 const channels = data.channels;
 const threads = data.threads;
-const publicAuthoredThreads = threads.filter(thread => {
+const publicAuthoredThreads = threads.filter((thread) => {
   const community = communities.find(
-    community => community.id === thread.communityId
+    (community) => community.id === thread.communityId
   );
-  const channel = channels.find(channel => channel.id === thread.channelId);
+  const channel = channels.find((channel) => channel.id === thread.channelId);
   return (
     thread.creatorId === user.id && !community.isPrivate && !channel.isPrivate
   );
@@ -22,7 +22,7 @@ describe('User View', () => {
     cy.contains(user.description);
     cy.contains(user.website);
     cy.get('[data-cy="thread-feed"]').should('be.visible');
-    publicAuthoredThreads.forEach(thread => {
+    publicAuthoredThreads.forEach((thread) => {
       cy.contains(thread.content.title);
     });
   });
@@ -37,7 +37,7 @@ describe('User View', () => {
     const communities = data.communities.filter(
       ({ id, isPrivate }) => communityIds.includes(id) && isPrivate !== true
     );
-    communities.forEach(community => {
+    communities.forEach((community) => {
       cy.contains(community.name);
     });
   });

@@ -25,15 +25,8 @@ export const parseRange = (timeframe?: Timeframe) => {
 
 export const getCount = (table: string, filter: mixed) => {
   if (filter) {
-    return db
-      .table(table)
-      .filter(filter)
-      .count()
-      .run();
+    return db.table(table).filter(filter).count().run();
   }
 
-  return db
-    .table(table)
-    .count()
-    .run();
+  return db.table(table).count().run();
 };

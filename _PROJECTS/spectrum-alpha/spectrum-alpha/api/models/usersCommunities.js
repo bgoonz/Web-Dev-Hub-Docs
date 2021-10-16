@@ -47,7 +47,7 @@ export const removeUsersCommunityMemberships = async (userId: string) => {
 
   if (!memberships || memberships.length === 0) return;
 
-  const memberCountPromises = memberships.map(member => {
+  const memberCountPromises = memberships.map((member) => {
     return decrementMemberCount(member.communityId);
   });
 
@@ -115,7 +115,7 @@ export const getOwnersInCommunity = (
     .getAll([communityId, true], { index: 'communityIdAndIsOwner' })
     .skip(options.after || 0)
     .limit(options.first || 25)
-    .map(userCommunity => userCommunity('userId'))
+    .map((userCommunity) => userCommunity('userId'))
     .run();
 };
 
@@ -128,7 +128,7 @@ export const getTeamMembersInCommunity = (
     .getAll([communityId, true], { index: 'communityIdAndIsTeamMember' })
     .skip(options.after || 0)
     .limit(options.first || 25)
-    .map(userCommunity => userCommunity('userId'))
+    .map((userCommunity) => userCommunity('userId'))
     .run();
 };
 
@@ -208,7 +208,7 @@ export const getReputationByUser = (userId: string): Promise<Number> => {
   return db
     .table('usersCommunities')
     .getAll([userId, true], { index: 'userIdAndIsMember' })
-    .map(rec => rec('reputation'))
+    .map((rec) => rec('reputation'))
     .count()
     .default(0)
     .run();

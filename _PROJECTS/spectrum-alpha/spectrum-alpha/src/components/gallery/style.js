@@ -55,14 +55,14 @@ export const MiniImg = styled.img`
   height: 2rem;
   border-radius: 2px;
   margin: 0.25rem;
-  opacity: ${props => (props.active ? 1 : 0.5)};
+  opacity: ${(props) => (props.active ? 1 : 0.5)};
   transition: opacity 0.2s ease-in-out;
   max-width: 64px;
 
   &:hover {
     transition: opacity 0.2s ease-in-out;
     cursor: pointer;
-    opacity: ${props => (props.active ? 1 : 0.7)};
+    opacity: ${(props) => (props.active ? 1 : 0.7)};
   }
 `;
 

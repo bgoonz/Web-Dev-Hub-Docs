@@ -8,7 +8,7 @@
 
 // A new notification is coming in, yay!
 // eslint-disable-next-line
-self.addEventListener('push', function(event) {
+self.addEventListener('push', function (event) {
   var notificationData = {};
 
   try {
@@ -26,7 +26,7 @@ self.addEventListener('push', function(event) {
         type: 'window',
         includeUncontrolled: true,
       })
-      .then(windowClients => {
+      .then((windowClients) => {
         for (let i = 0; i < windowClients.length; i++) {
           const windowClient = windowClients[i];
           // The user is looking at Spectrum right now abort showing the notification!
@@ -59,7 +59,7 @@ self.addEventListener('push', function(event) {
 
 // On notification click
 // eslint-disable-next-line
-self.addEventListener('notificationclick', function(event) {
+self.addEventListener('notificationclick', function (event) {
   event.notification.close();
 
   const urlToOpen =
@@ -76,12 +76,12 @@ self.addEventListener('notificationclick', function(event) {
         type: 'window',
         includeUncontrolled: true,
       })
-      .then(function(clientList) {
+      .then(function (clientList) {
         // If there is an open Spectrum.chat window navigate to the notification href
         if (clientList.length > 0) {
           return clientList[0]
             .focus()
-            .then(client => client.navigate(urlToOpen));
+            .then((client) => client.navigate(urlToOpen));
         }
         // If there's no open Spectrum.chat window open a new one
         // eslint-disable-next-line

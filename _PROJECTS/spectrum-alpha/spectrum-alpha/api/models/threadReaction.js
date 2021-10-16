@@ -20,7 +20,7 @@ export const hasReactedToThread = (
   return db
     .table('threadReactions')
     .getAll([userId, threadId], { index: 'userIdAndThreadId' })
-    .filter(row => row.hasFields('deletedAt').not())
+    .filter((row) => row.hasFields('deletedAt').not())
     .count()
     .eq(1)
     .run();

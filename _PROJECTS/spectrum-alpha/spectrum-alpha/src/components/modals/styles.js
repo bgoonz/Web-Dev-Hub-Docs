@@ -76,7 +76,7 @@ export const Title = styled.div`
 
 export const Header = styled.div`
   padding: 20px 24px 0;
-  display: ${props => (props.noHeader ? 'none' : 'flex')};
+  display: ${(props) => (props.noHeader ? 'none' : 'flex')};
   justify-content: space-between;
 `;
 

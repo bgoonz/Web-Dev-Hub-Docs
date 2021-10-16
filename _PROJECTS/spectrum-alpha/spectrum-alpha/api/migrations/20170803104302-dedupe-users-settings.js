@@ -12,7 +12,7 @@ function _toConsumableArray(arr) {
   }
 }
 
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   // Get every UserID that has opted out of new message in threads emails
   return (
     r
@@ -26,11 +26,11 @@ exports.up = function(r, conn) {
           },
         },
       })
-      .map(rec => rec('userId'))
+      .map((rec) => rec('userId'))
       .distinct()
       .run(conn)
-      .then(cursor => cursor.toArray())
-      .then(optedOut => {
+      .then((cursor) => cursor.toArray())
+      .then((optedOut) => {
         return Promise.all([
           optedOut,
           r
@@ -44,10 +44,10 @@ exports.up = function(r, conn) {
                 },
               },
             })
-            .map(rec => rec('userId'))
+            .map((rec) => rec('userId'))
             .distinct()
             .run(conn)
-            .then(cursor => cursor.toArray()),
+            .then((cursor) => cursor.toArray()),
         ]);
       })
       .then(([optedOut, optedIn]) => {
@@ -70,7 +70,7 @@ exports.up = function(r, conn) {
       })
       .then(([optedOut, optedIn]) => {
         // Insert records of users that have opted out
-        const optedOutInsertions = optedOut.map(userId =>
+        const optedOutInsertions = optedOut.map((userId) =>
           r
             .table('usersSettings')
             .insert({
@@ -89,7 +89,7 @@ exports.up = function(r, conn) {
             .run(conn)
         );
         // Insert records of users that have opted in
-        const optedInInsertions = optedIn.map(userId =>
+        const optedInInsertions = optedIn.map((userId) =>
           r
             .table('usersSettings')
             .insert({
@@ -117,6 +117,6 @@ exports.up = function(r, conn) {
   );
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.resolve();
 };

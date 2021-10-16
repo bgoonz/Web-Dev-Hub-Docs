@@ -3,12 +3,12 @@ import { getThreads } from '../models/thread';
 import { getParticipantsInThreads } from '../models/usersThreads';
 import createLoader from './create-loader';
 
-export const __createThreadLoader = createLoader(threads =>
+export const __createThreadLoader = createLoader((threads) =>
   getThreads(threads)
 );
 
 export const __createThreadParticipantsLoader = createLoader(
-  threadIds => getParticipantsInThreads(threadIds),
+  (threadIds) => getParticipantsInThreads(threadIds),
   'group'
 );
 

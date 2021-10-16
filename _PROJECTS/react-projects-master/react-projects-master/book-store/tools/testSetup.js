@@ -9,14 +9,14 @@
 // hot module reloading code) doesn't apply for tests.
 // Setting NODE_ENV to test instead of production because setting it to production will suppress error messaging
 // and propType validation warnings.
-process.env.NODE_ENV = 'test';
+process.env.NODE_ENV = "test";
 
 // Disable webpack-specific features for tests since
 // Mocha doesn't know what to do with them.
-['.css', '.scss', '.png', '.jpg'].forEach(ext => {
+[".css", ".scss", ".png", ".jpg"].forEach((ext) => {
   require.extensions[ext] = () => null;
 });
 
 // Register babel so that it will transpile ES6 to ES5
 // before our tests run.
-require('babel-register')();
+require("babel-register")();

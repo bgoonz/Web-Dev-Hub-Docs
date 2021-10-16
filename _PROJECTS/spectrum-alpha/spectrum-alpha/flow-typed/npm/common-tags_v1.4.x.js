@@ -5,7 +5,7 @@
  * @flow
  */
 
-declare module "common-tags" {
+declare module 'common-tags' {
   declare type TaggedTemplate = (
     strings: Array<string>,
     ...interpolations: Array<any>
@@ -13,7 +13,7 @@ declare module "common-tags" {
 
   declare type TemplateTransformer = {
     onSubstitution?: (substitution: string, resultSoFar: string) => string,
-    onEndResult?: (endResult: string) => string
+    onEndResult?: (endResult: string) => string,
   };
 
   // Built-in tagged template literals
@@ -43,11 +43,11 @@ declare module "common-tags" {
 
   // Built-in transformers
   declare export var trimResultTransformer: (
-    side?: "left" | "right"
+    side?: 'left' | 'right'
   ) => TemplateTransformer;
 
   declare export var stripIndentTransformer: (
-    type?: "initial" | "all"
+    type?: 'initial' | 'all'
   ) => TemplateTransformer;
 
   declare export var replaceResultTransformer: (
@@ -62,7 +62,7 @@ declare module "common-tags" {
 
   declare export var inlineArrayTransformer: (opts?: {
     separator?: string,
-    conjunction?: string
+    conjunction?: string,
   }) => TemplateTransformer;
 
   declare export var splitStringTransformer: (

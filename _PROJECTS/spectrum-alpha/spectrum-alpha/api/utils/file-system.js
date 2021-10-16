@@ -8,11 +8,13 @@ const STORAGE_DIR = 'public/uploads';
 const READ_WRITE_MODE = 0o777;
 
 const dirExists = (path: string): Promise<boolean> =>
-  new Promise(res => fs.access(path, fs.constants.F_OK, err => res(!!!err)));
+  new Promise((res) =>
+    fs.access(path, fs.constants.F_OK, (err) => res(!!!err))
+  );
 
 const createUploadsDir = (path: string): Promise<void> =>
-  new Promise(res =>
-    fs.mkdir(path, READ_WRITE_MODE, err => {
+  new Promise((res) =>
+    fs.mkdir(path, READ_WRITE_MODE, (err) => {
       if (err) throw new Error(err);
       res();
     })
@@ -29,7 +31,7 @@ export const uploadImage = async (
     await createUploadsDir(STORAGE_DIR);
   }
 
-  return new Promise(res => {
+  return new Promise((res) => {
     const filePath = `${uuidv4()}-${entity}-${id}`;
     const { stream } = result;
     stream.pipe(fs.createWriteStream(`${STORAGE_DIR}/${filePath}`));

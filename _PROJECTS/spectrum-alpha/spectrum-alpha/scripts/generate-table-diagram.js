@@ -17,21 +17,17 @@ const REF_TABLE_MAP = {
     .filter({
       db: 'spectrum',
     })
-    .map(rec => rec('name'))
+    .map((rec) => rec('name'))
     .run();
 
   for (const table of tables) {
-    const [record] = await r
-      .db('spectrum')
-      .table(table)
-      .limit(1)
-      .run();
+    const [record] = await r.db('spectrum').table(table).limit(1).run();
 
     if (!record) {
       // console.warn(`could not find record in table ${table}`);
     } else {
       let output = `Table ${table} {`;
-      Object.keys(record).forEach(key => {
+      Object.keys(record).forEach((key) => {
         let keyType =
           key === 'id' || key.endsWith('Id')
             ? 'uuid'
@@ -55,7 +51,7 @@ const REF_TABLE_MAP = {
   .then(() => {
     process.exit();
   })
-  .catch(err => {
+  .catch((err) => {
     console.error(err);
     process.exit(1);
   });

@@ -28,6 +28,6 @@ export default async (root: DBChannel, _: any, ctx: GraphQLContext) => {
   return {
     members: await loaders.channelMemberCount
       .load(id)
-      .then(res => (res && res.reduction) || 0),
+      .then((res) => (res && res.reduction) || 0),
   };
 };

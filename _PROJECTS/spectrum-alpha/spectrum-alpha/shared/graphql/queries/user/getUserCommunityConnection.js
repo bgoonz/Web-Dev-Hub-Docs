@@ -46,7 +46,7 @@ export const getCurrentUserCommunityConnection = graphql(
   getCurrentUserCommunityConnectionQuery,
   {
     options: { fetchPolicy: 'cache-first' },
-    props: props => ({
+    props: (props) => ({
       ...props,
     }),
   }

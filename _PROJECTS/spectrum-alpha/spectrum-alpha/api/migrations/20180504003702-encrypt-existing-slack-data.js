@@ -5,9 +5,9 @@ exports.up = async (r, conn) => {
     const records = await r
       .table('slackImports')
       .run(conn)
-      .then(cursor => cursor.toArray());
+      .then((cursor) => cursor.toArray());
 
-    const recordPromises = records.map(async record => {
+    const recordPromises = records.map(async (record) => {
       const teamId = encryptString(record.teamId);
       const teamName = encryptString(record.teamName);
       const token = encryptString(record.token);
@@ -29,11 +29,11 @@ exports.up = async (r, conn) => {
   const encryptNewSlackImportData = async () => {
     const records = await r
       .table('communitySettings')
-      .filter(row => row.hasFields('slackSettings'))
+      .filter((row) => row.hasFields('slackSettings'))
       .run(conn)
-      .then(cursor => cursor.toArray());
+      .then((cursor) => cursor.toArray());
 
-    const recordPromises = records.map(async record => {
+    const recordPromises = records.map(async (record) => {
       const teamId = encryptString(record.slackSettings.teamId);
       const teamName = encryptString(record.slackSettings.teamName);
       const token = encryptString(record.slackSettings.token);
@@ -59,9 +59,9 @@ exports.up = async (r, conn) => {
   return await Promise.all([
     encryptOldSlackImportData(),
     encryptNewSlackImportData(),
-  ]).catch(err => console.error(err));
+  ]).catch((err) => console.error(err));
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.resolve();
 };

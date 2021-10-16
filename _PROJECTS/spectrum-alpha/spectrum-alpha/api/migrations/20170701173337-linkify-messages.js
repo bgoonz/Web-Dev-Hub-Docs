@@ -1,16 +1,16 @@
 const markdownLinkify = require('../utils/markdown-linkify');
 
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return (
     // Markdown linkify each message
     r
       .table('messages')
       .withFields('id', 'content')
       .run(conn)
-      .then(cursor => cursor.toArray())
-      .then(messages =>
+      .then((cursor) => cursor.toArray())
+      .then((messages) =>
         Promise.all(
-          messages.map(message =>
+          messages.map((message) =>
             r
               .table('messages')
               .get(message.id)
@@ -26,7 +26,7 @@ exports.up = function(r, conn) {
   );
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   // Can't really undo just this change so we don't bother
   return Promise.resolve();
 };

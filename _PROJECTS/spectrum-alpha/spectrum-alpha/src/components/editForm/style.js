@@ -93,7 +93,7 @@ export const PhotoPreview = styled.div`
   height: 48px;
   object-fit: cover;
   border-radius: 4px;
-  background-image: url('${props => props.src}')
+  background-image: url('${(props) => props.src}');
 `;
 
 export const GeneralNotice = styled.span`

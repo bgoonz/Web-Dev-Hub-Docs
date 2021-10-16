@@ -1,12 +1,12 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   // get all recurring payments
   return r
     .table('recurringPayments')
     .run(conn)
-    .then(cursor => cursor.toArray())
-    .then(subscriptions => {
+    .then((cursor) => cursor.toArray())
+    .then((subscriptions) => {
       // for each subscription record, map it and create a new object with a cleaner data model
-      return subscriptions.map(subscription => {
+      return subscriptions.map((subscription) => {
         if (!subscription.stripeData) return subscription;
 
         return Object.assign(
@@ -36,24 +36,18 @@ exports.up = function(r, conn) {
         );
       });
     })
-    .then(cleanSubscriptions => {
+    .then((cleanSubscriptions) => {
       return Promise.all([
         cleanSubscriptions,
         // delete all the old records in recurringPayments table
-        r
-          .table('recurringPayments')
-          .delete()
-          .run(conn),
+        r.table('recurringPayments').delete().run(conn),
         // also create a new index against communityId for faster isPro lookups on communities
-        r
-          .table('recurringPayments')
-          .indexCreate('communityId')
-          .run(conn),
+        r.table('recurringPayments').indexCreate('communityId').run(conn),
       ]);
     })
     .then(([cleanSubscriptions]) => {
       // insert each new clean record into the table
-      return cleanSubscriptions.map(subscription => {
+      return cleanSubscriptions.map((subscription) => {
         return r
           .table('recurringPayments')
           .insert({ ...subscription })
@@ -62,6 +56,6 @@ exports.up = function(r, conn) {
     });
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.resolve();
 };

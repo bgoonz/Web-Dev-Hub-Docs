@@ -540,8 +540,7 @@ it('should add multiple embeds to text', () => {
         depth: 0,
         inlineStyleRanges: [],
         entityRanges: [],
-        text:
-          'New podcast! https://simplecast.com/s/a1f11d11 it is really cool https://simplecast.com/s/a1f11d11',
+        text: 'New podcast! https://simplecast.com/s/a1f11d11 it is really cool https://simplecast.com/s/a1f11d11',
       },
     ],
     entityMap: {},

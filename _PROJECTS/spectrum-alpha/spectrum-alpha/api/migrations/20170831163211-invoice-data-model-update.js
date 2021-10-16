@@ -1,12 +1,12 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   // get all recurring payments
   return r
     .table('invoices')
     .run(conn)
-    .then(cursor => cursor.toArray())
-    .then(invoices => {
+    .then((cursor) => cursor.toArray())
+    .then((invoices) => {
       // for each subscription record, map it and create a new object with a cleaner data model
-      return invoices.map(invoice => {
+      return invoices.map((invoice) => {
         if (!invoice.stripeData) return invoice;
 
         return Object.assign(
@@ -30,27 +30,21 @@ exports.up = function(r, conn) {
         );
       });
     })
-    .then(cleanInvoices => {
+    .then((cleanInvoices) => {
       return Promise.all([
         cleanInvoices,
         // delete all the old records in recurringPayments table
-        r
-          .table('invoices')
-          .delete()
-          .run(conn),
+        r.table('invoices').delete().run(conn),
       ]);
     })
     .then(([cleanInvoices]) => {
       // insert each new clean record into the table
-      return cleanInvoices.map(invoice => {
-        return r
-          .table('invoices')
-          .insert(invoice)
-          .run(conn);
+      return cleanInvoices.map((invoice) => {
+        return r.table('invoices').insert(invoice).run(conn);
       });
     });
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.resolve();
 };

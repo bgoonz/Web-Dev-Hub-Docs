@@ -23,7 +23,6 @@ declare module 'hoist-non-react-statics' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'hoist-non-react-statics/index' {
   declare module.exports: $Exports<'hoist-non-react-statics'>;

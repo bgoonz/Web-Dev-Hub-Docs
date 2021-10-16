@@ -23,7 +23,6 @@ declare module 'ms' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'ms/index' {
   declare module.exports: $Exports<'ms'>;

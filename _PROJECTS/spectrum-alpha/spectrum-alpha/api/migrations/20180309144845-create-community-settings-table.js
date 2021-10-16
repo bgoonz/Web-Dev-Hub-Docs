@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return r
     .tableCreate('communitySettings')
     .run(conn)
@@ -8,12 +8,12 @@ exports.up = function(r, conn) {
         .indexCreate('communityId', r.row('communityId'))
         .run(conn)
     )
-    .catch(err => {
+    .catch((err) => {
       console.log(err);
       throw err;
     });
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.all([r.tableDrop('communitySettings').run(conn)]);
 };

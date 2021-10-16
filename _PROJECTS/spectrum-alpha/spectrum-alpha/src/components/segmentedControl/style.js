@@ -11,13 +11,13 @@ export const StyledSegmentedControl = styled.div`
   background: ${theme.bg.default};
   overflow: hidden;
   overflow-x: scroll;
-  position: ${props => (props.sticky ? 'sticky' : 'relative')};
-  z-index: ${props => (props.sticky ? '13' : '1')};
+  position: ${(props) => (props.sticky ? 'sticky' : 'relative')};
+  z-index: ${(props) => (props.sticky ? '13' : '1')};
 
-  ${props =>
+  ${(props) =>
     props.sticky &&
     css`
-      top: ${props => (props.stickyOffset ? `${props.stickyOffset}px` : '0')};
+      top: ${(props) => (props.stickyOffset ? `${props.stickyOffset}px` : '0')};
     `};
 
   &::-webkit-scrollbar {
@@ -28,8 +28,8 @@ export const StyledSegmentedControl = styled.div`
 
   @media (max-width: ${MEDIA_BREAK}px) {
     max-width: 100vw;
-    position: ${props => (props.mobileSticky ? 'sticky' : 'relative')};
-    top: ${props =>
+    position: ${(props) => (props.mobileSticky ? 'sticky' : 'relative')};
+    top: ${(props) =>
       props.mobileStickyOffset ? `${props.mobileStickyOffset}px` : '0'};
   }
 `;
@@ -41,18 +41,18 @@ export const StyledSegment = styled.div`
   padding: 16px;
   flex: 1 0 auto;
   font-weight: 600;
-  color: ${props => (props.isActive ? theme.text.default : theme.text.alt)};
-  box-shadow: ${props =>
+  color: ${(props) => (props.isActive ? theme.text.default : theme.text.alt)};
+  box-shadow: ${(props) =>
     props.isActive ? `inset 0 -2px 0 ${theme.text.default}` : 'none'};
   text-align: center;
 
   &:hover {
     background: ${theme.bg.wash};
-    box-shadow: ${props =>
+    box-shadow: ${(props) =>
       props.isActive
         ? `inset 0 -2px 0 ${theme.text.default}`
         : `inset 0 -2px 0 ${tint(theme.bg.wash, -16)}`};
-    color: ${props =>
+    color: ${(props) =>
       props.isActive ? theme.text.default : theme.text.secondary};
     cursor: pointer;
   }
@@ -68,7 +68,7 @@ export const StyledSegment = styled.div`
   }
 
   @media (min-width: ${MEDIA_BREAK}px) {
-    ${props =>
+    ${(props) =>
       props.hideOnDesktop &&
       css`
         display: none;

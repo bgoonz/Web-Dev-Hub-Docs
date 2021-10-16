@@ -7,7 +7,7 @@ import { MEDIA_BREAK, TITLEBAR_HEIGHT } from 'src/components/layout';
 export const TitlebarContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: ${props =>
+  justify-content: ${(props) =>
     props.hasAction ? 'space-between' : 'flex-start'};
   width: 100%;
   background: ${theme.bg.default};
@@ -20,10 +20,10 @@ export const TitlebarContainer = styled.div`
   grid-area: titlebar;
 
   @media (min-width: ${MEDIA_BREAK}px) {
-    display: ${props => (props.desktop ? 'flex' : 'none')};
+    display: ${(props) => (props.desktop ? 'flex' : 'none')};
   }
   @media (max-width: ${MEDIA_BREAK}px) {
-    display: ${props => (props.desktop ? 'none' : 'flex')};
+    display: ${(props) => (props.desktop ? 'none' : 'flex')};
   }
 `;
 

@@ -34,7 +34,7 @@ class Gallery extends React.Component<Props> {
   }
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   threadId: state.gallery.threadId,
   activeMessageId: state.gallery.messageId,
   isOpen: state.gallery.isOpen,

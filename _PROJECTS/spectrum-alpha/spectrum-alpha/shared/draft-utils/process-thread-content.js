@@ -12,10 +12,12 @@ export default (type: 'TEXT' | 'DRAFTJS', body: ?string): string => {
     newBody = JSON.stringify(
       convertToRaw(
         stateFromMarkdown(newBody, {
-          customBlockFn: elem => {
+          customBlockFn: (elem) => {
             if (elem.nodeName !== 'PRE') return;
 
-            const code = elem.childNodes.find(node => node.nodeName === 'CODE');
+            const code = elem.childNodes.find(
+              (node) => node.nodeName === 'CODE'
+            );
             if (!code) return;
 
             const className = code.attributes.find(

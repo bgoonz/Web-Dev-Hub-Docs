@@ -79,7 +79,7 @@ if (
   });
 
   // This is necessary for express-hot-shots to work
-  const handleObjectTags = method => {
+  const handleObjectTags = (method) => {
     const original = metrics[method];
     metrics[method] = (key, val, tags, timestamp) => {
       return original.call(

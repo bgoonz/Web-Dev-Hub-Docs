@@ -1,27 +1,27 @@
-exports.up = async function(r, conn) {
+exports.up = async function (r, conn) {
   const threads = await r
     .db('spectrum')
     .table('threads')
-    .filter(row => row('modifiedAt').lt(r.epochTime(1540929600)))
-    .filter(row => row('content')('body').match('spectrum.imgix.net'))
-    .filter(row => row('content')('body').match('%20'))
-    .filter(row => row.hasFields('deletedAt').not())
-    .map(row => ({ id: row('id'), body: row('content')('body') }))
+    .filter((row) => row('modifiedAt').lt(r.epochTime(1540929600)))
+    .filter((row) => row('content')('body').match('spectrum.imgix.net'))
+    .filter((row) => row('content')('body').match('%20'))
+    .filter((row) => row.hasFields('deletedAt').not())
+    .map((row) => ({ id: row('id'), body: row('content')('body') }))
     .run(conn)
-    .then(cursor => cursor.toArray());
+    .then((cursor) => cursor.toArray());
 
-  const threadPromises = threads.map(async obj => {
+  const threadPromises = threads.map(async (obj) => {
     const newBody = JSON.parse(obj.body);
 
     const imageKeys = Object.keys(newBody.entityMap).filter(
-      key => newBody.entityMap[key].type.toLowerCase() === 'image'
+      (key) => newBody.entityMap[key].type.toLowerCase() === 'image'
     );
 
     const LEGACY_PREFIX = 'https://spectrum.imgix.net/';
-    const hasLegacyPrefix = url => url.startsWith(LEGACY_PREFIX, 0);
-    const stripLegacyPrefix = url => url.replace(LEGACY_PREFIX, '');
+    const hasLegacyPrefix = (url) => url.startsWith(LEGACY_PREFIX, 0);
+    const stripLegacyPrefix = (url) => url.replace(LEGACY_PREFIX, '');
 
-    const processImageUrl = str => {
+    const processImageUrl = (str) => {
       if (str.indexOf(LEGACY_PREFIX) < 0) {
         return str;
       }
@@ -66,6 +66,6 @@ exports.up = async function(r, conn) {
   return await Promise.all(threadPromises);
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.resolve();
 };

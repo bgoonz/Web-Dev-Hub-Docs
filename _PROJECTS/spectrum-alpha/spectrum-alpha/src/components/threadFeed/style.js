@@ -95,14 +95,14 @@ export const LoadingPill = styled.span`
   position: absolute;
   left: 50%;
   transform: translateX(-50%)
-    translateY(${props => (props.isVisible ? '12px' : '0px')});
+    translateY(${(props) => (props.isVisible ? '12px' : '0px')});
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   padding: 2px 44px;
   min-height: 24px;
   border-radius: 48px;
   background: ${theme.brand.alt};
   border: 1px solid ${theme.brand.default};
-  opacity: ${props => (props.isVisible ? '1' : '0')};
+  opacity: ${(props) => (props.isVisible ? '1' : '0')};
   pointer-events: none;
   z-index: 11;
   box-shadow: 0 2px 4px rgba(${hexa(theme.brand.alt, 0.12)});

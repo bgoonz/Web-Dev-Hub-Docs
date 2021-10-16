@@ -10,7 +10,7 @@ export default async (root: DBCommunity, _: any, ctx: GraphQLContext) => {
 
   if (!pinnedThreadId) return null;
 
-  if (!await canViewCommunity(user, id, loaders)) {
+  if (!(await canViewCommunity(user, id, loaders))) {
     return null;
   }
 

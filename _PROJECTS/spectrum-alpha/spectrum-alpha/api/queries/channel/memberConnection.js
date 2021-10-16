@@ -26,8 +26,8 @@ export default async (
 
   // $FlowIssue
   return getMembersInChannel(id, { first, after: lastUserIndex })
-    .then(users => loaders.user.loadMany(users))
-    .then(result => ({
+    .then((users) => loaders.user.loadMany(users))
+    .then((result) => ({
       pageInfo: {
         hasNextPage: result && result.length >= first,
       },

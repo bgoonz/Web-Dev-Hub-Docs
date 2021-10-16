@@ -15,7 +15,7 @@ const StyledFlyout = styled(FlexRow)`
   top: 36px;
   z-index: ${zIndex.flyout};
   color: ${theme.text.default};
-  ${props => props.style};
+  ${(props) => props.style};
 `;
 
 const StyledRow = styled(FlexCol)`

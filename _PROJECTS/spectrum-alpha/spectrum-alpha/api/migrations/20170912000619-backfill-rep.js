@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   const updateReputation = (userId, communityId, score, type) => {
     return r
       .table('usersCommunities')
@@ -24,11 +24,11 @@ exports.up = function(r, conn) {
 
   return r
     .table('threads')
-    .filter(row => row.hasFields('deletedAt').not())
+    .filter((row) => row.hasFields('deletedAt').not())
     .run(conn)
-    .then(cursor => cursor.toArray())
-    .then(threads => {
-      const threadPromises = threads.map(thread => {
+    .then((cursor) => cursor.toArray())
+    .then((threads) => {
+      const threadPromises = threads.map((thread) => {
         return updateReputation(
           thread.creatorId,
           thread.communityId,
@@ -41,6 +41,6 @@ exports.up = function(r, conn) {
     });
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.resolve();
 };

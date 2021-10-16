@@ -24,7 +24,7 @@ const signBody = (body?: string, expires?: number): string => {
   const returnBody = JSON.parse(body);
 
   const imageKeys = Object.keys(returnBody.entityMap).filter(
-    key => returnBody.entityMap[key].type.toLowerCase() === 'image'
+    (key) => returnBody.entityMap[key].type.toLowerCase() === 'image'
   );
 
   imageKeys.forEach((key, index) => {

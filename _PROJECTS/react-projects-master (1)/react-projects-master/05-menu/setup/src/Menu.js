@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Menu = () => {
   return <h2>menu component</h2>;

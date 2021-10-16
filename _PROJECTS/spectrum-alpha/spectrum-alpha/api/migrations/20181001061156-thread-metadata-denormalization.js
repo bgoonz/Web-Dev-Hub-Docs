@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return r
     .table('threads')
     .update(
@@ -21,20 +21,14 @@ exports.up = function(r, conn) {
     .run(conn)
     .then(() => {
       return Promise.all([
-        r
-          .table('threads')
-          .indexCreate('messageCount')
-          .run(conn),
-        r
-          .table('threads')
-          .indexCreate('reactionCount')
-          .run(conn),
+        r.table('threads').indexCreate('messageCount').run(conn),
+        r.table('threads').indexCreate('reactionCount').run(conn),
       ]);
     })
-    .catch(err => console.error(err));
+    .catch((err) => console.error(err));
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return r
     .table('threads')
     .update({
@@ -44,14 +38,8 @@ exports.down = function(r, conn) {
     .run(conn)
     .then(() => {
       return Promise.all([
-        r
-          .table('threads')
-          .indexDrop('messageCount')
-          .run(conn),
-        r
-          .table('threads')
-          .indexDrop('reactionCount')
-          .run(conn),
+        r.table('threads').indexDrop('messageCount').run(conn),
+        r.table('threads').indexDrop('reactionCount').run(conn),
       ]);
     });
 };

@@ -33,15 +33,11 @@ class HoverProfile extends Component<ProfileProps> {
   render() {
     const { channel, ref, style } = this.props;
 
-    const {
-      isOwner: isChannelOwner,
-      isMember: isChannelMember,
-    } = channel.channelPermissions;
+    const { isOwner: isChannelOwner, isMember: isChannelMember } =
+      channel.channelPermissions;
     const { communityPermissions } = channel.community;
-    const {
-      isOwner: isCommunityOwner,
-      isModerator: isCommunityModerator,
-    } = communityPermissions;
+    const { isOwner: isCommunityOwner, isModerator: isCommunityModerator } =
+      communityPermissions;
     const isGlobalOwner = isChannelOwner || isCommunityOwner;
     const isGlobalModerator = isCommunityModerator;
 
@@ -84,8 +80,4 @@ class HoverProfile extends Component<ProfileProps> {
   }
 }
 
-export default compose(
-  withCurrentUser,
-  withRouter,
-  connect()
-)(HoverProfile);
+export default compose(withCurrentUser, withRouter, connect())(HoverProfile);

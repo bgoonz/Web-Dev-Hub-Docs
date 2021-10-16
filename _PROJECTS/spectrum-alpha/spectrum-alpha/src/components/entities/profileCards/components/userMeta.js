@@ -48,7 +48,7 @@ export const UserMeta = (props: Props) => {
 
         <GithubProfile
           id={user.id}
-          render={profile => {
+          render={(profile) => {
             if (!profile) {
               return null;
             } else {

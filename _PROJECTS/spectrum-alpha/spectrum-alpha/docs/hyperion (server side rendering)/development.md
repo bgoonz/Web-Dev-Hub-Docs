@@ -10,7 +10,7 @@ In production, the client-side app is bundled and server-side rendered by Hyperi
 
 This means we get the best development experience locally with hot module reloading etc, and in production we have single server responsible for serving files, rendering and the API.
 
-### When developing SSR 
+### When developing SSR
 
 **DO NOT USE THIS UNLESS YOU'RE DEVELOPING SSR**
 

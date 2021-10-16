@@ -23,7 +23,6 @@ declare module 'helmet' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'helmet/index' {
   declare module.exports: $Exports<'helmet'>;

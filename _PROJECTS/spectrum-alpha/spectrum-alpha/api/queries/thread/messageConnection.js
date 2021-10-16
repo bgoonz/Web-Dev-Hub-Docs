@@ -64,7 +64,7 @@ export default (
   // If we didn't get any arguments at all (i.e messageConnection {})
   // then just fetch the first 25 messages
   // $FlowIssue
-  if (Object.keys(options).every(key => !options[key])) {
+  if (Object.keys(options).every((key) => !options[key])) {
     options = {
       first: 25,
     };
@@ -77,7 +77,7 @@ export default (
   options.first && options.first++;
   options.last && options.last++;
 
-  return getMessages(id, options).then(result => {
+  return getMessages(id, options).then((result) => {
     let messages = result;
     // Check if more messages were returned than were requested, which would mean
     // there's a next/previous page. (depending on the direction of the pagination)
@@ -103,7 +103,7 @@ export default (
         // $FlowIssue
         hasPreviousPage: loadedMoreLast || !!options.after,
       },
-      edges: messages.map(message => ({
+      edges: messages.map((message) => ({
         cursor: encode(message.timestamp.getTime().toString()),
         node: message,
       })),

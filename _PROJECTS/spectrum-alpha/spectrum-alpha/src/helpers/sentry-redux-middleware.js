@@ -1,4 +1,4 @@
-const crashReporter = store => next => action => {
+const crashReporter = (store) => (next) => (action) => {
   // Handle THROW_ERROR actions
   if (action.type === 'THROW_ERROR') {
     console.error('Caught an exception!', action.err);

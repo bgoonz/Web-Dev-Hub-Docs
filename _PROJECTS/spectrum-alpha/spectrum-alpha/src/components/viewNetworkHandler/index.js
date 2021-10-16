@@ -49,8 +49,8 @@ export type ViewNetworkHandlerType = {
 };
 
 // $FlowFixMe
-const viewNetworkHandler = Component => {
-  const C = props => {
+const viewNetworkHandler = (Component) => {
+  const C = (props) => {
     // $FlowFixMe
     const { data, wrappedComponentRef, ...remainingProps } = props;
 

@@ -22,6 +22,6 @@ export const uploadImage = (
   entity: EntityTypes,
   id: string
 ): Promise<string> =>
-  uploadImageFn(file, entity, id).catch(err => {
+  uploadImageFn(file, entity, id).catch((err) => {
     throw new Error(err);
   });

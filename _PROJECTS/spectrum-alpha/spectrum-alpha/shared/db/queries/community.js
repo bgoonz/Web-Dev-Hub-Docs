@@ -18,7 +18,7 @@ export const getTopCommunitiesByMemberCount = createReadQuery(
     query: db
       .table('communities')
       .orderBy({ index: db.desc('memberCount') })
-      .filter(community => community.hasFields('deletedAt').not())
+      .filter((community) => community.hasFields('deletedAt').not())
       .limit(amount),
     tags: (communities: Array<DBCommunity>) =>
       communities ? communities.map(({ id }) => id) : [],

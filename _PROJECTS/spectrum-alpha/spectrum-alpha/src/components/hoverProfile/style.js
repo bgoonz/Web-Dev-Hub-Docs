@@ -10,7 +10,7 @@ export const HoverWrapper = styled.div`
   margin-left: -12px;
   z-index: ${zIndex.tooltip};
   width: 256px;
-  ${props => props.popperStyle};
+  ${(props) => props.popperStyle};
 
   @media (max-width: ${MEDIA_BREAK}px) {
     display: none;
@@ -31,7 +31,7 @@ export const Span = styled.span`
 
 export const PopperWrapper = styled.div`
   z-index: 6001;
-  ${props => props.popperStyle};
+  ${(props) => props.popperStyle};
 `;
 
 export const ProfileCard = styled.div`
@@ -106,9 +106,9 @@ export const CoverContainer = styled.div`
 export const CoverPhoto = styled.div`
   width: 100%;
   height: 88px;
-  background-color: ${props =>
+  background-color: ${(props) =>
     props.src ? props.theme.text.default : props.theme.brand.alt};
-  background-image: ${props => (props.src ? `url("${props.src}")` : 'none')};
+  background-image: ${(props) => (props.src ? `url("${props.src}")` : 'none')};
   background-repeat: no-repeat;
   background-size: cover;
 `;

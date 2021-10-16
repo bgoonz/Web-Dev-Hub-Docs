@@ -1,11 +1,11 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return Promise.all([
     r
       .table('usersSettings')
       .run(conn)
-      .then(cursor => cursor.toArray())
-      .then(settings => {
-        return settings.map(setting => {
+      .then((cursor) => cursor.toArray())
+      .then((settings) => {
+        return settings.map((setting) => {
           return Object.assign(
             {},
             {
@@ -39,32 +39,29 @@ exports.up = function(r, conn) {
           );
         });
       })
-      .then(newSettings => {
+      .then((newSettings) => {
         return Promise.all([
           newSettings,
           // delete all the old records
-          r
-            .table('usersSettings')
-            .delete()
-            .run(conn),
+          r.table('usersSettings').delete().run(conn),
         ]);
       })
       .then(([newSettings]) => {
         // insert each new clean record into the table
-        return newSettings.map(setting => {
+        return newSettings.map((setting) => {
           return r
             .table('usersSettings')
             .insert({ ...setting })
             .run(conn);
         });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       }),
   ]);
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.resolve();
 };

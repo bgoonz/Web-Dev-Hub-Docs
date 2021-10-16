@@ -15,8 +15,8 @@ module.exports = {
     config.output.path = path.join(process.cwd(), `build-${dir}`);
     const nodePath = (process.env.NODE_PATH || '')
       .split(path.delimiter)
-      .filter(folder => folder && !path.isAbsolute(folder))
-      .map(folder => path.resolve('./', folder))
+      .filter((folder) => folder && !path.isAbsolute(folder))
+      .map((folder) => path.resolve('./', folder))
       .join(path.delimiter);
 
     if (process.env.NODE_ENV !== 'production' && !process.env.SSR) {

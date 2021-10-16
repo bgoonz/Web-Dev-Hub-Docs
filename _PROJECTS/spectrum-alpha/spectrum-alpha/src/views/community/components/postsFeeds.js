@@ -26,7 +26,7 @@ export const PostsFeeds = withCurrentUser((props: Props) => {
       <PostsFeedsSelectorContainer>
         <Select
           value={activeFeed}
-          onChange={e => setActiveFeed(e.target.value)}
+          onChange={(e) => setActiveFeed(e.target.value)}
         >
           <option key="latest" value="latest">
             Latest

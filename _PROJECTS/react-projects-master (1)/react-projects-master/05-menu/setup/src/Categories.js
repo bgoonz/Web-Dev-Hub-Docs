@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Categories = () => {
   return <h2>categories component</h2>;

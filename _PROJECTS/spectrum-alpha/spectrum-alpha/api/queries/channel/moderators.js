@@ -12,5 +12,7 @@ export default async (channel: DBChannel, _: any, ctx: GraphQLContext) => {
     if (!(await canViewChannel(currentUser, id, loaders))) return null;
   }
 
-  return getModeratorsInChannel(id).then(users => loaders.user.loadMany(users));
+  return getModeratorsInChannel(id).then((users) =>
+    loaders.user.loadMany(users)
+  );
 };

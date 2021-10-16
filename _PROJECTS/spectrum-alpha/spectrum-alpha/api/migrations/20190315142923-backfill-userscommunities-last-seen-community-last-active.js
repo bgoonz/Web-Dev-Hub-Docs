@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return Promise.all([
     r
       .table('usersCommunities')
@@ -41,7 +41,7 @@ exports.up = function(r, conn) {
   ]);
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.all([
     r
       .table('usersCommunities')

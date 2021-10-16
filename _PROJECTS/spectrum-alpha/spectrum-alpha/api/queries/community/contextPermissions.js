@@ -13,13 +13,11 @@ import type { GraphQLContext } from '../../';
       case 'getUser': {
         const username = info.variableValues.username;
         const user = await loaders.userByUsername.load(username);
-        const {
-          isModerator,
-          isOwner,
-        } = await loaders.userPermissionsInCommunity.load([
-          user.id,
-          community.id,
-        ]);
+        const { isModerator, isOwner } =
+          await loaders.userPermissionsInCommunity.load([
+            user.id,
+            community.id,
+          ]);
         return {
           communityId: community.id,
           isModerator,

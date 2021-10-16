@@ -24,7 +24,7 @@ export default async (root: DBCommunity, _: any, ctx: GraphQLContext) => {
   const getDbCommunityChannelCount = async () => {
     const count = await loaders.communityChannelCount
       .load(id)
-      .then(res => (res && res.reduction) || 0);
+      .then((res) => (res && res.reduction) || 0);
 
     await cache.set(communityChannelCount(id), count, 'ex', 3600);
 
@@ -34,7 +34,7 @@ export default async (root: DBCommunity, _: any, ctx: GraphQLContext) => {
   const getDbRootMemberCount = async () => {
     const count = await loaders.communityMemberCount
       .load(id)
-      .then(res => (res && res.reduction) || 0);
+      .then((res) => (res && res.reduction) || 0);
 
     await Raven.captureException(
       new Error(

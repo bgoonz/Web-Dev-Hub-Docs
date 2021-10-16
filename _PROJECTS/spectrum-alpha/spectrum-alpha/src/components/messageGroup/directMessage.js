@@ -23,7 +23,7 @@ const DirectMessages = (props: {
 
   return (
     <MessagesWrapper data-cy="message-group">
-      {messages.map(group => {
+      {messages.map((group) => {
         // eliminate groups where there are no messages
         if (!Array.isArray(group) || group.length === 0) return null;
         // Since all messages in the group have the same Author and same initial timestamp, we only need to pull that data from the first message in the group. So let's get that message and then check who sent it.

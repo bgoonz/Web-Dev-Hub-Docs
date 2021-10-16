@@ -27,7 +27,7 @@ const testCases: TestCases = {
   ],
 };
 
-Object.keys(testCases).forEach(name => {
+Object.keys(testCases).forEach((name) => {
   it(name, () => {
     expect(normalizeUrl(testCases[name][0])).toEqual(testCases[name][1]);
   });

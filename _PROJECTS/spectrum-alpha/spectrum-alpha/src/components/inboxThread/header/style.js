@@ -33,7 +33,7 @@ const metaTitleStyles = css`
   font-size: 15px;
   font-weight: 600;
   line-height: 1.2;
-  color: ${props =>
+  color: ${(props) =>
     props.active ? props.theme.text.reverse : props.theme.text.default};
   pointer-events: auto;
   position: relative;
@@ -41,7 +41,7 @@ const metaTitleStyles = css`
 
   &:hover {
     cursor: pointer;
-    color: ${props =>
+    color: ${(props) =>
       props.active ? props.theme.text.reverse : props.theme.text.default};
   }
 `;
@@ -53,7 +53,7 @@ export const MetaTitle = styled(Link)`
 export const MetaTitleText = styled.span`
   ${metaTitleStyles} &:hover {
     cursor: auto;
-    color: ${props =>
+    color: ${(props) =>
       props.active ? props.theme.text.reverse : props.theme.text.alt};
   }
 `;
@@ -61,7 +61,7 @@ export const MetaTitleText = styled.span`
 const metaSubtitleStyles = css`
   font-size: 15px;
   font-weight: 400;
-  color: ${props =>
+  color: ${(props) =>
     props.active ? props.theme.text.reverse : props.theme.text.alt};
   line-height: 1.2;
   pointer-events: auto;
@@ -70,7 +70,7 @@ const metaSubtitleStyles = css`
 
   &:hover {
     cursor: pointer;
-    color: ${props =>
+    color: ${(props) =>
       props.active ? props.theme.text.reverse : props.theme.text.default};
   }
 `;
@@ -84,56 +84,56 @@ export const MetaSubtitleText = styled.span`
 
   ${metaSubtitleStyles} &:hover {
     cursor: auto;
-    color: ${props =>
+    color: ${(props) =>
       props.active ? props.theme.text.reverse : props.theme.text.alt};
   }
 `;
 
 export const Timestamp = styled(MetaTitleText)`
-  color: ${props =>
+  color: ${(props) =>
     props.active ? props.theme.text.reverse : props.theme.text.alt};
   font-weight: 400;
 `;
 
 export const NewThreadTimestamp = styled(MetaSubtitleText)`
   margin-left: 4px;
-  color: ${props =>
+  color: ${(props) =>
     props.active ? props.theme.text.reverse : props.theme.brand.default};
 `;
 
 export const MetaSubtitlePinned = styled(MetaSubtitleText)`
-  color: ${props =>
+  color: ${(props) =>
     props.active ? props.theme.text.reverse : props.theme.special.default};
 
   &:hover {
-    color: ${props =>
+    color: ${(props) =>
       props.active ? props.theme.text.reverse : props.theme.special.default};
   }
 `;
 
 export const MetaSubtitleLocked = styled(MetaSubtitleText)`
-  color: ${props =>
+  color: ${(props) =>
     props.active ? props.theme.text.reverse : props.theme.text.secondary};
 
   &:hover {
-    color: ${props =>
+    color: ${(props) =>
       props.active ? props.theme.text.reverse : props.theme.text.secondary};
   }
 `;
 
 export const MetaSubtitleWatercooler = styled(MetaSubtitleText)`
-  color: ${props =>
+  color: ${(props) =>
     props.active ? props.theme.text.reverse : props.theme.space.default};
 
   &:hover {
-    color: ${props =>
+    color: ${(props) =>
       props.active ? props.theme.text.reverse : props.theme.space.default};
   }
 `;
 
 export const Divider = styled.span`
   margin: 0 4px;
-  color: ${props =>
+  color: ${(props) =>
     props.active ? props.theme.text.reverse : props.theme.text.placeholder};
 `;
 
@@ -141,6 +141,6 @@ export const Dot = styled.span`
   width: 8px;
   height: 8px;
   border-radius: 8px;
-  background-color: ${props => props.color(props.theme)};
+  background-color: ${(props) => props.color(props.theme)};
   margin-right: 8px;
 `;

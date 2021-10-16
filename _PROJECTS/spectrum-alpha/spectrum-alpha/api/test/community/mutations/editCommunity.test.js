@@ -30,11 +30,11 @@ const variables = {
 it('should edit a community name and description', async () => {
   const query = /* GraphQL */ `
     mutation editCommunity($input: EditCommunityInput!) {
-      editCommunity (input: $input) {
+      editCommunity(input: $input) {
         name
         description
       }
-    },
+    }
   `;
 
   const context = { user: owner };
@@ -52,11 +52,11 @@ it('should edit a community name and description', async () => {
 it('should prevent community from being edited by a non owner', async () => {
   const query = /* GraphQL */ `
     mutation editCommunity($input: EditCommunityInput!) {
-      editCommunity (input: $input) {
+      editCommunity(input: $input) {
         name
         description
       }
-    },
+    }
   `;
 
   const context = { user: member };
@@ -70,11 +70,11 @@ it('should prevent community from being edited by a non owner', async () => {
 it('should prevent community from being edited by a non user', async () => {
   const query = /* GraphQL */ `
     mutation editCommunity($input: EditCommunityInput!) {
-      editCommunity (input: $input) {
+      editCommunity(input: $input) {
         name
         description
       }
-    },
+    }
   `;
 
   expect.assertions(1);

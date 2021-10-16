@@ -8,22 +8,22 @@ import {
 // Public
 const thread = data.threads[0];
 const community = data.communities.find(
-  community => community.id === thread.communityId
+  (community) => community.id === thread.communityId
 );
 const moderator = data.usersCommunities
-  .filter(usersCommunity => usersCommunity.communityId === community.id)
-  .find(usersCommunity => usersCommunity.isOwner);
-const author = data.users.find(user => user.id === thread.creatorId);
+  .filter((usersCommunity) => usersCommunity.communityId === community.id)
+  .find((usersCommunity) => usersCommunity.isOwner);
+const author = data.users.find((user) => user.id === thread.creatorId);
 const messages = data.messages.filter(
-  message => message.threadId === thread.id
+  (message) => message.threadId === thread.id
 );
 
 // Private
 const privateThread = data.threads.find(
-  thread => thread.channelId === SPECTRUM_PRIVATE_CHANNEL_ID
+  (thread) => thread.channelId === SPECTRUM_PRIVATE_CHANNEL_ID
 );
 const privateAuthor = data.users.find(
-  user => user.id === privateThread.creatorId
+  (user) => user.id === privateThread.creatorId
 );
 
 describe('Thread View', () => {
@@ -44,7 +44,7 @@ describe('Thread View', () => {
       cy.get(`[href*="/${community.slug}"]`).should('be.visible');
 
       cy.get('[data-cy="message-group"]').should('be.visible');
-      messages.forEach(message => {
+      messages.forEach((message) => {
         cy.contains(toPlainText(toState(JSON.parse(message.content.body))));
       });
     });
@@ -84,12 +84,12 @@ describe('Thread View', () => {
       cy.get('[data-cy="message-selected"]').should('be.visible');
 
       // only one message should be selected
-      cy.get('[data-cy="message-selected"]').should($p => {
+      cy.get('[data-cy="message-selected"]').should(($p) => {
         expect($p).to.have.length(1);
       });
 
       // the other messages should be unselected
-      cy.get('[data-cy="message"]').should($p => {
+      cy.get('[data-cy="message"]').should(($p) => {
         expect($p).to.have.length(3);
       });
     });
@@ -124,13 +124,11 @@ describe('Thread View', () => {
       // the last message should have delete action in the message action bar
       cy.get('[data-cy="delete-message"]').should('be.visible');
       // there should only be one deletable message
-      cy.get('[data-cy="delete-message"]').should($p => {
+      cy.get('[data-cy="delete-message"]').should(($p) => {
         expect($p).to.have.length(1);
       });
       // clicking delete message should open double check modal
-      cy.get('[data-cy="delete-message"]')
-        .last()
-        .click({ force: true });
+      cy.get('[data-cy="delete-message"]').last().click({ force: true });
       // modal should open
       cy.get('[data-cy="delete-button"]').should('be.visible');
     });
@@ -145,13 +143,11 @@ describe('Thread View', () => {
       // the last message should have delete action in the message action bar
       cy.get('[data-cy="delete-message"]').should('be.visible');
       // there should only be one deletable message
-      cy.get('[data-cy="delete-message"]').should($p => {
+      cy.get('[data-cy="delete-message"]').should(($p) => {
         expect($p).to.have.length(4);
       });
       // clicking delete message should open double check modal
-      cy.get('[data-cy="delete-message"]')
-        .last()
-        .click({ force: true });
+      cy.get('[data-cy="delete-message"]').last().click({ force: true });
       // modal should open
       cy.get('[data-cy="delete-button"]').should('be.visible');
     });

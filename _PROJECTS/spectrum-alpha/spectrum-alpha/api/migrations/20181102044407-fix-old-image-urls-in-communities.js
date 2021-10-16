@@ -1,35 +1,33 @@
-exports.up = async function(r, conn) {
+exports.up = async function (r, conn) {
   const communities = await r
     .db('spectrum')
     .table('communities')
-    .filter(row => row('modifiedAt').lt(r.epochTime(1540929600)))
-    .filter(row =>
+    .filter((row) => row('modifiedAt').lt(r.epochTime(1540929600)))
+    .filter((row) =>
       row('profilePhoto')
         .match('spectrum.imgix.net')
         .or(row('coverPhoto').match('spectrum.imgix.net'))
     )
-    .filter(row =>
-      row('profilePhoto')
-        .match('%20')
-        .or(row('coverPhoto').match('%20'))
+    .filter((row) =>
+      row('profilePhoto').match('%20').or(row('coverPhoto').match('%20'))
     )
-    .filter(row => row.hasFields('deletedAt').not())
-    .map(row => ({
+    .filter((row) => row.hasFields('deletedAt').not())
+    .map((row) => ({
       id: row('id'),
       profilePhoto: row('profilePhoto'),
       coverPhoto: row('coverPhoto'),
     }))
     .run(conn)
-    .then(cursor => cursor.toArray());
+    .then((cursor) => cursor.toArray());
 
-  const communityPromises = communities.map(async obj => {
+  const communityPromises = communities.map(async (obj) => {
     const { profilePhoto, coverPhoto } = obj;
 
     const LEGACY_PREFIX = 'https://spectrum.imgix.net/';
-    const hasLegacyPrefix = url => url.startsWith(LEGACY_PREFIX, 0);
-    const stripLegacyPrefix = url => url.replace(LEGACY_PREFIX, '');
+    const hasLegacyPrefix = (url) => url.startsWith(LEGACY_PREFIX, 0);
+    const stripLegacyPrefix = (url) => url.replace(LEGACY_PREFIX, '');
 
-    const processImageUrl = str => {
+    const processImageUrl = (str) => {
       if (str.indexOf(LEGACY_PREFIX) < 0) {
         return str;
       }
@@ -68,6 +66,6 @@ exports.up = async function(r, conn) {
   return await Promise.all(communityPromises);
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.resolve();
 };

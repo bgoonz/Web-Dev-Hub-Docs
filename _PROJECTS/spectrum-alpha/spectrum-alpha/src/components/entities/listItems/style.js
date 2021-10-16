@@ -17,7 +17,7 @@ export const Row = styled.div`
   grid-template-rows: auto;
   grid-template-areas: 'content actions';
   grid-template-columns: 1fr auto;
-  background: ${props =>
+  background: ${(props) =>
     props.isActive ? hexa(theme.text.default, 0.04) : theme.bg.default};
   border-bottom: 1px solid ${theme.bg.divider};
   grid-gap: 16px;
@@ -27,7 +27,7 @@ export const Row = styled.div`
     cursor: pointer;
   }
 
-  ${props =>
+  ${(props) =>
     props.isActive &&
     css`
       box-shadow: inset 3px 0 0 ${theme.text.default};

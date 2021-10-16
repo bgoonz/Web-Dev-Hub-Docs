@@ -39,11 +39,7 @@ describe('story', () => {
         .filter({ content: { body: newMessage.content.body } })
         .delete()
         .run(),
-      db
-        .table('threads')
-        .get(thread.id)
-        .update(thread)
-        .run(),
+      db.table('threads').get(thread.id).update(thread).run(),
     ]);
   });
 

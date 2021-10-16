@@ -38,7 +38,7 @@ const users = [
 ];
 
 const usersSettings = [];
-users.forEach(user => {
+users.forEach((user) => {
   usersSettings.push(generateUsersSettings(user.id));
 });
 
@@ -52,15 +52,15 @@ const communities = [
 
 debug('Generating usersCommunities...');
 let usersCommunities = [];
-users.forEach(user => {
-  communities.forEach(community => {
+users.forEach((user) => {
+  communities.forEach((community) => {
     usersCommunities.push(generateUsersCommunities(community.id, user.id));
   });
 });
 
 debug('Generating channels...');
 let channels = defaultChannels;
-communities.forEach(community => {
+communities.forEach((community) => {
   if (community.deletedAt) return;
   randomAmount({ max: 10 }, () => {
     channels.push(generateChannel(community.id));
@@ -69,18 +69,18 @@ communities.forEach(community => {
 
 debug('Generating usersChannels...');
 let usersChannels = defaultUsersChannels;
-const generatedUsersChannels = users.map(user => {
+const generatedUsersChannels = users.map((user) => {
   return generateUsersChannels(channels, usersCommunities, user.id);
 });
-generatedUsersChannels.map(elem => {
+generatedUsersChannels.map((elem) => {
   usersChannels.push(...elem);
 });
 
 debug('Generating threads...');
 let threads = defaultThreads;
-channels.forEach(channel => {
+channels.forEach((channel) => {
   const community = communities.find(
-    community => community.id === channel.communityId
+    (community) => community.id === channel.communityId
   );
   if (community.deletedAt) return;
 
@@ -92,7 +92,7 @@ channels.forEach(channel => {
 });
 
 let usersThreads = defaultUsersThreads;
-threads.forEach(thread => {
+threads.forEach((thread) => {
   const usersThread = generateUsersThreads(thread.id, thread.creatorId);
   usersThreads.push(usersThread);
 });
@@ -105,10 +105,10 @@ randomAmount({ max: 100 }, () => {
 
 debug('Generating usersDirectMessageThreads...');
 let usersDirectMessageThreads = defaultUsersDirectMessageThreads;
-directMessageThreads.forEach(thread => {
-  const thread_users = randomAmount({ max: 5, min: 2 }, i => users[i]);
+directMessageThreads.forEach((thread) => {
+  const thread_users = randomAmount({ max: 5, min: 2 }, (i) => users[i]);
 
-  thread_users.forEach(user => {
+  thread_users.forEach((user) => {
     usersDirectMessageThreads.push(
       generateUsersDirectMessageThreads(thread.id, user.id)
     );
@@ -117,8 +117,8 @@ directMessageThreads.forEach(thread => {
 
 debug('Generating messages...');
 let messages = defaultMessages;
-threads.forEach(thread => {
-  const channel = channels.find(channel => channel.id === thread.channelId);
+threads.forEach((thread) => {
+  const channel = channels.find((channel) => channel.id === thread.channelId);
   const threadMessages = [];
   randomAmount({ max: 10 }, () => {
     const sender = faker.random.arrayElement(users);
@@ -130,7 +130,7 @@ threads.forEach(thread => {
 
 debug('Generating direct messages...');
 let direct_messages = [];
-usersDirectMessageThreads.forEach(thread => {
+usersDirectMessageThreads.forEach((thread) => {
   const threadMessages = [];
   const sender = thread.userId;
   randomAmount({ max: 100 }, () => {
@@ -146,7 +146,7 @@ usersDirectMessageThreads.forEach(thread => {
 
 debug('Generating reactions...');
 let reactions = [];
-messages.map(message => {
+messages.map((message) => {
   randomAmount({ max: 5 }, () => {
     const user = faker.random.arrayElement(users);
     reactions.push(generateReaction(user.id, message.id));
@@ -174,64 +174,25 @@ debug(
   } usersDirectMessageThreads objects into the database... (this might take a while!)`
 );
 Promise.all([
-  db
-    .table('communities')
-    .insert(communities)
-    .run(),
-  db
-    .table('channels')
-    .insert(channels)
-    .run(),
-  db
-    .table('threads')
-    .insert(threads)
-    .run(),
-  db
-    .table('messages')
-    .insert(messages)
-    .run(),
-  db
-    .table('users')
-    .insert(users)
-    .run(),
-  db
-    .table('usersSettings')
-    .insert(usersSettings)
-    .run(),
-  db
-    .table('reactions')
-    .insert(reactions)
-    .run(),
-  db
-    .table('directMessageThreads')
-    .insert(directMessageThreads)
-    .run(),
-  db
-    .table('messages')
-    .insert(direct_messages)
-    .run(),
-  db
-    .table('usersCommunities')
-    .insert(usersCommunities)
-    .run(),
-  db
-    .table('usersChannels')
-    .insert(usersChannels)
-    .run(),
-  db
-    .table('usersDirectMessageThreads')
-    .insert(usersDirectMessageThreads)
-    .run(),
-  db
-    .table('usersThreads')
-    .insert(usersThreads)
-    .run(),
+  db.table('communities').insert(communities).run(),
+  db.table('channels').insert(channels).run(),
+  db.table('threads').insert(threads).run(),
+  db.table('messages').insert(messages).run(),
+  db.table('users').insert(users).run(),
+  db.table('usersSettings').insert(usersSettings).run(),
+  db.table('reactions').insert(reactions).run(),
+  db.table('directMessageThreads').insert(directMessageThreads).run(),
+  db.table('messages').insert(direct_messages).run(),
+  db.table('usersCommunities').insert(usersCommunities).run(),
+  db.table('usersChannels').insert(usersChannels).run(),
+  db.table('usersDirectMessageThreads').insert(usersDirectMessageThreads).run(),
+  db.table('usersThreads').insert(usersThreads).run(),
 ])
   .then(() => {
     debug('Finished seeding database! 🎉');
     process.exit();
   })
-  .catch(err => {
+  .catch((err) => {
     debug(
       'Encountered error while inserting data (see below), please run yarn run db:drop and yarn run db:migrate to restore tables to original condition, then run this script again.'
     );

@@ -23,7 +23,6 @@ declare module 'babel-plugin-import-inspector' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'babel-plugin-import-inspector/index' {
   declare module.exports: $Exports<'babel-plugin-import-inspector'>;

@@ -71,7 +71,7 @@ const config = IS_PROD
 let r = require('rethinkhaberdashery')(config);
 const poolMaster = r.getPoolMaster();
 
-poolMaster.on('queueing', size => {
+poolMaster.on('queueing', (size) => {
   statsd.gauge('db.query_queue.size', size);
 });
 
@@ -81,7 +81,7 @@ setInterval(() => {
 
 // Exit the process on unhealthy db in test env
 if (process.env.TEST_DB) {
-  poolMaster.on('healthy', healthy => {
+  poolMaster.on('healthy', (healthy) => {
     if (!healthy) {
       process.exit(1);
     }
@@ -100,11 +100,19 @@ inspect(r, {
       queries.push({ query, time, size });
       fs.writeFileSync(
         'queries-by-time.js',
-        JSON.stringify(queries.sort((a, b) => b.time - a.time), null, 2)
+        JSON.stringify(
+          queries.sort((a, b) => b.time - a.time),
+          null,
+          2
+        )
       );
       fs.writeFileSync(
         'queries-by-response-size.js',
-        JSON.stringify(queries.sort((a, b) => b.size - a.size), null, 2)
+        JSON.stringify(
+          queries.sort((a, b) => b.size - a.size),
+          null,
+          2
+        )
       );
     }
   },

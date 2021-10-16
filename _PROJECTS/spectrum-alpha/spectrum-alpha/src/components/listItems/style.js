@@ -18,7 +18,7 @@ export const Wrapper = styled(FlexCol)`
   justify-content: center;
   max-width: 100%;
   border-top: 1px solid
-    ${props => (props.border ? props.theme.bg.border : 'transparent')};
+    ${(props) => (props.border ? props.theme.bg.border : 'transparent')};
 
   &:first-of-type {
     border-top: 0;
@@ -30,7 +30,7 @@ export const Wrapper = styled(FlexCol)`
 
   &:hover > div > div h3,
   &:hover .action {
-    color: ${props => (props.isClickable ? props.theme.brand.alt : '')};
+    color: ${(props) => (props.isClickable ? props.theme.brand.alt : '')};
   }
 `;
 
@@ -83,7 +83,7 @@ export const Meta = styled(H4)`
     display: inline-block;
   }
 
-  ${props => (props.nowrap ? Truncate() : '')};
+  ${(props) => (props.nowrap ? Truncate() : '')};
 `;
 
 export const ActionContainer = styled(FlexCol)`
@@ -95,10 +95,10 @@ export const ActionContainer = styled(FlexCol)`
 
 export const StyledCard = styled.div`
   flex-direction: column;
-  display: ${props => (props.smallOnly ? 'none' : 'flex')};
+  display: ${(props) => (props.smallOnly ? 'none' : 'flex')};
 
   @media (max-width: ${MEDIA_BREAK}px) {
-    display: ${props => (props.largeOnly ? 'none' : 'flex')};
+    display: ${(props) => (props.largeOnly ? 'none' : 'flex')};
   }
 `;
 
@@ -145,7 +145,7 @@ export const ListHeader = styled(FlexRow)`
   justify-content: space-between;
   width: 100%;
   border-bottom: 2px solid ${theme.bg.border};
-  margin-top: ${props => (props.secondary ? '24px' : '0')};
+  margin-top: ${(props) => (props.secondary ? '24px' : '0')};
 `;
 
 export const LargeListHeading = styled(H3)`

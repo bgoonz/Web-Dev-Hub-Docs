@@ -31,7 +31,7 @@ const s3 = new AWS.S3();
 // remove the bucket name from the url
 // the bucket name is not required since it is automatically bound
 // to our imgix source
-const generateImageUrl = path => path.replace('spectrum-chat/', '');
+const generateImageUrl = (path) => path.replace('spectrum-chat/', '');
 
 export const uploadImage = async (
   file: FileUpload,
@@ -43,7 +43,7 @@ export const uploadImage = async (
   const sanitized = sanitize(filename);
   const encoded = encodeURIComponent(sanitized);
   const validMediaTypes = ['image/gif', 'image/jpeg', 'image/png', 'video/mp4'];
-  return new Promise(res => {
+  return new Promise((res) => {
     // mimetype not in the validMediaType collection
     if (_.indexOf(validMediaTypes, _.toLower(mimetype)) < 0) {
       const unsupportedMediaTypeError = new UserError(

@@ -23,7 +23,6 @@ declare module 'dataloader' {
  * needed.
  */
 
-
 // Filename aliases
 declare module 'dataloader/index' {
   declare module.exports: $Exports<'dataloader'>;

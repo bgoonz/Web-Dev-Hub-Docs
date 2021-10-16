@@ -34,9 +34,7 @@ describe('edit a user', () => {
       .clear()
       .type(NEW_WEBSITE);
 
-    cy.get('[data-cy="save-button"]')
-      .should('be.visible')
-      .click();
+    cy.get('[data-cy="save-button"]').should('be.visible').click();
 
     cy.visit(`/me`);
     cy.get('[data-cy="user-view"]').should('be.visible');

@@ -15,7 +15,7 @@ export const banUserMutation = gql`
 
 const banUserOptions = {
   props: ({ mutate }) => ({
-    banUser: input =>
+    banUser: (input) =>
       mutate({
         variables: {
           input,

@@ -1,4 +1,4 @@
-exports.up = function(r, conn) {
+exports.up = function (r, conn) {
   return (
     // Create new tables, update old ones with receiveNotifications
     Promise.all([
@@ -7,7 +7,7 @@ exports.up = function(r, conn) {
         .filter({ isBlocked: false })
         .update({ receiveNotifications: true })
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
@@ -16,28 +16,28 @@ exports.up = function(r, conn) {
         .filter({ isBlocked: false })
         .update({ receiveNotifications: true })
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('notifications')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('usersThreads')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
       r
         .tableCreate('usersNotifications')
         .run(conn)
-        .catch(err => {
+        .catch((err) => {
           console.log(err);
           throw err;
         }),
@@ -49,7 +49,7 @@ exports.up = function(r, conn) {
             .table('notifications')
             .indexCreate('modifiedAt', r.row('modifiedAt'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -57,7 +57,7 @@ exports.up = function(r, conn) {
             .table('usersThreads')
             .indexCreate('userId')
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -65,7 +65,7 @@ exports.up = function(r, conn) {
             .table('usersThreads')
             .indexCreate('threadId')
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -73,7 +73,7 @@ exports.up = function(r, conn) {
             .table('usersNotifications')
             .indexCreate('userId')
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -81,7 +81,7 @@ exports.up = function(r, conn) {
             .table('notifications')
             .indexCreate('contextId', r.row('context')('id'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -89,7 +89,7 @@ exports.up = function(r, conn) {
             .table('usersNotifications')
             .indexCreate('notificationId', r.row('notificationId'))
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -103,10 +103,10 @@ exports.up = function(r, conn) {
             .table('threads')
             .filter(r.row.hasFields('deletedAt').not())
             .run(conn)
-            .then(cursor => cursor.toArray())
-            .then(threads =>
+            .then((cursor) => cursor.toArray())
+            .then((threads) =>
               Promise.all(
-                threads.map(thread =>
+                threads.map((thread) =>
                   r
                     .table('usersThreads')
                     .insert({
@@ -117,14 +117,14 @@ exports.up = function(r, conn) {
                       userId: thread.creatorId,
                     })
                     .run(conn)
-                    .catch(err => {
+                    .catch((err) => {
                       console.log(err);
                       throw err;
                     })
                 )
               )
             )
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             }),
@@ -133,22 +133,22 @@ exports.up = function(r, conn) {
             .table('threads')
             .filter(r.row.hasFields('deletedAt').not())
             .run(conn)
-            .catch(err => {
+            .catch((err) => {
               console.log(err);
               throw err;
             })
-            .then(cursor => cursor.toArray())
-            .then(threads =>
+            .then((cursor) => cursor.toArray())
+            .then((threads) =>
               Promise.all(
-                threads.map(thread => {
+                threads.map((thread) => {
                   return Promise.all([
                     r
                       .table('messages')
                       .filter({ threadId: thread.id })
-                      .map(message => message('senderId'))
+                      .map((message) => message('senderId'))
                       .run(conn)
-                      .then(cursor => cursor.toArray())
-                      .catch(err => {
+                      .then((cursor) => cursor.toArray())
+                      .catch((err) => {
                         console.log(err);
                         throw err;
                       }),
@@ -157,7 +157,7 @@ exports.up = function(r, conn) {
                 })
               )
             )
-            .then(threadsMessages =>
+            .then((threadsMessages) =>
               Promise.all(
                 threadsMessages.map(([threadSenders, thread]) => {
                   if (!threadSenders) return Promise.resolve();
@@ -165,7 +165,7 @@ exports.up = function(r, conn) {
                     (item, i, ar) => ar.indexOf(item) === i
                   );
                   return Promise.all(
-                    uniqueThreadSenders.map(sender => {
+                    uniqueThreadSenders.map((sender) => {
                       return r
                         .table('usersThreads')
                         .insert({
@@ -176,7 +176,7 @@ exports.up = function(r, conn) {
                           userId: sender,
                         })
                         .run(conn)
-                        .catch(err => {
+                        .catch((err) => {
                           console.log(err);
                           throw err;
                         });
@@ -187,14 +187,14 @@ exports.up = function(r, conn) {
             ),
         ])
       )
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
         throw err;
       })
   );
 };
 
-exports.down = function(r, conn) {
+exports.down = function (r, conn) {
   return Promise.all([
     r.tableDrop('usersThreads').run(conn),
     r.tableDrop('usersNotifications').run(conn),

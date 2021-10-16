@@ -8,28 +8,28 @@ import {
 import { getCommunitiesSettings } from '../models/communitySettings';
 import createLoader from './create-loader';
 
-export const __createCommunityLoader = createLoader(communities =>
+export const __createCommunityLoader = createLoader((communities) =>
   getCommunities(communities)
 );
 
 export const __createCommunityBySlugLoader = createLoader(
-  communities => getCommunitiesBySlug(communities),
+  (communities) => getCommunitiesBySlug(communities),
   'slug'
 );
 
 export const __createCommunityMemberCountLoader = createLoader(
-  communityIds => getCommunitiesMemberCounts(communityIds),
+  (communityIds) => getCommunitiesMemberCounts(communityIds),
   'group'
 );
 
 export const __createCommunityChannelCountLoader = createLoader(
-  communityIds => getCommunitiesChannelCounts(communityIds),
+  (communityIds) => getCommunitiesChannelCounts(communityIds),
   'group'
 );
 
 export const __createCommunitySettingsLoader = createLoader(
-  communityIds => getCommunitiesSettings(communityIds),
-  key => key.communityId
+  (communityIds) => getCommunitiesSettings(communityIds),
+  (key) => key.communityId
 );
 
 export default () => {

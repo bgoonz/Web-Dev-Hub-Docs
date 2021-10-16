@@ -155,7 +155,7 @@ class Message extends React.Component<Props> {
     return (
       <ConditionalWrap
         condition={!!isSelected}
-        wrap={children => (
+        wrap={(children) => (
           <OutsideClickHandler
             onOutsideClick={this.clearSelectedMessage}
             style={{ width: '100%' }}
@@ -172,7 +172,7 @@ class Message extends React.Component<Props> {
         >
           <GutterContainer>
             {showAuthorContext ? (
-              <AuthorAvatarContainer onClick={e => e.stopPropagation()}>
+              <AuthorAvatarContainer onClick={(e) => e.stopPropagation()}>
                 <UserAvatar user={message.author.user} size={40} />
               </AuthorAvatarContainer>
             ) : (
@@ -195,7 +195,7 @@ class Message extends React.Component<Props> {
 
             <Body
               me={me}
-              openGallery={e => this.toggleOpenGallery(e, message.id)}
+              openGallery={(e) => this.toggleOpenGallery(e, message.id)}
               message={message}
             />
 
@@ -264,9 +264,7 @@ class Message extends React.Component<Props> {
                           ? `${CLIENT_URL}${getThreadLink(
                               thread
                             )}?m=${selectedMessageId}`
-                          : `${CLIENT_URL}/thread/${
-                              thread.id
-                            }?m=${selectedMessageId}`
+                          : `${CLIENT_URL}/thread/${thread.id}?m=${selectedMessageId}`
                       }
                       onSuccess={() =>
                         this.props.dispatch(
