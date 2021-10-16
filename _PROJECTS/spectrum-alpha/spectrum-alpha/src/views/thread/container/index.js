@@ -72,8 +72,8 @@ const ThreadContainer = (props: Props) => {
       return setMentionSuggestions([author.user]);
 
     const participants = messageConnection.edges
-      .map(edge => edge.node)
-      .map(node => node.author.user);
+      .map((edge) => edge.node)
+      .map((node) => node.author.user);
 
     const participantsWithAuthor = [...participants, author.user];
     const filtered = deduplicateChildren(participantsWithAuthor, 'id');
@@ -89,7 +89,7 @@ const ThreadContainer = (props: Props) => {
     );
   }, []);
 
-  const renderPrimaryColumn = fullWidth => (
+  const renderPrimaryColumn = (fullWidth) => (
     <PrimaryColumn fullWidth={fullWidth}>
       {/*
         This <Stretch> container makes sure that the thread detail and messages

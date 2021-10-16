@@ -66,12 +66,10 @@ class MessagesWithData extends React.Component<Props> {
         };
       }
 
-      const prevEdges = prev.data.directMessageThread.messageConnection.edges.filter(
-        Boolean
-      );
-      const currEdges = curr.data.directMessageThread.messageConnection.edges.filter(
-        Boolean
-      );
+      const prevEdges =
+        prev.data.directMessageThread.messageConnection.edges.filter(Boolean);
+      const currEdges =
+        curr.data.directMessageThread.messageConnection.edges.filter(Boolean);
       // If messages were added at the end, keep the scroll position the same
       if (
         currEdges[currEdges.length - 1].node.id ===
@@ -131,9 +129,9 @@ class MessagesWithData extends React.Component<Props> {
     // is hella annoying as the old msgs stick around until the new ones are there.
     // TODO: FIXME and remove the networkStatus === 7
     if (isFetchingMore || (messages && messages.length > 0)) {
-      let unsortedMessages = messages.map(message => message.node);
+      let unsortedMessages = messages.map((message) => message.node);
 
-      const unique = array => {
+      const unique = (array) => {
         const processed = [];
         for (let i = array.length - 1; i >= 0; i--) {
           if (processed.indexOf(array[i].id) < 0) {

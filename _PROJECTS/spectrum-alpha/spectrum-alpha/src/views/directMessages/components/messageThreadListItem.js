@@ -32,13 +32,13 @@ class ListCardItemDirectMessageThread extends React.Component<Props> {
 
     // filter currentUser out
     const participants = thread.participants.filter(
-      user => user.userId !== currentUser.id
+      (user) => user.userId !== currentUser.id
     );
     // concat a string of users' names for thread messages
     let participantsArray =
       participants.length > 1
         ? participants
-            .map(user => user.name)
+            .map((user) => user.name)
             .join(', ')
             .replace(/,(?!.*,)/gim, ' and')
         : participants[0].name;

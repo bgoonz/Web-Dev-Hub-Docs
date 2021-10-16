@@ -66,7 +66,7 @@ const DirectMessagesTab = (props: Props) => {
   );
 };
 
-const map = state => ({
+const map = (state) => ({
   networkOnline: state.connectionStatus.networkOnline,
   websocketConnection: state.connectionStatus.websocketConnection,
 });

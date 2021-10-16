@@ -150,7 +150,7 @@ export const PrimaryCTA = styled(Button)`
   &:hover {
     background-color: ${theme.bg.default};
     color: ${theme.brand.default};
-    box-shadow: ${Shadow.high} ${props => hexa(props.theme.bg.reverse, 0.5)};
+    box-shadow: ${Shadow.high} ${(props) => hexa(props.theme.bg.reverse, 0.5)};
     transition: ${Transition.hover.on};
   }
 `;
@@ -164,7 +164,7 @@ export const SecondaryCTA = styled(PrimaryCTA)`
     color: ${theme.text.reverse};
     background-color: transparent;
     border-color: ${theme.bg.default};
-    box-shadow: 0 0 8px 4px ${props => hexa(props.theme.bg.default, 0.5)};
+    box-shadow: 0 0 8px 4px ${(props) => hexa(props.theme.bg.default, 0.5)};
   }
 `;
 
@@ -185,7 +185,7 @@ export const SignInButton = styled.a`
   position: relative;
   margin: 16px 0;
 
-  ${props =>
+  ${(props) =>
     props.after &&
     `
   		margin: 24px 0;
@@ -233,9 +233,9 @@ export const LoginCard = styled.div`
 `;
 
 export const ButtonTwitter = styled(Button)`
-  background: ${props =>
+  background: ${(props) =>
     props.preferred ? props.theme.social.twitter.default : 'none'};
-  color: ${props =>
+  color: ${(props) =>
     props.whitebg
       ? props.theme.social.twitter.default
       : props.preferred
@@ -243,15 +243,15 @@ export const ButtonTwitter = styled(Button)`
       : 'rgba(255,255,255,0.8)'};
 
   &:hover {
-    color: ${props =>
+    color: ${(props) =>
       props.whitebg ? props.theme.social.twitter.default : '#fff'};
   }
 `;
 
 export const ButtonFacebook = styled(Button)`
-  background: ${props =>
+  background: ${(props) =>
     props.preferred ? props.theme.social.facebook.default : 'none'};
-  color: ${props =>
+  color: ${(props) =>
     props.whitebg
       ? props.theme.social.facebook.default
       : props.preferred
@@ -259,15 +259,15 @@ export const ButtonFacebook = styled(Button)`
       : 'rgba(255,255,255,0.8)'};
 
   &:hover {
-    color: ${props =>
+    color: ${(props) =>
       props.whitebg ? props.theme.social.facebook.default : '#fff'};
   }
 `;
 
 export const ButtonGoogle = styled(Button)`
-  background: ${props =>
+  background: ${(props) =>
     props.preferred ? props.theme.social.google.default : 'none'};
-  color: ${props =>
+  color: ${(props) =>
     props.whitebg
       ? props.theme.social.google.default
       : props.preferred
@@ -275,7 +275,7 @@ export const ButtonGoogle = styled(Button)`
       : 'rgba(255,255,255,0.8)'};
 
   &:hover {
-    color: ${props =>
+    color: ${(props) =>
       props.whitebg ? props.theme.social.google.default : '#fff'};
   }
 `;
@@ -475,7 +475,7 @@ export const Tabs = styled.div`
   grid-template-areas: 'logo . login auth';
   align-items: center;
   justify-items: center;
-  color: ${props =>
+  color: ${(props) =>
     props.dark ? props.theme.text.reverse : props.theme.brand.alt};
   grid-area: tabs;
   z-index: ${zIndex.chrome + 1};
@@ -486,7 +486,7 @@ export const Tabs = styled.div`
     grid-template-areas: 'logo . menu';
   }
 
-  ${props =>
+  ${(props) =>
     props.dark &&
     css`
       button {
@@ -506,8 +506,8 @@ export const Tabs = styled.div`
 export const Tab = styled(Link)`
   padding: 4px 8px;
   font-size: 16px;
-  font-weight: ${props => (props.selected ? '700' : '500')};
-  color: ${props =>
+  font-weight: ${(props) => (props.selected ? '700' : '500')};
+  color: ${(props) =>
     props.selected
       ? props.dark
         ? props.theme.text.reverse
@@ -517,7 +517,7 @@ export const Tab = styled(Link)`
       : props.theme.text.alt};
 
   &:hover {
-    color: ${props =>
+    color: ${(props) =>
       props.selected
         ? props.dark
           ? props.theme.text.reverse
@@ -525,14 +525,14 @@ export const Tab = styled(Link)`
         : props.dark
         ? props.theme.text.reverse
         : props.theme.text.alt};
-    text-shadow: ${props =>
+    text-shadow: ${(props) =>
       props.dark ? `0 0 32px ${hexa(props.theme.text.reverse, 0.75)}` : 'none'};
   }
 `;
 
 export const LogoTab = styled(Tab)`
   grid-area: logo;
-  color: ${props =>
+  color: ${(props) =>
     props.dark ? props.theme.text.reverse : props.theme.brand.alt};
 
   > div:last-of-type {
@@ -554,18 +554,18 @@ export const LogoTab = styled(Tab)`
 
 export const DropdownLink = styled(Link)`
   padding: 16px 0;
-  font-weight: ${props => (props.selected ? '600' : '500')};
+  font-weight: ${(props) => (props.selected ? '600' : '500')};
   display: flex;
   width: 100%;
   align-items: center;
   transition: ${Transition.hover.off};
-  color: ${props =>
+  color: ${(props) =>
     props.selected ? props.theme.brand.alt : props.theme.text.alt};
   border-radius: 8px;
 
   &:hover {
     transition: ${Transition.hover.on};
-    color: ${props =>
+    color: ${(props) =>
       props.selected ? props.theme.brand.default : props.theme.text.secondary};
   }
 `;
@@ -589,13 +589,13 @@ export const AuthLink = styled(DropdownLink)`
   font-weight: 700;
   border-top: none;
   color: ${theme.text.reverse};
-  background-image: ${props =>
+  background-image: ${(props) =>
     Gradient(props.theme.brand.alt, props.theme.brand.default)};
   justify-content: center;
 
   &:hover {
     color: ${theme.text.reverse};
-    text-shadow: 0 0 32px ${props => hexa(props.theme.text.reverse, 0.5)};
+    text-shadow: 0 0 32px ${(props) => hexa(props.theme.text.reverse, 0.5)};
   }
 `;
 
@@ -618,9 +618,9 @@ export const MenuContainer = styled.div`
   padding: 16px;
   color: ${theme.brand.alt};
   background-color: ${theme.bg.default};
-  background-image: ${props =>
+  background-image: ${(props) =>
     Gradient(props.theme.bg.default, props.theme.bg.wash)};
-  box-shadow: ${Shadow.high} ${props => hexa(props.theme.bg.reverse, 0.25)};
+  box-shadow: ${Shadow.high} ${(props) => hexa(props.theme.bg.reverse, 0.25)};
   padding-top: 32px;
   z-index: 2;
   flex-direction: column;
@@ -636,26 +636,26 @@ export const MenuOverlay = styled.div`
   min-width: 100vw;
   height: 100vh;
   min-height: 100vh;
-  background-color: ${props => hexa(props.theme.bg.reverse, 0.5)};
-  display: ${props => (props.open ? 'block' : 'none')};
+  background-color: ${(props) => hexa(props.theme.bg.reverse, 0.5)};
+  display: ${(props) => (props.open ? 'block' : 'none')};
   z-index: 1;
 `;
 
 export const MenuTab = styled.div`
   grid-area: menu;
-  color: ${props =>
+  color: ${(props) =>
     props.dark ? props.theme.brand.border : props.theme.brand.alt};
 
   > button {
     &:hover {
-      color: ${props =>
+      color: ${(props) =>
         props.dark ? props.theme.text.reverse : props.theme.brand.default};
       transform: none;
     }
   }
 
   ${MenuContainer} {
-    display: ${props => (props.open ? 'flex' : 'none')};
+    display: ${(props) => (props.open ? 'flex' : 'none')};
   }
 
   @media (min-width: ${MEDIA_BREAK}px) {
@@ -673,13 +673,13 @@ export const LoginTab = styled(Tab)`
 
 export const AuthTab = styled.div`
   grid-area: auth;
-  color: ${props =>
+  color: ${(props) =>
     props.dark ? props.theme.text.reverse : props.theme.brand.alt};
 
   > a > button {
     font-weight: 700;
 
-    ${props =>
+    ${(props) =>
       props.dark &&
       css`
         color: ${theme.brand.alt};
@@ -695,7 +695,7 @@ export const AuthTab = styled.div`
   }
 
   > a > div {
-    box-shadow: ${props =>
+    box-shadow: ${(props) =>
       props.dark ? `0 0 0 2px ${props.theme.bg.default}` : 'none'};
   }
 

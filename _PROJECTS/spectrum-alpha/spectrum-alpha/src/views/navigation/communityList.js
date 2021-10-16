@@ -22,7 +22,7 @@ type Props = {
   setNavigationIsOpen: Function,
 };
 
-const CommunityListItem = props => {
+const CommunityListItem = (props) => {
   const { isActive, community, sidenavIsOpen, onClick } = props;
 
   const isWideViewport =
@@ -57,7 +57,7 @@ const CommunityList = (props: Props) => {
 
   const { communityConnection } = user;
   const { edges } = communityConnection;
-  const communities = edges.map(edge => edge && edge.node);
+  const communities = edges.map((edge) => edge && edge.node);
 
   const sorted = communities.slice();
 

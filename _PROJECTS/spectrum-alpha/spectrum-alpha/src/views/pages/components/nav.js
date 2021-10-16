@@ -122,7 +122,4 @@ class Nav extends React.Component<Props, State> {
   }
 }
 
-export default compose(
-  withCurrentUser,
-  connect()
-)(Nav);
+export default compose(withCurrentUser, connect())(Nav);

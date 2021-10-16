@@ -41,19 +41,15 @@ const ActionsDropdown = (props: Props) => {
     isChannelOwner ||
     isCommunityOwner;
 
-  const triggerDelete = e => {
+  const triggerDelete = (e) => {
     e.preventDefault();
 
     let message;
 
     if (isCommunityOwner && !thread.isAuthor) {
-      message = `You are about to delete another person's thread. As the owner of the ${
-        thread.community.name
-      } community, you have permission to do this. The thread author will be notified that this thread was deleted.`;
+      message = `You are about to delete another person's thread. As the owner of the ${thread.community.name} community, you have permission to do this. The thread author will be notified that this thread was deleted.`;
     } else if (isChannelOwner && !thread.isAuthor) {
-      message = `You are about to delete another person's thread. As the owner of the ${
-        thread.channel.name
-      } channel, you have permission to do this. The thread author will be notified that this thread was deleted.`;
+      message = `You are about to delete another person's thread. As the owner of the ${thread.channel.name} channel, you have permission to do this. The thread author will be notified that this thread was deleted.`;
     } else {
       message = 'Are you sure you want to delete this thread?';
     }
@@ -137,7 +133,4 @@ const ActionsDropdown = (props: Props) => {
   );
 };
 
-export default compose(
-  withCurrentUser,
-  connect()
-)(ActionsDropdown);
+export default compose(withCurrentUser, connect())(ActionsDropdown);

@@ -89,18 +89,18 @@ export const Cost = styled(Subtitle)`
 `;
 
 export const NullCol = styled(FlexCol)`
-  background-image: ${props =>
+  background-image: ${(props) =>
     props.bg ? `url('/img/fills/${props.bg}.svg')` : 'none'};
   background-color: transparent;
   background-size: 110% auto;
-  background-repeat: ${props => (props.repeat ? 'repeat-y' : 'no-repeat')};
-  background-position: ${props =>
+  background-repeat: ${(props) => (props.repeat ? 'repeat-y' : 'no-repeat')};
+  background-position: ${(props) =>
     props.repeat ? 'center top' : 'center center'};
   width: 100%;
   height: auto;
   min-height: 160px;
   flex: 0 0 auto;
-  padding: ${props => (props.noPadding ? '0' : '2rem')};
+  padding: ${(props) => (props.noPadding ? '0' : '2rem')};
   justify-content: center;
   align-items: center;
   position: relative;
@@ -108,7 +108,7 @@ export const NullCol = styled(FlexCol)`
 `;
 
 export const NullRow = styled(FlexRow)`
-  background-image: url('/img/fills/${props =>
+  background-image: url('/img/fills/${(props) =>
     props.bg ? `${props.bg}` : 'locked'}.svg');
   background-color: transparent;
   background-size: 110% auto;

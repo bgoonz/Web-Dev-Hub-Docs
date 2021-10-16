@@ -21,7 +21,7 @@ export const ThreadViewContainer = styled.div`
   height: 100%;
   max-width: 1024px;
   background-color: ${theme.bg.wash};
-  margin: ${props =>
+  margin: ${(props) =>
     props.threadViewContext === 'fullscreen' ? '0 auto' : '0'};
 
   @media (max-width: 1024px) {
@@ -33,7 +33,7 @@ export const ThreadViewContainer = styled.div`
 
 export const ThreadContentView = styled(FlexCol)`
   background-color: ${theme.bg.default};
-  ${props =>
+  ${(props) =>
     !props.slider &&
     css`
       box-shadow: -1px 0 0 ${theme.bg.border}, 1px 0 0 ${theme.bg.border};
@@ -101,9 +101,7 @@ export const Detail = styled(Column)`
 
 export const DetailViewWrapper = styled(FlexCol)`
   background-image: ${({ theme }) =>
-    `linear-gradient(to right, ${theme.bg.wash}, ${theme.bg.default} 15%, ${
-      theme.bg.default
-    } 85%, ${theme.bg.wash})`};
+    `linear-gradient(to right, ${theme.bg.wash}, ${theme.bg.default} 15%, ${theme.bg.default} 85%, ${theme.bg.wash})`};
   flex: auto;
   justify-content: flex-start;
   align-items: center;
@@ -248,7 +246,7 @@ export const FlyoutRow = styled(FlexRow)`
     }
   }
 
-  ${props =>
+  ${(props) =>
     props.hideBelow &&
     css`
       @media (max-width: ${props.hideBelow}px) {
@@ -256,7 +254,7 @@ export const FlyoutRow = styled(FlexRow)`
       }
     `};
 
-  ${props =>
+  ${(props) =>
     props.hideAbove &&
     css`
       @media (min-width: ${props.hideAbove}px) {
@@ -437,7 +435,7 @@ export const ShareButton = styled.span`
   }
 
   &:hover {
-    color: ${props =>
+    color: ${(props) =>
       props.facebook
         ? props.theme.social.facebook.default
         : props.twitter
@@ -586,7 +584,7 @@ export const PillLinkPinned = styled.div`
 `;
 
 export const PillLabel = styled.span`
-  ${props =>
+  ${(props) =>
     props.isPrivate &&
     css`
       position: relative;
@@ -637,7 +635,7 @@ export const FixedBottomActionBarContainer = styled(ActionBarContainer)`
 export const FollowButton = styled(OutlineButton)`
   background: ${theme.bg.default};
   @media (max-width: ${MEDIA_BREAK}px) {
-    display: ${props => (props.currentUser ? 'none' : 'flex')};
+    display: ${(props) => (props.currentUser ? 'none' : 'flex')};
   }
 `;
 
@@ -708,7 +706,7 @@ export const SidebarSectionAuth = styled.div`
 export const SidebarCommunityCover = styled.div`
   border-radius: 4px 4px 0 0;
   height: 72px;
-  background: url("${props => props.src}") no-repeat;
+  background: url('${(props) => props.src}') no-repeat;
   background-size: cover;
   display: block;
 `;
@@ -803,7 +801,7 @@ export const Stretch = styled.div`
   min-width: 1px;
   max-width: inherit;
   position: relative;
-  ${props =>
+  ${(props) =>
     props.isModal &&
     css`
       border-left: 1px solid ${theme.bg.border};
@@ -836,8 +834,8 @@ export const TopBottomButtonContainer = styled.div`
   position: fixed;
   bottom: 24px;
   right: 24px;
-  opacity: ${props => (props.isVisible ? '1' : '0')};
-  transform: translateY(${props => (props.isVisible ? '0' : '8px')});
+  opacity: ${(props) => (props.isVisible ? '1' : '0')};
+  transform: translateY(${(props) => (props.isVisible ? '0' : '8px')});
   transition: transform opacity 0.2s ease-in-out;
   display: flex;
   flex-direction: column;

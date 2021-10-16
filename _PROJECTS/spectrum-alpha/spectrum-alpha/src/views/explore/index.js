@@ -43,7 +43,4 @@ class Explore extends React.Component<Props> {
   }
 }
 
-export default compose(
-  withCurrentUser,
-  connect()
-)(Explore);
+export default compose(withCurrentUser, connect())(Explore);

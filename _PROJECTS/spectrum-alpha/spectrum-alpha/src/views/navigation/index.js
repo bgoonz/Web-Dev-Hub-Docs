@@ -212,7 +212,4 @@ const Navigation = (props: Props) => {
   return <NavigationWrapper />;
 };
 
-export default compose(
-  withCurrentUser,
-  withRouter
-)(Navigation);
+export default compose(withCurrentUser, withRouter)(Navigation);

@@ -42,7 +42,4 @@ class CommunityMembersSettings extends React.Component<Props> {
   }
 }
 
-export default compose(
-  withCurrentUser,
-  connect()
-)(CommunityMembersSettings);
+export default compose(withCurrentUser, connect())(CommunityMembersSettings);

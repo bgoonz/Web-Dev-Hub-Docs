@@ -93,7 +93,7 @@ class UserWithData extends React.Component<Props, State> {
     };
   }
 
-  changeName = e => {
+  changeName = (e) => {
     const name = e.target.value;
     if (name.length > 50) {
       this.setState({
@@ -109,7 +109,7 @@ class UserWithData extends React.Component<Props, State> {
     });
   };
 
-  changeEmail = e => {
+  changeEmail = (e) => {
     const email = e.target.value;
 
     if (!email || email.length === 0) {
@@ -127,7 +127,7 @@ class UserWithData extends React.Component<Props, State> {
     });
   };
 
-  changeDescription = e => {
+  changeDescription = (e) => {
     const description = e.target.value;
     if (description.length >= 140) {
       this.setState({
@@ -142,14 +142,14 @@ class UserWithData extends React.Component<Props, State> {
     });
   };
 
-  changeWebsite = e => {
+  changeWebsite = (e) => {
     const website = e.target.value;
     this.setState({
       website,
     });
   };
 
-  setProfilePhoto = e => {
+  setProfilePhoto = (e) => {
     let reader = new FileReader();
     let file = e.target.files[0];
 
@@ -181,7 +181,7 @@ class UserWithData extends React.Component<Props, State> {
     }
   };
 
-  setCoverPhoto = e => {
+  setCoverPhoto = (e) => {
     let reader = new FileReader();
     let file = e.target.files[0];
 
@@ -213,7 +213,7 @@ class UserWithData extends React.Component<Props, State> {
     }
   };
 
-  save = e => {
+  save = (e) => {
     e.preventDefault();
 
     const {
@@ -280,7 +280,7 @@ class UserWithData extends React.Component<Props, State> {
 
         return;
       })
-      .catch(err => {
+      .catch((err) => {
         this.setState({
           isLoading: false,
         });
@@ -299,7 +299,7 @@ class UserWithData extends React.Component<Props, State> {
     });
   };
 
-  handleOnError = err => {
+  handleOnError = (err) => {
     this.props.dispatch(addToastWithTimeout('error', err.message));
   };
 
@@ -404,7 +404,7 @@ class UserWithData extends React.Component<Props, State> {
 
           <GithubProfile
             id={user.id}
-            render={profile => {
+            render={(profile) => {
               if (!profile) {
                 return (
                   <GithubSignin>

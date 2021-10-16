@@ -77,7 +77,7 @@ class ThreadDetailPure extends React.Component<Props, State> {
     }
   }
 
-  changeTitle = e => {
+  changeTitle = (e) => {
     const title = e.target.value;
     if (/\n$/g.test(title)) {
       this.bodyEditor.focus && this.bodyEditor.focus();
@@ -88,7 +88,7 @@ class ThreadDetailPure extends React.Component<Props, State> {
     });
   };
 
-  changeBody = evt => {
+  changeBody = (evt) => {
     this.setState({
       body: evt.target.value,
     });
@@ -184,7 +184,7 @@ class ThreadDetailPure extends React.Component<Props, State> {
 
 const ThreadDetail = compose(withRouter)(ThreadDetailPure);
 
-const map = state => ({
+const map = (state) => ({
   flyoutOpen: state.flyoutOpen,
 });
 

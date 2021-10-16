@@ -77,7 +77,7 @@ class EditForm extends React.Component<Props, State> {
     };
   }
 
-  changeName = e => {
+  changeName = (e) => {
     const name = e.target.value;
 
     if (name.length > 20) {
@@ -95,28 +95,28 @@ class EditForm extends React.Component<Props, State> {
     });
   };
 
-  changeDescription = e => {
+  changeDescription = (e) => {
     const description = e.target.value;
     this.setState({
       description,
     });
   };
 
-  changeSlug = e => {
+  changeSlug = (e) => {
     const slug = e.target.value;
     this.setState({
       slug,
     });
   };
 
-  changeWebsite = e => {
+  changeWebsite = (e) => {
     const website = e.target.value;
     this.setState({
       website,
     });
   };
 
-  setCommunityPhoto = e => {
+  setCommunityPhoto = (e) => {
     let reader = new FileReader();
     let file = e.target.files[0];
 
@@ -148,7 +148,7 @@ class EditForm extends React.Component<Props, State> {
     }
   };
 
-  setCommunityCover = e => {
+  setCommunityCover = (e) => {
     let reader = new FileReader();
     let file = e.target.files[0];
 
@@ -180,7 +180,7 @@ class EditForm extends React.Component<Props, State> {
     }
   };
 
-  save = e => {
+  save = (e) => {
     e.preventDefault();
     const {
       name,
@@ -227,7 +227,7 @@ class EditForm extends React.Component<Props, State> {
         }
         return;
       })
-      .catch(err => {
+      .catch((err) => {
         this.setState({
           isLoading: false,
         });
@@ -265,7 +265,7 @@ class EditForm extends React.Component<Props, State> {
     );
   };
 
-  deleteCoverPhoto = e => {
+  deleteCoverPhoto = (e) => {
     e.preventDefault();
     this.setState({ coverPhoto: '', coverFile: null });
   };
@@ -303,7 +303,7 @@ class EditForm extends React.Component<Props, State> {
           <ImageInputWrapper>
             {coverPhoto && !/default_images/.test(coverPhoto) && (
               <DeleteCoverWrapper>
-                <DeleteCoverButton onClick={e => this.deleteCoverPhoto(e)}>
+                <DeleteCoverButton onClick={(e) => this.deleteCoverPhoto(e)}>
                   <Icon glyph="view-close-small" size={'16'} />
                 </DeleteCoverButton>
               </DeleteCoverWrapper>
@@ -371,7 +371,7 @@ class EditForm extends React.Component<Props, State> {
                       glyph="delete"
                       color="text.placeholder"
                       hoverColor={'warn.alt'}
-                      onClick={e =>
+                      onClick={(e) =>
                         this.triggerDeleteCommunity(e, community.id)
                       }
                     />
@@ -392,8 +392,4 @@ class EditForm extends React.Component<Props, State> {
   }
 }
 
-export default compose(
-  connect(),
-  editCommunityMutation,
-  withRouter
-)(EditForm);
+export default compose(connect(), editCommunityMutation, withRouter)(EditForm);

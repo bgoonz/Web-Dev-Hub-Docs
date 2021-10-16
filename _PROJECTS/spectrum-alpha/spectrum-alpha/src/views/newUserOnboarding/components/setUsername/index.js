@@ -68,7 +68,7 @@ class SetUsername extends React.Component<Props, State> {
     });
   };
 
-  saveUsername = e => {
+  saveUsername = (e) => {
     e.preventDefault();
     const { username } = this.state;
 
@@ -94,7 +94,7 @@ class SetUsername extends React.Component<Props, State> {
         // to community discovery or close the onboarding completely
         return this.props.save();
       })
-      .catch(err => {
+      .catch((err) => {
         if (!this._isMounted) return;
         this.setState({
           isLoading: false,
@@ -141,8 +141,4 @@ class SetUsername extends React.Component<Props, State> {
   }
 }
 
-export default compose(
-  editUserMutation,
-  withApollo,
-  connect()
-)(SetUsername);
+export default compose(editUserMutation, withApollo, connect())(SetUsername);

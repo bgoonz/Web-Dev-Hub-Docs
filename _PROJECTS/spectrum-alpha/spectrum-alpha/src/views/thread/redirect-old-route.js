@@ -6,7 +6,7 @@ import { getThreadByMatch } from 'shared/graphql/queries/thread/getThread';
 import { ErrorView, LoadingView } from 'src/views/viewHelpers';
 import getThreadLink from 'src/helpers/get-thread-link';
 
-export default getThreadByMatch(props => {
+export default getThreadByMatch((props) => {
   const { data, location } = props;
   if (data) {
     const { thread, loading, error } = data;

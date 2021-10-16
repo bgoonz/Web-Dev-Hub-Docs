@@ -77,7 +77,7 @@ class ThreadsList extends React.Component<Props> {
       dmData.user.directMessageThreadsConnection.edges &&
       dmData.user.directMessageThreadsConnection.edges.length > 0
         ? dmData.user.directMessageThreadsConnection.edges
-            .map(thread => thread && thread.node)
+            .map((thread) => thread && thread.node)
             .sort((a, b) => {
               const x =
                 a &&
@@ -152,7 +152,7 @@ class ThreadsList extends React.Component<Props> {
       <React.Fragment>
         <DesktopTitlebar title={'Messages'} />
         <ThreadsListScrollContainer>
-          {uniqueThreads.map(thread => {
+          {uniqueThreads.map((thread) => {
             if (!thread) return null;
             return (
               <ErrorBoundary key={thread.id}>
@@ -171,7 +171,7 @@ class ThreadsList extends React.Component<Props> {
   }
 }
 
-const map = state => ({
+const map = (state) => ({
   networkOnline: state.connectionStatus.networkOnline,
   websocketConnection: state.connectionStatus.websocketConnection,
 });

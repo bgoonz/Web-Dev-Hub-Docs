@@ -32,7 +32,9 @@ class ChannelList extends React.Component<Props> {
     } = this.props;
 
     if (community) {
-      const channels = community.channelConnection.edges.map(c => c && c.node);
+      const channels = community.channelConnection.edges.map(
+        (c) => c && c.node
+      );
 
       return (
         <SectionCard data-cy="channel-list">
@@ -40,7 +42,7 @@ class ChannelList extends React.Component<Props> {
 
           <ListContainer style={{ padding: '0 16px' }}>
             {channels.length > 0 &&
-              channels.map(channel => {
+              channels.map((channel) => {
                 if (!channel) return null;
                 return (
                   <ChannelListItem key={channel.id} channel={channel}>

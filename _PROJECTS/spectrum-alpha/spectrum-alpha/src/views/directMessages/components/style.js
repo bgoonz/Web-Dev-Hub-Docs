@@ -26,9 +26,9 @@ export const Wrapper = styled(FlexCol)`
   max-width: 100%;
   min-height: 64px;
   position: relative;
-  background: ${props => (props.active ? theme.bg.wash : theme.bg.default)};
+  background: ${(props) => (props.active ? theme.bg.wash : theme.bg.default)};
   border-bottom: 1px solid ${theme.bg.divider};
-  box-shadow: ${props =>
+  box-shadow: ${(props) =>
     props.active ? `inset 2px 0 0 ${props.theme.text.placeholder}` : 'none'};
 
   &:hover {
@@ -68,7 +68,7 @@ export const Meta = styled(H4)`
   font-weight: 400;
   color: ${theme.text.alt};
 
-  ${props => (props.nowrap ? Truncate() : '')};
+  ${(props) => (props.nowrap ? Truncate() : '')};
 `;
 
 export const Description = styled(P)`
@@ -266,7 +266,7 @@ export const SearchResultsDropdown = styled.ul`
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: absolute;
-  top: ${props => (props.moved ? '104px' : '60px')};
+  top: ${(props) => (props.moved ? '104px' : '60px')};
   left: 8px;
   display: inline-block;
   width: 320px;
@@ -285,7 +285,7 @@ export const SearchResult = styled.li`
   display: flex;
   align-items: center;
   border-bottom: 1px solid ${theme.bg.border};
-  background: ${props => (props.focused ? props.theme.bg.wash : '#fff')};
+  background: ${(props) => (props.focused ? props.theme.bg.wash : '#fff')};
   width: 100%;
   ${Truncate()} padding: 8px 16px 8px 8px;
 
@@ -346,12 +346,12 @@ export const Pill = styled.li`
   list-style-type: none;
   display: inline-block;
   font-size: 14px;
-  background: ${props =>
+  background: ${(props) =>
     props.selected
       ? props.theme.brand.default
       : hexa(props.theme.brand.default, 0.1)};
   box-shadow: inset 0 0 1px rgba(123, 22, 255, 0.15);
-  color: ${props =>
+  color: ${(props) =>
     props.selected ? props.theme.bg.default : props.theme.brand.default};
   border-radius: 4px;
   padding: 2px 12px;
@@ -360,13 +360,13 @@ export const Pill = styled.li`
 
 export const StyledHeader = styled.div`
   display: flex;
-  flex: ${props => (props.fill ? '1 0 auto' : '0 0 auto')};
+  flex: ${(props) => (props.fill ? '1 0 auto' : '0 0 auto')};
   justify-content: center;
   align-items: center;
-  align-self: ${props => (props.fill ? 'center' : 'flex-start')};
+  align-self: ${(props) => (props.fill ? 'center' : 'flex-start')};
   flex-direction: column;
   width: 100%;
-  background: ${props => (props.wash ? props.theme.bg.wash : '#fff')};
+  background: ${(props) => (props.wash ? props.theme.bg.wash : '#fff')};
   padding: 32px;
   padding-bottom: 0;
 `;

@@ -67,7 +67,7 @@ class QueryParamToastDispatcher extends React.Component<Props> {
   cleanLocation = () => {
     const params = this.getParams(this.props);
     const clean = {};
-    Object.keys(params).map(key => {
+    Object.keys(params).map((key) => {
       if (!key || key === 'toastMessage' || key === 'toastType') return null;
       clean[key] = params[key];
       return null;
@@ -87,7 +87,4 @@ class QueryParamToastDispatcher extends React.Component<Props> {
   }
 }
 
-export default compose(
-  withRouter,
-  connect()
-)(QueryParamToastDispatcher);
+export default compose(withRouter, connect())(QueryParamToastDispatcher);

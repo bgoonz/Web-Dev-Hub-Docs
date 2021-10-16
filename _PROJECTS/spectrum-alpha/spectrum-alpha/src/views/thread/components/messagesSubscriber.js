@@ -163,7 +163,7 @@ class Messages extends React.Component<Props> {
 
       if (edges.length === 0) return <NullMessages />;
 
-      const unsortedMessages = edges.map(message => message && message.node);
+      const unsortedMessages = edges.map((message) => message && message.node);
       const sortedMessages = sortAndGroupMessages(unsortedMessages);
 
       if (!sortedMessages || sortedMessages.length === 0)

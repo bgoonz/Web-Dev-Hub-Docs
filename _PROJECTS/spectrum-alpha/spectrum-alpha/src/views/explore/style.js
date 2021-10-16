@@ -142,19 +142,20 @@ export const Row = styled(ScrollRow)`
 export const Item = styled(FlexCol)`
   padding: 16px;
   flex: 0 0 280px;
-  flex-order: ${props => (props.active ? '2' : '1')};
+  flex-order: ${(props) => (props.active ? '2' : '1')};
   background-color: ${theme.bg.default};
   color: ${theme.text.default};
   border-radius: 16px;
   margin-right: 24px;
   justify-content: space-between;
   position: relative;
-  opacity: ${props => (props.active ? '0.85' : '1')};
-  box-shadow: ${Shadow.low} ${props => hexa(props.theme.text.placeholder, 1)};
+  opacity: ${(props) => (props.active ? '0.85' : '1')};
+  box-shadow: ${Shadow.low} ${(props) => hexa(props.theme.text.placeholder, 1)};
   transition: ${Transition.hover.off};
 
   &:hover {
-    box-shadow: ${Shadow.high} ${props => hexa(props.theme.text.placeholder, 1)};
+    box-shadow: ${Shadow.high}
+      ${(props) => hexa(props.theme.text.placeholder, 1)};
     transition: ${Transition.hover.on};
     opacity: 1;
   }

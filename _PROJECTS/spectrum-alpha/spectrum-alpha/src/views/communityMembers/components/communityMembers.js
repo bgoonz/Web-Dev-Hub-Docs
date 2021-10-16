@@ -67,7 +67,7 @@ class CommunityMembers extends React.Component<Props, State> {
     });
   };
 
-  generateUserProfile = communityMember => {
+  generateUserProfile = (communityMember) => {
     const { user } = communityMember;
     return (
       <React.Fragment>
@@ -124,7 +124,7 @@ class CommunityMembers extends React.Component<Props, State> {
             const members =
               community &&
               community.members &&
-              community.members.edges.map(member => member && member.node);
+              community.members.edges.map((member) => member && member.node);
 
             if (members && members.length > 0) {
               return (
@@ -141,7 +141,7 @@ class CommunityMembers extends React.Component<Props, State> {
                     </Notice>
                   )}
 
-                  {members.map(communityMember => {
+                  {members.map((communityMember) => {
                     if (!communityMember) return null;
                     return this.generateUserProfile(communityMember);
                   })}

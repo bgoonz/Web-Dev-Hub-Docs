@@ -58,7 +58,8 @@ export const EmailInviteInput = styled.input`
   font-size: 14px;
   border-radius: 4px;
   border: 2px solid
-    ${props => (props.error ? props.theme.warn.default : props.theme.bg.border)};
+    ${(props) =>
+      props.error ? props.theme.warn.default : props.theme.bg.border};
   margin-bottom: 8px;
   margin-top: 8px;
   margin-left: 4px;
@@ -172,7 +173,7 @@ export const CostNumber = styled(H2)`
   }
 
   &:after {
-    content: ${props => (props.per ? `'/ ${props.per}'` : "''")};
+    content: ${(props) => (props.per ? `'/ ${props.per}'` : "''")};
     color: ${theme.text.alt};
     position: absolute;
     font-size: 14px;

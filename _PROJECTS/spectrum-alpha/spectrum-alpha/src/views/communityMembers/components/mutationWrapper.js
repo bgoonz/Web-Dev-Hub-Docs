@@ -39,7 +39,7 @@ class MutationWrapper extends React.Component<Props, State> {
         );
         return this.terminate();
       })
-      .catch(err => {
+      .catch((err) => {
         this.props.dispatch(addToastWithTimeout('error', err.message));
         return this.terminate();
       });

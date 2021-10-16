@@ -11,15 +11,8 @@ type Props = {
 
 const ThreadHead = (props: Props) => {
   const { thread } = props;
-  const {
-    metaImage,
-    type,
-    community,
-    content,
-    createdAt,
-    modifiedAt,
-    author,
-  } = thread;
+  const { metaImage, type, community, content, createdAt, modifiedAt, author } =
+    thread;
   const { title, description } = generateMetaInfo({
     type: 'thread',
     data: {

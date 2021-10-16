@@ -42,7 +42,7 @@ class CommunityList extends React.Component<Props> {
     }
 
     const communities = data.user.communityConnection.edges.map(
-      c => c && c.node
+      (c) => c && c.node
     );
 
     let sortedCommunities = communities;
@@ -53,7 +53,7 @@ class CommunityList extends React.Component<Props> {
 
     return (
       <div>
-        {sortedCommunities.map(community => {
+        {sortedCommunities.map((community) => {
           if (!community) return null;
           return (
             <ErrorBoundary key={community.id}>

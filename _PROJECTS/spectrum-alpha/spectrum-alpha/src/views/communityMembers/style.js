@@ -101,7 +101,7 @@ export const Filters = styled.ul`
 `;
 
 export const Filter = styled.li`
-  color: ${props =>
+  color: ${(props) =>
     props.active ? props.theme.text.default : props.theme.text.alt};
   font-weight: 400;
   font-size: 16px;
@@ -113,7 +113,7 @@ export const Filter = styled.li`
   padding: 12px 16px;
   margin-bottom: -1px;
   border-bottom: 1px solid
-    ${props => (props.active ? props.theme.text.default : 'transparent')};
+    ${(props) => (props.active ? props.theme.text.default : 'transparent')};
 
   &:hover {
     color: ${theme.text.default};

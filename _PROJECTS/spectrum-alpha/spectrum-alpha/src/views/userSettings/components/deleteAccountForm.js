@@ -53,7 +53,7 @@ class DeleteAccountForm extends React.Component<Props, State> {
       if (curr.data.user && curr.data.user.communityConnection) {
         return this.setState({
           ownsCommunities: curr.data.user.communityConnection.edges.some(
-            c => c && c.node.communityPermissions.isOwner
+            (c) => c && c.node.communityPermissions.isOwner
           ),
         });
       }
@@ -77,7 +77,7 @@ class DeleteAccountForm extends React.Component<Props, State> {
         this.props.dispatch(addToastWithTimeout('success', 'Account deleted'))
       )
       .then(() => (window.location.href = `${SERVER_URL}/auth/logout`))
-      .catch(err =>
+      .catch((err) =>
         this.props.dispatch(addToastWithTimeout('error', err.message))
       );
   };

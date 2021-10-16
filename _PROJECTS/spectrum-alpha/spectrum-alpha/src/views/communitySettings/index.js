@@ -98,7 +98,7 @@ class CommunitySettings extends React.Component<Props> {
               />
 
               <SegmentedControl>
-                {subnavItems.map(item => (
+                {subnavItems.map((item) => (
                   <Segment
                     key={item.label}
                     to={item.to}

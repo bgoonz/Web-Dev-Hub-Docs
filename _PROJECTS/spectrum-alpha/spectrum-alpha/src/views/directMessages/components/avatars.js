@@ -27,7 +27,7 @@ export const renderAvatars = (users: Array<ParticipantType>) => {
   if (users.length === 2) {
     return (
       <TwoAvatarContainer>
-        {users.map(user => {
+        {users.map((user) => {
           return (
             <TwoAvatarWrap key={user.id}>
               <UserAvatar
@@ -46,7 +46,7 @@ export const renderAvatars = (users: Array<ParticipantType>) => {
   if (users.length === 3) {
     return (
       <ThreeAvatarContainer>
-        {users.map(user => {
+        {users.map((user) => {
           return (
             <UserAvatar
               user={user}
@@ -64,7 +64,7 @@ export const renderAvatars = (users: Array<ParticipantType>) => {
   if (users.length === 4) {
     return (
       <ThreeAvatarContainer>
-        {users.map(user => {
+        {users.map((user) => {
           return (
             <UserAvatar
               user={user}

@@ -33,7 +33,7 @@ class RedirectSettings extends React.Component<Props, State> {
     isLoadingNoindex: false,
   };
 
-  toggleRedirect = e => {
+  toggleRedirect = (e) => {
     e.preventDefault();
 
     this.setState({
@@ -48,13 +48,13 @@ class RedirectSettings extends React.Component<Props, State> {
           addToastWithTimeout('success', 'Community redirect setting saved')
         );
       })
-      .catch(err => {
+      .catch((err) => {
         this.setState({ isLoadingRedirect: false });
         return this.props.dispatch(addToastWithTimeout('error', err.message));
       });
   };
 
-  toggleNoindex = e => {
+  toggleNoindex = (e) => {
     e.preventDefault();
 
     this.setState({
@@ -69,7 +69,7 @@ class RedirectSettings extends React.Component<Props, State> {
           addToastWithTimeout('success', 'Community setting saved')
         );
       })
-      .catch(err => {
+      .catch((err) => {
         this.setState({ isLoadingNoindex: false });
         return this.props.dispatch(addToastWithTimeout('error', err.message));
       });

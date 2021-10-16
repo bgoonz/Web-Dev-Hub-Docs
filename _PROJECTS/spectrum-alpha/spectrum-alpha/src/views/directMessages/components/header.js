@@ -12,7 +12,7 @@ import {
 
 const Header = ({ thread, currentUser }) => {
   const trimmedUsers = thread.participants.filter(
-    user => user.userId !== currentUser.id
+    (user) => user.userId !== currentUser.id
   );
 
   // don't show the header in a 1:1 dm because we already have the titlebar
@@ -25,13 +25,13 @@ const Header = ({ thread, currentUser }) => {
     );
   }
 
-  const photos = trimmedUsers.map(user => (
+  const photos = trimmedUsers.map((user) => (
     <PhotoWrapper key={user.id}>
       <Photo user={user} size={56} />
     </PhotoWrapper>
   ));
 
-  const names = trimmedUsers.map(user => user.name).join(', ');
+  const names = trimmedUsers.map((user) => user.name).join(', ');
   const username =
     trimmedUsers.length === 1 && trimmedUsers[0].username
       ? trimmedUsers[0].username

@@ -70,7 +70,7 @@ const ThreadSlider = (props: Props) => {
   );
 };
 
-const map = state => ({ titlebar: state.titlebar });
+const map = (state) => ({ titlebar: state.titlebar });
 
 // $FlowIssue
 export default connect(map)(ThreadSlider);

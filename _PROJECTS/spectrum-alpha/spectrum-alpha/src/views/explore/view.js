@@ -64,7 +64,7 @@ class CollectionSwitcher extends React.Component<{}, State> {
 
   render() {
     return (
-      <Collections ref={el => (this.ref = el)}>
+      <Collections ref={(el) => (this.ref = el)}>
         <SegmentedControl>
           {collections.map((collection, i) => (
             <Segment
@@ -122,7 +122,7 @@ class CategoryList extends React.Component<CategoryListProps> {
     if (communities) {
       let filteredCommunities = communities;
       if (slugs) {
-        filteredCommunities = communities.filter(c => {
+        filteredCommunities = communities.filter((c) => {
           if (!c) return null;
           if (slugs.indexOf(c.slug) > -1) return c;
           return null;

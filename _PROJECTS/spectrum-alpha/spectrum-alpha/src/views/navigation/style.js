@@ -12,7 +12,7 @@ import {
 
 export const Overlay = styled.div`
   position: fixed;
-  display: ${props => (props.isOpen ? 'block' : 'none')};
+  display: ${(props) => (props.isOpen ? 'block' : 'none')};
   width: 100%;
   height: 100%;
   top: 0;
@@ -67,7 +67,7 @@ export const NavigationWrapper = styled.div`
   overflow-y: auto;
 
   @media (max-width: ${MEDIA_BREAK}px) {
-    display: ${props => (props.isOpen ? 'block' : 'none')};
+    display: ${(props) => (props.isOpen ? 'block' : 'none')};
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -140,17 +140,17 @@ export const AvatarGrid = styled.div`
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   align-content: start;
-  color: ${props => (props.isActive ? theme.text.default : theme.text.alt)};
-  font-weight: ${props => (props.isActive ? '600' : '500')};
-  background: ${props =>
+  color: ${(props) => (props.isActive ? theme.text.default : theme.text.alt)};
+  font-weight: ${(props) => (props.isActive ? '600' : '500')};
+  background: ${(props) =>
     props.isActive ? hexa(theme.text.default, 0.04) : theme.bg.default};
 
   a img {
-    opacity: ${props => (props.isActive ? '1' : '0.4')};
-    filter: ${props => (props.isActive ? 'none' : 'grayscale(80%)')};
+    opacity: ${(props) => (props.isActive ? '1' : '0.4')};
+    filter: ${(props) => (props.isActive ? 'none' : 'grayscale(80%)')};
   }
 
-  ${props =>
+  ${(props) =>
     props.isActive &&
     css`
       box-shadow: inset 3px 0 0 ${theme.text.default};
@@ -164,10 +164,10 @@ export const AvatarGrid = styled.div`
 
   &:hover {
     box-shadow: inset 3px 0 0
-      ${props => (props.isActive ? theme.brand.default : theme.bg.border)};
-    background: ${props =>
+      ${(props) => (props.isActive ? theme.brand.default : theme.bg.border)};
+    background: ${(props) =>
       props.isActive ? hexa(theme.brand.default, 0.04) : theme.bg.wash};
-    color: ${props =>
+    color: ${(props) =>
       props.isActive ? theme.brand.default : theme.text.secondary};
 
     img,
@@ -220,8 +220,8 @@ export const AvatarLink = styled(Link)`
 `;
 
 export const Avatar = styled.img`
-  width: ${props => props.size}px;
-  height: ${props => props.size}px;
+  width: ${(props) => props.size}px;
+  height: ${(props) => props.size}px;
   border-radius: 6px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
   transition: box-shadow 0.2s ease-in-out;

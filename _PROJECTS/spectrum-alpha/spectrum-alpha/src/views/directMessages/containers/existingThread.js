@@ -58,7 +58,7 @@ class ExistingThread extends React.Component<Props> {
     if (curr.data.directMessageThread) {
       const thread = curr.data.directMessageThread;
       const trimmedUsers = thread.participants.filter(
-        user => user.userId !== currentUser.id
+        (user) => user.userId !== currentUser.id
       );
       const titleIcon =
         trimmedUsers.length === 1 ? (
@@ -70,7 +70,7 @@ class ExistingThread extends React.Component<Props> {
             <Icon glyph={'info'} />
           </Link>
         ) : null;
-      const names = trimmedUsers.map(user => user.name).join(', ');
+      const names = trimmedUsers.map((user) => user.name).join(', ');
       dispatch(
         setTitlebarProps({
           title: names,
@@ -99,7 +99,7 @@ class ExistingThread extends React.Component<Props> {
       if (data.directMessageThread) {
         const thread = data.directMessageThread;
         const trimmedUsers = thread.participants.filter(
-          user => user.userId !== currentUser.id
+          (user) => user.userId !== currentUser.id
         );
         const titleIcon =
           trimmedUsers.length === 1 ? (
@@ -111,7 +111,7 @@ class ExistingThread extends React.Component<Props> {
               <Icon glyph={'info'} />
             </Link>
           ) : null;
-        const names = trimmedUsers.map(user => user.name).join(', ');
+        const names = trimmedUsers.map((user) => user.name).join(', ');
         return (
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <DesktopTitlebar
@@ -157,7 +157,7 @@ class ExistingThread extends React.Component<Props> {
   }
 }
 
-const map = state => ({
+const map = (state) => ({
   networkOnline: state.connectionStatus.networkOnline,
   websocketConnection: state.connectionStatus.websocketConnection,
   threadSliderIsOpen: state.threadSlider.isOpen,

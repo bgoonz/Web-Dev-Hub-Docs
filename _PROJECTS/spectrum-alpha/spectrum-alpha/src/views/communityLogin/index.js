@@ -102,8 +102,9 @@ export class Login extends React.Component<Props, State> {
 
             <OutlineButton
               css={{ width: '100%' }}
-              to={`/login?r=${redirectPath ||
-                `${CLIENT_URL}/${match.params.communitySlug}`}`}
+              to={`/login?r=${
+                redirectPath || `${CLIENT_URL}/${match.params.communitySlug}`
+              }`}
             >
               Existing user? Click here to log in
             </OutlineButton>
@@ -129,7 +130,4 @@ export class Login extends React.Component<Props, State> {
   }
 }
 
-export default compose(
-  getCommunityByMatch,
-  viewNetworkHandler
-)(Login);
+export default compose(getCommunityByMatch, viewNetworkHandler)(Login);

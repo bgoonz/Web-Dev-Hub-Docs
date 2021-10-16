@@ -133,7 +133,7 @@ class Status extends React.Component<Props, State> {
   }
 }
 
-const map = state => ({
+const map = (state) => ({
   websocketConnection: state.connectionStatus.websocketConnection,
 });
 

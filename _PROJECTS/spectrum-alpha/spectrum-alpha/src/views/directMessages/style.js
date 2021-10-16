@@ -24,7 +24,7 @@ export const MessagesList = styled.div`
     min-width: 320px;
     border-right: none;
     max-width: 100%;
-    display: ${props => (props.isViewingThread ? 'none' : 'flex')};
+    display: ${(props) => (props.isViewingThread ? 'none' : 'flex')};
   }
 `;
 
@@ -71,7 +71,7 @@ export const StyledSecondaryColumn = styled(SecondaryColumn)`
     border-left: 0;
     border-right: 0;
     display: grid;
-    display: ${props => (props.shouldHideThreadList ? 'none' : 'block')};
+    display: ${(props) => (props.shouldHideThreadList ? 'none' : 'block')};
   }
 `;
 
@@ -90,7 +90,7 @@ export const NoCommunitySelected = styled.div`
   }
 
   @media (min-width: ${MEDIA_BREAK}px) {
-    ${props =>
+    ${(props) =>
       props.hideOnDesktop &&
       css`
         display: none;
