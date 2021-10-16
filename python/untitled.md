@@ -4,21 +4,15 @@
 
 {% embed url="https://gist.github.com/bgoonz/999163a278b987fe47fb247fd4d66904" %}
 
-
-
 ​
 
 ### This Website: <a id="this-website"></a>
 
 {% embed url="https://Homepy-v2.gitbook.io" %}
 
-
-
 ​
 
 ​[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bgoonz42.gitbook.io](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/)
-
-
 
 ​
 
@@ -30,7 +24,7 @@
 
 ### Main Repo: <a id="main-repo"></a>
 
-​[GitHub - bgoonz/DATA\_STRUC\_PYTHON\_NOTESContribute to bgoonz/DATA\_STRUC\_PYTHON\_NOTES development by creating an account on GitHub.github.com](https://github.com/bgoonz/DATA_STRUC_PYTHON_NOTES)
+​[GitHub - bgoonz/DATA_STRUC_PYTHON_NOTESContribute to bgoonz/DATA_STRUC_PYTHON_NOTES development by creating an account on GitHub.github.com](https://github.com/bgoonz/DATA_STRUC_PYTHON_NOTES)
 
 ​ ![](https://py-v2.gitbook.io/datastructures-in-pytho/.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png) ​
 
@@ -88,8 +82,8 @@
 
 ​
 
-* ​[Home](https://bgoonz42.gitbook.io/datastructures-in-pytho/README)​
-* ​[Navigation](https://bgoonz42.gitbook.io/datastructures-in-pytho/navigation)​
+- ​[Home](https://bgoonz42.gitbook.io/datastructures-in-pytho/README)​
+- ​[Navigation](https://bgoonz42.gitbook.io/datastructures-in-pytho/navigation)​
 
   ​
 
@@ -97,114 +91,122 @@
 
   ​
 
-* ​[Outline](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled)​
-* ​[wk17](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/README)​
-  * ​[Outline-w17](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/outline)​
-  * ​[homework](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/week-overview)​
-  * ​[D1-Module 01 - Python I](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2/README)​
-    * ​[Install Python](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2/install-python)​
-  * ​[D2- Module 02 - Python II](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1)​
-  * ​[D3- Module 03 - Python III](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1)​
-  * ​[D4-Module 04 - Python IV](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled)​
-* ​[wk18](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/README)​
-  * ​[Outline-W-18](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4)​
-  * ​[D1- Module 01 - Number Bases and Character Encoding](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3)​
-  * ​[D2- Module 02 - Hash Tables I](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2)​
-  * ​[D3-Module 03 - Hash Tables II](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1)​
-  * ​[D4- Module 04 - Searching and Recursion](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled)​
-* ​[wk19](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/README)​
-  * ​[Outline-W-19](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/overview)​
-  * ​[D1- Module 01 - Linked Lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3)​
-  * ​[D2- Module 02 - Queues and Stacks](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7)​
-  * ​[D3- Module 03 - Binary Search Trees](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8)​
-  * ​[D4- Module 04 - Tree Traversal](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5)​
-* ​[wk20](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/README)​
-  * ​[Outline-W-20](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/overview)​
-  * ​[D1-Graphs I](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5)​
-  * ​[D2-Graphs 2](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4)​
-  * ​[DFS](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1)​
-  * ​[D4](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2)​
+- ​[Outline](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled)​
+- ​[wk17](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/README)​
+  - ​[Outline-w17](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/outline)​
+  - ​[homework](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/week-overview)​
+  - ​[D1-Module 01 - Python I](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2/README)​
+    - ​[Install Python](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2/install-python)​
+  - ​[D2- Module 02 - Python II](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1)​
+  - ​[D3- Module 03 - Python III](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1)​
+  - ​[D4-Module 04 - Python IV](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled)​
+- ​[wk18](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/README)​
+  - ​[Outline-W-18](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4)​
+  - ​[D1- Module 01 - Number Bases and Character Encoding](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3)​
+  - ​[D2- Module 02 - Hash Tables I](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2)​
+  - ​[D3-Module 03 - Hash Tables II](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1)​
+  - ​[D4- Module 04 - Searching and Recursion](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled)​
+- ​[wk19](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/README)​
+  - ​[Outline-W-19](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/overview)​
+  - ​[D1- Module 01 - Linked Lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3)​
+  - ​[D2- Module 02 - Queues and Stacks](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7)​
+  - ​[D3- Module 03 - Binary Search Trees](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8)​
+  - ​[D4- Module 04 - Tree Traversal](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5)​
+- ​[wk20](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/README)​
+
+  - ​[Outline-W-20](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/overview)​
+  - ​[D1-Graphs I](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5)​
+  - ​[D2-Graphs 2](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4)​
+  - ​[DFS](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1)​
+  - ​[D4](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2)​
 
     ​
 
     **Utilities**
 
     ​
-* ​[Code lab Notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks)​
-* ​[Repl.IT](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/repl.it/README)​
-  * ​[Trinket](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/repl.it/trinket)​
-* ​[Utilities](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/README)​
-  * ​[YouTube](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled)​
-  * ​[Code Lab Notebook Embeds From Lecture](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)​
+
+- ​[Code lab Notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks)​
+- ​[Repl.IT](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/repl.it/README)​
+  - ​[Trinket](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/repl.it/trinket)​
+- ​[Utilities](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/README)​
+
+  - ​[YouTube](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled)​
+  - ​[Code Lab Notebook Embeds From Lecture](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)​
 
     ​
 
     **practice**
 
     ​
-* ​[Supplemental Practice:](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/README)​
-  * ​[Random Examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/random-examples)​
-  * ​[Prompts](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/prompts)​
-* ​[Abstract Data Structures:](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/README)​
-  * ​[Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-7)​
-  * ​[Industry Standard Algorithms](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/industry-standard-algorithms)​
-  * ​[Interview Practice Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/interview-practice-resources)​
-  * ​[Overflow Practice Problems](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/overflow-practice-problems)​
-  * ​[Array](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/array/README)​
-    * ​[Extra-Array](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/array/extra-array)​
-  * ​[Stack](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/stack)​
-  * ​[Queue](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/queue)​
-  * ​[Queue Sandbox](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/queue-sandbox)​
-  * ​[Binary Search](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/binary-search)​
-  * ​[BST Explained](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/bst-explained)​
-  * ​[Binary Tree](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/binary-tree)​
-  * ​[Binary Search Tree](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/binary-search-tree/README)​
-    * ​[BST Insert](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert)​
-  * ​[Recursion](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-6/README)​
-    * ​[Recursion Explained](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-6/recursion-explained/README)​
-      * ​[Recursion Examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-6/recursion-explained/recursion-examples)​
-  * ​[Hash Table](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-5)​
-  * ​[Linked List](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-4/README)​
-    * ​[Double Linked List](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list)​
-    * ​[List Operations](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-4/list-operations)​
-  * ​[Sorting](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/README)​
-    * ​[SelectionSort](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/selectionsort)​
-    * ​[Quick Sort](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/untitled-7)​
-    * ​[Merge Sort](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/merge-sort)​
-    * ​[Insertion Sort](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/insertion-sort)​
-  * ​[Searching](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-2)​
-  * ​[Graphs](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-1)​
-  * ​[Exotic](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled)​
+
+- ​[Supplemental Practice:](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/README)​
+  - ​[Random Examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/random-examples)​
+  - ​[Prompts](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/prompts)​
+- ​[Abstract Data Structures:](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/README)​
+
+  - ​[Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-7)​
+  - ​[Industry Standard Algorithms](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/industry-standard-algorithms)​
+  - ​[Interview Practice Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/interview-practice-resources)​
+  - ​[Overflow Practice Problems](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/overflow-practice-problems)​
+  - ​[Array](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/array/README)​
+    - ​[Extra-Array](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/array/extra-array)​
+  - ​[Stack](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/stack)​
+  - ​[Queue](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/queue)​
+  - ​[Queue Sandbox](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/queue-sandbox)​
+  - ​[Binary Search](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/binary-search)​
+  - ​[BST Explained](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/bst-explained)​
+  - ​[Binary Tree](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/binary-tree)​
+  - ​[Binary Search Tree](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/binary-search-tree/README)​
+    - ​[BST Insert](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert)​
+  - ​[Recursion](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-6/README)​
+    - ​[Recursion Explained](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-6/recursion-explained/README)​
+      - ​[Recursion Examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-6/recursion-explained/recursion-examples)​
+  - ​[Hash Table](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-5)​
+  - ​[Linked List](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-4/README)​
+    - ​[Double Linked List](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list)​
+    - ​[List Operations](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-4/list-operations)​
+  - ​[Sorting](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/README)​
+    - ​[SelectionSort](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/selectionsort)​
+    - ​[Quick Sort](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/untitled-7)​
+    - ​[Merge Sort](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/merge-sort)​
+    - ​[Insertion Sort](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/insertion-sort)​
+  - ​[Searching](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-2)​
+  - ​[Graphs](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-1)​
+  - ​[Exotic](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled)​
 
     ​
 
     **Resources**
 
     ​
-* ​[Python VS JavaScript](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/python-vs-javascript)​
-* ​[Misc. Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled-1)​
-* ​[Things To Internalize:](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/README)​
-  * ​[Functions](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/functions)​
-* ​[Intro To Python w Jupyter Notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)​
-* ​[Calculating Big O](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/calculating-big-o)​
-* ​[Python Cheat Sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet)​
-* ​[Code Signal CGA Sprint Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/code-signal-cga-sprint-resources)​
-* ​[YouTube](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/youtube)​
-* ​[Useful Links](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/README)​
-  * ​[My-Links](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/my-links)​
-  * ​[Beginners Guide To Python](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/beginners-guide-to-python)​
+
+- ​[Python VS JavaScript](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/python-vs-javascript)​
+- ​[Misc. Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled-1)​
+- ​[Things To Internalize:](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/README)​
+  - ​[Functions](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/functions)​
+- ​[Intro To Python w Jupyter Notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)​
+- ​[Calculating Big O](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/calculating-big-o)​
+- ​[Python Cheat Sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet)​
+- ​[Code Signal CGA Sprint Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/code-signal-cga-sprint-resources)​
+- ​[YouTube](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/youtube)​
+- ​[Useful Links](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/README)​
+
+  - ​[My-Links](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/my-links)​
+  - ​[Beginners Guide To Python](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/beginners-guide-to-python)​
 
     ​
 
     **quick-reference**
 
     ​
-* ​[Python Snippets](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/python-snippets)​
-* ​[Python Module Index:](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/python-module-index)​
-* ​[Useful Info](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/untitled)​
-* ​[Python Glossary](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/python-glossary)​
-* ​[index](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/untitled-1)​
-* ​[List Of Python Cheat Sheets](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/bash-commands)​
+
+- ​[Python Snippets](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/python-snippets)​
+- ​[Python Module Index:](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/python-module-index)​
+- ​[Useful Info](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/untitled)​
+- ​[Python Glossary](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/python-glossary)​
+- ​[index](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/untitled-1)​
+- ​[List Of Python Cheat Sheets](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/bash-commands)​
 
   ​
 
@@ -212,19 +214,19 @@
 
   ​
 
-* ​[Basic Syntax](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/basic-syntax)​
-* ​[Values Expressions & Statments](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/values-expressions-and-statments)​
-* ​[Python Standard Library \(STDLIB\)](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/python-standard-library-stdlib)​
-* ​[Docs](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/untitled/README)​
-  * ​[String-Methods](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/untitled/string-methods)​
-* ​[Built In Functions](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/built-in-functions)​
-* ​[Lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/lists/README)​
-  * ​[Examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/lists/examples)​
-* ​[Dictionaries](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/dictionaries)​
-* ​[Classes](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/classes/README)​
-  * ​[Python Objects & Classes](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/classes/python-objects-and-classes)​
-  * ​[index](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/classes/untitled)​
-* ​[Queue & Stacks](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/queue-and-stacks)​
+- ​[Basic Syntax](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/basic-syntax)​
+- ​[Values Expressions & Statments](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/values-expressions-and-statments)​
+- ​[Python Standard Library \(STDLIB\)](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/python-standard-library-stdlib)​
+- ​[Docs](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/untitled/README)​
+  - ​[String-Methods](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/untitled/string-methods)​
+- ​[Built In Functions](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/built-in-functions)​
+- ​[Lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/lists/README)​
+  - ​[Examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/lists/examples)​
+- ​[Dictionaries](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/dictionaries)​
+- ​[Classes](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/classes/README)​
+  - ​[Python Objects & Classes](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/classes/python-objects-and-classes)​
+  - ​[index](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/classes/untitled)​
+- ​[Queue & Stacks](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/queue-and-stacks)​
 
   ​
 
@@ -232,31 +234,35 @@
 
   ​
 
-* ​[Unsorted Examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/unsorted-examples)​
-* ​[Outline](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/outline)​
-* ​[About Python](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/README)​
-  * ​[Python VS JavaScript](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/python-vs-javascript)​
-  * ​[Python Modules & Python Packages](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/untitled-1)​
-  * ​[Misc](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/misc)​
-  * ​[Python's Default Argument Values and Lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)​
-  * ​[SCRAP](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/untitled)​
+- ​[Unsorted Examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/unsorted-examples)​
+- ​[Outline](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/outline)​
+- ​[About Python](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/README)​
+
+  - ​[Python VS JavaScript](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/python-vs-javascript)​
+  - ​[Python Modules & Python Packages](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/untitled-1)​
+  - ​[Misc](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/misc)​
+  - ​[Python's Default Argument Values and Lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)​
+  - ​[SCRAP](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/untitled)​
 
     ​
 
     **Interview Prep**
 
     ​
-* ​[Interview Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/README)​
-  * ​[How to Write an Effective Resume of Python Developer](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)​
-  * ​[Interview Checklist](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)​
-  * ​[150 Practice Problems & Solutions](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)​
+
+- ​[Interview Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/README)​
+
+  - ​[How to Write an Effective Resume of Python Developer](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)​
+  - ​[Interview Checklist](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)​
+  - ​[150 Practice Problems & Solutions](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)​
 
     ​
 
     **Installations Setup & Env**
 
     ​
-* ​[python-setup](https://bgoonz42.gitbook.io/datastructures-in-pytho/installations-setup-and-env/untitled)​
+
+- ​[python-setup](https://bgoonz42.gitbook.io/datastructures-in-pytho/installations-setup-and-env/untitled)​
 
   ​
 
@@ -264,13 +270,14 @@
 
   ​
 
-* ​[Subject](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/README)​
-  * ​[List Directory Contents](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/list-directory-contents)​
-  * ​[Employee Manager](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-5)​
-  * ​[OS Module](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-4)​
-  * ​[Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-3)​
-  * ​[Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-2)​
-  * ​[Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-1)​
+- ​[Subject](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/README)​
+
+  - ​[List Directory Contents](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/list-directory-contents)​
+  - ​[Employee Manager](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-5)​
+  - ​[OS Module](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-4)​
+  - ​[Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-3)​
+  - ​[Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-2)​
+  - ​[Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-1)​
 
     ​
 
@@ -410,7 +417,7 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 > student_list = [“John Doore”,”Matu Smith”]for x in student_list:    print(x)
 > ```
 >
-> ​ The `for` loop above will print every item in the student\_list. ​ 1. While loops A while loop can help us check for a particular condition. For instance, while something is true specific statements can be executed. Here is an example of a while loop in action. ​
+> ​ The `for` loop above will print every item in the student_list. ​ 1. While loops A while loop can help us check for a particular condition. For instance, while something is true specific statements can be executed. Here is an example of a while loop in action. ​
 >
 > ```text
 > isChecked = falsewhile isChecked == true:    print('Hallo there')
@@ -480,17 +487,17 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 > ​ Instead of using the `,` in the print function, you can put a `+` to combine the variables and string. ​ There are many operators in python: ​
 >
-> * `+`
-> * `-`
-> * `/`
-> * `*` These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton. Now, we can look at a few more complicated ones:
-> * `%`
-> * `//`
-> * `**`
-> * `+=`
-> * `-=`
-> * `/=`
-> * `*=` Research these if you want to find out more…
+> - `+`
+> - `-`
+> - `/`
+> - `*` These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton. Now, we can look at a few more complicated ones:
+> - `%`
+> - `//`
+> - `**`
+> - `+=`
+> - `-=`
+> - `/=`
+> - `*=` Research these if you want to find out more…
 >
 >   ​
 >
@@ -570,12 +577,12 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * `.strip()`
-> * `len()`
-> * `.lower()`
-> * `.upper()`
-> * `.replace()`
-> * `.split()`
+> - `.strip()`
+> - `len()`
+> - `.lower()`
+> - `.upper()`
+> - `.replace()`
+> - `.split()`
 >
 >   ​
 >
@@ -835,7 +842,7 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * ​[Installing Python 3 and Launch Python Shell](https://www.youtube.com/watch?v=Ji1WW4Suaww)​
+> - ​[Installing Python 3 and Launch Python Shell](https://www.youtube.com/watch?v=Ji1WW4Suaww)​
 >
 >   ​
 >
@@ -847,7 +854,7 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Make sure that you have the check-box “Add Python 3.6 to PATH”, checked.
+> - Make sure that you have the check-box “Add Python 3.6 to PATH”, checked.
 >
 >   ​
 >
@@ -855,8 +862,8 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Windows - Launch cmd prompt by typing in ‘cmd’ command.
-> * Mac or Linux - Launch up terminal.
+> - Windows - Launch cmd prompt by typing in ‘cmd’ command.
+> - Mac or Linux - Launch up terminal.
 >
 >   ​
 >
@@ -864,8 +871,8 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * In Mac, type in `python3`
-> * In other operating systems, including windows, type `python`
+> - In Mac, type in `python3`
+> - In other operating systems, including windows, type `python`
 >
 >   ​
 >
@@ -925,8 +932,8 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Were introduced to the concept of problem solving
-> * Understood how good programmers approach problem solving
+> - Were introduced to the concept of problem solving
+> - Understood how good programmers approach problem solving
 >
 >   ​
 >
@@ -942,8 +949,8 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Compute the multiplication table for `5`, with entries from `1` to `10`.
-> * Display this table.
+> - Compute the multiplication table for `5`, with entries from `1` to `10`.
+> - Display this table.
 >
 >   ​
 >
@@ -995,13 +1002,13 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * **Statements**
-> * **Expressions**
-> * **Variables**
-> * **Literals**
-> * **Conditionals**
-> * **Loops**
-> * **Methods**
+> - **Statements**
+> - **Expressions**
+> - **Variables**
+> - **Literals**
+> - **Conditionals**
+> - **Loops**
+> - **Methods**
 >
 >   ​
 >
@@ -1017,8 +1024,8 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Stated our first programming challenge
-> * Identified what programming concepts we need to learn, to solve this challenge
+> - Stated our first programming challenge
+> - Identified what programming concepts we need to learn, to solve this challenge
 >
 >   ​
 >
@@ -1030,9 +1037,9 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Simplify the problem, by breaking it into sub-problems
-> * Solve the sub-problems in stages \(in some order\), using the language
-> * Combine these solutions to get a final solution
+> - Simplify the problem, by breaking it into sub-problems
+> - Solve the sub-problems in stages \(in some order\), using the language
+> - Combine these solutions to get a final solution
 >
 >   ​
 >
@@ -1044,9 +1051,9 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Calculate `5 * 3` and print result as `15`
-> * Print `5 * 3 = 15` \(`15` is result of previous calculation\)
-> * Do this ten times, once for each table entry \(going from `1` to `10`\)
+> - Calculate `5 * 3` and print result as `15`
+> - Print `5 * 3 = 15` \(`15` is result of previous calculation\)
+> - Do this ten times, once for each table entry \(going from `1` to `10`\)
 >
 >   ​
 >
@@ -1062,8 +1069,8 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Learned that breaking down a problem into sub-problems is a great help
-> * Found a way to break down the _PMT-Challenge_ problem
+> - Learned that breaking down a problem into sub-problems is a great help
+> - Found a way to break down the _PMT-Challenge_ problem
 >
 >   ​
 >
@@ -1119,8 +1126,8 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * `5 + 6` gives a result of `11`.
-> * `5 - 6` leads to `-1`.
+> - `5 + 6` gives a result of `11`.
+> - `5 - 6` leads to `-1`.
 >
 >   ​
 >
@@ -1148,9 +1155,9 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Whatever pieces of code we gave Python shell to run, are called **expressions**. So, `5 * 5`, `5 * 6` and `5 - 6` are all _expressions_. An expression is composed of _operators_ and **operands**.
-> * In the expression `5 * 6`, the two values `5` and `6` are called operands, and the `*` operator _operates_ on them.
-> * The values `5` and `6` are **literals**, because those are constants which cannot be changed.
+> - Whatever pieces of code we gave Python shell to run, are called **expressions**. So, `5 * 5`, `5 * 6` and `5 - 6` are all _expressions_. An expression is composed of _operators_ and **operands**.
+> - In the expression `5 * 6`, the two values `5` and `6` are called operands, and the `*` operator _operates_ on them.
+> - The values `5` and `6` are **literals**, because those are constants which cannot be changed.
 >
 >   ​
 >
@@ -1176,9 +1183,9 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Learned how to give code input to the Python Shell
-> * Understood that Python has a predefined set of operators
-> * Used a few types of basic operators and their operands, to form expressions
+> - Learned how to give code input to the Python Shell
+> - Understood that Python has a predefined set of operators
+> - Used a few types of basic operators and their operands, to form expressions
 >
 >   ​
 >
@@ -1194,8 +1201,8 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Write an expression to calculate the number of minutes in a day.
-> * Write an expression to calculate the number of seconds in a day.
+> - Write an expression to calculate the number of minutes in a day.
+> - Write an expression to calculate the number of seconds in a day.
 >
 >   ​
 >
@@ -1225,9 +1232,9 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * How many number of hours are there in a day? `24`.
-> * And how many minutes does each hour have? It’s `60`.
-> * So if you want to find out the number of minutes in a day, it’s `24 * 60`, which is `1440`.
+> - How many number of hours are there in a day? `24`.
+> - And how many minutes does each hour have? It’s `60`.
+> - So if you want to find out the number of minutes in a day, it’s `24 * 60`, which is `1440`.
 >
 >   ​
 >
@@ -1245,10 +1252,10 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Let’s start with the number of hours, `24`.
-> * The number of minutes in an hour is `60`, and
-> * The number of seconds in a minute is `60` as well.
-> * So it’s `24 * 60 * 60`, or `86400`.
+> - Let’s start with the number of hours, `24`.
+> - The number of minutes in an hour is `60`, and
+> - The number of seconds in a minute is `60` as well.
+> - So it’s `24 * 60 * 60`, or `86400`.
 >
 >   ​
 >
@@ -1260,10 +1267,11 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Solved a Programming Exercise involving common scenarios, using Python code involving:
->   * Expressions
->   * Operators
->   * Literals
+> - Solved a Programming Exercise involving common scenarios, using Python code involving:
+>
+>   - Expressions
+>   - Operators
+>   - Literals
 >
 >     ​
 >
@@ -1346,8 +1354,9 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >     Operators in Python are divided into two sets as follows:
 >
 >     ​
-> * `**`, `*`, `/` and `%` have higher precedence, or priority.
-> * `+` and `-` have a lower precedence.
+>
+> - `**`, `*`, `/` and `%` have higher precedence, or priority.
+> - `+` and `-` have a lower precedence.
 >
 >   ​
 >
@@ -1395,11 +1404,11 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * `SyntaxError` for incorrect operators
-> * White-space in expressions
-> * Floating Point division by default
-> * Operator Precedence
-> * Using parentheses
+> - `SyntaxError` for incorrect operators
+> - White-space in expressions
+> - Floating Point division by default
+> - Operator Precedence
+> - Using parentheses
 >
 >   ​
 >
@@ -1489,12 +1498,12 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Typing the method name print ,
-> * open parentheses \( ,
-> * Followed by a double quote " ,
-> * The text Hello,
-> * and another double quote " ,
-> * finished off with a closed parentheses \).
+> - Typing the method name print ,
+> - open parentheses \( ,
+> - Followed by a double quote " ,
+> - The text Hello,
+> - and another double quote " ,
+> - finished off with a closed parentheses \).
 >
 >   ​
 >
@@ -1536,9 +1545,9 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Understood that displaying text on the console is not the same as printing an expression value
-> * Learned about the `print()` function, that is used to print text in Python.
-> * Found a way to print the text `"5 * 6 = 30"` on the console, by hard-coding values in a string
+> - Understood that displaying text on the console is not the same as printing an expression value
+> - Learned about the `print()` function, that is used to print text in Python.
+> - Found a way to print the text `"5 * 6 = 30"` on the console, by hard-coding values in a string
 >
 >   ​
 >
@@ -1758,8 +1767,8 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * If the string literal contains one or more single quotes, then you can use double quotes to enclose it.
-> * However if the string contains one or more double quotes, then prefer to use single quotes to enclose it.
+> - If the string literal contains one or more single quotes, then you can use double quotes to enclose it.
+> - However if the string contains one or more double quotes, then prefer to use single quotes to enclose it.
 >
 >   ​
 >
@@ -1771,13 +1780,14 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Explored a number of puzzles related to code involving:
->   * Built-in functions for numeric calculations
->   * The `print()` function to display expressions and strings
-> * Covered the following aspects of the above utilities:
->   * Case-sensitive aspects of names and strings
->   * The role played by whitespace
->   * The escape character, and common escape sequences
+> - Explored a number of puzzles related to code involving:
+>   - Built-in functions for numeric calculations
+>   - The `print()` function to display expressions and strings
+> - Covered the following aspects of the above utilities:
+>
+>   - Case-sensitive aspects of names and strings
+>   - The role played by whitespace
+>   - The escape character, and common escape sequences
 >
 >     ​
 >
@@ -1906,9 +1916,10 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >     In this step, we:
 >
 >     ​
-> * Discovered that Python provides a way to do formatted printing of string values
-> * Looked at the `format()` function, and saw how to call it within `print()`
-> * Observed how we could work only with the indexes of parameters to `format()`, and change the parameters we pass without changing the code
+>
+> - Discovered that Python provides a way to do formatted printing of string values
+> - Looked at the `format()` function, and saw how to call it within `print()`
+> - Observed how we could work only with the indexes of parameters to `format()`, and change the parameters we pass without changing the code
 >
 >   ​
 >
@@ -2002,10 +2013,11 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Understood the behavior when the parameters passed to `format()`:
->   * Exceed the indexes accessed by `print()`
->   * Are less than the indexes accessed by `print()`
->   * Are of type integer, floating-point or string
+> - Understood the behavior when the parameters passed to `format()`:
+>
+>   - Exceed the indexes accessed by `print()`
+>   - Are less than the indexes accessed by `print()`
+>   - Are of type integer, floating-point or string
 >
 >     ​
 >
@@ -2186,8 +2198,9 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >     In this step, we:
 >
 >     ​
-> * Were introduced to variables, or names, in Python
-> * Observed how we could pass in values of variables to the `format()` function
+>
+> - Were introduced to variables, or names, in Python
+> - Observed how we could pass in values of variables to the `format()` function
 >
 >   ​
 >
@@ -2281,8 +2294,8 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * This should start with an alphabet \(a capital or a small alphabet\) or underscore.
-> * Starting the second character, it can be alphabet, or underscore, or a numeric value.
+> - This should start with an alphabet \(a capital or a small alphabet\) or underscore.
+> - Starting the second character, it can be alphabet, or underscore, or a numeric value.
 >
 >   ​
 >
@@ -2294,8 +2307,8 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Understood that a variable needs to be defined before it is used
-> * Learned that there are certain rules to be followed while giving names to variables
+> - Understood that a variable needs to be defined before it is used
+> - Learned that there are certain rules to be followed while giving names to variables
 >
 >   ​
 >
@@ -2393,8 +2406,8 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Learned what happens when you assign a value to a variable, which may or may not exist
-> * Discovered that literal constants cannot be placed on the left hand side of the assignment\(`=`\) operator
+> - Learned what happens when you assign a value to a variable, which may or may not exist
+> - Discovered that literal constants cannot be placed on the left hand side of the assignment\(`=`\) operator
 >
 >   ​
 >
@@ -2700,10 +2713,11 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Looked at a few puzzles about the `for` loop, which lay emphasis on the following aspects of for:
->   * The importance of syntax elements such as the colon
->   * Indentation
->   * Variations of the `range()` function
+> - Looked at a few puzzles about the `for` loop, which lay emphasis on the following aspects of for:
+>
+>   - The importance of syntax elements such as the colon
+>   - Indentation
+>   - Variations of the `range()` function
 >
 >     ​
 >
@@ -2722,12 +2736,13 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >     **Exercises**
 >
 >     ​
-> * Print the even numbers up to 10. We would want to print 2 4 6 8 10, using a for loop.
-> * Print the first 10 numbers in reverse
-> * Print the first 10 even numbers in reverse
-> * Print the squares of the first 10 numbers
-> * Print the squares of the first 10 numbers, in reverse
-> * Print the squares of the even numbers
+>
+> - Print the even numbers up to 10. We would want to print 2 4 6 8 10, using a for loop.
+> - Print the first 10 numbers in reverse
+> - Print the first 10 even numbers in reverse
+> - Print the squares of the first 10 numbers
+> - Print the squares of the first 10 numbers, in reverse
+> - Print the squares of the even numbers
 >
 >   ​
 >
@@ -2839,7 +2854,7 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Used the for loop to simplify the solution to the _PMT-Challenge_ problem.
+> - Used the for loop to simplify the solution to the _PMT-Challenge_ problem.
 >
 >   ​
 >
@@ -2855,11 +2870,11 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * `1`, `11`, `5`, … are all called literals because these are constant values. Their values don’t really change. \_Consider ``5 _ 4 _ 50`. This is an expression. `_`is an operator, and`5`, `4`and`50`` are operands.
-> * The name `i` in `i = 1`, is called a variable. It can refer to different values, at different points in time.
-> * `range()` and `print()` are in-built Python functions.
-> * Every complete line of code is called statement. The specific statement `print()`, is invoking a method. The other statement which we looked at earlier, was an assignment statement. `index = index + 1` would evaluate `index + 1`, and have the `index` variable refer to that value.
-> * The syntax of the `for` loop was very simple. `for var in range(1, 10) : ...`, followed by statements you would want to execute in a loop, with indentation. For the sake of indentation we left four `<SPACE>`s in front of each statement inside the `for` loop.
+> - `1`, `11`, `5`, … are all called literals because these are constant values. Their values don’t really change. \_Consider `` 5 _ 4 _ 50`. This is an expression. `_`is an operator, and`5`, `4`and`50 `` are operands.
+> - The name `i` in `i = 1`, is called a variable. It can refer to different values, at different points in time.
+> - `range()` and `print()` are in-built Python functions.
+> - Every complete line of code is called statement. The specific statement `print()`, is invoking a method. The other statement which we looked at earlier, was an assignment statement. `index = index + 1` would evaluate `index + 1`, and have the `index` variable refer to that value.
+> - The syntax of the `for` loop was very simple. `for var in range(1, 10) : ...`, followed by statements you would want to execute in a loop, with indentation. For the sake of indentation we left four `<SPACE>`s in front of each statement inside the `for` loop.
 >
 >   ​
 >
@@ -2947,10 +2962,10 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * At the start, use the keyword `def` followed by a space.
-> * Followed by name of the method - `print_hello_world_twice`.
-> * Add a pair of parenthesis: `()`.
-> * This is followed by a colon `:` \(similar to what we used in a `for` loop\).
+> - At the start, use the keyword `def` followed by a space.
+> - Followed by name of the method - `print_hello_world_twice`.
+> - Add a pair of parenthesis: `()`.
+> - This is followed by a colon `:` \(similar to what we used in a `for` loop\).
 >
 >   ​
 >
@@ -3004,9 +3019,9 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Learned we can define our own methods in the code we write
-> * Understood how to define a method, and all its syntax elements
-> * Saw how we can invoke a method we write
+> - Learned we can define our own methods in the code we write
+> - Understood how to define a method, and all its syntax elements
+> - Saw how we can invoke a method we write
 >
 >   ​
 >
@@ -3022,8 +3037,9 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Write a method called `print_hello_world_thrice()`. It should print `"Hello World"` thrice to the output. Define this method, and also invoke it.
-> * Write and execute a method, that prints four statements:
+> - Write a method called `print_hello_world_thrice()`. It should print `"Hello World"` thrice to the output. Define this method, and also invoke it.
+> - Write and execute a method, that prints four statements:
+>
 >   1. “I have created my first variable.”
 >   2. “I’ve created in my first loop.”
 >   3. “I’ve created my first method.”
@@ -3096,10 +3112,12 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >      In this step, we:
 >
 >      ​
-> * Implemented solutions to a few exercises that test our understanding of Python methods. We touched concepts such as:
->   * Defining a method body
->   * The way to invoke a method, to run its code
->   * The difference between the two
+>
+> - Implemented solutions to a few exercises that test our understanding of Python methods. We touched concepts such as:
+>
+>   - Defining a method body
+>   - The way to invoke a method, to run its code
+>   - The difference between the two
 >
 >     ​
 >
@@ -3254,9 +3272,10 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >     In this step, we:
 >
 >     ​
-> * Learned how to pass arguments to a method
-> * Understood that the method definition needs to have parameters coded in
-> * Observed that arguments passed during a method call can be accessed inside a methods body
+>
+> - Learned how to pass arguments to a method
+> - Understood that the method definition needs to have parameters coded in
+> - Observed that arguments passed during a method call can be accessed inside a methods body
 >
 >   ​
 >
@@ -3272,8 +3291,8 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Write a method called `print_numbers()`, that would print all successive integers from `1` to `n`.
-> * The second one is to write a method called `print_squares_of_numbers()`, that prints squares of all successive integers from `1` to `n`.
+> - Write a method called `print_numbers()`, that would print all successive integers from `1` to `n`.
+> - The second one is to write a method called `print_squares_of_numbers()`, that prints squares of all successive integers from `1` to `n`.
 >
 >   ​
 >
@@ -3317,11 +3336,12 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Inside the definition of the method, the name within parentheses is referred to as a **parameter**. In our recent exercise, `n` is a parameter, because it’s used in the definition of `print_squares_of_numbers`.
-> * When you are passing a value to a method during a method call, say `5`, that value is called an **argument**.
-> * Don’t worry too much about it. Just follow this convention for now:
->   * In the method call, call it an _argument_.
->   * In a method definition, call it a _parameter_.
+> - Inside the definition of the method, the name within parentheses is referred to as a **parameter**. In our recent exercise, `n` is a parameter, because it’s used in the definition of `print_squares_of_numbers`.
+> - When you are passing a value to a method during a method call, say `5`, that value is called an **argument**.
+> - Don’t worry too much about it. Just follow this convention for now:
+>
+>   - In the method call, call it an _argument_.
+>   - In a method definition, call it a _parameter_.
 >
 >     ​
 >
@@ -3446,9 +3466,10 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >     In this step, we:
 >
 >     ​
-> * Looked at how to pass multiple parameters to a method, starting with two arguments
-> * Learned how you can define default values for those parameters
-> * Observed we could pass default arguments for none, some or all of those parameters
+>
+> - Looked at how to pass multiple parameters to a method, starting with two arguments
+> - Learned how you can define default values for those parameters
+> - Observed we could pass default arguments for none, some or all of those parameters
 >
 >   ​
 >
@@ -3536,9 +3557,9 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Learned how to define a method to print the multiplication table for a number
-> * Looked at how to enhance this method to make table printing more flexible
-> * Further enhanced that method to accept default arguments while printing a table
+> - Learned how to define a method to print the multiplication table for a number
+> - Looked at how to enhance this method to make table printing more flexible
+> - Further enhanced that method to accept default arguments while printing a table
 >
 >   ​
 >
@@ -3616,7 +3637,7 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * Ran through a few examples to see how indentation works in Python
+> - Ran through a few examples to see how indentation works in Python
 >
 >   ​
 >
@@ -3724,7 +3745,7 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
->   It says: ````TypeError: ```no_of_times``` must be ```int```, not string````.
+>   It says: ` TypeError: ```no_of_times``` must be ```int```, not string `.
 >
 >   ​
 >
@@ -3762,8 +3783,8 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
-> * You can start a name with an alphabet, or with an underscore.
-> * From the second character onward, you are allowed to use numeric symbols.
+> - You can start a name with an alphabet, or with an underscore.
+> - From the second character onward, you are allowed to use numeric symbols.
 >
 >   ​
 >
@@ -3775,15 +3796,15 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 >
 >   ​
 >
->   ```text
+>   ````text
 >   ```for i in range(1, 11): print(i)```...
->   ```
+>   ````
 >
 >   ​
 >
-> * **`for`** is a keyword
-> * **`in`** is a keyword
-> * **`def`** is a keyword.
+> - **`for`** is a keyword
+> - **`in`** is a keyword
+> - **`def`** is a keyword.
 >
 >   ​
 >
@@ -3800,4 +3821,3 @@ var1 = "30" #stringvar2 = 20 #integer​print(int(var1)+var2) # Output: 50
 ​
 
 ​
-

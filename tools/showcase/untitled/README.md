@@ -2,19 +2,11 @@
 
 {% embed url="https://codepen.io/bgoonz42/pen/ExXJbmX" %}
 
-
-
 {% embed url="https://codepen.io/bgoonz/pen/QWgYOJM" %}
 
-
-
 {% embed url="https://codepen.io/bgoonz/pen/QWgYOJM" %}
-
-
 
 {% embed url="https://codesandbox.io/s/pedantic-turing-h1q03" %}
-
-
 
 {% embed url="https://stackblitz.com/edit/sdk-github-project-ku5kds?file=index.ts" %}
 
@@ -32,8 +24,6 @@
 
 {% embed url="https://codepen.io/bgoonz/pen/zYzePQy" %}
 
-
-
 {% embed url="https://codesandbox.io/s/iomg4" %}
 
 {% embed url="https://codesandbox.io/s/rudj9" %}
@@ -47,6 +37,3 @@
 {% embed url="https://aboard-pickled-action.glitch.me" %}
 
 {% embed url="https://glitch.com/edit/\#!/aboard-pickled-action" %}
-
-
-

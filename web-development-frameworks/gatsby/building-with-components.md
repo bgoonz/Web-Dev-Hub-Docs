@@ -4,12 +4,12 @@
 
 ### TABLE OF CONTENTS
 
-* [Why React components?](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#why-react-components)
-* [How does Gatsby use React Components?](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#how-does-gatsby-use-react-components)
-  * [Page components](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-components)
-  * [Page template components](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components)
-  * [HTML component](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#html-component)
-  * [Non-page components](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#non-page-components)
+- [Why React components?](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#why-react-components)
+- [How does Gatsby use React Components?](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#how-does-gatsby-use-react-components)
+  - [Page components](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-components)
+  - [Page template components](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components)
+  - [HTML component](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#html-component)
+  - [Non-page components](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#non-page-components)
 
 To use Gatsby, you will need a basic understanding of React components.
 
@@ -88,6 +88,4 @@ These are examples of the different ways React components are used in Gatsby sit
 
 #### Non-page components <a id="non-page-components"></a>
 
-A Non-page component is one that’s embedded inside some other component, forming a component hierarchy. An example would be a Header component that’s included in multiple page components. Gatsby uses GraphQL to enable components to declare the data they need. Using the [StaticQuery](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/) component or [useStaticQuery hook](https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/), you can colocate a non-page component with its data.  
-
-
+A Non-page component is one that’s embedded inside some other component, forming a component hierarchy. An example would be a Header component that’s included in multiple page components. Gatsby uses GraphQL to enable components to declare the data they need. Using the [StaticQuery](https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/) component or [useStaticQuery hook](https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/), you can colocate a non-page component with its data.

@@ -37,29 +37,29 @@ You can pass auth details along with any request you send in Postman. Auth data 
 
 ### Contents <a id="contents"></a>
 
-* [Specifying authorization details](https://learning.postman.com/docs/sending-requests/authorization/#specifying-authorization-details)
-  * [Inheriting auth](https://learning.postman.com/docs/sending-requests/authorization/#inheriting-auth)
-  * [No auth](https://learning.postman.com/docs/sending-requests/authorization/#no-auth)
-  * [API key](https://learning.postman.com/docs/sending-requests/authorization/#api-key)
-  * [Bearer token](https://learning.postman.com/docs/sending-requests/authorization/#bearer-token)
-  * [Basic auth](https://learning.postman.com/docs/sending-requests/authorization/#basic-auth)
-  * [Digest auth](https://learning.postman.com/docs/sending-requests/authorization/#digest-auth)
-  * [OAuth 1.0](https://learning.postman.com/docs/sending-requests/authorization/#oauth-10)
-  * [OAuth 2.0](https://learning.postman.com/docs/sending-requests/authorization/#oauth-20)
-    * [Authorization code](https://learning.postman.com/docs/sending-requests/authorization/#authorization-code)
-      * [Authorization code \(With PKCE\)](https://learning.postman.com/docs/sending-requests/authorization/#authorization-code)
-    * [Implicit](https://learning.postman.com/docs/sending-requests/authorization/#implicit)
-    * [Password credentials](https://learning.postman.com/docs/sending-requests/authorization/#password-credentials)
-    * [Client credentials](https://learning.postman.com/docs/sending-requests/authorization/#client-credentials)
-    * [Requesting an OAuth 2.0 token](https://learning.postman.com/docs/sending-requests/authorization/#requesting-an-oauth-20-token)
-      * [Configuration Options tab](https://learning.postman.com/docs/sending-requests/authorization/#configuration-options-tab)
-      * [Advanced Options tab](https://learning.postman.com/docs/sending-requests/authorization/#advanced-options-tab)
-  * [Hawk authentication](https://learning.postman.com/docs/sending-requests/authorization/#hawk-authentication)
-  * [AWS Signature](https://learning.postman.com/docs/sending-requests/authorization/#aws-signature)
-  * [NTLM authentication](https://learning.postman.com/docs/sending-requests/authorization/#ntlm-authentication)
-  * [Akamai EdgeGrid](https://learning.postman.com/docs/sending-requests/authorization/#akamai-edgegrid)
-* [Syncing cookies](https://learning.postman.com/docs/sending-requests/authorization/#syncing-cookies)
-* [Next steps](https://learning.postman.com/docs/sending-requests/authorization/#next-steps)
+- [Specifying authorization details](https://learning.postman.com/docs/sending-requests/authorization/#specifying-authorization-details)
+  - [Inheriting auth](https://learning.postman.com/docs/sending-requests/authorization/#inheriting-auth)
+  - [No auth](https://learning.postman.com/docs/sending-requests/authorization/#no-auth)
+  - [API key](https://learning.postman.com/docs/sending-requests/authorization/#api-key)
+  - [Bearer token](https://learning.postman.com/docs/sending-requests/authorization/#bearer-token)
+  - [Basic auth](https://learning.postman.com/docs/sending-requests/authorization/#basic-auth)
+  - [Digest auth](https://learning.postman.com/docs/sending-requests/authorization/#digest-auth)
+  - [OAuth 1.0](https://learning.postman.com/docs/sending-requests/authorization/#oauth-10)
+  - [OAuth 2.0](https://learning.postman.com/docs/sending-requests/authorization/#oauth-20)
+    - [Authorization code](https://learning.postman.com/docs/sending-requests/authorization/#authorization-code)
+      - [Authorization code \(With PKCE\)](https://learning.postman.com/docs/sending-requests/authorization/#authorization-code)
+    - [Implicit](https://learning.postman.com/docs/sending-requests/authorization/#implicit)
+    - [Password credentials](https://learning.postman.com/docs/sending-requests/authorization/#password-credentials)
+    - [Client credentials](https://learning.postman.com/docs/sending-requests/authorization/#client-credentials)
+    - [Requesting an OAuth 2.0 token](https://learning.postman.com/docs/sending-requests/authorization/#requesting-an-oauth-20-token)
+      - [Configuration Options tab](https://learning.postman.com/docs/sending-requests/authorization/#configuration-options-tab)
+      - [Advanced Options tab](https://learning.postman.com/docs/sending-requests/authorization/#advanced-options-tab)
+  - [Hawk authentication](https://learning.postman.com/docs/sending-requests/authorization/#hawk-authentication)
+  - [AWS Signature](https://learning.postman.com/docs/sending-requests/authorization/#aws-signature)
+  - [NTLM authentication](https://learning.postman.com/docs/sending-requests/authorization/#ntlm-authentication)
+  - [Akamai EdgeGrid](https://learning.postman.com/docs/sending-requests/authorization/#akamai-edgegrid)
+- [Syncing cookies](https://learning.postman.com/docs/sending-requests/authorization/#syncing-cookies)
+- [Next steps](https://learning.postman.com/docs/sending-requests/authorization/#next-steps)
 
 ### Specifying authorization details <a id="specifying-authorization-details"></a>
 
@@ -155,13 +155,13 @@ In the **Authorization** tab for a request, select **Digest Auth** from the **Ty
 
 The advanced fields are optional, and Postman will attempt to populate them automatically when your request runs.
 
-* **Realm:** A string specified by the server in the `WWW-Authenticate` response header.
-* **Nonce:** A unique string specified by the server in the `WWW-Authenticate` response header.
-* **Algorithm:** A string that indicates a pair of algorithms used to produce the digest and a checksum. Postman supports `MD5` and `SHA` algorithms.
-* **qop:** The quality of protection applied to the message. The value must be one of the alternatives specified by the server in the `WWW-Authenticate` response header.
-* **Nonce Count:** The hexadecimal count of the number of requests \(including the current request\) that the client has sent with the nonce value in this request.
-* **Client Nonce:** An opaque quoted string value provided by the client, used by both client and server to avoid chosen plaintext attacks, to provide mutual authentication, and to provide some message integrity protection.
-* **Opaque:** A string of data specified by the server in the `WWW-Authenticate` response header, which should be used unchanged with URIs in the same protection space.
+- **Realm:** A string specified by the server in the `WWW-Authenticate` response header.
+- **Nonce:** A unique string specified by the server in the `WWW-Authenticate` response header.
+- **Algorithm:** A string that indicates a pair of algorithms used to produce the digest and a checksum. Postman supports `MD5` and `SHA` algorithms.
+- **qop:** The quality of protection applied to the message. The value must be one of the alternatives specified by the server in the `WWW-Authenticate` response header.
+- **Nonce Count:** The hexadecimal count of the number of requests \(including the current request\) that the client has sent with the nonce value in this request.
+- **Client Nonce:** An opaque quoted string value provided by the client, used by both client and server to avoid chosen plaintext attacks, to provide mutual authentication, and to provide some message integrity protection.
+- **Opaque:** A string of data specified by the server in the `WWW-Authenticate` response header, which should be used unchanged with URIs in the same protection space.
 
 ### OAuth 1.0 <a id="oauth-10"></a>
 
@@ -169,10 +169,10 @@ OAuth 1.0 allows client applications to access data provided by a third-party AP
 
 OAuth 1.0 is sometimes referred to as "two-legged" \(auth only between client and server\) or "three-legged" \(where a client requests data for a user of a third-party service\). An example OAuth 1.0 flow could run as follows:
 
-* To request user data with a third-party service, a consumer \(client application\) requests an access token using credentials such as a key and secret.
-* The service provider issues an initial token \(that doesn't provide access to user data\) and the consumer requests authorization from the user.
-* When the user grants auth, the consumer makes a request to exchange the temporary token for an access token, passing verification from the user auth.
-* The service provider returns the access token and the consumer can then make requests to the service provider to access the user's data.
+- To request user data with a third-party service, a consumer \(client application\) requests an access token using credentials such as a key and secret.
+- The service provider issues an initial token \(that doesn't provide access to user data\) and the consumer requests authorization from the user.
+- When the user grants auth, the consumer makes a request to exchange the temporary token for an access token, passing verification from the user auth.
+- The service provider returns the access token and the consumer can then make requests to the service provider to access the user's data.
 
 > Postman supports [OAuth Core 1.0 Revision A](https://oauth.net/core/1.0a/).
 
@@ -184,8 +184,8 @@ Select a **Signature Method** from the drop-down list—this will determine whic
 
 ![OAuth 1.0 signature methods](https://assets.postman.com/postman-docs/oauth1-signature-method-list.jpg)
 
-* If your server requires an `HMAC` or `PLAINTEXT` signature, Postman will provide **Consumer Key**, **Consumer Secret**, **Access Token**, and **Token Secret** fields.
-* If you're using an `RSA` signature, Postman will present **Consumer Key**, **Access Token**, and **Private Key** inputs.
+- If your server requires an `HMAC` or `PLAINTEXT` signature, Postman will provide **Consumer Key**, **Consumer Secret**, **Access Token**, and **Token Secret** fields.
+- If you're using an `RSA` signature, Postman will present **Consumer Key**, **Access Token**, and **Private Key** inputs.
 
 You can optionally set advanced details—otherwise Postman will attempt to autocomplete these.
 
@@ -205,20 +205,20 @@ If the request method is `POST` or `PUT`, and if the request body type is `x-www
 
 The OAuth 1.0 auth parameter values are as follows:
 
-* **Signature Method**: The method your API uses to authenticate requests.
-* **Consumer Key:** A value used to identify a consumer with the service provider.
-* **Consumer Secret:** A value used by the consumer to establish ownership of the key. _For `HMAC` and `PLAINTEXT` signing methods._
-* **Access Token:** A value representing the consumer's permission to access the user's data.
-* **Token Secret:** A value used by the consumer to establish ownership of a given token. _For `HMAC` and `PLAINTEXT` signing methods._
-* **Private Key:** A private key to generate the auth signature. _For `RSA` signing methods._
-* Advanced Parameters:
-  * **Callback URL:** URL service provider will redirect to following user authorization. _Required if your server uses OAuth 1.0 Revision A._
-  * **Verifier:** Verification code from service provider after user auth.
-  * **Time Stamp:** The timestamp the server uses to prevent replay attacks outside the time window.
-  * **Nonce:** A random string generated by the client.
-  * **Version:** The version of the OAuth authentication protocol \(1.0\).
-  * **Realm:** A string specified by the server in the `WWW-Authenticate` response header.
-  * **Include body hash:** Hash for integrity check with request bodies _other than_ `application/x-www-form-urlencoded`. _Disabled when you're using callback URL / verifier._
+- **Signature Method**: The method your API uses to authenticate requests.
+- **Consumer Key:** A value used to identify a consumer with the service provider.
+- **Consumer Secret:** A value used by the consumer to establish ownership of the key. _For `HMAC` and `PLAINTEXT` signing methods._
+- **Access Token:** A value representing the consumer's permission to access the user's data.
+- **Token Secret:** A value used by the consumer to establish ownership of a given token. _For `HMAC` and `PLAINTEXT` signing methods._
+- **Private Key:** A private key to generate the auth signature. _For `RSA` signing methods._
+- Advanced Parameters:
+  - **Callback URL:** URL service provider will redirect to following user authorization. _Required if your server uses OAuth 1.0 Revision A._
+  - **Verifier:** Verification code from service provider after user auth.
+  - **Time Stamp:** The timestamp the server uses to prevent replay attacks outside the time window.
+  - **Nonce:** A random string generated by the client.
+  - **Version:** The version of the OAuth authentication protocol \(1.0\).
+  - **Realm:** A string specified by the server in the `WWW-Authenticate` response header.
+  - **Include body hash:** Hash for integrity check with request bodies _other than_ `application/x-www-form-urlencoded`. _Disabled when you're using callback URL / verifier._
 
 > If your server implementation of OAuth 1.0 requires it, check **Add empty parameters to signature**.
 >
@@ -230,10 +230,10 @@ OAuth 1.0 allows client applications to access data provided by a third-party AP
 
 An example OAuth 2.0 flow could run as follows:
 
-* A client application makes a request for the user to authorize access to their data.
-* If the user grants access, the application then requests an access token from the service provider, passing the access grant from the user and authentication details to identify the client.
-* The service provider validates these details and returns an access token.
-* The client uses the access token to request the user data via the service provider.
+- A client application makes a request for the user to authorize access to their data.
+- If the user grants access, the application then requests an access token from the service provider, passing the access grant from the user and authentication details to identify the client.
+- The service provider validates these details and returns an access token.
+- The client uses the access token to request the user data via the service provider.
 
 In the **Authorization** tab for a request, select **OAuth 2.0** from the **Type** dropdown list. Specify whether you want pass the auth details in the request URL or headers.
 
@@ -291,22 +291,22 @@ The full list of parameters to request a new access token is as follows, dependi
 
 **Configuration Options tab**
 
-* **Token Name:** The name you want to use for the token.
-* **Grant Type:** A dropdown list of options. This will depend on the API service provider requirements.
-* **Callback URL:** The client application callback URL redirected to after auth, and that should be registered with the API provider. If not provided, Postman will use a default empty URL and attempt to extract the code or access token from it. If this does not work for your API, you can use the following URL: `https://oauth.pstmn.io/v1/browser-callback`
-  * **Authorize using browser:** You can enter your credentials in your web browser, instead of the pop-up that appears in Postman by default when you use the **Authorization code** or **Implicit** grant type. Checking this box will set the **Callback URL** to return to Postman. If you opt to authorize using the browser, make sure pop-ups are disabled for the callback URL, otherwise it will not work.
-* **Auth URL:** The endpoint for the API provider authorization server, to retrieve the auth code.
-* **Access Token URL:** The provider's authentication server, to exchange an authorization code for an access token.
-* **Client ID:** The ID for your client application registered with the API provider.
-* **Client Secret:** The client secret given to you by the API provider.
-* **Scope:** The scope of access you are requesting, which may include multiple space-separated values.
-* **State:** An opaque value to prevent cross-site request forgery.
-* **Client Authentication:** A dropdown—send a Basic Auth request in the header, or client credentials in the request body. _After upgrading to a new version, change the value in this dropdown menu to avoid problems with client authentication._
+- **Token Name:** The name you want to use for the token.
+- **Grant Type:** A dropdown list of options. This will depend on the API service provider requirements.
+- **Callback URL:** The client application callback URL redirected to after auth, and that should be registered with the API provider. If not provided, Postman will use a default empty URL and attempt to extract the code or access token from it. If this does not work for your API, you can use the following URL: `https://oauth.pstmn.io/v1/browser-callback`
+  - **Authorize using browser:** You can enter your credentials in your web browser, instead of the pop-up that appears in Postman by default when you use the **Authorization code** or **Implicit** grant type. Checking this box will set the **Callback URL** to return to Postman. If you opt to authorize using the browser, make sure pop-ups are disabled for the callback URL, otherwise it will not work.
+- **Auth URL:** The endpoint for the API provider authorization server, to retrieve the auth code.
+- **Access Token URL:** The provider's authentication server, to exchange an authorization code for an access token.
+- **Client ID:** The ID for your client application registered with the API provider.
+- **Client Secret:** The client secret given to you by the API provider.
+- **Scope:** The scope of access you are requesting, which may include multiple space-separated values.
+- **State:** An opaque value to prevent cross-site request forgery.
+- **Client Authentication:** A dropdown—send a Basic Auth request in the header, or client credentials in the request body. _After upgrading to a new version, change the value in this dropdown menu to avoid problems with client authentication._
 
 **Advanced Options tab**
 
-* **Resource:** A URI that indicates the resource or target service where the token is intended to be used.
-* **Audience:** A URI that indicates the target audience or service where the token is intended to be used.
+- **Resource:** A URI that indicates the resource or target service where the token is intended to be used.
+- **Audience:** A URI that indicates the target audience or service where the token is intended to be used.
 
 When your config is complete, click **Get New Access Token**.
 
@@ -334,16 +334,16 @@ Enter your details in the **Hawk Auth ID**, **Hawk Auth Key**, and **Algorithm**
 
 The Hawk Authentication parameters are as follows:
 
-* **Hawk Auth ID:** Your API authentication ID value.
-* **Hawk Auth Key:** Your API authentication key value.
-* **Algorithm:** The hash algorithm used to create the message authentication code \(MAC\).
-* Advanced parameters:
-  * **User:** The username.
-  * **Nonce:** A random string generated by the client.
-  * **ext:** Any application-specific information to be sent with the request.
-  * **app:** The binding between credentials and the application to prevent an attacker using credentials issued to someone else.
-  * **dlg:** The ID of the application the credentials were issued to.
-  * **Timestamp:** Timestamp the server uses to prevent replay attacks outside the time window.
+- **Hawk Auth ID:** Your API authentication ID value.
+- **Hawk Auth Key:** Your API authentication key value.
+- **Algorithm:** The hash algorithm used to create the message authentication code \(MAC\).
+- Advanced parameters:
+  - **User:** The username.
+  - **Nonce:** A random string generated by the client.
+  - **ext:** Any application-specific information to be sent with the request.
+  - **app:** The binding between credentials and the application to prevent an attacker using credentials issued to someone else.
+  - **dlg:** The ID of the application the credentials were issued to.
+  - **Timestamp:** Timestamp the server uses to prevent replay attacks outside the time window.
 
 ### AWS Signature <a id="aws-signature"></a>
 
@@ -351,8 +351,8 @@ AWS is the authorization workflow for Amazon Web Services requests. AWS uses a c
 
 The official AWS Signature documentation provides more detail:
 
-* [Signing and Authenticating REST Requests](https://docs.aws.amazon.com/AmazonS3/latest/userguide/RESTAuthentication.html)
-* [Use Postman to Call an API](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-call-api.html)
+- [Signing and Authenticating REST Requests](https://docs.aws.amazon.com/AmazonS3/latest/userguide/RESTAuthentication.html)
+- [Use Postman to Call an API](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-call-api.html)
 
 In the **Authorization** tab for a request, select **AWS Signature** from the **Type** dropdown list.
 
@@ -360,8 +360,8 @@ In the **Authorization** tab for a request, select **AWS Signature** from the **
 
 Select where Postman should append your AWS auth details using the **Add authorization data to** drop-down—choosing the request headers or URL.
 
-* If you select **Request Headers**, Postman will add `Authorization` and `X-Amz-` prefixed fields in the **Headers** tab.
-* If you select **Request URL**, Postman will add the auth details in **Params** with keys prefixed `X-Amz-`.
+- If you select **Request Headers**, Postman will add `Authorization` and `X-Amz-` prefixed fields in the **Headers** tab.
+- If you select **Request URL**, Postman will add the auth details in **Params** with keys prefixed `X-Amz-`.
 
 Enter your access key and secret values either directly in the fields or via variables for additional security.
 
@@ -369,9 +369,9 @@ You can optionally set advanced fields, but Postman will attempt to auto-generat
 
 The AWS Signature parameters are as follows:
 
-* **AWS Region:** The region receiving the request \(defaults to `us-east-1`\).
-* **Service Name:** The service receiving the request.
-* **Session Token:** Required only when using temporary security credentials.
+- **AWS Region:** The region receiving the request \(defaults to `us-east-1`\).
+- **Service Name:** The service receiving the request.
+- **Session Token:** Required only when using temporary security credentials.
 
 ### NTLM authentication <a id="ntlm-authentication"></a>
 
@@ -385,8 +385,8 @@ Enter your **Username** and **Password** for NTLM access \(use variables to avoi
 
 Advanced parameters for NTLM auth are as follows:
 
-* **Domain:** The domain or host to authenticate against.
-* **Workstation:** The hostname of the PC.
+- **Domain:** The domain or host to authenticate against.
+- **Workstation:** The hostname of the PC.
 
 ### Akamai EdgeGrid <a id="akamai-edgegrid"></a>
 
@@ -409,4 +409,3 @@ If you have session cookies in your browser, you can sync them to Postman using 
 ### Next steps <a id="next-steps"></a>
 
 If you're having issues getting a request to authenticate and run successfully, try some of the tips in [troubleshooting API requests](https://learning.postman.com/docs/sending-requests/troubleshooting-api-requests/). If you still have auth problems, check out the [authentication tag](https://community.postman.com/tags/authentication) on the Postman forum.
-

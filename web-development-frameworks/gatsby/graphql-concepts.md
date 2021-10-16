@@ -1,29 +1,27 @@
 # GraphQL Concepts
 
-
-
-## 
+##
 
 ### TABLE OF CONTENTS
 
-* [Why is GraphQL so cool?](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#why-is-graphql-so-cool)
-* [What does a GraphQL query look like?](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#what-does-a-graphql-query-look-like)
-  * [Understanding the parts of a query](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#understanding-the-parts-of-a-query)
-    * [Query operation type](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#query-operation-type)
-    * [Operation name](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#operation-name)
-    * [Query fields](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#query-fields)
-* [How to learn GraphQL](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#how-to-learn-graphql)
-* [How do GraphQL and Gatsby work together?](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#how-do-graphql-and-gatsby-work-together)
-* [Where does Gatsby's GraphQL schema come from?](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#where-does-gatsbys-graphql-schema-come-from)
-* [Powerful data transformations](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#powerful-data-transformations)
-  * [Formatting dates](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#formatting-dates)
-  * [Markdown](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#markdown)
-  * [Images](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#images)
-* [Advanced](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#advanced)
-  * [Fragments](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#fragments)
-* [Further reading](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#further-reading)
-  * [Getting started with GraphQL](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#getting-started-with-graphql)
-  * [Advanced readings on GraphQL](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#advanced-readings-on-graphql)
+- [Why is GraphQL so cool?](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#why-is-graphql-so-cool)
+- [What does a GraphQL query look like?](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#what-does-a-graphql-query-look-like)
+  - [Understanding the parts of a query](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#understanding-the-parts-of-a-query)
+    - [Query operation type](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#query-operation-type)
+    - [Operation name](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#operation-name)
+    - [Query fields](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#query-fields)
+- [How to learn GraphQL](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#how-to-learn-graphql)
+- [How do GraphQL and Gatsby work together?](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#how-do-graphql-and-gatsby-work-together)
+- [Where does Gatsby's GraphQL schema come from?](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#where-does-gatsbys-graphql-schema-come-from)
+- [Powerful data transformations](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#powerful-data-transformations)
+  - [Formatting dates](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#formatting-dates)
+  - [Markdown](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#markdown)
+  - [Images](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#images)
+- [Advanced](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#advanced)
+  - [Fragments](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#fragments)
+- [Further reading](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#further-reading)
+  - [Getting started with GraphQL](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#getting-started-with-graphql)
+  - [Advanced readings on GraphQL](https://www.gatsbyjs.com/docs/conceptual/graphql-concepts/#advanced-readings-on-graphql)
 
 There are many options for loading data into React components. One of the most popular and powerful of these is a technology called [GraphQL](https://graphql.org/).
 
@@ -52,10 +50,10 @@ Since all data is combined in the data layer, it’s even possible to query mult
 
 For a more in-depth look, read [why Gatsby uses GraphQL](https://www.gatsbyjs.com/docs/why-gatsby-uses-graphql/).
 
-* Eliminate frontend data boilerplate — no need to worry about requesting & waiting for data. Just ask for the data you need with a GraphQL query and it’ll show up when you need it
-* Push frontend complexity into queries — many data transformations can be done at _build-time_ within your GraphQL queries
-* It’s the perfect data querying language for the often complex/nested data dependencies of modern applications
-* Improve performance by removing data bloat — GraphQL enables you to select only the data you need, not whatever an API returns
+- Eliminate frontend data boilerplate — no need to worry about requesting & waiting for data. Just ask for the data you need with a GraphQL query and it’ll show up when you need it
+- Push frontend complexity into queries — many data transformations can be done at _build-time_ within your GraphQL queries
+- It’s the perfect data querying language for the often complex/nested data dependencies of modern applications
+- Improve performance by removing data bloat — GraphQL enables you to select only the data you need, not whatever an API returns
 
 ### What does a GraphQL query look like? <a id="what-does-a-graphql-query-look-like"></a>
 
@@ -105,8 +103,8 @@ Your experience developing with Gatsby might be the first time you’ve seen Gra
 
 When starting out with GraphQL, we recommend the following two tutorials:
 
-* [https://www.howtographql.com/](https://www.howtographql.com/)
-* [https://graphql.org/learn/](https://graphql.org/learn/)
+- [https://www.howtographql.com/](https://www.howtographql.com/)
+- [https://graphql.org/learn/](https://graphql.org/learn/)
 
 [The official Gatsby tutorial](https://www.gatsbyjs.com/docs/tutorial/part-four/) also includes an introduction to using GraphQL specifically with Gatsby.
 
@@ -178,8 +176,8 @@ Copycopy code to clipboardimport React from "react"import Img from "gatsby-image
 
 See also the following blog posts:
 
-* [Making Website Building Fun](https://www.gatsbyjs.com/blog/2017-10-16-making-website-building-fun/)
-* [Image Optimization Made Easy with Gatsby.js](https://medium.com/@kyle.robert.gill/ridiculously-easy-image-optimization-with-gatsby-js-59d48e15db6e)
+- [Making Website Building Fun](https://www.gatsbyjs.com/blog/2017-10-16-making-website-building-fun/)
+- [Image Optimization Made Easy with Gatsby.js](https://medium.com/@kyle.robert.gill/ridiculously-easy-image-optimization-with-gatsby-js-59d48e15db6e)
 
 ### Advanced <a id="advanced"></a>
 
@@ -221,19 +219,18 @@ Copysrc/pages/index.jsx: copy code to clipboardimport React from "react"import I
 
 ### Further reading <a id="further-reading"></a>
 
-* [Why Gatsby Uses GraphQL](https://www.gatsbyjs.com/docs/why-gatsby-uses-graphql/)
-* [The Anatomy of a GraphQL Query](https://www.apollographql.com/blog/the-anatomy-of-a-graphql-query-6dffa9e9e747)
+- [Why Gatsby Uses GraphQL](https://www.gatsbyjs.com/docs/why-gatsby-uses-graphql/)
+- [The Anatomy of a GraphQL Query](https://www.apollographql.com/blog/the-anatomy-of-a-graphql-query-6dffa9e9e747)
 
 #### Getting started with GraphQL <a id="getting-started-with-graphql"></a>
 
-* [https://graphql.org/learn/](https://graphql.org/learn/)
-* [https://www.howtographql.com/](https://www.howtographql.com/)
-* [https://reactjs.org/blog/2015/05/01/graphql-introduction.html](https://reactjs.org/blog/2015/05/01/graphql-introduction.html)
-* [https://services.github.com/on-demand/graphql/](https://services.github.com/on-demand/graphql/)
+- [https://graphql.org/learn/](https://graphql.org/learn/)
+- [https://www.howtographql.com/](https://www.howtographql.com/)
+- [https://reactjs.org/blog/2015/05/01/graphql-introduction.html](https://reactjs.org/blog/2015/05/01/graphql-introduction.html)
+- [https://services.github.com/on-demand/graphql/](https://services.github.com/on-demand/graphql/)
 
 #### Advanced readings on GraphQL <a id="advanced-readings-on-graphql"></a>
 
-* [GraphQL specification](https://spec.graphql.org/October2016/)
-* [Interfaces and Unions](https://medium.com/the-graphqlhub/graphql-tour-interfaces-and-unions-7dd5be35de0d)
-* [Relay Compiler \(which Gatsby uses to process queries\)](https://facebook.github.io/relay/docs/en/compiler-architecture.html)
-
+- [GraphQL specification](https://spec.graphql.org/October2016/)
+- [Interfaces and Unions](https://medium.com/the-graphqlhub/graphql-tour-interfaces-and-unions-7dd5be35de0d)
+- [Relay Compiler \(which Gatsby uses to process queries\)](https://facebook.github.io/relay/docs/en/compiler-architecture.html)

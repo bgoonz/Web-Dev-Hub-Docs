@@ -9,30 +9,24 @@ description: >-
 
 {% embed url="https://codesandbox.io/embed/morning-sun-rmrcw?autoresize=1&codemirror=1&fontsize=8&hidenavigation=1&theme=light&view=preview" %}
 
-
-
 {% embed url="https://grubbytrimenterprise.bgoonz.repl.co/" %}
 
 {% embed url="https://replit.com/@bgoonz/GrubbyTrimEnterprise\#index.html" %}
 
-
-
 {% embed url="https://bryan-guner.gitbook.io/solidarity-blockchain-nfts/" %}
-
-
 
 #### KEY TAKEAWAYS <a id="mntl-sc-block-callout-heading_1-0"></a>
 
-* Blockchain is a specific type of database.
-* It differs from a typical database in the way it stores information; blockchains store data in blocks that are then chained together. 
-* As new data comes in it is entered into a fresh block. Once the block is filled with data it is chained onto the previous block, which makes the data chained together in chronological order.
-* Different types of information can be stored on a blockchain but the most common use so far has been as a ledger for transactions. 
-* In Bitcoin’s case, blockchain is used in a decentralized way so that no single person or group has control—rather, all users collectively retain control.
-* Decentralized blockchains are immutable, which means that the data entered is irreversible. For Bitcoin, this means that transactions are permanently recorded and viewable to anyone.
+- Blockchain is a specific type of database.
+- It differs from a typical database in the way it stores information; blockchains store data in blocks that are then chained together.
+- As new data comes in it is entered into a fresh block. Once the block is filled with data it is chained onto the previous block, which makes the data chained together in chronological order.
+- Different types of information can be stored on a blockchain but the most common use so far has been as a ledger for transactions.
+- In Bitcoin’s case, blockchain is used in a decentralized way so that no single person or group has control—rather, all users collectively retain control.
+- Decentralized blockchains are immutable, which means that the data entered is irreversible. For Bitcoin, this means that transactions are permanently recorded and viewable to anyone.
 
 ### What is Blockchain? <a id="mntl-sc-block_1-0-4"></a>
 
-Blockchain seems complicated, and it definitely can be, but its core concept is really quite simple. A blockchain is a type of database. To be able to understand blockchain, it helps to first understand what a database actually is. 
+Blockchain seems complicated, and it definitely can be, but its core concept is really quite simple. A blockchain is a type of database. To be able to understand blockchain, it helps to first understand what a database actually is.
 
 A database is a collection of information that is stored electronically on a computer system. Information, or data, in databases is typically structured in table format to allow for easier searching and filtering for specific information. What is the difference between someone using a spreadsheet to store information rather than a database?
 
@@ -58,35 +52,35 @@ A database structures its data into tables whereas a blockchain, like its name i
 
 ### Decentralization <a id="mntl-sc-block_1-0-24"></a>
 
-For the purpose of understanding blockchain, it is instructive to view it in the context of how it has been implemented by Bitcoin. Like a database, Bitcoin needs a collection of computers to store its blockchain. For Bitcoin, this blockchain is just a specific type of database that stores every Bitcoin transaction ever made. In Bitcoin’s case, and unlike most databases, these computers are not all under one roof, and each computer or group of computers is operated by a unique individual or group of individuals.  
+For the purpose of understanding blockchain, it is instructive to view it in the context of how it has been implemented by Bitcoin. Like a database, Bitcoin needs a collection of computers to store its blockchain. For Bitcoin, this blockchain is just a specific type of database that stores every Bitcoin transaction ever made. In Bitcoin’s case, and unlike most databases, these computers are not all under one roof, and each computer or group of computers is operated by a unique individual or group of individuals.
 
-Imagine that a company owns a server comprised of 10,000 computers with a database holding all of its client's account information. This company has a warehouse containing all of these computers under one roof and has full control of each of these computers and all the information contained within them. Similarly, Bitcoin consists of thousands of computers, but each computer or group of computers that hold its blockchain is in a different geographic location and they are all operated by separate individuals or groups of people. These computers that makeup Bitcoin’s network are called nodes. 
+Imagine that a company owns a server comprised of 10,000 computers with a database holding all of its client's account information. This company has a warehouse containing all of these computers under one roof and has full control of each of these computers and all the information contained within them. Similarly, Bitcoin consists of thousands of computers, but each computer or group of computers that hold its blockchain is in a different geographic location and they are all operated by separate individuals or groups of people. These computers that makeup Bitcoin’s network are called nodes.
 
-In this model, Bitcoin’s blockchain is used in a decentralized way. However, private, centralized blockchains, where the computers that make up its network are owned and operated by a single entity, do exist. 
+In this model, Bitcoin’s blockchain is used in a decentralized way. However, private, centralized blockchains, where the computers that make up its network are owned and operated by a single entity, do exist.
 
-In a blockchain, each node has a full record of the data that has been stored on the blockchain since its inception. For Bitcoin, the data is the entire history of all Bitcoin transactions. If one node has an error in its data it can use the thousands of other nodes as a reference point to correct itself. This way, no one node within the network can alter information held within it. Because of this, the history of transactions in each block that make up Bitcoin’s blockchain is irreversible. 
+In a blockchain, each node has a full record of the data that has been stored on the blockchain since its inception. For Bitcoin, the data is the entire history of all Bitcoin transactions. If one node has an error in its data it can use the thousands of other nodes as a reference point to correct itself. This way, no one node within the network can alter information held within it. Because of this, the history of transactions in each block that make up Bitcoin’s blockchain is irreversible.
 
-If one user tampers with Bitcoin’s record of transactions, all other nodes would cross-reference each other and easily pinpoint the node with the incorrect information. This system helps to establish an exact and transparent order of events. For Bitcoin, this information is a list of transactions, but it also is possible for a blockchain to hold a variety of information like legal contracts, state identifications, or a company’s product inventory. 
+If one user tampers with Bitcoin’s record of transactions, all other nodes would cross-reference each other and easily pinpoint the node with the incorrect information. This system helps to establish an exact and transparent order of events. For Bitcoin, this information is a list of transactions, but it also is possible for a blockchain to hold a variety of information like legal contracts, state identifications, or a company’s product inventory.
 
 In order to change how that system works, or the information stored within it, a majority of the decentralized network’s computing power would need to agree on said changes. This ensures that whatever changes do occur are in the best interests of the majority.
 
 ### Transparency <a id="mntl-sc-block_1-0-37"></a>
 
-Because of the decentralized nature of Bitcoin’s blockchain, all transactions can be transparently viewed by either having a personal node or by using [blockchain explorers](https://www.blockchain.com/explorer?utm_campaign=dcomnav_explorer) that allow anyone to see transactions occurring live. Each node has its own copy of the chain that gets updated as fresh blocks are confirmed and added. This means that if you wanted to, you could track Bitcoin wherever it goes. 
+Because of the decentralized nature of Bitcoin’s blockchain, all transactions can be transparently viewed by either having a personal node or by using [blockchain explorers](https://www.blockchain.com/explorer?utm_campaign=dcomnav_explorer) that allow anyone to see transactions occurring live. Each node has its own copy of the chain that gets updated as fresh blocks are confirmed and added. This means that if you wanted to, you could track Bitcoin wherever it goes.
 
 For example, exchanges have been hacked in the past where those who held Bitcoin on the exchange lost everything. While the hacker may be entirely anonymous, the Bitcoins that they extracted are easily traceable. If the Bitcoins that were stolen in some of these hacks were to be moved or spent somewhere, it would be known.
 
 ### Is Blockchain Secure? <a id="mntl-sc-block_1-0-42"></a>
 
-Blockchain technology accounts for the issues of security and trust in several ways. First, new blocks are always stored linearly and chronologically. That is, they are always added to the “end” of the blockchain. If you take a look at Bitcoin’s blockchain, you’ll see that each block has a position on the chain, called a “height.” As of November 2020, the block’s height had reached 656,197 blocks so far. 
+Blockchain technology accounts for the issues of security and trust in several ways. First, new blocks are always stored linearly and chronologically. That is, they are always added to the “end” of the blockchain. If you take a look at Bitcoin’s blockchain, you’ll see that each block has a position on the chain, called a “height.” As of November 2020, the block’s height had reached 656,197 blocks so far.
 
 After a block has been added to the end of the blockchain, it is very difficult to go back and alter the contents of the block unless the majority reached a consensus to do so. That’s because each block contains its own hash, along with the hash of the block before it, as well as the previously mentioned time stamp. Hash codes are created by a math function that turns digital information into a string of numbers and letters. If that information is edited in any way, the hash code changes as well.
 
-Here’s why that’s important to security. Let’s say a hacker wants to alter the blockchain and steal Bitcoin from everyone else. If they were to alter their own single copy, it would no longer align with everyone else's copy. When everyone else cross-references their copies against each other, they would see this one copy stand out and that hacker's version of the chain would be cast away as illegitimate. 
+Here’s why that’s important to security. Let’s say a hacker wants to alter the blockchain and steal Bitcoin from everyone else. If they were to alter their own single copy, it would no longer align with everyone else's copy. When everyone else cross-references their copies against each other, they would see this one copy stand out and that hacker's version of the chain would be cast away as illegitimate.
 
-Succeeding with such a hack would require that the hacker simultaneously control and alter 51% of the copies of the blockchain so that their new copy becomes the majority copy and thus, the agreed-upon chain. Such an attack would also require an immense amount of money and resources as they would need to redo all of the blocks because they would now have different timestamps and hash codes. 
+Succeeding with such a hack would require that the hacker simultaneously control and alter 51% of the copies of the blockchain so that their new copy becomes the majority copy and thus, the agreed-upon chain. Such an attack would also require an immense amount of money and resources as they would need to redo all of the blocks because they would now have different timestamps and hash codes.
 
-Due to the size of Bitcoin’s network and how fast it is growing, the cost to pull off such a feat would probably be insurmountable. Not only would this be extremely expensive, but it would also likely be fruitless. Doing such a thing would not go unnoticed, as network members would see such drastic alterations to the blockchain. The network members would then fork off to a new version of the chain that has not been affected. 
+Due to the size of Bitcoin’s network and how fast it is growing, the cost to pull off such a feat would probably be insurmountable. Not only would this be extremely expensive, but it would also likely be fruitless. Doing such a thing would not go unnoticed, as network members would see such drastic alterations to the blockchain. The network members would then fork off to a new version of the chain that has not been affected.
 
 This would cause the attacked version of Bitcoin to plummet in value, making the attack ultimately pointless as the bad actor has control of a worthless asset. The same would occur if the bad actor were to attack the new fork of Bitcoin. It is built this way so that taking part in the network is far more economically incentivized than attacking it.
 
@@ -96,9 +90,9 @@ The goal of blockchain is to allow digital information to be recorded and distri
 
 The Bitcoin protocol is built on a blockchain. In a research paper introducing the digital currency, Bitcoin’s pseudonymous creator, Satoshi Nakamoto, referred to it as “a new electronic cash system that’s fully peer-to-peer, with no trusted third party.”
 
-The key thing to understand here is that Bitcoin merely uses blockchain as a means to transparently record a ledger of payments, but blockchain can, in theory, be used to immutably record any number of data points. As discussed above, this could be in the form of transactions, votes in an election, product inventories, state identifications, deeds to homes, and much more. 
+The key thing to understand here is that Bitcoin merely uses blockchain as a means to transparently record a ledger of payments, but blockchain can, in theory, be used to immutably record any number of data points. As discussed above, this could be in the form of transactions, votes in an election, product inventories, state identifications, deeds to homes, and much more.
 
-Currently, there is a vast variety of blockchain-based projects looking to implement blockchain in ways to help society other than just recording transactions. One good example is that of blockchain being used as a way to vote in democratic elections. The nature of blockchain’s immutability means that fraudulent voting would become far more difficult to occur. 
+Currently, there is a vast variety of blockchain-based projects looking to implement blockchain in ways to help society other than just recording transactions. One good example is that of blockchain being used as a way to vote in democratic elections. The nature of blockchain’s immutability means that fraudulent voting would become far more difficult to occur.
 
 For example, a voting system could work such that each citizen of a country would be issued a single cryptocurrency or token. Each candidate would then be given a specific wallet address, and the voters would send their token or crypto to whichever candidate's address they wish to vote for. The transparent and traceable nature of blockchain would eliminate the need for human vote counting as well as the ability of bad actors to tamper with physical ballots.
 
@@ -164,19 +158,19 @@ As mentioned, blockchain could be used to facilitate a modern voting system. Vot
 
 For all of its complexity, blockchain’s potential as a decentralized form of record-keeping is almost without limit. From greater user privacy and heightened security to lower processing fees and fewer errors, blockchain technology may very well see applications beyond those outlined above. But there are also some disadvantages.Pros
 
-* Improved accuracy by removing human involvement in verification
-* Cost reductions by eliminating third-party verification
-* Decentralization makes it harder to tamper with
-* Transactions are secure, private, and efficient
-* Transparent technology
-* Provides a banking alternative and way to secure personal information for citizens of countries with unstable or underdeveloped governments
+- Improved accuracy by removing human involvement in verification
+- Cost reductions by eliminating third-party verification
+- Decentralization makes it harder to tamper with
+- Transactions are secure, private, and efficient
+- Transparent technology
+- Provides a banking alternative and way to secure personal information for citizens of countries with unstable or underdeveloped governments
 
 Cons
 
-* Significant technology cost associated with mining bitcoin
-* Low transactions per second
-* History of use in illicit activities
-* Regulation
+- Significant technology cost associated with mining bitcoin
+- Low transactions per second
+- History of use in illicit activities
+- Regulation
 
 Here are the selling points of blockchain for businesses on the market today in more detail.
 
@@ -214,9 +208,9 @@ Most blockchains are entirely open-source software. This means that anyone and e
 
 #### Banking the Unbanked <a id="mntl-sc-block_1-0-149"></a>
 
-Perhaps the most profound facet of blockchain and Bitcoin is the ability for anyone, regardless of ethnicity, gender, or cultural background, to use it. According to the world bank there are nearly 2 billion adults that do not have bank accounts or any means of storing their money or wealth.5﻿ Nearly all of these individuals live in developing countries where the economy is in its infancy and entirely dependent on cash. 
+Perhaps the most profound facet of blockchain and Bitcoin is the ability for anyone, regardless of ethnicity, gender, or cultural background, to use it. According to the world bank there are nearly 2 billion adults that do not have bank accounts or any means of storing their money or wealth.5﻿ Nearly all of these individuals live in developing countries where the economy is in its infancy and entirely dependent on cash.
 
-These people often earn little money that is paid in physical cash. They then need to store this physical cash in hidden locations in their homes or places of living leaving them subject to robbery or unnecessary violence. Keys to a bitcoin wallet can be stored on a piece of paper, a cheap cell phone, or even memorized if necessary. For most people, it is likely that these options are more easily hidden than a small pile of cash under a mattress. 
+These people often earn little money that is paid in physical cash. They then need to store this physical cash in hidden locations in their homes or places of living leaving them subject to robbery or unnecessary violence. Keys to a bitcoin wallet can be stored on a piece of paper, a cheap cell phone, or even memorized if necessary. For most people, it is likely that these options are more easily hidden than a small pile of cash under a mattress.
 
 Blockchains of the future are also looking for solutions to not only be a unit of account for wealth storage, but also to store medical records, property rights, and a variety of other legal contracts.
 
@@ -240,13 +234,13 @@ Solutions to this issue have been in development for years. There are currently 
 
 #### Illegal Activity <a id="mntl-sc-block_1-0-171"></a>
 
-While confidentiality on the blockchain network protects users from hacks and preserves privacy, it also allows for illegal trading and activity on the blockchain network. The most cited example of blockchain being used for illicit transactions is probably the [Silk Road](https://www.investopedia.com/terms/s/silk-road.asp), an online “dark web” drug marketplace operating from February 2011 until October 2013 when it was shut down by the FBI.6﻿ 
+While confidentiality on the blockchain network protects users from hacks and preserves privacy, it also allows for illegal trading and activity on the blockchain network. The most cited example of blockchain being used for illicit transactions is probably the [Silk Road](https://www.investopedia.com/terms/s/silk-road.asp), an online “dark web” drug marketplace operating from February 2011 until October 2013 when it was shut down by the FBI.6
 
 The website allowed users to browse the website without being tracked using the Tor browser and make illegal purchases in Bitcoin or other cryptocurrencies. Current U.S. regulations require financial service providers to obtain information about their customers when they open an account, verify the identity of each customer, and confirm that customers do not appear on any list of known or suspected terrorist organizations. This system can be seen as both a pro and a con. It gives anyone access to financial accounts but also allows criminals to more easily transact. Many have argued that the good uses of crypto, like banking the unbanked world, outweigh the bad uses of cryptocurrency, especially when most illegal activity is still accomplished through untraceable cash.
 
 #### Regulation <a id="mntl-sc-block_1-0-176"></a>
 
-Many in the crypto space have expressed concerns about government regulation over cryptocurrencies. While it is getting increasingly difficult and near impossible to end something like Bitcoin as its decentralized network grows, governments could theoretically make it illegal to own cryptocurrencies or participate in their networks. 
+Many in the crypto space have expressed concerns about government regulation over cryptocurrencies. While it is getting increasingly difficult and near impossible to end something like Bitcoin as its decentralized network grows, governments could theoretically make it illegal to own cryptocurrencies or participate in their networks.
 
 Over time this concern has grown smaller as large companies like PayPal begin to allow the ownership and use of cryptocurrencies on its platform.
 
@@ -258,19 +252,13 @@ With many practical applications for the technology already being implemented an
 
 As we prepare to head into the third decade of blockchain, it’s no longer a question of "if" legacy companies will catch on to the technology—it's a question of "when."SPONSOREDBitcoin is an Investment, Too.Did you know [BTC beat the 2020 returns](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssn8g0fN-PFxkUb7n5UajQX86GlGqRM4HIKxyMQgE0eVL4hhLzz0t5WlkfM5kpcbxpP_KCU144yiuzwAbETn5SRKItpUJsnkH7C632n0L8LsDa9A7rNhUUArfT4w6IzzIH9yb2rkyO-NEiBHRhMino5TycHN8d1-xKmPOsuxPhXXZiP5bRD6NuwEPBryFBvonZqYzXKjrU0JAwnkIeYMGe9g3JRjRa8KNOsKUVERRVD4DhLRHqrGYP2uj-10UnLDVhTBv8Pwpb8nPD5C8K0WYeRiBVD1AHNWtf_IIcdcgSQbV2fuvkzTP4PQ_Eh618uJrCcB6vbb6l3PnWIjgjtgwLMsm8FtA&sig=Cg0ArKJSzKeO2jpMni4nEAE&fbs_aeid=[gw_fbsaeid]&urlfix=1&adurl=https://ad.doubleclick.net/ddm/clk/503674036;310776828;l) of gold and the S&P 500? And there’s a slew of altcoins making similarly exciting moves in the market. You can [find them on eToro,](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssn8g0fN-PFxkUb7n5UajQX86GlGqRM4HIKxyMQgE0eVL4hhLzz0t5WlkfM5kpcbxpP_KCU144yiuzwAbETn5SRKItpUJsnkH7C632n0L8LsDa9A7rNhUUArfT4w6IzzIH9yb2rkyO-NEiBHRhMino5TycHN8d1-xKmPOsuxPhXXZiP5bRD6NuwEPBryFBvonZqYzXKjrU0JAwnkIeYMGe9g3JRjRa8KNOsKUVERRVD4DhLRHqrGYP2uj-10UnLDVhTBv8Pwpb8nPD5C8K0WYeRiBVD1AHNWtf_IIcdcgSQbV2fuvkzTP4PQ_Eh618uJrCcB6vbb6l3PnWIjgjtgwLMsm8FtA&sig=Cg0ArKJSzKeO2jpMni4nEAE&fbs_aeid=[gw_fbsaeid]&urlfix=1&adurl=https://ad.doubleclick.net/ddm/clk/503674036;310776828;l) the world’s leading social trading platform. For a limited time, [if you make $500 in trades, eToro will give $50!](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssn8g0fN-PFxkUb7n5UajQX86GlGqRM4HIKxyMQgE0eVL4hhLzz0t5WlkfM5kpcbxpP_KCU144yiuzwAbETn5SRKItpUJsnkH7C632n0L8LsDa9A7rNhUUArfT4w6IzzIH9yb2rkyO-NEiBHRhMino5TycHN8d1-xKmPOsuxPhXXZiP5bRD6NuwEPBryFBvonZqYzXKjrU0JAwnkIeYMGe9g3JRjRa8KNOsKUVERRVD4DhLRHqrGYP2uj-10UnLDVhTBv8Pwpb8nPD5C8K0WYeRiBVD1AHNWtf_IIcdcgSQbV2fuvkzTP4PQ_Eh618uJrCcB6vbb6l3PnWIjgjtgwLMsm8FtA&sig=Cg0ArKJSzKeO2jpMni4nEAE&fbs_aeid=[gw_fbsaeid]&urlfix=1&adurl=https://ad.doubleclick.net/ddm/clk/503674036;310776828;l) So, get into the crypto game and [start investing on eToro today.](https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssn8g0fN-PFxkUb7n5UajQX86GlGqRM4HIKxyMQgE0eVL4hhLzz0t5WlkfM5kpcbxpP_KCU144yiuzwAbETn5SRKItpUJsnkH7C632n0L8LsDa9A7rNhUUArfT4w6IzzIH9yb2rkyO-NEiBHRhMino5TycHN8d1-xKmPOsuxPhXXZiP5bRD6NuwEPBryFBvonZqYzXKjrU0JAwnkIeYMGe9g3JRjRa8KNOsKUVERRVD4DhLRHqrGYP2uj-10UnLDVhTBv8Pwpb8nPD5C8K0WYeRiBVD1AHNWtf_IIcdcgSQbV2fuvkzTP4PQ_Eh618uJrCcB6vbb6l3PnWIjgjtgwLMsm8FtA&sig=Cg0ArKJSzKeO2jpMni4nEAE&fbs_aeid=[gw_fbsaeid]&urlfix=1&adurl=https://ad.doubleclick.net/ddm/clk/503674036;310776828;l)
 
-
-
-
-
-
-
 ### A New Direction for Advertising <a id="mntl-sc-block_1-0-2"></a>
 
 One of the most notable features of blockchain as a finance application is anonymity. While this is a product of blockchain’s origins in [bitcoin](https://www.investopedia.com/terms/b/bitcoin.asp), for advertising, anonymity is sometimes counter-productive. Blockchain solutions for advertising will instead make use of the robust accountability that the technology provides, wiping the slate clean for all participants.
 
 Blockchains built since the original \(bitcoin\) have expanded upon the importance of such transparency, and many of the most influential chains will find their killer apps in the advertising world. Companies like [Papyrus](https://papyrus.global/) exemplify this trend, with platforms that make it easy for users to know exactly who is paying to advertise to them, and where their data is coming from. With Papyrus, these users can even decide not to share any of their browsing habits or other usage data, though if they do, advertisers can pay them for it directly.
 
-From the user side, this is preferable to the excess of ceaseless, inaccurate ads that bombard us daily. Advertisers might be put off at first, but will quickly realize that the system works in their favor as well. 
+From the user side, this is preferable to the excess of ceaseless, inaccurate ads that bombard us daily. Advertisers might be put off at first, but will quickly realize that the system works in their favor as well.
 
 This type of schema is a far cry from the current way of doing things, which sees users voluntarily surrender their most personal information with little reward. These are the “terms and conditions” that most people skip over when setting up new applications. With new, blockchain-based platforms like Papyrus and MetaX, all those with a stake in advertising will share resources, see the entire flow of information in the same place, and have an even playing field that allows for more efficient competition.
 
@@ -293,8 +281,6 @@ Instead of paying upfront for expensive ad space targeting fishermen, for instan
 Online advertising companies are just now beginning to develop real use cases for blockchain in their daily activities, and those who get ahead of the curve sooner will benefit greatly. Blockchain is the ultimate democratization tool, and while those who currently protect the status quo are right to be afraid, at some point everyone will realize that an open system creates as many opportunities as it takes away.
 
 The future is fast in coming, and instead of predicting it, the fast movers are already making it happen.
-
-
 
 ### What Is A Blockchain, Take One <a id="what-is-a-blockchain-take-one"></a>
 
@@ -353,9 +339,9 @@ The process of looking for blocks is called _mining_. This is because, just like
 
 Every second, each miner node in a blockchain tests thousands of random strings to try and form a new block. So running a miner in the blockchain pumps a huge amount of computer resources \(storage and CPU\). That's why **you must pay to store facts** in a blockchain. Reading facts, on the other hand, is free: you just need to run your own node, and you'll recuperate the entire history of facts issued by all the other nodes. So to summarize:
 
-* Reading data is free
-* Adding facts costs a small fee
-* Mining a block brings in the money of all the fees of the facts included in the block
+- Reading data is free
+- Adding facts costs a small fee
+- Mining a block brings in the money of all the fees of the facts included in the block
 
 We're not talking about real money here. In fact, each blockchain has its own \(crypto-\)currency. It's called Bitcoin \(**BTC**\) in the Bitcoin network, Ether \(**ETH**\) on the Ethereum network, etc. To make a payment in the Bitcoin network, you must pay a small fee in Bitcoins - just like you would pay a fee to a bank. But then, where do the first coins come from?[![A pile of Bitcoins](https://marmelab.com/images/blog/bitcoin.jpg)](https://www.linkedin.com/pulse/20141106071134-811619-value-of-bitcoins-why-bitcoins-may-become-the-gold-of-the-21st-century-and-beyond)
 
@@ -369,16 +355,16 @@ So far we've mostly mentioned facts storage, but a blockchain can also **execute
 
 Other blockchains allow for more sophisticated contracts. In Ethereum for instance, each contract carries a **mini-database**, and exposes methods to modify the data. As contracts are replicated across all nodes, so are their database. Each time a user calls a method on the contract and therefore updates the underlying data, this command is replicated and replayed by the entire network. This allows for a distributed consensus on the execution of a promise.
 
-This idea of pre-programed conditions, interfaced with the real world, and broadcasted to everyone, is called a [**smart contract**](https://en.wikipedia.org/wiki/Smart_contract). A contract is a promise that signing parties agree to make legally-enforceable. A smart contract is the same, except with the word "technically-" instead of "legally-". This removes the need for a judge, or any authority acknowledged by both parties.[![Public hearings of the Court presided over by H.E. Judge Rosalyn Higgins \(February/March 2006\)](https://marmelab.com/images/blog/judges.jpg)](https://commons.wikimedia.org/wiki/File:ICJ-CJI_hearing_1.jpg)
+This idea of pre-programed conditions, interfaced with the real world, and broadcasted to everyone, is called a [**smart contract**](https://en.wikipedia.org/wiki/Smart_contract). A contract is a promise that signing parties agree to make legally-enforceable. A smart contract is the same, except with the word "technically-" instead of "legally-". This removes the need for a judge, or any authority acknowledged by both parties.[![Public hearings of the Court presided over by H.E. Judge Rosalyn Higgins (February/March 2006)](https://marmelab.com/images/blog/judges.jpg)](https://commons.wikimedia.org/wiki/File:ICJ-CJI_hearing_1.jpg)
 
 > Imagine that you want to rent your house for a week and 1,000, with a 50% upfront payment. You and the loaner sign a contract, probably written by a lawyer. You also need a bank to receive the payment. At the beginning of the week, you ask for a5,000 deposit; the loaner writes a check for it. At the end of the week, the loaner refuses to pay the remaining 50%. You also realize that they broke a window, and that the deposit check refers to an empty account. You'll need a lawyer to help you enforce the rental contract in a court.
 >
 > Smart contracts in a blockchain allow you to get rid of the bank, the lawyer, and the court. Just write a program that defines how much money should be transferred in response to certain conditions:
 >
-> * two weeks before beginning of rental: transfer $500 from loaner to owner
-> * cancellation by the owner: transfer $500 from owner to loaner
-> * end of the rental period: transfer $500 from loaner to owner
-> * proof of physical degradation after the rental period: transfer $5,000 from loaner to owner
+> - two weeks before beginning of rental: transfer $500 from loaner to owner
+> - cancellation by the owner: transfer $500 from owner to loaner
+> - end of the rental period: transfer $500 from loaner to owner
+> - proof of physical degradation after the rental period: transfer $5,000 from loaner to owner
 >
 > Upload this smart contract to the blockchain, and you're all set. At the time defined in the contract, the money transfers will occur. And if the owner can bring a predefined proof of physical degradation, they get the $5,000 automatically \(without any need for a deposit\).
 
@@ -400,7 +386,7 @@ In my opinion, the best way to understand the blockchain is to look at it from v
 
 **What it compares to** See the blockchain as a database replicated as many times as there are nodes and \(loosely\) synchronized, or as a supercomputer formed by the combination of the CPUs/GPUs of all its nodes. You can use this supercomputer to store and process data, just like you would with a remote API. Except you don't need to own the backend, and you can be sure the data is safe and processed properly by the network.
 
-![It&apos;s all a matter of perspective](https://marmelab.com/images/blog/perspective.jpg)
+![It's all a matter of perspective](https://marmelab.com/images/blog/perspective.jpg)
 
 ### Practical Implications <a id="practical-implications"></a>
 
@@ -424,12 +410,12 @@ YouTube might track you and we would rather have your consent before loading thi
 
 These smart people have seen a huge potential in the blockchain. It concerns disintermediation. The blockchain can potentially replace all the intermediaries required to build trust. Let's see a few example applications, most of which are just proof-of-concepts for now:
 
-* [Monegraph](https://monegraph.com/) lets authors claim their work, and set their rules \(and fares\) for use
-* [La Zooz](http://www.lazooz.net/) is a decentralized Uber. Share your car, find a seat, without Uber taking a fee.
-* [Augur](https://augur.net/) is an online bookmaker. Bet on outcomes, and get paid.
-* [Storj.io](https://storj.io/) is a peer-to-peer storage system. Rent your unused disk space, or find ultra cheap online storage.
-* [Muse](http://museblockchain.com/) is a distributed, open, and transparent database tailored for the music industry
-* [Ripple](https://ripple.com/) enables low cost cross-border payments for banks
+- [Monegraph](https://monegraph.com/) lets authors claim their work, and set their rules \(and fares\) for use
+- [La Zooz](http://www.lazooz.net/) is a decentralized Uber. Share your car, find a seat, without Uber taking a fee.
+- [Augur](https://augur.net/) is an online bookmaker. Bet on outcomes, and get paid.
+- [Storj.io](https://storj.io/) is a peer-to-peer storage system. Rent your unused disk space, or find ultra cheap online storage.
+- [Muse](http://museblockchain.com/) is a distributed, open, and transparent database tailored for the music industry
+- [Ripple](https://ripple.com/) enables low cost cross-border payments for banks
 
 ![Blockchain use cases](https://marmelab.com/images/blog/blockchain_infographic.png)
 
@@ -441,16 +427,16 @@ Will it benefit to end users, who won't need third parties to exchange goods and
 
 The technology behind the blockchain uses advanced cryptography, custom network protocols, and performance optimizations. This is all too sophisticated to be redeveloped each time a project needs a blockchain. Fortunately, aside of Bitcoin, there are several open-source blockchain implementations. Here are the most advanced:
 
-* [Ethereum](https://www.ethereum.org/): an open-source blockchain platform by the Ethereum Foundation
-* [Hyperledger](https://www.hyperledger.org/): another open-source implementation, this time by the Linux Foundation. The first proposal was [published very recently](https://github.com/hyperledger/fabric).
-* [Eris Industries](https://erisindustries.com/): Tools helping to manipulate Ethereum, Bitcoin or totally independent blockchains, mostly to build private networks. Their [tutorials](https://docs.erisindustries.com/tutorials/getting-started/) and [explainers](https://docs.erisindustries.com/explainers/) are a great starting point for an overview of the blockchain technology.
+- [Ethereum](https://www.ethereum.org/): an open-source blockchain platform by the Ethereum Foundation
+- [Hyperledger](https://www.hyperledger.org/): another open-source implementation, this time by the Linux Foundation. The first proposal was [published very recently](https://github.com/hyperledger/fabric).
+- [Eris Industries](https://erisindustries.com/): Tools helping to manipulate Ethereum, Bitcoin or totally independent blockchains, mostly to build private networks. Their [tutorials](https://docs.erisindustries.com/tutorials/getting-started/) and [explainers](https://docs.erisindustries.com/explainers/) are a great starting point for an overview of the blockchain technology.
 
 [![Ethereum](https://marmelab.com/images/blog/ethereum.png)](https://www.ethereum.org/)
 
 The maturity of these implementations varies a lot. If you have to build an application now, we'd advise:
 
-* Eris for a closed Blockchain, or to discover and play with the technology
-* Ethereum for a shared Blockchain
+- Eris for a closed Blockchain, or to discover and play with the technology
+- Ethereum for a shared Blockchain
 
 Also, Bitcoin isn't a good choice to build an application upon. It was designed for money transactions and nothing else, although you can program pseudo-smart contracts \(but you have to love [assembly](https://en.bitcoin.it/wiki/Contract)\). The network currently [suffers a serious growth crisis](https://medium.com/@octskyward/the-resolution-of-the-Bitcoin-experiment-dabb30201f7), transactions wait in line for up to one hour to get inserted in a block. Miners often select transactions with the highest fees, so money transfers in Bitcoin become more expensive than they are in a Bank. The developer community is at war, and the speculation on the cryptocurrency makes the face value move too much.
 
@@ -460,37 +446,32 @@ How big are blockchains today? Let's see some numbers.
 
 Bitcoin:
 
-* Block time: 10 minutes
-* Number of bitcoins earned for each mined block: 25
-* [Number of blocks mined](https://blockchain.info/): over 400,000
-* [Number of transactions per block](https://blockchain.info/en/charts/n-transactions-per-block): over 1,200
-* [Number of nodes in the network](https://bitnodes.21.co/): ~7000
-* [Bitcoin value](http://www.coindesk.com/price/): $420
-* [Most of the computing power is said to be concentrated in China](https://medium.com/@octskyward/the-resolution-of-the-bitcoin-experiment-dabb30201f7#.by0blzsmz)
+- Block time: 10 minutes
+- Number of bitcoins earned for each mined block: 25
+- [Number of blocks mined](https://blockchain.info/): over 400,000
+- [Number of transactions per block](https://blockchain.info/en/charts/n-transactions-per-block): over 1,200
+- [Number of nodes in the network](https://bitnodes.21.co/): ~7000
+- [Bitcoin value](http://www.coindesk.com/price/): $420
+- [Most of the computing power is said to be concentrated in China](https://medium.com/@octskyward/the-resolution-of-the-bitcoin-experiment-dabb30201f7#.by0blzsmz)
 
 Ethereum:
 
-* Block time: 10 seconds
-* Number of Ether earned for each mined block: 5
-* [Number of blocks mined](https://ethstats.net/): more than 1,400,000
-* [Number of transactions per day](https://stats.etherchain.org/dashboard/db/transactions?theme=light): over 30,000
-* [Number of nodes in the network](https://www.ethernodes.org/network/1): over 6,000
-* [Ether value](https://www.etherchain.org/): around $10, but it varies a lot.
-* [Most of the computing power is said to be concentrated by a miner pool called "Dwarfpool"](https://www.etherchain.org/statistics/miners)
+- Block time: 10 seconds
+- Number of Ether earned for each mined block: 5
+- [Number of blocks mined](https://ethstats.net/): more than 1,400,000
+- [Number of transactions per day](https://stats.etherchain.org/dashboard/db/transactions?theme=light): over 30,000
+- [Number of nodes in the network](https://www.ethernodes.org/network/1): over 6,000
+- [Ether value](https://www.etherchain.org/): around $10, but it varies a lot.
+- [Most of the computing power is said to be concentrated by a miner pool called "Dwarfpool"](https://www.etherchain.org/statistics/miners)
 
 ![Ethereum stats](https://marmelab.com/images/blog/ethstats.png)
 
 ### [https://ethstats.net/](https://ethstats.net/) <a id="conclusion"></a>
 
-
-
 {% embed url="https://ethstats.net/" %}
-
-
 
 ### Conclusion <a id="conclusion"></a>
 
 The blockchain technology is both intriguing and exciting. Could it be the revolution that gurus predict? Or is it just a speculative bubble based on an impractical idea? After reading a lot on the matter, we couldn't form a definitive opinion.
 
 When we face uncertainty, we know a great way to lift it: trying. That's what we decided to do. [Read the next post in this series](https://marmelab.com/blog/2016/05/20/blockchain-for-web-developers-in-practice.html) to see what we've learned by **building a real world app running on the blockchain**.
-

@@ -113,4 +113,3 @@
 [Inferring chart type from autocorrelationautocorrelation and other evils](https://observablehq.com/@tophtucker/inferring-chart-type-from-autocorrelation-and-other-evils) stats, essay, death @tophtucker  
 [Book visualizations sandbox](https://observablehq.com/@bmschmidt/book-visualizations-sandbox) book, text, vega @bmschmidt  
 [Munsell spin](https://observablehq.com/@jrus/munsell-spin) color,
-

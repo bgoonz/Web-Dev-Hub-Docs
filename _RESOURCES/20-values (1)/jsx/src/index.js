@@ -1,11 +1,11 @@
 // Import the React and ReactDOM libraries
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
 // Create a react component
 const App = () => {
-  const buttonText = { text: 'Click me' };
-  const labelText = 'Enter name:';
+  const buttonText = { text: "Click me" };
+  const labelText = "Enter name:";
 
   return (
     <div>
@@ -13,7 +13,7 @@ const App = () => {
         {labelText}
       </label>
       <input id="name" type="text" />
-      <button style={{ backgroundColor: 'blue', color: 'white' }}>
+      <button style={{ backgroundColor: "blue", color: "white" }}>
         {buttonText.text}
       </button>
     </div>
@@ -21,4 +21,4 @@ const App = () => {
 };
 
 // Take the react component and show it on the screen
-ReactDOM.render(<App />, document.querySelector('#root'));
+ReactDOM.render(<App />, document.querySelector("#root"));

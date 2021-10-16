@@ -2,14 +2,14 @@
 
 I would like to devote this article to those people who, after learning Python, faced the usual problem - What next? Are you sure you have already learned it? I will attach a small checklist:![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
-* Classes and OOP, you can immediately name 5 magic methods
-* Functional programming possibilities
-* Generators, iterators, and decorators
-* Have an idea of what is in the standard library
-* Know how to work with libraries and virtual environments
-* Understand asynchrony and its use
-* You understand what the GIL is, threads and processes
-* You can name at least one interpreter besides CPython
+- Classes and OOP, you can immediately name 5 magic methods
+- Functional programming possibilities
+- Generators, iterators, and decorators
+- Have an idea of what is in the standard library
+- Know how to work with libraries and virtual environments
+- Understand asynchrony and its use
+- You understand what the GIL is, threads and processes
+- You can name at least one interpreter besides CPython
 
 If you were able to answer all these questions yes, then congratulations you know Python.![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
@@ -56,4 +56,3 @@ Another interesting development option is hardware. One of the most popular plat
 This platform supports several languages ​​such as micropython, C, Rust. Historically, most projects have written sketches in C. There is an online micropython editor and environment \[https://micropython.org/unicorn/\] where you can look at various projects and try to write something yourself.![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
 I would also like to mention boards with WiFi support, for example, esp8266. Great board, using it I was trying to make a small HTTP server. You can also make a Wifi access point, a WiFi network scanner, a small proxy server and even a server with web sockets support on it. If you can figure out how to work with it, it will be a huge leap into the world of IoT
-

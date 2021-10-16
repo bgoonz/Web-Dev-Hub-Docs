@@ -7,22 +7,20 @@ description: >-
 
 # ExpressJS Overview
 
-
-
 ## ExpressJS Overview
 
 **Topics Covered**
 
-* Feature of Express
-* How does Express work?
-* Why Express?
+- Feature of Express
+- How does Express work?
+- Why Express?
 
 #### **Features of Express Framework:**
 
-*  Express can be used to design a single-page, multi-page and hybrid web applications.
-* Express allows to setup middlewares to respond to HTTP Requests.
-* Express defines a routing table which is used to performs different actions based on HTTP method and URL.
-* Express allows to dynamically render HTML Pages based on passing arguments to templates.
+- Express can be used to design a single-page, multi-page and hybrid web applications.
+- Express allows to setup middlewares to respond to HTTP Requests.
+- Express defines a routing table which is used to performs different actions based on HTTP method and URL.
+- Express allows to dynamically render HTML Pages based on passing arguments to templates.
 
 #### **How does Express work?**
 
@@ -30,10 +28,10 @@ Express applications work by sending a sequence of calls to the middle tier. The
 
 #### **Why Express?**
 
-* Ultrafast Input/Output.
-* Asynchronous and single threaded.
-* MVC like structure.
-* Robust API makes routing very easy.
+- Ultrafast Input/Output.
+- Asynchronous and single threaded.
+- MVC like structure.
+- Robust API makes routing very easy.
 
 **How does Express look like :**
 
@@ -42,17 +40,17 @@ Let’s see a basic express.js Example-
 **express.js**
 
 ```text
-var express = require('express');  
+var express = require('express');
 var app = express();
 
-app.get('/', function (req, res) {  
-    res.send('Welcome to Pabbly.com!');  
+app.get('/', function (req, res) {
+    res.send('Welcome to Pabbly.com!');
 });
 
-var server = app.listen(8000, function () {  
-    var host = server.address().address;  
-    var port = server.address().port;  
-    console.log('Example app listening at http://%s:%s', host, port);  
+var server = app.listen(8000, function () {
+    var host = server.address().address;
+    var port = server.address().port;
+    console.log('Example app listening at http://%s:%s', host, port);
 });Copy
 ```
 
@@ -62,25 +60,21 @@ var server = app.listen(8000, function () {
 Welcome to Pabbly.com!
 ```
 
-
-
-
-
 ## ExpressJS Restful APIs
 
 ExpressJS RESTful API is an application program interface \(API\) that uses HTTP requests to GET, PUT, POST and DELETE data.
 
 **Topics Covered**
 
-* What is ExpressJS Restful API?
-* Why we need ExpressJS Restful APIs.
-* Advantages
-* Initialize npm and install the  modules
-* Creates  a  New User
-* Returns All the Users From the Database
-* Gets a Single User From the Database
-* Deletes a  User From the Database
-* Updates a Single User in  the Database
+- What is ExpressJS Restful API?
+- Why we need ExpressJS Restful APIs.
+- Advantages
+- Initialize npm and install the modules
+- Creates a New User
+- Returns All the Users From the Database
+- Gets a Single User From the Database
+- Deletes a User From the Database
+- Updates a Single User in the Database
 
 **Why we need ExpressJS Restful APIs**
 
@@ -88,13 +82,13 @@ The World Wide Web itself is based on HTTP and is based on RESTful API architect
 
 #### Advantages
 
-1. Quick & easy development  
-2. High performance  
-3. Run on single thread to handle multiple concurrent requests  
-4. Easy to write APIs and interaction code  
-5. Streaming support  
-6. Monitoring possibilities  
-7. Authentication support  
+1. Quick & easy development
+2. High performance
+3. Run on single thread to handle multiple concurrent requests
+4. Easy to write APIs and interaction code
+5. Streaming support
+6. Monitoring possibilities
+7. Authentication support
 8. Lightweight, fast and scalable
 
 Here is the restful API Design with Node
@@ -110,7 +104,7 @@ npm install body-parser --saveCopy
 
 Now, we will use ExpressJS for developing an application. It is a node.js framework. We will use Mongoose. Mongoose is an ORM \(Object Relational Mapper\). We use an ORM to simplify the transfer of data between our application and the database. The body-parser module is a middleware we are going to use, to parse our data sent through HTTP requests.
 
-To start developing the application, create a  file and name it as  _app.js_. Write following code in your _app.js_ file.
+To start developing the application, create a file and name it as _app.js_. Write following code in your _app.js_ file.
 
 _app.js_
 
@@ -122,7 +116,7 @@ module.exports = app;Copy
 
 _app.js_ will be used for configuring the app. All the logic will be placed in the directory.
 
-We will use a _module.exports_ module to make the application’s object visible to the program when we call it using _require\(\)_. Now have to create _Routes_ to listen to the application. For that, we will create another file, name it as  _server.js_, and we will write following code in our  _server.js_ file.
+We will use a _module.exports_ module to make the application’s object visible to the program when we call it using _require\(\)_. Now have to create _Routes_ to listen to the application. For that, we will create another file, name it as _server.js_, and we will write following code in our _server.js_ file.
 
 _server.js_
 
@@ -134,7 +128,7 @@ console.log('server listening on port ' + port);
 });Copy
 ```
 
-Create a new file and name it as _db.js_,  This file’s Code will be used to store your database connection.
+Create a new file and name it as _db.js_, This file’s Code will be used to store your database connection.
 
 _db.js_
 
@@ -143,7 +137,7 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://yourDatabaseURI');Copy
 ```
 
- add a require\(\) in the app.js, like this 
+add a require\(\) in the app.js, like this
 
 _app.js_
 
@@ -154,7 +148,7 @@ var db = require('./db');
 module.exports = app;Copy
 ```
 
-Create a new folder name it _user.js_. This folder will contain the _schema_ and _model_. We Will start by creating a user _model_. This _model_ will be used as a _schema\(_blueprint\) showing what all users in our database will look like. Create a file named _user.js_ and write code into your _user.js_ file.
+Create a new folder name it _user.js_. This folder will contain the _schema_ and _model_. We Will start by creating a user _model_. This _model_ will be used as a _schema\(\_blueprint\) showing what all users in our database will look like. Create a file named \_user.js_ and write code into your _user.js_ file.
 
 _user.js_
 
@@ -171,8 +165,9 @@ module.exports = mongoose.model('User');Copy
 
 Create another file, and name it _UserController.js_. It will contain the actions which control the flow of data to and fro the database.
 
-_UserController.js_  
-****
+_UserController.js_
+
+---
 
 ```text
 var express = require('express');
@@ -224,8 +219,9 @@ var app = express();
 var db = require('./db');Copy
 ```
 
-Add These two  Lines to the _app.js_ file  
-****
+Add These two Lines to the _app.js_ file
+
+---
 
 ```text
 var UserController = require('./user/UserController');
@@ -249,7 +245,7 @@ router.get('/:id', function (req, res) {
 
 We have now added another GET request, the router.get method’s first parameter. It now has a value consist of a colon followed by some text. The value passed to ‘/: id’ will be accessible through the req.params object. Where the name of the query parameter will get mapped to a property with the same name on the req.params object.
 
-Mongoose has a method called .findById which is will use  ID by which it will return a user information. The ID is the first parameter and the callback function is the second parameter. All the Mongoose methods want a value as a first parameter and a callback function as the last parameter. This callback will be called after the database has returned the query value. The same can be done with the DELETE request as well.
+Mongoose has a method called .findById which is will use ID by which it will return a user information. The ID is the first parameter and the callback function is the second parameter. All the Mongoose methods want a value as a first parameter and a callback function as the last parameter. This callback will be called after the database has returned the query value. The same can be done with the DELETE request as well.
 
 **Delete a User From the Database**
 
@@ -283,22 +279,16 @@ router.put('/:id', function (req, res) {
 
 The _router.put\(\)_ request is very similar to the two requests above. It also takes one query parameter and ID. It is different in a way that it also takes body parameters, just like the POST request we wrote first. The only HTTP methods which have a body are POST and PUT.
 
-
-
-
-
-
-
 ## ExpressJS Routing : URL Routes for Sending Response
 
 In express.js routing, we are going to learn how based on different urls we will are going to server different pages and content on the webpages.
 
-**Topics Covered** 
+**Topics Covered**
 
-* Home Route – Opening home page on server
-* HTML File Route – Open HTML page on server
-* json Route – Open json response on the route
-* File Route – Send a complete file on the route section
+- Home Route – Opening home page on server
+- HTML File Route – Open HTML page on server
+- json Route – Open json response on the route
+- File Route – Send a complete file on the route section
 
 **Home Route – Opening home page on server**
 
@@ -440,7 +430,7 @@ Scaffolding allows us to create a skeleton for a web application when we work wi
 
 We are going to start Scaffolding using the _Express-generator_ module. For this, we have to install express-generator module.
 
-Firstly, you need to open the folder in your editor where you want to work. I have opened  ‘example’ folder in Visual Studio Code because I want to work here, Then open the terminal and install the Express-generator module. For this installation run the following command : –
+Firstly, you need to open the folder in your editor where you want to work. I have opened ‘example’ folder in Visual Studio Code because I want to work here, Then open the terminal and install the Express-generator module. For this installation run the following command : –
 
 ```text
 C:\node\example>npm install express-generator -gCopy
@@ -452,13 +442,11 @@ If you are planning to use it multiple times run the following command and insta
 C:\node\example>expressCopy
 ```
 
-So now you can find all the necessary directories and files has been created in your folder.  
-
+So now you can find all the necessary directories and files has been created in your folder.
 
 ![](https://www.pabbly.com/wp-content/uploads/2018/02/scaffolding1-2.png)
 
-Every folder has different content inside.  
-
+Every folder has different content inside.
 
 ![Scaffolding](https://www.pabbly.com/wp-content/uploads/2018/02/scaffolding2-1.png)
 
@@ -656,12 +644,6 @@ Your server will get started now. You can open the browser and can make a reques
 
 All the scaffolding is done now. All the required directories have been created. You can obviously create more directories and can make changes according to your needs but the basic structure is done now.
 
-
-
-
-
-
-
 ## ExpressJS Static : Serving Static Files
 
 Server static files using Express.js, we have created a directory with the name of public and express will automatically server all the files in the folder. We are going to server static file using app.use\(express.static\(‘public’\)\). This is know as middleware in express.
@@ -709,4 +691,3 @@ index.html
 </body>
 </html>
 ```
-
