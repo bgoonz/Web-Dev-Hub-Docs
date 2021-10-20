@@ -3071,7 +3071,7 @@ def validTriangle(A): B = []; i=0 while i < len(A) - 2: a,b,c = A[i], A[i+1], A[
         i += 1
     return B
 
-print(validTriangle(A)) print('********\*\*\*\*********\*********\*\*\*\*********')
+print(validTriangle(A)) print('**\*\*\*\***\*\*\*\***\*\*\*\***\***\*\*\*\***\*\*\*\***\*\*\*\***')
 
 """ Given two strings a and b, merge the strings so that the letters are added in alternating order starting with string a. If one string is longer than the other, then append the letters to the end of the merged string. ex. "abcd", "efghi" -> "aebfcgdhi" ex. "", "abcd" -> "abcd" ex. "abcdefg", "zxy" -> "azbxycdefg" """
 
@@ -3079,7 +3079,7 @@ a='abcd' b = 'efghi'
 
 def mergeStrings(a,b): res = '' for l1,l2 in zip(a,b): res += l1 + l2 if len(a) < len(b): res += b[len(a):] elif len(a) > len(b): res += a[len(b):] return res
 
-print(mergeStrings(a,b)) # aebfcgdhi a=''; b='abcd' print(mergeStrings(a,b)) # abcd a="abcdefg"; b="zxy" print(mergeStrings(a,b)) # azbxcydefg print('********\*\*\*\*********\*********\*\*\*\*********')
+print(mergeStrings(a,b)) # aebfcgdhi a=''; b='abcd' print(mergeStrings(a,b)) # abcd a="abcdefg"; b="zxy" print(mergeStrings(a,b)) # azbxcydefg print('**\*\*\*\***\*\*\*\***\*\*\*\***\***\*\*\*\***\*\*\*\***\*\*\*\***')
 
 """ Given a string s, return the longest and lexicographically smallest palindromic string that can be formed from the characters.
 
@@ -3102,7 +3102,7 @@ def smallestPalindromeOP(s): if not s: return s res = [] counts = collections.Co
 
     return first + middle_letter + first[::-1]
 
-print(smallestPalindromeOP('abbaa')) print('********\*\*\*\*********\*********\*\*\*\*********')
+print(smallestPalindromeOP('abbaa')) print('**\*\*\*\***\*\*\*\***\*\*\*\***\***\*\*\*\***\*\*\*\***\*\*\*\***')
 
 # Easy - Medium
 
@@ -3112,7 +3112,7 @@ word = "one"; string_list = ["one", "Three", "Two"]
 
 def isConcatenate(word, string_list): res = '' for w in string_list: res += w if res == word: return True return False
 
-print(isConcatenate(word, string_list)) print('********\*\*\*\*********\*********\*\*\*\*********')
+print(isConcatenate(word, string_list)) print('**\*\*\*\***\*\*\*\***\*\*\*\***\***\*\*\*\***\*\*\*\***\*\*\*\***')
 
 # Medium
 
@@ -3155,7 +3155,7 @@ def magic*number(matrix): sub_matrices = [] serial = 0 for j in range(size): for
 
 magic_number(matrix)
 
-print('********\*\*\*\*********\*********\*\*\*\*********')
+print('**\*\*\*\***\*\*\*\***\*\*\*\***\***\*\*\*\***\*\*\*\***\*\*\*\***')
 
 """ Rotate matrix around diagonals. Given an n x n matrix M, where n is odd and n > 1, and an integer k, rotate M counterclockwise k times which are not on the main diagonal or on the diagonal from the top right to the bottom left. Return the new matrix. Ex. I put \*s to show which elements are fixed on the diagonals.
 
