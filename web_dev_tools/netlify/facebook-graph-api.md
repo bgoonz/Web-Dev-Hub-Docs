@@ -6,16 +6,16 @@ The [Graph API Explorer tool](https://developers.facebook.com/tools/explorer) al
 
 ### Common Uses <a id="common-uses"></a>
 
-* Test API queries with your Live app's settings, including approved [login permissions](https://developers.facebook.com/docs/apps/review/login-permissions), [features](https://developers.facebook.com/docs/apps/review/feature), and settings for any added products such as Facebook Login.
-* Test API queries with your Developer Mode app's settings using any [login permissions](https://developers.facebook.com/docs/apps/review/login-permissions) and [features](https://developers.facebook.com/docs/apps/review/feature) on test users or test data.
-* Quickly generate access tokens.
-* Get code samples of the queries you have run.
-* Generate debug information to include in support requests.
+- Test API queries with your Live app's settings, including approved [login permissions](https://developers.facebook.com/docs/apps/review/login-permissions), [features](https://developers.facebook.com/docs/apps/review/feature), and settings for any added products such as Facebook Login.
+- Test API queries with your Developer Mode app's settings using any [login permissions](https://developers.facebook.com/docs/apps/review/login-permissions) and [features](https://developers.facebook.com/docs/apps/review/feature) on test users or test data.
+- Quickly generate access tokens.
+- Get code samples of the queries you have run.
+- Generate debug information to include in support requests.
 
 ### Requirements <a id="requirements"></a>
 
-* A [Facebook Developer Account](https://developers.facebook.com/apps).
-* An app for which you have a role, such as an [admin, developer, or tester role](https://developers.facebook.com/docs/apps#roles).
+- A [Facebook Developer Account](https://developers.facebook.com/apps).
+- An app for which you have a role, such as an [admin, developer, or tester role](https://developers.facebook.com/docs/apps#roles).
 
 ### Components <a id="components"></a>
 
@@ -96,4 +96,3 @@ The `id` and `name` fields are publicly available and can be returned if the Use
 ![](https://scontent.fewr1-5.fna.fbcdn.net/v/t39.2365-6/79918818_2547429572153654_5190211881201041408_n.png?_nc_cat=111&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=MlqfKC_0EmoAX_Jv-Cp&_nc_ht=scontent.fewr1-5.fna&oh=3db497a3fb5d0edee62345524791e203&oe=61591A5A)
 
 Submit your query, and you should see your app-scoped User ID and name appear in the response window.[Open the Graph API Explorer](https://developers.facebook.com/tools/explorer)
-

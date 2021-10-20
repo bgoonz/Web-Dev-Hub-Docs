@@ -35,7 +35,7 @@ const ConfirmModal = ({
 }) => {
   const [isWorking, setWorking] = useState(false);
 
-  const handleConfirm = modal => {
+  const handleConfirm = (modal) => {
     setWorking(true);
     onConfirm({
       close: () => {
@@ -51,7 +51,7 @@ const ConfirmModal = ({
       testid="modal:confirm"
       withCloseIcon={false}
       renderLink={renderLink}
-      renderContent={modal => (
+      renderContent={(modal) => (
         <Fragment>
           <Title>{title}</Title>
           {message && <Message>{message}</Message>}

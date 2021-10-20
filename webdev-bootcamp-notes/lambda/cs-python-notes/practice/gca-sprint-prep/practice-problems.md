@@ -2993,7 +2993,7 @@ ex. "adeadeadevue" -> "adeeaeeda"
 
 ```
 
-def smallestPalindrome(s): if not s: return s res = [] counts = collections.Counter(s) alphabet = "abcdefghijklmnopqrstuvwxyz" middle_letter = "" for letter in alphabet: count = counts.get(letter, 0) if count > 0: if count % 2 == 1 and middle_letter == "": middle_letter = letter res.append(letter _ ((count - 1) // 2)) else: res.append(letter _ (count // 2)) first= "".join(sb) return first + middle_letter + first[::-1]
+def smallestPalindrome(s): if not s: return s res = [] counts = collections.Counter(s) alphabet = "abcdefghijklmnopqrstuvwxyz" middle*letter = "" for letter in alphabet: count = counts.get(letter, 0) if count > 0: if count % 2 == 1 and middle_letter == "": middle_letter = letter res.append(letter * ((count - 1) // 2)) else: res.append(letter \_ (count // 2)) first= "".join(sb) return first + middle_letter + first[::-1]
 
 ```
 
@@ -3071,7 +3071,7 @@ def validTriangle(A): B = []; i=0 while i < len(A) - 2: a,b,c = A[i], A[i+1], A[
         i += 1
     return B
 
-print(validTriangle(A)) print('********************\*********************')
+print(validTriangle(A)) print('********\*\*\*\*********\*********\*\*\*\*********')
 
 """ Given two strings a and b, merge the strings so that the letters are added in alternating order starting with string a. If one string is longer than the other, then append the letters to the end of the merged string. ex. "abcd", "efghi" -> "aebfcgdhi" ex. "", "abcd" -> "abcd" ex. "abcdefg", "zxy" -> "azbxycdefg" """
 
@@ -3079,7 +3079,7 @@ a='abcd' b = 'efghi'
 
 def mergeStrings(a,b): res = '' for l1,l2 in zip(a,b): res += l1 + l2 if len(a) < len(b): res += b[len(a):] elif len(a) > len(b): res += a[len(b):] return res
 
-print(mergeStrings(a,b)) # aebfcgdhi a=''; b='abcd' print(mergeStrings(a,b)) # abcd a="abcdefg"; b="zxy" print(mergeStrings(a,b)) # azbxcydefg print('********************\*********************')
+print(mergeStrings(a,b)) # aebfcgdhi a=''; b='abcd' print(mergeStrings(a,b)) # abcd a="abcdefg"; b="zxy" print(mergeStrings(a,b)) # azbxcydefg print('********\*\*\*\*********\*********\*\*\*\*********')
 
 """ Given a string s, return the longest and lexicographically smallest palindromic string that can be formed from the characters.
 
@@ -3096,13 +3096,13 @@ str = "abbaa" print(smallestPalindrome(str)) str = "adeadeadevue" print(smallest
 
 # OP's solution - similar :)
 
-def smallestPalindromeOP(s): if not s: return s res = [] counts = collections.Counter(s) alphabet = "abcdefghijklmnopqrstuvwxyz" middle_letter = "" for letter in alphabet: count = counts.get(letter, 0) if count > 0: if count % 2 == 1 and middle_letter == "": middle_letter = letter res.append(letter _ ((count - 1) // 2)) else: res.append(letter _ (count // 2))
+def smallestPalindromeOP(s): if not s: return s res = [] counts = collections.Counter(s) alphabet = "abcdefghijklmnopqrstuvwxyz" middle*letter = "" for letter in alphabet: count = counts.get(letter, 0) if count > 0: if count % 2 == 1 and middle_letter == "": middle_letter = letter res.append(letter * ((count - 1) // 2)) else: res.append(letter \_ (count // 2))
 
     first = "".join(res)
 
     return first + middle_letter + first[::-1]
 
-print(smallestPalindromeOP('abbaa')) print('********************\*********************')
+print(smallestPalindromeOP('abbaa')) print('********\*\*\*\*********\*********\*\*\*\*********')
 
 # Easy - Medium
 
@@ -3112,7 +3112,7 @@ word = "one"; string_list = ["one", "Three", "Two"]
 
 def isConcatenate(word, string_list): res = '' for w in string_list: res += w if res == word: return True return False
 
-print(isConcatenate(word, string_list)) print('********************\*********************')
+print(isConcatenate(word, string_list)) print('********\*\*\*\*********\*********\*\*\*\*********')
 
 # Medium
 
@@ -3124,7 +3124,7 @@ size = 2 # 2 x 2
 
 def get_beauty(sub_matrix): sm = sorted(sub_matrix) magic_num = 1 for num in sm: if num > magic_num: return magic_num magic_num += 1 return magic_num
 
-def magic_number(matrix): sub_matrices = [] serial = 0 for j in range(size): for i in range(size): x, y = j _ len(matrix)//size, i _ len(matrix)//size
+def magic*number(matrix): sub_matrices = [] serial = 0 for j in range(size): for i in range(size): x, y = j * len(matrix)//size, i \_ len(matrix)//size
 
             sub_matrix = []
             for p in range(size):
@@ -3155,7 +3155,7 @@ def magic_number(matrix): sub_matrices = [] serial = 0 for j in range(size): for
 
 magic_number(matrix)
 
-print('********************\*********************')
+print('********\*\*\*\*********\*********\*\*\*\*********')
 
 """ Rotate matrix around diagonals. Given an n x n matrix M, where n is odd and n > 1, and an integer k, rotate M counterclockwise k times which are not on the main diagonal or on the diagonal from the top right to the bottom left. Return the new matrix. Ex. I put \*s to show which elements are fixed on the diagonals.
 

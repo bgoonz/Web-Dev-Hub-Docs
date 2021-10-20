@@ -30,12 +30,12 @@ const ProjectBoardIssueDetailsEstimateTracking = ({ issue, updateIssue }) => (
     <Modal
       testid="modal:tracking"
       width={400}
-      renderLink={modal => (
+      renderLink={(modal) => (
         <TrackingLink onClick={modal.open}>
           <TrackingWidget issue={issue} />
         </TrackingLink>
       )}
-      renderContent={modal => (
+      renderContent={(modal) => (
         <ModalContents>
           <ModalTitle>Time tracking</ModalTitle>
           <TrackingWidget issue={issue} />
@@ -65,7 +65,7 @@ const renderHourInput = (fieldName, issue, updateIssue) => (
     placeholder="Number"
     filter={/^\d{0,6}$/}
     value={isNil(issue[fieldName]) ? '' : issue[fieldName]}
-    onChange={stringValue => {
+    onChange={(stringValue) => {
       const value = stringValue.trim() ? Number(stringValue) : null;
       updateIssue({ [fieldName]: value });
     }}

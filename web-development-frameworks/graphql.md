@@ -142,31 +142,31 @@ The GitHub GraphQL API offers flexibility and the ability to define precisely th
 
 ### [In this article](https://docs.github.com/en/graphql/overview/about-the-graphql-api#in-this-article) <a href="in-this-article" id="in-this-article"></a>
 
-* [Overview](https://docs.github.com/en/graphql/overview/about-the-graphql-api#overview)
-* [About GraphQL](https://docs.github.com/en/graphql/overview/about-the-graphql-api#about-graphql)
-* [Why GitHub is using GraphQL](https://docs.github.com/en/graphql/overview/about-the-graphql-api#why-github-is-using-graphql)
-* [About the GraphQL schema reference](https://docs.github.com/en/graphql/overview/about-the-graphql-api#about-the-graphql-schema-reference)
-* [Requesting support](https://docs.github.com/en/graphql/overview/about-the-graphql-api#requesting-support)
+- [Overview](https://docs.github.com/en/graphql/overview/about-the-graphql-api#overview)
+- [About GraphQL](https://docs.github.com/en/graphql/overview/about-the-graphql-api#about-graphql)
+- [Why GitHub is using GraphQL](https://docs.github.com/en/graphql/overview/about-the-graphql-api#why-github-is-using-graphql)
+- [About the GraphQL schema reference](https://docs.github.com/en/graphql/overview/about-the-graphql-api#about-the-graphql-schema-reference)
+- [Requesting support](https://docs.github.com/en/graphql/overview/about-the-graphql-api#requesting-support)
 
 ### Overview <a href="overview" id="overview"></a>
 
 Here are some quick links to get you up and running with the GraphQL API v4:
 
-* [Authentication](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql#authenticating-with-graphql)
-* [Root endpoint](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql#the-graphql-endpoint)
-* [Schema introspection](https://docs.github.com/en/graphql/guides/introduction-to-graphql#discovering-the-graphql-api)
-* [Rate limits](https://docs.github.com/en/graphql/overview/resource-limitations)
-* [Migrating from REST](https://docs.github.com/en/graphql/guides/migrating-from-rest-to-graphql)
+- [Authentication](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql#authenticating-with-graphql)
+- [Root endpoint](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql#the-graphql-endpoint)
+- [Schema introspection](https://docs.github.com/en/graphql/guides/introduction-to-graphql#discovering-the-graphql-api)
+- [Rate limits](https://docs.github.com/en/graphql/overview/resource-limitations)
+- [Migrating from REST](https://docs.github.com/en/graphql/guides/migrating-from-rest-to-graphql)
 
 ### About GraphQL <a href="about-graphql" id="about-graphql"></a>
 
 The [GraphQL](https://graphql.github.io) data query language is:
 
-* **A **[**specification**](https://graphql.github.io/graphql-spec/June2018/)**.** The spec determines the validity of the [schema](https://docs.github.com/en/graphql/guides/introduction-to-graphql#schema) on the API server. The schema determines the validity of client calls.
-* [**Strongly typed**](https://docs.github.com/en/graphql/overview/about-the-graphql-api#about-the-graphql-schema-reference)**.** The schema defines an API's type system and all object relationships.
-* [**Introspective**](https://docs.github.com/en/graphql/guides/introduction-to-graphql#discovering-the-graphql-api)**.** A client can query the schema for details about the schema.
-* [**Hierarchical**](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql)**.** The shape of a GraphQL call mirrors the shape of the JSON data it returns. [Nested fields](https://docs.github.com/en/graphql/guides/migrating-from-rest-to-graphql#example-nesting) let you query for and receive only the data you specify in a single round trip.
-* **An application layer.** GraphQL is not a storage model or a database query language. The _graph_ refers to graph structures defined in the schema, where [nodes](https://docs.github.com/en/graphql/guides/introduction-to-graphql#node) define objects and [edges](https://docs.github.com/en/graphql/guides/introduction-to-graphql#edge) define relationships between objects. The API traverses and returns application data based on the schema definitions, independent of how the data is stored.
+- **A **[**specification**](https://graphql.github.io/graphql-spec/June2018/)**.** The spec determines the validity of the [schema](https://docs.github.com/en/graphql/guides/introduction-to-graphql#schema) on the API server. The schema determines the validity of client calls.
+- [**Strongly typed**](https://docs.github.com/en/graphql/overview/about-the-graphql-api#about-the-graphql-schema-reference)**.** The schema defines an API's type system and all object relationships.
+- [**Introspective**](https://docs.github.com/en/graphql/guides/introduction-to-graphql#discovering-the-graphql-api)**.** A client can query the schema for details about the schema.
+- [**Hierarchical**](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql)**.** The shape of a GraphQL call mirrors the shape of the JSON data it returns. [Nested fields](https://docs.github.com/en/graphql/guides/migrating-from-rest-to-graphql#example-nesting) let you query for and receive only the data you specify in a single round trip.
+- **An application layer.** GraphQL is not a storage model or a database query language. The _graph_ refers to graph structures defined in the schema, where [nodes](https://docs.github.com/en/graphql/guides/introduction-to-graphql#node) define objects and [edges](https://docs.github.com/en/graphql/guides/introduction-to-graphql#edge) define relationships between objects. The API traverses and returns application data based on the schema definitions, independent of how the data is stored.
 
 ### Why GitHub is using GraphQL <a href="why-github-is-using-graphql" id="why-github-is-using-graphql"></a>
 
@@ -178,8 +178,8 @@ For more details about why GitHub has moved to GraphQL, see the original [announ
 
 The docs in the sidebar are generated from the GitHub GraphQL [schema](https://docs.github.com/en/graphql/guides/introduction-to-graphql#discovering-the-graphql-api). All calls are validated and executed against the schema. Use these docs to find out what data you can call:
 
-* Allowed operations: [queries](https://docs.github.com/en/graphql/reference/queries) and [mutations](https://docs.github.com/en/graphql/reference/mutations).
-* Schema-defined types: [scalars](https://docs.github.com/en/graphql/reference/scalars), [objects](https://docs.github.com/en/graphql/reference/objects), [enums](https://docs.github.com/en/graphql/reference/enums), [interfaces](https://docs.github.com/en/graphql/reference/interfaces), [unions](https://docs.github.com/en/graphql/reference/unions), and [input objects](https://docs.github.com/en/graphql/reference/input-objects).
+- Allowed operations: [queries](https://docs.github.com/en/graphql/reference/queries) and [mutations](https://docs.github.com/en/graphql/reference/mutations).
+- Schema-defined types: [scalars](https://docs.github.com/en/graphql/reference/scalars), [objects](https://docs.github.com/en/graphql/reference/objects), [enums](https://docs.github.com/en/graphql/reference/enums), [interfaces](https://docs.github.com/en/graphql/reference/interfaces), [unions](https://docs.github.com/en/graphql/reference/unions), and [input objects](https://docs.github.com/en/graphql/reference/input-objects).
 
 You can access this same content via the [Explorer Docs sidebar](https://docs.github.com/en/graphql/guides/using-the-explorer#accessing-the-sidebar-docs). Note that you may need to rely on both the docs and the schema validation to successfully call the GraphQL API.
 
@@ -191,10 +191,10 @@ For questions, bug reports, and discussions about GitHub Apps, OAuth Apps, and A
 
 Consider reaching out to [GitHub Support](https://github.com/contact) directly using the contact form for:
 
-* guaranteed response from GitHub staff
-* support requests involving sensitive data or private concerns
-* feature requests
-* feedback about GitHub products
+- guaranteed response from GitHub staff
+- support requests involving sensitive data or private concerns
+- feature requests
+- feedback about GitHub products
 
 ## Overview
 
@@ -218,20 +218,12 @@ Individual backends should provide their own configuration documentation, but th
 
 Anyone can write a backend, but we don't yet have a finalized and documented API. If you would like to write your own backend for a service that does not have one currently, we recommend using the [GitHub backend](https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-backend-github) as a reference for API and best practices.
 
-
-
-
-
-
-
-
-
 ## Creating Custom Widgets
 
 The NetlifyCMS exposes a `window.CMS` a global object that you can use to register custom widgets, previews, and editor plugins. The same object is also the default export if you import Netlify CMS as an npm module. The available widget extension methods are:
 
-* **registerWidget:** registers a custom widget.
-* **registerEditorComponent:** adds a block component to the Markdown editor.
+- **registerWidget:** registers a custom widget.
+- **registerEditorComponent:** adds a block component to the Markdown editor.
 
 #### Writing React Components inline <a href="writing-react-components-inline" id="writing-react-components-inline"></a>
 
@@ -334,7 +326,7 @@ CMS.registerEditorComponent(definition)
 
 **Params**
 
-* **definition:** The component definition; must specify: id, label, fields, patterns, fromBlock, toBlock, toPreview
+- **definition:** The component definition; must specify: id, label, fields, patterns, fromBlock, toBlock, toPreview
 
 **Example:**
 
@@ -469,18 +461,21 @@ For writing custom widgets as a separate package you should follow these steps:
     ```
     mkdir my-custom-widget
     ```
+
 2.  Navigate to the directory
 
     ```
     cd my-custom-widget
     ```
+
 3.  For setting up a new npm package run this command:
 
     ```
     npm init
     ```
-4. Answer the questions in the command line questionnaire.
-5. In order to build React components, we need to set up a build step. We'll be using Webpack. Please run the following commands to install the required dependencies:
+
+4.  Answer the questions in the command line questionnaire.
+5.  In order to build React components, we need to set up a build step. We'll be using Webpack. Please run the following commands to install the required dependencies:
 
 ```
    npm install --save-dev babel-loader@7 babel-core babel-plugin-transform-class-properties babel-plugin-transform-export-extensions babel-plugin-transform-object-rest-spread babel-preset-env babel-preset-react cross-env css-loader html-webpack-plugin netlify-cms react source-map-loader style-loader webpack webpack-cli webpack-serve
@@ -595,7 +590,8 @@ Here is the content of `package.json` that you will have at the end:
 
     module.exports = process.env.NODE_ENV === 'production' ? productionConfig : developmentConfig
     ```
-2. The `.babelrc` file is our local configuration for our code in the project. You should create it under the root of the application repo. It will affect all files that Babel processes. So, create a `.babelrc` file under the main project with this content:
+
+2.  The `.babelrc` file is our local configuration for our code in the project. You should create it under the root of the application repo. It will affect all files that Babel processes. So, create a `.babelrc` file under the main project with this content:
 
 ```
 {
@@ -755,9 +751,10 @@ You'll want to take a few steps before publishing a production built package to 
       // ... rest
     }
     ```
-2. For discoverability, ensure that your package name follows the pattern `netlify-cms-widget-<name>`.
-3. Delete this `README.md`, rename `README_TEMPLATE.md` to `README.md`, and update the new file for your specific widget.
-4. Rename the exports in `src/index.js`. For example, if your widget is `netlify-cms-widget-awesome`, you would do:
+
+2.  For discoverability, ensure that your package name follows the pattern `netlify-cms-widget-<name>`.
+3.  Delete this `README.md`, rename `README_TEMPLATE.md` to `README.md`, and update the new file for your specific widget.
+4.  Rename the exports in `src/index.js`. For example, if your widget is `netlify-cms-widget-awesome`, you would do:
 
 ```
 if (typeof window !== 'undefined') {

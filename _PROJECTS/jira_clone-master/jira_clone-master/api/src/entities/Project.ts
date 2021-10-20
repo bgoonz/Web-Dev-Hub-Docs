@@ -41,16 +41,10 @@ class Project extends BaseEntity {
   @UpdateDateColumn({ type: 'timestamp' })
   updatedAt: Date;
 
-  @OneToMany(
-    () => Issue,
-    issue => issue.project,
-  )
+  @OneToMany(() => Issue, (issue) => issue.project)
   issues: Issue[];
 
-  @OneToMany(
-    () => User,
-    user => user.project,
-  )
+  @OneToMany(() => User, (user) => user.project)
   users: User[];
 }
 

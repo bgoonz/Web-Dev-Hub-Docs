@@ -4,5 +4,5 @@ import { issuePriorityColors } from 'shared/utils/styles';
 import { Icon } from 'shared/components';
 
 export const PriorityIcon = styled(Icon)`
-  color: ${props => issuePriorityColors[props.color]};
+  color: ${(props) => issuePriorityColors[props.color]};
 `;

@@ -18,7 +18,7 @@ const ProjectSettings = ({ project, fetchProject }) => {
 
   return (
     <Form
-      initialValues={Form.initialValues(project, get => ({
+      initialValues={Form.initialValues(project, (get) => ({
         name: get('name'),
         url: get('url'),
         category: get('category'),
@@ -62,7 +62,7 @@ const ProjectSettings = ({ project, fetchProject }) => {
   );
 };
 
-const categoryOptions = Object.values(ProjectCategory).map(category => ({
+const categoryOptions = Object.values(ProjectCategory).map((category) => ({
   value: category,
   label: ProjectCategoryCopy[category],
 }));

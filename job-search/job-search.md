@@ -9,4 +9,3 @@ That means that we won't be testing you with brainteasers that are unrelated to 
 We are always looking for new talent and value everyone who wants to contribute— from fulltime to interns. To see some first hand accounts and specific examples about our process, check out our [blog post on hiring interns](https://blog.replit.com/intern-interview), our [initial engineering challenge](https://otcatchup.util.repl.co), [Clément Mihailescu's interview experience](https://www.youtube.com/watch?v=kABh44IVWMo), and [Dalia's internship story.](https://daliaawad28.medium.com/my-experience-as-a-gazan-girl-getting-into-silicon-valley-companies-488062d769a1)
 
 {% embed url="https://www.youtube.com/watch?v=kABh44IVWMo" %}
-

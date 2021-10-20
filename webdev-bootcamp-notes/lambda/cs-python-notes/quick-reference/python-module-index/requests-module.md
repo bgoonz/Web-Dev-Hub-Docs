@@ -572,7 +572,7 @@ A case-insensitive dictionary of headers to be sent on each [`Request`](https://
 
 Event-handling hooks.`max_redirects` _= None_
 
-Maximum number of redirects allowed. If the request exceeds this limit, a [`TooManyRedirects`](https://docs.python-requests.org/en/master/api/#requests.TooManyRedirects) exception is raised. This defaults to requests.models.DEFAULT_REDIRECT_LIMIT, which is 30.`merge_environment_settings`\(_url_, _proxies_, _stream_, _verify_, _cert_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/sessions/#Session.merge_environment_settings)
+Maximum number of redirects allowed. If the request exceeds this limit, a [`TooManyRedirects`](https://docs.python-requests.org/en/master/api/#requests.TooManyRedirects) exception is raised. This defaults to requests.models.DEFAULT*REDIRECT_LIMIT, which is 30.`merge_environment_settings`\(\_url*, _proxies_, _stream_, _verify_, _cert_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/sessions/#Session.merge_environment_settings)
 
 Check the environment and merge it with some settings.
 
@@ -876,7 +876,7 @@ Iterates over the response data. When stream=True is set on the request, this av
 
 chunk_size must be of type int or None. A value of None will function differently depending on the value of stream. stream=True will read data as it arrives in whatever size the chunks are received. If stream=False, data is returned as a single chunk.
 
-If decode_unicode is True, content will be decoded using the best available encoding based on the response.`iter_lines`\(_chunk_size=512_, _decode_unicode=False_, _delimiter=None_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/models/#Response.iter_lines)
+If decode*unicode is True, content will be decoded using the best available encoding based on the response.`iter_lines`\(\_chunk_size=512*, _decode_unicode=False_, _delimiter=None_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/models/#Response.iter_lines)
 
 Iterates over the response data, one line at a time. When stream=True is set on the request, this avoids reading the content at once into memory for large responses.
 
@@ -1405,7 +1405,7 @@ dictionary operations that are normally O\(1\) may be O\(n\).`add_cookie_header`
 
 Add correct Cookie: header to request \(urllib2.Request object\).
 
-The Cookie2 header is also added unless policy.hide_cookie2 is true.`clear`\(_domain=None_, _path=None_, _name=None_\)
+The Cookie2 header is also added unless policy.hide*cookie2 is true.`clear`\(\_domain=None*, _path=None_, _name=None_\)
 
 Clear some cookies.
 

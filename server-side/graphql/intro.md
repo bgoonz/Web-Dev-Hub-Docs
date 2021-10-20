@@ -30,10 +30,6 @@ GraphQL does not replace our database, and does not even necessarily replace our
 
 If this doesn't completely make sense to you right now, have no fear. The nature of the request tree will become clear as we begin to make GraphQL queries in the upcoming sections.
 
-
-
-
-
 ## RESTful Routing
 
 In this section we will review the conventions of RESTful routing and discuss some of the associated drawbacks. Even if you have utilized a REST API in previous projects, it will be helpful to refresh your memory and discuss the reasons we might choose to augment our API with GraphQL.
@@ -44,12 +40,12 @@ REST \(Representational State Transfer\) is an architecture style for designing 
 
 REST is defined by 6 architectural constraints:
 
-* **Uniform interface**: Individual resources are identified with URLs. The resources in the database are in a different form than the data returned to the client, and the client can modify the resources if given permission. Messages communicated between the client and server are self-descriptive and include enough information to process the request. When a developer is familiar with one of your APIs, they should be able to follow a similar approach for your other APIs.
-* **Client-server**: The client and the server are decoupled, allowing them to evolve separately without any dependence on one another.
-* **Stateless**: Information from requests not stored on the server. Each and every request is treated individually, with no dependece on prior requests. The client is responsible for managing the state of the application rather than the server, meaning that each request must contain the necessary information to fulfill the request, including authorization details.
-* **Cacheable**: Caching should be applied to resources when applicable to improve application performance. Responses must define themselves as cacheable \(or not\) to prevent the client from sending extraneous data in response to subsequent requests.
-* **Layered system**: The client cannot tell whether it is connected directly to the end system or to some intermediary. This helps to enforce security and enables scalability via load balancing.
-* **Code on demand**: An optional constraint which allows the server to return executable code.
+- **Uniform interface**: Individual resources are identified with URLs. The resources in the database are in a different form than the data returned to the client, and the client can modify the resources if given permission. Messages communicated between the client and server are self-descriptive and include enough information to process the request. When a developer is familiar with one of your APIs, they should be able to follow a similar approach for your other APIs.
+- **Client-server**: The client and the server are decoupled, allowing them to evolve separately without any dependence on one another.
+- **Stateless**: Information from requests not stored on the server. Each and every request is treated individually, with no dependece on prior requests. The client is responsible for managing the state of the application rather than the server, meaning that each request must contain the necessary information to fulfill the request, including authorization details.
+- **Cacheable**: Caching should be applied to resources when applicable to improve application performance. Responses must define themselves as cacheable \(or not\) to prevent the client from sending extraneous data in response to subsequent requests.
+- **Layered system**: The client cannot tell whether it is connected directly to the end system or to some intermediary. This helps to enforce security and enables scalability via load balancing.
+- **Code on demand**: An optional constraint which allows the server to return executable code.
 
 In practice, RESTful routes enable a simple-to-understand API for accessing and modifying data using HTTP methods - `GET`, `POST`, `PUT`, `DELETE`, and `PATCH`. For example, if we wished to retrieve all of the products on an online store for a given category, we would make a GET request to an endpoint that looks something like:
 
@@ -138,8 +134,6 @@ Since we can tailor each query to our needs, GraphQL gives power back to the cli
 
 RESTful architecture has catalyzed the growth of the Internet, but lends itself to segmented, non-relational data. However, as new applications increasingly necessitate highly connected data, the traditional practices of REST can become messy and confusing. GraphQL enables us to model the relationships between our data as a graph and specify the relationships between data types. This allows us to make fewer and more efficient requests retrieving only the data we need for each particular use case.
 
-
-
 ## JSON
 
 Server responses in GraphQL are returned in JSON format. Since this is the case, let's refresh our memory on what JSON is and how to use it.
@@ -148,11 +142,11 @@ JSON \(JavaScript Object Notation\) is a self describing, data interchange forma
 
 The syntax of JSON is very simple to follow:
 
-* Data is in name/value pairs
-* Data is separated by commas
-* Curly braces hold objects
-* Square brackets hold arrays
-* String values must be written with double quotes
+- Data is in name/value pairs
+- Data is separated by commas
+- Curly braces hold objects
+- Square brackets hold arrays
+- String values must be written with double quotes
 
 Let's take a look at an example of a JSON object:
 
@@ -220,8 +214,6 @@ console.log(myJSON);
 
 We'll get a lot of practice using JSON in the upcoming sections. Just keep in mind that a JSON object is not a JavaScript object, but that we can easily coerce JavaScript objects to JSON in order to send information through HTTP requests.
 
-
-
 {% embed url="https://www.youtube.com/watch?v=b7tMHnxzK34" %}
 
 ## Graphiql
@@ -238,10 +230,6 @@ When we open Graphiql in the browser, we see two panels. We write queries in the
 
 When we configure a GraphQL application, we define our data in 'types,' with each type representing a singular resource on the server. Graphiql knows this schema and provides us with error highlighting and prompts. If we try to query for a variable which is not present on the current type, the variable will be underlined in red. Hovering over the variable will also display an error message.
 
-
-
-
-
 ![graphiql-error](https://assets.aaonline.io/graphql/d1/graphiql_2.png)
 
 If we hover over any valid variable, a modal appears which displays the related types for that variable.
@@ -253,10 +241,6 @@ If we select the related type, the schema will appear in a new Document Explorer
 ![graphiql-explorer](https://assets.aaonline.io/graphql/d1/graphiql_4.png)
 
 We can use the navigation buttons to prettify our query or view the history of our recent queries. The history will persist even if we have to close and restart our server.
-
-
-
-
 
 ## Inline Fragments and Interfaces
 
@@ -322,4 +306,3 @@ query FindCharacter {
 ```
 
 Now, since we have specified that we should only return the `house` field for `Wizard` types, we can run our query and retrieve the expected data.
-

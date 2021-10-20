@@ -3,4 +3,3 @@ description: Master React and Redux with React Router, Webpack, and Create-React
 ---
 
 # Modern React with Redux
-

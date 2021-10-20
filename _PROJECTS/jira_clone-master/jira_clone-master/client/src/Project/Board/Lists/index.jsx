@@ -30,14 +30,14 @@ const ProjectBoardLists = ({ project, filters, updateLocalProjectIssues }) => {
         listPosition: calculateIssueListPosition(project.issues, destination, source, issueId),
       },
       currentFields: project.issues.find(({ id }) => id === issueId),
-      setLocalData: fields => updateLocalProjectIssues(issueId, fields),
+      setLocalData: (fields) => updateLocalProjectIssues(issueId, fields),
     });
   };
 
   return (
     <DragDropContext onDragEnd={handleIssueDrop}>
       <Lists>
-        {Object.values(IssueStatus).map(status => (
+        {Object.values(IssueStatus).map((status) => (
           <List
             key={status}
             status={status}
@@ -76,7 +76,7 @@ const calculateIssueListPosition = (...args) => {
 
 const getAfterDropPrevNextIssue = (allIssues, destination, source, droppedIssueId) => {
   const beforeDropDestinationIssues = getSortedListIssues(allIssues, destination.droppableId);
-  const droppedIssue = allIssues.find(issue => issue.id === droppedIssueId);
+  const droppedIssue = allIssues.find((issue) => issue.id === droppedIssueId);
   const isSameList = destination.droppableId === source.droppableId;
 
   const afterDropDestinationIssues = isSameList
@@ -90,7 +90,7 @@ const getAfterDropPrevNextIssue = (allIssues, destination, source, droppedIssueI
 };
 
 const getSortedListIssues = (issues, status) =>
-  issues.filter(issue => issue.status === status).sort((a, b) => a.listPosition - b.listPosition);
+  issues.filter((issue) => issue.status === status).sort((a, b) => a.listPosition - b.listPosition);
 
 ProjectBoardLists.propTypes = propTypes;
 

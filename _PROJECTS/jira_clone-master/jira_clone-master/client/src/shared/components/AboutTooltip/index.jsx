@@ -6,7 +6,7 @@ import Tooltip from 'shared/components/Tooltip';
 import feedbackImage from './assets/feedback.png';
 import { FeedbackDropdown, FeedbackImageCont, FeedbackImage, FeedbackParagraph } from './Styles';
 
-const AboutTooltip = tooltipProps => (
+const AboutTooltip = (tooltipProps) => (
   <Tooltip
     width={300}
     {...tooltipProps}

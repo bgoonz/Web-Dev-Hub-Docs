@@ -28,7 +28,7 @@ export const Bar = styled.div`
   border-radius: 4px;
   background: ${color.primary};
   transition: all 0.1s;
-  width: ${props => props.width}%;
+  width: ${(props) => props.width}%;
 `;
 
 export const Values = styled.div`

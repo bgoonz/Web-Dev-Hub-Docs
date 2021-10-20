@@ -37,7 +37,7 @@ const ProjectIssueSearch = ({ project }) => {
 
   const recentIssues = sortByNewest(project.issues, 'createdAt').slice(0, 10);
 
-  const handleSearchChange = value => {
+  const handleSearchChange = (value) => {
     const searchTerm = value.trim();
 
     setIsSearchTermEmpty(!searchTerm);
@@ -84,7 +84,7 @@ const ProjectIssueSearch = ({ project }) => {
   );
 };
 
-const renderIssue = issue => (
+const renderIssue = (issue) => (
   <Link key={issue.id} to={`/project/board/issues/${issue.id}`}>
     <Issue>
       <IssueTypeIcon type={issue.type} size={25} />

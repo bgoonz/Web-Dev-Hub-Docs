@@ -1,10 +1,10 @@
-export const getTextContentsFromHtmlString = html => {
+export const getTextContentsFromHtmlString = (html) => {
   const el = document.createElement('div');
   el.innerHTML = html;
   return el.textContent;
 };
 
-export const copyToClipboard = value => {
+export const copyToClipboard = (value) => {
   const $textarea = document.createElement('textarea');
   $textarea.value = value;
   document.body.appendChild($textarea);

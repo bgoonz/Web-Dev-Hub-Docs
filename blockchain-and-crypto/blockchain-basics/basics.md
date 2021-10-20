@@ -8,13 +8,13 @@ The Bitcoin Core developers sign all of their releases using the “Pretty Good 
 
 **See also:**![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
-* [Paxos](https://en.wikipedia.org/wiki/Paxos\_\(computer\_science\)?ref=hackernoon.com)
-* [Proof of authority](https://en.wikipedia.org/wiki/Proof\_of\_authority?ref=hackernoon.com)
-* [Proof of burn](https://en.wikipedia.org/wiki/Proof\_of\_burn?ref=hackernoon.com)
-* [Proof of personhood](https://en.wikipedia.org/wiki/Proof\_of\_personhood?ref=hackernoon.com)
-* [Proof of space](https://en.wikipedia.org/wiki/Proof\_of\_space?ref=hackernoon.com)
-* [Proof of stake](https://en.wikipedia.org/wiki/Proof\_of\_stake?ref=hackernoon.com)
-* [Proof of elapsed time](https://en.wikipedia.org/wiki/Proof\_of\_elapsed\_time?ref=hackernoon.com)
+- [Paxos](<https://en.wikipedia.org/wiki/Paxos_(computer_science)?ref=hackernoon.com>)
+- [Proof of authority](https://en.wikipedia.org/wiki/Proof_of_authority?ref=hackernoon.com)
+- [Proof of burn](https://en.wikipedia.org/wiki/Proof_of_burn?ref=hackernoon.com)
+- [Proof of personhood](https://en.wikipedia.org/wiki/Proof_of_personhood?ref=hackernoon.com)
+- [Proof of space](https://en.wikipedia.org/wiki/Proof_of_space?ref=hackernoon.com)
+- [Proof of stake](https://en.wikipedia.org/wiki/Proof_of_stake?ref=hackernoon.com)
+- [Proof of elapsed time](https://en.wikipedia.org/wiki/Proof_of_elapsed_time?ref=hackernoon.com)
 
 In many respects, blockchain can be considered a meta-technology, since it utilizes, enhances, challenges, and potentially supersedes other pre-existing software technologies. As such, it allows us to create versatile technological solutions that aim to minimize the agency of third-party providers and, in a way, return power back to the users. This can be achieved by the blockchain providing an environment where users can interact freely in a trustless ecosystem for very low to almost zero fees, at speeds that make everybody in the world reachable in a matter of minutes. To make this possible, the blockchain is used as a transaction platform and distributed accounting ledger that uses cryptocurrency tokens (digital money) as a representation of a specific value at the current time (much like traditional fiat currencies). Nevertheless, for trustless technology to work on a global scale, it needs to implement trust in a different manner. This is where ISO standards come into the picture, as they ensure that the blockchain interactions follow globally applicable rules, norms, and procedures. This is also why starting in 2016, the blockchain technology obtained its own set of ISO standards, called ISO/TC307.![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
@@ -96,7 +96,7 @@ An important question from a regulatory standpoint is, “Are cryptosystems mone
 
 An entity that receives money from one person and transmits that money to another person or location. This entity needs to be registered with FINCEN and is required to have an anti-money laundering compliance program, including the “Know Your Customer” procedure, KYC.![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
-See a video of Yago’s thoughts on ‘**The dangers of KYC**’ [here](https://www.youtube.com/watch?v=9QtJ6oo-QuY\&ab\_channel=Sovryn\&ref=hackernoon.com).DeFi - A money-service business that is not a money transmitter![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
+See a video of Yago’s thoughts on ‘**The dangers of KYC**’ [here](https://www.youtube.com/watch?v=9QtJ6oo-QuY&ab_channel=Sovryn&ref=hackernoon.com).DeFi - A money-service business that is not a money transmitter![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
 Non-custodial DeFi systems - like Sovryn - do not take possession of your funds. They are not controlled by a single entity and do not hold transactional control over users’ funds. Using smart contracts to distance DeFi platforms from the ownership of the funds being used causes a regulatory grey area in most jurisdictions. Therefore, the system is not currently classed as a regulated financial institution, but its users can be regulated in other ways, such as being taxed on profits, or having limits on fiat on/off-ramps.![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
@@ -116,7 +116,7 @@ Blockchains provide: proof of the history of any data recorded on a blockchain d
 
 ### Trusted Time stamping
 
-In the context of blockchain, you can specifically encounter a term called [Trusted Timestamping](https://en.wikipedia.org/wiki/Trusted\_timestamping?ref=hackernoon.com). This is a process of securely keeping track of the creation and modification time of a document, and it is an indispensable tool in the business world. It allows interested parties to know, without a doubt, that a document in question existed at a particular date and time. By design, a Bitcoin transaction includes a date and time held on the blockchain. By including a cryptographic digest of a file, you can later certify that the data existed at that time.![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
+In the context of blockchain, you can specifically encounter a term called [Trusted Timestamping](https://en.wikipedia.org/wiki/Trusted_timestamping?ref=hackernoon.com). This is a process of securely keeping track of the creation and modification time of a document, and it is an indispensable tool in the business world. It allows interested parties to know, without a doubt, that a document in question existed at a particular date and time. By design, a Bitcoin transaction includes a date and time held on the blockchain. By including a cryptographic digest of a file, you can later certify that the data existed at that time.![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
 ### Important Blockchain and Bitcoin Milestones
 
@@ -154,21 +154,21 @@ Stefan Konst publishes his theory of cryptographically secured chains, plus idea
 \
 Invention of cryptocurrency. Developer(s) working under the pseudonym Satoshi Nakamoto released a white paper establishing the model for a blockchain.\
 \
-31 October: Bitcoin [white paper](https://en.wikipedia.org/wiki/White\_paper?ref=hackernoon.com) published on the internet.\
+31 October: Bitcoin [white paper](https://en.wikipedia.org/wiki/White_paper?ref=hackernoon.com) published on the internet.\
 \
 **2009**\
 \
 Nakamoto implements the first blockchain as the public ledger for transactions made using bitcoin. Later that year → Blockchain was the first time operable.\
 \
-January 3 - Satoshi Nakamoto mined the genesis block of bitcoin (the first block) for 50  bitcoins.\
+January 3 - Satoshi Nakamoto mined the genesis block of bitcoin (the first block) for 50 bitcoins.\
 \
 January 9 - The first open-source bitcoin client was released on SourceForge.\
 \
-January 12 -  The first bitcoin transaction was made of 10 bitcoins to the first bitcoin user (other than Satoshi), Hal Finney\
+January 12 - The first bitcoin transaction was made of 10 bitcoins to the first bitcoin user (other than Satoshi), Hal Finney\
 \
-November 19 -  Satoshi created the Bitcointalk.org site. November 22 - Satoshi Nakamoto posted the first post on the bitcoin forum using the account "satoshi."\
+November 19 - Satoshi created the Bitcointalk.org site. November 22 - Satoshi Nakamoto posted the first post on the bitcoin forum using the account "satoshi."\
 \
-December 16 -  Bitcoin version 0.2 is released. By this point, Martti Malmi has joined Satoshi Nakamoto, a developer with full permission to change the codebase.\
+December 16 - Bitcoin version 0.2 is released. By this point, Martti Malmi has joined Satoshi Nakamoto, a developer with full permission to change the codebase.\
 \
 December 30th - The first difficulty increase occurs, from 1 to 1.18.\
 \
@@ -184,9 +184,9 @@ In May of 2021, this amount of BTC was worth 367,991,000.00 USD: See the TX\
 a1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d\
 &#x20;July 6 - Bitcoin version 0.3 was released.\
 \
-November 6 -  Bitcoin market capitalization passes $1 million.\
+November 6 - Bitcoin market capitalization passes $1 million.\
 \
-December 9 -  The mining difficulty exceeds 10,000\
+December 9 - The mining difficulty exceeds 10,000\
 \
 December 12Satoshi Nakamoto posted his last post on the BitcoinTalk forum.\
 \
@@ -200,11 +200,11 @@ January 2 - Tonal Bitcoin, designed for those who prefer the Tonal number system
 \
 January 15 - Bitcoin made an appearance in the show "The good wife" in the episode "Bitcoin for Dummies."\
 \
-September 27 -  The Bitcoin Foundation was launched with the aim of implementing a core development team for the protocols and the body to oversee the digital currency.\
+September 27 - The Bitcoin Foundation was launched with the aim of implementing a core development team for the protocols and the body to oversee the digital currency.\
 \
-&#x20;June 3 -  Bitcoin confirmed its largest transaction to date with 1322 transactions on block 181919\
+&#x20;June 3 - Bitcoin confirmed its largest transaction to date with 1322 transactions on block 181919\
 \
-&#x20;November 28 - Bitcoin  Halving Day. On Halving Day, Block 210,000 is the first with a block reward subsidy of 25 BTC.\
+&#x20;November 28 - Bitcoin Halving Day. On Halving Day, Block 210,000 is the first with a block reward subsidy of 25 BTC.\
 \
 **2013**\
 \
@@ -214,11 +214,11 @@ QixCoin , a Turing-complete cryptocurrency, was created by some of the RSK found
 \
 February 15 - The bitcoin-based payment processor Coinbase reported selling US$1 million worth of bitcoins in a single month at over $22 per bitcoin.\[41] The Internet Archive announced that it was ready to accept donations as bitcoins and that it intends to give employees the option to receive portions of their salaries in bitcoin currency.\
 \
-February 19 -  Version 0.8 of the Bitcoin client was released. It features Bloom Filtering and improved download speed.\
+February 19 - Version 0.8 of the Bitcoin client was released. It features Bloom Filtering and improved download speed.\
 \
-February 21 -  Internet Archive began accepting BTC donations so that its employees can be paid in Bitcoins.\
+February 21 - Internet Archive began accepting BTC donations so that its employees can be paid in Bitcoins.\
 \
-Mar 12 -  A hard fork occurs on the blockchain. A protocol rule that was previously undiscovered results in a hard fork of the 0.8.0 reference client.\
+Mar 12 - A hard fork occurs on the blockchain. A protocol rule that was previously undiscovered results in a hard fork of the 0.8.0 reference client.\
 \
 March 18 - the Financial Crimes Enforcement Network (or FinCEN), a bureau of the United States Department of the Treasury, issued a report regarding centralized and decentralized "virtual currencies" and their legal status within "money services business" (MSB) and Bank Secrecy Act regulations. It classified digital currencies and other digital payment systems such as bitcoin as "virtual currencies" because they are not legal tender under any sovereign jurisdiction.\
 \
@@ -230,9 +230,9 @@ May 2 - 2013 The first Bitcoin ATM in the world debuted in San Diego, California
 \
 May 3 - Coindesk, a bitcoin-focused resource, and news website was launched by Shakil Khan, an angel investor and advisor to Spotify.\
 \
-May 17 -  The first major Bitcoin Conference was held at the San Jose Convention Center.\
+May 17 - The first major Bitcoin Conference was held at the San Jose Convention Center.\
 \
-December 5 -  The People's Bank of China announced in a press release regarding bitcoin regulation that whilst individuals in China are permitted to freely trade and exchange bitcoins as a commodity, it is prohibited for Chinese financial banks to operate using bitcoins or for bitcoins to be used as legal tender currency, and that entities dealing with bitcoins must track and report suspicious activity to prevent money laundering.\
+December 5 - The People's Bank of China announced in a press release regarding bitcoin regulation that whilst individuals in China are permitted to freely trade and exchange bitcoins as a commodity, it is prohibited for Chinese financial banks to operate using bitcoins or for bitcoins to be used as legal tender currency, and that entities dealing with bitcoins must track and report suspicious activity to prevent money laundering.\
 \
 **2014**\
 \
@@ -254,11 +254,11 @@ IBM opens a blockchain innovative research center. Started a development that en
 \
 15% of global banks using blockchain for intercommunication.\
 \
-March 2 -  The day one bitcoin overtook the price of an ounce of gold.\
+March 2 - The day one bitcoin overtook the price of an ounce of gold.\
 \
-July 21 -  SegWit was locked in by Bitcoin miners\
+July 21 - SegWit was locked in by Bitcoin miners\
 \
-August 21 -  SegWit was activated.\
+August 21 - SegWit was activated.\
 \
 December 6 - Lightning Network preview was released.\
 \

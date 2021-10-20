@@ -158,10 +158,6 @@ Let's Encrypt client and ACME library written in Go. [https://github.com/xenolf/
 
 [Contribute on GitHub](https://github.com/xenolf/lego)
 
-
-
-
-
 ## Site deploys overview
 
 Netlify enforces a strict concept of atomic deploys. If you’re used to uploading files with FTP, SSH, RSync or S3’s API, this is quite a different concept.
@@ -190,9 +186,9 @@ If the summary continually indicates that many more files were uploaded than you
 
 You can find a deploy log on the detail page of every deploy. The log provides content such as:
 
-* details about your site’s build image, dependency caching, and Netlify Build process, including all of the standard output which comes from running your build
-* information about any Build Plugins your site may have installed and their execution
-* details about the success, failure, or cancellation of the deploy
+- details about your site’s build image, dependency caching, and Netlify Build process, including all of the standard output which comes from running your build
+- information about any Build Plugins your site may have installed and their execution
+- details about the success, failure, or cancellation of the deploy
 
 For any successful deploy, highlights from the deploy log will be included in the [deploy summary](https://docs.netlify.com/site-deploys/overview/#deploy-summary). For failed deploys, visit our Forums for a verified Support Guide on [using the log to debug your build process](https://answers.netlify.com/t/common-issue-using-build-logs-to-debug-your-build-process/3067).
 
@@ -202,11 +198,12 @@ Deploy logs for a site linked to a private repo are available to all site member
 
 To share deploy log content, you can copy the entire log by selecting **Copy to clipboard** (the clipboard icon). You can also generate a shareable URL for a single log line or a range of lines.
 
-* For a single log line, select the line number to highlight the line.
-*   For a range of log lines, select the line number for the first log line in the range, then press shift and select the final log line number to highlight the full range.
+- For a single log line, select the line number to highlight the line.
+- For a range of log lines, select the line number for the first log line in the range, then press shift and select the final log line number to highlight the full range.
 
-    ![selected deploy log lines.](https://docs.netlify.com/images/site-deploys-deploy-log-selected-lines.png)
-* If needed, press esc to deselect log lines.
+  ![selected deploy log lines.](https://docs.netlify.com/images/site-deploys-deploy-log-selected-lines.png)
+
+- If needed, press esc to deselect log lines.
 
 Once you’ve selected a line or range, copy the resulting URL from the address bar of your web browser. The URL syntax should resemble this: `https://app.netlify.com/sites/SITE_NAME/deploys/DEPLOY_ID#L5-L10`
 
@@ -216,11 +213,11 @@ Netlify lets you control which branches in your Git repository you want to deplo
 
 #### [#](https://docs.netlify.com/site-deploys/overview/#definitions)Definitions <a href="definitions" id="definitions"></a>
 
-* **Production branch**: the Git branch that Netlify uses to build and deploy changes to your site’s main URL. For example, `www.yourcustomdomain.com` and `yoursitename.netlify.app`.
-* **Production deploy**: a deploy from the production branch. If auto publishing is enabled, each new production deploy will update what is published at your site’s main URL.
-* **Branch deploy**: a deploy generated from a branch that is not your production branch. Branch deploys are published to a URL which includes the branch name as a prefix. For example, if a branch is called `staging`, it will deploy to `staging--yoursitename.netlify.app`. If you use Netlify DNS, you can enable branch subdomains, so the `staging` branch example would deploy to `staging.yourcustomdomain.com`.
-* **Deploy Preview**: a deploy generated from a pull request or merge request, building the site as it would be if the proposed changes were merged. Deploy Previews are published to a URL which has the prefix `deploy-preview` followed by the identifier number of the pull request or merge request. For example, a Deploy Preview for pull/merge request #42 will deploy to `deploy-preview-42--yoursitename.netlify.app`. For more information, visit the docs on [Deploy Previews](https://docs.netlify.com/site-deploys/deploy-previews/).
-* **Permalink**: every successful build of your site also creates a deploy permalink that starts with the deploy ID number. For example: `1234abcd12acde000111cdef--yoursitename.netlify.app`. The web content at this URL never changes. This is in contrast to production deploys, branch deploys, and Deploy Previews where the web content is updated when you merge or push new commits.
+- **Production branch**: the Git branch that Netlify uses to build and deploy changes to your site’s main URL. For example, `www.yourcustomdomain.com` and `yoursitename.netlify.app`.
+- **Production deploy**: a deploy from the production branch. If auto publishing is enabled, each new production deploy will update what is published at your site’s main URL.
+- **Branch deploy**: a deploy generated from a branch that is not your production branch. Branch deploys are published to a URL which includes the branch name as a prefix. For example, if a branch is called `staging`, it will deploy to `staging--yoursitename.netlify.app`. If you use Netlify DNS, you can enable branch subdomains, so the `staging` branch example would deploy to `staging.yourcustomdomain.com`.
+- **Deploy Preview**: a deploy generated from a pull request or merge request, building the site as it would be if the proposed changes were merged. Deploy Previews are published to a URL which has the prefix `deploy-preview` followed by the identifier number of the pull request or merge request. For example, a Deploy Preview for pull/merge request #42 will deploy to `deploy-preview-42--yoursitename.netlify.app`. For more information, visit the docs on [Deploy Previews](https://docs.netlify.com/site-deploys/deploy-previews/).
+- **Permalink**: every successful build of your site also creates a deploy permalink that starts with the deploy ID number. For example: `1234abcd12acde000111cdef--yoursitename.netlify.app`. The web content at this URL never changes. This is in contrast to production deploys, branch deploys, and Deploy Previews where the web content is updated when you merge or push new commits.
 
 #### [#](https://docs.netlify.com/site-deploys/overview/#branch-deploy-controls)Branch deploy controls <a href="branch-deploy-controls" id="branch-deploy-controls"></a>
 
@@ -228,7 +225,7 @@ By default, Netlify deploys the site’s production branch after every change.
 
 To generate branch deploys for other branches in your repository, select your site on the **Sites** page. Then go to **Site settings > Build & deploy > Continuous Deployment > Branches**, and select **Edit settings**. You can choose to deploy all branches (including future branches), or select individual branches you would like to deploy.
 
-![undefined](https://docs.netlify.com/images/site-deploys-allowed\_branches.png)
+![undefined](https://docs.netlify.com/images/site-deploys-allowed_branches.png)
 
 When selecting individual branches for deployment, type the name of each branch you want to deploy. You can also enter branch names you haven’t created yet.
 
@@ -250,9 +247,9 @@ Deploy contexts give you the flexibility to [configure your site’s builds](htt
 
 There are three predefined deploy contexts:
 
-* `production`: this context corresponds to the main site’s deployment, attached to the Git branch you set when the site is created.
-* `deploy-preview`: this context corresponds to the previews we build for pull/merge requests.
-* `branch-deploy`: this context corresponds to deploys from branches that are not the site’s main production branch.
+- `production`: this context corresponds to the main site’s deployment, attached to the Git branch you set when the site is created.
+- `deploy-preview`: this context corresponds to the previews we build for pull/merge requests.
+- `branch-deploy`: this context corresponds to deploys from branches that are not the site’s main production branch.
 
 Besides these three predefined contexts, sites can use also branch names as custom deploy contexts. For example, a branch called `staging` will match a deploy context called `staging`.
 
@@ -303,14 +300,12 @@ Visit our docs on [file-based configuration](https://docs.netlify.com/configure-
 
 ### [#](https://docs.netlify.com/site-deploys/overview/#more-site-deploys-resources)More site deploys resources <a href="more-site-deploys-resources" id="more-site-deploys-resources"></a>
 
-* [Create deploys](https://docs.netlify.com/site-deploys/create-deploys/)
-* [Manage deploys](https://docs.netlify.com/site-deploys/manage-deploys/)
-* [Deploy Previews](https://docs.netlify.com/site-deploys/deploy-previews/)
-* [Split Testing](https://docs.netlify.com/site-deploys/split-testing/)
-* [Deploy notifications](https://docs.netlify.com/site-deploys/notifications/)
-* [Post processing](https://docs.netlify.com/site-deploys/post-processing/)
-
-
+- [Create deploys](https://docs.netlify.com/site-deploys/create-deploys/)
+- [Manage deploys](https://docs.netlify.com/site-deploys/manage-deploys/)
+- [Deploy Previews](https://docs.netlify.com/site-deploys/deploy-previews/)
+- [Split Testing](https://docs.netlify.com/site-deploys/split-testing/)
+- [Deploy notifications](https://docs.netlify.com/site-deploys/notifications/)
+- [Post processing](https://docs.netlify.com/site-deploys/post-processing/)
 
 ## Create deploys
 
@@ -328,10 +323,10 @@ It works for plain static sites, but it’s even more powerful when you’re usi
 
 Netlify will run your build command and deploy the result whenever you push to your Git repo. The benefits of Netlify’s continuous deployment include:
 
-* No deploying without committing and pushing first
-* Easy collaboration through pull/merge requests
-* Fix a typo through your Git provider’s web UI from your mobile
-* Edit content without code by using a static site CMS, [Netlify CMS](https://netlifycms.org)
+- No deploying without committing and pushing first
+- Easy collaboration through pull/merge requests
+- Fix a typo through your Git provider’s web UI from your mobile
+- Edit content without code by using a static site CMS, [Netlify CMS](https://netlifycms.org)
 
 ### [#](https://docs.netlify.com/site-deploys/create-deploys/#netlify-cli)Netlify CLI <a href="netlify-cli" id="netlify-cli"></a>
 
@@ -359,12 +354,12 @@ The template code must be available in a public repository stored on GitHub.com 
 
 You can use any markup language that renders as HTML to display the button. There are two very important URLs that you’ll need:
 
-* The SVG URL for the button: `https://www.netlify.com/img/deploy/button.svg`.
-*   The URL the button takes users to: `https://app.netlify.com/start/deploy`. This link requires the public Git repository as a parameter, for example:
+- The SVG URL for the button: `https://www.netlify.com/img/deploy/button.svg`.
+- The URL the button takes users to: `https://app.netlify.com/start/deploy`. This link requires the public Git repository as a parameter, for example:
 
-    ```
-    https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-statuskit
-    ```
+  ```
+  https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-statuskit
+  ```
 
 #### [#](https://docs.netlify.com/site-deploys/create-deploys/#template-configuration)Template configuration <a href="template-configuration" id="template-configuration"></a>
 
@@ -372,19 +367,20 @@ You can provide a set of default values for your template directly in the templa
 
 Within the `[template]` section in that file, you can set two directives:
 
-*   A list of incoming hooks for the users site. This is very useful if you want to allow a third party service to control when to deploy the site. This is what headless CMS services like Contentful and DatoCMS do. Users can give those providers the address Netlify generates for their specific incoming requests.
+- A list of incoming hooks for the users site. This is very useful if you want to allow a third party service to control when to deploy the site. This is what headless CMS services like Contentful and DatoCMS do. Users can give those providers the address Netlify generates for their specific incoming requests.
 
-    ```
-    [template]
-      incoming-hooks = ["Contentful"]
-    ```
-*   A list of required environment variables. This is the way to let users configure specific configuration options upon deployment. It also enables customization without having to change the code of the base template.
+  ```
+  [template]
+    incoming-hooks = ["Contentful"]
+  ```
 
-    ```
-    [template.environment]
-      SECRET_TOKEN = "change me for your secret token"
-      CUSTOM_LOGO = "set the url to your custom logo here"
-    ```
+- A list of required environment variables. This is the way to let users configure specific configuration options upon deployment. It also enables customization without having to change the code of the base template.
+
+  ```
+  [template.environment]
+    SECRET_TOKEN = "change me for your secret token"
+    CUSTOM_LOGO = "set the url to your custom logo here"
+  ```
 
 #### [#](https://docs.netlify.com/site-deploys/create-deploys/#pre-fill-environment-variables)Pre-fill environment variables <a href="pre-fill-environment-variables" id="pre-fill-environment-variables"></a>
 
@@ -405,8 +401,6 @@ Passing environment variable values in the hash ensures that they’re processed
 Netlify is available on Zapier, where you can connect Netlify with over 1,000 other applications. You can use Zapier “Zaps” to start a new deploy of your site in response to a trigger from another service. You can [find out more on our blog](https://www.netlify.com/blog/2018/11/07/automate-your-netlify-sites-with-zapier/), or use one of the templates below to get started:Start deploys of Netlify sites daily[Use this Zap](https://zapier.com/apps/netlify/integrations/schedule/29330/start-deploys-of-netlify-sites-daily)Start Netlify deploys when you send new Tweets[Use this Zap](https://zapier.com/apps/netlify/integrations/twitter/29745/start-netlify-deploys-when-you-send-new-tweets)Start Netlify site deploys with the push of a Flic button[Use this Zap](https://zapier.com/apps/flic/integrations/netlify/29780/start-netlify-site-deploys-with-the-push-of-a-flic-button)See more [Netlify](https://zapier.com/apps/netlify/integrations) integrations powered by![](https://zapier.com/apps/app-event-tracker)
 
 #### Did you find this doc useful?
-
-
 
 ## Deploy Previews
 
@@ -438,15 +432,15 @@ Keep the following considerations in mind when working with collaborative Deploy
 
 **#Requirements**
 
-* **Deploy Preview URLs**. Collaboration tools are only available on Deploy Previews accessed through their `deploy-preview` prefixed URLs.
-* **GitHub app permissions**. If you’re using GitHub, verify that the Netlify GitHub app is [installed with the necessary permissions](https://docs.netlify.com/configure-builds/repo-permissions-linking/#authentication-with-the-netlify-github-app).
-* **Valid HTML**. Your site must have valid HTML output with opening and closing `body` tags.
-* **Team access**. Stakeholders must be signed into Netlify and [granted access](https://docs.netlify.com/accounts-and-billing/team-management/manage-team-members) to a team to use the collaboration tools. To request access to collaborate, select the **Team Members** tab and select **Request to join team**.
+- **Deploy Preview URLs**. Collaboration tools are only available on Deploy Previews accessed through their `deploy-preview` prefixed URLs.
+- **GitHub app permissions**. If you’re using GitHub, verify that the Netlify GitHub app is [installed with the necessary permissions](https://docs.netlify.com/configure-builds/repo-permissions-linking/#authentication-with-the-netlify-github-app).
+- **Valid HTML**. Your site must have valid HTML output with opening and closing `body` tags.
+- **Team access**. Stakeholders must be signed into Netlify and [granted access](https://docs.netlify.com/accounts-and-billing/team-management/manage-team-members) to a team to use the collaboration tools. To request access to collaborate, select the **Team Members** tab and select **Request to join team**.
 
 **#Limitations**
 
-* **On-demand Builders and server-side rendering**. Collaboration tools are not available on sites using On-demand Builders or server-side rendering.
-* **Bitbucket**. Collaboration tools are currently not available on Bitbucket deploys.
+- **On-demand Builders and server-side rendering**. Collaboration tools are not available on sites using On-demand Builders or server-side rendering.
+- **Bitbucket**. Collaboration tools are currently not available on Bitbucket deploys.
 
 #### [#](https://docs.netlify.com/site-deploys/deploy-previews/#give-feedback)Give feedback <a href="give-feedback" id="give-feedback"></a>
 
@@ -462,12 +456,12 @@ If you are a pending Reviewer, your submitted comments will remain hidden until 
 
 You can send feedback about a Deploy Preview to a number of productivity tools by connecting your Netlify user account to your user account for the tool:
 
-* [GitHub](https://github.com)
-* [GitLab](https://gitlab.com)
-* [Jira Software](https://www.atlassian.com/software/jira) (may not be available on all [plans](https://www.netlify.com/pricing/))
-* [Shortcut](https://shortcut.com)
-* [Linear](https://linear.app)
-* [Trello](https://trello.com)
+- [GitHub](https://github.com)
+- [GitLab](https://gitlab.com)
+- [Jira Software](https://www.atlassian.com/software/jira) (may not be available on all [plans](https://www.netlify.com/pricing/))
+- [Shortcut](https://shortcut.com)
+- [Linear](https://linear.app)
+- [Trello](https://trello.com)
 
 To get started, go to the **Integrations** tab in the Netlify Drawer and select **Connect** for the third-party service you want to use.
 
@@ -499,9 +493,9 @@ For more information on team member permissions, check the [team roles](https://
 
 The entry path is the page visitors will land on when they access your Deploy Preview using links on the **Deploys** page, deploy details page, in GitHub, or in GitLab. You can set an entry path in the following ways:
 
-* Enter the path in the **Settings** tab of the Netlify Drawer.
-* Tag `@netlify /path/to/page` in the initial description of your GitHub pull request or GitLab merge request.
-* Hover over the Netlify icon and select **Set as entry path** to save the current page as the initial route. This option only appears if you are the author of the pull/merge request.
+- Enter the path in the **Settings** tab of the Netlify Drawer.
+- Tag `@netlify /path/to/page` in the initial description of your GitHub pull request or GitLab merge request.
+- Hover over the Netlify icon and select **Set as entry path** to save the current page as the initial route. This option only appears if you are the author of the pull/merge request.
 
 When writing a value for the entry path, it must be relative and start with `/`.
 
@@ -541,18 +535,18 @@ If you can’t find the Netlify Drawer on your Deploy Preview, verify that the N
 
 The Netlify Drawer also might not appear if your site’s [custom headers](https://docs.netlify.com/routing/headers/) include the following Content Security Policy (CSP) directives:
 
-* `default-src`
-* `script-src`
-* `frame-src`
-* `child-src`
+- `default-src`
+- `script-src`
+- `frame-src`
+- `child-src`
 
 To address this issue, add `app.netlify.com` and `netlify-cdp-loader.netlify.app` to the allow list in the `_headers` or `netlify.toml` file. For example:
 
-* \_headers
-* netlify.toml
+- \_headers
+- netlify.toml
 
 ```
-/* 
+/*
   Content-Security-Policy: child-src 'self' app.netlify.com; script-src 'self' app.netlify.com netlify-cdp-loader.netlify.app;
 ```
 
@@ -569,18 +563,16 @@ To change the GitLab user for unauthenticated comments on merge requests, a GitL
 1. In GitLab, invite a new user with a role of Reporter or above to your project. The email address for this user must be one you have access to.
 2. Confirm the user and log into GitLab with that account.
 3. Edit the [GitLab profile](https://gitlab.com/-/profile) of the user to change the **Full name** and **Public avatar**. We recommend naming the user `Netlify` and using the Netlify logo as the avatar to help associate unauthenticated comments with Netlify.
-4. Generate a [personal access token](https://gitlab.com/-/profile/personal\_access\_tokens) with an `api` scope, and copy the token to your clipboard.
-5.  In a Deploy Preview from one of your GitLab sites, open the **Deploy settings** tab in the Netlify Drawer. Paste in the token from GitLab, and select **Save**.
+4. Generate a [personal access token](https://gitlab.com/-/profile/personal_access_tokens) with an `api` scope, and copy the token to your clipboard.
+5. In a Deploy Preview from one of your GitLab sites, open the **Deploy settings** tab in the Netlify Drawer. Paste in the token from GitLab, and select **Save**.
 
-    Comments left by Reviewers who have not authenticated with GitLab should now be associated with the Netlify user on your project.
+   Comments left by Reviewers who have not authenticated with GitLab should now be associated with the Netlify user on your project.
 
 **#Preview changes without the Netlify Drawer**
 
 To opt out of loading the Netlify Drawer on a site’s Deploy Previews, go to **Site settings > Build & deploy > Continuous Deployment > Deploy Previews**, select **Edit settings**, and disable the Netlify Drawer.
 
 You can also open a [branch deploy or deploy permalink](https://docs.netlify.com/site-deploys/overview/#definitions) if you need to preview a deploy but don’t want to access any of the collaboration features. Both links are available in the Netlify Drawer under **Settings**. The branch deploy link is also available on your site’s **Deploys** page in the Netlify UI, while the deploy permalink is available on the deploy details page.
-
-
 
 ## Post processing
 
@@ -595,10 +587,6 @@ Netlify offers several post processing features to help you optimize your sites.
 **Prerendering** - To allow search engines and social networks to crawl the pages rendered by your app, you can enable [prerendering](https://docs.netlify.com/site-deploys/post-processing/prerendering/).
 
 **Form detection** - By default, Netlify scans new and updated HTML files to detect forms and set them up for receiving submissions. You can disable [form detection](https://docs.netlify.com/site-deploys/post-processing/form-detection/) to speed up deploys if you’re not using Forms.
-
-
-
-
 
 ## Snippet injection
 
@@ -624,8 +612,8 @@ You can use the [API](https://docs.netlify.com/api/get-started/#snippets) to get
 
 Explore snippet injection examples in our blog:
 
-* [Promoting open source with Netlify snippet injection](https://www.netlify.com/blog/2018/09/06/promoting-open-source-with-netlify-snippet-injection/)
-* [Add web monetization to your sites with snippet injection](https://www.netlify.com/blog/2020/12/14/add-web-monetization-to-your-sites-with-snippet-injection/)
+- [Promoting open source with Netlify snippet injection](https://www.netlify.com/blog/2018/09/06/promoting-open-source-with-netlify-snippet-injection/)
+- [Add web monetization to your sites with snippet injection](https://www.netlify.com/blog/2020/12/14/add-web-monetization-to-your-sites-with-snippet-injection/)
 
 ## Prerendering
 
@@ -655,9 +643,9 @@ _This feature may not be available on all _[_plans_](https://www.netlify.com/pri
 
 You can also use external services that can automate prerendering for you:
 
-* [Prerender.io](https://prerender.io)
-* [Brombone](http://www.brombone.com)
-* [Prerender.cloud](https://prerender.cloud)
+- [Prerender.io](https://prerender.io)
+- [Brombone](http://www.brombone.com)
+- [Prerender.cloud](https://prerender.cloud)
 
 Prerender.io has an open-source version of their service that you can self-host.
 
@@ -672,8 +660,6 @@ When a request hits one of our CDN servers, our CDN software determines if it’
 If you’ve worked with Netlify support to configure an external service and the external prerendering backend makes good use of HTTP caching headers like max-age, ETags or Last-Modified dates, prerendered responses will be cached sensibly on our CDN edge nodes. In our initial tests we’ve seen average response times of \~100 ms to crawlers, which is low enough that Google will still give your site a SEO boost for being fast.
 
 Visit our Support Forums to ask questions about [understanding and debugging prerendering](https://answers.netlify.com/t/common-issue-understanding-and-debugging-prerendering/150/2).
-
-
 
 ## Form detection
 
@@ -697,14 +683,6 @@ To enable form detection after disabling it, go to **Site settings > Build & dep
 
 At your next site deploy, Netlify build bots will parse HTML to detect forms, and verified form submissions will be available on Netlify.
 
-
-
-
-
-
-
-
-
 ## Configuration Options
 
 ### Configuration File <a href="configuration-file" id="configuration-file"></a>
@@ -720,7 +698,7 @@ Alternatively, you can specify a custom config file using a link tag:
 
 To see working configuration examples, you can [start from a template](https://www.netlifycms.org/docs/start-with-a-template) or check out the [CMS demo site](https://cms-demo.netlify.com). (No login required: click the login button and the CMS will open.) You can refer to the demo [configuration code](https://github.com/netlify/netlify-cms/blob/master/dev-test/config.yml) to see how each option was configured.
 
-You can find details about all configuration options below. Note that [YAML syntax](https://en.wikipedia.org/wiki/YAML#Basic\_components) allows lists and objects to be written in block or inline style, and the code samples below include a mix of both.
+You can find details about all configuration options below. Note that [YAML syntax](https://en.wikipedia.org/wiki/YAML#Basic_components) allows lists and objects to be written in block or inline style, and the code samples below include a mix of both.
 
 ### Backend <a href="backend" id="backend"></a>
 
@@ -882,11 +860,11 @@ For modifying the actual data in a slug, see the per-collection option below.
 
 `slug` accepts multiple options:
 
-* `encoding`
-  * `unicode` (default): Sanitize filenames (slugs) according to [RFC3987](https://tools.ietf.org/html/rfc3987) and the [WHATWG URL spec](https://url.spec.whatwg.org). This spec allows non-ASCII (or non-Latin) characters to exist in URLs.
-  * `ascii`: Sanitize filenames (slugs) according to [RFC3986](https://tools.ietf.org/html/rfc3986). The only allowed characters are (0-9, a-z, A-Z, `_`, `-`, `~`).
-* `clean_accents`: Set to `true` to remove diacritics from slug characters before sanitizing. This is often helpful when using `ascii` encoding.
-* `sanitize_replacement`: The replacement string used to substitute unsafe characters, defaults to `-`.
+- `encoding`
+  - `unicode` (default): Sanitize filenames (slugs) according to [RFC3987](https://tools.ietf.org/html/rfc3987) and the [WHATWG URL spec](https://url.spec.whatwg.org). This spec allows non-ASCII (or non-Latin) characters to exist in URLs.
+  - `ascii`: Sanitize filenames (slugs) according to [RFC3986](https://tools.ietf.org/html/rfc3986). The only allowed characters are (0-9, a-z, A-Z, `_`, `-`, `~`).
+- `clean_accents`: Set to `true` to remove diacritics from slug characters before sanitizing. This is often helpful when using `ascii` encoding.
+- `sanitize_replacement`: The replacement string used to substitute unsafe characters, defaults to `-`.
 
 **Example**
 
@@ -905,29 +883,29 @@ The `collections` setting is the heart of your Netlify CMS configuration, as it 
 
 `collections` accepts a list of collection objects, each with the following options:
 
-* `name` (required): unique identifier for the collection, used as the key when referenced in other contexts (like the [relation widget](https://www.netlifycms.org/docs/widgets/#relation))
-* `identifier_field`: see detailed description below
-* `label`: label for the collection in the editor UI; defaults to the value of `name`
-* `label_singular`: singular label for certain elements in the editor; defaults to the value of `label`
-* `description`: optional text, displayed below the label when viewing a collection
-* `files` or `folder` (requires one of these): specifies the collection type and location; details in [Collection Types](https://www.netlifycms.org/docs/collection-types)
-* `filter`: optional filter for `folder` collections; details in [Collection Types](https://www.netlifycms.org/docs/collection-types)
-* `create`: for `folder` collections only; `true` allows users to create new items in the collection; defaults to `false`
-* `publish`: for `publish_mode: editorial_workflow` only; `false` hides UI publishing controls for a collection; defaults to `true`
-* `hide`: `true` hides a collection in the CMS UI; defaults to `false`. Useful when using the relation widget to hide referenced collections.
-* `delete`: `false` prevents users from deleting items in a collection; defaults to `true`
-* `extension`: see detailed description below
-* `format`: see detailed description below
-* `frontmatter_delimiter`: see detailed description under `format`
-* `slug`: see detailed description below
-* `preview_path`: see detailed description below
-* `preview_path_date_field`: see detailed description below
-* `fields` (required): see detailed description below
-* `editor`: see detailed description below
-* `summary`: see detailed description below
-* `sortable_fields`: see detailed description below
-* `view_filters`: see detailed description below
-* `view_groups`: see detailed description below
+- `name` (required): unique identifier for the collection, used as the key when referenced in other contexts (like the [relation widget](https://www.netlifycms.org/docs/widgets/#relation))
+- `identifier_field`: see detailed description below
+- `label`: label for the collection in the editor UI; defaults to the value of `name`
+- `label_singular`: singular label for certain elements in the editor; defaults to the value of `label`
+- `description`: optional text, displayed below the label when viewing a collection
+- `files` or `folder` (requires one of these): specifies the collection type and location; details in [Collection Types](https://www.netlifycms.org/docs/collection-types)
+- `filter`: optional filter for `folder` collections; details in [Collection Types](https://www.netlifycms.org/docs/collection-types)
+- `create`: for `folder` collections only; `true` allows users to create new items in the collection; defaults to `false`
+- `publish`: for `publish_mode: editorial_workflow` only; `false` hides UI publishing controls for a collection; defaults to `true`
+- `hide`: `true` hides a collection in the CMS UI; defaults to `false`. Useful when using the relation widget to hide referenced collections.
+- `delete`: `false` prevents users from deleting items in a collection; defaults to `true`
+- `extension`: see detailed description below
+- `format`: see detailed description below
+- `frontmatter_delimiter`: see detailed description under `format`
+- `slug`: see detailed description below
+- `preview_path`: see detailed description below
+- `preview_path_date_field`: see detailed description below
+- `fields` (required): see detailed description below
+- `editor`: see detailed description below
+- `summary`: see detailed description below
+- `sortable_fields`: see detailed description below
+- `view_filters`: see detailed description below
+- `view_groups`: see detailed description below
 
 The last few options require more detailed information.
 
@@ -953,13 +931,13 @@ You may also specify a custom `extension` not included in the list above, as lon
 
 `format` determines how collection files are parsed and saved. It will be inferred if the `extension` field or existing collection file extensions match one of the supported extensions above. It accepts the following values:
 
-* `yml` or `yaml`: parses and saves files as YAML-formatted data files; saves with `yml` extension by default
-* `toml`: parses and saves files as TOML-formatted data files; saves with `toml` extension by default
-* `json`: parses and saves files as JSON-formatted data files; saves with `json` extension by default
-* `frontmatter`: parses files and saves files with data frontmatter followed by an unparsed body text (edited using a `body` field); saves with `md` extension by default; default for collections that can't be inferred. Collections with `frontmatter` format (either inferred or explicitly set) can parse files with frontmatter in YAML, TOML, or JSON format. However, they will be saved with YAML frontmatter.
-* `yaml-frontmatter`: same as the `frontmatter` format above, except frontmatter will be both parsed and saved only as YAML, followed by unparsed body text. The default delimiter for this option is `---`.
-* `toml-frontmatter`: same as the `frontmatter` format above, except frontmatter will be both parsed and saved only as TOML, followed by unparsed body text. The default delimiter for this option is `+++`.
-* `json-frontmatter`: same as the `frontmatter` format above, except frontmatter will be both parsed and saved as JSON, followed by unparsed body text. The default delimiter for this option is `{` `}`.
+- `yml` or `yaml`: parses and saves files as YAML-formatted data files; saves with `yml` extension by default
+- `toml`: parses and saves files as TOML-formatted data files; saves with `toml` extension by default
+- `json`: parses and saves files as JSON-formatted data files; saves with `json` extension by default
+- `frontmatter`: parses files and saves files with data frontmatter followed by an unparsed body text (edited using a `body` field); saves with `md` extension by default; default for collections that can't be inferred. Collections with `frontmatter` format (either inferred or explicitly set) can parse files with frontmatter in YAML, TOML, or JSON format. However, they will be saved with YAML frontmatter.
+- `yaml-frontmatter`: same as the `frontmatter` format above, except frontmatter will be both parsed and saved only as YAML, followed by unparsed body text. The default delimiter for this option is `---`.
+- `toml-frontmatter`: same as the `frontmatter` format above, except frontmatter will be both parsed and saved only as TOML, followed by unparsed body text. The default delimiter for this option is `+++`.
+- `json-frontmatter`: same as the `frontmatter` format above, except frontmatter will be both parsed and saved as JSON, followed by unparsed body text. The default delimiter for this option is `{` `}`.
 
 #### `frontmatter_delimiter` <a href="frontmatter_delimiter" id="frontmatter_delimiter"></a>
 
@@ -967,20 +945,20 @@ If you have an explicit frontmatter format declared, this option allows you to s
 
 #### `slug` <a href="slug" id="slug"></a>
 
-For folder collections where users can create new items, the `slug` option specifies a template for generating new filenames based on a file's creation date and `title` field. (This means that all collections with `create: true` must have a `title` field (a different field can be used via [`identifier_field`](https://www.netlifycms.org/docs/configuration-options/#identifier\_field)).
+For folder collections where users can create new items, the `slug` option specifies a template for generating new filenames based on a file's creation date and `title` field. (This means that all collections with `create: true` must have a `title` field (a different field can be used via [`identifier_field`](https://www.netlifycms.org/docs/configuration-options/#identifier_field)).
 
 The slug template can also reference a field value by name, eg. `{{title}}`. If a field name conflicts with a built in template tag name - for example, if you have a field named `slug`, and would like to reference that field via `{{slug}}`, you can do so by adding the explicit `fields.` prefix, eg. `{{fields.slug}}`.
 
 **Available template tags:**
 
-* Any field can be referenced by wrapping the field name in double curly braces, eg. `{{author}}`
-* `{{slug}}`: a url-safe version of the `title` field (or identifier field) for the file
-* `{{year}}`: 4-digit year of the file creation date
-* `{{month}}`: 2-digit month of the file creation date
-* `{{day}}`: 2-digit day of the month of the file creation date
-* `{{hour}}`: 2-digit hour of the file creation date
-* `{{minute}}`: 2-digit minute of the file creation date
-* `{{second}}`: 2-digit second of the file creation date
+- Any field can be referenced by wrapping the field name in double curly braces, eg. `{{author}}`
+- `{{slug}}`: a url-safe version of the `title` field (or identifier field) for the file
+- `{{year}}`: 4-digit year of the file creation date
+- `{{month}}`: 2-digit month of the file creation date
+- `{{day}}`: 2-digit day of the month of the file creation date
+- `{{hour}}`: 2-digit hour of the file creation date
+- `{{minute}}`: 2-digit minute of the file creation date
+- `{{second}}`: 2-digit second of the file creation date
 
 **Example:**
 
@@ -1008,11 +986,11 @@ A string representing the path where content in this collection can be found on 
 
 Template tags are the same as those for [slug](https://www.netlifycms.org/docs/configuration-options/#slug), with the following exceptions:
 
-* `{{slug}}` is the entire slug for the current entry (not just the url-safe identifier, as is the case with [`slug` configuration](https://www.netlifycms.org/docs/configuration-options/#slug))
-* The date based template tags, such as `{{year}}` and `{{month}}`, are pulled from a date field in your entry, and may require additional configuration - see [`preview_path_date_field`](https://www.netlifycms.org/docs/configuration-options/#preview\_path\_date\_field) for details. If a date template tag is used and no date can be found, `preview_path` will be ignored.
-* `{{dirname}}` The path to the file's parent directory, relative to the collection's `folder`.
-* `{{filename}}` The file name without the extension part.
-* `{{extension}}` The file extension.
+- `{{slug}}` is the entire slug for the current entry (not just the url-safe identifier, as is the case with [`slug` configuration](https://www.netlifycms.org/docs/configuration-options/#slug))
+- The date based template tags, such as `{{year}}` and `{{month}}`, are pulled from a date field in your entry, and may require additional configuration - see [`preview_path_date_field`](https://www.netlifycms.org/docs/configuration-options/#preview_path_date_field) for details. If a date template tag is used and no date can be found, `preview_path` will be ignored.
+- `{{dirname}}` The path to the file's parent directory, relative to the collection's `folder`.
+- `{{filename}}` The file name without the extension part.
+- `{{extension}}` The file extension.
 
 **Examples:**
 
@@ -1046,13 +1024,13 @@ The `fields` option maps editor UI widgets to field-value pairs in the saved fil
 
 `fields` accepts a list of collection objects, each with the following options:
 
-* `name` (required): unique identifier for the field, used as the key when referenced in other contexts (like the [relation widget](https://www.netlifycms.org/docs/widgets/#relation))
-* `label`: label for the field in the editor UI; defaults to the value of `name`
-* `widget`: defines editor UI and inputs and file field data types; details in [Widgets](https://www.netlifycms.org/docs/widgets)
-* `default`: specify a default value for a field; available for most widget types (see [Widgets](https://www.netlifycms.org/docs/widgets) for details on each widget type). Please note that field default value only works for folder collection type.
-* `required`: specify as `false` to make a field optional; defaults to `true`
-* `pattern`: add field validation by specifying a list with a regex pattern and an error message; more extensive validation can be achieved with [custom widgets](https://www.netlifycms.org/docs/custom-widgets/#advanced-field-validation)
-* `comment`: optional comment to add before the field (only supported for `yaml`)
+- `name` (required): unique identifier for the field, used as the key when referenced in other contexts (like the [relation widget](https://www.netlifycms.org/docs/widgets/#relation))
+- `label`: label for the field in the editor UI; defaults to the value of `name`
+- `widget`: defines editor UI and inputs and file field data types; details in [Widgets](https://www.netlifycms.org/docs/widgets)
+- `default`: specify a default value for a field; available for most widget types (see [Widgets](https://www.netlifycms.org/docs/widgets) for details on each widget type). Please note that field default value only works for folder collection type.
+- `required`: specify as `false` to make a field optional; defaults to `true`
+- `pattern`: add field validation by specifying a list with a regex pattern and an error message; more extensive validation can be achieved with [custom widgets](https://www.netlifycms.org/docs/custom-widgets/#advanced-field-validation)
+- `comment`: optional comment to add before the field (only supported for `yaml`)
 
 In files with frontmatter, one field should be named `body`. This special field represents the section of the document (usually markdown) that comes after the frontmatter.
 
@@ -1074,7 +1052,7 @@ fields:
 
 This setting changes options for the editor view of a collection or a file inside a files collection. It has one option so far:
 
-* `preview`: set to `false` to disable the preview pane for this collection or file; defaults to `true`
+- `preview`: set to `false` to disable the preview pane for this collection or file; defaults to `true`
 
 **Example:**
 
@@ -1093,11 +1071,11 @@ This setting allows the customization of the collection list view. Similar to th
 
 Template tags are the same as those for [slug](https://www.netlifycms.org/docs/configuration-options/#slug), with the following additions:
 
-* `{{dirname}}` The path to the file's parent directory, relative to the collection's `folder`.
-* `{{filename}}` The file name without the extension part.
-* `{{extension}}` The file extension.
-* `{{commit_date}}` The file commit date on supported backends (git based backends).
-* `{{commit_author}}` The file author date on supported backends (git based backends).
+- `{{dirname}}` The path to the file's parent directory, relative to the collection's `folder`.
+- `{{filename}}` The file name without the extension part.
+- `{{extension}}` The file extension.
+- `{{commit_date}}` The file commit date on supported backends (git based backends).
+- `{{commit_author}}` The file author date on supported backends (git based backends).
 
 **Example**
 

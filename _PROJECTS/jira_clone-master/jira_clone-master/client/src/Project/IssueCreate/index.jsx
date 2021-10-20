@@ -58,7 +58,7 @@ const ProjectIssueCreate = ({ project, fetchProject, onCreate, modalClose }) => 
             ...values,
             status: IssueStatus.BACKLOG,
             projectId: project.id,
-            users: values.userIds.map(id => ({ id })),
+            users: values.userIds.map((id) => ({ id })),
           });
           await fetchProject();
           toast.success('Issue has been successfully created.');
@@ -126,17 +126,18 @@ const ProjectIssueCreate = ({ project, fetchProject, onCreate, modalClose }) => 
   );
 };
 
-const typeOptions = Object.values(IssueType).map(type => ({
+const typeOptions = Object.values(IssueType).map((type) => ({
   value: type,
   label: IssueTypeCopy[type],
 }));
 
-const priorityOptions = Object.values(IssuePriority).map(priority => ({
+const priorityOptions = Object.values(IssuePriority).map((priority) => ({
   value: priority,
   label: IssuePriorityCopy[priority],
 }));
 
-const userOptions = project => project.users.map(user => ({ value: user.id, label: user.name }));
+const userOptions = (project) =>
+  project.users.map((user) => ({ value: user.id, label: user.name }));
 
 const renderType = ({ value: type }) => (
   <SelectItem>
@@ -152,21 +153,23 @@ const renderPriority = ({ value: priority }) => (
   </SelectItem>
 );
 
-const renderUser = project => ({ value: userId, removeOptionValue }) => {
-  const user = project.users.find(({ id }) => id === userId);
+const renderUser =
+  (project) =>
+  ({ value: userId, removeOptionValue }) => {
+    const user = project.users.find(({ id }) => id === userId);
 
-  return (
-    <SelectItem
-      key={user.id}
-      withBottomMargin={!!removeOptionValue}
-      onClick={() => removeOptionValue && removeOptionValue()}
-    >
-      <Avatar size={20} avatarUrl={user.avatarUrl} name={user.name} />
-      <SelectItemLabel>{user.name}</SelectItemLabel>
-      {removeOptionValue && <Icon type="close" top={2} />}
-    </SelectItem>
-  );
-};
+    return (
+      <SelectItem
+        key={user.id}
+        withBottomMargin={!!removeOptionValue}
+        onClick={() => removeOptionValue && removeOptionValue()}
+      >
+        <Avatar size={20} avatarUrl={user.avatarUrl} name={user.name} />
+        <SelectItemLabel>{user.name}</SelectItemLabel>
+        {removeOptionValue && <Icon type="close" top={2} />}
+      </SelectItem>
+    );
+  };
 
 ProjectIssueCreate.propTypes = propTypes;
 

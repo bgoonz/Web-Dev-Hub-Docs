@@ -16,7 +16,7 @@ export const ScrollOverlay = styled.div`
 export const ClickableOverlay = styled.div`
   min-height: 100%;
   background: rgba(9, 30, 66, 0.54);
-  ${props => clickOverlayStyles[props.variant]}
+  ${(props) => clickOverlayStyles[props.variant]}
 `;
 
 const clickOverlayStyles = {
@@ -34,19 +34,19 @@ export const StyledModal = styled.div`
   position: relative;
   width: 100%;
   background: #fff;
-  ${props => modalStyles[props.variant]}
+  ${(props) => modalStyles[props.variant]}
 `;
 
 const modalStyles = {
   center: css`
-    max-width: ${props => props.width}px;
+    max-width: ${(props) => props.width}px;
     vertical-align: middle;
     border-radius: 3px;
     ${mixin.boxShadowMedium}
   `,
   aside: css`
     min-height: 100vh;
-    max-width: ${props => props.width}px;
+    max-width: ${(props) => props.width}px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   `,
 };
@@ -57,7 +57,7 @@ export const CloseIcon = styled(Icon)`
   color: ${color.textMedium};
   transition: all 0.1s;
   ${mixin.clickable}
-  ${props => closeIconStyles[props.variant]}
+  ${(props) => closeIconStyles[props.variant]}
 `;
 
 const closeIconStyles = {

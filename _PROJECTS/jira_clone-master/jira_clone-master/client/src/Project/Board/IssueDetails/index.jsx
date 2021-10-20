@@ -40,14 +40,14 @@ const ProjectBoardIssueDetails = ({
 
   const { issue } = data;
 
-  const updateLocalIssueDetails = fields =>
-    setLocalData(currentData => ({ issue: { ...currentData.issue, ...fields } }));
+  const updateLocalIssueDetails = (fields) =>
+    setLocalData((currentData) => ({ issue: { ...currentData.issue, ...fields } }));
 
-  const updateIssue = updatedFields => {
+  const updateIssue = (updatedFields) => {
     api.optimisticUpdate(`/issues/${issueId}`, {
       updatedFields,
       currentFields: issue,
-      setLocalData: fields => {
+      setLocalData: (fields) => {
         updateLocalIssueDetails(fields);
         updateLocalProjectIssues(issue.id, fields);
       },
@@ -60,7 +60,7 @@ const ProjectBoardIssueDetails = ({
         <Type issue={issue} updateIssue={updateIssue} />
         <TopActionsRight>
           <AboutTooltip
-            renderLink={linkProps => (
+            renderLink={(linkProps) => (
               <Button icon="feedback" variant="empty" {...linkProps}>
                 Give feedback
               </Button>

@@ -8,8 +8,8 @@ export const StyledSelect = styled.div`
   border-radius: 4px;
   cursor: pointer;
   ${font.size(14)}
-  ${props => props.variant === 'empty' && `display: inline-block;`}
-  ${props =>
+  ${(props) => props.variant === 'empty' && `display: inline-block;`}
+  ${(props) =>
     props.variant === 'normal' &&
     css`
       width: 100%;
@@ -22,7 +22,7 @@ export const StyledSelect = styled.div`
     `}
   &:focus {
     outline: none;
-    ${props =>
+    ${(props) =>
       props.variant === 'normal' &&
       css`
         border: 1px solid ${color.borderInputFocus};
@@ -31,7 +31,7 @@ export const StyledSelect = styled.div`
       }
     `}
   }
-  ${props =>
+  ${(props) =>
     props.invalid &&
     css`
       &,
@@ -46,7 +46,7 @@ export const ValueContainer = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  ${props =>
+  ${(props) =>
     props.variant === 'normal' &&
     css`
       min-height: 32px;
@@ -68,7 +68,7 @@ export const ValueMulti = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  ${props => props.variant === 'normal' && `padding-top: 5px;`}
+  ${(props) => props.variant === 'normal' && `padding-top: 5px;`}
 `;
 
 export const ValueMultiItem = styled.div`
@@ -97,7 +97,7 @@ export const Dropdown = styled.div`
   border-radius: 0 0 4px 4px;
   background: #fff;
   ${mixin.boxShadowDropdown}
-  ${props => (props.width ? `width: ${props.width}px;` : 'width: 100%;')}
+  ${(props) => (props.width ? `width: ${props.width}px;` : 'width: 100%;')}
 `;
 
 export const DropdownInput = styled.input`

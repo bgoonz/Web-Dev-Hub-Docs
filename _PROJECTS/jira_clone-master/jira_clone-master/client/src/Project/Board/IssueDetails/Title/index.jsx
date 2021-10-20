@@ -38,7 +38,7 @@ const ProjectBoardIssueDetailsTitle = ({ issue, updateIssue }) => {
         defaultValue={issue.title}
         ref={$titleInputRef}
         onBlur={handleTitleChange}
-        onKeyDown={event => {
+        onKeyDown={(event) => {
           if (event.keyCode === KeyCodes.ENTER) {
             event.target.blur();
           }

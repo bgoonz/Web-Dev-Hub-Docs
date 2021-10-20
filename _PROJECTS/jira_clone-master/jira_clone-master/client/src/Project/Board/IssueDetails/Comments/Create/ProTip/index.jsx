@@ -12,7 +12,7 @@ const propTypes = {
 
 const ProjectBoardIssueDetailsCommentsCreateProTip = ({ setFormOpen }) => {
   useEffect(() => {
-    const handleKeyDown = event => {
+    const handleKeyDown = (event) => {
       if (!isFocusedElementEditable() && event.keyCode === KeyCodes.M) {
         event.preventDefault();
         setFormOpen(true);

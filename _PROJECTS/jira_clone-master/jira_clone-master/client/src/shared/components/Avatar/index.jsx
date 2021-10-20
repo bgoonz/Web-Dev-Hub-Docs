@@ -47,7 +47,7 @@ const colors = [
   '#57A5DA',
 ];
 
-const getColorFromName = name => colors[name.toLocaleLowerCase().charCodeAt(0) % colors.length];
+const getColorFromName = (name) => colors[name.toLocaleLowerCase().charCodeAt(0) % colors.length];
 
 Avatar.propTypes = propTypes;
 Avatar.defaultProps = defaultProps;

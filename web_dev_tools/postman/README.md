@@ -8,75 +8,75 @@ Welcome to the Postman docs! This is the place to find official information on h
 
 If you're just starting to learn about APIs and Postman, you can use a variety of channels both in and outside Postman:
 
-* [**Send your first request!**](https://learning.postman.com/docs/getting-started/sending-the-first-request/)
-* Use the **Bootcamp** to work through lessons inside Postman—open it at the bottom right of the app.
-* Explore [workspaces, collections, and more](https://www.postman.com/explore) that you can try out inside Postman, like the following:
-  * [**Learn by API**](https://www.postman.com/postman/workspace/published-postman-templates/collection/9065401-ff29b3be-af69-4442-91e0-c1158b620fc2?ctx=documentation)–walk through beginner API concepts.
-  * [**Postman Training**](https://www.postman.com/postman/workspace/postman-galaxy-training/overview)–Learn APIs 101, Testing and Automation, API Adoption, and API First, earning [Postman badges](https://badgr.com/public/issuers/BC0x4AQaQPC7lFilsBP\_tQ/badges).
-  * [**Student Program**](https://www.postman.com/postman/workspace/postman-student-program/overview)–Take the Student Expert training, covering request configurations and test scripting.
+- [**Send your first request!**](https://learning.postman.com/docs/getting-started/sending-the-first-request/)
+- Use the **Bootcamp** to work through lessons inside Postman—open it at the bottom right of the app.
+- Explore [workspaces, collections, and more](https://www.postman.com/explore) that you can try out inside Postman, like the following:
+  - [**Learn by API**](https://www.postman.com/postman/workspace/published-postman-templates/collection/9065401-ff29b3be-af69-4442-91e0-c1158b620fc2?ctx=documentation)–walk through beginner API concepts.
+  - [**Postman Training**](https://www.postman.com/postman/workspace/postman-galaxy-training/overview)–Learn APIs 101, Testing and Automation, API Adoption, and API First, earning [Postman badges](https://badgr.com/public/issuers/BC0x4AQaQPC7lFilsBP_tQ/badges).
+  - [**Student Program**](https://www.postman.com/postman/workspace/postman-student-program/overview)–Take the Student Expert training, covering request configurations and test scripting.
 
 ### What are you here to learn about? <a href="what-are-you-here-to-learn-about" id="what-are-you-here-to-learn-about"></a>
 
 If you're learning to carry out a specific task or workflow in Postman, check out the following topics to find resources:
 
-* [**Making requests**](https://learning.postman.com/docs/getting-started/introduction/#making-requests)
-* [**Testing APIs**](https://learning.postman.com/docs/getting-started/introduction/#testing-apis)
-* [**Building and managing APIs**](https://learning.postman.com/docs/getting-started/introduction/#building-and-managing-apis)
-* [**Publishing APIs**](https://learning.postman.com/docs/getting-started/introduction/#publishing-apis)
-* [**Collaborating with your team**](https://learning.postman.com/docs/getting-started/introduction/#collaborating-with-your-team)
-* [**Developing with Postman**](https://learning.postman.com/docs/getting-started/introduction/#developing-with-postman)
+- [**Making requests**](https://learning.postman.com/docs/getting-started/introduction/#making-requests)
+- [**Testing APIs**](https://learning.postman.com/docs/getting-started/introduction/#testing-apis)
+- [**Building and managing APIs**](https://learning.postman.com/docs/getting-started/introduction/#building-and-managing-apis)
+- [**Publishing APIs**](https://learning.postman.com/docs/getting-started/introduction/#publishing-apis)
+- [**Collaborating with your team**](https://learning.postman.com/docs/getting-started/introduction/#collaborating-with-your-team)
+- [**Developing with Postman**](https://learning.postman.com/docs/getting-started/introduction/#developing-with-postman)
 
 #### Making requests <a href="making-requests" id="making-requests"></a>
 
 If you're building a client app or just need to connect to an API, check out some Postman essentials:
 
-* [Connecting to APIs](https://learning.postman.com/docs/sending-requests/requests/)
-* [Authorizing requests](https://learning.postman.com/docs/sending-requests/authorization/)
-* [Grouping requests in collections](https://learning.postman.com/docs/sending-requests/intro-to-collections/)
-* [Using variables](https://learning.postman.com/docs/sending-requests/variables/)
-* [Visualizing data](https://learning.postman.com/docs/sending-requests/visualizer/)
+- [Connecting to APIs](https://learning.postman.com/docs/sending-requests/requests/)
+- [Authorizing requests](https://learning.postman.com/docs/sending-requests/authorization/)
+- [Grouping requests in collections](https://learning.postman.com/docs/sending-requests/intro-to-collections/)
+- [Using variables](https://learning.postman.com/docs/sending-requests/variables/)
+- [Visualizing data](https://learning.postman.com/docs/sending-requests/visualizer/)
 
 #### Testing APIs <a href="testing-apis" id="testing-apis"></a>
 
 If you're testing an API, you can use Postman to automate various parts of the process:
 
-* [Writing test scripts](https://learning.postman.com/docs/writing-scripts/test-scripts/)
-* [Automating workflows with the collection runner](https://learning.postman.com/docs/running-collections/intro-to-collection-runs/)
-* [Capturing HTTP requests](https://learning.postman.com/docs/sending-requests/capturing-request-data/capturing-http-requests/)
-* [Test script examples](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/)
+- [Writing test scripts](https://learning.postman.com/docs/writing-scripts/test-scripts/)
+- [Automating workflows with the collection runner](https://learning.postman.com/docs/running-collections/intro-to-collection-runs/)
+- [Capturing HTTP requests](https://learning.postman.com/docs/sending-requests/capturing-request-data/capturing-http-requests/)
+- [Test script examples](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/)
 
 #### Building and managing APIs <a href="building-and-managing-apis" id="building-and-managing-apis"></a>
 
 If you're developing a back-end, working API-first, or need to monitor API performance, Postman utilities can streamline your workflows:
 
-* [Defining an API from a schema](https://learning.postman.com/docs/designing-and-developing-your-api/the-api-workflow/)
-* [Monitoring test runs](https://learning.postman.com/docs/designing-and-developing-your-api/monitoring-your-api/intro-monitors/)
-* [Analyzing API performance](https://learning.postman.com/docs/designing-and-developing-your-api/view-and-analyze-api-reports/)
-* [Mocking responses](https://learning.postman.com/docs/designing-and-developing-your-api/mocking-data/setting-up-mock/)
+- [Defining an API from a schema](https://learning.postman.com/docs/designing-and-developing-your-api/the-api-workflow/)
+- [Monitoring test runs](https://learning.postman.com/docs/designing-and-developing-your-api/monitoring-your-api/intro-monitors/)
+- [Analyzing API performance](https://learning.postman.com/docs/designing-and-developing-your-api/view-and-analyze-api-reports/)
+- [Mocking responses](https://learning.postman.com/docs/designing-and-developing-your-api/mocking-data/setting-up-mock/)
 
 #### Publishing APIs <a href="publishing-apis" id="publishing-apis"></a>
 
 If you're exposing an API for public use, Postman can support developer onboarding:
 
-* [Publishing documentation](https://learning.postman.com/docs/publishing-your-api/documenting-your-api/)
-* [Using Run in Postman](https://learning.postman.com/docs/publishing-your-api/run-in-postman/introduction-run-button/)
+- [Publishing documentation](https://learning.postman.com/docs/publishing-your-api/documenting-your-api/)
+- [Using Run in Postman](https://learning.postman.com/docs/publishing-your-api/run-in-postman/introduction-run-button/)
 
 #### Collaborating with your team <a href="collaborating-with-your-team" id="collaborating-with-your-team"></a>
 
 If you're using Postman in your company or team, check out these guides to maximize your collaboration:
 
-* [Collaborating in Postman](https://learning.postman.com/docs/collaborating-in-postman/collaboration-intro/)
-* [Creating workspaces](https://learning.postman.com/docs/collaborating-in-postman/using-workspaces/creating-workspaces/)
-* [Managing Postman for an organization](https://learning.postman.com/docs/administration/managing-your-team/managing-your-team/)
-* [Onboarding your team](https://learning.postman.com/docs/administration/onboarding-checklist/)
+- [Collaborating in Postman](https://learning.postman.com/docs/collaborating-in-postman/collaboration-intro/)
+- [Creating workspaces](https://learning.postman.com/docs/collaborating-in-postman/using-workspaces/creating-workspaces/)
+- [Managing Postman for an organization](https://learning.postman.com/docs/administration/managing-your-team/managing-your-team/)
+- [Onboarding your team](https://learning.postman.com/docs/administration/onboarding-checklist/)
 
 #### Developing with Postman <a href="developing-with-postman" id="developing-with-postman"></a>
 
 If you're integrating Postman with your CI/CD workflow or are developing with Postman APIs or libraries, check out these resources:
 
-* [Integrating with a development pipeline](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/)
-* [Developing with Postman utilities](https://learning.postman.com/docs/developer/resources-intro/)
-* [Postman API](https://learning.postman.com/docs/developer/intro-api/)
+- [Integrating with a development pipeline](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/)
+- [Developing with Postman utilities](https://learning.postman.com/docs/developer/resources-intro/)
+- [Postman API](https://learning.postman.com/docs/developer/intro-api/)
 
 ### Providing feedback <a href="providing-feedback" id="providing-feedback"></a>
 
@@ -84,29 +84,25 @@ Share your thoughts on the documentation and help the Postman team to improve it
 
 Help improve Postman and have an impact on [Postman's roadmap](https://github.com/postmanlabs/postman-app-support/projects/45?fullscreen=true) by sending your feedback directly to Postman's developer team. To submit feature requests, [create an issue on the Postman GitHub repo](https://github.com/postmanlabs/postman-app-support/issues).
 
-
-
-
-
 \
 To get the latest version of the Postman desktop app, visit the [download page](https://www.postman.com/downloads/) and select **Download** for your platform.
 
 ### Contents
 
-* Installing Postman on the desktop
-  * [Mac](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#installing-postman-on-mac)
-  * [Windows](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#installing-postman-on-windows)
-  * [Linux](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#installing-postman-on-linux)
-* [Using Postman on the web](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#using-postman-on-the-web)
-  * [Browser requirements](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#browser-requirements)
-  * [Installing the Postman desktop agent](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#installing-the-postman-desktop-agent)
-  * [Web limitations](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#web-limitations)
-* [Updating Postman](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#updating-postman)
-* [Chrome app (deprecated)](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#postman-chrome-app-deprecated)
-  * [Migrating to the native app](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#migrating-to-the-native-app)
-* [Using Postman behind a firewall](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#using-postman-behind-a-firewall)
-* [Troubleshooting your Postman installation](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#troubleshooting-your-postman-installation)
-* [Next steps](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#next-steps)
+- Installing Postman on the desktop
+  - [Mac](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#installing-postman-on-mac)
+  - [Windows](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#installing-postman-on-windows)
+  - [Linux](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#installing-postman-on-linux)
+- [Using Postman on the web](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#using-postman-on-the-web)
+  - [Browser requirements](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#browser-requirements)
+  - [Installing the Postman desktop agent](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#installing-the-postman-desktop-agent)
+  - [Web limitations](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#web-limitations)
+- [Updating Postman](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#updating-postman)
+- [Chrome app (deprecated)](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#postman-chrome-app-deprecated)
+  - [Migrating to the native app](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#migrating-to-the-native-app)
+- [Using Postman behind a firewall](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#using-postman-behind-a-firewall)
+- [Troubleshooting your Postman installation](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#troubleshooting-your-postman-installation)
+- [Next steps](https://github.com/postmanlabs/postman-docs/blob/develop/src/pages/docs/getting-started/installation-and-updates.md#next-steps)
 
 > Note that the Postman team only tests, fixes bugs, and provides support for the app on Mac, Windows, Linux, and the web.
 
@@ -151,9 +147,9 @@ Categories=Development;
 
 > Postman supports the following distributions:
 >
-> * Ubuntu 14.04 and newer
-> * Fedora 24
-> * Debian 8 and newer
+> - Ubuntu 14.04 and newer
+> - Fedora 24
+> - Debian 8 and newer
 >
 > The support of certain Linux distributions depends on if they are supported by Electron. Refer to [Electron's documentation](https://www.electronjs.org/docs/tutorial/support#linux).
 >
@@ -173,10 +169,10 @@ You can use Postman in your web browser to carry out your API development and te
 
 Postman’s web application is optimized for the following browsers:
 
-* Chrome (78 and higher)
-* Firefox (76 and higher)
-* Edge (79 and higher)
-* Safari (13.1.1 and higher)
+- Chrome (78 and higher)
+- Firefox (76 and higher)
+- Edge (79 and higher)
+- Safari (13.1.1 and higher)
 
 #### Installing the Postman desktop agent
 
@@ -200,10 +196,10 @@ You can select the **Cloud Agent** if you want to send HTTP requests via Postman
 
 Postman on the web is under active development, but there are a few features you can currently only access in the desktop app and not in your web browser:
 
-* **Live preview**: You will not see all of your request headers update live as you enter your request configurations as you do in the desktop Postman app—you will only see Authorization headers update as you edit.
-* **Saving responses to file**
-* **Certificates and Proxy**: These will take the browser defined value and cannot be overridden by Postman.
-* **Postman Interceptor**
+- **Live preview**: You will not see all of your request headers update live as you enter your request configurations as you do in the desktop Postman app—you will only see Authorization headers update as you edit.
+- **Saving responses to file**
+- **Certificates and Proxy**: These will take the browser defined value and cannot be overridden by Postman.
+- **Postman Interceptor**
 
 ### Updating Postman
 
@@ -223,13 +219,13 @@ The Postman Chrome app is deprecated—if you're using the Chrome app, you can [
 
 The native app is built on [Electron](https://www.electronjs.org), and [overcomes a number of restrictions](https://blog.postman.com/going-native/) of the Chrome platform.
 
-* The native apps let you work with [cookies](https://github.com/postmanlabs/postman-docs/blob/develop/docs/sending-requests/cookies) directly.
-* Unlike the Chrome app, no separate extension for the [Interceptor](https://github.com/postmanlabs/postman-docs/blob/develop/docs/sending-requests/capturing-request-data/interceptor) is needed.
-* The native apps come with a built-in proxy that you can use to [capture network traffic](https://github.com/postmanlabs/postman-docs/blob/develop/docs/sending-requests/capturing-request-data/capturing-http-requests).
-* The native apps are not restricted by the Chrome standards for the menu bar. You can check for updates, create Postman Windows and tabs, and edit preferences.
-* The native apps let you send headers like `Origin` and `User-Agent`. These are restricted in the Chrome app.
-* The "don't follow redirects" option exists in the native apps to prevent requests that return a 300-series response from being automatically redirected—doing this in the Chrome app requires the Interceptor extension.
-* The native app has a built-in [console](https://github.com/postmanlabs/postman-docs/blob/develop/docs/sending-requests/troubleshooting-api-requests), which allows you to view the network request details for API calls.
+- The native apps let you work with [cookies](https://github.com/postmanlabs/postman-docs/blob/develop/docs/sending-requests/cookies) directly.
+- Unlike the Chrome app, no separate extension for the [Interceptor](https://github.com/postmanlabs/postman-docs/blob/develop/docs/sending-requests/capturing-request-data/interceptor) is needed.
+- The native apps come with a built-in proxy that you can use to [capture network traffic](https://github.com/postmanlabs/postman-docs/blob/develop/docs/sending-requests/capturing-request-data/capturing-http-requests).
+- The native apps are not restricted by the Chrome standards for the menu bar. You can check for updates, create Postman Windows and tabs, and edit preferences.
+- The native apps let you send headers like `Origin` and `User-Agent`. These are restricted in the Chrome app.
+- The "don't follow redirects" option exists in the native apps to prevent requests that return a 300-series response from being automatically redirected—doing this in the Chrome app requires the Interceptor extension.
+- The native app has a built-in [console](https://github.com/postmanlabs/postman-docs/blob/develop/docs/sending-requests/troubleshooting-api-requests), which allows you to view the network request details for API calls.
 
 #### Migrating to the native app
 
@@ -245,10 +241,10 @@ Alternatively, if you don't want to sign in to your Postman account, you can bul
 
 Postman's infrastructure runs on Amazon's AWS platform. If you are operating behind a network firewall, you will need to allow the following domains to make WebSocket connections for Postman:
 
-* `\*.getpostman.com`
-* `\*.postman.co`
-* `\*.pstmn.io`
-* `\*postman.com`
+- `\*.getpostman.com`
+- `\*.postman.co`
+- `\*.pstmn.io`
+- `\*postman.com`
 
 By default, WebSocket connections use the same ports as HTTP (80) and HTTPS (443).
 
@@ -266,13 +262,13 @@ If you see an **Update Failed** notification in Postman, you can use the DevTool
 
 Open the DevTools using **View** > **Developer** > **Show DevTools (Current View)**. Some known errors are as follows:
 
-* **Error message:** `Cannot update while running on a read-only volume`
-  * This error means that the app user does not have write permission in the directory where Postman is installed. To resolve the problem, move Postman to a directory where the user has write permissions, for example the `/Application` directory for Mac, and to the `home` directory for Linux.
+- **Error message:** `Cannot update while running on a read-only volume`
+  - This error means that the app user does not have write permission in the directory where Postman is installed. To resolve the problem, move Postman to a directory where the user has write permissions, for example the `/Application` directory for Mac, and to the `home` directory for Linux.
 
 ![Write Permission Issue in DevTools](https://camo.githubusercontent.com/53e326ba72c130c779d1767c7fa200cb023cb22feae5724f8ac0cebadb8145f5/68747470733a2f2f6173736574732e706f73746d616e2e636f6d2f706f73746d616e2d646f63732f77726974652d7065726d697373696f6e2d69737375652e706e67)
 
-* **Error message:** `Code signature at URL file:///... did not pass validation: code object is not signed at all`
-  * This error means that there are multiple updates running at the same time. This can happen when the app is opened before the previous update could finish. To resolve the problem, quit and reopen the app.
+- **Error message:** `Code signature at URL file:///... did not pass validation: code object is not signed at all`
+  - This error means that there are multiple updates running at the same time. This can happen when the app is opened before the previous update could finish. To resolve the problem, quit and reopen the app.
 
 [![Multiple Updates Running Issue in DevTools](https://camo.githubusercontent.com/c5e998ba8d4ab426b6beb383a06c11e362701b841e0ec649c1aec7b8c3092c51/68747470733a2f2f6173736574732e706f73746d616e2e636f6d2f706f73746d616e2d646f63732f6d756c7469706c652d757064617465732d72756e6e696e672e706e67)](https://camo.githubusercontent.com/c5e998ba8d4ab426b6beb383a06c11e362701b841e0ec649c1aec7b8c3092c51/68747470733a2f2f6173736574732e706f73746d616e2e636f6d2f706f73746d616e2d646f63732f6d756c7469706c652d757064617465732d72756e6e696e672e706e67)
 
@@ -284,31 +280,29 @@ If you are using Postman for Linux, and installed the app with the Ubuntu Softwa
 
 If you're having trouble with installation or updates, reach out for [Postman support](https://www.postman.com/support). If your installation is working as expected, [send your first request](https://github.com/postmanlabs/postman-docs/blob/develop/docs/getting-started/sending-the-first-request)!
 
-
-
 ## Postman JavaScript reference
 
 Postman provides JavaScript APIs that you can use in your request scripts. The `pm` object provides most of the functionality for testing your request and response data, with the `postman` object providing some additional workflow control.
 
 ### Contents <a href="contents" id="contents"></a>
 
-* [The pm object](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#the-pm-object)
-  * [Using variables in scripts](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#using-variables-in-scripts)
-    * [Environment variables](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#using-environment-variables-in-scripts)
-    * [Collection variables](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#using-collection-variables-in-scripts)
-    * [Global variables](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#using-global-variables-in-scripts)
-    * [Data variables](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#using-data-variables-in-scripts)
-  * [Scripting with request and response data](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-with-request-and-response-data)
-    * [Request data](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-with-request-data)
-    * [Response data](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-with-response-data)
-    * [Request info](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-with-request-info)
-    * [Cookies](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-with-request-cookies)
-  * [Sending requests from scripts](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#sending-requests-from-scripts)
-* [Scripting workflows](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-workflows)
-* [Scripting visualizations](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-visualizations)
-* [Building response data into visualizations](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#building-response-data-into-visualizations)
-* [Writing test assertions](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#writing-test-assertions)
-* [Using external libraries](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#using-external-libraries)
+- [The pm object](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#the-pm-object)
+  - [Using variables in scripts](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#using-variables-in-scripts)
+    - [Environment variables](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#using-environment-variables-in-scripts)
+    - [Collection variables](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#using-collection-variables-in-scripts)
+    - [Global variables](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#using-global-variables-in-scripts)
+    - [Data variables](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#using-data-variables-in-scripts)
+  - [Scripting with request and response data](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-with-request-and-response-data)
+    - [Request data](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-with-request-data)
+    - [Response data](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-with-response-data)
+    - [Request info](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-with-request-info)
+    - [Cookies](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-with-request-cookies)
+  - [Sending requests from scripts](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#sending-requests-from-scripts)
+- [Scripting workflows](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-workflows)
+- [Scripting visualizations](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-visualizations)
+- [Building response data into visualizations](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#building-response-data-into-visualizations)
+- [Writing test assertions](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#writing-test-assertions)
+- [Using external libraries](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#using-external-libraries)
 
 ### The pm object <a href="the-pm-object" id="the-pm-object"></a>
 
@@ -322,25 +316,25 @@ You can access and manipulate [variables](https://learning.postman.com/docs/send
 
 Postman supports a variety of variable [scopes](https://learning.postman.com/docs/sending-requests/variables/#variable-scopes). The `pm` object provides methods for accessing global, collection, and environment variables specifically, and `pm.variables` methods for accessing variables at different scopes as well as setting local variables.
 
-* Check if there is a Postman variable in the current scope:
+- Check if there is a Postman variable in the current scope:
 
 ```
 pm.variables.has(variableName:String):function → Boolean
 ```
 
-* Get the value of the Postman variable with the specified name:
+- Get the value of the Postman variable with the specified name:
 
 ```
 pm.variables.get(variableName:String):function → *
 ```
 
-* Set a local variable with the specified name and value:
+- Set a local variable with the specified name and value:
 
 ```
 pm.variables.set(variableName:String, variableValue:*):function
 ```
 
-* Return the resolved value of a dynamic variable inside a script using the syntax `{{$variableName}}`:
+- Return the resolved value of a dynamic variable inside a script using the syntax `{{$variableName}}`:
 
 ```
 pm.variables.replaceIn(variableName:String):function: → *
@@ -353,7 +347,7 @@ const stringWithVars = pm.variables.replaceIn("Hi, my name is {{$randomFirstName
 console.log(stringWithVars);
 ```
 
-* Return an object containing all variables with their values in the current scope. Based on the order of precedence, this will contain variables from multiple scopes.
+- Return an object containing all variables with their values in the current scope. Based on the order of precedence, this will contain variables from multiple scopes.
 
 ```
 pm.variables.toObject():function → Object
@@ -361,11 +355,11 @@ pm.variables.toObject():function → Object
 
 Variable scope determines the precedence Postman gives to variables when you reference them, in order of increasing precedence:
 
-* Global
-* Environment
-* Collection
-* Data
-* Local
+- Global
+- Environment
+- Collection
+- Data
+- Local
 
 The variable with the closest scope overrides any others. For example, if you have variables named `score` in both the current collection and the active environment, and you call `pm.variables.get('score')`, Postman will return the current value of the environment variable. When you set a variable value using `pm.variables.set`, the value is local and will only persist for the current request or collection run.
 
@@ -394,31 +388,31 @@ You can also access variables defined in the individual scopes via [pm.environme
 
 Your scripts can use the `pm.environment` methods to access and manipulate variables in the active (currently selected) environment.
 
-* The name of the active environment:
+- The name of the active environment:
 
 ```
 pm.environment.name:String
 ```
 
-* Check whether the environment has a variable with the specified name:
+- Check whether the environment has a variable with the specified name:
 
 ```
 pm.environment.has(variableName:String):function → Boolean
 ```
 
-* Get the variable with the specified name in the active environment:
+- Get the variable with the specified name in the active environment:
 
 ```
 pm.environment.get(variableName:String):function → *
 ```
 
-* Set the variable with the specified name and value in the active environment:
+- Set the variable with the specified name and value in the active environment:
 
 ```
 pm.environment.set(variableName:String, variableValue:*):function
 ```
 
-* Return the resolved value of a dynamic variable inside a script using the syntax `{{$variableName}}`:
+- Return the resolved value of a dynamic variable inside a script using the syntax `{{$variableName}}`:
 
 ```
 pm.environment.replaceIn(variableName:String):function → *
@@ -432,19 +426,19 @@ const stringWithVars = pm.environment.replaceIn("Hi, my name is {{firstName}} an
 console.log(stringWithVars);
 ```
 
-* Return all variables with their values in the active environment in a single object:
+- Return all variables with their values in the active environment in a single object:
 
 ```
 pm.environment.toObject():function → Object
 ```
 
-* Remove a variable from the active environment, specifying the variable by name:
+- Remove a variable from the active environment, specifying the variable by name:
 
 ```
 pm.environment.unset(variableName:String):function
 ```
 
-* Clear all variables in the active environment:
+- Clear all variables in the active environment:
 
 ```
 pm.environment.clear():function
@@ -456,25 +450,25 @@ pm.environment.clear():function
 
 Your scripts can use the `pm.collectionVariables` methods to access and manipulate variables in the collection.
 
-* Check whether there is a variable in the collection with the specified name:
+- Check whether there is a variable in the collection with the specified name:
 
 ```
 pm.collectionVariables.has(variableName:String):function → Boolean
 ```
 
-* Return the value of the collection variable with the specified name:
+- Return the value of the collection variable with the specified name:
 
 ```
 pm.collectionVariables.get(variableName:String):function → *
 ```
 
-* Set a collection variable with the specified name and value:
+- Set a collection variable with the specified name and value:
 
 ```
 pm.collectionVariables.set(variableName:String, variableValue:*):function
 ```
 
-* Return the resolved value of a dynamic variable inside a script using the syntax `{{$variableName}}`:
+- Return the resolved value of a dynamic variable inside a script using the syntax `{{$variableName}}`:
 
 ```
 pm.collectionVariables.replaceIn(variableName:String):function → *
@@ -488,19 +482,19 @@ const stringWithVars = pm.collectionVariables.replaceIn("Hi, my name is {{firstN
 console.log(stringWithVars);
 ```
 
-* Return all variables with their values in the collection in an object:
+- Return all variables with their values in the collection in an object:
 
 ```
 pm.collectionVariables.toObject():function → Object
 ```
 
-* Remove the specified variable from the collection:
+- Remove the specified variable from the collection:
 
 ```
 pm.collectionVariables.unset(variableName:String):function
 ```
 
-* Clear all variables from the collection:
+- Clear all variables from the collection:
 
 ```
 pm.collectionVariables.clear():function
@@ -510,25 +504,25 @@ pm.collectionVariables.clear():function
 
 Your scripts can use the `pm.globals` methods to access and manipulate variables at global scope within the workspace.
 
-* Check where there is a global variable with the specified name:
+- Check where there is a global variable with the specified name:
 
 ```
 pm.globals.has(variableName:String):function → Boolean
 ```
 
-* Return the value of the global variable with the specified name:
+- Return the value of the global variable with the specified name:
 
 ```
 pm.globals.get(variableName:String):function → *
 ```
 
-* Set a global variable with specified name and value:
+- Set a global variable with specified name and value:
 
 ```
 pm.globals.set(variableName:String, variableValue:*):function
 ```
 
-* Return the resolved value of a dynamic variable inside a script using the syntax `{{$variableName}}`:
+- Return the resolved value of a dynamic variable inside a script using the syntax `{{$variableName}}`:
 
 ```
 pm.globals.replaceIn(variableName:String):function → String
@@ -542,19 +536,19 @@ const stringWithVars = pm.globals.replaceIn("Hi, my name is {{firstName}} and I 
 console.log(stringWithVars);
 ```
 
-* Return all global variables and their values in an object:
+- Return all global variables and their values in an object:
 
 ```
 pm.globals.toObject():function → Object
 ```
 
-* Remove the specified global variable:
+- Remove the specified global variable:
 
 ```
 pm.globals.unset(variableName:String):function
 ```
 
-* Clear all global variables in the workspace:
+- Clear all global variables in the workspace:
 
 ```
 pm.globals.clear():function
@@ -566,31 +560,31 @@ pm.globals.clear():function
 
 Your scripts can use the `pm.iterationData` methods to access and manipulate variables from [data files during a collection run](https://learning.postman.com/docs/running-collections/working-with-data-files/).
 
-* Check whether a variable with the specified name exists in the current iteration data:
+- Check whether a variable with the specified name exists in the current iteration data:
 
 ```
 pm.iterationData.has(variableName:String):function → boolean
 ```
 
-* Return a variable from the iteration data with the specified name:
+- Return a variable from the iteration data with the specified name:
 
 ```
 pm.iterationData.get(variableName:String):function → *
 ```
 
-* Return the iteration data variables in an object:
+- Return the iteration data variables in an object:
 
 ```
 pm.iterationData.toObject():function → Object
 ```
 
-* Convert the iterationData object to JSON format:
+- Convert the iterationData object to JSON format:
 
 ```
 pm.iterationData.toJSON():function → *
 ```
 
-* Remove the specified variable:
+- Remove the specified variable:
 
 ```
 pm.iterationData.unset(key:String):function
@@ -608,31 +602,31 @@ You can use the `pm.request` object pre-request scripts to alter various parts o
 
 The `pm.request` object provides the following properties and methods:
 
-* The request URL:
+- The request URL:
 
 ```
 pm.request.url:Url
 ```
 
-* The [list of headers](https://www.postmanlabs.com/postman-collection/HeaderList.html) for the current request:
+- The [list of headers](https://www.postmanlabs.com/postman-collection/HeaderList.html) for the current request:
 
 ```
 pm.request.headers:HeaderList
 ```
 
-* The HTTP request method:
+- The HTTP request method:
 
 ```
 pm.request.method:String
 ```
 
-* The data in the [request body](https://www.postmanlabs.com/postman-collection/RequestBody.html). This object is immutable and cannot be modified from scripts:
+- The data in the [request body](https://www.postmanlabs.com/postman-collection/RequestBody.html). This object is immutable and cannot be modified from scripts:
 
 ```
 pm.request.body:RequestBody
 ```
 
-* Add a header with the specified name and value for the current request:
+- Add a header with the specified name and value for the current request:
 
 ```
 pm.request.headers.add(header:Header):function
@@ -647,13 +641,13 @@ pm.request.headers.add({
 });
 ```
 
-* Delete the request header with the specified name:
+- Delete the request header with the specified name:
 
 ```
 pm.request.headers.remove(headerName:String):function
 ```
 
-* Insert the specified header name and value (if the header does not exist, otherwise the already existing header will update to the new value):
+- Insert the specified header name and value (if the header does not exist, otherwise the already existing header will update to the new value):
 
 ```
 pm.request.headers.upsert({key: headerName:String, value: headerValue:String}):function)
@@ -667,43 +661,43 @@ The `pm.response` object provides access to the data returned in the response fo
 
 The `pm.response` object provides the following properties and methods:
 
-* The response status code:
+- The response status code:
 
 ```
 pm.response.code:Number
 ```
 
-* The status text string:
+- The status text string:
 
 ```
 pm.response.status:String
 ```
 
-* The [list of response headers](https://www.postmanlabs.com/postman-collection/HeaderList.html):
+- The [list of response headers](https://www.postmanlabs.com/postman-collection/HeaderList.html):
 
 ```
 pm.response.headers:HeaderList
 ```
 
-* The time the response took to receive in milliseconds:
+- The time the response took to receive in milliseconds:
 
 ```
 pm.response.responseTime:Number
 ```
 
-* The size of the response received:
+- The size of the response received:
 
 ```
 pm.response.responseSize:Number
 ```
 
-* The response text:
+- The response text:
 
 ```
 pm.response.text():Function → String
 ```
 
-* The response JSON, which you can use to drill down into the properties received:
+- The response JSON, which you can use to drill down into the properties received:
 
 ```
 pm.response.json():Function → Object
@@ -717,31 +711,31 @@ The `pm.info` object provides data related to the request and the script itself,
 
 The `pm.info` object provides the following properties and methods:
 
-* The event, which will be either "prerequest" or "test" depending on where the script is executing within the request:
+- The event, which will be either "prerequest" or "test" depending on where the script is executing within the request:
 
 ```
 pm.info.eventName:String
 ```
 
-* The value of the current [iteration](https://learning.postman.com/docs/running-collections/intro-to-collection-runs/):
+- The value of the current [iteration](https://learning.postman.com/docs/running-collections/intro-to-collection-runs/):
 
 ```
 pm.info.iteration:Number
 ```
 
-* The total number of iterations that are scheduled to run:
+- The total number of iterations that are scheduled to run:
 
 ```
 pm.info.iterationCount:Number
 ```
 
-* The saved name of the request running:
+- The saved name of the request running:
 
 ```
 pm.info.requestName:String
 ```
 
-* A unique GUID that identifies the running request:
+- A unique GUID that identifies the running request:
 
 ```
 pm.info.requestId:String
@@ -753,19 +747,19 @@ The `pm.cookies` object provides access to the list of cookies associated with t
 
 The `pm.cookies` object provides the following properties and methods:
 
-* Check whether a particular cookie (specified by name) exists for the requested domain:
+- Check whether a particular cookie (specified by name) exists for the requested domain:
 
 ```
 pm.cookies.has(cookieName:String):Function → Boolean
 ```
 
-* Get the value of the specified cookie:
+- Get the value of the specified cookie:
 
 ```
 pm.cookies.get(cookieName:String):Function → String
 ```
 
-* Get a copy of all cookies and their values in an object. Returns any cookies that are defined for the request domain and path:
+- Get a copy of all cookies and their values in an object. Returns any cookies that are defined for the request domain and path:
 
 ```
 pm.cookies.toObject():Function → Object
@@ -777,7 +771,7 @@ You can also use `pm.cookies.jar` to specify a domain for access to request cook
 
 To enable programmatic access via the `pm.cookies.jar` methods, first [whitelist](https://learning.postman.com/docs/sending-requests/cookies/) the cookie URL.
 
-* Access the cookie jar object:
+- Access the cookie jar object:
 
 ```
 pm.cookies.jar():Function → Object
@@ -790,13 +784,13 @@ const jar = pm.cookies.jar();
 //cookie methods...
 ```
 
-* Set a cookie using name and value:
+- Set a cookie using name and value:
 
 ```
 jar.set(URL:String, cookie name:String, cookie value:String, callback(error, cookie)):Function → Object
 ```
 
-* Set a cookie using [PostmanCookie](https://www.postmanlabs.com/postman-collection/Cookie.html) or a compatible object:
+- Set a cookie using [PostmanCookie](https://www.postmanlabs.com/postman-collection/Cookie.html) or a compatible object:
 
 ```
 jar.set(URL:String, { name:String, value:String, httpOnly:Bool }, callback(error, cookie)):Function → Object
@@ -815,25 +809,25 @@ jar.set("httpbin.org", "session-id", "abc123", (error, cookie) => {
 });
 ```
 
-* Get a cookie from the cookie jar:
+- Get a cookie from the cookie jar:
 
 ```
 jar.get(URL:String, cookieName:String, callback (error, value)):Function → Object
 ```
 
-* Get all the cookies from the cookie jar. The cookies are available in the callback function:
+- Get all the cookies from the cookie jar. The cookies are available in the callback function:
 
 ```
 jar.getAll(URL:String, callback (error, cookies)):Function
 ```
 
-* Remove a cookie:
+- Remove a cookie:
 
 ```
 jar.unset(URL:String, token:String, callback(error)):Function → Object
 ```
 
-* Clear all cookies from the cookie jar:
+- Clear all cookies from the cookie jar:
 
 ```
 jar.clear(URL:String, callback (error)):Function → Object
@@ -845,7 +839,7 @@ jar.clear(URL:String, callback (error)):Function → Object
 
 You can use the `pm.sendRequest` method to send a request asynchronously from a **Pre-request** or **Test** script. This allows you to execute logic in the background if you are carrying out computation or sending multiple requests at the same time without waiting for each to complete. You can avoid blocking issues by adding a callback function so that your code can respond when Postman receives a response. You can then carry out any additional processing you need on the response data.
 
-You can pass the `pm.sendRequest` method a URL string, or can provide a complete request configuration in JSON including headers, method, body, [and more](http://www.postmanlabs.com/postman-collection/Request.html#\~definition).
+You can pass the `pm.sendRequest` method a URL string, or can provide a complete request configuration in JSON including headers, method, body, [and more](http://www.postmanlabs.com/postman-collection/Request.html#~definition).
 
 ```
 // Example with a plain string URL
@@ -888,7 +882,7 @@ pm.sendRequest('https://postman-echo.com/get', (error, response) => {
 });
 ```
 
-See the [Request definition](http://www.postmanlabs.com/postman-collection/Request.html#\~definition) and [Response structure](http://www.postmanlabs.com/postman-collection/Response.html) reference docs for more detail.
+See the [Request definition](http://www.postmanlabs.com/postman-collection/Request.html#~definition) and [Response structure](http://www.postmanlabs.com/postman-collection/Response.html) reference docs for more detail.
 
 ### Scripting workflows <a href="scripting-workflows" id="scripting-workflows"></a>
 
@@ -898,13 +892,13 @@ The `postman` object provides the `setNextRequest` method for building request w
 
 When you run a collection (using the collection runner or Newman), Postman will run your requests in a default order or an order you specify when you set up the run. However, you can override this execution order using `postman.setNextRequest` to specify which request should run next.
 
-* Run the specified request after this one (the request name as defined in the collection e.g. "Get customers"):
+- Run the specified request after this one (the request name as defined in the collection e.g. "Get customers"):
 
 ```
 postman.setNextRequest(requestName:String):Function
 ```
 
-* Run the specified request after this one (the request ID returned by `pm.info.requestId`):
+- Run the specified request after this one (the request ID returned by `pm.info.requestId`):
 
 ```
 postman.setNextRequest(requestId:String):Function
@@ -926,12 +920,12 @@ Use `pm.visualizer.set` to specify a template to [display response data in the v
 pm.visualizer.set(layout:String, data:Object, options:Object):Function
 ```
 
-* `layout` **required**
-  * [Handlebars](https://handlebarsjs.com) HTML template string
-* `data` _optional_
-  * JSON object that binds to the template and you can access it inside the template string
-* `options` _optional_
-  * [Options object](https://handlebarsjs.com/api-reference/compilation.html) for `Handlebars.compile()`
+- `layout` **required**
+  - [Handlebars](https://handlebarsjs.com) HTML template string
+- `data` _optional_
+  - JSON object that binds to the template and you can access it inside the template string
+- `options` _optional_
+  - [Options object](https://handlebarsjs.com/api-reference/compilation.html) for `Handlebars.compile()`
 
 Example usage:
 
@@ -952,10 +946,10 @@ pm.getData(callback):Function
 
 The callback function accepts two parameters:
 
-* `error`
-  * Any error detail
-* `data`
-  * Data [passed to the template](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-visualizations) by `pm.visualizer.set`
+- `error`
+  - Any error detail
+- `data`
+  - Data [passed to the template](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#scripting-visualizations) by `pm.visualizer.set`
 
 Example usage:
 
@@ -967,7 +961,7 @@ pm.getData(function (error, data) {
 
 ### Writing test assertions <a href="writing-test-assertions" id="writing-test-assertions"></a>
 
-* `pm.test(testName:String, specFunction:Function):Function`
+- `pm.test(testName:String, specFunction:Function):Function`
 
 You can use `pm.test` to write test specifications inside either the **Pre-request** or **Tests** scripts. Tests include a name and assertion—Postman will output test results as part of the response.
 
@@ -992,7 +986,7 @@ pm.test('async test', function (done) {
 });
 ```
 
-* Get the total number of tests executed from a specific location in code:
+- Get the total number of tests executed from a specific location in code:
 
 ```
 pm.test.index():Function → Number
@@ -1016,33 +1010,33 @@ require(moduleName:String):function → *
 
 The `require` method allows you to use the sandbox built-in library modules. The list of available libraries is listed below with links to the corresponding documentation.
 
-* [ajv](https://www.npmjs.com/package/ajv)
-* [atob](https://www.npmjs.com/package/atob)
-* [btoa](https://www.npmjs.com/package/btoa)
-* [chai](https://www.chaijs.com)
-* [cheerio](https://cheerio.js.org)
-* [crypto-js](https://www.npmjs.com/package/crypto-js)
-* [csv-parse/lib/sync](https://csv.js.org/parse/)
-* [lodash](https://lodash.com) (The built-in `_` object v3.10.1 exists in the sandbox by default. Use `require` to load the latest version.)
-* [moment](https://momentjs.com/docs/)
-* [postman-collection](http://www.postmanlabs.com/postman-collection/)
-* [tv4](https://github.com/geraintluff/tv4)
-* [uuid](https://www.npmjs.com/package/uuid)
-* [xml2js](https://www.npmjs.com/package/xml2js)
+- [ajv](https://www.npmjs.com/package/ajv)
+- [atob](https://www.npmjs.com/package/atob)
+- [btoa](https://www.npmjs.com/package/btoa)
+- [chai](https://www.chaijs.com)
+- [cheerio](https://cheerio.js.org)
+- [crypto-js](https://www.npmjs.com/package/crypto-js)
+- [csv-parse/lib/sync](https://csv.js.org/parse/)
+- [lodash](https://lodash.com) (The built-in `_` object v3.10.1 exists in the sandbox by default. Use `require` to load the latest version.)
+- [moment](https://momentjs.com/docs/)
+- [postman-collection](http://www.postmanlabs.com/postman-collection/)
+- [tv4](https://github.com/geraintluff/tv4)
+- [uuid](https://www.npmjs.com/package/uuid)
+- [xml2js](https://www.npmjs.com/package/xml2js)
 
 A number of NodeJS modules are also available to use in the sandbox:
 
-* [path](https://nodejs.org/api/path.html)
-* [assert](https://nodejs.org/api/assert.html)
-* [buffer](https://nodejs.org/api/buffer.html)
-* [util](https://nodejs.org/api/util.html)
-* [url](https://nodejs.org/api/url.html)
-* [punycode](https://nodejs.org/api/punycode.html)
-* [querystring](https://nodejs.org/api/querystring.html)
-* [string-decoder](https://nodejs.org/api/string\_decoder.html)
-* [stream](https://nodejs.org/api/stream.html)
-* [timers](https://nodejs.org/api/timers.html)
-* [events](https://nodejs.org/api/events.html)
+- [path](https://nodejs.org/api/path.html)
+- [assert](https://nodejs.org/api/assert.html)
+- [buffer](https://nodejs.org/api/buffer.html)
+- [util](https://nodejs.org/api/util.html)
+- [url](https://nodejs.org/api/url.html)
+- [punycode](https://nodejs.org/api/punycode.html)
+- [querystring](https://nodejs.org/api/querystring.html)
+- [string-decoder](https://nodejs.org/api/string_decoder.html)
+- [stream](https://nodejs.org/api/stream.html)
+- [timers](https://nodejs.org/api/timers.html)
+- [events](https://nodejs.org/api/events.html)
 
 In order to use a library, call the `require` method, pass the module name as a parameter, and assign the return object from the method to a variable.
 

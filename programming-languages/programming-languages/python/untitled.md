@@ -2,14 +2,14 @@
 
 I would like to devote this article to those people who, after learning Python, faced the usual problem - What next? Are you sure you have already learned it? I will attach a small checklist:![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
-* Classes and OOP, you can immediately name 5 magic methods
-* Functional programming possibilities
-* Generators, iterators, and decorators
-* Have an idea of what is in the standard library
-* Know how to work with libraries and virtual environments
-* Understand asynchrony and its use
-* You understand what the GIL is, threads and processes
-* You can name at least one interpreter besides CPython
+- Classes and OOP, you can immediately name 5 magic methods
+- Functional programming possibilities
+- Generators, iterators, and decorators
+- Have an idea of what is in the standard library
+- Know how to work with libraries and virtual environments
+- Understand asynchrony and its use
+- You understand what the GIL is, threads and processes
+- You can name at least one interpreter besides CPython
 
 If you were able to answer all these questions yes, then congratulations you know Python.![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 

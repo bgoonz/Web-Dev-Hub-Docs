@@ -46,14 +46,14 @@ const ProjectBoard = ({ project, fetchProject, updateLocalProjectIssues }) => {
       />
       <Route
         path={`${match.path}/issues/:issueId`}
-        render={routeProps => (
+        render={(routeProps) => (
           <Modal
             isOpen
             testid="modal:issue-details"
             width={1040}
             withCloseIcon={false}
             onClose={() => history.push(match.url)}
-            renderContent={modal => (
+            renderContent={(modal) => (
               <IssueDetails
                 issueId={routeProps.match.params.issueId}
                 projectUsers={project.users}

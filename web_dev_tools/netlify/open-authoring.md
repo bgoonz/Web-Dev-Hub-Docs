@@ -1,7 +1,5 @@
 # Open Authoring
 
-
-
 ##
 
 **This is a **[**beta feature**](https://www.netlifycms.org/docs/beta-features#open-authoring)**.**
@@ -12,10 +10,11 @@ At the same time, any contributors who _do_ have write access to the repository 
 
 ### Requirements <a href="requirements" id="requirements"></a>
 
-*   You must use [the GitHub backend](https://www.netlifycms.org/docs/github-backend).
+- You must use [the GitHub backend](https://www.netlifycms.org/docs/github-backend).
 
-    **Note that the **[**Git Gateway backend**](https://www.netlifycms.org/docs/git-gateway-backend/#git-gateway-with-netlify-identity)** does **_**not**_** support Open Authoring, even when the underlying repo is on GitHub.**
-* For private GitHub repos the user must have `read` access on the repo, and you must explicitly set the auth\_scope to `repo`, for example:
+  **Note that the **[**Git Gateway backend**](https://www.netlifycms.org/docs/git-gateway-backend/#git-gateway-with-netlify-identity)** does **_**not**_** support Open Authoring, even when the underlying repo is on GitHub.**
+
+- For private GitHub repos the user must have `read` access on the repo, and you must explicitly set the auth_scope to `repo`, for example:
 
 ```
 backend:
@@ -28,14 +27,14 @@ backend:
 ### Enabling Open Authoring <a href="enabling-open-authoring" id="enabling-open-authoring"></a>
 
 1. [Enable the editorial workflow](https://www.netlifycms.org/docs/configuration-options/#publish-mode) by setting `publish_mode` to `editorial_workflow` in your `config.yml`.
-2.  Set `open_authoring` to `true` in the `backend` section of your `config.yml`, as follows:
+2. Set `open_authoring` to `true` in the `backend` section of your `config.yml`, as follows:
 
-    ```
-    backend:
-      name: github
-      repo: owner-name/repo-name # Path to your GitHub repository
-      open_authoring: true
-    ```
+   ```
+   backend:
+     name: github
+     repo: owner-name/repo-name # Path to your GitHub repository
+     open_authoring: true
+   ```
 
 ### Usage <a href="usage" id="usage"></a>
 
@@ -51,9 +50,9 @@ Users who _do_ have write access to the original repository continue to use the 
 
 [As noted above](https://www.netlifycms.org/docs/open-authoring/#requirements), Open Authoring does not work with the Git Gateway backend. However, you can use Git Gateway on a site with Netlify Identity that has [open registration](https://www.netlify.com/docs/identity/#adding-identity-users). This lets users create accounts on your site and log into the CMS. There are a few differences, including the following:
 
-* Users don't need to know about GitHub or create a GitHub account. Instead, they use Netlify Identity accounts that are created on your site and managed by you.
-* The CMS applies users' changes directly to your repo, not to a fork. (If you use the editorial workflow, you can use features like [GitHub's protected branches](https://help.github.com/en/articles/about-protected-branches) or [Netlify's locked deploys](https://www.netlify.com/docs/locked-deploys/) to prevent users from publishing directly to your site from the CMS.)
-* There is no distinction between users with write access to the repo and users without — all editorial workflow entries are visible from within the CMS and can be published with the CMS. (Unpublished Open Authoring entries, on the other hand, are visible only to the author in the CMS UI or publicly as GitHub PRs.)
+- Users don't need to know about GitHub or create a GitHub account. Instead, they use Netlify Identity accounts that are created on your site and managed by you.
+- The CMS applies users' changes directly to your repo, not to a fork. (If you use the editorial workflow, you can use features like [GitHub's protected branches](https://help.github.com/en/articles/about-protected-branches) or [Netlify's locked deploys](https://www.netlify.com/docs/locked-deploys/) to prevent users from publishing directly to your site from the CMS.)
+- There is no distinction between users with write access to the repo and users without — all editorial workflow entries are visible from within the CMS and can be published with the CMS. (Unpublished Open Authoring entries, on the other hand, are visible only to the author in the CMS UI or publicly as GitHub PRs.)
 
 ### Linking to specific entries in the CMS <a href="linking-to-specific-entries-in-the-cms" id="linking-to-specific-entries-in-the-cms"></a>
 
@@ -75,6 +74,6 @@ For blog post "test.md" in the "posts" folder collection
 https://www.example.com/path-to-cms/#/edit/posts/test
 ```
 
-* **`collectionName`**: the name of the collection as entered in the CMS config.
-* **`entryName`** _(for _[_file collections_](https://www.netlifycms.org/docs/collection-types/#file-collections): the `name` of the entry from the CMS config.
-* **`entryName`** _(for _[_folder collections_](https://www.netlifycms.org/docs/collection-types/#folder-collections): the filename, sans extension (the slug).
+- **`collectionName`**: the name of the collection as entered in the CMS config.
+- **`entryName`** _(for _[_file collections_](https://www.netlifycms.org/docs/collection-types/#file-collections): the `name` of the entry from the CMS config.
+- **`entryName`** _(for _[_folder collections_](https://www.netlifycms.org/docs/collection-types/#folder-collections): the filename, sans extension (the slug).

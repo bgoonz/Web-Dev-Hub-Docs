@@ -54,7 +54,7 @@ export const LinkItem = styled.div`
   padding: 8px 12px;
   border-radius: 3px;
   ${mixin.clickable}
-  ${props =>
+  ${(props) =>
     !props.to ? `cursor: not-allowed;` : `&:hover { background: ${color.backgroundLight}; }`}
   i {
     margin-right: 15px;

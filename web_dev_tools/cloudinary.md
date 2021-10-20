@@ -36,31 +36,31 @@ Although this setup exposes the `cloud_name` and `api_key` publicly via the `/ad
 
 The following options are specific to the Netlify CMS integration for Cloudinary:
 
-* **`output_filename_only`**: _(default: `false`)_\
+- **`output_filename_only`**: _(default: `false`)_\
   By default, the value provided for a selected image is a complete URL for the asset on Cloudinary's CDN. Setting `output_filename_only` to `true` will instead produce just the filename (e.g. `image.jpg`). This should be `true` if you will be directly embedding cloudinary transformation urls in page templates. Refer to [Inserting Cloudinary URL in page templates](https://www.netlifycms.org/docs/cloudinary/#inserting-cloudinary-url-in-page-templates).
-* **`use_transformations`**: _(default: `true`)_\
+- **`use_transformations`**: _(default: `true`)_\
   If `true`, uses derived url when available (the url will have image transformation segments included). Has no effect if `output_filename_only` is set to `true`.
-* **`use_secure_url`**: _(default: `true`)_\
+- **`use_secure_url`**: _(default: `true`)_\
   Controls whether an `http` or `https` URL is provided. Has no effect if `output_filename_only` is set to `true`.
 
 ### Cloudinary configuration options <a href="cloudinary-configuration-options" id="cloudinary-configuration-options"></a>
 
-The following options are used to configure the media library. All options are listed in Cloudinary's [media library documentation](https://cloudinary.com/documentation/media\_library\_widget#3\_set\_the\_configuration\_options), but only options listed below are available or recommended for the Netlify CMS integration:
+The following options are used to configure the media library. All options are listed in Cloudinary's [media library documentation](https://cloudinary.com/documentation/media_library_widget#3_set_the_configuration_options), but only options listed below are available or recommended for the Netlify CMS integration:
 
 #### Authentication <a href="authentication" id="authentication"></a>
 
-* `cloud_name`
-* `api_key`
+- `cloud_name`
+- `api_key`
 
 #### Media library behavior <a href="media-library-behavior" id="media-library-behavior"></a>
 
-* `default_transformations` _- only the first _[_image transformation_](https://www.netlifycms.org/docs/cloudinary/#image-transformations)_ is used, be sure to use the `SDK Parameter` column transformation names from the_ [_transformation reference_](https://cloudinary.com/documentation/image\_transformation\_reference)
-* `max_files` _- has no impact on images inside the _[_markdown widget_](https://www.netlifycms.org/docs/widgets/#markdown). Refer to [media library documentation](https://cloudinary.com/documentation/media\_library\_widget#3\_set\_the\_configuration\_options) for details on this property
-* `multiple` _- has no impact on images inside the _[_markdown widget_](https://www.netlifycms.org/docs/widgets/#markdown). Refer to [media library documentation](https://cloudinary.com/documentation/media\_library\_widget#3\_set\_the\_configuration\_options) for details on this property
+- `default_transformations` _- only the first _[_image transformation_](https://www.netlifycms.org/docs/cloudinary/#image-transformations)_ is used, be sure to use the `SDK Parameter` column transformation names from the_ [_transformation reference_](https://cloudinary.com/documentation/image_transformation_reference)
+- `max_files` _- has no impact on images inside the _[_markdown widget_](https://www.netlifycms.org/docs/widgets/#markdown). Refer to [media library documentation](https://cloudinary.com/documentation/media_library_widget#3_set_the_configuration_options) for details on this property
+- `multiple` _- has no impact on images inside the _[_markdown widget_](https://www.netlifycms.org/docs/widgets/#markdown). Refer to [media library documentation](https://cloudinary.com/documentation/media_library_widget#3_set_the_configuration_options) for details on this property
 
 ### Image transformations <a href="image-transformations" id="image-transformations"></a>
 
-The Cloudinary integration allows images to be transformed in two ways: directly within Netlify CMS via [Cloudinary's Media Library](https://www.netlifycms.org/docs/cloudinary/#transforming-images-via-media-library), and separately from the CMS via Cloudinary's [dynamic URL's](https://cloudinary.com/documentation/image\_transformations#delivering\_media\_assets\_using\_dynamic\_urls) by [inserting cloudinary urls](https://www.netlifycms.org/docs/cloudinary/#inserting-cloudinary-url-in-page-templates).
+The Cloudinary integration allows images to be transformed in two ways: directly within Netlify CMS via [Cloudinary's Media Library](https://www.netlifycms.org/docs/cloudinary/#transforming-images-via-media-library), and separately from the CMS via Cloudinary's [dynamic URL's](https://cloudinary.com/documentation/image_transformations#delivering_media_assets_using_dynamic_urls) by [inserting cloudinary urls](https://www.netlifycms.org/docs/cloudinary/#inserting-cloudinary-url-in-page-templates).
 
 #### Transforming images via Media Library <a href="transforming-images-via-media-library" id="transforming-images-via-media-library"></a>
 
@@ -99,7 +99,7 @@ fields: # The fields each document in this collection have
     config:
       default_transformations:
         - fetch_format: auto
-          width: 300    
+          width: 300
           quality: auto
           crop: fill
           effect: grayscale
@@ -109,7 +109,7 @@ fields: # The fields each document in this collection have
 
 If you prefer to provide direction so that images are transformed in a specific way, or dynamically retrieve images based on viewport size, you can do so by providing your own base Cloudinary URL and only storing the asset filenames in your content:
 
-* Either globally or for specific fields, configure the Cloudinary extension to only output the asset filename
+- Either globally or for specific fields, configure the Cloudinary extension to only output the asset filename
 
 ```
 # global
@@ -122,11 +122,11 @@ media_library:
   output_filename_only: true
 ```
 
-* Provide a dynamic URL in the site template
+- Provide a dynamic URL in the site template
 
 ```
 {{! handlebars example }}
 <img src="https://res.cloudinary.com/<cloud_name>/<resource_type>/<type>/<transformations>/{{image}}"/>
 ```
 
-Your dynamic URL can be formed conditionally to provide any desired transformations - please see Cloudinary's [image transformation reference](https://cloudinary.com/documentation/image\_transformation\_reference) for available transformations.
+Your dynamic URL can be formed conditionally to provide any desired transformations - please see Cloudinary's [image transformation reference](https://cloudinary.com/documentation/image_transformation_reference) for available transformations.

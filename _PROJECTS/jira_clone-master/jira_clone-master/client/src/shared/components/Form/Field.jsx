@@ -26,7 +26,7 @@ const defaultProps = {
   name: undefined,
 };
 
-const generateField = FormComponent => {
+const generateField = (FormComponent) => {
   const FieldComponent = ({ className, label, tip, error, name, ...otherProps }) => {
     const fieldId = uniqueId('form-field-');
 

@@ -30,7 +30,7 @@ const ProjectNavbarLeft = ({ issueSearchModalOpen, issueCreateModalOpen }) => (
       <AboutTooltip
         placement="right"
         offset={{ top: -218 }}
-        renderLink={linkProps => (
+        renderLink={(linkProps) => (
           <Item {...linkProps}>
             <Icon type="help" size={25} />
             <ItemText>About</ItemText>

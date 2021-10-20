@@ -26,7 +26,7 @@ export const AvatarIsActiveBorder = styled.div`
   border-radius: 50%;
   transition: transform 0.1s;
   ${mixin.clickable};
-  ${props => props.isActive && `box-shadow: 0 0 0 4px ${color.primary}`}
+  ${(props) => props.isActive && `box-shadow: 0 0 0 4px ${color.primary}`}
   &:hover {
     transform: translateY(-5px);
   }

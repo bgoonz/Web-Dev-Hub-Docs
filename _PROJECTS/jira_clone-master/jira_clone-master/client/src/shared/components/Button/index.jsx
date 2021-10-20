@@ -59,7 +59,7 @@ const Button = forwardRef(
   },
 );
 
-const getIconColor = variant =>
+const getIconColor = (variant) =>
   ['secondary', 'empty'].includes(variant) ? color.textDark : '#fff';
 
 Button.propTypes = propTypes;

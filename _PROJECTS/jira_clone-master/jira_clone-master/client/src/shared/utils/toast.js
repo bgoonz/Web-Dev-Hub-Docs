@@ -1,11 +1,11 @@
 import pubsub from 'sweet-pubsub';
 import { get } from 'lodash';
 
-const show = toast => pubsub.emit('toast', toast);
+const show = (toast) => pubsub.emit('toast', toast);
 
-const success = title => show({ title });
+const success = (title) => show({ title });
 
-const error = err => {
+const error = (err) => {
   show({
     type: 'danger',
     title: 'Error',

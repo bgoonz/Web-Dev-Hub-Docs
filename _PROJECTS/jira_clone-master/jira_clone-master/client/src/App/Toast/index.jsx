@@ -12,7 +12,7 @@ const Toast = () => {
     const addToast = ({ type = 'success', title, message, duration = 5 }) => {
       const id = uniqueId('toast-');
 
-      setToasts(currentToasts => [...currentToasts, { id, type, title, message }]);
+      setToasts((currentToasts) => [...currentToasts, { id, type, title, message }]);
 
       if (duration) {
         setTimeout(() => removeToast(id), duration * 1000);
@@ -26,14 +26,14 @@ const Toast = () => {
     };
   }, []);
 
-  const removeToast = id => {
-    setToasts(currentToasts => currentToasts.filter(toast => toast.id !== id));
+  const removeToast = (id) => {
+    setToasts((currentToasts) => currentToasts.filter((toast) => toast.id !== id));
   };
 
   return (
     <Container>
       <TransitionGroup>
-        {toasts.map(toast => (
+        {toasts.map((toast) => (
           <CSSTransition key={toast.id} classNames="jira-toast" timeout={200}>
             <StyledToast key={toast.id} type={toast.type} onClick={() => removeToast(toast.id)}>
               <CloseIcon type="close" />

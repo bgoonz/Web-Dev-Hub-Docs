@@ -4,20 +4,20 @@
 
 ### TABLE OF CONTENTS
 
-* [What is a plugin?](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#what-is-a-plugin)
-* [What is a theme?](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#what-is-a-theme)
-* [What is a starter?](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#what-is-a-starter)
-* [Conventions for usage](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#conventions-for-usage)
-* [Comparing differences](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#comparing-differences)
-  * [Differences and considerations in maintenance](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#differences-and-considerations-in-maintenance)
-    * [Versioning](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#versioning)
-    * [Installing as a package](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#installing-as-a-package)
-  * [Differences and considerations in configuration](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#differences-and-considerations-in-configuration)
-    * [Pass in Options](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#pass-in-options)
-    * [Shadowing](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#shadowing)
-    * [Uses multiple plugins](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#uses-multiple-plugins)
-    * [Custom components](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#custom-components)
-* [Deciding which to use](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#deciding-which-to-use)
+- [What is a plugin?](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#what-is-a-plugin)
+- [What is a theme?](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#what-is-a-theme)
+- [What is a starter?](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#what-is-a-starter)
+- [Conventions for usage](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#conventions-for-usage)
+- [Comparing differences](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#comparing-differences)
+  - [Differences and considerations in maintenance](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#differences-and-considerations-in-maintenance)
+    - [Versioning](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#versioning)
+    - [Installing as a package](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#installing-as-a-package)
+  - [Differences and considerations in configuration](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#differences-and-considerations-in-configuration)
+    - [Pass in Options](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#pass-in-options)
+    - [Shadowing](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#shadowing)
+    - [Uses multiple plugins](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#uses-multiple-plugins)
+    - [Custom components](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#custom-components)
+- [Deciding which to use](https://www.gatsbyjs.com/docs/conceptual/plugins-themes-and-starters/#deciding-which-to-use)
 
 In the Gatsby ecosystem, there’s more than one way to build a site. To help you understand the differences between plugins, themes, and starters, this guide will talk through some of the details.
 
@@ -25,10 +25,10 @@ In the Gatsby ecosystem, there’s more than one way to build a site. To help yo
 
 Gatsby plugins are Node.js packages that implement Gatsby APIs and are commonly installed through a registry like npm. There are many types of [plugins](https://www.gatsbyjs.com/plugins/), including data sourcing, SEO, responsive images, offline support, support for Sass, TypeScript, sitemaps and RSS, Google Analytics, and more. You can also [make your own plugins](https://www.gatsbyjs.com/docs/creating-plugins/) and either distribute them for fellow Gatsby developers to use or [install them locally](https://www.gatsbyjs.com/docs/loading-plugins-from-your-local-plugins-folder/).
 
-* [Plugin docs](https://www.gatsbyjs.com/docs/plugins/)
-* [Using a plugin](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/using-a-plugin-in-your-site/)
-* [Plugin library](https://www.gatsbyjs.com/plugins/)
-* [Creating plugins](https://www.gatsbyjs.com/docs/creating-plugins/)
+- [Plugin docs](https://www.gatsbyjs.com/docs/plugins/)
+- [Using a plugin](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/using-a-plugin-in-your-site/)
+- [Plugin library](https://www.gatsbyjs.com/plugins/)
+- [Creating plugins](https://www.gatsbyjs.com/docs/creating-plugins/)
 
 ### What is a theme? <a href="what-is-a-theme" id="what-is-a-theme"></a>
 
@@ -36,10 +36,10 @@ A Gatsby theme is a type of plugin that includes a `gatsby-config.js` file and a
 
 With a Gatsby theme, all of your default configuration (shared functionality, data sourcing, design) is abstracted out of your site and into an installable package. A theme might differ from a typical plugin in that it packages up usage of a plugin into a consumable API, making it possible to include functionality without having to type out all of the code by hand (such as GraphQL queries). To understand more of the motivation for Gatsby themes, check out the docs on [What are Gatsby Themes?](https://www.gatsbyjs.com/docs/themes/what-are-gatsby-themes/)
 
-* [Themes docs](https://www.gatsbyjs.com/docs/themes/)
-* [Using a theme](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/using-a-gatsby-theme/)
-* [Themes in plugin library](https://www.gatsbyjs.com/plugins/?=gatsby-theme)
-* [Creating a theme](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/building-themes/)
+- [Themes docs](https://www.gatsbyjs.com/docs/themes/)
+- [Using a theme](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/using-a-gatsby-theme/)
+- [Themes in plugin library](https://www.gatsbyjs.com/plugins/?=gatsby-theme)
+- [Creating a theme](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/building-themes/)
 
 ### What is a starter? <a href="what-is-a-starter" id="what-is-a-starter"></a>
 
@@ -47,11 +47,11 @@ A starter is a boilerplate Gatsby site that users can copy and [customize](https
 
 Gatsby offers [official starters](https://www.gatsbyjs.com/docs/starters/#official-starters) for a default site, blog site, bare-bones hello world site, and both using and creating themes. There are also many starters from members of the community that can provide a good starting point for your Gatsby site.
 
-* [Starter docs](https://www.gatsbyjs.com/docs/starters/)
-* [Modifying a starter](https://www.gatsbyjs.com/docs/modifying-a-starter/)
-* [Starter library](https://www.gatsbyjs.com/starters/)
-* [Creating a starter](https://www.gatsbyjs.com/docs/creating-a-starter/)
-* [Converting a starter to a theme](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/converting-a-starter/)
+- [Starter docs](https://www.gatsbyjs.com/docs/starters/)
+- [Modifying a starter](https://www.gatsbyjs.com/docs/modifying-a-starter/)
+- [Starter library](https://www.gatsbyjs.com/starters/)
+- [Creating a starter](https://www.gatsbyjs.com/docs/creating-a-starter/)
+- [Converting a starter to a theme](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/converting-a-starter/)
 
 ### Conventions for usage <a href="conventions-for-usage" id="conventions-for-usage"></a>
 

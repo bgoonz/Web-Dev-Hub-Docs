@@ -72,25 +72,16 @@ class Issue extends BaseEntity {
   @Column('integer')
   reporterId: number;
 
-  @ManyToOne(
-    () => Project,
-    project => project.issues,
-  )
+  @ManyToOne(() => Project, (project) => project.issues)
   project: Project;
 
   @Column('integer')
   projectId: number;
 
-  @OneToMany(
-    () => Comment,
-    comment => comment.issue,
-  )
+  @OneToMany(() => Comment, (comment) => comment.issue)
   comments: Comment[];
 
-  @ManyToMany(
-    () => User,
-    user => user.issues,
-  )
+  @ManyToMany(() => User, (user) => user.issues)
   @JoinTable()
   users: User[];
 

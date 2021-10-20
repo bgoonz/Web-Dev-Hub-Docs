@@ -65,7 +65,7 @@ The dictionaries are still unordered, as you can’t access items in them using 
 
 **The keys\(\), values\(\), and items\(\) Methods**
 
-There are three dictionary methods that will return list-like values of the dictionary’s keys, values, or both keys and values: keys\(\), values\(\), and items\(\). The values returned by these methods are not true lists: they cannot be modified and do not have an append\(\) method. But these data types \(dict_keys, dict_values, and dict_items, respectively\) _can_ be used in for loops. To see how these methods work, enter the following into the interactive shell:
+There are three dictionary methods that will return list-like values of the dictionary’s keys, values, or both keys and values: keys\(\), values\(\), and items\(\). The values returned by these methods are not true lists: they cannot be modified and do not have an append\(\) method. But these data types \(dict*keys, dict_values, and dict_items, respectively\) \_can* be used in for loops. To see how these methods work, enter the following into the interactive shell:
 
 &gt;&gt;&gt; spam = {'color': 'red', 'age': 42} &gt;&gt;&gt; for v in spam.values\(\): ... print\(v\)
 

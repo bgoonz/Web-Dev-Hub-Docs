@@ -21,11 +21,11 @@ const ProjectBoardIssueDetailsPriority = ({ issue, updateIssue }) => (
       dropdownWidth={343}
       name="priority"
       value={issue.priority}
-      options={Object.values(IssuePriority).map(priority => ({
+      options={Object.values(IssuePriority).map((priority) => ({
         value: priority,
         label: IssuePriorityCopy[priority],
       }))}
-      onChange={priority => updateIssue({ priority })}
+      onChange={(priority) => updateIssue({ priority })}
       renderValue={({ value: priority }) => renderPriorityItem(priority, true)}
       renderOption={({ value: priority }) => renderPriorityItem(priority)}
     />

@@ -28,7 +28,7 @@ const ProjectBoardIssueDetailsDelete = ({ issue, fetchProject, modalClose }) => 
       message="Once you delete, it's gone for good."
       confirmText="Delete issue"
       onConfirm={handleIssueDelete}
-      renderLink={modal => (
+      renderLink={(modal) => (
         <Button icon="trash" iconSize={19} variant="empty" onClick={modal.open} />
       )}
     />

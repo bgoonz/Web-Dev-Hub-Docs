@@ -16,11 +16,11 @@ const useMutation = (method, url) => {
         mergeState({ isWorking: true });
 
         api[method](url, variables).then(
-          data => {
+          (data) => {
             resolve(data);
             mergeState({ data, error: null, isWorking: false });
           },
-          error => {
+          (error) => {
             reject(error);
             mergeState({ error, data: null, isWorking: false });
           },

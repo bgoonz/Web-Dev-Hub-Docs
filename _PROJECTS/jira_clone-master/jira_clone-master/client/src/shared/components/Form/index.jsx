@@ -23,7 +23,7 @@ const defaultProps = {
 const Form = ({ validate, validations, ...otherProps }) => (
   <Formik
     {...otherProps}
-    validate={values => {
+    validate={(values) => {
       if (validate) {
         return validate(values);
       }
@@ -35,9 +35,9 @@ const Form = ({ validate, validations, ...otherProps }) => (
   />
 );
 
-Form.Element = props => <FormikForm noValidate {...props} />;
+Form.Element = (props) => <FormikForm noValidate {...props} />;
 
-Form.Field = mapValues(Field, FieldComponent => ({ name, validate, ...props }) => (
+Form.Field = mapValues(Field, (FieldComponent) => ({ name, validate, ...props }) => (
   <FormikField name={name} validate={validate}>
     {({ field, form: { touched, errors, setFieldValue } }) => (
       <FieldComponent
@@ -45,7 +45,7 @@ Form.Field = mapValues(Field, FieldComponent => ({ name, validate, ...props }) =
         {...props}
         name={name}
         error={get(touched, name) && get(errors, name)}
-        onChange={value => setFieldValue(name, value)}
+        onChange={(value) => setFieldValue(name, value)}
       />
     )}
   </FormikField>

@@ -34,9 +34,9 @@ describe('Issues drag & drop', () => {
   const firstIssueTitle = 'Issue title 1';
   const secondIssueTitle = 'Issue title 2';
 
-  const getIssueAtIndex = index => cy.get(testid`list-issue`).eq(index);
+  const getIssueAtIndex = (index) => cy.get(testid`list-issue`).eq(index);
 
-  const moveFirstIssue = directionKeyCode => {
+  const moveFirstIssue = (directionKeyCode) => {
     cy.waitForXHR('PUT', '/issues/**', () => {
       getIssueAtIndex(0)
         .focus()

@@ -4,12 +4,12 @@
 
 ### TABLE OF CONTENTS
 
-* [Why React components?](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#why-react-components)
-* [How does Gatsby use React Components?](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#how-does-gatsby-use-react-components)
-  * [Page components](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-components)
-  * [Page template components](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components)
-  * [HTML component](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#html-component)
-  * [Non-page components](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#non-page-components)
+- [Why React components?](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#why-react-components)
+- [How does Gatsby use React Components?](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#how-does-gatsby-use-react-components)
+  - [Page components](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-components)
+  - [Page template components](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#page-template-components)
+  - [HTML component](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#html-component)
+  - [Non-page components](https://www.gatsbyjs.com/docs/conceptual/building-with-components/#non-page-components)
 
 To use Gatsby, you will need a basic understanding of React components.
 

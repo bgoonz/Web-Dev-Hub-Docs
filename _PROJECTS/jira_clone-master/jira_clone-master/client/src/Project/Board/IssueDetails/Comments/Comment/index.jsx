@@ -73,7 +73,7 @@ const ProjectBoardIssueDetailsComment = ({ comment, fetchIssue }) => {
               message="Once you delete, it's gone for good."
               confirmText="Delete comment"
               onConfirm={handleCommentDelete}
-              renderLink={modal => <DeleteLink onClick={modal.open}>Delete</DeleteLink>}
+              renderLink={(modal) => <DeleteLink onClick={modal.open}>Delete</DeleteLink>}
             />
           </Fragment>
         )}

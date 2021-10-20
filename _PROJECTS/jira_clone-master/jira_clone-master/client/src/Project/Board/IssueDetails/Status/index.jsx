@@ -21,11 +21,11 @@ const ProjectBoardIssueDetailsStatus = ({ issue, updateIssue }) => (
       withClearValue={false}
       name="status"
       value={issue.status}
-      options={Object.values(IssueStatus).map(status => ({
+      options={Object.values(IssueStatus).map((status) => ({
         value: status,
         label: IssueStatusCopy[status],
       }))}
-      onChange={status => updateIssue({ status })}
+      onChange={(status) => updateIssue({ status })}
       renderValue={({ value: status }) => (
         <Status isValue color={status}>
           <div>{IssueStatusCopy[status]}</div>

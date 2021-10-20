@@ -6,7 +6,7 @@ export const User = styled.div`
   display: flex;
   align-items: center;
   ${mixin.clickable}
-  ${props =>
+  ${(props) =>
     props.isSelectValue &&
     css`
       margin: 0 10px ${props.withBottomMargin ? 5 : 0}px 0;

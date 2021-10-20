@@ -172,7 +172,7 @@ This eBook is for the use of anyone anywhere at no cost and with
  almost no restrictions whatsoever. You may copy it, give it away or  
  re-use it under the terms of the Proje
 
-The URL goes to a text web page for the entire play of _Romeo and Juliet_, provided on this book’s site ➊. You can tell that the request for this web page succeeded by checking the status_code attribute of the Response object. If it is equal to the value of requests.codes.ok, then everything went fine ➋. \(Incidentally, the status code for “OK” in the HTTP protocol is 200. You may already be familiar with the 404 status code for “Not Found.”\) You can find a complete list of HTTP status codes and their meanings at [_https://en.wikipedia.org/wiki/List_of_HTTP_status_codes_](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+The URL goes to a text web page for the entire play of _Romeo and Juliet_, provided on this book’s site ➊. You can tell that the request for this web page succeeded by checking the status*code attribute of the Response object. If it is equal to the value of requests.codes.ok, then everything went fine ➋. \(Incidentally, the status code for “OK” in the HTTP protocol is 200. You may already be familiar with the 404 status code for “Not Found.”\) You can find a complete list of HTTP status codes and their meanings at [\_https://en.wikipedia.org/wiki/List_of_HTTP_status_codes*](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 
 If the request succeeded, the downloaded web page is stored as a string in the Response object’s text variable. This variable holds a large string of the entire play; the call to len\(res.text\) shows you that it is more than 178,000 characters long. Finally, calling print\(res.text\[:250\]\) displays only the first 250 characters.
 
@@ -193,7 +193,7 @@ File "C:\Users\Al\AppData\Local\Programs\Python\Python37\lib\site-packages\reque
 requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://inventwithpython  
 .com/page_that_does_not_exist.html
 
-The raise_for_status\(\) method is a good way to ensure that a program halts if a bad download occurs. This is a good thing: You want your program to stop as soon as some unexpected error happens. If a failed download _isn’t_ a deal breaker for your program, you can wrap the raise_for_status\(\) line with try and except statements to handle this error case without crashing.
+The raise*for_status\(\) method is a good way to ensure that a program halts if a bad download occurs. This is a good thing: You want your program to stop as soon as some unexpected error happens. If a failed download \_isn’t* a deal breaker for your program, you can wrap the raise_for_status\(\) line with try and except statements to handle this error case without crashing.
 
 import requests  
 res = requests.get\('https://inventwithpython.com/page\_that\_does\_not\_exist'\)  
@@ -226,7 +226,7 @@ To write the web page to a file, you can use a for loop with the Response object
 78981  
 &gt;&gt;&gt; playFile.close\(\)
 
-The iter_content\(\) method returns “chunks” of the content on each iteration through the loop. Each chunk is of the _bytes_ data type, and you get to specify how many bytes each chunk will contain. One hundred thousand bytes is generally a good size, so pass 100000 as the argument to iter_content\(\).
+The iter*content\(\) method returns “chunks” of the content on each iteration through the loop. Each chunk is of the \_bytes* data type, and you get to specify how many bytes each chunk will contain. One hundred thousand bytes is generally a good size, so pass 100000 as the argument to iter_content\(\).
 
 The file _RomeoAndJuliet.txt_ will now exist in the current working directory. Note that while the filename on the website was _rj.txt_, the file on your hard drive has a different filename. The requests module simply handles downloading the contents of web pages. Once the page is downloaded, it is simply data in your program. Even if you were to lose your internet connection after downloading the web page, all the page data would still be on your computer.
 
@@ -247,7 +247,7 @@ To review, here’s the complete process for downloading and saving a file:
 4. Call write\(\) on each iteration to write the content to the file.
 5. Call close\(\) to close the file.
 
-That’s all there is to the requests module! The for loop and iter_content\(\) stuff may seem complicated compared to the open\(\)/write\(\)/close\(\) workflow you’ve been using to write text files, but it’s to ensure that the requests module doesn’t eat up too much memory even if you download massive files. You can learn about the requests module’s other features from [_https://requests.readthedocs.org/_](https://requests.readthedocs.org/).
+That’s all there is to the requests module! The for loop and iter*content\(\) stuff may seem complicated compared to the open\(\)/write\(\)/close\(\) workflow you’ve been using to write text files, but it’s to ensure that the requests module doesn’t eat up too much memory even if you download massive files. You can learn about the requests module’s other features from [\_https://requests.readthedocs.org/*](https://requests.readthedocs.org/).
 
 #### **HTML** <a id="calibre_link-382"></a>
 
@@ -488,8 +488,7 @@ print\('Searching...'\) \# display text while downloading the search result page
 res = requests.get\('https://google.com/search?q=' 'https://pypi.org/search/?q='
 
 - ' '.join\(sys.argv\[1:\]\)\)  
-  res.raise_for_status\(\)  
-
+  res.raise_for_status\(\)
 
 \# TODO: Retrieve top search result links.
 
@@ -775,7 +774,7 @@ If you still have problems opening up a new browser under the control of seleniu
 
 **Finding Elements on the Page**
 
-WebDriver objects have quite a few methods for finding elements on a page. They are divided into the find_element\_\* and find_elements\_\* methods. The find_element\_\* methods return a single WebElement object, representing the first element on the page that matches your query. The find_elements\_\* methods return a list of WebElement\_\* objects for _every_ matching element on the page.
+WebDriver objects have quite a few methods for finding elements on a page. They are divided into the find*element\_\* and find_elements\_\* methods. The find_element\_\* methods return a single WebElement object, representing the first element on the page that matches your query. The find_elements\_\* methods return a list of WebElement\_\* objects for \_every* matching element on the page.
 
 [Table 12-3](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-45) shows several examples of find_element\_\* and find_elements\_\* methods being called on a WebDriver object that’s stored in the variable browser.
 

@@ -28,8 +28,8 @@ Almost all requests are passed to the `graph.facebook.com` host URL. The single 
 
 Access tokens allow your app to access the Graph API. Almost all Graph API endpoints require an access token of some kind, so each time you access an endpoint, your request may require one. They typically perform two functions:
 
-* They allow your app to access a User's information without requiring the User's password. For example, your app needs a User's email to perform a function. If the User agrees to allow your app to retrieve their email address from Facebook, the User will not need to enter their Facebook password for your app to get their email address.
-* They allow us to identify your app, the User who is using your app, and the type of data the User has permitted your app to access.
+- They allow your app to access a User's information without requiring the User's password. For example, your app needs a User's email to perform a function. If the User agrees to allow your app to retrieve their email address from Facebook, the User will not need to enter their Facebook password for your app to get their email address.
+- They allow us to identify your app, the User who is using your app, and the type of data the User has permitted your app to access.
 
 Visit our [access token documentation](https://developers.facebook.com/docs/facebook-login/access-tokens) to learn more.
 
@@ -235,12 +235,6 @@ Connect interfaces and develop across platforms using Facebook's various [APIs, 
 
 [**Get Started with Graph API**](https://developers.facebook.com/docs/graph-api/get-started) – Let's explore the Facebook Social Graph using the Graph Explorer tool and run a couple requests to get data.
 
-
-
-
-
-
-
 ## Guides <a href="guides" id="guides"></a>
 
 Various Guides for how to use the Facebook Graph API to send and receive data to the Facebook Social Graph.
@@ -264,10 +258,6 @@ The [Graph API Explorer guide](https://developers.facebook.com/docs/graph-api/gu
 #### Upload Files
 
 The Upload Files guide describes how to upload photos and videos to the Facebook Social Graph that can then be shared in User, Group, or Page posts.
-
-
-
-
 
 ## Graph API Reference <a href="graph-api-reference" id="graph-api-reference"></a>
 
@@ -331,7 +321,7 @@ This is a full list of the Graph API root nodes. The main difference between a r
 | [`Native Offer`](https://developers.facebook.com/docs/graph-api/reference/native-offer)                                                                               | A `native offer` represents an Offer on Facebook. The `/{offer_id}` node returns a single `native offer`. Each `native offer` requires a `view` to be rendered to users.                                                                                                                                                                                          |
 | [`Object Comments`](https://developers.facebook.com/docs/graph-api/reference/object/comments)                                                                         | This reference describes the `/comments` edge that is common to multiple Graph API nodes. The structure and operations are the same for each node.                                                                                                                                                                                                                |
 | [`Object Likes`](https://developers.facebook.com/docs/graph-api/reference/object/likes)                                                                               | This reference describes the `/likes` edge that is common to multiple Graph API nodes. The structure and operations are the same for each node.                                                                                                                                                                                                                   |
-| [`Object Private Replies`](https://developers.facebook.com/docs/graph-api/reference/object/private\_replies)                                                          | Private replies for an object                                                                                                                                                                                                                                                                                                                                     |
+| [`Object Private Replies`](https://developers.facebook.com/docs/graph-api/reference/object/private_replies)                                                           | Private replies for an object                                                                                                                                                                                                                                                                                                                                     |
 | [`Object Reactions`](https://developers.facebook.com/docs/graph-api/reference/object/reactions)                                                                       | First revision to publish                                                                                                                                                                                                                                                                                                                                         |
 | [`Object Sharedposts`](https://developers.facebook.com/docs/graph-api/reference/object/sharedposts)                                                                   | Graph API Reference /object/sharedposts                                                                                                                                                                                                                                                                                                                           |
 | [`Oembed Page`](https://developers.facebook.com/docs/graph-api/reference/oembed-page)                                                                                 | OembedPage                                                                                                                                                                                                                                                                                                                                                        |
@@ -370,12 +360,7 @@ This is a full list of the Graph API root nodes. The main difference between a r
 
 Root edges are edges that can be queried directly. They allow you to access collections of nodes that are not on a parent node.
 
-| Node                                                                                    | Description                                                                                                                                    |
-| --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`Ads Archive`](https://developers.facebook.com/docs/graph-api/reference/ads\_archive/) | Returns archived ads based on your search. By default we only return all ads that are eligible for delivery and that have the `ACTIVE` status. |
-| [`Debug Token`](https://developers.facebook.com/docs/graph-api/reference/debug\_token/) | DebugToken                                                                                                                                     |
-
-
-
-
-
+| Node                                                                                   | Description                                                                                                                                    |
+| -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`Ads Archive`](https://developers.facebook.com/docs/graph-api/reference/ads_archive/) | Returns archived ads based on your search. By default we only return all ads that are eligible for delivery and that have the `ACTIVE` status. |
+| [`Debug Token`](https://developers.facebook.com/docs/graph-api/reference/debug_token/) | DebugToken                                                                                                                                     |

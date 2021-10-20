@@ -10,14 +10,14 @@ export const StyledButton = styled.button`
   height: 32px;
   vertical-align: middle;
   line-height: 1;
-  padding: 0 ${props => (props.iconOnly ? 9 : 12)}px;
+  padding: 0 ${(props) => (props.iconOnly ? 9 : 12)}px;
   white-space: nowrap;
   border-radius: 3px;
   transition: all 0.1s;
   appearance: none;
   ${mixin.clickable}
   ${font.size(14.5)}
-  ${props => buttonVariants[props.variant]}
+  ${(props) => buttonVariants[props.variant]}
   &:disabled {
     opacity: 0.6;
     cursor: default;
@@ -26,16 +26,16 @@ export const StyledButton = styled.button`
 
 const colored = css`
   color: #fff;
-  background: ${props => color[props.variant]};
+  background: ${(props) => color[props.variant]};
   ${font.medium}
   &:not(:disabled) {
     &:hover {
-      background: ${props => mixin.lighten(color[props.variant], 0.15)};
+      background: ${(props) => mixin.lighten(color[props.variant], 0.15)};
     }
     &:active {
-      background: ${props => mixin.darken(color[props.variant], 0.1)};
+      background: ${(props) => mixin.darken(color[props.variant], 0.1)};
     }
-    ${props =>
+    ${(props) =>
       props.isActive &&
       css`
         background: ${mixin.darken(color[props.variant], 0.1)} !important;
@@ -54,7 +54,7 @@ const secondaryAndEmptyShared = css`
       color: ${color.primary};
       background: ${color.backgroundLightPrimary};
     }
-    ${props =>
+    ${(props) =>
       props.isActive &&
       css`
         color: ${color.primary};
@@ -83,5 +83,5 @@ export const StyledSpinner = styled(Spinner)`
 `;
 
 export const Text = styled.div`
-  padding-left: ${props => (props.withPadding ? 7 : 0)}px;
+  padding-left: ${(props) => (props.withPadding ? 7 : 0)}px;
 `;

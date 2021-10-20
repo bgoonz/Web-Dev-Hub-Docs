@@ -24,7 +24,7 @@ const DatePickerTimeSection = ({ value, onChange, setDropdownOpen }) => {
     scrollToSelectedTime($sectionRef.current, value);
   }, [value]);
 
-  const handleTimeChange = newTime => {
+  const handleTimeChange = (newTime) => {
     const [newHour, newMinute] = newTime.split(':');
 
     const existingDateWithNewTime = moment(value).set({
@@ -37,7 +37,7 @@ const DatePickerTimeSection = ({ value, onChange, setDropdownOpen }) => {
 
   return (
     <TimeSection ref={$sectionRef}>
-      {generateTimes().map(time => (
+      {generateTimes().map((time) => (
         <Time
           key={time}
           data-time={time}
@@ -51,7 +51,7 @@ const DatePickerTimeSection = ({ value, onChange, setDropdownOpen }) => {
   );
 };
 
-const formatTime = value => formatDate(value, 'HH:mm');
+const formatTime = (value) => formatDate(value, 'HH:mm');
 
 const scrollToSelectedTime = ($scrollCont, value) => {
   if (!$scrollCont) return;
@@ -63,7 +63,7 @@ const scrollToSelectedTime = ($scrollCont, value) => {
 };
 
 const generateTimes = () =>
-  range(48).map(i => {
+  range(48).map((i) => {
     const hour = `${Math.floor(i / 2)}`;
     const paddedHour = hour.length < 2 ? `0${hour}` : hour;
     const minute = i % 2 === 0 ? '00' : '30';

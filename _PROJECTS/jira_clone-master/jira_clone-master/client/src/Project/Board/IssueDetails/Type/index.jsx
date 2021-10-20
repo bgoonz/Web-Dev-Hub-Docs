@@ -18,11 +18,11 @@ const ProjectBoardIssueDetailsType = ({ issue, updateIssue }) => (
     withClearValue={false}
     name="type"
     value={issue.type}
-    options={Object.values(IssueType).map(type => ({
+    options={Object.values(IssueType).map((type) => ({
       value: type,
       label: IssueTypeCopy[type],
     }))}
-    onChange={type => updateIssue({ type })}
+    onChange={(type) => updateIssue({ type })}
     renderValue={({ value: type }) => (
       <TypeButton variant="empty" icon={<IssueTypeIcon type={type} />}>
         {`${IssueTypeCopy[type]}-${issue.id}`}

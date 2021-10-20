@@ -1,46 +1,42 @@
 # GraphQL
 
-
-
-*
-  *
-    * [Architecture](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/intro-to-graphql/1-architecture/)
-    * [Fetching data - Queries](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/intro-to-graphql/2-fetching-data-queries/)
-    * [Writing data - Mutations](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/intro-to-graphql/3-writing-data-mutations/)
-    * [Watching data - Subscriptions](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/intro-to-graphql/4-watching-data-subscriptions/)
-  * [Hasura Backend Setup](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/hasura-backend/)
-  * [Auth0 Setup](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/auth0-setup/)
-    * [Custom Claims in Auth0 Rules](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/auth0-setup/1-custom-claims/)
-    * [Connect Hasura with Auth0](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/auth0-setup/2-connect-hasura-auth0/)
-    * [Sync Users with Rules](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/auth0-setup/3-user-sync-rule/)
-  * [Next.js Boilerplate Setup](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/setup/)
-  * [Configure Apollo Client with Next.js](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/apollo-client/)
-  * [Queries](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/queries/)
-    * [Fetch todos - query](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/queries/1-fetch-todos-query/)
-    * [useQuery hook](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/queries/2-create-query/)
-    * [Handle loading/errors](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/queries/3-handle-errors/)
-  * [Mutations & Query variables](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/mutations-variables/)
-    * [Create todos - mutation](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/mutations-variables/1-create-todo/)
-    * [Query Variables](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/mutations-variables/2-query-variables/)
-    * [useMutation Hook, Update Cache](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/mutations-variables/3-create-mutation/)
-  * [Optimistic UI](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/optimistic-update-mutations/)
-    * [Update todos - mutation](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/optimistic-update-mutations/1-update-todos/)
-    * [Mutation and update cache](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/optimistic-update-mutations/2-mutation-cache/)
-    * [Remove todos - mutation](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/optimistic-update-mutations/3-remove-todos/)
-    * [Mutation and update cache](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/optimistic-update-mutations/3.1-mutation-update-cache/)
-    * [Bulk delete todos - mutation](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/optimistic-update-mutations/3.2-bulk-delete-mutation/)
-    * [Mutation and update cache](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/optimistic-update-mutations/3.3-clear-completed/)
-  * [Subscriptions to show online users](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/subscriptions/)
-    * [Apollo useSubscription React hook](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/subscriptions/1-apollo-subscription/)
-    * [Create Subscription and Render Result](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/subscriptions/2-create-subscription/)
-  * [Realtime Feed](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/realtime-feed/)
-    * [Fetch public todos - subscription](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/realtime-feed/1-fetch-public/)
-    * [Sync new todos](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/realtime-feed/2-sync-todo/)
-  * [Deployment](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/deployment/)
-  * [What next?](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/what-next/)
-*
-* [Hasura Docs](https://hasura.io/docs/latest/graphql/core/index.html)
-* [GraphQL API](https://hasura.io/graphql/)
+- - - [Architecture](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/intro-to-graphql/1-architecture/)
+    - [Fetching data - Queries](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/intro-to-graphql/2-fetching-data-queries/)
+    - [Writing data - Mutations](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/intro-to-graphql/3-writing-data-mutations/)
+    - [Watching data - Subscriptions](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/intro-to-graphql/4-watching-data-subscriptions/)
+  - [Hasura Backend Setup](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/hasura-backend/)
+  - [Auth0 Setup](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/auth0-setup/)
+    - [Custom Claims in Auth0 Rules](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/auth0-setup/1-custom-claims/)
+    - [Connect Hasura with Auth0](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/auth0-setup/2-connect-hasura-auth0/)
+    - [Sync Users with Rules](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/auth0-setup/3-user-sync-rule/)
+  - [Next.js Boilerplate Setup](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/setup/)
+  - [Configure Apollo Client with Next.js](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/apollo-client/)
+  - [Queries](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/queries/)
+    - [Fetch todos - query](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/queries/1-fetch-todos-query/)
+    - [useQuery hook](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/queries/2-create-query/)
+    - [Handle loading/errors](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/queries/3-handle-errors/)
+  - [Mutations & Query variables](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/mutations-variables/)
+    - [Create todos - mutation](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/mutations-variables/1-create-todo/)
+    - [Query Variables](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/mutations-variables/2-query-variables/)
+    - [useMutation Hook, Update Cache](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/mutations-variables/3-create-mutation/)
+  - [Optimistic UI](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/optimistic-update-mutations/)
+    - [Update todos - mutation](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/optimistic-update-mutations/1-update-todos/)
+    - [Mutation and update cache](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/optimistic-update-mutations/2-mutation-cache/)
+    - [Remove todos - mutation](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/optimistic-update-mutations/3-remove-todos/)
+    - [Mutation and update cache](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/optimistic-update-mutations/3.1-mutation-update-cache/)
+    - [Bulk delete todos - mutation](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/optimistic-update-mutations/3.2-bulk-delete-mutation/)
+    - [Mutation and update cache](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/optimistic-update-mutations/3.3-clear-completed/)
+  - [Subscriptions to show online users](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/subscriptions/)
+    - [Apollo useSubscription React hook](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/subscriptions/1-apollo-subscription/)
+    - [Create Subscription and Render Result](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/subscriptions/2-create-subscription/)
+  - [Realtime Feed](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/realtime-feed/)
+    - [Fetch public todos - subscription](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/realtime-feed/1-fetch-public/)
+    - [Sync new todos](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/realtime-feed/2-sync-todo/)
+  - [Deployment](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/deployment/)
+  - [What next?](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/what-next/)
+-
+- [Hasura Docs](https://hasura.io/docs/latest/graphql/core/index.html)
+- [GraphQL API](https://hasura.io/graphql/)
 
 ## Intro to GraphQL
 
@@ -72,18 +68,18 @@ Request1:         |  Response1:query {           |  {  user (id: 1) {  |    "use
 
 We're changing the way we think about API calls. Instead of making different API calls to different URLs to fetch data, we're making ad-hoc queries to a "single URL endpoint" that returns data based on the query.
 
-* Instead of 'GET'ing a resource you 'POST' a query that describes what data you want.
-* You think of the data your API returns as a "graph", this allows you to make queries to fetch "related" pieces of data in a single shot. In the example above, you fetch the user and the user's address (as a nested JSON object) in the same API call, as opposed to making 2 API calls.
-* The "query" you send as data in the POST request has a structure and a syntax. This "language" is called GraphQL.
+- Instead of 'GET'ing a resource you 'POST' a query that describes what data you want.
+- You think of the data your API returns as a "graph", this allows you to make queries to fetch "related" pieces of data in a single shot. In the example above, you fetch the user and the user's address (as a nested JSON object) in the same API call, as opposed to making 2 API calls.
+- The "query" you send as data in the POST request has a structure and a syntax. This "language" is called GraphQL.
 
 As you can see in the example above, GraphQL queries look very neat and easy to read! This is because the query is the "shape" of the final JSON data you desire. This is one of the key-reasons that makes GraphQL a joy to work with!
 
 ### GraphQL benefits <a href="graphqlbenefits" id="graphqlbenefits"></a>
 
-* **Avoid over-fetching**: You avoid fetching more data than you need because you can specify the exact **fields** you need.
-* **Prevent multiple API calls**: In case you need more data, you can also avoid making multiple calls to your API. In the case above, you don't need to make 2 API calls to fetch `user` and `address` separately.
-* **Lesser communication with API developers**: Sometimes to fetch the exact data you need, especially if you need to fetch more data and want to avoid multiple API calls, you will need to ask your API developers to build a new API. With GraphQL, your work is _independent_ of the API team! This allows you to work faster on your app.
-* **Self-documenting**: Every GraphQL API conforms to a "schema" which is the graph data model and what kinds of queries a client can make. This allows the community to build lots of cool tools to explore & visualise your API or create IDE plugins that autocomplete your GraphQL queries and even do "codegen". We'll understand this in more detail later!
+- **Avoid over-fetching**: You avoid fetching more data than you need because you can specify the exact **fields** you need.
+- **Prevent multiple API calls**: In case you need more data, you can also avoid making multiple calls to your API. In the case above, you don't need to make 2 API calls to fetch `user` and `address` separately.
+- **Lesser communication with API developers**: Sometimes to fetch the exact data you need, especially if you need to fetch more data and want to avoid multiple API calls, you will need to ask your API developers to build a new API. With GraphQL, your work is _independent_ of the API team! This allows you to work faster on your app.
+- **Self-documenting**: Every GraphQL API conforms to a "schema" which is the graph data model and what kinds of queries a client can make. This allows the community to build lots of cool tools to explore & visualise your API or create IDE plugins that autocomplete your GraphQL queries and even do "codegen". We'll understand this in more detail later!
 
 Here's a quick chart to show you the GraphQL analogs of typical REST-ish terms:
 
@@ -93,10 +89,6 @@ Here's a quick chart to show you the GraphQL analogs of typical REST-ish terms:
 | Writing data                 | POST             | mutation     |
 | Updating/deleting data       | PUT/PATCH/DELETE | mutation     |
 | Watching/subscribing to data | -                | subscription |
-
-
-
-
 
 ### Try out GraphQL queries <a href="tryoutgraphqlqueries" id="tryoutgraphqlqueries"></a>
 
@@ -228,9 +220,9 @@ Let's try this out in GraphiQL:
 
 ### Summary <a href="summary" id="summary"></a>
 
-* You can now make GraphQL queries
-* You know how to pass arguments to your GraphQL queries
-* You know how to make your arguments dynamic by using query variables
+- You can now make GraphQL queries
+- You know how to pass arguments to your GraphQL queries
+- You know how to make your arguments dynamic by using query variables
 
 Next, let's look at writing data and not just fetching data!
 
@@ -265,16 +257,14 @@ Here's what a typical GraphQL client setup and making a query would look like:
 // Setup a GraphQL client to use the endpointconst client = new client("https://myapi.com/graphql");// Now, send your query as a string (Note that ` is used to create a multi-line// string in javascript).client.query(`  query {    user {      id      name    }  }`);
 ```
 
-
-
 ## Writing data - Mutations
 
 [![Github logo](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MjLjuvITJh8ZwT8mVxp%2Fuploads%2FrLlP1sdYa4yd1CdLcJgW%2Ffile.svg?alt=media)Edit on GitHub](https://github.com/hasura/learn-graphql/tree/master/tutorials/frontend/nextjs/tutorial-site/content/intro-to-graphql/3-writing-data-mutations.md)
 
 These are the concepts you should know before you attack mutations (haha):
 
-* [Using GraphiQL](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/intro-to-graphql/2-fetching-data-queries/#tryoutgraphqlqueries)
-* [Using query variables](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/intro-to-graphql/2-fetching-data-queries/#graphqlvariables:passingargumentstoyourqueriesdynamically)
+- [Using GraphiQL](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/intro-to-graphql/2-fetching-data-queries/#tryoutgraphqlqueries)
+- [Using query variables](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/intro-to-graphql/2-fetching-data-queries/#graphqlvariables:passingargumentstoyourqueriesdynamically)
 
 Now, let's get started with seeing how we can use GraphQL to "write" data. GraphQL mutations are types of GraphQL queries that may result in the state of your backend "mutating" or changing, just like typical `'POST'`, `'PUT'`, `'PATCH'`, `'DELETE'` APIs.
 
@@ -330,12 +320,10 @@ We'll explore more mutations to update or delete data a little later. This is a 
 
 ### Summary <a href="summary" id="summary"></a>
 
-* You can make basic GraphQL mutations
-* You can pass dynamic arguments/data to mutations with query variables
+- You can make basic GraphQL mutations
+- You can pass dynamic arguments/data to mutations with query variables
 
 Next, let's look at GraphQL subscriptions
-
-
 
 ## Watching data - Subscriptions
 
@@ -367,11 +355,11 @@ A GraphQL subscription is a subscription query string sent to a websocket endpoi
 
 ### Summary <a href="summary" id="summary"></a>
 
-* You know how to make GraphQL subscriptions
+- You know how to make GraphQL subscriptions
 
 Now that you're comfortable with the basics of using GraphQL, let's start integrating GraphQL APIs with an app!![Close](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MjLjuvITJh8ZwT8mVxp%2Fuploads%2F6ZYcrgdhyIAxzgjRUqzt%2Ffile.svg?alt=media)
 
 ### Get Started with GraphQL Now
 
-Hasura Cloud gives you a fully managed, production ready GraphQL API as a service to help you build modern apps faster.[Try Hasura Cloud for Free](https://cloud.hasura.io/signup?pg=learn\_graphql\_nextjs-fullstack-serverless\_intro-to-graphql\_4-watching-data-subscriptions\&plcmt=floating\&cta=use-hasura-cloud-free\&tech=default)[![Pocket](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MjLjuvITJh8ZwT8mVxp%2Fuploads%2F95XwVpJxZsg3YW2YqlNi%2Ffile.svg?alt=media)](https://getpocket.com/save?url=https://hasura.io/learn/graphql/intro-graphql/graphql-subscriptions/)![Copy](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MjLjuvITJh8ZwT8mVxp%2Fuploads%2FBgIcOzpDT3h9YBjJ6ToD%2Ffile.svg?alt=media)[![Whatsapp](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MjLjuvITJh8ZwT8mVxp%2Fuploads%2Fn9AKVdTBxEuhT8tyonpE%2Ffile.svg?alt=media)](https://wa.me/?text=https://hasura.io/learn/graphql/intro-graphql/graphql-subscriptions)[![Twitter](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MjLjuvITJh8ZwT8mVxp%2Fuploads%2FpgKHBoRKMyvtEtqQj8d1%2Ffile.svg?alt=media)](https://twitter.com/intent/tweet?\&text=Watching%20data%20-%20Subscriptions\&url=https://hasura.io/learn/graphql/intro-graphql/graphql-subscriptions/)[![Linkedin](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MjLjuvITJh8ZwT8mVxp%2Fuploads%2FX44z22FCUqXDWaAjMjGi%2Ffile.svg?alt=media)](http://www.linkedin.com/shareArticle?mini=true\&url=https://hasura.io/learn/graphql/intro-graphql/graphql-subscriptions/\&title=Watching%20data%20-%20Subscriptions\&summary=Watching%20data%20-%20Subscriptions\&source=https://hasura.io/learn/graphql/intro-graphql/graphql-subscriptions/)[\
+Hasura Cloud gives you a fully managed, production ready GraphQL API as a service to help you build modern apps faster.[Try Hasura Cloud for Free](https://cloud.hasura.io/signup?pg=learn_graphql_nextjs-fullstack-serverless_intro-to-graphql_4-watching-data-subscriptions&plcmt=floating&cta=use-hasura-cloud-free&tech=default)[![Pocket](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MjLjuvITJh8ZwT8mVxp%2Fuploads%2F95XwVpJxZsg3YW2YqlNi%2Ffile.svg?alt=media)](https://getpocket.com/save?url=https://hasura.io/learn/graphql/intro-graphql/graphql-subscriptions/)![Copy](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MjLjuvITJh8ZwT8mVxp%2Fuploads%2FBgIcOzpDT3h9YBjJ6ToD%2Ffile.svg?alt=media)[![Whatsapp](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MjLjuvITJh8ZwT8mVxp%2Fuploads%2Fn9AKVdTBxEuhT8tyonpE%2Ffile.svg?alt=media)](https://wa.me/?text=https://hasura.io/learn/graphql/intro-graphql/graphql-subscriptions)[![Twitter](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MjLjuvITJh8ZwT8mVxp%2Fuploads%2FpgKHBoRKMyvtEtqQj8d1%2Ffile.svg?alt=media)](https://twitter.com/intent/tweet?&text=Watching%20data%20-%20Subscriptions&url=https://hasura.io/learn/graphql/intro-graphql/graphql-subscriptions/)[![Linkedin](https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MjLjuvITJh8ZwT8mVxp%2Fuploads%2FX44z22FCUqXDWaAjMjGi%2Ffile.svg?alt=media)](http://www.linkedin.com/shareArticle?mini=true&url=https://hasura.io/learn/graphql/intro-graphql/graphql-subscriptions/&title=Watching%20data%20-%20Subscriptions&summary=Watching%20data%20-%20Subscriptions&source=https://hasura.io/learn/graphql/intro-graphql/graphql-subscriptions/)[\
 ](https://hasura.io/learn/graphql/nextjs-fullstack-serverless/intro-to-graphql/3-writing-data-mutations/)

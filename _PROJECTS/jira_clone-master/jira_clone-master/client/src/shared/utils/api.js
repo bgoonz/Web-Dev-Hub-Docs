@@ -29,10 +29,10 @@ const api = (method, url, variables) =>
       data: method !== 'get' ? variables : undefined,
       paramsSerializer: objectToQueryString,
     }).then(
-      response => {
+      (response) => {
         resolve(response.data);
       },
-      error => {
+      (error) => {
         if (error.response) {
           if (error.response.data.error.code === 'INVALID_TOKEN') {
             removeStoredAuthToken();

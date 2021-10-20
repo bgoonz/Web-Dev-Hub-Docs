@@ -23,7 +23,7 @@ const useQuery = (url, propsVariables = {}, options = {}) => {
   });
 
   const makeRequest = useCallback(
-    newVariables => {
+    (newVariables) => {
       const variables = { ...state.variables, ...(newVariables || {}) };
       const apiVariables = { ...propsVariablesMemoized, ...variables };
 
@@ -36,11 +36,11 @@ const useQuery = (url, propsVariables = {}, options = {}) => {
       }
 
       api.get(url, apiVariables).then(
-        data => {
+        (data) => {
           cache[url] = { data, apiVariables };
           mergeState({ data, error: null, isLoading: false });
         },
-        error => {
+        (error) => {
           mergeState({ error, data: null, isLoading: false });
         },
       );
@@ -60,7 +60,7 @@ const useQuery = (url, propsVariables = {}, options = {}) => {
   }, [makeRequest]);
 
   const setLocalData = useCallback(
-    getUpdatedData =>
+    (getUpdatedData) =>
       mergeState(({ data }) => {
         const updatedData = getUpdatedData(data);
         cache[url] = { ...(cache[url] || {}), data: updatedData };

@@ -5,7 +5,7 @@ import { color, font } from 'shared/utils/styles';
 export const Priority = styled.div`
   display: flex;
   align-items: center;
-  ${props =>
+  ${(props) =>
     props.isValue &&
     css`
       padding: 3px 4px 3px 0px;

@@ -17,7 +17,7 @@ const ProjectBoardIssueDetailsComments = ({ issue, fetchIssue }) => (
     <Title>Comments</Title>
     <Create issueId={issue.id} fetchIssue={fetchIssue} />
 
-    {sortByNewest(issue.comments, 'createdAt').map(comment => (
+    {sortByNewest(issue.comments, 'createdAt').map((comment) => (
       <Comment key={comment.id} comment={comment} fetchIssue={fetchIssue} />
     ))}
   </Comments>

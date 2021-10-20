@@ -35,20 +35,13 @@ describe('Issue details', () => {
 
   it('updates title, description successfully', () => {
     getIssueDetailsModal().within(() => {
-      cy.get('textarea[placeholder="Short summary"]')
-        .clear()
-        .type('TEST_TITLE')
-        .blur();
+      cy.get('textarea[placeholder="Short summary"]').clear().type('TEST_TITLE').blur();
 
-      cy.contains('Add a description...')
-        .click()
-        .should('not.exist');
+      cy.contains('Add a description...').click().should('not.exist');
 
       cy.get('.ql-editor').type('TEST_DESCRIPTION');
 
-      cy.contains('button', 'Save')
-        .click()
-        .should('not.exist');
+      cy.contains('button', 'Save').click().should('not.exist');
     });
 
     cy.assertReloadAssert(() => {
@@ -75,9 +68,7 @@ describe('Issue details', () => {
 
       getNumberInputAtIndex(1).debounced('type', 2);
 
-      cy.contains('button', 'Done')
-        .click()
-        .should('not.exist');
+      cy.contains('button', 'Done').click().should('not.exist');
     });
 
     cy.assertReloadAssert(() => {
@@ -107,15 +98,11 @@ describe('Issue details', () => {
 
   it('creates a comment successfully', () => {
     getIssueDetailsModal().within(() => {
-      cy.contains('Add a comment...')
-        .click()
-        .should('not.exist');
+      cy.contains('Add a comment...').click().should('not.exist');
 
       cy.get('textarea[placeholder="Add a comment..."]').type('TEST_COMMENT');
 
-      cy.contains('button', 'Save')
-        .click()
-        .should('not.exist');
+      cy.contains('button', 'Save').click().should('not.exist');
 
       cy.contains('Add a comment...').should('exist');
       cy.get(testid`issue-comment`).should('contain', 'TEST_COMMENT');
@@ -134,9 +121,7 @@ describe('Issue details', () => {
         .clear()
         .type('TEST_COMMENT_EDITED');
 
-      cy.contains('button', 'Save')
-        .click()
-        .should('not.exist');
+      cy.contains('button', 'Save').click().should('not.exist');
 
       cy.get(testid`issue-comment`)
         .should('contain', 'Edit')
@@ -162,5 +147,5 @@ describe('Issue details', () => {
 
   const getIssueDetailsModal = () => cy.get(testid`modal:issue-details`);
   const getListIssue = () => cy.contains(testid`list-issue`, 'Issue title 1');
-  const getNumberInputAtIndex = index => cy.get('input[placeholder="Number"]').eq(index);
+  const getNumberInputAtIndex = (index) => cy.get('input[placeholder="Number"]').eq(index);
 });

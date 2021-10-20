@@ -29,10 +29,10 @@ const ProjectBoardFilters = ({ projectUsers, defaultFilters, filters, mergeFilte
       <SearchInput
         icon="search"
         value={searchTerm}
-        onChange={value => mergeFilters({ searchTerm: value })}
+        onChange={(value) => mergeFilters({ searchTerm: value })}
       />
       <Avatars>
-        {projectUsers.map(user => (
+        {projectUsers.map((user) => (
           <AvatarIsActiveBorder key={user.id} isActive={userIds.includes(user.id)}>
             <StyledAvatar
               avatarUrl={user.avatarUrl}

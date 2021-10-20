@@ -72,7 +72,7 @@ numbers = [        386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 32
 
 ​[Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-28.php)​
 
-**29.** Write a Python program to print out a set containing all the colors from color_list_1 which are not present in color_list_2. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Test Data_ : color_list_1 = set\(\["White", "Black", "Red"\]\) color_list_2 = set\(\["Red", "Green"\]\) _Expected Output_ : {'Black', 'White'} [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-29.php)​
+**29.** Write a Python program to print out a set containing all the colors from color*list_1 which are not present in color_list_2. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) \_Test Data* : color*list_1 = set\(\["White", "Black", "Red"\]\) color_list_2 = set\(\["Red", "Green"\]\) \_Expected Output* : {'Black', 'White'} [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-29.php)​
 
 **30.** Write a Python program that will accept the base and height of a triangle and compute the area. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-30.php)​
 

@@ -202,7 +202,7 @@ For example, enter the following into the interactive shell:
  'Compressed file is 3.63x smaller!'  
  &gt;&gt;&gt; exampleZip.close\(\)
 
-A ZipFile object has a namelist\(\) method that returns a list of strings for all the files and folders contained in the ZIP file. These strings can be passed to the getinfo\(\) ZipFile method to return a ZipInfo object about that particular file. ZipInfo objects have their own attributes, such as file_size and compress_size in bytes, which hold integers of the original file size and compressed file size, respectively. While a ZipFile object represents an entire archive file, a ZipInfo object holds useful information about a _single file_ in the archive.
+A ZipFile object has a namelist\(\) method that returns a list of strings for all the files and folders contained in the ZIP file. These strings can be passed to the getinfo\(\) ZipFile method to return a ZipInfo object about that particular file. ZipInfo objects have their own attributes, such as file*size and compress_size in bytes, which hold integers of the original file size and compressed file size, respectively. While a ZipFile object represents an entire archive file, a ZipInfo object holds useful information about a \_single file* in the archive.
 
 The command at ➊ calculates how efficiently _example.zip_ is compressed by dividing the original file size by the compressed file size and prints this information.
 
@@ -233,7 +233,7 @@ The string you pass to extract\(\) must match one of the strings in the list ret
 
 To create your own compressed ZIP files, you must open the ZipFile object in _write mode_ by passing 'w' as the second argument. \(This is similar to opening a text file in write mode by passing 'w' to the open\(\) function.\)
 
-When you pass a path to the write\(\) method of a ZipFile object, Python will compress the file at that path and add it into the ZIP file. The write\(\) method’s first argument is a string of the filename to add. The second argument is the _compression type_ parameter, which tells the computer what algorithm it should use to compress the files; you can always just set this value to zipfile.ZIP_DEFLATED. \(This specifies the _deflate_ compression algorithm, which works well on all types of data.\) Enter the following into the interactive shell:
+When you pass a path to the write\(\) method of a ZipFile object, Python will compress the file at that path and add it into the ZIP file. The write\(\) method’s first argument is a string of the filename to add. The second argument is the _compression type_ parameter, which tells the computer what algorithm it should use to compress the files; you can always just set this value to zipfile.ZIP*DEFLATED. \(This specifies the \_deflate* compression algorithm, which works well on all types of data.\) Enter the following into the interactive shell:
 
 &gt;&gt;&gt; import zipfile  
 &gt;&gt;&gt; newZip = zipfile.ZipFile\('new.zip', 'w'\)  

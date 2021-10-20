@@ -2,8 +2,6 @@
 
 General Productivity Tools:
 
-
-
 ### Note-Taking Apps and Sites
 
 [![Pages](https://www.commonsense.org/education/sites/default/files/styles/square_thumbnail/public/experience-media-file/pages_logo.jpeg?itok=q8mMSj4K)](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/education/app/pages)
@@ -301,4 +299,3 @@ Create eye-catching multimedia timelines for any purpose
 **Bottom line**: Multimedia timelines connect events visually, creating pathways for deeper analysis of any chronological story.
 
 Grades: 6–12 Price: Free, Paid
-

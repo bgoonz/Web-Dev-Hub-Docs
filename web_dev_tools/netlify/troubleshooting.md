@@ -43,4 +43,3 @@ If you _do_ see `Server: Netlify` in all response headers, but still receive thi
 **\#"petsofnetlify.com is not resolvable with a resolver that validates DNSSEC"**
 
 Netlify DNS doesn’t support DNSSEC. To use Netlify DNS, disable DNSSEC with your domain registrar or previous DNS host. You can use tools like [DNSViz](http://dnsviz.net/) to figure out where DNSSEC is currently enabled. To keep DNSSEC enabled, you can stop using Netlify DNS and use [external DNS](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/) instead.
-

@@ -39,22 +39,13 @@ class User extends BaseEntity {
   @UpdateDateColumn({ type: 'timestamp' })
   updatedAt: Date;
 
-  @OneToMany(
-    () => Comment,
-    comment => comment.user,
-  )
+  @OneToMany(() => Comment, (comment) => comment.user)
   comments: Comment[];
 
-  @ManyToMany(
-    () => Issue,
-    issue => issue.users,
-  )
+  @ManyToMany(() => Issue, (issue) => issue.users)
   issues: Issue[];
 
-  @ManyToOne(
-    () => Project,
-    project => project.users,
-  )
+  @ManyToOne(() => Project, (project) => project.users)
   project: Project;
 
   @RelationId((user: User) => user.project)

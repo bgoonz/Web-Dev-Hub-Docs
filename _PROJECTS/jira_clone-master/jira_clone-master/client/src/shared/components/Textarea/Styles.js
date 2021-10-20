@@ -20,7 +20,7 @@ export const StyledTextarea = styled.div`
       border: 1px solid ${color.borderInputFocus};
       box-shadow: 0 0 0 1px ${color.borderInputFocus};
     }
-    ${props =>
+    ${(props) =>
       props.invalid &&
       css`
         &,

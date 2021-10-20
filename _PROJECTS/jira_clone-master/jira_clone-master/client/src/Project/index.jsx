@@ -29,7 +29,7 @@ const Project = () => {
   const { project } = data;
 
   const updateLocalProjectIssues = (issueId, updatedFields) => {
-    setLocalData(currentData => ({
+    setLocalData((currentData) => ({
       project: {
         ...currentData.project,
         issues: updateArrayItemById(currentData.project.issues, issueId, updatedFields),
@@ -64,7 +64,7 @@ const Project = () => {
           width={800}
           withCloseIcon={false}
           onClose={issueCreateModalHelpers.close}
-          renderContent={modal => (
+          renderContent={(modal) => (
             <IssueCreate
               project={project}
               fetchProject={fetchProject}

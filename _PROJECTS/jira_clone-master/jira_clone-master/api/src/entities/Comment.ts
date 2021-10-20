@@ -29,20 +29,13 @@ class Comment extends BaseEntity {
   @UpdateDateColumn({ type: 'timestamp' })
   updatedAt: Date;
 
-  @ManyToOne(
-    () => User,
-    user => user.comments,
-  )
+  @ManyToOne(() => User, (user) => user.comments)
   user: User;
 
   @Column('integer')
   userId: number;
 
-  @ManyToOne(
-    () => Issue,
-    issue => issue.comments,
-    { onDelete: 'CASCADE' },
-  )
+  @ManyToOne(() => Issue, (issue) => issue.comments, { onDelete: 'CASCADE' })
   issue: Issue;
 
   @Column('integer')

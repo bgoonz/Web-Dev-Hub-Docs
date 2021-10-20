@@ -22,7 +22,7 @@ export const Issue = styled.div`
   &:hover {
     background: ${color.backgroundLight};
   }
-  ${props =>
+  ${(props) =>
     props.isBeingDragged &&
     css`
       transform: rotate(3deg);

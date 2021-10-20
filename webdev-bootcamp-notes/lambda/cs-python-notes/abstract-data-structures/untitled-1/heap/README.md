@@ -325,7 +325,7 @@ Each node can satisfy the heap property with meeting the conditions to be able t
 
 Let’s think about the time complexity of _build_min_heap._ First of all, we think the time complexity of _min_heapify_, which is a main part of _build_min_heap._
 
-_min_heapify_ repeats the operation of exchanging the items in an array, which runs in constant time. So the time complexity of _min_heapify_ will be in proportional to the number of repeating. In the worst case, _min_heapify_ should repeat the operation the height of the tree times. This is because in the worst case, min_heapify will exchange the root nodes with the most depth leaf node. Assuming _h_ as the height of the root node, the time complexity of _min_heapify_ will take _O_\(_h_\) time.
+_min_heapify_ repeats the operation of exchanging the items in an array, which runs in constant time. So the time complexity of _min_heapify_ will be in proportional to the number of repeating. In the worst case, _min_heapify_ should repeat the operation the height of the tree times. This is because in the worst case, min*heapify will exchange the root nodes with the most depth leaf node. Assuming \_h* as the height of the root node, the time complexity of _min_heapify_ will take _O_\(_h_\) time.
 
 The time complexities of _min_heapify_ in each depth are shown below. The number of the nodes is also showed in right.![](https://miro.medium.com/max/60/1*a-h1jgMmLuIFq_ZhuMmBnw.png?q=20)
 

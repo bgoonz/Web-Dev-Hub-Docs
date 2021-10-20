@@ -120,10 +120,10 @@ Servers, clients, and intermediaries can cache response data, as cacheability is
 
 There are four constraints for the uniform interface:
 
-* All resources are identified using URIs \(Uniform Resource Identifiers\) and separate from the representations that are returned to the client. Any format, such as JSON or XML, can be used for data transmission.
-* Representations contain all the necessary information for changing resources by the client.
-* Self-descriptive messages returned to the client should contain all the information needed to process them.
-* The server should implement Hypermedia as the Engine of Application State \(HATEOAS\), meaning that the client should be able to use hyperlinks to discover available actions.
+- All resources are identified using URIs \(Uniform Resource Identifiers\) and separate from the representations that are returned to the client. Any format, such as JSON or XML, can be used for data transmission.
+- Representations contain all the necessary information for changing resources by the client.
+- Self-descriptive messages returned to the client should contain all the information needed to process them.
+- The server should implement Hypermedia as the Engine of Application State \(HATEOAS\), meaning that the client should be able to use hyperlinks to discover available actions.
 
 ### \#Layered System
 
@@ -147,14 +147,13 @@ GraphQL uses its own type system that is described by GraphQL Schema Definition 
 
 ## \#Pros and Cons
 
-* REST has become the de facto standard for API development. It’s a tried-and-proven approach that has been using for decades and most developers are familiar with it.
-* With REST the server returns fixed data structures. But the client does not always need the entire dataset that is returned by the server. GraphQL solves the problem of over-fetching as it Enables the client to specify which data needs to be fetched.
-* When developers are using REST, they face under-fetching and N+1 requests problem. The client makes multiple requests to obtain all data it needs. On the contrary, GraphQL allows aggregating the data in a single query.
-* GraphQL uses a strong type system to define the contract between the client and the server using GraphQL SDL. REST does not require a strict API definition, but today almost every RESTful service is defined using OpenAPI Specification. OpenAPI, as GraphQL, provides high expressiveness.
-* Since GraphQL uses a single endpoint, it can not utilize an HTTP caching mechanism, unlike REST. There are several ways to implement caching in GraphQL, such as Apollo Engine on the backend and Apollo Client and Relay on the frontend. However, HTTP caching wins completely over these technologies.
-* With REST it is easy to organize error reporting and API monitoring because REST uses HTTP response status codes. Instead, in GraphQL the server always returns code 200, and analyzing the response body is required to capture errors in interaction.
+- REST has become the de facto standard for API development. It’s a tried-and-proven approach that has been using for decades and most developers are familiar with it.
+- With REST the server returns fixed data structures. But the client does not always need the entire dataset that is returned by the server. GraphQL solves the problem of over-fetching as it Enables the client to specify which data needs to be fetched.
+- When developers are using REST, they face under-fetching and N+1 requests problem. The client makes multiple requests to obtain all data it needs. On the contrary, GraphQL allows aggregating the data in a single query.
+- GraphQL uses a strong type system to define the contract between the client and the server using GraphQL SDL. REST does not require a strict API definition, but today almost every RESTful service is defined using OpenAPI Specification. OpenAPI, as GraphQL, provides high expressiveness.
+- Since GraphQL uses a single endpoint, it can not utilize an HTTP caching mechanism, unlike REST. There are several ways to implement caching in GraphQL, such as Apollo Engine on the backend and Apollo Client and Relay on the frontend. However, HTTP caching wins completely over these technologies.
+- With REST it is easy to organize error reporting and API monitoring because REST uses HTTP response status codes. Instead, in GraphQL the server always returns code 200, and analyzing the response body is required to capture errors in interaction.
 
 ## \#Conclusion
 
 GraphQL is great for applications where related and nested data are fetched because you can use the full power of its query language.GraphQL is also well suited for mobile development as bandwidth usage is optimized by avoiding over-fetching and under-fetching. But after weighing the pros and cons, we see that GraphQL is not always the best option. If you need a clear and convenient API without overhead, or you want to use HTTP capabilities like caching or authentication, you should choose REST.
-
