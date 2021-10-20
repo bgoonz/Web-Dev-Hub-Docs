@@ -295,7 +295,7 @@
 
     Hi Jill! I’m really excited about the POSITION role & the opportunity to work with STACK. When do you plan on starting to interview for this role?
 
-    Hey Kelsey, I am thinking about applying for a software engineering role at \__\__\__ and I was wondering if I could talk to you about your experience working there. I really think that you guys are changing lives for the better and I want to get on board! Would you have time to do a quick call to just talk about how you've liked it, and specifically, what it's been like to be remote? Thank you!
+    Hey Kelsey, I am thinking about applying for a software engineering role at \_\_\_\_\_\_ and I was wondering if I could talk to you about your experience working there. I really think that you guys are changing lives for the better and I want to get on board! Would you have time to do a quick call to just talk about how you've liked it, and specifically, what it's been like to be remote? Thank you!
 
     On the whole, we have found that email has a much better response rate than LinkedIn connection requests + notes. This is in part because you can follow up on email messages and because email is checked more often. When in doubt, email your contact.
 *   **They accepted my LinkedIn request but didn't respond** 😅 **— now what?**
@@ -335,6 +335,6 @@
     All the best and thank you again for your help!
 *   **They said they can meet for a call!** 🎉 **Now what?**
 
-    First, give yourself a huge pat on the back — you just networked yourself into a phone screen, informal or not! Make sure to review the document below to get prepared for this call and make the most of it. Jump in with a coach during #job_search office hours, as well, to prep! \*\*\*\*
+    First, give yourself a huge pat on the back — you just networked yourself into a phone screen, informal or not! Make sure to review the document below to get prepared for this call and make the most of it. Jump in with a coach during #job\_search office hours, as well, to prep! \*\*\*\*
 
     [Informational Interviews](https://www.notion.so/Informational-Interviews-ba425804036f435ca49fc1a2ecc1d090)

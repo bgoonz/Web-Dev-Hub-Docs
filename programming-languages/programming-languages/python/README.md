@@ -1,5 +1,9 @@
 # Python
 
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
 
 
 {% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/" %}
@@ -15,6 +19,4 @@
 
 
 {% embed url="https://gist.github.com/bgoonz/dd7fd80df384fba134b42f256298bdb4" %}
-
-
 

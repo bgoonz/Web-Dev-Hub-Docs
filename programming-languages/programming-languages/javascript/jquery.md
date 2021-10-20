@@ -2,13 +2,13 @@
 
 {% embed url="https://codesandbox.io/embed/search-awesome-forked-f72xf?fontsize=14&hidenavigation=1&theme=dark" %}
 
-[![Edit Search Awesome \(forked\)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/search-awesome-forked-f72xf?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit Search Awesome (forked)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/search-awesome-forked-f72xf?fontsize=14\&hidenavigation=1\&theme=dark)
 
-{% embed url="https://replit.com/@bgoonz/Quiz\#index.html" %}
+{% embed url="https://replit.com/@bgoonz/Quiz#index.html" %}
 
 
 
-### 
+###
 
 ### Downloading jQuery
 
@@ -43,7 +43,7 @@ Always include the jQuery file before your custom scripts; otherwise, the jQuery
 
 ### Including jQuery from CDN
 
-Alternatively, you can include jQuery in your document through freely available CDN \(Content Delivery Network\) links, if you don't want to download and host jQuery yourself.
+Alternatively, you can include jQuery in your document through freely available CDN (Content Delivery Network) links, if you don't want to download and host jQuery yourself.
 
 CDNs can offer a performance benefit by reducing the loading time, because they are hosting jQuery on multiple servers spread across the globe and when a user requests the file, it will be served from the server nearest to them.
 
@@ -51,9 +51,9 @@ This also offers an advantage that if the visitor to your webpage has already do
 
 #### jQuery's CDN provided by StackPath
 
-&lt;script src="https://code.jquery.com/jquery-3.5.1.min.js"&gt;&lt;/script&gt;
+\<script src="https://code.jquery.com/jquery-3.5.1.min.js">\</script>
 
-You can also include jQuery through [Google](https://developers.google.com/speed/libraries/#jquery) and [Microsoft](http://www.asp.net/ajax/cdn#jQuery_Releases_on_the_CDN_0) CDN's.
+You can also include jQuery through [Google](https://developers.google.com/speed/libraries/#jquery) and [Microsoft](http://www.asp.net/ajax/cdn#jQuery\_Releases\_on\_the\_CDN\_0) CDN's.
 
 ### Creating Your First jQuery Powered Web Page
 
@@ -81,7 +81,7 @@ In this section, we will perform a simple jQuery operation by changing the color
 </html>
 ```
 
-![](../../../.gitbook/assets/image%20%284%29.png)
+![](<../../../.gitbook/assets/image (4).png>)
 
 ## jQuery Syntax
 
@@ -89,9 +89,9 @@ In this tutorial you will learn how to write the jQuery code.
 
 ### Standard jQuery Syntax
 
-A jQuery statement typically starts with the dollar sign \(`$`\) and ends with a semicolon \(`;`\).
+A jQuery statement typically starts with the dollar sign (`$`) and ends with a semicolon (`;`).
 
-In jQuery, the dollar sign \(`$`\) is just an alias for jQuery. Let's consider the following example code which demonstrates the most basic statement of the jQuery.
+In jQuery, the dollar sign (`$`) is just an alias for jQuery. Let's consider the following example code which demonstrates the most basic statement of the jQuery.
 
 
 
@@ -113,7 +113,7 @@ If you are completely new to the jQuery, you might think what that code was all 
 * The `<script>` element — Since jQuery is just a JavaScript library, so the jQuery code can be placed inside the [`<script>`](https://www.tutorialrepublic.com/html-reference/html-script-tag.php) element. However, if you want to place it in an [external JavaScript file](https://www.tutorialrepublic.com/html-tutorial/html-scripts.php), which is preferred, you just remove this part.
 * The `$(document).ready(handler);` — This statement is typically known as ready event. Where the _handler_ is basically a function that is passed to the `ready()` method to be executed safely as soon as the document is ready to be manipulated i.e. when the DOM hierarchy has been fully constructed.
 
-The jQuery `ready()` method is typically used with an anonymous function. So, the above example can also be written in a shorthand notation like this:  
+The jQuery `ready()` method is typically used with an anonymous function. So, the above example can also be written in a shorthand notation like this:\
 
 
 ```markup
@@ -131,7 +131,7 @@ The jQuery `ready()` method is typically used with an anonymous function. So, th
 Further, inside an event handler function you can write the jQuery statements to perform any action following the basic syntax, like: `$(selector).action();`
 {% endhint %}
 
-\*\*\*\*
+****
 
 Where, the `$(selector)` basically selects the HTML elements from the DOM tree so that it can be manipulated and the `action()` applies some action on the selected elements such as changes the CSS property value, or sets the element's contents, etc. Let's consider another example that sets the paragraph text after the DOM is ready:
 
@@ -160,5 +160,4 @@ Where, the `$(selector)` basically selects the HTML elements from the DOM tree s
 
 
 
-![](../../../.gitbook/assets/image%20%285%29.png)
-
+![](<../../../.gitbook/assets/image (5).png>)

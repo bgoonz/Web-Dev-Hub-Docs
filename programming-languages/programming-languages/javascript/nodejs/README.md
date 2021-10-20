@@ -102,7 +102,7 @@
 * [YodaOS](https://github.com/yodaos-project/yodaos) - AI operating system.
 * [Brain.js](https://github.com/BrainJS/brain.js) - Machine-learning framework.
 * [Pipcook](https://github.com/alibaba/pipcook) - Front-end algorithm framework to create a machine learning pipeline.
-* [Cytoscape.js](https://github.com/cytoscape/cytoscape.js) - Graph theory \(a.k.a. network\) modeling and analysis.
+* [Cytoscape.js](https://github.com/cytoscape/cytoscape.js) - Graph theory (a.k.a. network) modeling and analysis.
 * [Kadence](https://gitlab.com/deadcanaries/kadence) - Kademlia distributed hash table.
 * [seedshot](https://github.com/twobucks/seedshot) - Temporary P2P screenshot sharing from your browser.
 * [js-git](https://github.com/creationix/js-git) - JavaScript implementation of Git.
@@ -189,7 +189,7 @@
 
 * [got](https://github.com/sindresorhus/got) - Nicer interface to the built-in `http` module.
 * [gh-got](https://github.com/sindresorhus/gh-got) - Convenience wrapper for `got` to interact with the GitHub API.
-* [axios](https://github.com/mzabriskie/axios) - Promise based HTTP client \(works in the browser too\).
+* [axios](https://github.com/mzabriskie/axios) - Promise based HTTP client (works in the browser too).
 * [wreck](https://github.com/hapijs/wreck) - HTTP Client Utilities.
 * [download](https://github.com/kevva/download) - Download and extract files effortlessly.
 * [http-proxy](https://github.com/nodejitsu/node-http-proxy) - HTTP proxy.
@@ -303,7 +303,7 @@
 #### Templating
 
 * [marko](https://github.com/marko-js/marko) - HTML-based templating engine that compiles templates to CommonJS modules and supports streaming, async rendering and custom tags.
-* [nunjucks](https://github.com/mozilla/nunjucks) - Templating engine with inheritance, asynchronous control, and more \(jinja2 inspired\).
+* [nunjucks](https://github.com/mozilla/nunjucks) - Templating engine with inheritance, asynchronous control, and more (jinja2 inspired).
 * [handlebars.js](https://github.com/wycats/handlebars.js) - Superset of Mustache templates which adds powerful features like helpers and more advanced blocks.
 * [EJS](https://github.com/mde/ejs) - Simple unopinionated templating language.
 * [Pug](https://github.com/pugjs/pug) - High-performance template engine heavily influenced by Haml.
@@ -315,7 +315,7 @@
 * [Express](https://github.com/expressjs/express) - Web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications.
 * [Feathers](https://github.com/feathersjs/feathers) - Microservice framework built in the spirit of Express.
 * [LoopBack](https://github.com/strongloop/loopback) - Powerful framework for creating REST APIs and easily connecting to backend data sources.
-* [Meteor](https://github.com/meteor/meteor) - An ultra-simple, database-everywhere, data-on-the-wire, pure-Javascript web framework. _\(You might like_ [_awesome-meteor_](https://github.com/Urigo/awesome-meteor)_\)_
+* [Meteor](https://github.com/meteor/meteor) - An ultra-simple, database-everywhere, data-on-the-wire, pure-Javascript web framework. _(You might like _[_awesome-meteor_](https://github.com/Urigo/awesome-meteor)_)_
 * [Restify](https://github.com/restify/node-restify) - Enables you to build correct REST web services.
 * [ThinkJS](https://github.com/thinkjs/thinkjs) - Framework with ES2015+ support, WebSockets, REST API.
 * [ActionHero](https://github.com/actionhero/actionhero) - Framework for making reusable & scalable APIs for TCP sockets, WebSockets, and HTTP clients.
@@ -386,7 +386,7 @@
   * [each-async](https://github.com/sindresorhus/each-async) - Async concurrent iterator like forEach.
   * [async](https://github.com/caolan/async) - Provides straight-forward, powerful functions for working with asynchronicity.
 * Channels
-  * [js-csp](https://github.com/ubolonton/js-csp) - Communicating sequential processes for JavaScript \(like Clojurescript core.async, or Go\).
+  * [js-csp](https://github.com/ubolonton/js-csp) - Communicating sequential processes for JavaScript (like Clojurescript core.async, or Go).
 
 #### Streams
 
@@ -397,7 +397,7 @@
 * [duplexify](https://github.com/mafintosh/duplexify) - Turn a writeable and readable stream into a single streams2 duplex stream.
 * [pumpify](https://github.com/mafintosh/pumpify) - Combine an array of streams into a single duplex stream.
 * [peek-stream](https://github.com/mafintosh/peek-stream) - Transform stream that lets you peek the first line before deciding how to parse it.
-* [binary-split](https://github.com/maxogden/binary-split) - Newline \(or any delimiter\) splitter stream.
+* [binary-split](https://github.com/maxogden/binary-split) - Newline (or any delimiter) splitter stream.
 * [byline](https://github.com/jahewson/node-byline) - Super-simple line-by-line Stream reader.
 * [first-chunk-stream](https://github.com/sindresorhus/first-chunk-stream) - Transform the first chunk in a stream.
 * [pad-stream](https://github.com/sindresorhus/pad-stream) - Pad each line in a stream.
@@ -425,7 +425,7 @@
 * [image-type](https://github.com/sindresorhus/image-type) - Detect the image type of a Buffer/Uint8Array.
 * [gm](https://github.com/aheckmann/gm) - GraphicsMagick and ImageMagick wrapper.
 * [lwip](https://github.com/EyalAr/lwip) - Lightweight image processor which does not require ImageMagick.
-* [pica](https://github.com/nodeca/pica) - High quality & fast resize \(lanczos3\) in pure JS. Alternative to canvas drawImage\(\), when no pixelation allowed.
+* [pica](https://github.com/nodeca/pica) - High quality & fast resize (lanczos3) in pure JS. Alternative to canvas drawImage(), when no pixelation allowed.
 * [jimp](https://github.com/oliver-moran/jimp) - Image processing in pure JavaScript.
 * [probe-image-size](https://github.com/nodeca/probe-image-size) - Get the size of most image formats without a full download.
 * [qrcode](https://github.com/soldair/node-qrcode) - QR code and bar code generator.
@@ -492,7 +492,7 @@
 * [property-validator](https://github.com/nettofarah/property-validator) - Easy property validation for Express.
 * [schema-inspector](https://github.com/Atinux/schema-inspector) - JSON API sanitization and validation.
 * [ajv](https://github.com/epoberezkin/ajv) - The fastest JSON Schema validator. Supports v5, v6 and v7 proposals.
-* [Superstruct](https://github.com/ianstormtaylor/superstruct) - Simple and composable way to validate data in JavaScript \(and TypeScript\).
+* [Superstruct](https://github.com/ianstormtaylor/superstruct) - Simple and composable way to validate data in JavaScript (and TypeScript).
 
 #### Parsing
 
@@ -534,7 +534,7 @@
 * [yazl](https://github.com/thejoshwolfe/yazl) - Zip.
 * [yauzl](https://github.com/thejoshwolfe/yauzl) - Unzip.
 * [Archiver](https://github.com/archiverjs/node-archiver) - Streaming interface for archive generation, supporting ZIP and TAR.
-* [pako](https://github.com/nodeca/pako) - High speed zlib port to pure js \(deflate, inflate, gzip\).
+* [pako](https://github.com/nodeca/pako) - High speed zlib port to pure js (deflate, inflate, gzip).
 * [tar-stream](https://github.com/mafintosh/tar-stream) - Streaming tar parser and generator. Also see [tar-fs](https://github.com/mafintosh/tar-fs).
 * [decompress](https://github.com/kevva/decompress) - Decompression module with support for `tar`, `tar.gz` and `zip` files out of the box.
 
@@ -569,7 +569,7 @@
   * [Objection.js](https://github.com/Vincit/objection.js) - Lightweight ORM built on the SQL query builder Knex.
   * [TypeORM](https://github.com/typeorm/typeorm) - ORM for PostgreSQL, MariaDB, MySQL, SQLite, and more.
   * [MikroORM](https://github.com/mikro-orm/mikro-orm) - TypeScript ORM based on Data Mapper, Unit of Work and Identity Map patterns. Supports MongoDB, PostgreSQL, MySQL and SQLite.
-  * [Prisma](https://github.com/prisma/prisma) - Modern database access \(ORM alternative\). Auto-generated and type-safe query builder in TypeScript. Supports PostgreSQL, MySQL & SQLite.
+  * [Prisma](https://github.com/prisma/prisma) - Modern database access (ORM alternative). Auto-generated and type-safe query builder in TypeScript. Supports PostgreSQL, MySQL & SQLite.
 * Query builder
   * [Knex](https://github.com/tgriesser/knex) - Query builder for PostgreSQL, MySQL and SQLite3, designed to be flexible, portable, and fun to use.
 * Other
@@ -619,7 +619,7 @@
 * [GuardRails](https://github.com/apps/guardrails) - GitHub app that provides security feedback in pull requests.
 * [rate-limiter-flexible](https://github.com/animir/node-rate-limiter-flexible) - Brute-force and DDoS attack protection.
 * [crypto-hash](https://github.com/sindresorhus/crypto-hash) - Async non-blocking hashing.
-* [jose-simple](https://github.com/davesag/jose-simple) - Encryption and decryption of data using the JOSE \(JSON Object Signing and Encryption\) standard.
+* [jose-simple](https://github.com/davesag/jose-simple) - Encryption and decryption of data using the JOSE (JSON Object Signing and Encryption) standard.
 
 #### Benchmarking
 
@@ -660,7 +660,7 @@
 * [rsmq](https://github.com/smrchy/rsmq) - Redis-backed message queue.
 * [bee-queue](https://github.com/bee-queue/bee-queue) - High-performance Redis-backed job queue.
 * [RedisSMQ](https://github.com/weyoss/redis-smq) - Simple high-performance Redis message queue with real-time monitoring.
-* [sqs-consumer](https://github.com/bbc/sqs-consumer) - Build Amazon Simple Queue Service \(SQS\) based apps without the boilerplate.
+* [sqs-consumer](https://github.com/bbc/sqs-consumer) - Build Amazon Simple Queue Service (SQS) based apps without the boilerplate.
 * [better-queue](https://github.com/diamondio/better-queue) - Simple and efficient job queue when you cannot use Redis.
 
 #### Node.js management
@@ -714,7 +714,7 @@
 
 * [KeystoneJS](https://github.com/keystonejs/keystone) - CMS and web application platform built on Express and MongoDB.
 * [ApostropheCMS](https://github.com/apostrophecms/apostrophe) - Content management system with an emphasis on intuitive front end content editing and administration built on Express and MongoDB.
-* [Strapi](https://github.com/strapi/strapi) - Content Management Framework \(headless-CMS\) to build powerful APIs.
+* [Strapi](https://github.com/strapi/strapi) - Content Management Framework (headless-CMS) to build powerful APIs.
 * [Tipe](https://github.com/tipeio/tipe) - Developer-first content management system with GraphQL and REST API from a schema file.
 * [Factor](https://github.com/fiction-com/factor) - Vue.js dashboard framework and headless CMS.
 * [AdminBro](https://github.com/SoftwareBrothers/admin-bro) - Auto-generated admin panel with CRUD for all your resources.
@@ -750,14 +750,14 @@
 
 * [execa](https://github.com/sindresorhus/execa) - Better `child_process`.
 * [cheerio](https://github.com/cheeriojs/cheerio) - Fast, flexible, and lean implementation of core jQuery designed specifically for the server.
-* [Electron](https://github.com/atom/electron) - Build cross platform desktop apps with web technologies. _\(You might like_ [_awesome-electron_](https://github.com/sindresorhus/awesome-electron)_\)_
+* [Electron](https://github.com/atom/electron) - Build cross platform desktop apps with web technologies. _(You might like _[_awesome-electron_](https://github.com/sindresorhus/awesome-electron)_)_
 * [open](https://github.com/sindresorhus/open) - Opens stuff like websites, files, executables.
 * [hasha](https://github.com/sindresorhus/hasha) - Hashing made simple. Get the hash of a buffer/string/stream/file.
 * [dot-prop](https://github.com/sindresorhus/dot-prop) - Get a property from a nested object using a dot path.
 * [onetime](https://github.com/sindresorhus/onetime) - Only run a function once.
 * [mem](https://github.com/sindresorhus/mem) - Memoize functions - an optimization technique used to speed up consecutive function calls by caching the result of calls with identical input.
 * [import-fresh](https://github.com/sindresorhus/import-fresh) - Import a module while bypassing the cache.
-* [strip-bom](https://github.com/sindresorhus/strip-bom) - Strip UTF-8 byte order mark \(BOM\) from a string/buffer/stream.
+* [strip-bom](https://github.com/sindresorhus/strip-bom) - Strip UTF-8 byte order mark (BOM) from a string/buffer/stream.
 * [os-locale](https://github.com/sindresorhus/os-locale) - Get the system locale.
 * [ssh2](https://github.com/mscdex/ssh2) - SSH2 client and server module.
 * [adit](https://github.com/markelog/adit) - SSH tunneling made simple.
@@ -766,7 +766,7 @@
 * [Bottleneck](https://github.com/SGrondin/bottleneck) - Rate limiter that makes throttling easy.
 * [ow](https://github.com/sindresorhus/ow) - Function argument validation for humans.
 * [webworker-threads](https://github.com/audreyt/node-webworker-threads) - Lightweight Web Worker API implementation with native threads.
-* [clipboardy](https://github.com/sindresorhus/clipboardy) - Access the system clipboard \(copy/paste\).
+* [clipboardy](https://github.com/sindresorhus/clipboardy) - Access the system clipboard (copy/paste).
 * [node-pre-gyp](https://github.com/mapbox/node-pre-gyp) - Makes it easy to publish and install Node.js C++ addons from binaries.
 * [opencv](https://github.com/peterbraden/node-opencv) - Bindings for OpenCV. The defacto computer vision library.
 * [dotenv](https://github.com/motdotla/dotenv) - Load environment variables from .env file.
@@ -830,13 +830,13 @@
 
 #### Videos
 
-* [Introduction to Node.js with Ryan Dahl](https://www.youtube.com/watch?v=jo_B4LTHi3I)
+* [Introduction to Node.js with Ryan Dahl](https://www.youtube.com/watch?v=jo\_B4LTHi3I)
 * [Hands on with Node.js](https://learn.bevry.me/hands-on-with-node.js/preface)
 * [Nodetuts](http://nodetuts.com) - Series of talks, including TCP & HTTP API servers, async programming, and more.
 * [V8 Garbage Collector](https://v8.dev/blog/trash-talk) - Trash talk about the V8 garbage collector.
 * [10 Things I Regret About Node.js by Ryan Dahl](https://www.youtube.com/watch?v=M3BM9TB-8yA) - Insightful talk by the creator of Node.js about some of its limitions.
 * [Mastering REST APIs in Node.js: Zero-To-Hero](https://www.manning.com/livevideo/mastering-rest-apis-in-nodejs) - Video course on how to make REST APIs using Node.js.
-* [Make a vanilla Node.js REST API](https://www.youtube.com/watch?v=_1xa8Bsho6A) - Building a REST API without using a framework like Express.
+* [Make a vanilla Node.js REST API](https://www.youtube.com/watch?v=\_1xa8Bsho6A) - Building a REST API without using a framework like Express.
 
 #### Books
 
@@ -903,4 +903,3 @@
 
 * [awesome-npm](https://github.com/sindresorhus/awesome-npm) - Resources and tips for using npm.
 * [awesome-cross-platform-nodejs](https://github.com/bcoe/awesome-cross-platform-nodejs) - Resources for writing and testing cross-platform code.
-

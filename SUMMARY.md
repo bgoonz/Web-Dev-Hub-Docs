@@ -234,4 +234,5 @@
   * [Page 13](webdev-bootcamp-notes/lambda/page-13.md)
   * [Page 14](webdev-bootcamp-notes/lambda/page-14.md)
   * [Page 15](webdev-bootcamp-notes/lambda/page-15.md)
-  * [CS-Python-Notes](webdev-bootcamp-notes/lambda/cs-python-notes.md)
+  * [CS-Python-Notes](webdev-bootcamp-notes/lambda/cs-python-notes/README.md)
+    * [Python](webdev-bootcamp-notes/lambda/cs-python-notes/python.md)

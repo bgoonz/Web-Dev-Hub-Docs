@@ -4,7 +4,7 @@
 
 As mentioned above, backend development is what keeps the internet running behind the scenes.
 
-Backend developers are primarily focused on how a website works. They write code that focuses on the functionality and logic powering the application they’re working on, and the technology they work on is never directly seen by users.  
+Backend developers are primarily focused on how a website works. They write code that focuses on the functionality and logic powering the application they’re working on, and the technology they work on is never directly seen by users. &#x20;
 
 The [tech of the back end](https://www.careerexplorer.com/careers/back-end-developer/) is a combination of servers, applications, and databases.
 
@@ -12,15 +12,15 @@ Responsibilities of backend programmers could involve writing APIs, writing code
 
 ### **Front-end Vs Backend Programming**
 
-Intuitively, the other side of backend development is the front end. 
+Intuitively, the other side of backend development is the front end.&#x20;
 
-The key difference is that while backend developers build how a website functions, front-end programmers build and design the interface, determining how the site looks to users. 
+The key difference is that while backend developers build how a website functions, front-end programmers build and design the interface, determining how the site looks to users.&#x20;
 
 Backend web development [lays the foundational code](https://www.roberthalf.com/blog/salaries-and-skills/what-is-the-best-programming-language-for-your-backend-developer-career) that enables websites to process the actions that users take on the front end and deliver the correct information in return.
 
-Neither works without the other—you need the back end to make the front end work, and you need the front end so people can actually access and interact with the website. 
+Neither works without the other—you need the back end to make the front end work, and you need the front end so people can actually access and interact with the website.&#x20;
 
-Backend developers typically earn higher salaries than front-end developers, as backend languages tend to be more technical. The average salary for a backend developer is [$101,619/yr](https://www.glassdoor.com/Salaries/backend-developer-salary-SRCH_KO0,17.htm), while front-end developers earn [$76,929/yr](https://www.glassdoor.com/Salaries/front-end-developer-salary-SRCH_KO0,19.htm).
+Backend developers typically earn higher salaries than front-end developers, as backend languages tend to be more technical. The average salary for a backend developer is [$101,619/yr](https://www.glassdoor.com/Salaries/backend-developer-salary-SRCH\_KO0,17.htm), while front-end developers earn [$76,929/yr](https://www.glassdoor.com/Salaries/front-end-developer-salary-SRCH\_KO0,19.htm).
 
 There are also full-stack developers, who can work with both backend and front-end technologies. They’re the jack-of-all-trades of the programming world.
 
@@ -30,13 +30,13 @@ There are also full-stack developers, who can work with both backend and front-e
 
 ### Types of Backend Development Languages
 
-Backend programming can either be **object-oriented \(OOP\)** or **functional**.
+Backend programming can either be **object-oriented (OOP) **or **functional**.
 
 The former is the technique that focuses on the creation of objects. With object-oriented programming, statements should be executed in a particular order. Popular OOP languages are **Java**, **.NET**, and **Python**,
 
-The latter is a technique that is more “action”-based. Functional programming uses declarative language, which means that statements can be executed in any order. It’s commonly used for [data science](https://learntocodewith.me/learn/data-science/), and popular languages are **SQL**, **F\#**, and **R**.
+The latter is a technique that is more “action”-based. Functional programming uses declarative language, which means that statements can be executed in any order. It’s commonly used for [data science](https://learntocodewith.me/learn/data-science/), and popular languages are **SQL**, **F#**, and **R**.
 
-Languages can either be **statically typed** or **dynamically typed.** The former is more rigid, but better at catching errors, whereas the latter is more flexible but allows for variables to change types \(which could account for unexpected errors\). This article by [Hacker Noon](https://hackernoon.com/i-finally-understand-static-vs-dynamic-typing-and-you-will-too-ad0c2bd0acc7) goes into greater detail if you’re interested in finding out more.
+Languages can either be** statically typed** or **dynamically typed. **The former is more rigid, but better at catching errors, whereas the latter is more flexible but allows for variables to change types (which could account for unexpected errors). This article by [Hacker Noon](https://hackernoon.com/i-finally-understand-static-vs-dynamic-typing-and-you-will-too-ad0c2bd0acc7) goes into greater detail if you’re interested in finding out more.
 
 Start coding now
 
@@ -46,11 +46,11 @@ Stop waiting and start learning! Get my 10 tips on teaching yourself how to code
 
 Now, let’s take a look at some specific backend development languages and what they’re used for.
 
-#### Backend Language \#1: Java <a id="java"></a>
+#### Backend Language #1: Java <a href="java" id="java"></a>
 
-Java is the world’s [most popular](https://www.codingdojo.com/blog/7-most-in-demand-programming-languages-of-2018/) programming language—and for good reason. Not only is Java extremely versatile \(its use spans from smartphones to smart cards\); it has also been used by developers for over 20 years.
+Java is the world’s [most popular](https://www.codingdojo.com/blog/7-most-in-demand-programming-languages-of-2018/) programming language—and for good reason. Not only is Java extremely versatile (its use spans from smartphones to smart cards); it has also been used by developers for over 20 years.
 
-What makes Java so versatile is the Java Virtual Machine \(JVM\). With many development languages, compiling a program creates code that may run differently if the computers it’s run on are different. This is not an issue for Java because of the JVM. The Java Virtual Machine acts like a middle layer that can run code on any computer, regardless of where the said code was compiled.
+What makes Java so versatile is the Java Virtual Machine (JVM). With many development languages, compiling a program creates code that may run differently if the computers it’s run on are different. This is not an issue for Java because of the JVM. The Java Virtual Machine acts like a middle layer that can run code on any computer, regardless of where the said code was compiled.
 
 While Java is extremely popular with desktop and business software developers, it is less beginner-friendly than a language like Python. This is because it’s verbose and requires more code to build out features; as a result, it’s less rewarding to those just starting out.
 
@@ -58,9 +58,9 @@ That said, Java’s longstanding popularity and varied use mean that its communi
 
 **💡 WHAT YOU CAN DO WITH JAVA**
 
-Java backend technologies can be used to achieve a lot of objectives, including these and more: 
+Java backend technologies can be used to achieve a lot of objectives, including these and more:&#x20;
 
-* \(Android\) mobile application development
+* (Android) mobile application development
 * Website development
 * Database connectivity
 * Image processing
@@ -83,7 +83,7 @@ There are some [big names among companies](https://stackshare.io/java) that use 
 
 **💵 AVERAGE SALARY FOR JAVA DEVELOPERS**
 
-As of [April 2020](https://www.glassdoor.com/Salaries/java-developer-salary-SRCH_KO0,14.htm), Java developers made an average of $79,137/year in the US with salaries ranging from $57k to $117k.
+As of [April 2020](https://www.glassdoor.com/Salaries/java-developer-salary-SRCH\_KO0,14.htm), Java developers made an average of $79,137/year in the US with salaries ranging from $57k to $117k.
 
 **🗺️ WHERE TO LEARN JAVA: THE ULTIMATE JAVA MASTERY SERIES ON CODE WITH MOSH**
 
@@ -92,20 +92,20 @@ As of [April 2020](https://www.glassdoor.com/Salaries/java-developer-salary-SRCH
 **Course facts:**
 
 * **Course Name:** The Ultimate Java Mastery Series
-* **Platform:** [Code With Mosh](https://learntocodewith.me/go/code-with-mosh/)
+* **Platform: **[Code With Mosh](https://learntocodewith.me/go/code-with-mosh/)
 * **Instructed by:** Mosh Hamedani
 * **Price:** $49
 * **Skill level:** Beginner
 
-[Discover all the different programming languages you can use for backend development](https://twitter.com/share?text=Discover+all+the+different+programming+languages+you+can+use+for+backend+development&via=learncodewithme&related=learncodewithme&url=https://learntocodewith.me/posts/backend-development/)
+[Discover all the different programming languages you can use for backend development](https://twitter.com/share?text=Discover+all+the+different+programming+languages+you+can+use+for+backend+development\&via=learncodewithme\&related=learncodewithme\&url=https://learntocodewith.me/posts/backend-development/)
 
-[CLICK TO TWEET](https://twitter.com/share?text=Discover+all+the+different+programming+languages+you+can+use+for+backend+development&via=learncodewithme&related=learncodewithme&url=https://learntocodewith.me/posts/backend-development/)
+[CLICK TO TWEET](https://twitter.com/share?text=Discover+all+the+different+programming+languages+you+can+use+for+backend+development\&via=learncodewithme\&related=learncodewithme\&url=https://learntocodewith.me/posts/backend-development/)
 
 [Head back to the table of contents »](https://learntocodewith.me/posts/backend-development/#toc)
 
-#### Backend Language \#2: PHP <a id="php"></a>
+#### Backend Language #2: PHP <a href="php" id="php"></a>
 
-[PHP](http://php.net/) powers [78.2% of all websites](https://w3techs.com/technologies/details/pl-php/all/all) whose server-side programming language we know. The language was first released in 1995 when there were few options for building dynamic websites.
+[PHP](http://php.net) powers [78.2% of all websites](https://w3techs.com/technologies/details/pl-php/all/all) whose server-side programming language we know. The language was first released in 1995 when there were few options for building dynamic websites.
 
 ![PHP](https://learntocodewith.me/wp-content/uploads/2019/01/PHP.jpg)
 
@@ -115,11 +115,11 @@ PHP is a [great language to learn](https://learntocodewith.me/go/goskills-intro-
 
 * It’s more forgiving of errors, which means that you’re able to compile and run a program until you reach a problematic part.
 * There is an abundance of resources dedicated to the language as a result of the large community and tool support. The language undergoes updates, so ensure you’re learning from an up-to-date tutorial.
-* The setup is relatively easy compared to a language like Ruby on Rails. You can download [MAMP](https://www.mamp.info/en/) \(for Macs\) or WAMP \([for Windows](https://sourceforge.net/projects/wampserver/)\) and you should be ready to go in 5 minutes.
+* The setup is relatively easy compared to a language like Ruby on Rails. You can download [MAMP](https://www.mamp.info/en/) (for Macs) or WAMP ([for Windows](https://sourceforge.net/projects/wampserver/)) and you should be ready to go in 5 minutes.
 
 **💡 WHAT YOU CAN DO WITH PHP**
 
-According to the [PHP website](http://php.net/manual/en/intro-whatcando.php), you can: 
+According to the [PHP website](http://php.net/manual/en/intro-whatcando.php), you can:&#x20;
 
 * Collect form data
 * Generate dynamic page content
@@ -142,7 +142,7 @@ Here are some [companies using PHP](https://stackshare.io/php) in their dev team
 
 **💵 AVERAGE SALARY FOR PHP DEVELOPERS 💵**
 
-As of [April 2020](https://www.glassdoor.com/Salaries/php-developer-salary-SRCH_KO0,13.htm), PHP developers made an average of $82,007/year in the US, with salaries ranging from $55k to $100k.
+As of [April 2020](https://www.glassdoor.com/Salaries/php-developer-salary-SRCH\_KO0,13.htm), PHP developers made an average of $82,007/year in the US, with salaries ranging from $55k to $100k.
 
 **🗺️ WHERE TO LEARN PHP: BEGINNING PHP TRACK ON TEAM TREEHOUSE**
 
@@ -151,32 +151,32 @@ As of [April 2020](https://www.glassdoor.com/Salaries/php-developer-salary-SRCH_
 **Course facts:**
 
 * **Course Name:** Beginning PHP Track
-* **Platform:** [Team Treehouse](https://learntocodewith.me/go/team-treehouse/)
+* **Platform: **[Team Treehouse](https://learntocodewith.me/go/team-treehouse/)
 * **Instructed by:** Many
 * **Price:** $25/month with a Team Treehouse subscription
 * **Skill level:** Beginner
 
 [Head back to the table of contents »](https://learntocodewith.me/posts/backend-development/#toc)
 
-#### Backend Language \#3: .NET \(C\#, VB\) <a id="net-vb"></a>
+#### Backend Language #3: .NET (C#, VB) <a href="net-vb" id="net-vb"></a>
 
-[ASP.NET](https://www.asp.net/) is Microsoft’s answer to Sun Microsystem’s \(now, Oracle\) Java. The web application framework is used to build websites using languages like Visual Basic \(VB\), C\#, F\#, and more.
+[ASP.NET](https://www.asp.net) is Microsoft’s answer to Sun Microsystem’s (now, Oracle) Java. The web application framework is used to build websites using languages like Visual Basic (VB), C#, F#, and more.
 
-Its MVC \(Model-View-Controller\) architectural pattern allows backend development duties to be handled by a controller, which interacts with a model to process data. The result is then presented to the view for display as a frontend web page.
+Its MVC (Model-View-Controller) architectural pattern allows backend development duties to be handled by a controller, which interacts with a model to process data. The result is then presented to the view for display as a frontend web page.
 
 Made open source in 2016, .NET can integrate with iOS, Linux, and Android by way of .NET Core. The code is highly stable and reliable, making it a popular choice for businesses. Because it is a Microsoft product, there is great support available if you ever get lost.
 
-**C\#**
+**C#**
 
-C\# is a high-level computer language, which means it allows developers to write programs that are [independent of a particular type of computer](https://www.webopedia.com/TERM/H/high_level_language.html). Languages like these write and read more like human languages rather than machine languages.
+C# is a high-level computer language, which means it allows developers to write programs that are [independent of a particular type of computer](https://www.webopedia.com/TERM/H/high\_level\_language.html). Languages like these write and read more like human languages rather than machine languages.
 
-C\# is popular among developers because it has the power of C++ \(another backend language\) but is easier to use because it error-proofs commands that tend to trip up C++ users.
+C# is popular among developers because it has the power of C++ (another backend language) but is easier to use because it error-proofs commands that tend to trip up C++ users.
 
 Programmers on Stack Overflow have praised the language for its “cool syntax.”
 
 **VB**
 
-VB is a programming language that uses a graphical user interface \(GUI\) to [modify code written in the BASIC programming language](https://searchwindevelopment.techtarget.com/definition/Visual-Basic). It’s an easy language to start with because of its straightforward syntax and its widespread use. As a result, it’s often used for prototyping.
+VB is a programming language that uses a graphical user interface (GUI) to [modify code written in the BASIC programming language](https://searchwindevelopment.techtarget.com/definition/Visual-Basic). It’s an easy language to start with because of its straightforward syntax and its widespread use. As a result, it’s often used for prototyping.
 
 The drawback of coding with VB is the large amount of memory required to install and run GUI-based development tools.
 
@@ -201,16 +201,16 @@ A few of the [companies using .NET](https://stackshare.io/dot-net) as a programm
 
 **💵 AVERAGE SALARY FOR .NET DEVELOPERS**
 
-As of [April 2020](https://www.glassdoor.com/Salaries/net-developer-salary-SRCH_KO0,13.htm), .NET developers made an average of $68,524/year in the US, with salaries ranging from $44k to $111k.
+As of [April 2020](https://www.glassdoor.com/Salaries/net-developer-salary-SRCH\_KO0,13.htm), .NET developers made an average of $68,524/year in the US, with salaries ranging from $44k to $111k.
 
-**🗺️ WHERE TO LEARN .NET: C\# AND .NET CORE FOR BEGINNERS ON UDEMY**
+**🗺️ WHERE TO LEARN .NET: C# AND .NET CORE FOR BEGINNERS ON UDEMY**
 
-**What the course covers:** You’ll learn the fundamentals of the C\# language and .NET Core — from the syntax and structure of a C\# program to deploying .NET Core console applications, and much more.
+**What the course covers:** You’ll learn the fundamentals of the C# language and .NET Core — from the syntax and structure of a C# program to deploying .NET Core console applications, and much more.
 
 **Course facts:**
 
-* **Course Name:** C\# and .NET Core for Beginners
-* **Platform:** [Udemy](https://learntocodewith.me/go/udemy/)
+* **Course Name:** C# and .NET Core for Beginners
+* **Platform: **[Udemy](https://learntocodewith.me/go/udemy/)
 * **Instructed by:** Pontus Wittenmark
 * **Price:** $114.99
 * **Skill level:** Beginner
@@ -221,9 +221,9 @@ Stop waiting and start learning! Get my 10 tips on teaching yourself how to code
 
 [Head back to the table of contents »](https://learntocodewith.me/posts/backend-development/#toc)
 
-#### **Backend Language \#4: Ruby** <a id="ruby"></a>
+#### **Backend Language #4: Ruby** <a href="ruby" id="ruby"></a>
 
-[Ruby on Rails](https://learntocodewith.me/go/goskills-ruby-rails/) \(or Ruby\) is a web development language built on top of the Ruby programming language. Ruby on Rails has a set of tools that allow you to simply create basic tasks \(e.g. you’re able to create a basic blog with one line of code\).
+[Ruby on Rails](https://learntocodewith.me/go/goskills-ruby-rails/) (or Ruby) is a web development language built on top of the Ruby programming language. Ruby on Rails has a set of tools that allow you to simply create basic tasks (e.g. you’re able to create a basic blog with one line of code).
 
 Ruby involves little backend work, enabling developers to create and launch applications quickly. It is similar to Python in that it’s fantastic for prototyping. Ruby grew in popularity in the early 2000s as a result but has declined since then.
 
@@ -232,7 +232,7 @@ Ruby is open source, which means it can be modified and built upon.
 **💡 WHAT YOU CAN DO WITH RUBY**
 
 * Automate repetitive tasks
-* Build web applications 
+* Build web applications&#x20;
 * Build mobile applications and games
 * Create prototypes
 * And more
@@ -251,7 +251,7 @@ Here are some of the [companies using Ruby](https://stackshare.io/ruby) as a bac
 
 **💵 AVERAGE SALARY FOR RUBY DEVELOPERS**
 
-As of [April 2020](https://www.glassdoor.com/Salaries/ruby-on-rails-developer-salary-SRCH_KO0,23.htm), Ruby developers made an average of $91,542/year in the US, with salaries ranging from $54k to $136k.
+As of [April 2020](https://www.glassdoor.com/Salaries/ruby-on-rails-developer-salary-SRCH\_KO0,23.htm), Ruby developers made an average of $91,542/year in the US, with salaries ranging from $54k to $136k.
 
 **🗺️ WHERE TO LEARN RUBY: BASICS AND FUNDAMENTALS OF RUBY! ON MAMMOTH INTERACTIVE**
 
@@ -260,7 +260,7 @@ As of [April 2020](https://www.glassdoor.com/Salaries/ruby-on-rails-developer-sa
 **Course facts:**
 
 * **Course Name:** Become a Web Developer: Learn the Basics and Fundamentals of Ruby!
-* **Platform:** [Mammoth Interactive](https://learntocodewith.me/go/mammoth-interactive/)
+* **Platform: **[Mammoth Interactive](https://learntocodewith.me/go/mammoth-interactive/)
 * **Instructed by:** John Bura
 * **Price:** $500
 * **Skill level:** Complete beginners
@@ -271,7 +271,7 @@ Stop waiting and start learning! Get my 10 tips on teaching yourself how to code
 
 [Head back to the table of contents »](https://learntocodewith.me/posts/backend-development/#toc)
 
-#### Backend Language \#5: Python <a id="python"></a>
+#### Backend Language #5: Python <a href="python" id="python"></a>
 
 There’s a reason [Python](https://learntocodewith.me/go/goskills-python/) is the [fastest-growing programming language](https://www.techrepublic.com/article/which-is-the-fastest-growing-programming-language-hint-its-not-javascript/). The versatile language is used for both web and desktop development. Like with Java, there are plenty of tutorials and guides online, making it an accessible language for those just starting out.
 
@@ -279,7 +279,7 @@ Furthermore, its syntax is simple and easy to understand compared to other backe
 
 ![Reasons to learn Python as a backend developer](https://learntocodewith.me/wp-content/uploads/2019/01/Python.jpg)
 
-As mentioned above, Ruby and Python share similarities. They are both dynamically typed, open source, and object-oriented languages. The key differences between the two are the differences in popularity \(Ruby is declining whereas Python is skyrocketing\) and the tools in Ruby’s language.
+As mentioned above, Ruby and Python share similarities. They are both dynamically typed, open source, and object-oriented languages. The key differences between the two are the differences in popularity (Ruby is declining whereas Python is skyrocketing) and the tools in Ruby’s language.
 
 [Learn about the differences between Python 2 and Python 3 here.](https://learntocodewith.me/programming/python/python-2-vs-python-3/)
 
@@ -288,7 +288,7 @@ As mentioned above, Ruby and Python share similarities. They are both dynamicall
 Some of the most popular uses for Python include:
 
 * Cross-platform [shell scripting](https://searchdatacenter.techtarget.com/definition/shell-script)
-* [Quick automation](https://automatetheboringstuff.com/)
+* [Quick automation](https://automatetheboringstuff.com)
 * Simple web development
 
 **💼 COMPANIES THAT USE PYTHON**
@@ -306,7 +306,7 @@ Among the biggest [companies using Python](https://stackshare.io/python) as a pr
 
 **💵 AVERAGE SALARY OF PYTHON DEVELOPERS**
 
-As of [April 2020](https://www.glassdoor.com/Salaries/python-developer-salary-SRCH_KO0,16.htm), Python developers made an average of $76,526/year in the US, with salaries ranging from $58k to $107k.
+As of [April 2020](https://www.glassdoor.com/Salaries/python-developer-salary-SRCH\_KO0,16.htm), Python developers made an average of $76,526/year in the US, with salaries ranging from $58k to $107k.
 
 **🗺️ WHERE TO LEARN PYTHON: COMPLETE PYTHON DEVELOPER IN 2021: ZERO TO MASTERY**
 
@@ -315,20 +315,20 @@ As of [April 2020](https://www.glassdoor.com/Salaries/python-developer-salary-SR
 **Course facts:**
 
 * **Course Name:** Complete Python Developer in 2021: Zero to Mastery
-* **Platform:** [Zero To Mastery](https://learntocodewith.me/go/zero-to-mastery/)
+* **Platform: **[Zero To Mastery](https://learntocodewith.me/go/zero-to-mastery/)
 * **Instructed by:** Andrei Neagoie
-* **Price:** $29/month with a Zero to Mastery subscription \(or $264/year\)
+* **Price:** $29/month with a Zero to Mastery subscription (or $264/year)
 * **Skill level:** Beginners
 
-[What is backend development and how does it work?](https://twitter.com/share?text=What+is+backend+development+and+how+does+it+work%3F&via=learncodewithme&related=learncodewithme&url=https://learntocodewith.me/posts/backend-development/)
+[What is backend development and how does it work?](https://twitter.com/share?text=What+is+backend+development+and+how+does+it+work%3F\&via=learncodewithme\&related=learncodewithme\&url=https://learntocodewith.me/posts/backend-development/)
 
-[CLICK TO TWEET](https://twitter.com/share?text=What+is+backend+development+and+how+does+it+work%3F&via=learncodewithme&related=learncodewithme&url=https://learntocodewith.me/posts/backend-development/)
+[CLICK TO TWEET](https://twitter.com/share?text=What+is+backend+development+and+how+does+it+work%3F\&via=learncodewithme\&related=learncodewithme\&url=https://learntocodewith.me/posts/backend-development/)
 
 [Head back to the table of contents »](https://learntocodewith.me/posts/backend-development/#toc)
 
-#### Backend Language \#6: SQL <a id="sql"></a>
+#### Backend Language #6: SQL <a href="sql" id="sql"></a>
 
-Structured Query Language or [SQL](https://learntocodewith.me/go/goskills-sql/) \(pronounced ‘sequel’\) is the most common query language. SQL is used to interact with databases.
+Structured Query Language or [SQL](https://learntocodewith.me/go/goskills-sql/) (pronounced ‘sequel’) is the most common query language. SQL is used to interact with databases.
 
 SQL is great for beginners to learn since it’s a declarative language. A declarative language allows coders to ‘declare’ the results they would like to see, without specifying the steps or process for said result.
 
@@ -348,7 +348,7 @@ Since SQL is a query language, its use is broad and widespread. If a company or 
 
 **💵 AVERAGE SALARY OF SQL DEVELOPERS**
 
-As of [April 2020](https://www.glassdoor.com/Salaries/sql-developer-salary-SRCH_KO0,13.htm), SQL developers made an average of $81,622/year in the US, with salaries ranging from $61k to $130k.
+As of [April 2020](https://www.glassdoor.com/Salaries/sql-developer-salary-SRCH\_KO0,13.htm), SQL developers made an average of $81,622/year in the US, with salaries ranging from $61k to $130k.
 
 **🗺️ WHERE TO LEARN SQL: INTRODUCTION TO SQL ON PLURALSIGHT**
 
@@ -356,21 +356,21 @@ As of [April 2020](https://www.glassdoor.com/Salaries/sql-developer-salary-SRCH_
 
 **Course facts:**
 
-* **Course Name:** Introduction to SQL 
-* **Platform:** [Pluralsight](https://learntocodewith.me/go/pluralsight/)
+* **Course Name:** Introduction to SQL&#x20;
+* **Platform: **[Pluralsight](https://learntocodewith.me/go/pluralsight/)
 * **Instructed by:** Jon Flanders
 * **Price:** $29/month with a Pluralsight subscription
 * **Skill level:** Beginners
 
-[_\(Read our full review of Pluralsight here.\)_](https://learntocodewith.me/reviews/pluralsight/)
+[_(Read our full review of Pluralsight here.)_](https://learntocodewith.me/reviews/pluralsight/)
 
 [Head back to the table of contents »](https://learntocodewith.me/posts/backend-development/#toc)
 
-#### Backend Language \#7: JavaScript <a id="javascript"></a>
+#### Backend Language #7: JavaScript <a href="javascript" id="javascript"></a>
 
 Not to be confused with [Java](https://learntocodewith.me/posts/java-for-beginners/), [JavaScript](https://learntocodewith.me/learn/javascript/) is a language that can be used for both the front end and back end.
 
-It’s a great language for beginners because it is a higher-level language and there is little setup involved \(you can start coding in your browser\).![JavaScript - another backend programming language](https://learntocodewith.me/wp-content/uploads/2019/01/JavaScript.jpg)
+It’s a great language for beginners because it is a higher-level language and there is little setup involved (you can start coding in your browser).![JavaScript - another backend programming language](https://learntocodewith.me/wp-content/uploads/2019/01/JavaScript.jpg)
 
 Because the language is so flexible, objects created in this language are slow. It is also difficult to maintain and scale, as with most dynamically typed languages.
 
@@ -381,7 +381,7 @@ Having said that, the language is ubiquitous, which means the community is large
 JavaScript can be used to build many types of sites and software, including:
 
 * Websites
-* Mobile apps 
+* Mobile apps&#x20;
 * Desktop applications
 * Games
 * Web servers
@@ -401,16 +401,16 @@ Famous [companies using JavaScript](https://stackshare.io/javascript) include:
 
 **💵 AVERAGE SALARY OF JAVASCRIPT DEVELOPERS**
 
-As of [April 2020](https://www.glassdoor.com/Salaries/javascript-developer-salary-SRCH_KO0,20.htm), JavaScript developers made an average of $76,526/year in the US with salaries ranging from $58k to $107k.
+As of [April 2020](https://www.glassdoor.com/Salaries/javascript-developer-salary-SRCH\_KO0,20.htm), JavaScript developers made an average of $76,526/year in the US with salaries ranging from $58k to $107k.
 
 **🗺️ WHERE TO LEARN JAVASCRIPT: CODING FOR CATS ON MAMMOTH INTERACTIVE**
 
-**What the course covers:** A \(cat-themed!\) crash course in learning to code in JavaScript \(with cat-related examples\). 
+**What the course covers:** A (cat-themed!) crash course in learning to code in JavaScript (with cat-related examples).&#x20;
 
 **Course facts:**
 
-* **Course Name:** Coding for Cats \| Cat-Themed JavaScript Course
-* **Platform:** [Mammoth Interactive](https://learntocodewith.me/go/mammoth-interactive/)
+* **Course Name:** Coding for Cats | Cat-Themed JavaScript Course
+* **Platform: **[Mammoth Interactive](https://learntocodewith.me/go/mammoth-interactive/)
 * **Instructed by:** John Bura
 * **Price:** $99
 * **Skill level:** Beginners
@@ -422,13 +422,13 @@ As of [April 2020](https://www.glassdoor.com/Salaries/javascript-developer-salar
 **Course facts:**
 
 * **Course Name:** Launch School’s Introduction to Programming with JavaScript
-* **Platform:** [Launch School](https://learntocodewith.me/go/launch-school/)
+* **Platform: **[Launch School](https://learntocodewith.me/go/launch-school/)
 * **Price:** $199/month
 * **Skill level:** Beginners
 
-[Check out this beginner’s guide to backend development](https://twitter.com/share?text=Check+out+this+beginner%27s+guide+to+backend+development&via=learncodewithme&related=learncodewithme&url=https://learntocodewith.me/posts/backend-development/)
+[Check out this beginner’s guide to backend development](https://twitter.com/share?text=Check+out+this+beginner%27s+guide+to+backend+development\&via=learncodewithme\&related=learncodewithme\&url=https://learntocodewith.me/posts/backend-development/)
 
-[CLICK TO TWEET](https://twitter.com/share?text=Check+out+this+beginner%27s+guide+to+backend+development&via=learncodewithme&related=learncodewithme&url=https://learntocodewith.me/posts/backend-development/)
+[CLICK TO TWEET](https://twitter.com/share?text=Check+out+this+beginner%27s+guide+to+backend+development\&via=learncodewithme\&related=learncodewithme\&url=https://learntocodewith.me/posts/backend-development/)
 
 [Head back to the table of contents »](https://learntocodewith.me/posts/backend-development/#toc)
 
@@ -437,4 +437,3 @@ As of [April 2020](https://www.glassdoor.com/Salaries/javascript-developer-salar
 In this overview, I hope you were able to get a clearer picture of backend development and the capabilities of each language included. This is by no means an exhaustive list of the backend languages that are out there. If you’re interested in learning more, Learn to Code With Me and [GoSkills](https://learntocodewith.me/go/goskills-development/) have easy-to-understand resources to guide you further.
 
 If you are considering pursuing a career in development, I would highly recommend taking a look at the job descriptions of the roles you’re interested in and make a note of the languages that appear the most. Then, start studying those using backend language courses like the ones highlighted above.
-

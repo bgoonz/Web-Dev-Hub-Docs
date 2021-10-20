@@ -19,7 +19,7 @@ description: >-
 
 #### **Features of Express Framework:**
 
-*  Express can be used to design a single-page, multi-page and hybrid web applications.
+* &#x20;Express can be used to design a single-page, multi-page and hybrid web applications.
 * Express allows to setup middlewares to respond to HTTP Requests.
 * Express defines a routing table which is used to performs different actions based on HTTP method and URL.
 * Express allows to dynamically render HTML Pages based on passing arguments to templates.
@@ -41,7 +41,7 @@ Let’s see a basic express.js Example-
 
 **express.js**
 
-```text
+```
 var express = require('express');  
 var app = express();
 
@@ -58,7 +58,7 @@ var server = app.listen(8000, function () {
 
 **Result :**
 
-```text
+```
 Welcome to Pabbly.com!
 ```
 
@@ -68,7 +68,7 @@ Welcome to Pabbly.com!
 
 ## ExpressJS Restful APIs
 
-ExpressJS RESTful API is an application program interface \(API\) that uses HTTP requests to GET, PUT, POST and DELETE data.
+ExpressJS RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data.
 
 **Topics Covered**
 
@@ -84,37 +84,37 @@ ExpressJS RESTful API is an application program interface \(API\) that uses HTTP
 
 **Why we need ExpressJS Restful APIs**
 
-The World Wide Web itself is based on HTTP and is based on RESTful API architecture. Mostly all the modern web browsers are RESTful API client. RESTful API applications use HTTP methods \(GET, POST, PUT, and DELETE\) to perform CRUD operations.
+The World Wide Web itself is based on HTTP and is based on RESTful API architecture. Mostly all the modern web browsers are RESTful API client. RESTful API applications use HTTP methods (GET, POST, PUT, and DELETE) to perform CRUD operations.
 
 #### Advantages
 
-1. Quick & easy development  
-2. High performance  
-3. Run on single thread to handle multiple concurrent requests  
-4. Easy to write APIs and interaction code  
-5. Streaming support  
-6. Monitoring possibilities  
-7. Authentication support  
-8. Lightweight, fast and scalable
+1\. Quick & easy development\
+2\. High performance\
+3\. Run on single thread to handle multiple concurrent requests\
+4\. Easy to write APIs and interaction code\
+5\. Streaming support\
+6\. Monitoring possibilities\
+7\. Authentication support\
+8\. Lightweight, fast and scalable
 
 Here is the restful API Design with Node
 
 **Initialize npm and install the following modules:**
 
-```text
+```
 npm init
 npm install express --save
 npm install mongoose --save
 npm install body-parser --saveCopy
 ```
 
-Now, we will use ExpressJS for developing an application. It is a node.js framework. We will use Mongoose. Mongoose is an ORM \(Object Relational Mapper\). We use an ORM to simplify the transfer of data between our application and the database. The body-parser module is a middleware we are going to use, to parse our data sent through HTTP requests.
+Now, we will use ExpressJS for developing an application. It is a node.js framework. We will use Mongoose. Mongoose is an ORM (Object Relational Mapper). We use an ORM to simplify the transfer of data between our application and the database. The body-parser module is a middleware we are going to use, to parse our data sent through HTTP requests.
 
 To start developing the application, create a  file and name it as  _app.js_. Write following code in your _app.js_ file.
 
 _app.js_
 
-```text
+```
 var express = require('express');
 var app = express();
 module.exports = app;Copy
@@ -122,11 +122,11 @@ module.exports = app;Copy
 
 _app.js_ will be used for configuring the app. All the logic will be placed in the directory.
 
-We will use a _module.exports_ module to make the application’s object visible to the program when we call it using _require\(\)_. Now have to create _Routes_ to listen to the application. For that, we will create another file, name it as  _server.js_, and we will write following code in our  _server.js_ file.
+We will use a _module.exports_ module to make the application’s object visible to the program when we call it using_ require()_. Now have to create _Routes_ to listen to the application. For that, we will create another file, name it as  _server.js_, and we will write following code in our  _server.js_ file.
 
 _server.js_
 
-```text
+```
 var app = require('./app');
 var port = 3000;
 var server = app.listen(port, function() {
@@ -134,31 +134,31 @@ console.log('server listening on port ' + port);
 });Copy
 ```
 
-Create a new file and name it as _db.js_,  This file’s Code will be used to store your database connection.
+Create a new file and name it as_ db.js_,  This file’s Code will be used to store your database connection.
 
 _db.js_
 
-```text
+```
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://yourDatabaseURI');Copy
 ```
 
- add a require\(\) in the app.js, like this 
+&#x20;add a require() in the app.js, like this&#x20;
 
 _app.js_
 
-```text
+```
 var express = require('express');
 var app = express();
 var db = require('./db');
 module.exports = app;Copy
 ```
 
-Create a new folder name it _user.js_. This folder will contain the _schema_ and _model_. We Will start by creating a user _model_. This _model_ will be used as a _schema\(_blueprint\) showing what all users in our database will look like. Create a file named _user.js_ and write code into your _user.js_ file.
+Create a new folder name it _user.js_. This folder will contain the _schema_ and _model_. We Will start by creating a user _model_. This _model_ will be used as a _schema(_blueprint) showing what all users in our database will look like. Create a file named _user.js_ and write code into your _user.js_ file.
 
 _user.js_
 
-```text
+```
 var mongoose = require('mongoose');
 var UserSchema = new mongoose.Schema({
     name: String,
@@ -171,10 +171,10 @@ module.exports = mongoose.model('User');Copy
 
 Create another file, and name it _UserController.js_. It will contain the actions which control the flow of data to and fro the database.
 
-_UserController.js_  
+_UserController.js_\
 ****
 
-```text
+```
 var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
@@ -188,7 +188,7 @@ module.exports = router;Copy
 
 **Create a New User**
 
-```text
+```
 router.post('/', function (req, res) {
     User.create({
             name: req.body.name,
@@ -204,7 +204,7 @@ router.post('/', function (req, res) {
 
 **Returns All the Users in the Database**
 
-```text
+```
 router.get('/', function (req, res) {
     User.find({}, function (err, users) {
         if (err) return res.status(500).send("Error in finding the users.");
@@ -216,18 +216,18 @@ module.exports = router;Copy
 
 Now, you need to let the application know that it has a _UserController.js._ Add this to your _app.js._
 
-_Your previous app.js_ file
+_Your previous app.js _file
 
-```text
+```
 var express = require('express');
 var app = express();
 var db = require('./db');Copy
 ```
 
-Add These two  Lines to the _app.js_ file  
+Add These two  Lines to the _app.js _file\
 ****
 
-```text
+```
 var UserController = require('./user/UserController');
 app.use('/users', UserController);
 module.exports = app;Copy
@@ -237,7 +237,7 @@ module.exports = app;Copy
 
 UserController.js
 
-```text
+```
 router.get('/:id', function (req, res) {
     User.findById(req.params.id, function (err, user) {
         if (err) return res.status(500).send("Error in finding the user.");
@@ -255,7 +255,7 @@ Mongoose has a method called .findById which is will use  ID by which it will re
 
 _UserController.js_
 
-```text
+```
 router.delete('/:id', function (req, res) {
     User.findByIdAndRemove(req.params.id, function (err, user) {
         if (err) return res.status(500).send("Error in deleting the user.");
@@ -264,7 +264,7 @@ router.delete('/:id', function (req, res) {
 });Copy
 ```
 
-The _router.delete\(\)_ method is same as the _router.get\(\)_. We will remove a user from the database by giving ID of the user we want to delete. The _.findByIdAndRemove\(\)_ method will find a user and delete it from the database.
+The _router.delete()_ method is same as the _router.get()_. We will remove a user from the database by giving ID of the user we want to delete. The _.findByIdAndRemove()_ method will find a user and delete it from the database.
 
 The final step in Our application will be updating an existing user in the database. This is done with a PUT request.
 
@@ -272,7 +272,7 @@ The final step in Our application will be updating an existing user in the datab
 
 _UserController.js_
 
-```text
+```
 router.put('/:id', function (req, res) {
     User.findByIdAndUpdate(req.params.id, req.body, function (err, user) {
         if (err) return res.status(500).send("Error in updating user");
@@ -281,7 +281,7 @@ router.put('/:id', function (req, res) {
 });Copy
 ```
 
-The _router.put\(\)_ request is very similar to the two requests above. It also takes one query parameter and ID. It is different in a way that it also takes body parameters, just like the POST request we wrote first. The only HTTP methods which have a body are POST and PUT.
+The _router.put()_ request is very similar to the two requests above. It also takes one query parameter and ID. It is different in a way that it also takes body parameters, just like the POST request we wrote first. The only HTTP methods which have a body are POST and PUT.
 
 
 
@@ -293,7 +293,7 @@ The _router.put\(\)_ request is very similar to the two requests above. It also 
 
 In express.js routing, we are going to learn how based on different urls we will are going to server different pages and content on the webpages.
 
-**Topics Covered** 
+**Topics Covered **
 
 * Home Route – Opening home page on server
 * HTML File Route – Open HTML page on server
@@ -302,7 +302,7 @@ In express.js routing, we are going to learn how based on different urls we will
 
 **Home Route – Opening home page on server**
 
-```text
+```
 var express = require("express");
 var app = express();
 
@@ -320,7 +320,7 @@ var server = app.listen(3000, function() {
 
 **HTML File Route – Open HTML page response on the route**
 
-```text
+```
 var express = require("express");
 var app = express();
 var path = require("path");
@@ -339,7 +339,7 @@ var server = app.listen(3000, function() {
 
 index.html
 
-```text
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -356,7 +356,7 @@ index.html
 
 **Json Route – Open json response on the route**
 
-```text
+```
 var express = require("express");
 var app = express();
 
@@ -374,7 +374,7 @@ var server = app.listen(3000, function() {
 
 **File Route – Send a complete file on the route section**
 
-```text
+```
 var express = require("express");
 var app = express();
 
@@ -394,7 +394,7 @@ var server = app.listen(3000, function() {
 
 routing.js
 
-```text
+```
 var express = require("express");
 var app = express();
 var path = require("path");
@@ -442,27 +442,27 @@ We are going to start Scaffolding using the _Express-generator_ module. For this
 
 Firstly, you need to open the folder in your editor where you want to work. I have opened  ‘example’ folder in Visual Studio Code because I want to work here, Then open the terminal and install the Express-generator module. For this installation run the following command : –
 
-```text
+```
 C:\node\example>npm install express-generator -gCopy
 ```
 
 If you are planning to use it multiple times run the following command and install the express-generator globally like I did here. The command will take a few seconds. As soon as the express-generator will installed, now you need to run the express command like this and hit enter:-
 
-```text
+```
 C:\node\example>expressCopy
 ```
 
-So now you can find all the necessary directories and files has been created in your folder.  
+So now you can find all the necessary directories and files has been created in your folder.\
 
 
 ![](https://www.pabbly.com/wp-content/uploads/2018/02/scaffolding1-2.png)
 
-Every folder has different content inside.  
+Every folder has different content inside.\
 
 
 ![Scaffolding](https://www.pabbly.com/wp-content/uploads/2018/02/scaffolding2-1.png)
 
-At first, you find a bin folder. There is only one file named ‘www’ inside this folder.  
+At first, you find a bin folder. There is only one file named ‘www’ inside this folder.\
 This file actually contains the JavaScript which is necessary to start your server. It handles the port at which the server is running and it creates a server for your app.
 
 In the public folder, you will have three folders they are images, javascripts, and stylesheets. Whichever file you want as a public thing you define them all here.You can put all the images, javascript here which you are going to use throughout your application.
@@ -473,7 +473,7 @@ In the ‘view’ folder you put all your web pages.There are some files with th
 
 You can see the file ‘app.js’ this is the main file for this application.Here you can see some module are used. All these modules are necessary for a basic app or we can use them according to our need. You will find some middleware also. Middlewares are an intermediate process which will be executed before the actual request got processed. There is some handler for developer environment and production environment.
 
-```text
+```
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -524,7 +524,7 @@ module.exports = app;//exporting app.js as moduleCopy
 
 In the bin folder, You can see that we have used that app which we just export in the app.js. Apart from that, we have HTTP module to start it as a server by default it will take 3000 as the port number and if you want to change the port number you can change it. You can also find some error handling and event listening thing is done here. So the ‘www’ file is like a startup for my application.
 
-```text
+```
 #!/usr/bin/env node
 
 /**
@@ -617,10 +617,10 @@ function onListening() {
 }Copy
 ```
 
-Now we come to the _package.json_ file. Here You can see all the dependencies are specified here like body-parser, cookie-parser which we have used in our app.js file.  
+Now we come to the _package.json_ file. Here You can see all the dependencies are specified here like body-parser, cookie-parser which we have used in our app.js file.\
 You can also see this “start” : “ node ./bin/www” . here ‘start’ is a command and whenever you will call this start command, internally it will execute node WWW file. So this line makes the www file as a startup thing.
 
-```text
+```
 {
  "name": "example",
  "version": "0.0.0",
@@ -642,13 +642,13 @@ You can also see this “start” : “ node ./bin/www” . here ‘start’ is 
 
 So now we need to install all the dependencies. Since all the module name has been specified in the package.json so we don’t need to install each and every module separately rather we just run following command to install all the dependent module which are specified in package.json.
 
-```text
+```
 C:\node\example>npm installCopy
 ```
 
 Now the installation is done so we can start execution.for this use the following command : –
 
-```text
+```
 C:\node>npm startCopy
 ```
 
@@ -664,13 +664,13 @@ All the scaffolding is done now. All the required directories have been created.
 
 ## ExpressJS Static : Serving Static Files
 
-Server static files using Express.js, we have created a directory with the name of public and express will automatically server all the files in the folder. We are going to server static file using app.use\(express.static\(‘public’\)\). This is know as middleware in express.
+Server static files using Express.js, we have created a directory with the name of public and express will automatically server all the files in the folder. We are going to server static file using app.use(express.static(‘public’)). This is know as middleware in express.
 
 When we call root directory then express static middlerware automatically called public folder and it server index.html file from it.
 
 serverstatic.js
 
-```text
+```
 var express = require('express');
 var app = express();
 var path = require('path');
@@ -684,7 +684,7 @@ app.listen(3000, function(){
 
 Public folder
 
-```text
+```
 -public
 --css
 --images
@@ -694,7 +694,7 @@ Public folder
 
 index.html
 
-```text
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -709,4 +709,3 @@ index.html
 </body>
 </html>
 ```
-
