@@ -1,5 +1,9 @@
 # How To Speed Up Vscode
 
+
+
+
+
 ## - Extensions Rock -
 
 VS Code users \(and there are a lot of us\) just love our extensions. There are [thousands of VS Code extension to choose from](https://marketplace.visualstudio.com/vscode?wt.mc_id=devto-blog-jopapa) and many of us have several installed. They do everything from lighting up your favorite language, formatting your code, or even colorizing your theme.
@@ -32,7 +36,8 @@ The article covers it all really, and it can help when packaging an extension.
 
 I found that my [Peacock extension](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock&wt.mc_id=devto-blog-jopapa) was putting 48 files in the package. I made a few tweaks and I cut this down by a lot.
 
-First, I added some file to the `.vscodeignore` file
+First, I added some file to the `.vscodeignore` file  
+
 
 ```text
 # Files I excluded
@@ -54,23 +59,25 @@ Then I created a new branch for my extension. I went through the steps in the [V
 
 My goals were to make all of these still work:
 
-- packaging with `npm run package`
-- publishing with `npm run publish`
-- local and CI testing with `npm run test`
-- F5 debugging with the `launch.json`
-- F5 debugging the tests with the `launch.json`
+* packaging with `npm run package`
+* publishing with `npm run publish`
+* local and CI testing with `npm run test`
+* F5 debugging with the `launch.json`
+* F5 debugging the tests with the `launch.json`
 
 **The approach has me compiling both with webpack and `tsc` for the tests and debugging.**
 
 Here is my project [https://github.com/johnpapa/vscode-peacock](https://github.com/johnpapa/vscode-peacock)
 
-Changed my main file in `package.json`
+Changed my main file in `package.json`  
+
 
 ```text
   "main": "./dist/extension",
 ```
 
-My npm scripts in `package.json`
+My npm scripts in `package.json`  
+
 
 ```text
   "scripts": {
@@ -88,7 +95,8 @@ My npm scripts in `package.json`
   },
 ```
 
-My `launch.json` configurations for debugging the runtime and tests:
+My `launch.json` configurations for debugging the runtime and tests:  
+
 
 ```text
   "configurations": [
@@ -173,27 +181,33 @@ The [Azure Account extension's](https://marketplace.visualstudio.com/items?itemN
 
 The warm activation is a term for how long it takes the extension to activate, when that extension has already been installed previously \(not the first time\). This was cut in half for this extension. Not bad at all!
 
-- Download size \(the .vsix\): 6.2M to 840K.
-- Packaged files: 4300 to 11
-- Warm activation time: 676ms to 338ms
+* Download size \(the .vsix\): 6.2M to 840K.
+* Packaged files: 4300 to 11
+* Warm activation time: 676ms to 338ms
 
 #### Docker
 
 The [Docker extension](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker&wt.mc_id=devto-blog-jopapa) had a noticeable warm activation improvements to under 2 seconds. But the key aspect is the cold activation time. Cold activation is how long it might take the extension to activate when it was just installed.
 
-- Warm activation time: 3.5s to &lt;2s
-- Cold activation time \(after 1st install\): 20s to 2s
+* Warm activation time: 3.5s to &lt;2s
+* Cold activation time \(after 1st install\): 20s to 2s
 
 ### Tips
 
 Several things are affected by using webpack to bundle an extension. This is why it's super important to test all of these out.
 
-- Run the extension locally in your debugger \(and test you can hit a breakpoint\)
-- Package the extension and load it \(load from VSIX\) from the menu
-- Run your tests with your debugger \(and test you can hit a breakpoint\)
-- Run your test script from `npm test`
+* Run the extension locally in your debugger \(and test you can hit a breakpoint\)
+* Package the extension and load it \(load from VSIX\) from the menu
+* Run your tests with your debugger \(and test you can hit a breakpoint\)
+* Run your test script from `npm test`
 
 When you are done, you can check the activation time again.
+
+
+
+
+
+
 
 ## How to Make Visual Studio Code 150% Faster in Large Projects
 
@@ -223,7 +237,8 @@ Specifically, there is an extension called `TypeScript and JavaScript Language F
 
 Once I disabled the `TypeScript: Disable Automatic Type Acquisition` feature, Visual Studio Code was instantly faster than I've ever seen it before.
 
-**TL;DR: To make Visual Studio Code extremely fast if you don't use TypeScript, add this line to your settings.json file:**
+**TL;DR: To make Visual Studio Code extremely fast if you don't use TypeScript, add this line to your settings.json file:**  
+
 
 ```text
 {
@@ -231,18 +246,24 @@ Once I disabled the `TypeScript: Disable Automatic Type Acquisition` feature, Vi
 }
 ```
 
+
+
+
+
+
+
 Visual Studio Code was released on November 18, 2015. Fast-forward five years, and it has become one of the most successful editors around. It is released under the MIT license, which makes it free to use. Its keys to success are:
 
-- Versatility
-- A large number of plugins
-- Availability on multiple platforms
+* Versatility
+* A large number of plugins
+* Availability on multiple platforms
 
 Currently, VS Code is available natively on the following platforms:
 
-- OS X Yosemite \(10.10+\)
-- Windows 7 \(with .NET Framework 4.5.2\), 8.0, 8.1 and 10 \(32-bit and 64-bit\)
-- Linux \(Debian\): Ubuntu Desktop 16.04, Debian 9
-- Linux \(Red Hat\): Red Hat Enterprise Linux 7, CentOS 8, Fedora 24
+* OS X Yosemite \(10.10+\)
+* Windows 7 \(with .NET Framework 4.5.2\), 8.0, 8.1 and 10 \(32-bit and 64-bit\)
+* Linux \(Debian\): Ubuntu Desktop 16.04, Debian 9
+* Linux \(Red Hat\): Red Hat Enterprise Linux 7, CentOS 8, Fedora 24
 
 It can also run in any modern browser with limited features.
 
@@ -260,8 +281,8 @@ Before going into optimization, let’s look at if we comply with the minimum ha
 
 Processor and memory recommendations:
 
-- 1.6 GHz or faster processor
-- 1 GB of RAM
+* 1.6 GHz or faster processor
+* 1 GB of RAM
 
 Check out the [more detailed list](https://code.visualstudio.com/docs/supporting/requirements#_hardware).
 
@@ -269,12 +290,12 @@ Check out the [more detailed list](https://code.visualstudio.com/docs/supporting
 
 VS Code comes packed with features. However, you might not be interested in some of them. You can therefore disable those to improve the editor's performance.
 
-- `File > Preferences > Settings > Files:Exclude`: Add any pattern of files that you don’t want VS Code to use in your project.
-- `File > Preferences > Text Editor > Minimap > Enabled`: Checkbox to disable/enable the minimap.
-- `File > Preferences > Text Editor > Suggestions`: Here, you can fine-tune anything related to suggestions.
-- `File > Preferences > Text Editor > From on save / Format on paste`: You can disable formatting on saving and defer that to pre-commit, for example.
-- `File > Preferences > Application > Telemetry`: Telemetry might impact performance.
-- `File > Preferences > Text Editor > Code lens`: You can disable/enable the Code Lens feature.
+* `File > Preferences > Settings > Files:Exclude`: Add any pattern of files that you don’t want VS Code to use in your project.
+* `File > Preferences > Text Editor > Minimap > Enabled`: Checkbox to disable/enable the minimap.
+* `File > Preferences > Text Editor > Suggestions`: Here, you can fine-tune anything related to suggestions.
+* `File > Preferences > Text Editor > From on save / Format on paste`: You can disable formatting on saving and defer that to pre-commit, for example.
+* `File > Preferences > Application > Telemetry`: Telemetry might impact performance.
+* `File > Preferences > Text Editor > Code lens`: You can disable/enable the Code Lens feature.
 
 ## 2. Be an Extension Minimalist <a id="eb4c"></a>
 
@@ -282,11 +303,11 @@ There are a ton of extensions available. However, that doesn’t mean you need t
 
 Before adding any extension, ask yourself:
 
-- Isn’t that already built into VS Code?
-- Is it more than a one-off thing?
-- Does it really have an impact on your daily work?
-- Is this the best tool for your use case?
-- Does it have a good rating?
+* Isn’t that already built into VS Code?
+* Is it more than a one-off thing?
+* Does it really have an impact on your daily work?
+* Is this the best tool for your use case?
+* Does it have a good rating?
 
 If the plugin does check all the boxes, then it might be a good fit for you. You can do that process with your already installed extensions too.
 
@@ -324,10 +345,10 @@ If you want to get a clear picture of all that’s happening on the VS Code laun
 
 You will get the following information:
 
-- OS details
-- Performance metrics
-- Extension Activation details
-- Cache location
+* OS details
+* Performance metrics
+* Extension Activation details
+* Cache location
 
 ![Sample run of startup performance command](https://miro.medium.com/max/60/1*LTRzC6WAyNPjLd0YhC84pQ.png?q=20)A sample run of startup performance command
 
@@ -354,3 +375,4 @@ VS Code is a great widely used IDE. It is very flexible and highly customizable.
 At first, it seems like it’s easier to add plugins for any minor task you find yourself doing. With time, that extension starts to fade away in search of a more performant editor.
 
 I hope all these tips help you speed up your VS Code editor and enjoy a better coding experience.
+

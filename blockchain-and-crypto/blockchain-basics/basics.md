@@ -8,13 +8,13 @@ The Bitcoin Core developers sign all of their releases using the “Pretty Good 
 
 **See also:**![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
-- [Paxos](https://en.wikipedia.org/wiki/Paxos_%28computer_science%29?ref=hackernoon.com)
-- [Proof of authority](https://en.wikipedia.org/wiki/Proof_of_authority?ref=hackernoon.com)
-- [Proof of burn](https://en.wikipedia.org/wiki/Proof_of_burn?ref=hackernoon.com)
-- [Proof of personhood](https://en.wikipedia.org/wiki/Proof_of_personhood?ref=hackernoon.com)
-- [Proof of space](https://en.wikipedia.org/wiki/Proof_of_space?ref=hackernoon.com)
-- [Proof of stake](https://en.wikipedia.org/wiki/Proof_of_stake?ref=hackernoon.com)
-- [Proof of elapsed time](https://en.wikipedia.org/wiki/Proof_of_elapsed_time?ref=hackernoon.com)
+* [Paxos](https://en.wikipedia.org/wiki/Paxos_%28computer_science%29?ref=hackernoon.com)
+* [Proof of authority](https://en.wikipedia.org/wiki/Proof_of_authority?ref=hackernoon.com)
+* [Proof of burn](https://en.wikipedia.org/wiki/Proof_of_burn?ref=hackernoon.com)
+* [Proof of personhood](https://en.wikipedia.org/wiki/Proof_of_personhood?ref=hackernoon.com)
+* [Proof of space](https://en.wikipedia.org/wiki/Proof_of_space?ref=hackernoon.com)
+* [Proof of stake](https://en.wikipedia.org/wiki/Proof_of_stake?ref=hackernoon.com)
+* [Proof of elapsed time](https://en.wikipedia.org/wiki/Proof_of_elapsed_time?ref=hackernoon.com)
 
 In many respects, blockchain can be considered a meta-technology, since it utilizes, enhances, challenges, and potentially supersedes other pre-existing software technologies. As such, it allows us to create versatile technological solutions that aim to minimize the agency of third-party providers and, in a way, return power back to the users. This can be achieved by the blockchain providing an environment where users can interact freely in a trustless ecosystem for very low to almost zero fees, at speeds that make everybody in the world reachable in a matter of minutes. To make this possible, the blockchain is used as a transaction platform and distributed accounting ledger that uses cryptocurrency tokens \(digital money\) as a representation of a specific value at the current time \(much like traditional fiat currencies\). Nevertheless, for trustless technology to work on a global scale, it needs to implement trust in a different manner. This is where ISO standards come into the picture, as they ensure that the blockchain interactions follow globally applicable rules, norms, and procedures. This is also why starting in 2016, the blockchain technology obtained its own set of ISO standards, called ISO/TC307.![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
@@ -120,158 +120,159 @@ In the context of blockchain, you can specifically encounter a term called [Trus
 
 ### Important Blockchain and Bitcoin Milestones
 
-**1976**
-
-An asymmetric key cryptosystem was published by Whitfield Diffie and Martin Hellman who, influenced by Ralph Merkle's work on public key distribution, disclosed a method of public-key agreement. This method of key exchange, which uses exponentiation in a finite field, came to be known as Diffie–Hellman key exchange. This was the first published practical method for establishing a shared secret-key over an authenticated \(but not confidential\) communications channel without using a prior shared secret. Merkle's "public key-agreement technique" became known as Merkle's Puzzles and was invented in 1974 and only published in 1978.
-
-**1982**
-
-Dissertation "Computer Systems Established, Maintained, and Trusted by Mutually Suspicious Groups" is the first known proposal for a blockchain protocol. Complete with the code to implement the protocol, Chaum's dissertation proposed all but one element of the blockchain later detailed in the Bitcoin whitepaper.
-
-**1993**
-
-The PoW concept was invented by Cynthia Dwork and Moni Naor as a way to deter denial-of-service attacks and other service abuses such as spam on a network by requiring some work from a service requester, usually meaning processing time by a computer. The term "proof of work" was first coined and formalized in a 1999 paper by Markus Jakobsson and Ari Juels.
-
-[Hal Finney in 1993 talking about digital trading cards](https://twitter.com/MoonOverlord/status/1426525519613349891/photo/1?ref=hackernoon.com)
-
-**1994**
-
-Smart contracts ancestors were first introduced as “Ricardian Contracts'' by Nick Szabo, a computer scientist, legal scholar, and cryptographer. The term “smart contract” was first introduced long before the invention of Bitcoin, but it underwent a long gestation period of inactivity and disinterest since there was no platform that could enforce a smart contract, until the advent of Bitcoin blockchain technology in 2009.
-
-**1995**
-
-DigiCash created the first digital currency with eCash \(an electronic cash application that aims to preserve a user's anonymity, and inventing many cryptographic protocols like the blind signature, mix networks, and the Dining cryptographers protocol\)
-
-**1998**
-
-Computer scientist Nick Szabo works on ‘bit gold,’ a decentralized digital currency.
-
-**2000**
-
-Stefan Konst publishes his theory of cryptographically secured chains, plus ideas for implementation.
-
-**2008**
-
-Invention of cryptocurrency. Developer\(s\) working under the pseudonym Satoshi Nakamoto released a white paper establishing the model for a blockchain.
-
-31 October: Bitcoin [white paper](https://en.wikipedia.org/wiki/White_paper?ref=hackernoon.com) published on the internet.
-
-**2009**
-
-Nakamoto implements the first blockchain as the public ledger for transactions made using bitcoin. Later that year → Blockchain was the first time operable.
-
-January 3 - Satoshi Nakamoto mined the genesis block of bitcoin \(the first block\) for 50 bitcoins.
-
-January 9 - The first open-source bitcoin client was released on SourceForge.
-
-January 12 - The first bitcoin transaction was made of 10 bitcoins to the first bitcoin user \(other than Satoshi\), Hal Finney
-
-November 19 - Satoshi created the Bitcointalk.org site. November 22 - Satoshi Nakamoto posted the first post on the bitcoin forum using the account "satoshi."
-
-December 16 - Bitcoin version 0.2 is released. By this point, Martti Malmi has joined Satoshi Nakamoto, a developer with full permission to change the codebase.
-
-December 30th - The first difficulty increase occurs, from 1 to 1.18.
-
-**2010**
-
-February 6 - A currency exchange is born. The Bitcoin Market is established by dwdollar as a Bitcoin currency exchange.
-
-March 17 - The now-defunct BitcoinMarket.com exchange was the first one that started trading with cryptocurrency.
-
+**1976**  
+  
+An asymmetric key cryptosystem was published by Whitfield Diffie and Martin Hellman who, influenced by Ralph Merkle's work on public key distribution, disclosed a method of public-key agreement. This method of key exchange, which uses exponentiation in a finite field, came to be known as Diffie–Hellman key exchange. This was the first published practical method for establishing a shared secret-key over an authenticated \(but not confidential\) communications channel without using a prior shared secret. Merkle's "public key-agreement technique" became known as Merkle's Puzzles and was invented in 1974 and only published in 1978.  
+  
+**1982**  
+  
+Dissertation "Computer Systems Established, Maintained, and Trusted by Mutually Suspicious Groups" is the first known proposal for a blockchain protocol. Complete with the code to implement the protocol, Chaum's dissertation proposed all but one element of the blockchain later detailed in the Bitcoin whitepaper.  
+  
+**1993**  
+  
+The PoW concept was invented by Cynthia Dwork and Moni Naor as a way to deter denial-of-service attacks and other service abuses such as spam on a network by requiring some work from a service requester, usually meaning processing time by a computer. The term "proof of work" was first coined and formalized in a 1999 paper by Markus Jakobsson and Ari Juels.  
+  
+[Hal Finney in 1993 talking about digital trading cards](https://twitter.com/MoonOverlord/status/1426525519613349891/photo/1?ref=hackernoon.com)  
+  
+**1994**  
+  
+Smart contracts ancestors were first introduced as “Ricardian Contracts'' by Nick Szabo, a computer scientist, legal scholar, and cryptographer. The term “smart contract” was first introduced long before the invention of Bitcoin, but it underwent a long gestation period of inactivity and disinterest since there was no platform that could enforce a smart contract, until the advent of Bitcoin blockchain technology in 2009.  
+  
+**1995**  
+  
+DigiCash created the first digital currency with eCash \(an electronic cash application that aims to preserve a user's anonymity, and inventing many cryptographic protocols like the blind signature, mix networks, and the Dining cryptographers protocol\)  
+  
+**1998**  
+  
+Computer scientist Nick Szabo works on ‘bit gold,’ a decentralized digital currency.  
+  
+**2000**  
+  
+Stefan Konst publishes his theory of cryptographically secured chains, plus ideas for implementation.  
+  
+**2008**  
+  
+Invention of cryptocurrency. Developer\(s\) working under the pseudonym Satoshi Nakamoto released a white paper establishing the model for a blockchain.  
+  
+31 October: Bitcoin [white paper](https://en.wikipedia.org/wiki/White_paper?ref=hackernoon.com) published on the internet.  
+  
+**2009**  
+  
+Nakamoto implements the first blockchain as the public ledger for transactions made using bitcoin. Later that year → Blockchain was the first time operable.  
+  
+January 3 - Satoshi Nakamoto mined the genesis block of bitcoin \(the first block\) for 50  bitcoins.  
+  
+January 9 - The first open-source bitcoin client was released on SourceForge.  
+  
+January 12 -  The first bitcoin transaction was made of 10 bitcoins to the first bitcoin user \(other than Satoshi\), Hal Finney  
+  
+November 19 -  Satoshi created the Bitcointalk.org site. November 22 - Satoshi Nakamoto posted the first post on the bitcoin forum using the account "satoshi."  
+  
+December 16 -  Bitcoin version 0.2 is released. By this point, Martti Malmi has joined Satoshi Nakamoto, a developer with full permission to change the codebase.  
+  
+December 30th - The first difficulty increase occurs, from 1 to 1.18.  
+  
+**2010**  
+  
+February 6 - A currency exchange is born. The Bitcoin Market is established by dwdollar as a Bitcoin currency exchange.  
+  
+March 17 - The now-defunct BitcoinMarket.com exchange was the first one that started trading with cryptocurrency.  
+  
 May 22 - Mr. Sturdivant filled the order for two large pizzas from Papa John's paid by 10,000 BTCs, making this transaction the first physical purchase ever made with Bitcoin in history.![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
 In May of 2021, this amount of BTC was worth 367,991,000.00 USD: See the TX  
 a1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d  
- July 6 - Bitcoin version 0.3 was released.
-
-November 6 - Bitcoin market capitalization passes $1 million.
-
-December 9 - The mining difficulty exceeds 10,000
-
-December 12Satoshi Nakamoto posted his last post on the BitcoinTalk forum.
-
-**2011**
-
-January 2 - Tonal Bitcoin, designed for those who prefer the Tonal number system, standardized its units.
-
-May 9 - The launch of Bitbills is announced. Bitbills are the first physical incarnation of bitcoins, coming in plastic cards that contain cryptographic information.
-
-**2012**
-
-January 15 - Bitcoin made an appearance in the show "The good wife" in the episode "Bitcoin for Dummies."
-
-September 27 - The Bitcoin Foundation was launched with the aim of implementing a core development team for the protocols and the body to oversee the digital currency.
-
-June 3 - Bitcoin confirmed its largest transaction to date with 1322 transactions on block 181919
-
-November 28 - Bitcoin Halving Day. On Halving Day, Block 210,000 is the first with a block reward subsidy of 25 BTC.
-
-**2013**
-
-QixCoin , a Turing-complete cryptocurrency, was created by some of the RSK founders. QixCoin introduced the concept of pay per execution, currently known as transaction “gas.” However, RSK inherits several key concepts from Ethereum, such as its account format, VM, and web3 interface.
-
-January 22 - BitPay surpasses 10,000 transactions. BitPay, a Bitcoin payment processing company, announces that it has surpassed 10,000 Bitcoin transactions for its merchants, with no cases of payment fraud reported.
-
-February 15 - The bitcoin-based payment processor Coinbase reported selling US$1 million worth of bitcoins in a single month at over $22 per bitcoin.\[41\] The Internet Archive announced that it was ready to accept donations as bitcoins and that it intends to give employees the option to receive portions of their salaries in bitcoin currency.
-
-February 19 - Version 0.8 of the Bitcoin client was released. It features Bloom Filtering and improved download speed.
-
-February 21 - Internet Archive began accepting BTC donations so that its employees can be paid in Bitcoins.
-
-Mar 12 - A hard fork occurs on the blockchain. A protocol rule that was previously undiscovered results in a hard fork of the 0.8.0 reference client.
-
-March 18 - the Financial Crimes Enforcement Network \(or FinCEN\), a bureau of the United States Department of the Treasury, issued a report regarding centralized and decentralized "virtual currencies" and their legal status within "money services business" \(MSB\) and Bank Secrecy Act regulations. It classified digital currencies and other digital payment systems such as bitcoin as "virtual currencies" because they are not legal tender under any sovereign jurisdiction.
-
-March 28 - The total Bitcoin market cap passed US$1 billion.
-
-May 1 - Online gaming company ESEA is called out for secretly using customer computers to mine Bitcoins.
-
-May 2 - 2013 The first Bitcoin ATM in the world debuted in San Diego, California.
-
-May 3 - Coindesk, a bitcoin-focused resource, and news website was launched by Shakil Khan, an angel investor and advisor to Spotify.
-
-May 17 - The first major Bitcoin Conference was held at the San Jose Convention Center.
-
-December 5 - The People's Bank of China announced in a press release regarding bitcoin regulation that whilst individuals in China are permitted to freely trade and exchange bitcoins as a commodity, it is prohibited for Chinese financial banks to operate using bitcoins or for bitcoins to be used as legal tender currency, and that entities dealing with bitcoins must track and report suspicious activity to prevent money laundering.
-
-**2014**
-
-Blockchain technology is separated from the currency, and its potential for other financial, inter-organizational transactions are explored. Blockchain 2.0 was born, referring to applications beyond currency. The Ethereum blockchain system introduces computer programs into the blocks, representing financial instruments such as bonds.
-
-**2015**
-
-Ethereum launched - first 2.0 blockchain system \(but It's not even the first cryptocurrency to have a Turing-complete language, which was QixCoin\).
-
-**2016**
-
+ July 6 - Bitcoin version 0.3 was released.  
+  
+November 6 -  Bitcoin market capitalization passes $1 million.  
+  
+December 9 -  The mining difficulty exceeds 10,000  
+  
+December 12Satoshi Nakamoto posted his last post on the BitcoinTalk forum.  
+  
+**2011**  
+  
+January 2 - Tonal Bitcoin, designed for those who prefer the Tonal number system, standardized its units.  
+  
+ May 9 - The launch of Bitbills is announced. Bitbills are the first physical incarnation of bitcoins, coming in plastic cards that contain cryptographic information.  
+  
+**2012**  
+  
+January 15 - Bitcoin made an appearance in the show "The good wife" in the episode "Bitcoin for Dummies."  
+  
+September 27 -  The Bitcoin Foundation was launched with the aim of implementing a core development team for the protocols and the body to oversee the digital currency.  
+  
+ June 3 -  Bitcoin confirmed its largest transaction to date with 1322 transactions on block 181919  
+  
+ November 28 - Bitcoin  Halving Day. On Halving Day, Block 210,000 is the first with a block reward subsidy of 25 BTC.  
+  
+**2013**  
+  
+QixCoin , a Turing-complete cryptocurrency, was created by some of the RSK founders. QixCoin introduced the concept of pay per execution, currently known as transaction “gas.” However, RSK inherits several key concepts from Ethereum, such as its account format, VM, and web3 interface.  
+  
+ January 22 - BitPay surpasses 10,000 transactions. BitPay, a Bitcoin payment processing company, announces that it has surpassed 10,000 Bitcoin transactions for its merchants, with no cases of payment fraud reported.  
+  
+February 15 - The bitcoin-based payment processor Coinbase reported selling US$1 million worth of bitcoins in a single month at over $22 per bitcoin.\[41\] The Internet Archive announced that it was ready to accept donations as bitcoins and that it intends to give employees the option to receive portions of their salaries in bitcoin currency.  
+  
+February 19 -  Version 0.8 of the Bitcoin client was released. It features Bloom Filtering and improved download speed.  
+  
+February 21 -  Internet Archive began accepting BTC donations so that its employees can be paid in Bitcoins.  
+  
+Mar 12 -  A hard fork occurs on the blockchain. A protocol rule that was previously undiscovered results in a hard fork of the 0.8.0 reference client.  
+  
+March 18 - the Financial Crimes Enforcement Network \(or FinCEN\), a bureau of the United States Department of the Treasury, issued a report regarding centralized and decentralized "virtual currencies" and their legal status within "money services business" \(MSB\) and Bank Secrecy Act regulations. It classified digital currencies and other digital payment systems such as bitcoin as "virtual currencies" because they are not legal tender under any sovereign jurisdiction.  
+  
+March 28 - The total Bitcoin market cap passed US$1 billion.  
+  
+May 1 - Online gaming company ESEA is called out for secretly using customer computers to mine Bitcoins.  
+  
+May 2 - 2013 The first Bitcoin ATM in the world debuted in San Diego, California.  
+  
+May 3 - Coindesk, a bitcoin-focused resource, and news website was launched by Shakil Khan, an angel investor and advisor to Spotify.  
+  
+May 17 -  The first major Bitcoin Conference was held at the San Jose Convention Center.  
+  
+December 5 -  The People's Bank of China announced in a press release regarding bitcoin regulation that whilst individuals in China are permitted to freely trade and exchange bitcoins as a commodity, it is prohibited for Chinese financial banks to operate using bitcoins or for bitcoins to be used as legal tender currency, and that entities dealing with bitcoins must track and report suspicious activity to prevent money laundering.  
+  
+**2014**  
+  
+Blockchain technology is separated from the currency, and its potential for other financial, inter-organizational transactions are explored. Blockchain 2.0 was born, referring to applications beyond currency. The Ethereum blockchain system introduces computer programs into the blocks, representing financial instruments such as bonds.  
+  
+**2015**  
+  
+Ethereum launched - first 2.0 blockchain system \(but It's not even the first cryptocurrency to have a Turing-complete language, which was QixCoin\).  
+  
+**2016**  
+  
 World Economic Forum - first governance models through blockchain  
-IBM opens a blockchain innovative research center. Started a development that ends up with an umbrella product called Hyperledger Fabric.
-
-Blockchain has its own set of ISO standards, called ISO/TC307  
- The “Dubai Blockchain Strategy 2021” project was launched.
-
-**2017**
-
-15% of global banks using blockchain for intercommunication.
-
-March 2 - The day one bitcoin overtook the price of an ounce of gold.
-
-July 21 - SegWit was locked in by Bitcoin miners
-
-August 21 - SegWit was activated.
-
-December 6 - Lightning Network preview was released.
-
-**2018**
-
-July 17 - 2018, MasterCard accepted the agreement to participate in cryptography. Emirates Blockchain Strategy launched.
-
-**2021**
-
-Sovryn platform launched.
-
-The cooperation of three companies resulted in a blockchain-based land registry for AfghanistanSovryn developed the Bitcoin-native DeFi protocol that allows Ethereum and Binance Smart Chain users to experience the most feature-rich platform directly on the Bitcoin-native RSK blockchain.
-
-El Salvador became the first country in the world to officially classify Bitcoin as a legal currency.
-
+IBM opens a blockchain innovative research center. Started a development that ends up with an umbrella product called Hyperledger Fabric.  
+  
+ Blockchain has its own set of ISO standards, called ISO/TC307  
+ The “Dubai Blockchain Strategy 2021” project was launched.  
+  
+**2017**  
+  
+15% of global banks using blockchain for intercommunication.  
+  
+March 2 -  The day one bitcoin overtook the price of an ounce of gold.  
+  
+July 21 -  SegWit was locked in by Bitcoin miners  
+  
+August 21 -  SegWit was activated.  
+  
+December 6 - Lightning Network preview was released.  
+  
+**2018**  
+  
+July 17 - 2018, MasterCard accepted the agreement to participate in cryptography. Emirates Blockchain Strategy launched.  
+  
+**2021**  
+  
+Sovryn platform launched.  
+  
+The cooperation of three companies resulted in a blockchain-based land registry for AfghanistanSovryn developed the Bitcoin-native DeFi protocol that allows Ethereum and Binance Smart Chain users to experience the most feature-rich platform directly on the Bitcoin-native RSK blockchain.  
+  
+El Salvador became the first country in the world to officially classify Bitcoin as a legal currency.  
+  
 June 16 - The World Bank has rejected a request from El Salvador to help with the implementation of Bitcoin as legal tender.
+

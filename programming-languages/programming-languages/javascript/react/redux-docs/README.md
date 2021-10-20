@@ -1,5 +1,7 @@
 # Redux Docs
 
+
+
 ## Installation
 
 ### Redux Toolkit[\#](https://redux.js.org/introduction/installation#redux-toolkit)
@@ -96,6 +98,8 @@ Copy
 
 This is basically the whole idea of Redux. Note that we haven’t used any Redux APIs. It comes with a few utilities to facilitate this pattern, but the main idea is that you describe how your state is updated over time in response to action objects, and 90% of the code you write is just plain JavaScript, with no use of Redux itself, its APIs, or any magic.
 
+
+
 ## Ecosystem
 
 Redux is a tiny library, but its contracts and APIs are carefully chosen to spawn an ecosystem of tools and extensions, and the community has created a wide variety of helpful addons, libraries, and tools. You don't need to use any of these addons to use Redux, but they can help make it easier to implement features and solve problems in your application.
@@ -106,42 +110,42 @@ This page lists some of the Redux-related addons that the Redux maintainers have
 
 ### Table of Contents[\#](https://redux.js.org/introduction/ecosystem#table-of-contents)
 
-- [Ecosystem](https://redux.js.org/introduction/ecosystem#ecosystem)
-  - [Table of Contents](https://redux.js.org/introduction/ecosystem#table-of-contents)
-  - [Library Integration and Bindings](https://redux.js.org/introduction/ecosystem#library-integration-and-bindings)
-  - [Reducers](https://redux.js.org/introduction/ecosystem#reducers)
-    - [Reducer Combination](https://redux.js.org/introduction/ecosystem#reducer-combination)
-    - [Reducer Composition](https://redux.js.org/introduction/ecosystem#reducer-composition)
-    - [Higher-Order Reducers](https://redux.js.org/introduction/ecosystem#higher-order-reducers)
-  - [Actions](https://redux.js.org/introduction/ecosystem#actions)
-  - [Utilities](https://redux.js.org/introduction/ecosystem#utilities)
-  - [Store](https://redux.js.org/introduction/ecosystem#store)
-    - [Change Subscriptions](https://redux.js.org/introduction/ecosystem#change-subscriptions)
-    - [Batching](https://redux.js.org/introduction/ecosystem#batching)
-    - [Persistence](https://redux.js.org/introduction/ecosystem#persistence)
-  - [Immutable Data](https://redux.js.org/introduction/ecosystem#immutable-data)
-    - [Data Structures](https://redux.js.org/introduction/ecosystem#data-structures)
-    - [Immutable Update Utilities](https://redux.js.org/introduction/ecosystem#immutable-update-utilities)
-    - [Immutable/Redux Interop](https://redux.js.org/introduction/ecosystem#immutableredux-interop)
-  - [Side Effects](https://redux.js.org/introduction/ecosystem#side-effects)
-    - [Widely Used](https://redux.js.org/introduction/ecosystem#widely-used)
-    - [Promises](https://redux.js.org/introduction/ecosystem#promises)
-  - [Middleware](https://redux.js.org/introduction/ecosystem#middleware)
-    - [Networks and Sockets](https://redux.js.org/introduction/ecosystem#networks-and-sockets)
-    - [Async Behavior](https://redux.js.org/introduction/ecosystem#async-behavior)
-    - [Analytics](https://redux.js.org/introduction/ecosystem#analytics)
-  - [Entities and Collections](https://redux.js.org/introduction/ecosystem#entities-and-collections)
-  - [Component State and Encapsulation](https://redux.js.org/introduction/ecosystem#component-state-and-encapsulation)
-  - [Dev Tools](https://redux.js.org/introduction/ecosystem#dev-tools)
-    - [Debuggers and Viewers](https://redux.js.org/introduction/ecosystem#debuggers-and-viewers)
-    - [DevTools Monitors](https://redux.js.org/introduction/ecosystem#devtools-monitors)
-    - [Logging](https://redux.js.org/introduction/ecosystem#logging)
-    - [Mutation Detection](https://redux.js.org/introduction/ecosystem#mutation-detection)
-  - [Testing](https://redux.js.org/introduction/ecosystem#testing)
-  - [Routing](https://redux.js.org/introduction/ecosystem#routing)
-  - [Forms](https://redux.js.org/introduction/ecosystem#forms)
-  - [Higher-Level Abstractions](https://redux.js.org/introduction/ecosystem#higher-level-abstractions)
-  - [Community Conventions](https://redux.js.org/introduction/ecosystem#community-conventions)
+* [Ecosystem](https://redux.js.org/introduction/ecosystem#ecosystem)
+  * [Table of Contents](https://redux.js.org/introduction/ecosystem#table-of-contents)
+  * [Library Integration and Bindings](https://redux.js.org/introduction/ecosystem#library-integration-and-bindings)
+  * [Reducers](https://redux.js.org/introduction/ecosystem#reducers)
+    * [Reducer Combination](https://redux.js.org/introduction/ecosystem#reducer-combination)
+    * [Reducer Composition](https://redux.js.org/introduction/ecosystem#reducer-composition)
+    * [Higher-Order Reducers](https://redux.js.org/introduction/ecosystem#higher-order-reducers)
+  * [Actions](https://redux.js.org/introduction/ecosystem#actions)
+  * [Utilities](https://redux.js.org/introduction/ecosystem#utilities)
+  * [Store](https://redux.js.org/introduction/ecosystem#store)
+    * [Change Subscriptions](https://redux.js.org/introduction/ecosystem#change-subscriptions)
+    * [Batching](https://redux.js.org/introduction/ecosystem#batching)
+    * [Persistence](https://redux.js.org/introduction/ecosystem#persistence)
+  * [Immutable Data](https://redux.js.org/introduction/ecosystem#immutable-data)
+    * [Data Structures](https://redux.js.org/introduction/ecosystem#data-structures)
+    * [Immutable Update Utilities](https://redux.js.org/introduction/ecosystem#immutable-update-utilities)
+    * [Immutable/Redux Interop](https://redux.js.org/introduction/ecosystem#immutableredux-interop)
+  * [Side Effects](https://redux.js.org/introduction/ecosystem#side-effects)
+    * [Widely Used](https://redux.js.org/introduction/ecosystem#widely-used)
+    * [Promises](https://redux.js.org/introduction/ecosystem#promises)
+  * [Middleware](https://redux.js.org/introduction/ecosystem#middleware)
+    * [Networks and Sockets](https://redux.js.org/introduction/ecosystem#networks-and-sockets)
+    * [Async Behavior](https://redux.js.org/introduction/ecosystem#async-behavior)
+    * [Analytics](https://redux.js.org/introduction/ecosystem#analytics)
+  * [Entities and Collections](https://redux.js.org/introduction/ecosystem#entities-and-collections)
+  * [Component State and Encapsulation](https://redux.js.org/introduction/ecosystem#component-state-and-encapsulation)
+  * [Dev Tools](https://redux.js.org/introduction/ecosystem#dev-tools)
+    * [Debuggers and Viewers](https://redux.js.org/introduction/ecosystem#debuggers-and-viewers)
+    * [DevTools Monitors](https://redux.js.org/introduction/ecosystem#devtools-monitors)
+    * [Logging](https://redux.js.org/introduction/ecosystem#logging)
+    * [Mutation Detection](https://redux.js.org/introduction/ecosystem#mutation-detection)
+  * [Testing](https://redux.js.org/introduction/ecosystem#testing)
+  * [Routing](https://redux.js.org/introduction/ecosystem#routing)
+  * [Forms](https://redux.js.org/introduction/ecosystem#forms)
+  * [Higher-Level Abstractions](https://redux.js.org/introduction/ecosystem#higher-level-abstractions)
+  * [Community Conventions](https://redux.js.org/introduction/ecosystem#community-conventions)
 
 ### Library Integration and Bindings[\#](https://redux.js.org/introduction/ecosystem#library-integration-and-bindings)
 
@@ -696,6 +700,8 @@ An opinionated standard for nested reducer composition
 [**Ducks: Redux Reducer Bundles**](https://github.com/erikras/ducks-modular-redux)  
 A proposal for bundling reducers, action types and actions
 
+
+
 ## Examples
 
 Redux is distributed with a few examples in its [source code](https://github.com/reduxjs/redux/tree/master/examples). Most of these examples are also on [CodeSandbox](https://codesandbox.io/), an online editor that lets you play with the examples online.
@@ -764,6 +770,8 @@ Or check out the [sandbox](https://codesandbox.io/s/github/reduxjs/redux/tree/ma
 
 {% embed url="https://codesandbox.io/s/adoring-cherry-qyvkw" %}
 
+
+
 This is a variation on the previous example. It is almost identical, but additionally shows how wrapping your reducer with [Redux Undo](https://github.com/omnidan/redux-undo) lets you add a Undo/Redo functionality to your app with a few lines of code.
 
 ### TodoMVC[\#](https://redux.js.org/introduction/examples#todomvc)
@@ -780,6 +788,8 @@ Copy
 Or check out the [sandbox](https://codesandbox.io/s/github/reduxjs/redux/tree/master/examples/todomvc):
 
 {% embed url="https://codesandbox.io/s/gallant-sun-wx9oc" %}
+
+
 
 This is the classical [TodoMVC](http://todomvc.com/) example. It's here for the sake of comparison, but it covers the same points as the Todos example.
 
@@ -800,6 +810,8 @@ Or check out the [sandbox](https://codesandbox.io/s/github/reduxjs/redux/tree/ma
 
 {% embed url="https://codesandbox.io/s/nervous-glitter-4dm0n" %}
 
+
+
 This example shows important idiomatic Redux patterns that become important as your app grows. In particular, it shows how to store entities in a normalized way by their IDs, how to compose reducers on several levels, and how to define selectors alongside the reducers so the knowledge about the state shape is encapsulated. It also demonstrates logging with [Redux Logger](https://github.com/fcomb/redux-logger) and conditional dispatching of actions with [Redux Thunk](https://github.com/gaearon/redux-thunk) middleware.
 
 ### Tree View[\#](https://redux.js.org/introduction/examples#tree-view)
@@ -816,6 +828,8 @@ Copy
 Or check out the [sandbox](https://codesandbox.io/s/github/reduxjs/redux/tree/master/examples/tree-view):
 
 {% embed url="https://codesandbox.io/s/eloquent-babbage-pd1uu" %}
+
+
 
 This example demonstrates rendering a deeply nested tree view and representing its state in a normalized form so it is easy to update from reducers. Good rendering performance is achieved by the container components granularly subscribing only to the tree nodes that they render.
 
@@ -834,7 +848,11 @@ Copy
 
 Or check out the [sandbox](https://codesandbox.io/s/github/reduxjs/redux/tree/master/examples/async):
 
+
+
 {% embed url="https://codesandbox.io/s/boring-panini-klj2m" %}
+
+
 
 This example includes reading from an asynchronous API, fetching data in response to user input, showing loading indicators, caching the response, and invalidating the cache. It uses [Redux Thunk](https://github.com/gaearon/redux-thunk) middleware to encapsulate asynchronous side effects.
 
@@ -866,6 +884,89 @@ Or check out the [sandbox](https://codesandbox.io/s/github/reduxjs/redux/tree/ma
 
 {% embed url="https://codesandbox.io/s/distracted-mcclintock-fsoqr" %}
 
+
+
 This is the most advanced example. It is dense by design. It covers keeping fetched entities in a normalized cache, implementing a custom middleware for API calls, rendering partially loaded data, pagination, caching responses, displaying error messages, and routing. Additionally, it includes Redux DevTools.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% embed url="https://gist.github.com/bgoonz/de925aba1354e27f221a5d55fa08feb2" %}
+
+
+

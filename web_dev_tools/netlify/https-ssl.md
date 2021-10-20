@@ -1,16 +1,16 @@
 # HTTPS \(SSL\)
 
-##
+## 
 
 Netlify offers free HTTPS on all sites, including automatic certificate creation and renewal. Our certificates use the modern TLS protocol, which has replaced the now deprecated SSL standard.
 
 HTTPS brings a lot of advantages:
 
-- **Content integrity:** Without HTTPS, free Wi-Fi services can inject ads into your pages.
-- **Security:** If your site has a login or accepts form submissions, HTTPS is essential for your users’ security and privacy.
-- **SEO:** Google search results prioritize sites with HTTPS enabled.
-- **Referral analytics:** HTTPS-enabled sites will not send referral data to sites without HTTPS enabled.
-- **HTTP/2:** Boost your sites’ performance — [HTTP/2](https://docs.netlify.com/domains-https/https-ssl/#http-2) requires HTTPS.
+* **Content integrity:** Without HTTPS, free Wi-Fi services can inject ads into your pages.
+* **Security:** If your site has a login or accepts form submissions, HTTPS is essential for your users’ security and privacy.
+* **SEO:** Google search results prioritize sites with HTTPS enabled.
+* **Referral analytics:** HTTPS-enabled sites will not send referral data to sites without HTTPS enabled.
+* **HTTP/2:** Boost your sites’ performance — [HTTP/2](https://docs.netlify.com/domains-https/https-ssl/#http-2) requires HTTPS.
 
 ### [\#](https://docs.netlify.com/domains-https/https-ssl/#certificate-service-types)Certificate service types <a id="certificate-service-types"></a>
 
@@ -48,9 +48,9 @@ If you already have a certificate for your domain and prefer that to Netlify’s
 
 To install a certificate, you’ll need:
 
-- the certificate itself, in X.509 PEM format \(usually a .crt file\)
-- the private key you used to request the certificate
-- a chain of intermediary certificates from your Certificate Authority \(CA\)
+* the certificate itself, in X.509 PEM format \(usually a .crt file\)
+* the private key you used to request the certificate
+* a chain of intermediary certificates from your Certificate Authority \(CA\)
 
 In **Site settings &gt; Domain management &gt; HTTPS**, select **Set Custom Certificate**, then enter the information above.
 
@@ -70,14 +70,14 @@ If you don’t want to use an SNI-based certificate for your site, Netlify offer
 
 Most major browsers use a list of predefined domains to automatically connect to websites using HTTPS. This list is called the HTTP Strict Transport Security \(HSTS\) preload list. Your site can be included in this list if you follow the requirements in [hstspreload.org](https://hstspreload.org/):
 
-- Your custom domain must be accessible in the www subdomain. For example: `www.petsofnetlify.com`.
-- You must include this header in your [`_headers` file](https://docs.netlify.com/routing/headers/) or [Netlify configuration file](https://docs.netlify.com/configure-builds/file-based-configuration/):
+* Your custom domain must be accessible in the www subdomain. For example: `www.petsofnetlify.com`.
+* You must include this header in your [`_headers` file](https://docs.netlify.com/routing/headers/) or [Netlify configuration file](https://docs.netlify.com/configure-builds/file-based-configuration/):
 
-  - \_headers
-  - netlify.toml
+  * \_headers
+  * netlify.toml
 
   ```text
-  /*
+  /* 
     Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   ```
 
@@ -90,3 +90,4 @@ Please make sure to only use the directive `preload` once you’re confident tha
 ### [\#](https://docs.netlify.com/domains-https/https-ssl/#http-2)HTTP/2 <a id="http-2"></a>
 
 When HTTPS is enabled for your site, Netlify supports HTTP/2, a newer internet protocol engineered for faster web performance. This brings support for core HTTP/2 features like request multiplexing and compressed headers, but does not include server push capability.
+

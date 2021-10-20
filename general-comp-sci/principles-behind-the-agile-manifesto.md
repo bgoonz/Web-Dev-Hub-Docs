@@ -2,6 +2,8 @@
 
 ## Principles behind the Agile Manifesto
 
+  
+  
 We follow these principles:
 
 Our highest priority is to satisfy the customer  
@@ -44,4 +46,6 @@ emerge from self-organizing teams.
 
 At regular intervals, the team reflects on how  
 to become more effective, then tunes and adjusts  
-its behavior accordingly.
+its behavior accordingly.  
+
+

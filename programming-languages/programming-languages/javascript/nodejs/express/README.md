@@ -6,8 +6,8 @@ When introduced, node.js gave developers the chance to use JavaScript to write s
 
 This tutorial will cover how to write **web services** that can communicate with clients \(the front end application\) using **J**ava**S**cript **O**bject **N**otation \(JSON\).
 
-- JavaScript is asynchronous, which allows us to take full advantage of the processor it’s running on. Taking full advantage of the processor is crucial because the node process will be running on a single CPU.
-- Using JavaScript gives us access to the npm repository. This repository is the largest ecosystem of useful libraries \(most of them free to use\) in **npm modules**.
+* JavaScript is asynchronous, which allows us to take full advantage of the processor it’s running on. Taking full advantage of the processor is crucial because the node process will be running on a single CPU.
+* Using JavaScript gives us access to the npm repository. This repository is the largest ecosystem of useful libraries \(most of them free to use\) in **npm modules**.
 
 ![](https://miro.medium.com/max/630/0*PTKhCN2p9S8EDZ4r.gif)
 
@@ -19,17 +19,17 @@ We will use Node to write server code. Specifically, **web services** that can c
 
 Some of the advantages of using Node.js for writing server-side code are:
 
-- Uses the same programming language \(JavaScript\) and paradigm for both client and server. Using the same language, we minimize context switching and make it easy to share code between the client and the server.
-- JavaScript is single-threaded, which removes the complexity involved in handling multiple threads.
-- JavaScript is asynchronous, which allows us to take full advantage of the processor it’s running on. Taking full advantage of the processor is crucial because the node process will be running on a single CPU.
-- Using JavaScript gives us access to the npm repository. This repository is the largest ecosystem of useful libraries \(most of them free to use\) in **npm modules**.
+* Uses the same programming language \(JavaScript\) and paradigm for both client and server. Using the same language, we minimize context switching and make it easy to share code between the client and the server.
+* JavaScript is single-threaded, which removes the complexity involved in handling multiple threads.
+* JavaScript is asynchronous, which allows us to take full advantage of the processor it’s running on. Taking full advantage of the processor is crucial because the node process will be running on a single CPU.
+* Using JavaScript gives us access to the npm repository. This repository is the largest ecosystem of useful libraries \(most of them free to use\) in **npm modules**.
 
 Some of the disadvantages of using Node.js for writing server-side code are:
 
-- By strictly using JavaScript on the server, we lose the ability to use the right tool \(a particular language\) for the job.
-- Because JavaScript is single-threaded, we can’t take advantage of servers with multiple cores/processors.
-- Because JavaScript is asynchronous, it is harder to learn for developers that have only worked with languages that default to synchronous operations that block the execution thread.
-- In the npm repository, there are often too many packages that do the same thing. This excess of packages makes it harder to choose one and, in some cases, may introduce vulnerabilities into our code.
+* By strictly using JavaScript on the server, we lose the ability to use the right tool \(a particular language\) for the job.
+* Because JavaScript is single-threaded, we can’t take advantage of servers with multiple cores/processors.
+* Because JavaScript is asynchronous, it is harder to learn for developers that have only worked with languages that default to synchronous operations that block the execution thread.
+* In the npm repository, there are often too many packages that do the same thing. This excess of packages makes it harder to choose one and, in some cases, may introduce vulnerabilities into our code.
 
 To write a simple web server with `Node.js`:
 
@@ -77,26 +77,26 @@ Ultimately, Express is **just a Node.js module** like any other module.
 
 What can we do with Express? So many things! For example:
 
-- Build web applications.
-- Serve _Single Page Applications_ \(SPAs\).
-- Build RESTful web services that work with JSON.
-- Serve static content, like HTML files, images, audio files, PDFs, and more.
-- Power real-time applications using technologies like **Web Sockets** or **WebRTC**.
+* Build web applications.
+* Serve _Single Page Applications_ \(SPAs\).
+* Build RESTful web services that work with JSON.
+* Serve static content, like HTML files, images, audio files, PDFs, and more.
+* Power real-time applications using technologies like **Web Sockets** or **WebRTC**.
 
 Some of the benefits of using Express are that it is:
 
-- Simple
-- Unopinionated
-- Extensible
-- Light-weight
-- Compatible with [connect middleware \(Links to an external site.\)](https://www.npmjs.com/package/connect). This compatibility means we can tap into an extensive collection of modules written for `connect`.
-- All packaged into a clean, intuitive, and easy-to-use API.
-- Abstracts away common tasks \(writing web applications can be verbose, hence the need for a library like this\).
+* Simple
+* Unopinionated
+* Extensible
+* Light-weight
+* Compatible with [connect middleware \(Links to an external site.\)](https://www.npmjs.com/package/connect). This compatibility means we can tap into an extensive collection of modules written for `connect`.
+* All packaged into a clean, intuitive, and easy-to-use API.
+* Abstracts away common tasks \(writing web applications can be verbose, hence the need for a library like this\).
 
 Some of the drawbacks of Express are:
 
-- It’s not a one-stop solution. Because of its simplicity, it does very little out of the box. Especially when compared to frameworks like **Ruby on Rails** and **Django**.
-- We are forced to make more decisions due to the flexibility and control it provides.
+* It’s not a one-stop solution. Because of its simplicity, it does very little out of the box. Especially when compared to frameworks like **Ruby on Rails** and **Django**.
+* We are forced to make more decisions due to the flexibility and control it provides.
 
 ## Main Features of Express <a id="1abb"></a>
 
@@ -138,9 +138,9 @@ Views provide a way to dynamically render HTML on the server and even generate i
 
 Let’s write our first server using Express:
 
-- Create a new file called `server.js` to host our server code.
-- Type `npm init -y` to generate a `package.json`.
-- Install the `express` npm module using: `npm install express`.
+* Create a new file called `server.js` to host our server code.
+* Type `npm init -y` to generate a `package.json`.
+* Install the `express` npm module using: `npm install express`.
 
 Inside `server.js` add the following code:
 
@@ -194,15 +194,15 @@ server.listen(8000, () => console.log('API running on port 8000'));
 
 We are using the `express` npm module in our code, so we need to add it as a dependency to our project. To do this:
 
-- Open a terminal/console/command prompt window and navigate to the root of our project.
-- Add express to our `package.json` file by typing `npm install express`.
+* Open a terminal/console/command prompt window and navigate to the root of our project.
+* Add express to our `package.json` file by typing `npm install express`.
 
 Now we’re ready to test our API!
 
 In the terminal, still at the root of our project:
 
-- Type: `npm run server` to run our API. The message _"Api running on port 8000"_ should appear on the terminal.
-- Open a web browser and navigate to “[http://localhost:8000](http://localhost:8000/)".
+* Type: `npm run server` to run our API. The message _"Api running on port 8000"_ should appear on the terminal.
+* Open a web browser and navigate to “[http://localhost:8000](http://localhost:8000/)".
 
 There we have it, our first API!
 
@@ -463,18 +463,18 @@ Then we define a variable for manual id generation. When using a database, this 
 
 To read data from the request body, we need to do two things:
 
-- Add the line: `server.use(express.json());` after the express application has been created.
-- Read the data from the body property that Express adds to the request object. Express takes all the client’s information from the body and makes it available as a nice JavaScript object.
+* Add the line: `server.use(express.json());` after the express application has been created.
+* Read the data from the body property that Express adds to the request object. Express takes all the client’s information from the body and makes it available as a nice JavaScript object.
 
 **Note that we are skipping data validation to keep this demo simple, but in a production application, you would validate before attempting to save to the database.**
 
 Let’s test it using Postman:
 
-- Change the method to POST.
-- Select the `Body` tab underneath the address bar.
-- Click on the `raw` radio button.
-- From the dropdown menu to the right of the `binary` radio button, select \`JSON \(application/json\).
-- Add the following JSON object as the body:
+* Change the method to POST.
+* Select the `Body` tab underneath the address bar.
+* Click on the `raw` radio button.
+* From the dropdown menu to the right of the `binary` radio button, select \`JSON \(application/json\).
+* Add the following JSON object as the body:
 
 ```text
 {
@@ -544,10 +544,10 @@ Concentrate on the code related to reading the `id` from the `req.params` object
 
 Here are some things you can do in your code to improve your application’s performance:
 
-- [Use gzip compression](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#use-gzip-compression)
-- [Don’t use synchronous functions](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#dont-use-synchronous-functions)
-- [Do logging correctly](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#do-logging-correctly)
-- [Handle exceptions properly](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#handle-exceptions-properly)
+* [Use gzip compression](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#use-gzip-compression)
+* [Don’t use synchronous functions](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#dont-use-synchronous-functions)
+* [Do logging correctly](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#do-logging-correctly)
+* [Handle exceptions properly](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#handle-exceptions-properly)
 
 ## Use gzip compression <a id="560a"></a>
 
@@ -560,7 +560,7 @@ var app = express()
 app.use(compression())
 ```
 
-For a high-traffic website in production, the best way to put compression in place is to implement it at a reverse proxy level \(see [Use a reverse proxy](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#use-a-reverse-proxy)\). In that case, you do not need to use compression middleware. For details on enabling gzip compression in Nginx, see [Module ngx_http_gzip_module](http://nginx.org/en/docs/http/ngx_http_gzip_module.html) in the Nginx documentation.
+For a high-traffic website in production, the best way to put compression in place is to implement it at a reverse proxy level \(see [Use a reverse proxy](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#use-a-reverse-proxy)\). In that case, you do not need to use compression middleware. For details on enabling gzip compression in Nginx, see [Module ngx\_http\_gzip\_module](http://nginx.org/en/docs/http/ngx_http_gzip_module.html) in the Nginx documentation.
 
 ## Don’t use synchronous functions <a id="2794"></a>
 
@@ -588,15 +588,15 @@ Node apps crash when they encounter an uncaught exception. Not handling exceptio
 
 To ensure you handle all exceptions, use the following techniques:
 
-- [Use try-catch](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#use-try-catch)
-- [Use promises](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#use-promises)
+* [Use try-catch](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#use-try-catch)
+* [Use promises](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#use-promises)
 
 Before diving into these topics, you should have a basic understanding of Node/Express error handling: using error-first callbacks, and propagating errors in middleware. Node uses an “error-first callback” convention for returning errors from asynchronous functions, where the first parameter to the callback function is the error object, followed by result data in succeeding parameters. To indicate no error, pass null as the first parameter. The callback function must correspondingly follow the error-first callback convention to meaningfully handle the error. And in Express, the best practice is to use the next\(\) function to propagate errors through the middleware chain.
 
 For more on the fundamentals of error handling, see:
 
-- [Error Handling in Node.js](https://www.joyent.com/developers/node/design/errors)
-- [Building Robust Node Applications: Error Handling](https://strongloop.com/strongblog/robust-node-applications-error-handling/) \(StrongLoop blog\)
+* [Error Handling in Node.js](https://www.joyent.com/developers/node/design/errors)
+* [Building Robust Node Applications: Error Handling](https://strongloop.com/strongblog/robust-node-applications-error-handling/) \(StrongLoop blog\)
 
 ### What not to do <a id="dc00"></a>
 
@@ -669,28 +669,28 @@ For more information about error-handling by using promises, see [Promises in No
 
 Here are some things you can do in your system environment to improve your app’s performance:
 
-- [Set NODE_ENV to “production”](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#set-node_env-to-production)
-- [Ensure your app automatically restarts](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#ensure-your-app-automatically-restarts)
-- [Run your app in a cluster](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#run-your-app-in-a-cluster)
-- [Cache request results](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#cache-request-results)
-- [Use a load balancer](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#use-a-load-balancer)
-- [Use a reverse proxy](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#use-a-reverse-proxy)
+* [Set NODE\_ENV to “production”](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#set-node_env-to-production)
+* [Ensure your app automatically restarts](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#ensure-your-app-automatically-restarts)
+* [Run your app in a cluster](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#run-your-app-in-a-cluster)
+* [Cache request results](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#cache-request-results)
+* [Use a load balancer](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#use-a-load-balancer)
+* [Use a reverse proxy](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#use-a-reverse-proxy)
 
-## Set NODE_ENV to “production” <a id="e29a"></a>
+## Set NODE\_ENV to “production” <a id="e29a"></a>
 
-The NODE_ENV environment variable specifies the environment in which an application is running \(usually, development or production\). One of the simplest things you can do to improve performance is to set NODE_ENV to “production.”
+The NODE\_ENV environment variable specifies the environment in which an application is running \(usually, development or production\). One of the simplest things you can do to improve performance is to set NODE\_ENV to “production.”
 
-Setting NODE_ENV to “production” makes Express:
+Setting NODE\_ENV to “production” makes Express:
 
-- Cache view templates.
-- Cache CSS files generated from CSS extensions.
-- Generate less verbose error messages.
+* Cache view templates.
+* Cache CSS files generated from CSS extensions.
+* Generate less verbose error messages.
 
 [Tests indicate](http://apmblog.dynatrace.com/2015/07/22/the-drastic-effects-of-omitting-node_env-in-your-express-js-applications/) that just doing this can improve app performance by a factor of three!
 
-If you need to write environment-specific code, you can check the value of NODE_ENV with `process.env.NODE_ENV`. Be aware that checking the value of any environment variable incurs a performance penalty, and so should be done sparingly.
+If you need to write environment-specific code, you can check the value of NODE\_ENV with `process.env.NODE_ENV`. Be aware that checking the value of any environment variable incurs a performance penalty, and so should be done sparingly.
 
-In development, you typically set environment variables in your interactive shell, for example by using `export` or your `.bash_profile` file. But in general you shouldn’t do that on a production server; instead, use your OS’s init system \(systemd or Upstart\). The next section provides more details about using your init system in general, but setting NODE_ENV is so important for performance \(and easy to do\), that it’s highlighted here.
+In development, you typically set environment variables in your interactive shell, for example by using `export` or your `.bash_profile` file. But in general you shouldn’t do that on a production server; instead, use your OS’s init system \(systemd or Upstart\). The next section provides more details about using your init system in general, but setting NODE\_ENV is so important for performance \(and easy to do\), that it’s highlighted here.
 
 With Upstart, use the `env` keyword in your job file. For example:
 
@@ -714,8 +714,8 @@ For more information, see [Using Environment Variables In systemd Units](https:/
 
 In production, you don’t want your application to be offline, ever. This means you need to make sure it restarts both if the app crashes and if the server itself crashes. Although you hope that neither of those events occurs, realistically you must account for both eventualities by:
 
-- Using a process manager to restart the app \(and Node\) when it crashes.
-- Using the init system provided by your OS to restart the process manager when the OS crashes. It’s also possible to use the init system without a process manager.
+* Using a process manager to restart the app \(and Node\) when it crashes.
+* Using the init system provided by your OS to restart the process manager when the OS crashes. It’s also possible to use the init system without a process manager.
 
 Node applications crash if they encounter an uncaught exception. The foremost thing you need to do is to ensure your app is well-tested and handles all exceptions \(see [handle exceptions properly](https://medium.com/codex/prerequisites-to-writing-express-apis-75e3267b284a#handle-exceptions-properly) for details\). But as a fail-safe, put a mechanism in place to ensure that if and when your app crashes, it will automatically restart.
 
@@ -725,15 +725,15 @@ In development, you started your app simply from the command line with `node ser
 
 In addition to restarting your app when it crashes, a process manager can enable you to:
 
-- Gain insights into runtime performance and resource consumption.
-- Modify settings dynamically to improve performance.
-- Control clustering \(StrongLoop PM and pm2\).
+* Gain insights into runtime performance and resource consumption.
+* Modify settings dynamically to improve performance.
+* Control clustering \(StrongLoop PM and pm2\).
 
 The most popular process managers for Node are as follows:
 
-- [StrongLoop Process Manager](http://strong-pm.io/)
-- [PM2](https://github.com/Unitech/pm2)
-- [Forever](https://www.npmjs.com/package/forever)
+* [StrongLoop Process Manager](http://strong-pm.io/)
+* [PM2](https://github.com/Unitech/pm2)
+* [Forever](https://www.npmjs.com/package/forever)
 
 For a feature-by-feature comparison of the three process managers, see [http://strong-pm.io/compare/](http://strong-pm.io/compare/). For a more detailed introduction to all three, see [Process managers for Express apps](https://medium.com/%7B%7B%20page.lang%20%7D%7D/advanced/pm.html).
 
@@ -741,12 +741,12 @@ Using any of these process managers will suffice to keep your application up, ev
 
 However, StrongLoop PM has lots of features that specifically target production deployment. You can use it and the related StrongLoop tools to:
 
-- Build and package your app locally, then deploy it securely to your production system.
-- Automatically restart your app if it crashes for any reason.
-- Manage your clusters remotely.
-- View CPU profiles and heap snapshots to optimize performance and diagnose memory leaks.
-- View performance metrics for your application.
-- Easily scale to multiple hosts with integrated control for Nginx load balancer.
+* Build and package your app locally, then deploy it securely to your production system.
+* Automatically restart your app if it crashes for any reason.
+* Manage your clusters remotely.
+* View CPU profiles and heap snapshots to optimize performance and diagnose memory leaks.
+* View performance metrics for your application.
+* Easily scale to multiple hosts with integrated control for Nginx load balancer.
 
 As explained below, when you install StrongLoop PM as an operating system service using your init system, it will automatically restart when the system restarts. Thus, it will keep your application processes and clusters alive forever.
 
@@ -771,3 +771,6 @@ A reverse proxy sits in front of a web app and performs supporting operations on
 Handing over tasks that do not require knowledge of application state to a reverse proxy frees up Express to perform specialized application tasks. For this reason, it is recommended to run Express behind a reverse proxy like [Nginx](https://www.nginx.com/) or [HAProxy](http://www.haproxy.org/) in production.
 
 {% embed url="https://gist.github.com/bgoonz/99f39285d28bc320ae3500c40e7e664b" %}
+
+
+

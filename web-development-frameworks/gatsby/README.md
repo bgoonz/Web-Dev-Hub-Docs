@@ -136,21 +136,27 @@ Then Netlify will detect that there was a commit in your repo, and will start re
 
 It is now safe to remove the default Gatsby blog posts.
 
+
+
+
+
+
+
 ## Making Your Site Accessible
 
 ### TABLE OF CONTENTS
 
-- [What is web accessibility?](https://www.gatsbyjs.com/docs/conceptual/making-your-site-accessible/#what-is-web-accessibility)
-- [Gatsby makes accessibility easier](https://www.gatsbyjs.com/docs/conceptual/making-your-site-accessible/#gatsby-makes-accessibility-easier)
-  - [Accessible routing](https://www.gatsbyjs.com/docs/conceptual/making-your-site-accessible/#accessible-routing)
-  - [Gatsby builds HTML pages by default](https://www.gatsbyjs.com/docs/conceptual/making-your-site-accessible/#gatsby-builds-html-pages-by-default)
-  - [Linting with eslint-plugin-jsx-a11y](https://www.gatsbyjs.com/docs/conceptual/making-your-site-accessible/#linting-with-eslint-plugin-jsx-a11y)
-- [Tips for improving web accessibility](https://www.gatsbyjs.com/docs/conceptual/making-your-site-accessible/#tips-for-improving-web-accessibility)
-- [Accessibility resources](https://www.gatsbyjs.com/docs/conceptual/making-your-site-accessible/#accessibility-resources)
+* [What is web accessibility?](https://www.gatsbyjs.com/docs/conceptual/making-your-site-accessible/#what-is-web-accessibility)
+* [Gatsby makes accessibility easier](https://www.gatsbyjs.com/docs/conceptual/making-your-site-accessible/#gatsby-makes-accessibility-easier)
+  * [Accessible routing](https://www.gatsbyjs.com/docs/conceptual/making-your-site-accessible/#accessible-routing)
+  * [Gatsby builds HTML pages by default](https://www.gatsbyjs.com/docs/conceptual/making-your-site-accessible/#gatsby-builds-html-pages-by-default)
+  * [Linting with eslint-plugin-jsx-a11y](https://www.gatsbyjs.com/docs/conceptual/making-your-site-accessible/#linting-with-eslint-plugin-jsx-a11y)
+* [Tips for improving web accessibility](https://www.gatsbyjs.com/docs/conceptual/making-your-site-accessible/#tips-for-improving-web-accessibility)
+* [Accessibility resources](https://www.gatsbyjs.com/docs/conceptual/making-your-site-accessible/#accessibility-resources)
 
 ### EXAMPLES
 
-- [ Using react-skip-nav](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-reach-skip-nav)
+* [ Using react-skip-nav](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-reach-skip-nav)
 
 The Gatsby team is passionate about helping you create websites that work for everyone, with helpful defaults that bake in web accessibility as well as performance optimizations. By making your website accessible to people with disabilities, you can make more inclusive sites that reach and remove barriers for more people on the Internet.
 
@@ -200,27 +206,28 @@ This is a start to testing for accessibility: [further recommendations](https://
 
 Accessibility by default is a win for everyone. Here’s a starting point for accessibility testing when making a Gatsby site or theme:
 
-- [Use your keyboard](https://webaim.org/techniques/keyboard/) to tab through the pages. Can you reach and operate every interactive control \(links, buttons, form inputs, etc.\) and see a focus indicator on the screen?
-- Use [Lighthouse](https://developers.google.com/web/tools/lighthouse/), [axe](https://www.deque.com/axe/) or [Accessibility Insights](https://accessibilityinsights.io/) to find and fix common accessibility issues in development
-- Test for [adequate color contrast](https://dequeuniversity.com/tips/color-contrast) with the [accessibility color picker in Chrome Developer Tools](https://developers.google.com/web/updates/2018/01/devtools#contrast)
-- Create inclusive and [accessible forms](https://www.gatsbyjs.com/docs/building-a-contact-form#creating-an-accessible-form)
-- Employ accessible [headings, landmarks, and semantic structure](https://webaim.org/techniques/semanticstructure/)
-- Include [image, video, and audio text alternatives](https://a11y-style-guide.com/style-guide/section-media.html)
-- Test for [screen magnification and zoom](https://axesslab.com/make-site-accessible-screen-magnifiers/)
-- Ensure accessibility of [interactive menus, modals, and custom widgets](https://developer.mozilla.org/en-US/docs/Web/Accessibility/An_overview_of_accessible_web_applications_and_widgets)
-- Create safe [animations and motion](https://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity/)
-- Write [Cypress accessibility tests](https://www.gatsbyjs.com/docs/how-to/testing/end-to-end-testing/#writing-tests) for your site or application
+* [Use your keyboard](https://webaim.org/techniques/keyboard/) to tab through the pages. Can you reach and operate every interactive control \(links, buttons, form inputs, etc.\) and see a focus indicator on the screen?
+* Use [Lighthouse](https://developers.google.com/web/tools/lighthouse/), [axe](https://www.deque.com/axe/) or [Accessibility Insights](https://accessibilityinsights.io/) to find and fix common accessibility issues in development
+* Test for [adequate color contrast](https://dequeuniversity.com/tips/color-contrast) with the [accessibility color picker in Chrome Developer Tools](https://developers.google.com/web/updates/2018/01/devtools#contrast)
+* Create inclusive and [accessible forms](https://www.gatsbyjs.com/docs/building-a-contact-form#creating-an-accessible-form)
+* Employ accessible [headings, landmarks, and semantic structure](https://webaim.org/techniques/semanticstructure/)
+* Include [image, video, and audio text alternatives](https://a11y-style-guide.com/style-guide/section-media.html)
+* Test for [screen magnification and zoom](https://axesslab.com/make-site-accessible-screen-magnifiers/)
+* Ensure accessibility of [interactive menus, modals, and custom widgets](https://developer.mozilla.org/en-US/docs/Web/Accessibility/An_overview_of_accessible_web_applications_and_widgets)
+* Create safe [animations and motion](https://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity/)
+* Write [Cypress accessibility tests](https://www.gatsbyjs.com/docs/how-to/testing/end-to-end-testing/#writing-tests) for your site or application
 
 ### Accessibility resources <a id="accessibility-resources"></a>
 
-- [React accessibility](https://reactjs.org/docs/accessibility.html)
-- [Gatsby’s commitment to accessibility](https://www.gatsbyjs.com/blog/2019-04-18-gatsby-commitment-to-accessibility/)
-- [How to do an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review) from Google Web Fundamentals
-- [A11y Project’s Quick Tests](https://a11yproject.com/#Quick-tests)
-- [The importance of manual accessibility testing](https://www.smashingmagazine.com/2018/09/importance-manual-accessibility-testing/) from Smashing Magazine
-- [Writing Automated Tests for Accessibility](https://www.24a11y.com/2017/writing-automated-tests-accessibility/)
-- [Free web accessibility course](https://www.udacity.com/course/web-accessibility--ud891) by Google and Udacity
-- [WebAIM introduction](https://webaim.org/intro/) to web accessibility
-- [Deque University](https://dequeuniversity.com/), with free online accessibility training for people with disabilities
-- [Web.dev accessibility docs](https://web.dev/accessible)
-- [All Gatsby accessibility blog posts](https://www.gatsbyjs.com/blog/tags/accessibility/)
+* [React accessibility](https://reactjs.org/docs/accessibility.html)
+* [Gatsby’s commitment to accessibility](https://www.gatsbyjs.com/blog/2019-04-18-gatsby-commitment-to-accessibility/)
+* [How to do an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review) from Google Web Fundamentals
+* [A11y Project’s Quick Tests](https://a11yproject.com/#Quick-tests)
+* [The importance of manual accessibility testing](https://www.smashingmagazine.com/2018/09/importance-manual-accessibility-testing/) from Smashing Magazine
+* [Writing Automated Tests for Accessibility](https://www.24a11y.com/2017/writing-automated-tests-accessibility/)
+* [Free web accessibility course](https://www.udacity.com/course/web-accessibility--ud891) by Google and Udacity
+* [WebAIM introduction](https://webaim.org/intro/) to web accessibility
+* [Deque University](https://dequeuniversity.com/), with free online accessibility training for people with disabilities
+* [Web.dev accessibility docs](https://web.dev/accessible)
+* [All Gatsby accessibility blog posts](https://www.gatsbyjs.com/blog/tags/accessibility/)
+

@@ -99,3 +99,6 @@ Create unique event-driven experiences for every customer by harnessing streams 
 Offer customers personalized rewards based on relationship data in your Salesforce CRM. Use Heroku Connect to sync data between Salesforce and Heroku Postgres.
 
 {% embed url="https://gist.github.com/bgoonz/7bf839da876126324957e1f0f0feb578" %}
+
+
+

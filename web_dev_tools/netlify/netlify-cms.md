@@ -1,17 +1,19 @@
 # Netlify CMS
 
+
+
 ## Overview
 
 Netlify CMS is an open source content management system for your Git workflow that enables you to provide editors with a friendly UI and intuitive workflows. You can use it with any static site generator to create faster, more flexible web projects. Content is stored in your Git repository alongside your code for easier versioning, multi-channel publishing, and the option to handle content updates directly in Git.
 
 At its core, Netlify CMS is an open-source React app that acts as a wrapper for the Git workflow, using the GitHub, GitLab, or Bitbucket API. This provides many advantages, including:
 
-- **Fast, web-based UI:** With rich-text editing, real-time preview, and drag-and-drop media uploads.
-- **Platform agnostic:** Works with most static site generators.
-- **Easy installation:** Add two files to your site and hook up the backend by including those files in your build process or linking to our Content Delivery Network \(CDN\).
-- **Modern authentication:** Using GitHub, GitLab, or Bitbucket and JSON web tokens.
-- **Flexible content types:** Specify an unlimited number of content types with custom fields.
-- **Fully extensible:** Create custom-styled previews, UI widgets, and editor plugins.
+* **Fast, web-based UI:** With rich-text editing, real-time preview, and drag-and-drop media uploads.
+* **Platform agnostic:** Works with most static site generators.
+* **Easy installation:** Add two files to your site and hook up the backend by including those files in your build process or linking to our Content Delivery Network \(CDN\).
+* **Modern authentication:** Using GitHub, GitLab, or Bitbucket and JSON web tokens.
+* **Flexible content types:** Specify an unlimited number of content types with custom fields.
+* **Fully extensible:** Create custom-styled previews, UI widgets, and editor plugins.
 
 ### Netlify CMS vs. Netlify <a id="netlify-cms-vs-netlify"></a>
 
@@ -21,19 +23,21 @@ The folks at Netlify created Netlify CMS to fill a gap in the static site genera
 
 With this in mind, you can:
 
-- Use Netlify CMS without Netlify and deploy your site where you always have, hooking up your own CI, site hosting, CDN, etc.
-- Use Netlify without Netlify CMS and edit your static site in your code editor.
-- Or, use them together and have a fully-working CMS-enabled site with [one click](https://www.netlifycms.org/docs/start-with-a-template/)!
+* Use Netlify CMS without Netlify and deploy your site where you always have, hooking up your own CI, site hosting, CDN, etc.
+* Use Netlify without Netlify CMS and edit your static site in your code editor.
+* Or, use them together and have a fully-working CMS-enabled site with [one click](https://www.netlifycms.org/docs/start-with-a-template/)!
 
 If you hook up Netlify CMS to your website, you're basically adding a tool for content editors to make commits to your site repository without touching code or learning Git.
 
 #### Find out more <a id="find-out-more"></a>
 
-- Get a feel for the UI in the [demo site](https://cms-demo.netlify.com/). \(No login required. Click the login button to go straight to the CMS editor UI.\)
-- [Start with a template](https://www.netlifycms.org/docs/start-with-a-template/) to make a Netlify CMS-enabled site of your own.
-- Configure your existing site by following a [tutorial](https://www.netlifycms.org/docs/add-to-your-site/) or checking [configuration options](https://www.netlifycms.org/docs/configuration-options).
-- Ask questions and share ideas in the Netlify CMS [community chat](https://netlifycms.org/chat).
-- Get involved in new developments and become a [contributor](https://www.netlifycms.org/docs/contributor-guide/).
+* Get a feel for the UI in the [demo site](https://cms-demo.netlify.com/). \(No login required. Click the login button to go straight to the CMS editor UI.\)
+* [Start with a template](https://www.netlifycms.org/docs/start-with-a-template/) to make a Netlify CMS-enabled site of your own.
+* Configure your existing site by following a [tutorial](https://www.netlifycms.org/docs/add-to-your-site/) or checking [configuration options](https://www.netlifycms.org/docs/configuration-options).
+* Ask questions and share ideas in the Netlify CMS [community chat](https://netlifycms.org/chat).
+* Get involved in new developments and become a [contributor](https://www.netlifycms.org/docs/contributor-guide/).
+
+
 
 ## Beta Features!
 
@@ -59,7 +63,7 @@ local_backend: true
 ```
 
 1. Run `npx netlify-cms-proxy-server` from the root directory of the above repository.
-   - If the default port \(8081\) is in use, the proxy server won't start and you will see an error message. In this case, follow [these steps](https://www.netlifycms.org/docs/beta-features/#configure-the-netlify-cms-proxy-server-port-number) before proceeding.
+   * If the default port \(8081\) is in use, the proxy server won't start and you will see an error message. In this case, follow [these steps](https://www.netlifycms.org/docs/beta-features/#configure-the-netlify-cms-proxy-server-port-number) before proceeding.
 2. Start your local development server \(e.g. run `gatsby develop`\).
 3. Open [http://localhost:8000/admin](http://localhost:8000/admin) to verify that your can administer your content locally.
 
@@ -317,11 +321,11 @@ And for the image field being populated with a value of `image.png`.
 
 Supports all of the [`slug` templates](https://www.netlifycms.org/docs/configuration-options#slug) and:
 
-- `{{dirname}}` The path to the file's parent directory, relative to the collection's `folder`.
-- `{{filename}}` The file name without the extension part.
-- `{{extension}}` The file extension.
-- `{{media_folder}}` The global `media_folder`.
-- `{{public_folder}}` The global `public_folder`.
+* `{{dirname}}` The path to the file's parent directory, relative to the collection's `folder`.
+* `{{filename}}` The file name without the extension part.
+* `{{extension}}` The file extension.
+* `{{media_folder}}` The global `media_folder`.
+* `{{public_folder}}` The global `public_folder`.
 
 ### List Widget: Variable Types <a id="list-widget-variable-types"></a>
 
@@ -336,9 +340,9 @@ To use variable types in the list widget, update your field configuration as fol
 
 #### Additional list widget options <a id="additional-list-widget-options"></a>
 
-- `types`: a nested list of object widgets. All widgets must be of type `object`. Every object widget may define different set of fields.
-- `typeKey`: the name of the field that will be added to every item in list representing the name of the object widget that item belongs to. Ignored if `types` is not defined. Default is `type`.
-- `summary`: allows customization of a collapsed list item object in a similar way to a [collection summary](https://www.netlifycms.org/docs/configuration-options/?#summary)
+* `types`: a nested list of object widgets. All widgets must be of type `object`. Every object widget may define different set of fields.
+* `typeKey`: the name of the field that will be added to every item in list representing the name of the object widget that item belongs to. Ignored if `types` is not defined. Default is `type`.
+* `summary`: allows customization of a collapsed list item object in a similar way to a [collection summary](https://www.netlifycms.org/docs/configuration-options/?#summary)
 
 #### Example Configuration <a id="example-configuration"></a>
 
@@ -518,23 +522,23 @@ backend:
 
 Netlify CMS generates the following commit types:
 
-| Commit type     | When is it triggered?                    | Available template tags                                     |
-| :-------------- | :--------------------------------------- | :---------------------------------------------------------- |
-| `create`        | A new entry is created                   | `slug`, `path`, `collection`, `author-login`, `author-name` |
-| `update`        | An existing entry is changed             | `slug`, `path`, `collection`, `author-login`, `author-name` |
-| `delete`        | An existing entry is deleted             | `slug`, `path`, `collection`, `author-login`, `author-name` |
-| `uploadMedia`   | A media file is uploaded                 | `path`, `author-login`, `author-name`                       |
-| `deleteMedia`   | A media file is deleted                  | `path`, `author-login`, `author-name`                       |
-| `openAuthoring` | A commit is made via a forked repository | `message`, `author-login`, `author-name`                    |
+| Commit type | When is it triggered? | Available template tags |
+| :--- | :--- | :--- |
+| `create` | A new entry is created | `slug`, `path`, `collection`, `author-login`, `author-name` |
+| `update` | An existing entry is changed | `slug`, `path`, `collection`, `author-login`, `author-name` |
+| `delete` | An existing entry is deleted | `slug`, `path`, `collection`, `author-login`, `author-name` |
+| `uploadMedia` | A media file is uploaded | `path`, `author-login`, `author-name` |
+| `deleteMedia` | A media file is deleted | `path`, `author-login`, `author-name` |
+| `openAuthoring` | A commit is made via a forked repository | `message`, `author-login`, `author-name` |
 
 Template tags produce the following output:
 
-- `{{slug}}`: the url-safe filename of the entry changed
-- `{{collection}}`: the name of the collection containing the entry changed
-- `{{path}}`: the full path to the file changed
-- `{{message}}`: the relevant message based on the current change \(e.g. the `create` message when an entry is created\)
-- `{{author-login}}`: the login/username of the author
-- `{{author-name}}`: the full name of the author \(might be empty based on the user's profile\)
+* `{{slug}}`: the url-safe filename of the entry changed
+* `{{collection}}`: the name of the collection containing the entry changed
+* `{{path}}`: the full path to the file changed
+* `{{message}}`: the relevant message based on the current change \(e.g. the `create` message when an entry is created\)
+* `{{author-login}}`: the login/username of the author
+* `{{author-name}}`: the full name of the author \(might be empty based on the user's profile\)
 
 ### Image widget file size limit <a id="image-widget-file-size-limit"></a>
 
@@ -688,6 +692,10 @@ CMS.registerRemarkPlugin({ settings: { bullet: '-' } });
 
 Note that `netlify-widget-markdown` currently uses `remark@10`, so you should check a plugin's compatibility first.
 
+
+
+
+
 ## Add to Your Site
 
 You can adapt Netlify CMS to a wide variety of projects. It works with any content written in markdown, JSON, YAML, or TOML files, stored in a repo on [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), or [Bitbucket](https://bitbucket.org/). You can also create your own custom backend.
@@ -698,19 +706,19 @@ This tutorial guides you through the steps for adding Netlify CMS to a site that
 
 A static `admin` folder contains all Netlify CMS files, stored at the root of your published site. Where you store this folder in the source files depends on your static site generator. Here's the static file location for a few of the most popular static site generators:
 
-| These generators                           | store static files in |
-| :----------------------------------------- | :-------------------- |
-| Jekyll, GitBook                            | `/` \(project root\)  |
-| Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper | `/static`             |
-| Next                                       | `/public`             |
-| Hexo, Middleman, Jigsaw                    | `/source`             |
-| Spike                                      | `/views`              |
-| Wyam                                       | `/input`              |
-| Pelican                                    | `/content`            |
-| VuePress                                   | `/.vuepress/public`   |
-| Elmstatic                                  | `/_site`              |
-| 11ty                                       | `/_site`              |
-| preact-cli                                 | `/src/static`         |
+| These generators | store static files in |
+| :--- | :--- |
+| Jekyll, GitBook | `/` \(project root\) |
+| Hugo, Gatsby, Nuxt, Gridsome, Zola, Sapper | `/static` |
+| Next | `/public` |
+| Hexo, Middleman, Jigsaw | `/source` |
+| Spike | `/views` |
+| Wyam | `/input` |
+| Pelican | `/content` |
+| VuePress | `/.vuepress/public` |
+| Elmstatic | `/_site` |
+| 11ty | `/_site` |
+| preact-cli | `/src/static` |
 
 If your generator isn't listed here, you can check its documentation, or as a shortcut, look in your project for a `css` or `images` folder. The contents of folders like that are usually processed as static files, so it's likely you can store your `admin` folder next to those. \(When you've found the location, feel free to add it to these docs by [filing a pull request](https://github.com/netlify/netlify-cms/blob/master/CONTRIBUTING.md#pull-requests)!\)
 
@@ -977,3 +985,4 @@ If you set your registration preference to "Invite only," invite yourself \(and 
 If you left your site registration open, or for return visits after confirming an email invitation, access your site's CMS at `yoursite.com/admin/`.
 
 **Note:** No matter where you access Netlify CMS — whether running locally, in a staging environment, or in your published site — it always fetches and commits files in your hosted repository \(for example, on GitHub\), on the branch you configured in your Netlify CMS config.yml file. This means that content fetched in the admin UI matches the content in the repository, which may be different from your locally running site. It also means that content saved using the admin UI saves directly to the hosted repository, even if you're running the UI locally or in staging.
+

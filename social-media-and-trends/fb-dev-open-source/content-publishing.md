@@ -6,16 +6,16 @@ You can use the Instagram Graph API to publish [IG Media](https://developers.fac
 
 ### Limitations <a id="limitations"></a>
 
-- Can only be used to publish to business [IG User](https://developers.facebook.com/docs/instagram-api/reference/ig-user) accounts; Creator IG User accounts are not supported.
-- Accounts are limited to 25 API-published posts within a 24 hour period.
-- JPEG is the only image format supported. Extended JPEG formats such as MPO and JPS are not supported.
-- Stories are not supported.
-- Shopping tags are not supported.
-- Branded content tags are not supported.
-- Filters are not supported.
-- Multi-image posts are not supported.
-- If the caption contains a hashtag, it should be HTML URL-encoded as %23 in the request.
-- Publishing to IGTV is not supported.
+* Can only be used to publish to business [IG User](https://developers.facebook.com/docs/instagram-api/reference/ig-user) accounts; Creator IG User accounts are not supported.
+* Accounts are limited to 25 API-published posts within a 24 hour period.
+* JPEG is the only image format supported. Extended JPEG formats such as MPO and JPS are not supported.
+* Stories are not supported.
+* Shopping tags are not supported.
+* Branded content tags are not supported.
+* Filters are not supported.
+* Multi-image posts are not supported.
+* If the caption contains a hashtag, it should be HTML URL-encoded as %23 in the request.
+* Publishing to IGTV is not supported.
 
 For additional limitations, please refer to the [IG User Media](https://developers.facebook.com/docs/instagram-api/reference/ig-user/media) endpoint reference.
 
@@ -29,11 +29,11 @@ All requests must include the app user's [User](https://developers.facebook.com/
 
 Publishing relies on a combination of the following permissions. The exact combination depends on which [endpoints](https://developers.facebook.com/docs/instagram-api/guides/content-publishing/#endpoints) your app will be using. Refer to our [endpoint](https://developers.facebook.com/docs/instagram-api/guides/content-publishing/#endpoints) references to determine which permissions they require.
 
-- [ads_management](https://developers.facebook.com/docs/permissions/reference/ads_management)
-- [business_management](https://developers.facebook.com/docs/permissions/reference/business_management)
-- [instagram_basic](https://developers.facebook.com/docs/permissions/reference/instagram_basic)
-- [instagram_content_publish](https://developers.facebook.com/docs/permissions/reference/instagram_content_publish)
-- [pages_read_engagement](https://developers.facebook.com/docs/permissions/reference/pages_read_engagement)
+* [ads\_management](https://developers.facebook.com/docs/permissions/reference/ads_management)
+* [business\_management](https://developers.facebook.com/docs/permissions/reference/business_management)
+* [instagram\_basic](https://developers.facebook.com/docs/permissions/reference/instagram_basic)
+* [instagram\_content\_publish](https://developers.facebook.com/docs/permissions/reference/instagram_content_publish)
+* [pages\_read\_engagement](https://developers.facebook.com/docs/permissions/reference/pages_read_engagement)
 
 If your app will be used by app users who do not have a [role](https://developers.facebook.com/docs/development/build-and-test/app-roles) on your app or a role in a [Business](https://www.facebook.com/business/help/442345745885606?id=180505742745347) that claimed your app, you must request approval for each permission via [App Review](https://developers.facebook.com/docs/app-review) before non-role app users can grant them to your app.
 
@@ -57,18 +57,18 @@ To check an IG Business acccount's current rate limit usage, query the [IG User 
 
 The API consists of the following endpoints. Refer to each endpoint's reference document for usage requirements.
 
-- [`POST /{ig-user-id}/media`](https://developers.facebook.com/docs/instagram-api/reference/ig-user/media#creating) — upload media and create media containers.
-- [`POST /{ig-user-id}/media_publish`](https://developers.facebook.com/docs/instagram-api/reference/ig-user/media_publish#creating) — publish uploaded media using their media containers.
-- [`GET /{ig-container-id}?fields=status_code`](https://developers.facebook.com/docs/instagram-api/reference/ig-container#reading) — check media container publishing eligibility and status.
-- [`GET /{ig-user-id}/content_publishing_limit`](https://developers.facebook.com/docs/instagram-api/reference/ig-user/content_publishing_limit) — check app user's current publishing rate limit usage.
+* [`POST /{ig-user-id}/media`](https://developers.facebook.com/docs/instagram-api/reference/ig-user/media#creating) — upload media and create media containers.
+* [`POST /{ig-user-id}/media_publish`](https://developers.facebook.com/docs/instagram-api/reference/ig-user/media_publish#creating) — publish uploaded media using their media containers.
+* [`GET /{ig-container-id}?fields=status_code`](https://developers.facebook.com/docs/instagram-api/reference/ig-container#reading) — check media container publishing eligibility and status.
+* [`GET /{ig-user-id}/content_publishing_limit`](https://developers.facebook.com/docs/instagram-api/reference/ig-user/content_publishing_limit) — check app user's current publishing rate limit usage.
 
 ### Examples <a id="common-uses"></a>
 
-- [Publishing Photos](https://developers.facebook.com/docs/instagram-api/guides/content-publishing/#publish-photos)
-- [Publishing Photos w/ Tagged Users](https://developers.facebook.com/docs/instagram-api/guides/content-publishing/#publish-with-tagged-users)
-- [Publishing Photos w/ Locations](https://developers.facebook.com/docs/instagram-api/guides/content-publishing/#publish-with-locations)
-- [Publishing Videos](https://developers.facebook.com/docs/instagram-api/guides/content-publishing/#publish-videos)
-- [Checking Rate Limit Usage](https://developers.facebook.com/docs/instagram-api/guides/content-publishing/#checking-rate-limit-usage)
+* [Publishing Photos](https://developers.facebook.com/docs/instagram-api/guides/content-publishing/#publish-photos)
+* [Publishing Photos w/ Tagged Users](https://developers.facebook.com/docs/instagram-api/guides/content-publishing/#publish-with-tagged-users)
+* [Publishing Photos w/ Locations](https://developers.facebook.com/docs/instagram-api/guides/content-publishing/#publish-with-locations)
+* [Publishing Videos](https://developers.facebook.com/docs/instagram-api/guides/content-publishing/#publish-videos)
+* [Checking Rate Limit Usage](https://developers.facebook.com/docs/instagram-api/guides/content-publishing/#checking-rate-limit-usage)
 
 #### Publishing Photos <a id="publish-photos"></a>
 
@@ -135,11 +135,11 @@ This would return a container ID which you would then use with the `POST /{ig-us
 
 **Notes**
 
-- The `user_tags` value must be an array of objects formatted with JSON.
-- You can only tag users with public Instagram accounts.
-- The object must contain all three properties \(`username`, `x`, and `y`\) for each user.
-- `x` and `y` values must be `float` numbers that originate from the top-left of the image, with a range of `0.0`–`1.0`.
-- The hashtag character \(\#\) is HTML URL-encoded in the request \(%23\).
+* The `user_tags` value must be an array of objects formatted with JSON.
+* You can only tag users with public Instagram accounts.
+* The object must contain all three properties \(`username`, `x`, and `y`\) for each user.
+* `x` and `y` values must be `float` numbers that originate from the top-left of the image, with a range of `0.0`–`1.0`.
+* The hashtag character \(\#\) is HTML URL-encoded in the request \(%23\).
 
 #### Publishing Photos w/ Locations <a id="publish-with-locations"></a>
 
@@ -251,10 +251,11 @@ GET graph.facebook.com/17841400008460056/content_publishing_limit
 
 If you are able to create a container for a video but the [`POST /{ig-user-id}/media_publish`](https://developers.facebook.com/docs/instagram-api/reference/ig-user/media_publish#creating) endpoint does not return the published media ID, you can get the container's publishing status by querying the `GET /{ig-container-id}?fields=status_code` endpoint. This endpoint will return one of the following:
 
-- `EXPIRED` — The container was not published within 24 hours and has expired.
-- `ERROR` — The container failed to complete the publishing process.
-- `FINISHED` — The container and its media object are ready to be published.
-- `IN_PROGRESS` — The container is still in the publishing process.
-- `PUBLISHED` — The container's media object has been published.
+* `EXPIRED` — The container was not published within 24 hours and has expired.
+* `ERROR` — The container failed to complete the publishing process.
+* `FINISHED` — The container and its media object are ready to be published.
+* `IN_PROGRESS` — The container is still in the publishing process.
+* `PUBLISHED` — The container's media object has been published.
 
 We recommend querying a container's status once per minute, for no more than 5 minutes.
+

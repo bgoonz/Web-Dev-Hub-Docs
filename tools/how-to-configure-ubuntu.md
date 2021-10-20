@@ -72,7 +72,7 @@ sudo apt install xorg --no-install-recommends -y
 
 There are a huge number of different graphical environments. There are 2 main types: Window managers and Tiling managers. The tiling manager is different in that it tries to occupy the maximum available screen area, and the floating mode \(more familiar windows, you need to turn it on for each window\). Moreover, by default, the tiling manager supports many desktops at once, which simplifies the work and allows you to switch between desktops instead of windows, in turn, on which there may be more than one window. Also, a significant advantage is the lightness of the tiling over the window manager.![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
-The main window manager options are: KDE, XFCE, LXQT, GNOME \(default Ubuntu Desktop Environment\), Budgie, Deepin.![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
+ The main window manager options are: KDE, XFCE, LXQT, GNOME \(default Ubuntu Desktop Environment\), Budgie, Deepin.![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
 Tiling managers include i3, awesome, xmonad, Qtile, dwm.![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
@@ -102,9 +102,9 @@ sudo apt install sddm -y
 
 ### **Additional View Improvement Programs:**
 
-- _**Conky**_ is a desktop add-on that allows you to dynamically display various system metrics. It has a very fine configuration and various themes.
-- _**Feh**_ is a console utility for viewing images, can also be used as an image installer on the desktop.
-- _**Compton**_ is a lightweight compositing manager for the X graphics server based on xcompmgr-dana that allows you to add different animations and transparency to different windows.
+* _**Conky**_ is a desktop add-on that allows you to dynamically display various system metrics. It has a very fine configuration and various themes.
+* _**Feh**_ is a console utility for viewing images, can also be used as an image installer on the desktop.
+* _**Compton**_ is a lightweight compositing manager for the X graphics server based on xcompmgr-dana that allows you to add different animations and transparency to different windows.
 
 How it looks after the actions are taken:![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)![image](https://hackernoon.com/_next/image?url=https%3A%2F%2Fcdn.hackernoon.com%2Fimages%2F6WifzFKsrTU6u6nvz13jxc6dQ1O2-4ge26me.jpeg&w=3840&q=75)
 
@@ -119,3 +119,4 @@ feh --bg-fil wallpaper.png
 ![](https://hackernoon.com/emojis/heart.png)![](https://hackernoon.com/emojis/light.png)![](https://hackernoon.com/emojis/money.png)![](https://hackernoon.com/emojis/thumbs-down.png)
 
 This guide shows that with minimal knowledge, you can collect various combinations of the Linux operating system environment according to your preferences, as well as customize and decorate them in various ways.
+

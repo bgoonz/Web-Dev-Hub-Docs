@@ -1,5 +1,7 @@
 # Jquery
 
+
+
 ### Selecting Elements with jQuery
 
 JavaScript is most commonly used to get or modify the content or value of the HTML elements on the page, as well as to apply some effects like show, hide, animations etc. But, before you can perform any action you need to find or select the target HTML element.
@@ -103,19 +105,19 @@ For instance, you can combine the class selector with an element selector to fin
 $(document).ready(function(){
     // Highlight only paragraph elements with class mark
     $("p.mark").css("background", "yellow");
-
+  
     // Highlight only span elements inside the element with ID mark
     $("#mark span").css("background", "yellow");
-
+  
     // Highlight li elements inside the ul elements
     $("ul li").css("background", "red");
-
+  
     // Highlight li elements only inside the ul element with id mark
     $("ul#mark li").css("background", "yellow");
-
+  
     // Highlight li elements inside all the ul element with class mark
     $("ul.mark li").css("background", "green");
-
+  
     // Highlight all anchor elements with target blank
     $('a[target="_blank"]').css("background", "yellow");
 });
@@ -135,22 +137,22 @@ In addition to the [CSS defined selectors](https://www.tutorialrepublic.com/css-
 $(document).ready(function(){
     // Highlight table rows appearing at odd places
     $("tr:odd").css("background", "yellow");
-
+  
     // Highlight table rows appearing at even places
     $("tr:even").css("background", "orange");
-
+  
     // Highlight first paragraph element
     $("p:first").css("background", "red");
-
+  
     // Highlight last paragraph element
     $("p:last").css("background", "green");
-
+  
     // Highlight all input elements with type text inside a form
     $("form :text").css("background", "purple");
-
+  
     // Highlight all input elements with type password inside a form
     $("form :password").css("background", "blue");
-
+  
     // Highlight all input elements with type submit inside a form
     $("form :submit").css("background", "violet");
 });
@@ -182,6 +184,10 @@ $(document).ready(function(){
 ```
 
 In the above example we've performed a simple jQuery operation by changing the color of the heading i.e. the [`<h1>`](https://www.tutorialrepublic.com/html-tutorial/html-headings.php) element using the jQuery element selector and `css()` method when the document is ready which is known as document ready event. We'll learn about jQuery selectors, events and methods in upcoming chapters.
+
+
+
+
 
 ## jQuery Events
 
@@ -505,7 +511,7 @@ The following example will display the current width and height of the browser w
 <script>
 $(document).ready(function(){
     $(window).resize(function() {
-        $(window).bind("resize", function(){
+        $(window).bind("resize", function(){ 
             $("p").text("Window width: " + $(window).width() + ", " + "Window height: " + $(window).height());
         });
     });
@@ -533,6 +539,8 @@ $(document).ready(function(){
 </script>
 ```
 
+
+
 ## jQuery Show and Hide Effects
 
 In this tutorial you will learn how to show hide HTML elements using jQuery.
@@ -541,7 +549,7 @@ In this tutorial you will learn how to show hide HTML elements using jQuery.
 
 You can show and hide HTML elements using the jQuery `show()` and `hide()` methods.
 
-The `hide()` method simply sets the [inline style](https://www.tutorialrepublic.com/html-tutorial/html-styles.php#inline-styles) `display: none` for the selected elements. Conversely, the `show()` method restores the [display properties](https://www.tutorialrepublic.com/css-tutorial/css-display.php) of the matched set of elements to whatever they initially were—typically block, inline, or inline-block—before the inline style `display: none` was applied to them. Here's is an example.
+The `hide()` method simply sets the [inline style](https://www.tutorialrepublic.com/html-tutorial/html-styles.php#inline-styles) `display: none` for the selected elements. Conversely, the `show()` method restores the [display properties](https://www.tutorialrepublic.com/css-tutorial/css-display.php) of the matched set of elements to whatever they initially were—typically block, inline, or inline-block—before the inline style `display: none` was applied to them. Here's is an example.
 
 **Example**
 
@@ -554,7 +562,7 @@ $(document).ready(function(){
     $(".hide-btn").click(function(){
         $("p").hide();
     });
-
+    
     // Show hidden paragraphs
     $(".show-btn").click(function(){
         $("p").show();
@@ -582,7 +590,7 @@ $(document).ready(function(){
         $("p.very-fast").hide(50);
         $("p.very-slow").hide(2000);
     });
-
+    
     // Show hidden paragraphs with different speeds
     $(".show-btn").click(function(){
         $("p.normal").show();
@@ -613,7 +621,7 @@ $(document).ready(function(){
             alert("The hide effect is completed.");
         });
     });
-
+    
     // Display alert message after showing paragraphs
     $(".show-btn").click(function(){
         $("p").show("slow", function(){
@@ -685,6 +693,8 @@ $(document).ready(function(){
 </script>
 ```
 
+
+
 ## jQuery Fading Effects
 
 In this tutorial you will learn how to fade in and out elements using jQuery.
@@ -704,7 +714,7 @@ $(document).ready(function(){
     $(".out-btn").click(function(){
         $("p").fadeOut();
     });
-
+    
     // Fading in hidden paragraphs
     $(".in-btn").click(function(){
         $("p").fadeIn();
@@ -730,7 +740,7 @@ $(document).ready(function(){
         $("p.very-fast").fadeOut(50);
         $("p.very-slow").fadeOut(2000);
     });
-
+    
     // Fading in hidden paragraphs with different speeds
     $(".in-btn").click(function(){
         $("p.normal").fadeIn();
@@ -761,7 +771,7 @@ $(document).ready(function(){
             alert("The fade-out effect is completed.");
         });
     });
-
+    
     // Display alert message after fading in paragraphs
     $(".in-btn").click(function(){
         $("p").fadeIn("slow", function(){
@@ -856,6 +866,8 @@ $(document).ready(function(){
 </script>
 ```
 
+
+
 ## jQuery Sliding Effects
 
 In this tutorial you will learn how to create slide motion effect using jQuery.
@@ -875,7 +887,7 @@ $(document).ready(function(){
     $(".up-btn").click(function(){
         $("p").slideUp();
     });
-
+    
     // Slide down hidden paragraphs
     $(".down-btn").click(function(){
         $("p").slideDown();
@@ -901,7 +913,7 @@ $(document).ready(function(){
         $("p.very-fast").slideUp(50);
         $("p.very-slow").slideUp(2000);
     });
-
+    
     // Sliding down hidden paragraphs with different speeds
     $(".down-btn").click(function(){
         $("p.normal").slideDown();
@@ -930,7 +942,7 @@ $(document).ready(function(){
             alert("The slide-up effect is completed.");
         });
     });
-
+    
     // Display alert message after sliding down paragraphs
     $(".down-btn").click(function(){
         $("p").slideDown("slow", function(){
@@ -1002,6 +1014,8 @@ $(document).ready(function(){
 </script>
 ```
 
+
+
 ## jQuery Animation Effects
 
 In this tutorial you will learn how to animate CSS properties using jQuery.
@@ -1018,9 +1032,9 @@ The basic syntax of the jQuery `animate()` method can be given with:$\(selector\
 
 The parameters of the `animate()` method have the following meanings:
 
-- The required properties parameter defines the [CSS properties](https://www.tutorialrepublic.com/css-reference/css3-properties.php) to be animated.
-- The optional duration parameter specifies how long the animation will run. Durations can be specified either using one of the predefined string `'slow'` or `'fast'`, or in a number of milliseconds; higher values indicate slower animations.
-- The optional [callback](https://www.tutorialrepublic.com/jquery-tutorial/jquery-callback.php) parameter is a function to call once the animation is complete.
+* The required properties parameter defines the [CSS properties](https://www.tutorialrepublic.com/css-reference/css3-properties.php) to be animated.
+* The optional duration parameter specifies how long the animation will run. Durations can be specified either using one of the predefined string `'slow'` or `'fast'`, or in a number of milliseconds; higher values indicate slower animations.
+* The optional [callback](https://www.tutorialrepublic.com/jquery-tutorial/jquery-callback.php) parameter is a function to call once the animation is complete.
 
 Here's a simple example of the jQuery `animate()` method that animates an image from its original position to the right by 300 pixels on click of the button.
 
@@ -1107,7 +1121,7 @@ You can also define the relative values for the animated properties. If a value 
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-        $(".box").animate({
+        $(".box").animate({            
             top: "+=50px",
             left: "+=50px",
             width: "+=50px",
@@ -1138,6 +1152,8 @@ $(document).ready(function(){
 </script>
 ```
 
+
+
 ## jQuery Chaining
 
 In this tutorial you will learn how chain multiple methods in jQuery.
@@ -1158,7 +1174,7 @@ $(document).ready(function(){
     $("button").click(function(){
         $("p").animate({width: "100%"}).animate({fontSize: "46px"}).animate({borderWidth: 30});
     });
-});
+});  
 </script>
 ```
 
@@ -1181,7 +1197,7 @@ $(document).ready(function(){
             .animate({fontSize: "46px"})
             .animate({borderWidth: 30});
     });
-});
+});  
 </script>
 ```
 
@@ -1199,7 +1215,7 @@ $(document).ready(function(){
     $("button").click(function(){
         // This will work
         $("h1").html("Hello World!").addClass("test");
-
+        
         // This will NOT work
         $("p").html().addClass("test");
     });
@@ -1229,7 +1245,7 @@ $(document).ready(function(){
     $("button").click(function(){
         $("p").slideToggle("slow");
         alert("The slide toggle effect has completed.");
-    });
+    });   
 });
 </script>
 ```
@@ -1248,7 +1264,7 @@ $(document).ready(function(){
             // Code to be executed once effect is complete
             alert("The slide toggle effect has completed.");
         });
-    });
+    });   
 });
 </script>
 ```
@@ -1269,9 +1285,10 @@ $(document).ready(function(){
             // Code to be executed once effect is complete
             alert("The slide toggle effect has completed.");
         });
-    });
+    });   
 });
 </script>
 ```
 
 If you try the above example code, it will display the same alert message two times once per [`<h1>`](https://www.tutorialrepublic.com/html-reference/html-headings-tag.php) and [`<p>`](https://www.tutorialrepublic.com/html-reference/html-p-tag.php) element, upon clicking the trigger button.
+

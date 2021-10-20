@@ -1,5 +1,7 @@
 # Install PIP
 
+
+
 ## Getting Started
 
 To get started with using pip, you should [install Python](https://realpython.com/installing-python/) on your system.
@@ -17,7 +19,7 @@ $ python -m pip --version
 pip X.Y.Z from ... (python 3.N.N)
 ```
 
-![Copy to clipboard](https://pip.pypa.io/en/stable/_static/copy-button.svg)MacOSWindows
+![Copy to clipboard](https://pip.pypa.io/en/stable/\_static/copy-button.svg)MacOSWindows
 
 If that worked, congratulations! You have a working pip in your environment.
 
@@ -35,7 +37,7 @@ $ python -m pip install sampleproject
 Successfully installed sampleproject
 ```
 
-![Copy to clipboard](https://pip.pypa.io/en/stable/_static/copy-button.svg)MacOSWindows
+![Copy to clipboard](https://pip.pypa.io/en/stable/\_static/copy-button.svg)MacOSWindows
 
 By default, pip will fetch packages from [Python Package Index](https://pypi.org), a repository of software for the Python programming language where anyone can upload packages.
 
@@ -49,7 +51,7 @@ $ python -m pip install git+https://github.com/pypa/sampleproject.git@main
 Successfully installed sampleproject
 ```
 
-![Copy to clipboard](https://pip.pypa.io/en/stable/_static/copy-button.svg)MacOSWindows
+![Copy to clipboard](https://pip.pypa.io/en/stable/\_static/copy-button.svg)MacOSWindows
 
 See [VCS Support](https://pip.pypa.io/en/stable/topics/vcs-support/) for more information about this syntax.
 
@@ -57,8 +59,8 @@ See [VCS Support](https://pip.pypa.io/en/stable/topics/vcs-support/) for more in
 
 pip can install directly from distribution files as well. They come in 2 forms:
 
-- [source distribution](https://packaging.python.org/glossary/#term-Source-Distribution-or-sdist) (usually shortened to “sdist”)
-- [wheel distribution](https://packaging.python.org/glossary/#term-Wheel) (usually shortened to “wheel”)
+* [source distribution](https://packaging.python.org/glossary/#term-Source-Distribution-or-sdist) (usually shortened to “sdist”)
+* [wheel distribution](https://packaging.python.org/glossary/#term-Wheel) (usually shortened to “wheel”)
 
 Linux
 
@@ -71,7 +73,7 @@ $ python -m pip install sampleproject-1.0-py3-none-any.whl
 Successfully installed sampleproject
 ```
 
-![Copy to clipboard](https://pip.pypa.io/en/stable/_static/copy-button.svg)MacOSWindows
+![Copy to clipboard](https://pip.pypa.io/en/stable/\_static/copy-button.svg)MacOSWindows
 
 #### Install multiple packages using a requirements file
 
@@ -85,7 +87,7 @@ $ python -m pip install -r requirements.txt
 Successfully installed sampleproject
 ```
 
-![Copy to clipboard](https://pip.pypa.io/en/stable/_static/copy-button.svg)MacOSWindows
+![Copy to clipboard](https://pip.pypa.io/en/stable/\_static/copy-button.svg)MacOSWindows
 
 #### Upgrade a package
 
@@ -99,7 +101,7 @@ Proceed (y/n)? y
 Successfully uninstalled sampleproject
 ```
 
-![Copy to clipboard](https://pip.pypa.io/en/stable/_static/copy-button.svg)MacOSWindows
+![Copy to clipboard](https://pip.pypa.io/en/stable/\_static/copy-button.svg)MacOSWindows
 
 #### Uninstall a package
 
@@ -113,25 +115,28 @@ Proceed (y/n)? y
 Successfully uninstalled sampleproject
 ```
 
-![Copy to clipboard](https://pip.pypa.io/en/stable/_static/copy-button.svg)MacOSWindows
+![Copy to clipboard](https://pip.pypa.io/en/stable/\_static/copy-button.svg)MacOSWindows
 
 ### Next Steps
 
 It is recommended to learn about what virtual environments are and how to use them. This is covered in the [“Installing Packages”](https://packaging.python.org/tutorials/installing-packages/) tutorial on packaging.python.org.
 
-[NextInstallation](https://pip.pypa.io/en/stable/installation/)[PreviousHome](https://pip.pypa.io/en/stable/)[Copyright](https://pip.pypa.io/en/stable/copyright/) © The pip developers. | Built with [Sphinx](https://www.sphinx-doc.org) and [@pradyunsg](https://pradyunsg.me)'s [Furo theme](https://github.com/pradyunsg/furo). | [Show Source](https://pip.pypa.io/en/stable/_sources/getting-started.md.txt)CONTENTS
+[NextInstallation](https://pip.pypa.io/en/stable/installation/)[PreviousHome](https://pip.pypa.io/en/stable/)[Copyright](https://pip.pypa.io/en/stable/copyright/) © The pip developers. | Built with [Sphinx](https://www.sphinx-doc.org) and [@pradyunsg](https://pradyunsg.me)'s [Furo theme](https://github.com/pradyunsg/furo). | [Show Source](https://pip.pypa.io/en/stable/\_sources/getting-started.md.txt)CONTENTS
 
-- - [Ensure you have a working pip](https://pip.pypa.io/en/stable/getting-started/#ensure-you-have-a-working-pip)
-  - [Common tasks](https://pip.pypa.io/en/stable/getting-started/#common-tasks)
-    - [Install a package](https://pip.pypa.io/en/stable/getting-started/#install-a-package)
-    - [Install a package from GitHub](https://pip.pypa.io/en/stable/getting-started/#install-a-package-from-github)
-    - [Install a package from a distribution file](https://pip.pypa.io/en/stable/getting-started/#install-a-package-from-a-distribution-file)
-    - [Install multiple packages using a requirements file](https://pip.pypa.io/en/stable/getting-started/#install-multiple-packages-using-a-requirements-file)
-    - [Upgrade a package](https://pip.pypa.io/en/stable/getting-started/#upgrade-a-package)
-    - [Uninstall a package](https://pip.pypa.io/en/stable/getting-started/#uninstall-a-package)
-  - [Next Steps](https://pip.pypa.io/en/stable/getting-started/#next-steps)
+*
+  * [Ensure you have a working pip](https://pip.pypa.io/en/stable/getting-started/#ensure-you-have-a-working-pip)
+  * [Common tasks](https://pip.pypa.io/en/stable/getting-started/#common-tasks)
+    * [Install a package](https://pip.pypa.io/en/stable/getting-started/#install-a-package)
+    * [Install a package from GitHub](https://pip.pypa.io/en/stable/getting-started/#install-a-package-from-github)
+    * [Install a package from a distribution file](https://pip.pypa.io/en/stable/getting-started/#install-a-package-from-a-distribution-file)
+    * [Install multiple packages using a requirements file](https://pip.pypa.io/en/stable/getting-started/#install-multiple-packages-using-a-requirements-file)
+    * [Upgrade a package](https://pip.pypa.io/en/stable/getting-started/#upgrade-a-package)
+    * [Uninstall a package](https://pip.pypa.io/en/stable/getting-started/#uninstall-a-package)
+  * [Next Steps](https://pip.pypa.io/en/stable/getting-started/#next-steps)
 
 Install Python
+
+
 
 ### How to Install Python on Windows
 
@@ -143,7 +148,7 @@ There are three installation methods on Windows:
 
 In this section, you’ll learn how to check which version of Python, if any, is installed on your Windows computer. You’ll also learn which of the three installation methods you should use.
 
-[![](https://img.realpython.net/1f0846795c8392a130000105121b5a3c)](https://srv.realpython.net/click/6931855635/?c=50660871541&p=58946116052&r=34494)[ Remove ads](https://realpython.com/account/join/)
+[![](https://img.realpython.net/1f0846795c8392a130000105121b5a3c)](https://srv.realpython.net/click/6931855635/?c=50660871541\&p=58946116052\&r=34494)[ Remove ads](https://realpython.com/account/join/)
 
 #### How to Check Your Python Version on Windows
 
@@ -220,7 +225,7 @@ If you’re new to Python and focused primarily on learning the language rather 
 
 On the other hand, if you’re an experienced developer looking to develop professional software in a Windows environment, then the official Python.org installer is the right choice. Your installation won’t be limited by Microsoft Store policies, and you can control where the executable is installed and even add Python to `PATH` if necessary.
 
-[![](https://img.realpython.net/e1ba3fda38afbf853a398cfa81ae1bca)](https://srv.realpython.net/click/36956403387/?c=50370534298&p=58946116052&r=85306)[ Remove ads](https://realpython.com/account/join/)
+[![](https://img.realpython.net/e1ba3fda38afbf853a398cfa81ae1bca)](https://srv.realpython.net/click/36956403387/?c=50370534298\&p=58946116052\&r=85306)[ Remove ads](https://realpython.com/account/join/)
 
 #### How to Install From the Microsoft Store
 
@@ -232,7 +237,7 @@ Open the Microsoft Store app and search for `Python`.
 
 You’ll likely see multiple versions that you can choose to install:
 
-[![The Microsoft Store search results for "Python"](https://files.realpython.com/media/Screen_Shot_2020-07-16_at_11.06.17_AM.4b41c401c5aa.png)](https://files.realpython.com/media/Screen_Shot_2020-07-16_at_11.06.17_AM.4b41c401c5aa.png)
+[![The Microsoft Store search results for "Python"](https://files.realpython.com/media/Screen_Shot\_2020-07-16\_at\_11.06.17\_AM.4b41c401c5aa.png)](https://files.realpython.com/media/Screen_Shot\_2020-07-16\_at\_11.06.17\_AM.4b41c401c5aa.png)
 
 Select _Python 3.8_, or the highest version number you see available in the app, to open the installation page.
 
@@ -284,7 +289,7 @@ When the installer is finished downloading, move on to the next step.
 
 Once you’ve chosen and downloaded an installer, run it by double-clicking on the downloaded file. A dialog box like the one below will appear:
 
-[![Windows installation dialog](https://files.realpython.com/media/Screen_Shot_2020-07-16_at_11.19.15_AM.6e62bfc6eede.png)](https://files.realpython.com/media/Screen_Shot_2020-07-16_at_11.19.15_AM.6e62bfc6eede.png)
+[![Windows installation dialog](https://files.realpython.com/media/Screen_Shot\_2020-07-16\_at\_11.19.15\_AM.6e62bfc6eede.png)](https://files.realpython.com/media/Screen_Shot\_2020-07-16\_at\_11.19.15\_AM.6e62bfc6eede.png)
 
 There are four things to notice about this dialog box:
 
@@ -301,11 +306,11 @@ Customize the installation to meet your needs using the options available on the
 
 Congratulations—you now have the latest version of Python 3 on your Windows machine!
 
-[![](https://img.realpython.net/b4e37fe7eacd981e87c0ebb599642da6)](https://srv.realpython.net/click/32768813333/?c=50370534298&p=58946116052&r=13304)[ Remove ads](https://realpython.com/account/join/)
+[![](https://img.realpython.net/b4e37fe7eacd981e87c0ebb599642da6)](https://srv.realpython.net/click/32768813333/?c=50370534298\&p=58946116052\&r=13304)[ Remove ads](https://realpython.com/account/join/)
 
 ### How to Install Python on macOS
 
-Python 2 comes preinstalled on older versions of macOS. This is no longer the case for current versions of macOS, [starting with macOS Catalina](https://developer.apple.com/documentation/macos-release-notes/macos-catalina-10_15-release-notes#Scripting-Language-Runtimes).
+Python 2 comes preinstalled on older versions of macOS. This is no longer the case for current versions of macOS, [starting with macOS Catalina](https://developer.apple.com/documentation/macos-release-notes/macos-catalina-10\_15-release-notes#Scripting-Language-Runtimes).
 
 There are two installation methods on macOS:
 
@@ -348,11 +353,11 @@ $ python3 --version
 Python 3.6.10
 ```
 
-You’ll want to get the latest version of Python if any of these conditions is true:
+ You’ll want to get the latest version of Python if any of these conditions is true:
 
-- None of the above commands returns a version number.
-- The only version you see displayed is in the Python 2.X series.
-- You have a version of Python 3 that isn’t the latest available, which was version 3.8.4 as of this writing.
+* None of the above commands returns a version number.
+* The only version you see displayed is in the Python 2.X series.
+* You have a version of Python 3 that isn’t the latest available, which was version 3.8.4 as of this writing.
 
 #### What Your Options Are
 
@@ -381,7 +386,7 @@ The Homebrew package manager is a popular method for installing Python on macOS 
 
 However, the Python distribution offered by Homebrew isn’t controlled by the Python Software Foundation and could change at any time. The most reliable method on macOS is to use the official installer, especially if you plan on doing [Python GUI programming with Tkinter](https://realpython.com/python-gui-tkinter/).
 
-[![](https://img.realpython.net/4abc783883f79f916711682eb20f448e)](https://srv.realpython.net/click/30513864559/?c=62098619220&p=58946116052&r=59590)[ Remove ads](https://realpython.com/account/join/)
+[![](https://img.realpython.net/4abc783883f79f916711682eb20f448e)](https://srv.realpython.net/click/30513864559/?c=62098619220\&p=58946116052\&r=59590)[ Remove ads](https://realpython.com/account/join/)
 
 #### How to Install From the Official Installer
 
@@ -403,7 +408,7 @@ When the installer is finished downloading, move on to the next step.
 
 Run the installer by double-clicking the downloaded file. You should see the following window:
 
-[![The macOS installation window.](https://files.realpython.com/media/Screen_Shot_2020-07-15_at_8.31.24_AM.2e5b82dbc195.png)](https://files.realpython.com/media/Screen_Shot_2020-07-15_at_8.31.24_AM.2e5b82dbc195.png)
+[![The macOS installation window.](https://files.realpython.com/media/Screen_Shot\_2020-07-15\_at\_8.31.24\_AM.2e5b82dbc195.png)](https://files.realpython.com/media/Screen_Shot\_2020-07-15\_at\_8.31.24\_AM.2e5b82dbc195.png)
 
 Follow these steps to complete the installation:
 
@@ -422,14 +427,13 @@ For users who need to install from the command line, especially those who won’
 If you already have Homebrew installed, then you can skip this step. If you don’t have Homebrew installed, then use the following procedure to install Homebrew:
 
 1. Open a browser and navigate to [http://brew.sh/](http://brew.sh).
-2. You should see a command for installing Homebrew near the top of the page under the tile “Install Homebrew.” This command will be something like the following:
+2.  You should see a command for installing Homebrew near the top of the page under the tile “Install Homebrew.” This command will be something like the following:
 
-   ```
-   $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-   ```
+    ```
+    $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    ```
 
-   Highlight the command with your cursor and press Cmd+C to copy it to your clipboard.
-
+    Highlight the command with your cursor and press Cmd+C to copy it to your clipboard.
 3. Open a terminal window and paste the command, then press Enter. This will begin the Homebrew installation.
 4. Enter your macOS user password when prompted.
 
@@ -446,11 +450,11 @@ Now that Homebrew is installed, you’re ready to install Python.
 Follow these steps to complete the installation with Homebrew:
 
 1. Open a terminal application.
-2. Type in the following command to upgrade Homebrew:
+2.  Type in the following command to upgrade Homebrew:
 
-   ```
-   $ brew update && brew upgrade
-   ```
+    ```
+    $ brew update && brew upgrade
+    ```
 
 Installing with Homebrew is now as straightforward as running the command `brew install python3`. This will download and set up the latest version of Python on your machine.
 
@@ -462,7 +466,7 @@ You can make sure everything went correctly by testing if you can access Python 
 
 Congratulations—you now have Python on your macOS system!
 
-[![](https://img.realpython.net/cc86980015e727765da60f4377ac2185)](https://srv.realpython.net/click/66325228902/?c=62098619220&p=58946116052&r=20963)[ Remove ads](https://realpython.com/account/join/)
+[![](https://img.realpython.net/cc86980015e727765da60f4377ac2185)](https://srv.realpython.net/click/66325228902/?c=62098619220\&p=58946116052\&r=20963)[ Remove ads](https://realpython.com/account/join/)
 
 ### How to Install Python on Linux
 
@@ -528,7 +532,7 @@ There are three main reasons that you might choose to build Python from source c
 
 To complete the installation on your Linux machine, find your Linux distribution below and follow the steps provided.
 
-[![](https://img.realpython.net/2f88361b887b78ff6d7d0ccb73261a45)](https://srv.realpython.net/click/14590204085/?c=62098619220&p=58946116052&r=48596)[ Remove ads](https://realpython.com/account/join/)
+[![](https://img.realpython.net/2f88361b887b78ff6d7d0ccb73261a45)](https://srv.realpython.net/click/14590204085/?c=62098619220\&p=58946116052\&r=48596)[ Remove ads](https://realpython.com/account/join/)
 
 #### How to Install on Ubuntu and Linux Mint
 
@@ -549,24 +553,23 @@ Codename:       xenial
 
 Follow the instructions below that match the version number you see under `Release` in the console output:
 
-- **Ubuntu 18.04, Ubuntu 20.04 and above:** Python 3.8 doesn’t come by default on Ubuntu 18.04 and above, but it is available in the Universe repository. To install version 3.8, open a terminal application and type the following commands:
+*   **Ubuntu 18.04, Ubuntu 20.04 and above:** Python 3.8 doesn’t come by default on Ubuntu 18.04 and above, but it is available in the Universe repository. To install version 3.8, open a terminal application and type the following commands:
 
-  ```
-  $ sudo apt-get update
-  $ sudo apt-get install python3.8 python3-pip
-  ```
+    ```
+    $ sudo apt-get update
+    $ sudo apt-get install python3.8 python3-pip
+    ```
 
-  Once the installation is complete, you can run Python 3.8 with the `python3.8` command and `pip` with the `pip3` command.
+    Once the installation is complete, you can run Python 3.8 with the `python3.8` command and `pip` with the `pip3` command.
+*   **Linux Mint and Ubuntu 17 and below:** Python 3.8 isn’t in the Universe repository, so you need to get it from a Personal Package Archive (PPA). For example, to install from the [“deadsnakes” PPA](https://launchpad.net/\~deadsnakes/+archive/ubuntu/ppa), use the following commands:
 
-- **Linux Mint and Ubuntu 17 and below:** Python 3.8 isn’t in the Universe repository, so you need to get it from a Personal Package Archive (PPA). For example, to install from the [“deadsnakes” PPA](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa), use the following commands:
+    ```
+    $ sudo add-apt-repository ppa:deadsnakes/ppa
+    $ sudo apt-get update
+    $ sudo apt-get install python3.8 python3-pip
+    ```
 
-  ```
-  $ sudo add-apt-repository ppa:deadsnakes/ppa
-  $ sudo apt-get update
-  $ sudo apt-get install python3.8 python3-pip
-  ```
-
-  Once the installation is complete, you can run Python 3.8 with the `python3.8` command and run `pip` with the `pip3` command.
+    Once the installation is complete, you can run Python 3.8 with the `python3.8` command and run `pip` with the `pip3` command.
 
 Congratulations! You now have Python 3 set up on your machine!
 
@@ -617,7 +620,7 @@ $ sudo yum -y install gcc openssl-devel bzip2-devel libffi-devel
 
 When everything is finished installing, skip ahead to the [How to Build Python From Source Code](https://realpython.com/installing-python/#how-to-build-python-from-source-code) section.
 
-[![](https://img.realpython.net/babd32c4a9b6cf2453889710f58b5914)](https://srv.realpython.net/click/53616533979/?c=62098619220&p=58946116052&r=49638)[ Remove ads](https://realpython.com/account/join/)
+[![](https://img.realpython.net/babd32c4a9b6cf2453889710f58b5914)](https://srv.realpython.net/click/53616533979/?c=62098619220\&p=58946116052\&r=49638)[ Remove ads](https://realpython.com/account/join/)
 
 #### How to Install on Arch Linux
 
@@ -655,7 +658,6 @@ There are a few distro-specific steps involved in building Python from scratch. 
     $ sudo apt-get update
     $ sudo apt-get upgrade
     ```
-
 2.  Next, make sure you have all of the build requirements installed:
 
     ```
@@ -681,7 +683,6 @@ Now that your system is ready to go, it’s time to start building Python!
     $ tar xvf Python-3.8.4.tgz
     $ cd Python-3.8.4
     ```
-
 2.  Now you need to run the `./configure` tool to prepare the build:
 
     ```
@@ -689,13 +690,11 @@ Now that your system is ready to go, it’s time to start building Python!
     ```
 
     The `enable-optimizations` flag will enable some optimizations within Python to make it run about 10 percent faster. Doing this may add twenty or thirty minutes to the compilation time. The `with-ensurepip=install` flag will install `pip` bundled with this installation.
-
 3.  Next, you build Python using `make`. The `-j` option simply tells `make` to split the building into parallel steps to speed up the compilation. Even with the parallel builds, this step can take several minutes:
 
     ```
     $ make -j 8
     ```
-
 4.  Finally, you’ll want to install your new version of Python. You’ll use the `altinstall` target here to avoid overwriting the system Python. Since you’re installing into `/usr/bin`, you’ll need to run as root:
 
     ```
