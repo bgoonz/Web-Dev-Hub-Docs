@@ -4,6 +4,18 @@ description: initial page
 
 # Home
 
+### This Space:
+
+
+- [Web Dev Docs](https://bryan-guner.gitbook.io/my-docs/)
+- [React](https://bryan-guner.gitbook.io/my-docs/v/mynotes/)
+- [Electrical Engineering](https://bryan-guner.gitbook.io/my-docs/v/electrical-engineering/)
+- [Knowledge](https://bryan-guner.gitbook.io/my-docs/v/knowledge/)
+- [Blockchain](https://bryan-guner.gitbook.io/my-docs/v/solidarity-blockchain-nfts/)
+- [EWmbeds](https://bryan-guner.gitbook.io/my-docs/v/embeds/)
+
+
+
 {% content-ref url="navigation.md" %}
 [navigation.md](navigation.md)
 {% endcontent-ref %}
@@ -14,6 +26,11 @@ description: initial page
 {% endtab %}
 
 {% tab title="Website Nav" %}
+
+
+
+
+
 
 ## Table of contents
 
