@@ -51,6 +51,7 @@
       * [Redux](programming-languages/programming-languages/javascript/react/redux.md)
       * [Redux Docs](programming-languages/programming-languages/javascript/react/redux-docs/README.md)
         * [Redux Resources](programming-languages/programming-languages/javascript/react/redux-docs/redux-resources.md)
+  * [CHEATSHEETS](programming-languages/programming-languages/cheatsheets.md)
   * [Java](programming-languages/programming-languages/java.md)
   * [Html](programming-languages/programming-languages/html.md)
   * [Markdown](programming-languages/programming-languages/markdown.md)

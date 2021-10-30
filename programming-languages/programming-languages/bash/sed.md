@@ -12,10 +12,10 @@ SED is written and maintained by the Free Software Foundation (FSF) and it is di
 
 SED can be used in many different ways, such as:
 
-* Text substitution,
-* Selective printing of text files,
-* In-a-place editing of text files,
-* Non-interactive editing of text files, and many more.
+- Text substitution,
+- Selective printing of text files,
+- In-a-place editing of text files,
+- Non-interactive editing of text files, and many more.
 
 ## Stream Editor - Environment
 
@@ -83,36 +83,41 @@ As GNU SED is a part of the GNU project, its source code is available for free d
 
 The following installation is applicable to any GNU/Linux software, and for most other freely-available programs as well. Here are the installation steps:
 
-*   Download the source code from an authentic place. The command-line utility **wget** serves this purpose.
+- Download the source code from an authentic place. The command-line utility **wget** serves this purpose.
 
-    ```
-    [jerry]$ wget ftp://ftp.gnu.org/gnu/sed/sed-4.2.2.tar.bz2
-    ```
-*   Decompress and extract the downloaded source code.
+  ```
+  [jerry]$ wget ftp://ftp.gnu.org/gnu/sed/sed-4.2.2.tar.bz2
+  ```
 
-    ```
-    [jerry]$ tar xvf sed-4.2.2.tar.bz2
-    ```
-*   Change into the directory and run configure.
+- Decompress and extract the downloaded source code.
 
-    ```
-    [jerry]$ ./configure
-    ```
-*   Upon successful completion, the **configure** generates Makefile. To compile the source code, issue a **make** command.
+  ```
+  [jerry]$ tar xvf sed-4.2.2.tar.bz2
+  ```
 
-    ```
-    [jerry]$ make
-    ```
-*   You can run the test suite to ensure the build is clean. This is an optional step.
+- Change into the directory and run configure.
 
-    ```
-    [jerry]$ make check
-    ```
-*   Finally, install the SED utility. Make sure you have superuser privileges.
+  ```
+  [jerry]$ ./configure
+  ```
 
-    ```
-    [jerry]$ sudo make install
-    ```
+- Upon successful completion, the **configure** generates Makefile. To compile the source code, issue a **make** command.
+
+  ```
+  [jerry]$ make
+  ```
+
+- You can run the test suite to ensure the build is clean. This is an optional step.
+
+  ```
+  [jerry]$ make check
+  ```
+
+- Finally, install the SED utility. Make sure you have superuser privileges.
+
+  ```
+  [jerry]$ sudo make install
+  ```
 
 That is it! You have successfully compiled and installed SED. Verify it by executing the **sed** command as follows:
 
@@ -140,21 +145,21 @@ Be sure to include the word "sed" somewhere in the "Subject:" field.
 
 In this chapter, we will explore how SED exactly works. To become an expert SED user, one needs to know its internals. SED follows a simple workflow: Read, Execute, and Display. The following diagram depicts the workflow.
 
-![Stream Editor Workflow](https://www.tutorialspoint.com/sed/images/sed\_workflow.jpg)
+![Stream Editor Workflow](https://www.tutorialspoint.com/sed/images/sed_workflow.jpg)
 
-* **Read**: SED reads a line from the input stream (file, pipe, or stdin) and stores it in its internal buffer called **pattern buffer**.
-* **Execute**: All SED commands are applied sequentially on the pattern buffer. By default, SED commands are applied on all lines (globally) unless line addressing is specified.
-* **Display**: Send the (modified) contents to the output stream. After sending the data, the pattern buffer will be empty.
-* The above process repeats until the file is exhausted.
+- **Read**: SED reads a line from the input stream (file, pipe, or stdin) and stores it in its internal buffer called **pattern buffer**.
+- **Execute**: All SED commands are applied sequentially on the pattern buffer. By default, SED commands are applied on all lines (globally) unless line addressing is specified.
+- **Display**: Send the (modified) contents to the output stream. After sending the data, the pattern buffer will be empty.
+- The above process repeats until the file is exhausted.
 
 ### Points to Note
 
-* Pattern buffer is a private, in-memory, volatile storage area used by the SED.
-* By default, all SED commands are applied on the pattern buffer, hence the input file remains unchanged. GNU SED provides a way to modify the input file in-a-place. We will explore about it in later sections.
-* There is another memory area called **hold buffer** which is also private, in- memory, volatile storage area. Data can be stored in a hold buffer for later retrieval. At the end of each cycle, SED removes the contents of the pattern buffer but the contents of the hold buffer remains persistent between SED cycles. However SED commands cannot be directly executed on hold buffer, hence SED allows data movement between the hold buffer and the pattern buffer.
-* Initially both pattern and hold buffers are empty.
-* If no input files are provided, then SED accepts input from the standard input stream (stdin).
-* If address range is not provided by default, then SED operates on each line.
+- Pattern buffer is a private, in-memory, volatile storage area used by the SED.
+- By default, all SED commands are applied on the pattern buffer, hence the input file remains unchanged. GNU SED provides a way to modify the input file in-a-place. We will explore about it in later sections.
+- There is another memory area called **hold buffer** which is also private, in- memory, volatile storage area. Data can be stored in a hold buffer for later retrieval. At the end of each cycle, SED removes the contents of the pattern buffer but the contents of the hold buffer remains persistent between SED cycles. However SED commands cannot be directly executed on hold buffer, hence SED allows data movement between the hold buffer and the pattern buffer.
+- Initially both pattern and hold buffers are empty.
+- If no input files are provided, then SED accepts input from the standard input stream (stdin).
+- If address range is not provided by default, then SED operates on each line.
 
 #### Examples
 
@@ -276,16 +281,17 @@ On executing the above code, you get the following result:
 
 SED supports the following standard options:
 
-*   \-n: Default printing of pattern buffer. For example, the following SED command does not show any output:
+- \-n: Default printing of pattern buffer. For example, the following SED command does not show any output:
 
-    ```
-    [jerry]$ sed -n '' quote.txt
-    ```
-*   \-e : Next argument is an editing command. Here, angular brackets imply mandatory parameter. By using this option, we can specify multiple commands. Let us print each line twice:
+  ```
+  [jerry]$ sed -n '' quote.txt
+  ```
 
-    ```
-    [jerry]$ sed -e '' -e 'p' quote.txt
-    ```
+- \-e : Next argument is an editing command. Here, angular brackets imply mandatory parameter. By using this option, we can specify multiple commands. Let us print each line twice:
+
+  ```
+  [jerry]$ sed -e '' -e 'p' quote.txt
+  ```
 
 On executing the above code, you get the following result:
 
@@ -296,7 +302,7 @@ There is only one thing that makes a dream impossible to achieve: the fear of fa
  - Paulo Coelho, The Alchemist
 ```
 
-* \-f : Next argument is a file containing editing commands. The angular brackets imply mandatory parameter. In the following example, we specify print command through file:
+- \-f : Next argument is a file containing editing commands. The angular brackets imply mandatory parameter. In the following example, we specify print command through file:
 
 ```
 [jerry]$ echo "p" > commands
@@ -314,16 +320,16 @@ There is only one thing that makes a dream impossible to achieve: the fear of fa
 
 Let us quickly go through the GNU specific SED options. Note that these options are GNU specific; and may not be supported by other variants of the SED. In later sections, we will discuss these options in more details.
 
-* \-n, --quiet, --silent: Same as standard -n option.
-* \-e script, --expression=script: Same as standard -e option.
-* \-f script-file, --file=script-file: Same as standard -f option.
-* \--follow-symlinks: If this option is provided, the SED follows symbolic links while editing files in place.
-* \-i\[SUFFIX], --in-place\[=SUFFIX]: This option is used to edit file in place. If suffix is provided, it takes a backup of the original file, otherwise it overwrites the original file.
-* \-l N, --line-lenght=N: This option sets the line length for l command to N characters.
-* \--posix: This option disables all GNU extensions.
-* \-r, --regexp-extended: This option allows to use extended regular expressions rather than basic regular expressions.
-* \-u, --unbuffered: When this option is provided, the SED loads minimal amount of data from the input files and flushes the output buffers more often. It is useful for editing the output of "tail -f" when you do not want to wait for the output.
-* \-z, --null-data: By default, the SED separates each line by a new-line character. If NULL-data option is provided, it separates the lines by NULL characters.
+- \-n, --quiet, --silent: Same as standard -n option.
+- \-e script, --expression=script: Same as standard -e option.
+- \-f script-file, --file=script-file: Same as standard -f option.
+- \--follow-symlinks: If this option is provided, the SED follows symbolic links while editing files in place.
+- \-i\[SUFFIX], --in-place\[=SUFFIX]: This option is used to edit file in place. If suffix is provided, it takes a backup of the original file, otherwise it overwrites the original file.
+- \-l N, --line-lenght=N: This option sets the line length for l command to N characters.
+- \--posix: This option disables all GNU extensions.
+- \-r, --regexp-extended: This option allows to use extended regular expressions rather than basic regular expressions.
+- \-u, --unbuffered: When this option is provided, the SED loads minimal amount of data from the input files and flushes the output buffers more often. It is useful for editing the output of "tail -f" when you do not want to wait for the output.
+- \-z, --null-data: By default, the SED separates each line by a new-line character. If NULL-data option is provided, it separates the lines by NULL characters.
 
 ## Stream Editor - Loops
 
@@ -370,9 +376,9 @@ A Game of Thrones, George R. R. Martin
 
 At first glance, the above script may look cryptic. Let us demystify this.
 
-* The first two commands are self-explanatory **h;n;H;x** and **s/\n/, /** combine the book title and its author separated by a comma(,).
-* The third command jumps to the label **Print** only when the pattern does not match, otherwise substitution is performed by the fourth command.
-* **:Print** is just a label name and as you already know, **p** is the print command.
+- The first two commands are self-explanatory **h;n;H;x** and **s/\n/, /** combine the book title and its author separated by a comma(,).
+- The third command jumps to the label **Print** only when the pattern does not match, otherwise substitution is performed by the fourth command.
+- **:Print** is just a label name and as you already know, **p** is the print command.
 
 To improve readability, each SED command is placed on a separate line. However, one can choose to place all the commands in one line as follows:
 
@@ -1081,7 +1087,7 @@ I V IV XX
 
 ### l command
 
-Can you differentiate between words separated by spaces and words separated by tab characters only by looking at them? Certainly not. But SED can do this for you. SED uses the **l** command to display hidden characters in the text. For example, tab character with  and End-Of-Line with **$** character. Given below is the syntax of the **l** command.
+Can you differentiate between words separated by spaces and words separated by tab characters only by looking at them? Certainly not. But SED can do this for you. SED uses the **l** command to display hidden characters in the text. For example, tab character with **\t** and End-Of-Line with **$** character. Given below is the syntax of the **l** command.
 
 ```
 [address1[,address2]]l
@@ -1402,7 +1408,7 @@ The Pilgrimage, Paulo Coelho
 A Game of Thrones, George R. R. Martin
 ```
 
-Let us understand how the above example works. The **N** command reads the first line, i.e.,A Storm of Swords into the pattern buffer and appends \n followed by the next line. The pattern space now contains A Storm of Swords\*\*\n\*\*George R. R. Martin. In the next step, we are replacing the newline with a comma.
+Let us understand how the above example works. The **N** command reads the first line, i.e.,A Storm of Swords into the pattern buffer and appends \n followed by the next line. The pattern space now contains A Storm of Swords**\n**George R. R. Martin. In the next step, we are replacing the newline with a comma.
 
 Like **p** command, we have a **P** command to print the first part (up to embedded newline) of the multi-line pattern space created by the **N** command. Given below is the syntax of the **P** command which is similar to the **p** command.
 
@@ -1590,7 +1596,7 @@ On executing the above code, you get the following result:
 6
 ```
 
-Yes, you are right. It counts the total number of lines present in the file. Let us demystify the code. In the command section, we used "$ =" which prints the line number of the last line followed by its contents. But we also provided the \*\*-n \*\*flag which suppresses the default printing of the pattern buffer. Hence, only the last line number is displayed.
+Yes, you are right. It counts the total number of lines present in the file. Let us demystify the code. In the command section, we used "$ =" which prints the line number of the last line followed by its contents. But we also provided the **-n **flag which suppresses the default printing of the pattern buffer. Hence, only the last line number is displayed.
 
 ### & Command
 
@@ -1871,7 +1877,7 @@ Note that now there is comma(,) instead of space in the regular expression.
 
 In the previous section, we saw some examples of the substitution command. The GNU SED provides some special escape sequences which can be used in the replacement string. Note that these string replacement flags are GNU specific and may not work with other variants of SED. Here we will discuss string replacement flags.
 
-* \L: When \L is specified in the replacement string, it treats all the remaining characters of the the word after \L as lowercase characters. For example, the characters "ULO" are treated as lowercase characters.
+- \L: When \L is specified in the replacement string, it treats all the remaining characters of the the word after \L as lowercase characters. For example, the characters "ULO" are treated as lowercase characters.
 
 ```
 [jerry]$ sed -n 's/Paulo/PA\LULO/p' books.txt
@@ -1884,7 +1890,7 @@ On executing the above code, you get the following result:
 5) The Pilgrimage, PAulo Coelho, 288
 ```
 
-* \u: When \u is specified in the replacement string, it treats the immediate character after \u as an uppercase character. In the following example, \u is used before the characters 'a' and 'o'. Hence SED treats these characters as uppercase letters.
+- \u: When \u is specified in the replacement string, it treats the immediate character after \u as an uppercase character. In the following example, \u is used before the characters 'a' and 'o'. Hence SED treats these characters as uppercase letters.
 
 ```
 [jerry]$ sed -n 's/Paulo/p\uaul\uo/p' books.txt
@@ -1897,7 +1903,7 @@ On executing the above code, you get the following result:
 5) The Pilgrimage, pAulO Coelho, 288
 ```
 
-* \U: When \U is specified in the replacement string, it treats all the remaining characters of the the word after \U as uppercase characters.
+- \U: When \U is specified in the replacement string, it treats all the remaining characters of the the word after \U as uppercase characters.
 
 ```
 [jerry]$ sed -n 's/Paulo/\Upaulo/p' books.txt
@@ -1910,7 +1916,7 @@ On executing the above code, you get the following result:
 5) The Pilgrimage, PAULO Coelho, 288
 ```
 
-* \E: This flag should be used with \L or \U. It stops the conversion initiated by the flag \L or \U. In the following example, only the first word is replaced with uppercase letters.
+- \E: This flag should be used with \L or \U. It stops the conversion initiated by the flag \L or \U. In the following example, only the first word is replaced with uppercase letters.
 
 ```
 [jerry]$ sed -n 's/Paulo Coelho/\Upaulo \Ecoelho/p' books.txt
@@ -2007,11 +2013,11 @@ George R. R. Martin
 
 Let us understand how this command works.
 
-* Initially, SED reads the first line, i.e., A Storm of Swords into the pattern buffer.
-* **x** command moves this line to the hold buffer.
-* **n** fetches the next line, i.e., George R. R. Martin into the pattern buffer.
-* The control passes to the command followed by n which prints the contents of the pattern buffer.
-* The process repeats until the file is exhausted.
+- Initially, SED reads the first line, i.e., A Storm of Swords into the pattern buffer.
+- **x** command moves this line to the hold buffer.
+- **n** fetches the next line, i.e., George R. R. Martin into the pattern buffer.
+- The control passes to the command followed by n which prints the contents of the pattern buffer.
+- The process repeats until the file is exhausted.
 
 Now let us exchange the contents of the buffers before printing. Guess, what happens? Yes, it prints the titles of books.
 
