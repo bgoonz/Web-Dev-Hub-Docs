@@ -18,6 +18,7 @@
 * [REPL.IT Compilations](tools/links/README.md)
   * [Part 2](tools/links/part-2.md)
 * [Past Notes](tools/past-notes.md)
+* [Git](tools/untitled.md)
 * [JavaScript](programming-languages/programming-languages/javascript/README.md)
   * [Interview Problems](tools/javascript/interview-problems.md)
   * [General JavaScript Notes](tools/javascript/general-javascript-notes.md)
@@ -38,6 +39,7 @@
 ## Programming Languages
 
 * [Programming Languages](programming-languages/programming-languages/README.md)
+  * [Basics](programming-languages/programming-languages/basics.md)
   * [PSEUDO Programing Languages](programming-languages/programming-languages/untitled/README.md)
     * [HTML](programming-languages/programming-languages/untitled/html.md)
   * [CSS](programming-languages/programming-languages/css-1.md)
