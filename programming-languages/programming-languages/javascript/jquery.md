@@ -2,7 +2,7 @@
 
 {% embed url="https://codesandbox.io/embed/search-awesome-forked-f72xf?fontsize=14&hidenavigation=1&theme=dark" %}
 
-[![Edit Search Awesome (forked)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/search-awesome-forked-f72xf?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit Search Awesome (forked)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/search-awesome-forked-f72xf?fontsize=14\&hidenavigation=1\&theme=dark)
 
 {% embed url="https://replit.com/@bgoonz/Quiz#index.html" %}
 
@@ -49,7 +49,7 @@ This also offers an advantage that if the visitor to your webpage has already do
 
 \<script src="https://code.jquery.com/jquery-3.5.1.min.js">\</script>
 
-You can also include jQuery through [Google](https://developers.google.com/speed/libraries/#jquery) and [Microsoft](http://www.asp.net/ajax/cdn#jQuery_Releases_on_the_CDN_0) CDN's.
+You can also include jQuery through [Google](https://developers.google.com/speed/libraries/#jquery) and [Microsoft](http://www.asp.net/ajax/cdn#jQuery\_Releases\_on\_the\_CDN\_0) CDN's.
 
 ### Creating Your First jQuery Powered Web Page
 
@@ -104,10 +104,10 @@ The above example simply displays an alert message "Hello World!" to the user.
 
 If you are completely new to the jQuery, you might think what that code was all about. OK, let's go through each of the parts of this script one by one.
 
-- The `<script>` element — Since jQuery is just a JavaScript library, so the jQuery code can be placed inside the [`<script>`](https://www.tutorialrepublic.com/html-reference/html-script-tag.php) element. However, if you want to place it in an [external JavaScript file](https://www.tutorialrepublic.com/html-tutorial/html-scripts.php), which is preferred, you just remove this part.
-- The `$(document).ready(handler);` — This statement is typically known as ready event. Where the _handler_ is basically a function that is passed to the `ready()` method to be executed safely as soon as the document is ready to be manipulated i.e. when the DOM hierarchy has been fully constructed.
+* The `<script>` element — Since jQuery is just a JavaScript library, so the jQuery code can be placed inside the [`<script>`](https://www.tutorialrepublic.com/html-reference/html-script-tag.php) element. However, if you want to place it in an [external JavaScript file](https://www.tutorialrepublic.com/html-tutorial/html-scripts.php), which is preferred, you just remove this part.
+* The `$(document).ready(handler);` — This statement is typically known as ready event. Where the _handler_ is basically a function that is passed to the `ready()` method to be executed safely as soon as the document is ready to be manipulated i.e. when the DOM hierarchy has been fully constructed.
 
-The jQuery `ready()` method is typically used with an anonymous function. So, the above example can also be written in a shorthand notation like this:\
+The jQuery `ready()` method is typically used with an anonymous function. So, the above example can also be written in a shorthand notation like this:\\
 
 ```markup
 <script>
@@ -124,7 +124,7 @@ The jQuery `ready()` method is typically used with an anonymous function. So, th
 Further, inside an event handler function you can write the jQuery statements to perform any action following the basic syntax, like: `$(selector).action();`
 {% endhint %}
 
----
+***
 
 Where, the `$(selector)` basically selects the HTML elements from the DOM tree so that it can be manipulated and the `action()` applies some action on the selected elements such as changes the CSS property value, or sets the element's contents, etc. Let's consider another example that sets the paragraph text after the DOM is ready:
 
@@ -146,7 +146,6 @@ Where, the `$(selector)` basically selects the HTML elements from the DOM tree s
     <p>Not loaded yet.</p>
 </body>
 </html>
-
 ```
 
 ![](<../../../.gitbook/assets/image (5).png>)

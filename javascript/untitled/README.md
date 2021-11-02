@@ -1,7 +1,7 @@
 # JavaScript
 
-{% content-ref url="../../tools/javascript/" %}
-[javascript](../../tools/javascript/)
+{% content-ref url="../../programming-languages/programming-languages/javascript/" %}
+[javascript](../../programming-languages/programming-languages/javascript/)
 {% endcontent-ref %}
 
 {% embed url="https://gist.github.com/bgoonz/9ea6ac71bbe761048f73ef141f081aae" %}

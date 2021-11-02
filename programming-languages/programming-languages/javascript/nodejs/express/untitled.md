@@ -11,16 +11,16 @@ description: >-
 
 **Topics Covered**
 
-- Feature of Express
-- How does Express work?
-- Why Express?
+* Feature of Express
+* How does Express work?
+* Why Express?
 
 #### **Features of Express Framework:**
 
-- &#x20;Express can be used to design a single-page, multi-page and hybrid web applications.
-- Express allows to setup middlewares to respond to HTTP Requests.
-- Express defines a routing table which is used to performs different actions based on HTTP method and URL.
-- Express allows to dynamically render HTML Pages based on passing arguments to templates.
+* Express can be used to design a single-page, multi-page and hybrid web applications.
+* Express allows to setup middlewares to respond to HTTP Requests.
+* Express defines a routing table which is used to performs different actions based on HTTP method and URL.
+* Express allows to dynamically render HTML Pages based on passing arguments to templates.
 
 #### **How does Express work?**
 
@@ -28,10 +28,10 @@ Express applications work by sending a sequence of calls to the middle tier. The
 
 #### **Why Express?**
 
-- Ultrafast Input/Output.
-- Asynchronous and single threaded.
-- MVC like structure.
-- Robust API makes routing very easy.
+* Ultrafast Input/Output.
+* Asynchronous and single threaded.
+* MVC like structure.
+* Robust API makes routing very easy.
 
 **How does Express look like :**
 
@@ -66,15 +66,15 @@ ExpressJS RESTful API is an application program interface (API) that uses HTTP r
 
 **Topics Covered**
 
-- What is ExpressJS Restful API?
-- Why we need ExpressJS Restful APIs.
-- Advantages
-- Initialize npm and install the modules
-- Creates a New User
-- Returns All the Users From the Database
-- Gets a Single User From the Database
-- Deletes a User From the Database
-- Updates a Single User in the Database
+* What is ExpressJS Restful API?
+* Why we need ExpressJS Restful APIs.
+* Advantages
+* Initialize npm and install the modules
+* Creates a New User
+* Returns All the Users From the Database
+* Gets a Single User From the Database
+* Deletes a User From the Database
+* Updates a Single User in the Database
 
 **Why we need ExpressJS Restful APIs**
 
@@ -116,7 +116,7 @@ module.exports = app;Copy
 
 _app.js_ will be used for configuring the app. All the logic will be placed in the directory.
 
-We will use a _module.exports_ module to make the application’s object visible to the program when we call it using* require()*. Now have to create _Routes_ to listen to the application. For that, we will create another file, name it as _server.js_, and we will write following code in our _server.js_ file.
+We will use a _module.exports_ module to make the application’s object visible to the program when we call it using\* require()\*. Now have to create _Routes_ to listen to the application. For that, we will create another file, name it as _server.js_, and we will write following code in our _server.js_ file.
 
 _server.js_
 
@@ -128,7 +128,7 @@ console.log('server listening on port ' + port);
 });Copy
 ```
 
-Create a new file and name it as* db.js*, This file’s Code will be used to store your database connection.
+Create a new file and name it as\* db.js\*, This file’s Code will be used to store your database connection.
 
 _db.js_
 
@@ -137,7 +137,7 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://yourDatabaseURI');Copy
 ```
 
-&#x20;add a require() in the app.js, like this&#x20;
+add a require() in the app.js, like this
 
 _app.js_
 
@@ -165,9 +165,9 @@ module.exports = mongoose.model('User');Copy
 
 Create another file, and name it _UserController.js_. It will contain the actions which control the flow of data to and fro the database.
 
-_UserController.js_\
+_UserController.js_\\
 
----
+***
 
 ```
 var express = require('express');
@@ -219,9 +219,9 @@ var app = express();
 var db = require('./db');Copy
 ```
 
-Add These two Lines to the \_app.js \_file\
+Add These two Lines to the \_app.js \_file\\
 
----
+***
 
 ```
 var UserController = require('./user/UserController');
@@ -283,12 +283,12 @@ The _router.put()_ request is very similar to the two requests above. It also ta
 
 In express.js routing, we are going to learn how based on different urls we will are going to server different pages and content on the webpages.
 
-**Topics Covered **
+\*\*Topics Covered \*\*
 
-- Home Route – Opening home page on server
-- HTML File Route – Open HTML page on server
-- json Route – Open json response on the route
-- File Route – Send a complete file on the route section
+* Home Route – Opening home page on server
+* HTML File Route – Open HTML page on server
+* json Route – Open json response on the route
+* File Route – Send a complete file on the route section
 
 **Home Route – Opening home page on server**
 
@@ -442,11 +442,11 @@ If you are planning to use it multiple times run the following command and insta
 C:\node\example>expressCopy
 ```
 
-So now you can find all the necessary directories and files has been created in your folder.\
+So now you can find all the necessary directories and files has been created in your folder.\\
 
 ![](https://www.pabbly.com/wp-content/uploads/2018/02/scaffolding1-2.png)
 
-Every folder has different content inside.\
+Every folder has different content inside.\\
 
 ![Scaffolding](https://www.pabbly.com/wp-content/uploads/2018/02/scaffolding2-1.png)
 

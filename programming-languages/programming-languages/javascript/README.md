@@ -1,12 +1,12 @@
 ---
-cover: ../../.gitbook/assets/3.jpg
+cover: ../../../.gitbook/assets/3.jpg
 coverY: 0
 ---
 
 # JavaScript
 
-{% content-ref url="../../javascript/untitled/" %}
-[untitled](../../javascript/untitled/)
+{% content-ref url="../../../javascript/untitled/" %}
+[untitled](../../../javascript/untitled/)
 {% endcontent-ref %}
 
 {% content-ref url="jquery.md" %}
@@ -330,3 +330,5 @@ coverY: 0
 {% embed url="https://gist.github.com/bgoonz/736fce1327efdde3afc50229f5ce51f6" %}
 
 {% embed url="https://gist.github.com/bgoonz/d3837d5bf01823bd84a1bff2e19a38f7" %}
+
+{% embed url="https://gist.github.com/bgoonz/f962b08c1eddb2c77a1f8b51fdb15e17" %}

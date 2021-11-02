@@ -18,8 +18,8 @@
 [bash](bash/)
 {% endcontent-ref %}
 
-{% content-ref url="../../tools/javascript/" %}
-[javascript](../../tools/javascript/)
+{% content-ref url="javascript/" %}
+[javascript](javascript/)
 {% endcontent-ref %}
 
 {% content-ref url="java.md" %}
