@@ -241,3 +241,13 @@
   * [Page 15](webdev-bootcamp-notes/lambda/page-15.md)
   * [CS-Python-Notes](webdev-bootcamp-notes/lambda/cs-python-notes/README.md)
     * [Python](webdev-bootcamp-notes/lambda/cs-python-notes/python.md)
+
+## Group 1
+
+* [Page 16](group-1/page-16.md)
+
+## Group 1
+
+* [My Articles](group-1-1/my-articles/README.md)
+  * [Python For JS Developers](group-1-1/my-articles/python-for-js-developers.md)
+  * [JavaScript Programmer](group-1-1/my-articles/javascript-programmer.md)

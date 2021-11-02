@@ -54,7 +54,7 @@
 [sql](sql/)
 {% endcontent-ref %}
 
-![](<../../.gitbook/assets/image (2) (2) (3) (3) (3) (3) (3).png>)
+![](<../../.gitbook/assets/image (2) (2).png>)
 
 ##
 
@@ -97,7 +97,7 @@
 
 ##
 
-![](<../../.gitbook/assets/image (2) (2) (3) (3) (3) (3) (3).png>)
+![](<../../.gitbook/assets/image (2) (2).png>)
 
 ##
 

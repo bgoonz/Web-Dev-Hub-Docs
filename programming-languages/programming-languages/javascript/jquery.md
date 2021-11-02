@@ -77,7 +77,7 @@ In this section, we will perform a simple jQuery operation by changing the color
 </html>
 ```
 
-![](<../../../.gitbook/assets/image (4).png>)
+![](<../../../.gitbook/assets/image (2).png>)
 
 ## jQuery Syntax
 
@@ -148,4 +148,4 @@ Where, the `$(selector)` basically selects the HTML elements from the DOM tree s
 </html>
 ```
 
-![](<../../../.gitbook/assets/image (5).png>)
+![](<../../../.gitbook/assets/image (3).png>)

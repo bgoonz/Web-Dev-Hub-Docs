@@ -114,7 +114,7 @@ description: iframe embeds
 
 {% embed url="https://codesandbox.io/embed/idk-forked-dz6xk?fontsize=14&hidenavigation=1&theme=dark" %}
 
-![](../../.gitbook/assets/qrcode-1-.png)
+![](<../../.gitbook/assets/qrcode (1).png>)
 
 {% embed url="https://p8j5h.csb.app/" %}
 
