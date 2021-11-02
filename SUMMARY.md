@@ -35,6 +35,7 @@
     * [Redux](programming-languages/programming-languages/javascript/react/redux.md)
     * [Redux Docs](programming-languages/programming-languages/javascript/react/redux-docs/README.md)
       * [Redux Resources](programming-languages/programming-languages/javascript/react/redux-docs/redux-resources.md)
+    * [React Notes](tools/javascript/react/react-notes.md)
 
 ## Programming Languages
 
