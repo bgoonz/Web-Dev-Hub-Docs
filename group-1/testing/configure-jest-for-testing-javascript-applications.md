@@ -1,6 +1,30 @@
 # Configure Jest for Testing JavaScript Applications
 
-##
+
+
+ohana
+
+{% content-ref url="../page-16.md" %}
+[page-16.md](../page-16.md)
+{% endcontent-ref %}
+
+{% content-ref url="configure-jest-for-testing-javascript-applications.md" %}
+[configure-jest-for-testing-javascript-applications.md](configure-jest-for-testing-javascript-applications.md)
+{% endcontent-ref %}
+
+{% content-ref url="install-configure-and-script-cypress-for-javascript-web-applications.md" %}
+[install-configure-and-script-cypress-for-javascript-web-applications.md](install-configure-and-script-cypress-for-javascript-web-applications.md)
+{% endcontent-ref %}
+
+{% content-ref url="test-react-components-with-jest-and-react-testing-library.md" %}
+[test-react-components-with-jest-and-react-testing-library.md](test-react-components-with-jest-and-react-testing-library.md)
+{% endcontent-ref %}
+
+{% content-ref url="use-testing-library-to-evaluate-any-framework....md" %}
+[use-testing-library-to-evaluate-any-framework....md](use-testing-library-to-evaluate-any-framework....md)
+{% endcontent-ref %}
+
+means family... and family means no one gets left behind or forgotten...&#x20;
 
 **Table of Contents**
 
