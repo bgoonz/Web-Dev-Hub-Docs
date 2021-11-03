@@ -245,7 +245,11 @@
 
 ## Group 1
 
-* [Page 16](group-1/page-16.md)
+* [Testing:](group-1/testing/README.md)
+  * [Configure Jest for Testing JavaScript Applications](group-1/testing/configure-jest-for-testing-javascript-applications.md)
+  * [install, configure, and script Cypress for JavaScript web applications](group-1/testing/install-configure-and-script-cypress-for-javascript-web-applications.md)
+  * [Test React Components with Jest and \`react-testing-library\`](group-1/testing/test-react-components-with-jest-and-react-testing-library.md)
+  * [Use testing library to evaluate any framework...](group-1/testing/use-testing-library-to-evaluate-any-framework....md)
 
 ## Group 1
 
