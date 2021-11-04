@@ -1,5 +1,6 @@
 ---
 description: initial page
+coverY: 0
 ---
 
 # Home

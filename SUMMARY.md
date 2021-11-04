@@ -17,7 +17,8 @@
 * [How To Configure Ubuntu](tools/how-to-configure-ubuntu.md)
 * [REPL.IT Compilations](tools/links/README.md)
   * [Part 2](tools/links/part-2.md)
-* [Past Notes](tools/past-notes.md)
+* [Past Notes](tools/past-notes/README.md)
+  * [Command Line Reference](tools/past-notes/command-line-reference.md)
 * [Git](tools/untitled.md)
 * [JavaScript](programming-languages/programming-languages/javascript/README.md)
   * [Interview Problems](tools/javascript/interview-problems.md)
@@ -253,9 +254,9 @@
 
 ## Medium-articles
 
-* [My Articles](medium-articles/my-articles/README.md)
-  * [Python For JS Developers](medium-articles/my-articles/python-for-js-developers.md)
-  * [JavaScript Programmer](medium-articles/my-articles/javascript-programmer.md)
+* [My Articles](group-1-1/my-articles/README.md)
+  * [Python For JS Developers](group-1-1/my-articles/python-for-js-developers.md)
+  * [JavaScript Programmer](group-1-1/my-articles/javascript-programmer.md)
   * [Awesome Web Development Youtube Video Archive](medium-articles/my-articles/awesome-web-development-youtube-video-archive.md)
   * [Bash Commands That Save Me Time and Frustration](medium-articles/my-articles/bash-commands-that-save-me-time-and-frustration.md)
   * [Git-Tricks](medium-articles/my-articles/git-tricks.md)
