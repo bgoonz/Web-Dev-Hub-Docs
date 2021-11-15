@@ -2,18 +2,18 @@
 
 {% tabs %}
 {% tab title="Website Nav" %}
-### Table of contents
+#### Table of contents
 
 * [Home](https://bryan-guner.gitbook.io/web-dev-hub-docs/README)
 * [Navigation](https://bryan-guner.gitbook.io/web-dev-hub-docs/navigation)
 
-#### Tools
+**Tools**
 
 * [Tools](https://bryan-guner.gitbook.io/web-dev-hub-docs/tools/tools/README)
   * [Heroku](https://bryan-guner.gitbook.io/web-dev-hub-docs/tools/tools/heroku)
 * [Showcase](https://bryan-guner.gitbook.io/web-dev-hub-docs/tools/showcase)
 
-#### Programming Languages
+**Programming Languages**
 
 * [Programming Languages](https://bryan-guner.gitbook.io/web-dev-hub-docs/programming-languages/programming-languages/README)
   * [Tools-Of-The-Trade](https://bryan-guner.gitbook.io/web-dev-hub-docs/programming-languages/programming-languages/frameworks/README)
@@ -42,15 +42,15 @@
 * [What is a Programming Language?](https://bryan-guner.gitbook.io/web-dev-hub-docs/programming-languages/what-is-a-programming-language)
 * [List Of Programming Languages By Type](https://bryan-guner.gitbook.io/web-dev-hub-docs/programming-languages/list-of-programming-languages-by-type)
 
-#### Python
+**Python**
 
 * [Python](https://bryan-guner.gitbook.io/web-dev-hub-docs/python/untitled)
 
-#### JavaScript
+**JavaScript**
 
 * [JavaScript](https://bryan-guner.gitbook.io/web-dev-hub-docs/javascript/untitled)
 
-#### Web Development Frameworks & Libraries <a href="web-development-frameworks" id="web-development-frameworks"></a>
+**Web Development Frameworks & Libraries**
 
 * [React](https://bryan-guner.gitbook.io/web-dev-hub-docs/web-development-frameworks/react)
 * [Jquery](https://bryan-guner.gitbook.io/web-dev-hub-docs/web-development-frameworks/jquery)
@@ -59,81 +59,81 @@
   * [Plugins, Themes, & Starters](https://bryan-guner.gitbook.io/web-dev-hub-docs/web-development-frameworks/gatsby/plugins-themes-and-starters)
   * [GraphQL Concepts](https://bryan-guner.gitbook.io/web-dev-hub-docs/web-development-frameworks/gatsby/graphql-concepts)
 
-#### Productivity
+**Productivity**
 
 * [Productivity](https://bryan-guner.gitbook.io/web-dev-hub-docs/productivity/untitled/README)
   * [Awesome Productivity Tools for Back-to-School](https://bryan-guner.gitbook.io/web-dev-hub-docs/productivity/untitled/untitled)
 
-#### Misc
+**Misc**
 
 * [Misc](https://bryan-guner.gitbook.io/web-dev-hub-docs/misc/untitled)
 
-#### Links
+**Links**
 
 * [Links](https://bryan-guner.gitbook.io/web-dev-hub-docs/links/untitled)
 * [Bookmarks](https://bryan-guner.gitbook.io/web-dev-hub-docs/links/untitled-1)
 
-#### Websites
+**Websites**
 
 * [Websites](https://bryan-guner.gitbook.io/web-dev-hub-docs/websites/untitled)
 * [Not My Websites:](https://bryan-guner.gitbook.io/web-dev-hub-docs/websites/untitled-1)
 
-#### Backend
+**Backend**
 
 * [Backend](https://bryan-guner.gitbook.io/web-dev-hub-docs/backend/untitled)
 
-#### Networking
+**Networking**
 
 * [Networks](https://bryan-guner.gitbook.io/web-dev-hub-docs/networking/untitled)
 
-#### Resources
+**Resources**
 
 * [Resources](https://bryan-guner.gitbook.io/web-dev-hub-docs/resources/untitled)
 * [Video Resources](https://bryan-guner.gitbook.io/web-dev-hub-docs/resources/untitled-1)
 
-#### General Knowledge
+**General Knowledge**
 
 * [General Knowledge](https://bryan-guner.gitbook.io/web-dev-hub-docs/general-knowledge/untitled)
 * [Knowledge Bank](https://bryan-guner.gitbook.io/web-dev-hub-docs/general-knowledge/untitled-1)
 
-#### Finance
+**Finance**
 
 * [Finance](https://bryan-guner.gitbook.io/web-dev-hub-docs/finance/untitled)
 * [Financial Trends](https://bryan-guner.gitbook.io/web-dev-hub-docs/finance/untitled-1)
 
-#### Science & Tech (Innovation)
+**Science & Tech (Innovation)**
 
 * [Science & Tech](https://bryan-guner.gitbook.io/web-dev-hub-docs/science-and-tech-innovation/untitled)
 * [Untitled](https://bryan-guner.gitbook.io/web-dev-hub-docs/science-and-tech-innovation/untitled-1)
 
-#### Reading
+**Reading**
 
 * [Reading](https://bryan-guner.gitbook.io/web-dev-hub-docs/reading/untitled)
 
-#### Social Media & Trends
+**Social Media & Trends**
 
 * [Trends In Web Dev](https://bryan-guner.gitbook.io/web-dev-hub-docs/social-media-and-trends/untitled)
 
-#### Docs
+**Docs**
 
 * [Docs](https://bryan-guner.gitbook.io/web-dev-hub-docs/docs/docs)
 
-#### Code Editors & Tools
+**Code Editors & Tools**
 
 * [Vscode](https://bryan-guner.gitbook.io/web-dev-hub-docs/code-editors-and-tools/vscode/README)
   * [How To Speed Up Vscode](https://bryan-guner.gitbook.io/web-dev-hub-docs/code-editors-and-tools/vscode/how-to-speed-up-vscode)
 
-#### Cool Stuff
+**Cool Stuff**
 
 * [Cool Observable Notebooks](https://bryan-guner.gitbook.io/web-dev-hub-docs/cool-stuff/cool-observable-notebooks)
 
-#### Server-Side
+**Server-Side**
 
 * [GraphQL](https://bryan-guner.gitbook.io/web-dev-hub-docs/server-side/graphql/README)
   * [Intro](https://bryan-guner.gitbook.io/web-dev-hub-docs/server-side/graphql/intro)
 * [REST-API](https://bryan-guner.gitbook.io/web-dev-hub-docs/server-side/rest-api)
 
-#### WEB\_DEV\_TOOLS
+**WEB\_DEV\_TOOLS**
 
 * [Cloudinary](https://bryan-guner.gitbook.io/web-dev-hub-docs/web\_dev\_tools/cloudinary)
 * [Netlify](https://bryan-guner.gitbook.io/web-dev-hub-docs/web\_dev\_tools/netlify/README)

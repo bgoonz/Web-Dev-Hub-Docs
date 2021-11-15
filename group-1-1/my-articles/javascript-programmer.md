@@ -60,7 +60,7 @@ print(2.24) # => 2.24 print(2.) # => 2.0 print(float()) # => 0.0 print(27e-5) # 
 
 > **The `i` is switched to a `j` in programming.**
 
-T_his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**space **when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
+T\_his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-\*\*space \*\*when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler.\_
 
 ```
 print(7j) # => 7j print(5.1+7.7j)) # => 5.1+7.7j print(complex(3, 5)) # => 3+5j print(complex(17)) # => 17+0j print(complex()) # => 0j
@@ -196,7 +196,7 @@ a = 17print(a)         # => 17a = 'seventeen'print(a)         # => seventeen
 * _`NaN` does not exist in Python, but you can 'create' it like so:_\
   _**`print(float("nan"))`**_
 * _Python replaces `null` with `none`._
-* _**`none`**** is an object** and can be directly assigned to a variable._
+* _**`none`****\*\*\*\* is an object** and can be directly assigned to a variable._
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 
