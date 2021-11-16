@@ -1,13 +1,9 @@
 # Use testing library to evaluate any framework...
 
-
-
-
-
 ohana
 
-{% content-ref url="../page-16.md" %}
-[page-16.md](../page-16.md)
+{% content-ref url="./" %}
+[.](./)
 {% endcontent-ref %}
 
 {% content-ref url="configure-jest-for-testing-javascript-applications.md" %}
@@ -26,7 +22,7 @@ ohana
 [use-testing-library-to-evaluate-any-framework....md](use-testing-library-to-evaluate-any-framework....md)
 {% endcontent-ref %}
 
-means family... and family means no one gets left behind or forgotten...&#x20;
+means family... and family means no one gets left behind or forgotten...
 
 ## Use `dom-testing-library` to test any JS framework
 

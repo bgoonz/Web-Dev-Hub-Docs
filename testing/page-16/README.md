@@ -2,43 +2,27 @@
 
 ohana
 
-{% content-ref url="page-16.md" %}
-[page-16.md](page-16.md)
+{% content-ref url="./" %}
+[.](./)
 {% endcontent-ref %}
 
-{% content-ref url="testing/configure-jest-for-testing-javascript-applications.md" %}
-[configure-jest-for-testing-javascript-applications.md](testing/configure-jest-for-testing-javascript-applications.md)
+{% content-ref url="configure-jest-for-testing-javascript-applications.md" %}
+[configure-jest-for-testing-javascript-applications.md](configure-jest-for-testing-javascript-applications.md)
 {% endcontent-ref %}
 
-{% content-ref url="testing/install-configure-and-script-cypress-for-javascript-web-applications.md" %}
-[install-configure-and-script-cypress-for-javascript-web-applications.md](testing/install-configure-and-script-cypress-for-javascript-web-applications.md)
+{% content-ref url="install-configure-and-script-cypress-for-javascript-web-applications.md" %}
+[install-configure-and-script-cypress-for-javascript-web-applications.md](install-configure-and-script-cypress-for-javascript-web-applications.md)
 {% endcontent-ref %}
 
-{% content-ref url="testing/test-react-components-with-jest-and-react-testing-library.md" %}
-[test-react-components-with-jest-and-react-testing-library.md](testing/test-react-components-with-jest-and-react-testing-library.md)
+{% content-ref url="test-react-components-with-jest-and-react-testing-library.md" %}
+[test-react-components-with-jest-and-react-testing-library.md](test-react-components-with-jest-and-react-testing-library.md)
 {% endcontent-ref %}
 
-{% content-ref url="testing/use-testing-library-to-evaluate-any-framework....md" %}
-[use-testing-library-to-evaluate-any-framework....md](testing/use-testing-library-to-evaluate-any-framework....md)
+{% content-ref url="use-testing-library-to-evaluate-any-framework....md" %}
+[use-testing-library-to-evaluate-any-framework....md](use-testing-library-to-evaluate-any-framework....md)
 {% endcontent-ref %}
 
-means family... and family means no one gets left behind or forgotten...&#x20;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+means family... and family means no one gets left behind or forgotten...
 
 ## Fundamentals of Testing in Javascript
 
@@ -228,45 +212,26 @@ For user-defined modules, if the test imports the module, then `jest.mock('./pat
 
 Similarly to how we simulated what Jest is doing when conrolling module requiring by using `require.cache`. We create a file containing the mock, which also uses our `fn` to allow us to evaluate calls. In our test we import our mock, and then retrieve the cached paths for the actual utils and mock utils, rewriting `require.cache`'s key for the actual utils with the mocked utils.
 
-
-
 ***
 
 ![](https://i.imgur.com/fDXeVIn.png)
 
+***
 
+![devide](https://i.imgur.com/fDXeVIn.png)
 
 ***
 
 ![devide](https://i.imgur.com/fDXeVIn.png)
 
+***
 
-
-
+![devide](https://i.imgur.com/fDXeVIn.png)
 
 ***
 
 ![devide](https://i.imgur.com/fDXeVIn.png)
 
-
-
-
-
-
-
 ***
 
 ![devide](https://i.imgur.com/fDXeVIn.png)
-
-
-
-***
-
-![devide](https://i.imgur.com/fDXeVIn.png)
-
-
-
-***
-
-![devide](https://i.imgur.com/fDXeVIn.png)
-

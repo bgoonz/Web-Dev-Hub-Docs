@@ -41,6 +41,7 @@
 ## Programming Languages
 
 * [Programming Languages](programming-languages/programming-languages/README.md)
+  * [File System](programming-languages/programming-languages/file-system.md)
   * [Basics](programming-languages/programming-languages/basics.md)
   * [PSEUDO Programing Languages](programming-languages/programming-languages/untitled/README.md)
     * [HTML](programming-languages/programming-languages/untitled/html.md)
@@ -51,6 +52,7 @@
     * [Docker](programming-languages/programming-languages/frameworks/docker.md)
   * [Git](programming-languages/programming-languages/git.md)
   * [Python](programming-languages/programming-languages/python/README.md)
+    * [Pydrive:](programming-languages/programming-languages/python/pydrive.md)
     * [Practice](programming-languages/programming-languages/python/practice.md)
     * [Pipenv](programming-languages/programming-languages/python/pipenv.md)
     * [Untitled](programming-languages/programming-languages/python/untitled.md)
@@ -245,13 +247,13 @@
   * [CS-Python-Notes](webdev-bootcamp-notes/lambda/cs-python-notes/README.md)
     * [Python](webdev-bootcamp-notes/lambda/cs-python-notes/python.md)
 
-## Group 1
+## testing
 
-* [Testing:](group-1/page-16.md)
-  * [Configure Jest for Testing JavaScript Applications](group-1/testing/configure-jest-for-testing-javascript-applications.md)
-  * [install, configure, and script Cypress for JavaScript web applications](group-1/testing/install-configure-and-script-cypress-for-javascript-web-applications.md)
-  * [Test React Components with Jest and \`react-testing-library\`](group-1/testing/test-react-components-with-jest-and-react-testing-library.md)
-  * [Use testing library to evaluate any framework...](group-1/testing/use-testing-library-to-evaluate-any-framework....md)
+* [Testing:](testing/page-16/README.md)
+  * [Configure Jest for Testing JavaScript Applications](testing/page-16/configure-jest-for-testing-javascript-applications.md)
+  * [install, configure, and script Cypress for JavaScript web applications](testing/page-16/install-configure-and-script-cypress-for-javascript-web-applications.md)
+  * [Test React Components with Jest and \`react-testing-library\`](testing/page-16/test-react-components-with-jest-and-react-testing-library.md)
+  * [Use testing library to evaluate any framework...](testing/page-16/use-testing-library-to-evaluate-any-framework....md)
 
 ## Medium-articles
 
@@ -281,3 +283,11 @@
   * [Machine Learner](medium-articles/my-articles/machine-learner-1.md)
   * [Here’s the expanded list:](medium-articles/my-articles/heres-the-expanded-list-1.md)
   * [The Complete JavaScript Reference Guide](medium-articles/my-articles/the-complete-javascript-reference-guide-1.md)
+
+## 🖲 AI
+
+* [Pytorch](ai/pytorch.md)
+
+## 🎙 Audio
+
+* [Audio](audio/audio.md)
