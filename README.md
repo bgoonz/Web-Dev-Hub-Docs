@@ -1,10 +1,12 @@
 ---
 description: initial page
 coverY: 0
-cover: .gitbook/assets/banner-background-bg.jpg
+cover: .gitbook/assets/methods.png
 ---
 
 # Home
+
+{% embed url="https://app.box.com/s/qlgv34ehsd5mj1o8otreztvl1qb42q1z" %}
 
 ### This Space:
 
