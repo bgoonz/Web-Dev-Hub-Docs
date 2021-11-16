@@ -286,7 +286,8 @@
 
 ## 🖲 AI
 
-* [Pytorch](ai/pytorch.md)
+* [Pytorch](ai/pytorch/README.md)
+  * [Documentation](ai/pytorch/documentation.md)
 
 ## 🎙 Audio
 
