@@ -61,6 +61,7 @@
     * [SED](programming-languages/programming-languages/bash/sed.md)
   * [CHEATSHEETS](programming-languages/programming-languages/cheatsheets.md)
   * [Java](programming-languages/programming-languages/java.md)
+  * [Bash Script](programming-languages/programming-languages/bash-script.md)
   * [Html](programming-languages/programming-languages/html.md)
   * [Markdown](programming-languages/programming-languages/markdown.md)
   * [CSS](programming-languages/programming-languages/css.md)
@@ -228,7 +229,7 @@
 
 ## WEBDEV-Bootcamp-Notes
 
-* [Lambda](webdev-bootcamp-notes/lambda/README.md)
+* [🏫 Lambda](webdev-bootcamp-notes/lambda/README.md)
   * [1.1 - User Interface and Git](webdev-bootcamp-notes/lambda/1.1-user-interface-and-git.md)
   * [Page 2](webdev-bootcamp-notes/lambda/page-2.md)
   * [Page 1](webdev-bootcamp-notes/lambda/page-1.md)

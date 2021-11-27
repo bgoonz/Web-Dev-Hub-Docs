@@ -1,12 +1,14 @@
 ---
 description: initial page
 coverY: 0
-cover: .gitbook/assets/methods.png
+cover: .gitbook/assets/image (1).png
 ---
 
 # Home
 
 {% embed url="https://app.box.com/s/qlgv34ehsd5mj1o8otreztvl1qb42q1z" %}
+
+![](.gitbook/assets/chrome\_SqClVwdG06.png)
 
 ### This Space:
 
