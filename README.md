@@ -1,10 +1,18 @@
 ---
 description: initial page
 coverY: 0
-cover: .gitbook/assets/image (2).png
+cover: .gitbook/assets/3.jpg
 ---
 
 # Home
+
+
+
+![](.gitbook/assets/devider.png)
+
+{% embed url="https://bryan-guner.gitbook.io/my-docs" %}
+
+
 
 ![](.gitbook/assets/github.png)
 
@@ -399,9 +407,9 @@ Website Navigation (my websites)
 
 * [Blockchain Basics](https://bryan-guner.gitbook.io/web-dev-hub-docs/blockchain-and-crypto/blockchain-basics)
 
-![](<.gitbook/assets/image (2) (2) (3) (3) (3) (3).png>)
-
 ![](<.gitbook/assets/image (2) (2) (3) (3) (3) (3) (2).png>)
+
+![](<.gitbook/assets/image (2) (2) (3) (3) (3) (3).png>)
 
 **WEBSITE ⇄ Portfolio ⇄ Collaborate ⇄ Other-Websites ⇄ Recent Work**
 
