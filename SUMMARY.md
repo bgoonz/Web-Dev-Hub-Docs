@@ -159,6 +159,7 @@
 ## Docs
 
 * [Docs](docs/docs.md)
+* [Refactoring Guide](docs/refactoring-guide.md)
 
 ## Code Editors & Tools
 
