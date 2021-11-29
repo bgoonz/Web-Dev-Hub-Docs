@@ -196,7 +196,7 @@ a = 17print(a)         # => 17a = 'seventeen'print(a)         # => seventeen
 * _`NaN` does not exist in Python, but you can 'create' it like so:_\
   _**`print(float("nan"))`**_
 * _Python replaces `null` with `none`._
-* _**`none`****\*\*\*\* is an object** and can be directly assigned to a variable._
+* _**`none`****\*\*\*\*\*\*\*\* is an object** and can be directly assigned to a variable._
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 

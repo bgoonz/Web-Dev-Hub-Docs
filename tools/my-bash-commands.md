@@ -18,7 +18,6 @@ find . -name "* *" -type f | rename 's/ /_/g'
 ```
 
 ```bash
-
 find $dir -type f | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 
 find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
@@ -26,7 +25,6 @@ find $dir -type d | sed 's|\(.*/\)[^A-Z]*\([A-Z].*\)|mv \"&\" \"\1\2\"|' | sh
 for i in *.html; do mv "$i" "${i%-*}.html"; done
 
 for i in *.*; do mv "$i" "${i%-*}.${i##*.}"; done
-
 
 ```
 
@@ -58,7 +56,6 @@ fs.writeFile('output.md', cat, err => {
 **code:**
 
 ```
-
 wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla https://bootcamp42.gitbook.io/python/
 ```
 
@@ -74,7 +71,6 @@ wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e ro
 
 ```
 
-
 find . -empty -type d -print -delete        
 
 
@@ -82,7 +78,6 @@ find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".g
 
 
 find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
-
 ```
 
 ***
@@ -100,7 +95,6 @@ find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.tx
 ```
 
 
-
 CNTX={users|orgs}; NAME={username|orgname}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
   grep -e 'git_url*' |
@@ -116,19 +110,16 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=m
   grep -e 'git_url*' |
   cut -d \" -f 4 |
   xargs -L1 git clone
-
 ```
 
 ## Clone all Git Organization:
 
 ```
-
 CNTX={organizations}; NAME={TheAlgorithms}; PAGE=1
 curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=200"?branch=master |
   grep -e 'git_url*' |
   cut -d \" -f 4 |
   xargs -L1 git clone
-
 ```
 
 ***
@@ -155,7 +146,6 @@ git push -u origin main
 ```
 
 ```
-
 git init
 git add .
 git commit -m"update"
@@ -187,7 +177,6 @@ git push -u origin preview
 **code:**
 
 ```
-
 find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 
 
@@ -207,11 +196,9 @@ find . -name "*.zip" -type f -print -delete
 
 ```
 
-
 git stash
 git pull
 git stash pop
-
 ```
 
 ***
@@ -225,11 +212,9 @@ git stash pop
 **code:**
 
 ```
-
 sudo npm i prettier -g
 
 prettier --write .
-
 
 ```
 
@@ -244,7 +229,6 @@ prettier --write .
 **code:**
 
 ```
-
 find ./ -iname "*.md" -type f -exec sh -c 'pandoc --standalone "${0}" -o "${0%.md}.html"' {} \;
 
 
@@ -254,7 +238,6 @@ find ./ -iname "*.html" -type f -exec sh -c 'pandoc --wrap=none --from html --to
 
 
 find ./ -iname "*.docx" -type f -exec sh -c 'pandoc "${0}" -o "${0%.docx}.md"' {} \;
-
 ```
 
 ***
@@ -276,7 +259,6 @@ sudo apt install wget -y
 npm i lebab -g
 npm i prettier -g
 npm i npm-recursive-install -g
-
 ```
 
 ```
@@ -338,7 +320,6 @@ tree -f >README.md
 **code:**
 
 ```
-
 find . -type f -exec rename 's/string1/string2/g' {} +
 
 
@@ -361,7 +342,6 @@ rename 's/\.html\.markdown$/.md/' *.html\.markdown
 
 
 find . -type d -exec rename 's/es6//g' {} +
-
 ```
 
 ***
@@ -392,7 +372,6 @@ done
 
 ```
 
-
 #!/bin/bash
 
 for file in *.html.png
@@ -417,7 +396,6 @@ done
 **code:**
 
 ```
-
 for d in ./*; do mv $d ${d:0:12}; done
 ```
 
@@ -440,7 +418,6 @@ let cat = require('child_process')
 fs.writeFile('output.md', cat, err => {
   if (err) throw err;
 });
-
 ```
 
 ***
@@ -494,9 +471,7 @@ find . -name 'left.html' -type f -prune -exec rm -rf '{}' +
 > Notes: Remove lines not containing `'.js'`
 
 ```
-
 sudo sed -i '/\.js/!d' ./*scrap2.md
-
 ```
 
 **code:**
@@ -571,7 +546,6 @@ sudo sed -i '/node_modules/d' ./index.html
 sudo sed -i '/right\.html/d' ./index.html
 sudo sed -i '/right\.html/d' ./right.html
 
-
 ```
 
 ***
@@ -586,7 +560,6 @@ sudo sed -i '/right\.html/d' ./right.html
 
 ```
 
-
 #!/bin/bash
 TSTAMP=`date '+%Y%m%d-%H%M%S'`
 zip -r $1.$TSTAMP.zip $1 -x "**.git/*" -x "**node_modules/*" `shift; echo $@;`
@@ -599,7 +572,6 @@ printf "\nCreated: $1.$TSTAMP.zip\n"
 
 # if in windows/git-bash, add 'zip' command this way: 
 # https://stackoverflow.com/a/55749636/1482990
-
 ```
 
 ***
@@ -629,7 +601,6 @@ source doit.sh
 **code:**
 
 ```
-
 #!/bin/sh
 
 # find ./ | grep -i "\.*$" >files
@@ -738,14 +709,11 @@ cmd $listing --sort=extension >>$html
 ```
 
 
-
-
 ```
 
 **code:**
 
 ```
-
 
 #!/bin/sh
 
@@ -854,9 +822,7 @@ cmd $listing --sort=extension >>$html
 **code:**
 
 ```
-
 git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch assets/_index.html' HEAD
-
 ```
 
 ***
@@ -872,7 +838,6 @@ Important: If you have any local changes, they will be lost. With or without --h
 **code:**
 
 ```
-
 git fetch --all
 # Backup your current branch:
 
@@ -931,7 +896,6 @@ wget -q -O - https://api.github.com/users/amitness/gists | grep raw_url | awk -F
 wget -q -O - https://api.github.com/users/drodsou/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
 
 wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F\" '{print $4}' | xargs -n1 wget
-
 ```
 
 ***
@@ -945,7 +909,6 @@ wget -q -O - https://api.github.com/users/thomasmb/gists | grep raw_url | awk -F
 **code:**
 
 ```
-
 git remote remove origin
 ```
 
@@ -961,7 +924,6 @@ git remote remove origin
 
 ```
 
-
 git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-Web-Dev-Archive.git
 ```
 
@@ -976,9 +938,7 @@ git clone --bare --branch=master --single-branch https://github.com/bgoonz/My-We
 **code:**
 
 ```
-
 git reset --hard master@{"10 minutes ago"}
-
 ```
 
 ***
@@ -1037,7 +997,6 @@ lebab --replace ./ --transform template
 lebab --replace ./ --transform default-param
 lebab --replace ./ --transform  destruct-param 
 lebab --replace ./ --transform includes
-
 ```
 
 ***
@@ -1051,11 +1010,9 @@ lebab --replace ./ --transform includes
 **code:**
 
 ```
-
  wsl.exe --shutdown
 
  Get-Service LxssManager | Restart-Service
-
 ```
 
 ***
@@ -1073,7 +1030,6 @@ npm i mediumexporter -g
 
 
 mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascript-8f9f709c15b4 >ds.md
-
 ```
 
 ***
@@ -1087,7 +1043,6 @@ mediumexporter https://medium.com/codex/fundamental-data-structures-in-javascrip
 **code:**
 
 ```
-
 find . -size +75M -a -print -a -exec rm -f {} \;
 
 
@@ -1108,9 +1063,7 @@ find . -size +98M -a -print -a -exec rm -f {} \;
 
 ```
 
-
 wget -r -A.pdf https://overapi.com/git
-
 ```
 
 ***
@@ -1166,7 +1119,6 @@ find . -type d -exec rename 's/-master//g' {} +
 **code:**
 
 ```
-
 find . -name "* *" -type d | rename 's/ /_/g'   
 find . -name "* *" -type f | rename 's/ /_/g'
 ```
@@ -1833,7 +1785,6 @@ for i in */; do zip -r "${i%/}.zip" "$i"; done
 **code:**
 
 ```
-
 PARAM (
     [string] $ZipFilesPath = "./",
     [string] $UnzipPath = "./RESULT"
@@ -1853,7 +1804,6 @@ foreach ($ZipFile in $ZipFiles) {
     $Location.Copyhere($ZipFolder.items(), 1040) # 1040 - No msgboxes to the user - http://msdn.microsoft.com/en-us/library/bb787866%28VS.85%29.aspx
     $progress++
 }
-
 ```
 
 ***
@@ -1881,7 +1831,6 @@ foreach ($ZipFile in $ZipFiles) {
 **code:**
 
 ```
-
 ln -s "$(pwd)" ~/NameOfLink
 
 ln -s "$(pwd)" ~/Downloads
@@ -1898,9 +1847,7 @@ ln -s "$(pwd)" ~/Downloads
 **code:**
 
 ```
-
 npx @appnest/readme generate
-
 ```
 
 ***
@@ -1928,7 +1875,6 @@ sudo -u postgres psql
 **code:**
 
 ```
-
 https://www.youtube.com/channel/UC1HDa0wWnIKUf-b4yY9JecQ?sub_confirmation=1
 ```
 
@@ -1939,7 +1885,6 @@ https://www.youtube.com/channel/UC1HDa0wWnIKUf-b4yY9JecQ?sub_confirmation=1
 **code:**
 
 ```
-
 https://repl.it/@bgoonz/Data-Structures-Algos-Codebase?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
 
 
@@ -1949,7 +1894,6 @@ https://repl.it/@bgoonz/interview-prac?lite=true&amp;referrer=https%3A%2F%2Fbrya
 
 
 https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com
-
 ```
 
 ***
@@ -1963,7 +1907,6 @@ https://repl.it/@bgoonz/Database-Prac?lite=true&amp;referrer=https%3A%2F%2Fbryan
 **code:**
 
 ```
-
 
 find . -name *right.html  -type f -exec sed -i 's/target="_parent"//g' {} +
 
@@ -2530,7 +2473,6 @@ echo -e "${Green}This is GREEN text${Color_Off} and normal text"
 echo -e "${Red}${On_White}This is Red test on White background${Color_Off}" 
 # option -e is mandatory, it enable interpretation of backslash escapes
 printf "${Red} This is red \n"
-
 ```
 
 ***
