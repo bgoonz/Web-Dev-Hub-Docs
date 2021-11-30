@@ -61,7 +61,8 @@
     * [SED](programming-languages/programming-languages/bash/sed.md)
   * [CHEATSHEETS](programming-languages/programming-languages/cheatsheets.md)
   * [Java](programming-languages/programming-languages/java.md)
-  * [Bash Script](programming-languages/programming-languages/bash-script.md)
+  * [Bash Script](programming-languages/programming-languages/bash-script/README.md)
+    * [SSH Cheatsheet](programming-languages/programming-languages/bash-script/ssh-cheatsheet.md)
   * [Html](programming-languages/programming-languages/html.md)
   * [Markdown](programming-languages/programming-languages/markdown.md)
   * [CSS](programming-languages/programming-languages/css.md)
@@ -84,7 +85,7 @@
 * [Writing Files](javascript/writing-files.md)
 * [JS-Leetcode](javascript/js-leetcode.md)
 
-## Web Development Frameworks & Libraries <a href="web-development-frameworks" id="web-development-frameworks"></a>
+## Web Development Frameworks & Libraries <a href="#web-development-frameworks" id="web-development-frameworks"></a>
 
 * [GRAPHQL](web-development-frameworks/graphql.md)
 * [React](web-development-frameworks/react.md)
@@ -106,7 +107,7 @@
 * [Misc](misc/untitled/README.md)
   * [Experiments](misc/untitled/experiments.md)
 
-## GitGateway <a href="links" id="links"></a>
+## GitGateway <a href="#links" id="links"></a>
 
 * [Links](links/untitled.md)
 * [Bookmarks](links/untitled-1.md)
