@@ -296,3 +296,8 @@
 ## 🎙 Audio
 
 * [Audio](audio/audio.md)
+
+## Cheatsheets
+
+* [Page 17](cheatsheets/page-17.md)
+* [Page 16](cheatsheets/page-16.md)
