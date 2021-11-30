@@ -1,1 +1,0 @@
-No Content: https://thealgorithms.netlify.app/script/jquery.mousewheel.js

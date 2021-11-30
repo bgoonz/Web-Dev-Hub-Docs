@@ -1,1 +1,0 @@
-# Beginners Guide To Python
