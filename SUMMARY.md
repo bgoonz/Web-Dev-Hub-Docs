@@ -10,16 +10,16 @@
   * [G-Cloud & Firebase](tools/tools/g-cloud-and-firebase.md)
   * [Heroku](tools/tools/heroku.md)
 * [Showcase](tools/showcase/README.md)
-  * [Utilities](tools/showcase/untitled-1.md)
-  * [Continued](tools/showcase/untitled/README.md)
-    * [Page 3:](tools/showcase/untitled/page-3.md)
+  * [Utilities](tools/showcase/utilities.md)
+  * [Continued](tools/showcase/continued/README.md)
+    * [Page 3:](tools/showcase/continued/page-3.md)
 * [Downloads](tools/downloads.md)
 * [How To Configure Ubuntu](tools/how-to-configure-ubuntu.md)
-* [REPL.IT Compilations](tools/links/README.md)
-  * [Part 2](tools/links/part-2.md)
+* [REPL.IT Compilations](tools/repl.it-compilations/README.md)
+  * [Part 2](tools/repl.it-compilations/part-2.md)
 * [Past Notes](tools/past-notes/README.md)
   * [Command Line Reference](tools/past-notes/command-line-reference.md)
-* [Git](tools/untitled.md)
+* [Git](tools/git.md)
 * [JavaScript](programming-languages/programming-languages/javascript/README.md)
   * [Interview Problems](tools/javascript/interview-problems.md)
   * [General JavaScript Notes](tools/javascript/general-javascript-notes.md)
@@ -28,7 +28,7 @@
     * [Node argv](programming-languages/programming-languages/javascript/nodejs/node-argv.md)
     * [NPM](programming-languages/programming-languages/javascript/nodejs/npm.md)
     * [Express](programming-languages/programming-languages/javascript/nodejs/express/README.md)
-      * [ExpressJS Overview](programming-languages/programming-languages/javascript/nodejs/express/untitled.md)
+      * [ExpressJS Overview](tools/javascript/nodejs/express/expressjs-overview.md)
       * [Sequelize](programming-languages/programming-languages/javascript/nodejs/express/sequelize.md)
   * [Regex](programming-languages/programming-languages/javascript/regex.md)
   * [React](programming-languages/programming-languages/javascript/react/README.md)
@@ -44,13 +44,13 @@
 * [Programming Languages](programming-languages/programming-languages/README.md)
   * [File System](programming-languages/programming-languages/file-system.md)
   * [Basics](programming-languages/programming-languages/basics.md)
-  * [PSEUDO Programing Languages](programming-languages/programming-languages/untitled/README.md)
-    * [HTML](programming-languages/programming-languages/untitled/html.md)
-  * [CSS](programming-languages/programming-languages/css-1.md)
+  * [PSEUDO Programing Languages](programming-languages/programming-languages/pseudo-programing-languages/README.md)
+    * [HTML](programming-languages/programming-languages/pseudo-programing-languages/html.md)
+  * [CSS](programming-languages/programming-languages/css.md)
   * [List Of Programming Languages By Type](programming-languages/programming-languages/list-of-programming-languages-by-type.md)
-  * [Tools-Of-The-Trade](programming-languages/programming-languages/frameworks/README.md)
-    * [Linux](programming-languages/programming-languages/frameworks/linux.md)
-    * [Docker](programming-languages/programming-languages/frameworks/docker.md)
+  * [Tools-Of-The-Trade](programming-languages/programming-languages/tools-of-the-trade/README.md)
+    * [Linux](programming-languages/programming-languages/tools-of-the-trade/linux.md)
+    * [Docker](programming-languages/programming-languages/tools-of-the-trade/docker.md)
   * [Git](programming-languages/programming-languages/git.md)
   * [Python](programming-languages/programming-languages/python/README.md)
     * [Pydrive:](programming-languages/programming-languages/python/pydrive.md)
@@ -65,7 +65,7 @@
     * [SSH Cheatsheet](programming-languages/programming-languages/bash-script/ssh-cheatsheet.md)
   * [Html](programming-languages/programming-languages/html.md)
   * [Markdown](programming-languages/programming-languages/markdown.md)
-  * [CSS](programming-languages/programming-languages/css.md)
+  * [CSS](programming-languages/programming-languages/css-1.md)
   * [SCSS](programming-languages/programming-languages/scss.md)
   * [C & C++](programming-languages/programming-languages/c-and-c++.md)
   * [Ruby](programming-languages/programming-languages/ruby.md)
@@ -75,7 +75,7 @@
 
 ## Python
 
-* [Python](python/untitled.md)
+* [Python](python/python.md)
 * [Install PIP](python/install-pip.md)
 
 ## JavaScript
@@ -99,8 +99,9 @@
 
 ## Productivity
 
-* [Productivity](productivity/untitled/README.md)
-  * [Awesome Productivity Tools for Back-to-School](productivity/untitled/untitled.md)
+* [Productivity](productivity/productivity/README.md)
+  * [Awesome Productivity Tools for Back-to-School](productivity/productivity/awesome-productivity-tools-for-back-to-school.md)
+* [Front End Handbook](productivity/front-end-handbook.md)
 
 ## Misc
 
@@ -114,8 +115,8 @@
 
 ## Websites
 
-* [Websites](websites/untitled.md)
-* [Not My Websites:](websites/untitled-1.md)
+* [Websites](websites/websites.md)
+* [Not My Websites:](websites/not-my-websites.md)
 
 ## Backend
 
@@ -127,13 +128,13 @@
 
 ## Resources
 
-* [Resources](resources/untitled.md)
-* [Video Resources](resources/untitled-1.md)
+* [Resources](resources/resources.md)
+* [Video Resources](resources/video-resources.md)
 
 ## General Knowledge
 
-* [General Knowledge](general-knowledge/untitled.md)
-* [Knowledge Bank](general-knowledge/untitled-1.md)
+* [General Knowledge](general-knowledge/general-knowledge.md)
+* [Knowledge Bank](general-knowledge/knowledge-bank.md)
 
 ## Finance
 
@@ -143,16 +144,16 @@
 
 ## Science & Tech (Innovation)
 
-* [Science & Tech](science-and-tech-innovation/untitled.md)
-* [Articles](science-and-tech-innovation/untitled-1.md)
+* [Science & Tech](science-and-tech-innovation/science-and-tech.md)
+* [Articles](science-and-tech-innovation/articles.md)
 
 ## Reading
 
-* [Reading](reading/untitled.md)
+* [Reading](reading/reading.md)
 
 ## Social Media & Trends
 
-* [Trends In Web Dev](social-media-and-trends/untitled.md)
+* [Trends In Web Dev](social-media-and-trends/trends-in-web-dev.md)
 * [FB-Dev-Open Source](social-media-and-trends/fb-dev-open-source/README.md)
   * [Content Publishing](social-media-and-trends/fb-dev-open-source/content-publishing.md)
 * [IG-API](social-media-and-trends/ig-api.md)
@@ -253,11 +254,11 @@
 
 ## testing
 
-* [Testing:](testing/page-16/README.md)
-  * [Configure Jest for Testing JavaScript Applications](testing/page-16/configure-jest-for-testing-javascript-applications.md)
-  * [install, configure, and script Cypress for JavaScript web applications](testing/page-16/install-configure-and-script-cypress-for-javascript-web-applications.md)
-  * [Test React Components with Jest and \`react-testing-library\`](testing/page-16/test-react-components-with-jest-and-react-testing-library.md)
-  * [Use testing library to evaluate any framework...](testing/page-16/use-testing-library-to-evaluate-any-framework....md)
+* [Testing:](testing/testing/README.md)
+  * [Configure Jest for Testing JavaScript Applications](testing/testing/configure-jest-for-testing-javascript-applications.md)
+  * [install, configure, and script Cypress for JavaScript web applications](testing/testing/install-configure-and-script-cypress-for-javascript-web-applications.md)
+  * [Test React Components with Jest and \`react-testing-library\`](testing/testing/test-react-components-with-jest-and-react-testing-library.md)
+  * [Use testing library to evaluate any framework...](testing/testing/use-testing-library-to-evaluate-any-framework....md)
 
 ## Medium-articles
 
