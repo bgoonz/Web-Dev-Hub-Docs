@@ -1,10 +1,8 @@
 # Refactoring Guide
 
-
-
 ## Refactoring
 
-> ### Excerpt
+> #### Excerpt
 >
 > Design Patterns and Refactoring articles and guides. Design Patterns video tutorials for newbies. Simple descriptions and full source code examples in Java, C++, C#, PHP and Delphi.
 

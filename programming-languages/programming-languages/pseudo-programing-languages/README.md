@@ -1,2 +1,0 @@
-# PSEUDO Programing Languages
-
