@@ -6,13 +6,9 @@ cover: .gitbook/assets/3.jpg
 
 # Home
 
-
-
 ![](.gitbook/assets/devider.png)
 
 {% embed url="https://bryan-guner.gitbook.io/my-docs" %}
-
-
 
 ![](.gitbook/assets/github.png)
 
@@ -29,8 +25,8 @@ cover: .gitbook/assets/3.jpg
 * [Blockchain](https://bryan-guner.gitbook.io/my-docs/v/solidarity-blockchain-nfts/)
 * [EWmbeds](https://bryan-guner.gitbook.io/my-docs/v/embeds/)
 
-{% content-ref url="navigation.md" %}
-[navigation.md](navigation.md)
+{% content-ref url="navigation/" %}
+[navigation](navigation/)
 {% endcontent-ref %}
 
 {% tabs %}
@@ -278,7 +274,7 @@ Website Navigation (my websites)
   * [Jquery](https://bryan-guner.gitbook.io/web-dev-hub-docs/javascript/untitled/jquery)
 * [JS-Leetcode](https://bryan-guner.gitbook.io/web-dev-hub-docs/javascript/js-leetcode)
 
-### Web Development Frameworks & Libraries <a href="web-development-frameworks" id="web-development-frameworks"></a>
+### Web Development Frameworks & Libraries <a href="#web-development-frameworks" id="web-development-frameworks"></a>
 
 * [GRAPHQL](https://bryan-guner.gitbook.io/web-dev-hub-docs/web-development-frameworks/graphql)
 * [React](https://bryan-guner.gitbook.io/web-dev-hub-docs/web-development-frameworks/react)
@@ -300,7 +296,7 @@ Website Navigation (my websites)
 * [Misc](https://bryan-guner.gitbook.io/web-dev-hub-docs/misc/untitled/README)
   * [Experiments](https://bryan-guner.gitbook.io/web-dev-hub-docs/misc/untitled/experiments)
 
-### GitGateway <a href="links" id="links"></a>
+### GitGateway <a href="#links" id="links"></a>
 
 * [Links](https://bryan-guner.gitbook.io/web-dev-hub-docs/links/untitled)
 * [Bookmarks](https://bryan-guner.gitbook.io/web-dev-hub-docs/links/untitled-1)
@@ -492,7 +488,7 @@ Widgets are specified as collection fields in the Netlify CMS `config.yml` file.
 
 To see working examples of all of the built-in widgets, try making a 'Kitchen Sink' collection item on the [CMS demo site](https://cms-demo.netlify.com). (No login required: click the login button and the CMS will open.) You can refer to the demo [configuration code](https://github.com/netlify/netlify-cms/blob/master/dev-test/config.yml) to see how each field was configured.
 
-### Common widget options <a href="common-widget-options" id="common-widget-options"></a>
+### Common widget options <a href="#common-widget-options" id="common-widget-options"></a>
 
 The following options are available on all fields:
 
@@ -501,7 +497,7 @@ The following options are available on all fields:
 * `pattern`: add field validation by specifying a list with a [regex pattern](https://regexr.com) and an error message; more extensive validation can be achieved with [custom widgets](https://www.netlifycms.org/docs/custom-widgets/#advanced-field-validation)
   * **Example:** `yaml - label: "Title" name: "title" widget: "string" pattern: ['.{12,}', "Must have at least 12 characters"]`
 
-### Default widgets <a href="default-widgets" id="default-widgets"></a>
+### Default widgets <a href="#default-widgets" id="default-widgets"></a>
 
 BooleanCodeColorDateDateTimeFileHiddenImageListMapMarkdownNumberObjectRelationSelectStringText
 

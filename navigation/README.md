@@ -1,17 +1,5 @@
 # Navigation
 
-\[ \\
-
-\
-https://bryan-guner.gitbook.io/my-docs/]\(https://i.imgur.com/i6VDHcd.pnghttps://bryan-guner.gitbook.io/my-docs/https://i.imgur.com/i6VDHcd.png)
-
-\[ \\
-
-\\
-
-\
-]\(https://i.imgur.com/i6VDHcd.pnghttps://bryan-guner.gitbook.io/my-docs/https://i.imgur.com/i6VDHcd.png)
-
 {% tabs %}
 {% tab title="Website Nav" %}
 **Table of contents**

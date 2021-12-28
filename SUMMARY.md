@@ -1,7 +1,8 @@
 # Table of contents
 
 * [Home](README.md)
-* [Navigation](navigation.md)
+* [Navigation](navigation/README.md)
+  * [Bookmarks](navigation/bookmarks.md)
 
 ## Tools
 
