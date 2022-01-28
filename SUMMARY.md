@@ -124,6 +124,7 @@
 
 * [Websites](websites/websites.md)
 * [Not My Websites:](websites/not-my-websites.md)
+* [Articles](websites/articles.md)
 
 ## Backend
 
@@ -164,6 +165,7 @@
 ## Social Media & Trends
 
 * [Trends In Web Dev](social-media-and-trends/trends-in-web-dev.md)
+* [Analytics](social-media-and-trends/analytics.md)
 * [FB-Dev-Open Source](social-media-and-trends/fb-dev-open-source/README.md)
   * [Content Publishing](social-media-and-trends/fb-dev-open-source/content-publishing.md)
 * [IG-API](social-media-and-trends/ig-api.md)
