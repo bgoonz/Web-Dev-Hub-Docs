@@ -69,11 +69,20 @@
   * [Ruby](programming-languages/programming-languages/ruby.md)
   * [SQL](programming-languages/programming-languages/sql/README.md)
     * [PostgreSQL](programming-languages/programming-languages/sql/postgresql.md)
+  * [Jest](programming-languages/programming-languages/jest.md)
+  * [JavaScript](programming-languages/programming-languages/javascript.md)
+  * [C++](programming-languages/programming-languages/c++.md)
+  * [Babel](programming-languages/programming-languages/babel.md)
 * [What is a Programming Language?](programming-languages/what-is-a-programming-language.md)
 
 ## Python
 
-* [Python](python/python.md)
+* [Python](python/python/README.md)
+  * [Python General Notes](python/python/python-general-notes.md)
+  * [Python Quiz](python/python/python-quiz.md)
+  * [Python Cheat Sheet](python/python/python-cheat-sheet.md)
+  * [Python Snippets](python/python/python-snippets.md)
+  * [Python at length](python/python/python-at-length.md)
 * [Install PIP](python/install-pip.md)
 
 ## JavaScript
