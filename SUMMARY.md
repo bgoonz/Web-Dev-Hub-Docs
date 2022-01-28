@@ -71,6 +71,7 @@
     * [PostgreSQL](programming-languages/programming-languages/sql/postgresql.md)
   * [Jest](programming-languages/programming-languages/jest.md)
   * [JavaScript](programming-languages/programming-languages/javascript.md)
+  * [Typescript](programming-languages/programming-languages/typescript.md)
   * [C++](programming-languages/programming-languages/c++.md)
   * [Babel](programming-languages/programming-languages/babel.md)
 * [What is a Programming Language?](programming-languages/what-is-a-programming-language.md)
