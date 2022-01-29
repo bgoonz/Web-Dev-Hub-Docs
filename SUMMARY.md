@@ -155,6 +155,7 @@
 ## General Knowledge
 
 * [General Knowledge](general-knowledge/general-knowledge.md)
+* [Glossary](general-knowledge/glossary.md)
 * [Knowledge Bank](general-knowledge/knowledge-bank.md)
 
 ## Finance
